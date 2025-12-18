@@ -75,3 +75,179 @@ FUTURE ENHANCEMENTS:
 - Add Supabase Auth for farm accounts
 - Calendar view for harvest windows
 - Farm search/discovery from consumer side
+
+=== SESSION 2025-12-18 (Hybrid Intelligence Architecture Planning) ===
+
+ORIENTATION:
+- Reviewed existing feature_list.json (F001-F007 complete)
+- Analyzed current architecture gaps (no tests, code/DB duplication)
+- Created comprehensive Hybrid Intelligence Architecture plan
+
+WORK COMPLETED:
+- PLANNING: Created implementation plan at ~/.claude/plans/abstract-skipping-teacup.md
+- BMAD REVIEW: Ran @review-plan agent, incorporated feedback
+- HARNESS: Updated feature_list.json with 26 new work items:
+  - Phase 0 (Spikes): SPIKE-A (Data Audit), SPIKE-B (Rule Extraction), SPIKE-C (ML Architecture)
+  - Phase 1 (Foundation): F008-F012 (Tests + Database migration)
+  - Phase 2 (Deterministic): F013-F016 (Rules engine, claim inference, validation, orchestrator)
+  - Phase 3 (Feedback): F017-F021, F029 (Predictions/actuals tables, calibration, rate limiting)
+  - Phase 4 (AI): F022-F028, F030, F025 (Exception handler, accuracy, ML, CI/CD)
+- Created init.sh environment validation script
+
+ARCHITECTURE DECISIONS:
+- Pattern: SNDBX Hybrid Intelligence adapted for agricultural quality prediction
+- Layers: Deterministic (SHARE rules) → Probabilistic (ML) → Exception Handler (human)
+- Feedback loop: Consumer scans + farmer reports → calibration → improved predictions
+- Feature flags: USE_DATABASE_REFERENCE_DATA for gradual DB migration
+
+KEY FILES CREATED/MODIFIED:
+- feature_list.json (complete rewrite with 26 new work items)
+- init.sh (environment validation script)
+- docs/hybrid-intelligence-architecture-for-fielder.md (architecture doc)
+- docs/flavor-app-feedback-loop-research.md (feedback system design)
+
+ARCHITECTURE DOCS:
+- ~/.claude/plans/abstract-skipping-teacup.md (master implementation plan)
+- docs/hybrid-intelligence-architecture-for-fielder.md (66 sections)
+- docs/flavor-app-feedback-loop-research.md (13 sections)
+
+BLOCKERS:
+- None
+
+NEXT STEPS:
+- Run init.sh to validate environment
+- Start F008 (Test Infrastructure Setup) - Install Jest, configure, write smoke tests
+- Or optionally run SPIKE-A (Data Audit) first to understand data state
+
+=== SESSION 2025-12-18 (F008 Test Infrastructure) ===
+
+ORIENTATION:
+- Continued from planning session
+- Harness initialized with 26 work items (feature_list.json updated)
+- init.sh created for environment validation
+
+WORK COMPLETED:
+- F008 (Test Infrastructure Setup): COMPLETE
+  - Installed Jest 30.2.0, ts-jest 29.4.6, @testing-library/react 16.3.1, @testing-library/jest-dom 6.9.1, jest-environment-jsdom 30.2.0
+  - Created jest.config.js with ts-jest preset, path alias mapping (@/), jsdom environment
+  - Created jest.setup.js with Next.js router mocks and jest-dom matchers
+  - Added test scripts: npm test, test:watch, test:coverage, test:ci
+  - Created src/__tests__/gdd-calculator.test.ts (28 tests for GDD utility functions)
+  - Created src/__tests__/gdd-prediction.test.ts (27 tests for harvest/Brix prediction)
+  - All 55 tests pass
+
+TEST RESULTS:
+- Test Suites: 2 passed, 2 total
+- Tests: 55 passed, 55 total
+- Time: 0.771s
+
+KEY FILES CREATED:
+- jest.config.js (Jest configuration for Next.js + TypeScript)
+- jest.setup.js (test setup with mocks)
+- src/__tests__/gdd-calculator.test.ts (GDD utility tests)
+- src/__tests__/gdd-prediction.test.ts (harvest prediction tests)
+
+GIT STATUS:
+- Package.json updated with test dependencies and scripts
+- feature_list.json F008 marked passes: true
+
+NEXT STEPS:
+- Consider running SPIKE-A (Data Audit) or SPIKE-B (Rule Extraction)
+- Or proceed to F009 (Reference Data Service)
+
+=== SESSION 2025-12-18 (SPIKE-A Data Audit) ===
+
+ORIENTATION:
+- Continued from F008 (Test Infrastructure) session
+- User selected SPIKE-A: Data Audit as next work item
+
+WORK COMPLETED:
+- SPIKE-A (Data Audit): COMPLETE
+  - Examined Supabase schema (9 tables defined)
+  - Found only 2 tables seeded: crops (15 rows), growing_regions (21 rows)
+  - Counted TypeScript constant files: 17,459 total lines across 20 files
+  - Documented major discrepancies:
+    - Regions: 122 in constants vs 21 in DB (6x more!)
+    - Cultivars: 11+ in constants, 0 in DB
+    - Rootstocks: 14 in constants, 0 in DB
+    - Crop phenology: 33 in constants, 0 in DB
+  - Created comprehensive data audit report
+
+KEY FILES CREATED:
+- docs/data-audit-report.md (comprehensive audit with migration scope)
+
+FINDINGS SUMMARY:
+- Database: 9 tables, only crops + growing_regions have data
+- Constants: 17,459 lines of TypeScript duplicating/exceeding DB
+- Critical gap: Core prediction tables (cultivars, rootstocks) empty
+- Recommendation: DB becomes single source of truth via F009 feature flag
+
+GIT STATUS:
+- feature_list.json SPIKE-A marked passes: true
+- docs/data-audit-report.md created
+
+NEXT STEPS:
+- SPIKE-B: Rule Extraction Baseline (find GDD/Brix calculations, write regression tests)
+- Or SPIKE-C: ML Architecture Decision
+- Or F009: Reference Data Service (implements DB + constants fallback pattern)
+
+=== SESSION 2025-12-18 (SPIKE-B Rule Extraction Baseline) ===
+
+ORIENTATION:
+- Continued from SPIKE-A (Data Audit) session
+- User requested to continue in sequence per harness workflow
+- Selected SPIKE-B: Rule Extraction Baseline
+
+WORK COMPLETED:
+- SPIKE-B (Rule Extraction Baseline): COMPLETE
+  - Ran grep to find all GDD/Brix calculation locations across codebase
+  - Identified 7 files with active calculation logic:
+    - gdd-calculator.ts (162 lines) - Low-level GDD utilities
+    - gdd.ts (349 lines) - GDD prediction with sigmoid/exponential formulas
+    - harvest-predictor.ts (284 lines) - High-level prediction with SHARE modifiers
+    - gdd-targets.ts (180 lines) - GDD requirements per crop (15 crops)
+    - rootstocks.ts (304 lines) - Rootstock Brix modifiers (9 citrus + 3 stone fruit)
+    - quality-tiers.ts (577 lines) - Cultivar quality profiles (12 cultivars)
+  - Created comprehensive rule extraction map
+  - Identified 5 CRITICAL + 7 HIGH priority extraction candidates for F013:
+    - CRITICAL: predictBrixFromGDD(), predictAcidFromGDD(), calculateAgeModifier(), calculateTimingModifier(), predictBrix()
+    - HIGH: calculateDailyGDD(), calculateCumulativeGDD(), determineHarvestStatus(), calculateBrixAcidRatio(), calculateBrimA(), getGddTargets(), getRootstockBrixModifier()
+  - Documented all formulas:
+    - GDD: max(0, (Tmax + Tmin) / 2 - baseTemp)
+    - Sugar sigmoid: SSC = SSC_min + (SSC_max - SSC_min) / (1 + exp(-(GDD - DD50) / s))
+    - Acid decay: TA = TA0 × exp(-ka × GDD)
+    - Peak Brix: Cultivar_Base + Rootstock_Mod + Age_Mod + Timing_Mod
+    - Timing modifier: -G × (d / H)² (parabolic penalty)
+    - Age modifier: Lookup table (-0.8 young to 0.0 prime to -0.3 declining)
+  - Created 68 regression tests in 2 new test files:
+    - harvest-predictor.test.ts (29 tests): Age modifier lookup, timing modifier parabolic, predictBrix combinations, estimateSugarAcid, harvest window, harvest status
+    - reference-data.test.ts (39 tests): Rootstock Brix modifiers, cultivar profiles, GDD targets, quality tier inference
+
+KEY FILES CREATED:
+- docs/rule-extraction-map.md (comprehensive mapping of 18 rule functions)
+- src/__tests__/harvest-predictor.test.ts (29 regression tests)
+- src/__tests__/reference-data.test.ts (39 regression tests)
+
+TEST RESULTS:
+- Test Suites: 2 passed, 2 total (new files)
+- Tests: 68 passed, 68 total (all new)
+- Time: 0.546s
+- Combined with F008: 123 total tests across 4 files
+
+DATA CORRECTIONS:
+- Updated rule-extraction-map.md counts to match reality:
+  - Citrus rootstocks: 9 (not 8)
+  - Cultivar profiles: 12 (not 11)
+  - GDD targets crops: 15 (not 16)
+
+GIT STATUS:
+- feature_list.json SPIKE-B marked passes: true
+- docs/rule-extraction-map.md created
+- Two new test files created
+
+BLOCKERS:
+- None
+
+NEXT STEPS:
+- SPIKE-C: ML Architecture Decision (ADR for ML hosting)
+- Or F009: Reference Data Service (implements DB + constants fallback pattern)

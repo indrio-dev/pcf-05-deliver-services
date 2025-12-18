@@ -1,6 +1,7 @@
 {
   "project": "fielder-nextjs",
   "description": "Next.js + Supabase migration of Fielder harvest prediction platform",
+  "architecture_plan": "Hybrid Intelligence Architecture - SNDBX pattern adapted for agricultural quality prediction",
   "features": [
     {
       "id": "F001",
@@ -23,7 +24,7 @@
         "Define schema: farms, farm_crops, farm_availability",
         "Create seed scripts from DataLoader"
       ],
-      "completion_notes": "Created migrations/001_initial_schema.sql with all tables. Seed scripts for regions (21 regions) and crops (15 crops) ready. User needs to create Supabase project and run migrations."
+      "completion_notes": "Created migrations/001_initial_schema.sql with all tables. Seed scripts for regions (21 regions) and crops (15 crops) ready."
     },
     {
       "id": "F003",
@@ -35,7 +36,7 @@
         "Port quality predictor (10 crop models)",
         "Port harvest predictor"
       ],
-      "completion_notes": "Ported gdd-calculator.ts, weather.ts, harvest-predictor.ts. Quality predictor sugar/acid estimation included in harvest-predictor."
+      "completion_notes": "Ported gdd-calculator.ts, weather.ts, harvest-predictor.ts. Quality predictor sugar/acid estimation included."
     },
     {
       "id": "F004",
@@ -46,10 +47,9 @@
         "POST /api/quality - quality prediction",
         "GET /api/weather/gdd - GDD data",
         "GET /api/crops - list crops",
-        "GET /api/regions - list regions",
-        "CRUD /api/farms - farm management"
+        "GET /api/regions - list regions"
       ],
-      "completion_notes": "Created /api/predict, /api/crops, /api/regions, /api/weather/gdd. Farm CRUD deferred to when Supabase connected."
+      "completion_notes": "Created /api/predict, /api/crops, /api/regions, /api/weather/gdd."
     },
     {
       "id": "F005",
@@ -62,7 +62,7 @@
         "Harvest calendar view",
         "Farm cards"
       ],
-      "completion_notes": "Created /discover page with region selector, At Peak Now section, crop cards with status badges. Calendar view deferred."
+      "completion_notes": "Created /discover page with region selector, At Peak Now section, crop cards with status badges."
     },
     {
       "id": "F006",
@@ -75,7 +75,7 @@
         "Availability toggle",
         "Pricing editor"
       ],
-      "completion_notes": "Created /farm page with admin code protection and dashboard skeleton. Full CRUD features marked as 'Coming Soon' pending Supabase integration."
+      "completion_notes": "Created /farm page with admin code protection and dashboard skeleton."
     },
     {
       "id": "F007",
@@ -87,7 +87,399 @@
         "Configure environment variables",
         "Deploy"
       ],
-      "completion_notes": "Created GitHub repo at balexbrownii/fielder-nextjs. Deployed to Vercel at https://fielder-nextjs.vercel.app. Environment variables configured for Supabase and admin code."
+      "completion_notes": "Deployed to Vercel at https://fielder-nextjs.vercel.app"
+    },
+    {
+      "id": "SPIKE-A",
+      "name": "Data Audit",
+      "passes": true,
+      "phase": "0-spikes",
+      "steps": [
+        "Count rows in Supabase tables (crops, cultivars, etc.)",
+        "List all TypeScript constant files and row counts",
+        "Document data quality issues",
+        "Map: which constants → which DB tables",
+        "Create data audit report"
+      ],
+      "acceptance": "Data audit report created with migration scope estimate",
+      "files": ["docs/data-audit-report.md"],
+      "completion_notes": "Created comprehensive data audit report. Found 17,459 lines across 20 constant files. DB has 9 tables (only 2 seeded: 15 crops, 21 regions). Critical: constants have 6x more regions (122 vs 21), cultivars/rootstocks tables empty. Identified migration priorities for F009-F012."
+    },
+    {
+      "id": "SPIKE-B",
+      "name": "Rule Extraction Baseline",
+      "passes": true,
+      "phase": "0-spikes",
+      "steps": [
+        "grep -r 'GDD|Brix|degree.*day' --include='*.ts' to find all calculation locations",
+        "Document all GDD/Brix calculation locations",
+        "Write regression tests for current prediction behavior",
+        "Identify candidate extractions for F013 Rules Engine"
+      ],
+      "acceptance": "Rule map created, baseline test suite passes",
+      "files": ["docs/rule-extraction-map.md", "src/**/*.test.ts"],
+      "completion_notes": "Created docs/rule-extraction-map.md documenting 18 rule functions across 7 files. Added 68 regression tests in harvest-predictor.test.ts (29 tests) and reference-data.test.ts (39 tests). Identified 5 CRITICAL + 7 HIGH priority extraction candidates for F013. Documented formulas: GDD, sigmoid sugar accumulation, exponential acid decay, peak Brix (SHARE), age modifier lookup, timing modifier parabolic."
+    },
+    {
+      "id": "SPIKE-C",
+      "name": "ML Architecture Decision",
+      "passes": false,
+      "phase": "0-spikes",
+      "steps": [
+        "Decide: Supabase Edge Functions vs separate Python service",
+        "Decide: Training pipeline (batch vs online)",
+        "Decide: Model storage (Supabase vs S3)",
+        "Document A/B framework requirements",
+        "Create Architecture Decision Record (ADR)"
+      ],
+      "acceptance": "ADR created with ML hosting decisions",
+      "files": ["docs/adr-ml-architecture.md"]
+    },
+    {
+      "id": "F008",
+      "name": "Test Infrastructure Setup",
+      "passes": true,
+      "phase": "1-foundation",
+      "steps": [
+        "Install Jest, ts-jest, @testing-library/react",
+        "Configure jest.config.js for Next.js",
+        "Add test scripts to package.json",
+        "Write initial smoke tests for existing services",
+        "Verify all tests pass"
+      ],
+      "acceptance": "npm test runs successfully with >0 passing tests",
+      "files": ["package.json", "jest.config.js", "src/**/*.test.ts"],
+      "completion_notes": "Installed Jest 30 + ts-jest + testing-library. Created jest.config.js with ts-jest preset, path aliases, jsdom environment. Added 55 tests for gdd-calculator.ts and gdd.ts prediction functions. All tests pass."
+    },
+    {
+      "id": "F009",
+      "name": "Reference Data Service",
+      "passes": false,
+      "phase": "1-foundation",
+      "steps": [
+        "Create src/lib/data/reference-data.ts",
+        "Implement getCultivar(), getRootstock(), getRegion() methods",
+        "Add caching layer (in-memory Map with TTL)",
+        "Feature flag: USE_DATABASE_REFERENCE_DATA",
+        "Write tests for data service"
+      ],
+      "acceptance": "Tests pass, predictions work with DB or constants fallback",
+      "files": ["src/lib/data/reference-data.ts"]
+    },
+    {
+      "id": "F010",
+      "name": "Seed Crops Table",
+      "passes": false,
+      "phase": "1-foundation",
+      "steps": [
+        "Create seed file supabase/seed/003_crops_full.sql",
+        "Add 20+ crops with GDD targets, base temps",
+        "Run migration against Supabase",
+        "Verify via reference-data.ts queries",
+        "Write validation tests"
+      ],
+      "acceptance": "All crops queryable from DB, tests pass",
+      "files": ["supabase/seed/003_crops_full.sql"]
+    },
+    {
+      "id": "F011",
+      "name": "Seed Cultivars Table",
+      "passes": false,
+      "phase": "1-foundation",
+      "steps": [
+        "Create seed file supabase/seed/004_cultivars.sql",
+        "Add 11+ cultivars with brix_base, timing_class",
+        "Run migration against Supabase",
+        "Update reference-data.ts to query cultivars",
+        "Write validation tests"
+      ],
+      "acceptance": "All cultivars queryable, tests pass",
+      "files": ["supabase/seed/004_cultivars.sql"]
+    },
+    {
+      "id": "F012",
+      "name": "Seed Rootstocks Table",
+      "passes": false,
+      "phase": "1-foundation",
+      "steps": [
+        "Create seed file supabase/seed/005_rootstocks.sql",
+        "Add 12 rootstocks with brix_modifier, vigor",
+        "Run migration against Supabase",
+        "Update reference-data.ts to query rootstocks",
+        "Write validation tests"
+      ],
+      "acceptance": "All rootstocks queryable, tests pass",
+      "files": ["supabase/seed/005_rootstocks.sql"]
+    },
+    {
+      "id": "F013",
+      "name": "SHARE Rules Engine",
+      "passes": false,
+      "phase": "2-deterministic",
+      "steps": [
+        "Create src/lib/intelligence/rules-engine.ts",
+        "Implement getRootstockModifier() - deterministic lookup",
+        "Implement getAgeModifier() - age curve calculation",
+        "Implement getCultivarBaseBrix() - from DB",
+        "Write comprehensive tests"
+      ],
+      "acceptance": "Rules engine replaces inline calculations, tests pass",
+      "files": ["src/lib/intelligence/rules-engine.ts"]
+    },
+    {
+      "id": "F014",
+      "name": "Claim Inference Engine",
+      "passes": false,
+      "phase": "2-deterministic",
+      "steps": [
+        "Create src/lib/intelligence/claim-inference.ts",
+        "Implement inferFromPLU() - PLU prefix logic",
+        "Implement inferBeefProfile() - CAFO detection chain",
+        "Implement checkOrganicBeefWarning() - red flag detection",
+        "Write tests for all inference chains"
+      ],
+      "acceptance": "Claim inference works standalone, tests pass",
+      "files": ["src/lib/intelligence/claim-inference.ts"]
+    },
+    {
+      "id": "F015",
+      "name": "Validation Engine",
+      "passes": false,
+      "phase": "2-deterministic",
+      "steps": [
+        "Create src/lib/intelligence/validation-engine.ts",
+        "Implement enforcePhysicalConstraints() - Brix 0-30, omega 1-30",
+        "Implement validateMeasurement() - data quality checks",
+        "Implement isAnomalousMeasurement() - outlier detection",
+        "Write tests"
+      ],
+      "acceptance": "All predictions pass through validation, tests pass",
+      "files": ["src/lib/intelligence/validation-engine.ts"]
+    },
+    {
+      "id": "F016",
+      "name": "Orchestrator Service",
+      "passes": false,
+      "phase": "2-deterministic",
+      "steps": [
+        "Create src/lib/intelligence/orchestrator.ts",
+        "Implement routeToLayer() - decides deterministic/probabilistic/exception",
+        "Implement predictQuality() - main entry point",
+        "Add probabilistic stub for future ML integration",
+        "Wire existing prediction logic through orchestrator",
+        "Write integration tests"
+      ],
+      "acceptance": "All predictions routed through orchestrator, tests pass",
+      "files": ["src/lib/intelligence/orchestrator.ts"]
+    },
+    {
+      "id": "F017",
+      "name": "Predictions Table Migration",
+      "passes": false,
+      "phase": "3-feedback",
+      "steps": [
+        "Create supabase/migrations/003_predictions.sql",
+        "Define predictions table schema (cultivar, region, predicted_brix, confidence, etc.)",
+        "Run migration",
+        "Update prediction engine to store predictions",
+        "Write tests"
+      ],
+      "acceptance": "Predictions saved to DB, queryable, tests pass",
+      "files": ["supabase/migrations/003_predictions.sql"]
+    },
+    {
+      "id": "F018",
+      "name": "Actuals Table Migration",
+      "passes": false,
+      "phase": "3-feedback",
+      "steps": [
+        "Create supabase/migrations/004_actuals.sql",
+        "Define actuals table (source_type, actual_brix, actual_harvest_date)",
+        "Create API endpoint POST /api/actuals",
+        "Run migration",
+        "Write tests"
+      ],
+      "acceptance": "Actuals can be submitted via API, tests pass",
+      "files": ["supabase/migrations/004_actuals.sql", "src/app/api/actuals/route.ts"]
+    },
+    {
+      "id": "F019",
+      "name": "Calibrations Table Migration",
+      "passes": false,
+      "phase": "3-feedback",
+      "steps": [
+        "Create supabase/migrations/005_calibrations.sql",
+        "Define regional_calibrations table",
+        "Run migration",
+        "Write tests"
+      ],
+      "acceptance": "Calibrations table exists, queryable, tests pass",
+      "files": ["supabase/migrations/005_calibrations.sql"]
+    },
+    {
+      "id": "F020",
+      "name": "Calibration Engine",
+      "passes": false,
+      "phase": "3-feedback",
+      "steps": [
+        "Create src/lib/intelligence/calibration-engine.ts",
+        "Implement updateCalibration() - running mean/stddev from actuals",
+        "Implement applyCalibration() - adjust predictions with offsets",
+        "Implement confidence_boost calculation based on sample size",
+        "Write tests"
+      ],
+      "acceptance": "Calibrations applied to predictions, tests pass",
+      "files": ["src/lib/intelligence/calibration-engine.ts"]
+    },
+    {
+      "id": "F021",
+      "name": "Consumer Scan API",
+      "passes": false,
+      "phase": "3-feedback",
+      "steps": [
+        "Create POST /api/scans endpoint",
+        "Validate scan data (PLU, brix, location)",
+        "Store in actuals table",
+        "Trigger calibration update",
+        "Write tests"
+      ],
+      "acceptance": "Scans stored, calibration updated, tests pass",
+      "files": ["src/app/api/scans/route.ts"]
+    },
+    {
+      "id": "F022",
+      "name": "Exception Handler",
+      "passes": false,
+      "phase": "4-ai",
+      "steps": [
+        "Create supabase/migrations/006_exceptions.sql",
+        "Create src/lib/intelligence/exception-handler.ts",
+        "Implement shouldEscalate() - confidence thresholds",
+        "Implement addToReviewQueue()",
+        "Write tests"
+      ],
+      "acceptance": "Low-confidence predictions queued, tests pass",
+      "files": ["src/lib/intelligence/exception-handler.ts", "supabase/migrations/006_exceptions.sql"]
+    },
+    {
+      "id": "F023",
+      "name": "Accuracy Reporting",
+      "passes": false,
+      "phase": "4-ai",
+      "steps": [
+        "Create supabase/migrations/007_accuracy_reports.sql",
+        "Create src/lib/analytics/accuracy-reporter.ts",
+        "Implement generateReport() - MAE, % within thresholds",
+        "Create /api/admin/accuracy endpoint",
+        "Write tests"
+      ],
+      "acceptance": "Accuracy reports generated, tests pass",
+      "files": ["src/lib/analytics/accuracy-reporter.ts", "supabase/migrations/007_accuracy_reports.sql"]
+    },
+    {
+      "id": "F024",
+      "name": "Brix ML Service (MVP)",
+      "passes": false,
+      "phase": "4-ai",
+      "steps": [
+        "Create src/lib/intelligence/brix-ml-service.ts",
+        "Implement feature extraction (weather, soil, practices)",
+        "Implement simple ML model or call external API",
+        "A/B testing: formula vs ML-enhanced",
+        "Write tests"
+      ],
+      "acceptance": "ML predictions available, A/B framework works",
+      "files": ["src/lib/intelligence/brix-ml-service.ts"]
+    },
+    {
+      "id": "F025",
+      "name": "Init Script + CI/CD",
+      "passes": false,
+      "phase": "4-ai",
+      "steps": [
+        "Create init.sh for environment validation",
+        "Create .github/workflows/test.yml",
+        "Verify test suite runs in CI",
+        "Add build validation on PR",
+        "Document in README"
+      ],
+      "acceptance": "CI passes, init.sh validates environment",
+      "files": ["init.sh", ".github/workflows/test.yml"]
+    },
+    {
+      "id": "F026",
+      "name": "Admin Exception UI",
+      "passes": false,
+      "phase": "4-ai",
+      "depends_on": ["F022"],
+      "steps": [
+        "Create /admin/exceptions page",
+        "List pending exceptions with context",
+        "Allow approve/reject/escalate actions",
+        "Track resolution time metrics"
+      ],
+      "acceptance": "Exceptions can be resolved via UI",
+      "files": ["src/app/admin/exceptions/page.tsx"]
+    },
+    {
+      "id": "F027",
+      "name": "Model Versioning",
+      "passes": false,
+      "phase": "4-ai",
+      "depends_on": ["F024"],
+      "steps": [
+        "Create model_versions table",
+        "Store model artifacts with version ID",
+        "A/B routing by model version",
+        "Rollback mechanism"
+      ],
+      "acceptance": "Multiple model versions coexist, can rollback",
+      "files": ["supabase/migrations/008_model_versions.sql"]
+    },
+    {
+      "id": "F028",
+      "name": "Observability Dashboard",
+      "passes": false,
+      "phase": "4-ai",
+      "depends_on": ["F023"],
+      "steps": [
+        "Create /admin/monitoring page",
+        "Real-time accuracy metrics",
+        "Alert thresholds for RMSE increase",
+        "Historical accuracy trends"
+      ],
+      "acceptance": "Dashboard shows live accuracy, alerts work",
+      "files": ["src/app/admin/monitoring/page.tsx"]
+    },
+    {
+      "id": "F029",
+      "name": "API Rate Limiting",
+      "passes": false,
+      "phase": "3-feedback",
+      "depends_on": ["F021"],
+      "steps": [
+        "Add rate limiting middleware",
+        "Configure per-user and global limits",
+        "Return 429 with retry-after header",
+        "Log rate limit events"
+      ],
+      "acceptance": "Excessive requests throttled",
+      "files": ["src/middleware.ts"]
+    },
+    {
+      "id": "F030",
+      "name": "Historical Backfill",
+      "passes": false,
+      "phase": "4-ai",
+      "depends_on": ["F017", "F018", "F019"],
+      "steps": [
+        "Create backfill script",
+        "Generate predictions for past seasons",
+        "Import any available historical measurements",
+        "Seed calibrations with baseline offsets"
+      ],
+      "acceptance": "Historical data available for ML training",
+      "files": ["scripts/backfill-historical.ts"]
     }
   ]
 }
