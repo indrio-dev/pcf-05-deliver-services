@@ -155,7 +155,7 @@
     {
       "id": "F009",
       "name": "Reference Data Service",
-      "passes": false,
+      "passes": true,
       "phase": "1-foundation",
       "steps": [
         "Create src/lib/data/reference-data.ts",
@@ -165,7 +165,8 @@
         "Write tests for data service"
       ],
       "acceptance": "Tests pass, predictions work with DB or constants fallback",
-      "files": ["src/lib/data/reference-data.ts"]
+      "files": ["src/lib/data/reference-data.ts", "src/__tests__/reference-data-service.test.ts"],
+      "completion_notes": "Created reference data service with: (1) USE_DATABASE_REFERENCE_DATA feature flag; (2) In-memory cache with 5-minute TTL; (3) Async methods for cultivar, rootstock, region, GDD targets; (4) Graceful fallback to constants on DB error; (5) Sync versions for non-async contexts. 35 tests passing."
     },
     {
       "id": "F010",

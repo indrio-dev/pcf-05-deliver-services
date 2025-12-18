@@ -310,3 +310,69 @@ BLOCKERS:
 NEXT STEPS:
 - F009: Reference Data Service (DB + constants fallback with feature flag)
 - F010: Seed Crops Table (full 15+ crops with GDD targets)
+
+=== SESSION 2025-12-18 (F009 Reference Data Service) ===
+
+ORIENTATION:
+- Continued from SPIKE-C (ML Architecture Decision)
+- All 3 spikes complete, entering Phase 1: Foundation
+- Selected F009: Reference Data Service
+
+WORK COMPLETED:
+- F009 (Reference Data Service): COMPLETE
+  - Created src/lib/data/reference-data.ts
+  - Implemented reference data service with:
+
+  1. FEATURE FLAG: USE_DATABASE_REFERENCE_DATA
+     - Environment variable controlled
+     - When false: use constants directly (fast, no DB)
+     - When true: query Supabase, fallback to constants
+
+  2. IN-MEMORY CACHE
+     - ReferenceDataCache class with Map + TTL
+     - Default 5-minute TTL (configurable via REFERENCE_DATA_CACHE_TTL)
+     - Cache stats for monitoring
+
+  3. ASYNC METHODS
+     - getCultivar(id) → CultivarQualityProfile
+     - getCultivarsForCrop(cropType) → CultivarQualityProfile[]
+     - getCultivarBaseBrix(id) → number
+     - getRootstock(id) → Rootstock
+     - getRootstockBrixModifier(id) → number
+     - getRootstocksForCategory(category) → Rootstock[]
+     - getRegion(id) → GrowingRegion
+     - getRegionsByState(state) → GrowingRegion[]
+     - getGddTargets(cropId) → GddTargets
+     - getAllCropIds() → string[]
+
+  4. GRACEFUL FALLBACK
+     - Try Supabase first (if flag enabled)
+     - Catch errors, return constants
+     - No hard failures on DB issues
+
+  5. SYNC VERSIONS (referenceDataSync)
+     - For use in constructors/non-async contexts
+     - Direct pass-through to constants
+
+  - Created 35 tests for service
+
+TEST RESULTS:
+- Test Suites: 1 passed
+- Tests: 35 passed (reference data service)
+- Combined total: 158 tests across all files
+
+KEY FILES CREATED:
+- src/lib/data/reference-data.ts (reference data service)
+- src/__tests__/reference-data-service.test.ts (35 tests)
+
+GIT STATUS:
+- feature_list.json F009 marked passes: true
+- New service and tests created
+
+BLOCKERS:
+- None
+
+NEXT STEPS:
+- F010: Seed Crops Table (full crops with GDD in Supabase)
+- F011: Seed Cultivars Table
+- F012: Seed Rootstocks Table
