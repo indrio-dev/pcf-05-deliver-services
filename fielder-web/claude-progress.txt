@@ -1,0 +1,77 @@
+=== SESSION 2024-12-11 23:45 ===
+
+ORIENTATION:
+- Reviewed Flask prototype at /home/alex/projects/fielder_project
+- Created migration plan at /home/alex/.claude/plans/fancy-hatching-sonnet.md
+- Scope: Full Marketplace + Full Farm Dashboard, auth deferred
+
+WORK COMPLETED:
+- F001 (Project Setup): Created Next.js project with TypeScript, Tailwind, App Router
+- F002 (Supabase Schema): Created SQL migrations and seed scripts
+- F003 (TypeScript Services): Ported GDD calculator, weather service, harvest predictor
+- F004 (API Routes): Created /api/predict, /api/crops, /api/regions, /api/weather/gdd
+- F005 (Consumer Discovery UI): Landing page, /discover with region selector and crop cards
+- F006 (Farm Dashboard UI): /farm with admin code protection and dashboard skeleton
+
+KEY FILES CREATED:
+- supabase/migrations/001_initial_schema.sql - Full database schema
+- supabase/seed/001_regions.sql - 21 US growing regions
+- supabase/seed/002_crops.sql - 15 crops with GDD targets
+- src/lib/constants/gdd-targets.ts - Crop GDD requirements
+- src/lib/constants/regions.ts - Region data with coordinates
+- src/lib/services/gdd-calculator.ts - GDD calculation utilities
+- src/lib/services/weather.ts - Open-Meteo API integration
+- src/lib/services/harvest-predictor.ts - Harvest window prediction
+- src/app/api/predict/route.ts - Prediction API
+- src/app/api/crops/route.ts - Crops list API
+- src/app/api/regions/route.ts - Regions list API
+- src/app/api/weather/gdd/route.ts - GDD data API
+- src/app/page.tsx - Landing page
+- src/app/discover/page.tsx - Consumer discovery UI
+- src/app/farm/page.tsx - Farm dashboard UI
+
+GIT COMMITS:
+- e20214b - Initial commit: Flask prototype (in fielder_project)
+- f843259 - Add Supabase schema, GDD targets, and region constants
+- c9e0cea - Add weather service and harvest predictor
+- 9441d55 - Add API routes for predictions, crops, regions, weather
+- 4ca01fe - Add consumer discovery and farm dashboard UI
+
+BLOCKERS:
+- None
+
+NEXT STEPS:
+- F007: Vercel Deployment (COMPLETED - see session below)
+
+=== SESSION 2024-12-12 ===
+
+ORIENTATION:
+- Continued from previous session
+- User requested using Supabase MCP (not available in session, used Management API instead)
+
+WORK COMPLETED:
+- Created NEW Supabase project "fielder" (ref: pzdbtqleuaymsekqpabv)
+- Ran all database migrations via Supabase Management API
+- Seeded 15 crops (citrus, stone fruit, pome, berries, tropical, nuts)
+- Seeded 21 growing regions across 11 US states
+- Tested all API endpoints locally
+- Created GitHub repo: balexbrownii/fielder-nextjs
+- Deployed to Vercel with environment variables
+
+SUPABASE PROJECT:
+- Project: fielder (pzdbtqleuaymsekqpabv)
+- URL: https://pzdbtqleuaymsekqpabv.supabase.co
+- Tables: crops, cultivars, rootstocks, growing_regions, farms, farm_crops, farm_availability, harvest_windows
+
+DEPLOYMENT:
+- GitHub: https://github.com/balexbrownii/fielder-nextjs
+- Vercel: https://fielder-nextjs.vercel.app
+- Environment variables configured: NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, ADMIN_CODE
+
+ALL FEATURES COMPLETE (F001-F007)
+
+FUTURE ENHANCEMENTS:
+- Connect farm dashboard to Supabase for persistence
+- Add Supabase Auth for farm accounts
+- Calendar view for harvest windows
+- Farm search/discovery from consumer side

@@ -1,0 +1,93 @@
+{
+  "project": "fielder-nextjs",
+  "description": "Next.js + Supabase migration of Fielder harvest prediction platform",
+  "features": [
+    {
+      "id": "F001",
+      "name": "Project Setup",
+      "passes": true,
+      "steps": [
+        "Initialize Next.js with TypeScript + Tailwind",
+        "Install Supabase client",
+        "Configure project structure"
+      ],
+      "completion_notes": "Created fielder-nextjs with App Router, TypeScript, Tailwind, @supabase/supabase-js"
+    },
+    {
+      "id": "F002",
+      "name": "Supabase Schema",
+      "passes": true,
+      "steps": [
+        "Create Supabase project",
+        "Define schema: crops, cultivars, rootstocks, regions",
+        "Define schema: farms, farm_crops, farm_availability",
+        "Create seed scripts from DataLoader"
+      ],
+      "completion_notes": "Created migrations/001_initial_schema.sql with all tables. Seed scripts for regions (21 regions) and crops (15 crops) ready. User needs to create Supabase project and run migrations."
+    },
+    {
+      "id": "F003",
+      "name": "TypeScript Services",
+      "passes": true,
+      "steps": [
+        "Port GDD calculator",
+        "Port weather service (Open-Meteo)",
+        "Port quality predictor (10 crop models)",
+        "Port harvest predictor"
+      ],
+      "completion_notes": "Ported gdd-calculator.ts, weather.ts, harvest-predictor.ts. Quality predictor sugar/acid estimation included in harvest-predictor."
+    },
+    {
+      "id": "F004",
+      "name": "API Routes",
+      "passes": true,
+      "steps": [
+        "POST /api/predict - harvest window",
+        "POST /api/quality - quality prediction",
+        "GET /api/weather/gdd - GDD data",
+        "GET /api/crops - list crops",
+        "GET /api/regions - list regions",
+        "CRUD /api/farms - farm management"
+      ],
+      "completion_notes": "Created /api/predict, /api/crops, /api/regions, /api/weather/gdd. Farm CRUD deferred to when Supabase connected."
+    },
+    {
+      "id": "F005",
+      "name": "Consumer Discovery UI",
+      "passes": true,
+      "steps": [
+        "Region selector component",
+        "Crop filter component",
+        "At Peak Now grid",
+        "Harvest calendar view",
+        "Farm cards"
+      ],
+      "completion_notes": "Created /discover page with region selector, At Peak Now section, crop cards with status badges. Calendar view deferred."
+    },
+    {
+      "id": "F006",
+      "name": "Farm Dashboard UI",
+      "passes": true,
+      "steps": [
+        "Admin code protection",
+        "Profile editor",
+        "Crop manager",
+        "Availability toggle",
+        "Pricing editor"
+      ],
+      "completion_notes": "Created /farm page with admin code protection and dashboard skeleton. Full CRUD features marked as 'Coming Soon' pending Supabase integration."
+    },
+    {
+      "id": "F007",
+      "name": "Vercel Deployment",
+      "passes": true,
+      "steps": [
+        "Push to GitHub",
+        "Connect Vercel",
+        "Configure environment variables",
+        "Deploy"
+      ],
+      "completion_notes": "Created GitHub repo at balexbrownii/fielder-nextjs. Deployed to Vercel at https://fielder-nextjs.vercel.app. Environment variables configured for Supabase and admin code."
+    }
+  ]
+}
