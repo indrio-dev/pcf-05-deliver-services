@@ -137,6 +137,13 @@ import {
   PostHarvestBehavior,
 } from '../constants/quality-tiers'
 import { calculateCumulativeGDD, predictBrixFromGDD, predictHarvestWindow } from './gdd'
+import {
+  selectAlgorithm,
+  getMethodologyDefinition,
+  type RAlgorithmType,
+  type EMetricType,
+  type AlgorithmSelection,
+} from '../constants/ripening-methodology'
 
 // =============================================================================
 // TYPES
@@ -277,6 +284,15 @@ export interface QualityPredictionResult {
   harvestWindowEnd?: Date
   daysToPeak?: number
   freshnessWindowDays?: number
+
+  // R Methodology selection
+  rMethodology?: {
+    algorithmType: RAlgorithmType
+    predictsMetric: EMetricType
+    modelConfidence: 'high' | 'medium' | 'low'
+    notes: string
+    requiredInputs: string[]
+  }
 
   // Metadata
   predictionBasis: string            // What data the prediction is based on
@@ -871,6 +887,41 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
     warnings.push('No farm practice data - using neutral estimate')
   }
 
+  // === R METHODOLOGY SELECTION ===
+  // Determine which ripening algorithm to use based on product category
+  // This maps product type to the appropriate prediction model and E metric
+  const cropType = cultivarProfile?.cropType ?? input.cultivarId
+  // Map cropType to ShareProfileCategory (e.g., 'orange' -> 'citrus', 'pecan' -> 'nuts')
+  const categoryMapping: Record<string, string> = {
+    // Citrus types
+    orange: 'citrus', grapefruit: 'citrus', lemon: 'citrus', lime: 'citrus', tangerine: 'citrus', mandarin: 'citrus',
+    // Stone fruit
+    peach: 'stone_fruit', plum: 'stone_fruit', cherry: 'stone_fruit', apricot: 'stone_fruit', nectarine: 'stone_fruit',
+    // Pome fruit
+    apple: 'pome_fruit', pear: 'pome_fruit',
+    // Berries
+    blueberry: 'berry', strawberry: 'berry', raspberry: 'berry', blackberry: 'berry',
+    // Nuts
+    pecan: 'nuts', walnut: 'nuts', almond: 'nuts', pistachio: 'nuts', hazelnut: 'nuts',
+    // Melon
+    watermelon: 'melon', cantaloupe: 'melon', honeydew: 'melon',
+    // Tropical
+    mango: 'tropical', papaya: 'tropical', pineapple: 'tropical', banana: 'tropical', avocado: 'tropical',
+    // Animal products
+    beef: 'beef', bison: 'bison', pork: 'pork', chicken: 'poultry', turkey: 'poultry', eggs: 'eggs', dairy: 'dairy',
+    // Seafood
+    oyster: 'seafood', crab: 'seafood', shrimp: 'seafood', fish: 'seafood', salmon: 'seafood',
+    // Other
+    coffee: 'coffee', honey: 'honey',
+  }
+  const category = categoryMapping[cropType.toLowerCase()] ?? cropType.toLowerCase()
+  const rMethodologySelection = selectAlgorithm(category as import('../constants/share-profiles').ShareProfileCategory)
+
+  // Add warning if model needs validation
+  if (rMethodologySelection.modelConfidence === 'low') {
+    warnings.push(`R methodology for '${category}' needs validation - predictions may be less accurate`)
+  }
+
   // === RIPEN (R) ===
   const phenology = getCropPhenology(
     cultivarProfile?.cropType ?? input.cultivarId,
@@ -1124,6 +1175,13 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
     agricultural,
     ripen,
     enrich,
+    rMethodology: {
+      algorithmType: rMethodologySelection.algorithmType,
+      predictsMetric: rMethodologySelection.predictsMetric,
+      modelConfidence: rMethodologySelection.modelConfidence,
+      notes: rMethodologySelection.notes,
+      requiredInputs: rMethodologySelection.requiredInputs,
+    },
     optimalHarvestDate,
     harvestWindowStart,
     harvestWindowEnd,

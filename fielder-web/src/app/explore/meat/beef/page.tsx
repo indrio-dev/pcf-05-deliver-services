@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
-import { BEEF_PROFILES, type ShareProfile } from '@/lib/constants/share-profiles'
+import { BEEF_PROFILES, type AnimalFreshShareProfile } from '@/lib/constants/share-profiles'
 import { getGridsForProfile, type ShareProfileGrid } from '@/lib/constants/profile-grids'
 
 type SortOption = 'omega' | 'price' | 'code'
@@ -181,7 +181,7 @@ function ProfileCard({
   showPillars,
   onTogglePillars,
 }: {
-  profile: ShareProfile
+  profile: AnimalFreshShareProfile
   isExpanded: boolean
   onToggleExpanded: () => void
   showPillars: boolean

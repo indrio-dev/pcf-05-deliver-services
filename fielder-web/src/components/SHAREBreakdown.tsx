@@ -108,7 +108,7 @@ const TIER_CONFIG: Record<QualityTier, {
     description: 'High quality, heritage/regenerative practices',
   },
   standard: {
-    label: 'Standard',
+    label: 'Select',
     color: 'bg-blue-100 text-blue-800 border-blue-300',
     description: 'Good quality, meets expectations',
   },
@@ -339,16 +339,20 @@ export function SHAREBreakdown({
     enrich: pillarLabels?.enrich || PILLAR_CONFIG.E.label,
   }
 
-  // Determine primary quality metric
-  const showBrix = brixEstimate !== undefined || analysis?.predictedBrix !== undefined || profile?.estimatedBrixRange
-  const showOmega = omegaRatioEstimate !== undefined || profile?.estimatedOmegaRatioRange
+  // Determine primary quality metric (with type guards for polymorphic ShareProfile)
+  const profileHasBrix = profile && 'estimatedBrixRange' in profile
+  const profileHasOmega = profile && 'estimatedOmegaRatioRange' in profile
+  const showBrix = brixEstimate !== undefined || analysis?.predictedBrix !== undefined || profileHasBrix
+  const showOmega = omegaRatioEstimate !== undefined || profileHasOmega
 
-  // Get Brix value
-  const brixValue = analysis?.brixRange || brixEstimate || profile?.estimatedBrixRange
+  // Get Brix value (for produce profiles)
+  const brixValue = analysis?.brixRange || brixEstimate || (profileHasBrix ? profile.estimatedBrixRange : undefined)
   const brixBreakdown = analysis?.enrich.details
 
-  // Get omega value
-  const omegaValue = omegaRatioEstimate || profile?.estimatedOmegaRatioMidpoint || profile?.estimatedOmegaRatioRange
+  // Get omega value (for animal profiles)
+  const omegaValue = omegaRatioEstimate ||
+    (profileHasOmega && 'estimatedOmegaRatioMidpoint' in profile ? profile.estimatedOmegaRatioMidpoint : undefined) ||
+    (profileHasOmega ? profile.estimatedOmegaRatioRange : undefined)
 
   // Data quality level
   const dataLevel = analysis?.dataQualityLevel || 'basic'

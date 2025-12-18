@@ -21,6 +21,7 @@ import type { QualityTier, CultivarQualityProfile, HeritageIntent } from '@/lib/
 import { CULTIVAR_QUALITY_PROFILES, QUALITY_TIER_INFO } from '@/lib/constants/quality-tiers'
 import { getRootstock } from '@/lib/constants/rootstocks'
 import type { ShareProfile } from '@/lib/constants/share-profiles'
+import { getCategoryConfig, type QualityMetricType } from '@/lib/constants/category-config'
 
 // =============================================================================
 // TYPES
@@ -45,8 +46,18 @@ export interface SHAREAnalysis {
 
   // Quality outcome (E pillar result)
   qualityTier: QualityTier
+
+  // Primary quality metric from category config
+  primaryQualityMetric: QualityMetricType
+  qualityMetricLabel: string  // Human-readable label
+
+  // Brix prediction (produce only - for backward compatibility)
   predictedBrix: number
   brixRange: [number, number]
+
+  // Omega ratio estimate (meat, seafood, eggs, dairy)
+  omegaRatioEstimate?: number
+  omegaRatioRange?: [number, number]
 
   // Confidence in the overall analysis
   overallConfidence: 'high' | 'medium' | 'low'
@@ -85,8 +96,9 @@ export interface SHAREInputs {
   // ShareProfile (provides claim-based pillar summaries)
   shareProfile?: ShareProfile | null
 
-  // Category for context
+  // Category for context (from centralized category-config)
   category?: string
+  subcategory?: string
 }
 
 // =============================================================================
@@ -471,7 +483,7 @@ function calculateEnrichPillar(
   cultivarProfile?: CultivarQualityProfile,
   shareProfile?: ShareProfile | null,
   hasFarmPractices?: boolean
-): { enrich: SHAREPillarScore; predictedBrix: number; brixRange: [number, number] } {
+): { enrich: SHAREPillarScore; predictedBrix: number; brixRange: [number, number]; qualityTier: QualityTier } {
 
   // Get base Brix from cultivar genetic potential or ShareProfile
   let baseBrix: number
@@ -483,7 +495,7 @@ function calculateEnrichPillar(
   } else if (cultivarProfile?.researchPeakBrix) {
     baseBrix = cultivarProfile.researchPeakBrix * 0.9 // Use 90% of peak as average
     brixSource = `${cultivarProfile.cultivarName} cultivar estimate`
-  } else if (shareProfile?.estimatedBrixRange) {
+  } else if (shareProfile && 'estimatedBrixRange' in shareProfile) {
     baseBrix = (shareProfile.estimatedBrixRange[0] + shareProfile.estimatedBrixRange[1]) / 2
     brixSource = `${shareProfile.name} profile baseline`
   } else {
@@ -531,11 +543,20 @@ function calculateEnrichPillar(
     Math.round((predictedBrix + uncertainty) * 10) / 10,
   ]
 
-  // Determine quality tier from predicted Brix
-  let qualityTier: QualityTier = 'commodity'
-  if (predictedBrix >= 14) qualityTier = 'artisan'
-  else if (predictedBrix >= 12) qualityTier = 'premium'
-  else if (predictedBrix >= 10) qualityTier = 'standard'
+  // Determine quality tier: Use cultivar's genetic tier if available, otherwise infer from Brix
+  // This is important because different crops have different Brix scales
+  // (grapefruit peaks at ~11° while oranges can hit 14°)
+  let qualityTier: QualityTier
+  if (cultivarProfile?.qualityTier) {
+    // Use the cultivar's defined genetic quality tier
+    qualityTier = cultivarProfile.qualityTier
+  } else {
+    // Fall back to Brix-based inference for unknown cultivars
+    qualityTier = 'commodity'
+    if (predictedBrix >= 14) qualityTier = 'artisan'
+    else if (predictedBrix >= 12) qualityTier = 'premium'
+    else if (predictedBrix >= 10) qualityTier = 'standard'
+  }
 
   // Use ShareProfile enrichment summary if available, otherwise build from data
   let summary: string
@@ -557,7 +578,7 @@ function calculateEnrichPillar(
     confidence: avgConfidence >= 0.75 ? 'high' : avgConfidence >= 0.5 ? 'medium' : 'low',
   }
 
-  return { enrich, predictedBrix, brixRange }
+  return { enrich, predictedBrix, brixRange, qualityTier }
 }
 
 // =============================================================================
@@ -566,8 +587,14 @@ function calculateEnrichPillar(
 
 /**
  * Generate complete SHARE analysis from available data
+ * Now category-aware using centralized config from /lib/constants/category-config.ts
  */
 export function analyzeSHARE(inputs: SHAREInputs): SHAREAnalysis {
+  // Get category config for category-appropriate quality metrics
+  const categoryConfig = getCategoryConfig(inputs.category || 'fruit', inputs.subcategory)
+  const primaryQualityMetric = categoryConfig.qualityMetrics.primary
+  const qualityMetricLabel = categoryConfig.qualityMetrics.displayName
+
   // Find cultivar profile if not provided
   const cultivarProfile = inputs.cultivarProfile ||
     CULTIVAR_QUALITY_PROFILES.find(p => p.cultivarId === inputs.cultivarId)
@@ -593,25 +620,20 @@ export function analyzeSHARE(inputs: SHAREInputs): SHAREAnalysis {
   )
   const ripen = scoreRipenPillar(inputs.timing, shareProfile)
 
-  // Calculate E pillar (the outcome)
+  // Calculate E pillar (the outcome) - includes quality tier determination
   const hasFarmPractices = inputs.practices?.mineralizedSoil !== undefined
-  const { enrich, predictedBrix, brixRange } = calculateEnrichPillar(
+  const enrichResult = calculateEnrichPillar(
     soil, heritage, agricultural, ripen,
     cultivarProfile, shareProfile, hasFarmPractices
   )
-
-  // Determine quality tier
-  let qualityTier: QualityTier = 'commodity'
-  if (predictedBrix >= 14) qualityTier = 'artisan'
-  else if (predictedBrix >= 12) qualityTier = 'premium'
-  else if (predictedBrix >= 10) qualityTier = 'standard'
+  const { enrich, predictedBrix, brixRange, qualityTier } = enrichResult
 
   // Overall confidence
   const confidenceScores = [soil.confidence, heritage.confidence, agricultural.confidence, ripen.confidence]
   const highCount = confidenceScores.filter(c => c === 'high').length
   const overallConfidence = highCount >= 3 ? 'high' : highCount >= 2 ? 'medium' : 'low'
 
-  // Generate insights
+  // Generate insights (category-aware)
   const insights: string[] = []
 
   if (agricultural.confidence === 'low') {
@@ -627,6 +649,21 @@ export function analyzeSHARE(inputs: SHAREInputs): SHAREAnalysis {
     insights.push('Regional terroir known; actual impact depends on farm practices')
   }
 
+  // Calculate omega ratio estimate for meat/seafood/eggs/dairy
+  let omegaRatioEstimate: number | undefined
+  let omegaRatioRange: [number, number] | undefined
+
+  if (primaryQualityMetric === 'omega_ratio' && shareProfile && 'estimatedOmegaRatioMidpoint' in shareProfile) {
+    omegaRatioEstimate = shareProfile.estimatedOmegaRatioMidpoint
+    // Calculate range based on feeding regime variance
+    const variance = shareProfile.qualityTier === 'artisan' ? 1 :
+                     shareProfile.qualityTier === 'premium' ? 2 : 4
+    omegaRatioRange = [
+      Math.max(1, omegaRatioEstimate - variance),
+      omegaRatioEstimate + variance
+    ]
+  }
+
   return {
     soil,
     heritage,
@@ -634,8 +671,12 @@ export function analyzeSHARE(inputs: SHAREInputs): SHAREAnalysis {
     ripen,
     enrich,
     qualityTier,
+    primaryQualityMetric,
+    qualityMetricLabel,
     predictedBrix,
     brixRange,
+    omegaRatioEstimate,
+    omegaRatioRange,
     overallConfidence,
     dataQualityLevel: hasFarmPractices ? 'enhanced' : 'basic',
     insights,
@@ -643,13 +684,63 @@ export function analyzeSHARE(inputs: SHAREInputs): SHAREAnalysis {
 }
 
 /**
- * Get quality tier from Brix value
+ * Get quality tier from Brix value (produce)
  */
 export function getQualityTierFromBrix(brix: number): QualityTier {
   if (brix >= 14) return 'artisan'
   if (brix >= 12) return 'premium'
   if (brix >= 10) return 'standard'
   return 'commodity'
+}
+
+/**
+ * Get quality tier from omega ratio (meat, seafood, eggs, dairy)
+ * NOTE: For omega ratio, LOWER is better (unlike Brix where higher is better)
+ * - ≤3:1 is exceptional (grass-fed)
+ * - 3-6:1 is premium
+ * - 6-12:1 is standard
+ * - >12:1 is commodity (feedlot)
+ */
+export function getQualityTierFromOmegaRatio(ratio: number): QualityTier {
+  if (ratio <= 3) return 'artisan'
+  if (ratio <= 6) return 'premium'
+  if (ratio <= 12) return 'standard'
+  return 'commodity'
+}
+
+/**
+ * Get quality tier based on category-appropriate metric
+ */
+export function getQualityTier(
+  metricType: QualityMetricType,
+  value: number
+): QualityTier {
+  switch (metricType) {
+    case 'brix':
+      return getQualityTierFromBrix(value)
+    case 'omega_ratio':
+      return getQualityTierFromOmegaRatio(value)
+    case 'oil_content':
+      // For nuts: higher oil content = better
+      if (value >= 72) return 'artisan'
+      if (value >= 68) return 'premium'
+      if (value >= 64) return 'standard'
+      return 'commodity'
+    case 'fat_percentage':
+      // For dairy: higher fat = better (butterfat)
+      if (value >= 4.5) return 'artisan'
+      if (value >= 4.0) return 'premium'
+      if (value >= 3.5) return 'standard'
+      return 'commodity'
+    case 'protein_content':
+      // For grains: higher protein = better
+      if (value >= 14) return 'artisan'
+      if (value >= 12) return 'premium'
+      if (value >= 10) return 'standard'
+      return 'commodity'
+    default:
+      return 'standard' // Default for 'none' or unknown
+  }
 }
 
 /**
