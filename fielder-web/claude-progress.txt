@@ -251,3 +251,62 @@ BLOCKERS:
 NEXT STEPS:
 - SPIKE-C: ML Architecture Decision (ADR for ML hosting)
 - Or F009: Reference Data Service (implements DB + constants fallback pattern)
+
+=== SESSION 2025-12-18 (SPIKE-C ML Architecture Decision) ===
+
+ORIENTATION:
+- Continued from SPIKE-B (Rule Extraction Baseline)
+- User requested continuous progress through harness sequence
+- Selected SPIKE-C: ML Architecture Decision
+
+WORK COMPLETED:
+- SPIKE-C (ML Architecture Decision): COMPLETE
+  - Created ADR-001: ML Architecture for Fielder Intelligence Layer
+  - Four key architectural decisions made:
+
+  1. ML HOSTING: Hybrid Architecture
+     - TypeScript inference in Next.js/Vercel Edge for simple models
+     - Python for training (GitHub Actions or Supabase Cron)
+     - ONNX.js escape hatch for complex browser models
+     - Separate Python service only if CV prediction needs GPU
+
+  2. TRAINING PIPELINE: Batch with Weekly Retraining
+     - Extract → Validate → Train → Evaluate → Deploy → Monitor
+     - Quality gates: ML must beat baseline or keep formula
+     - Manual review of results before promotion
+
+  3. MODEL STORAGE: Supabase Tables + Storage
+     - Small models (calibrations, coefficients): JSONB in tables
+     - Large models (ONNX, TensorFlow.js): Supabase Storage
+     - S3 fallback path defined if needed
+
+  4. A/B TESTING: Database-Driven Framework
+     - Consistent hash assignment (same user/region = same variant)
+     - Feature flags for traffic splitting
+     - Metrics: MAE, RMSE, % within 1 Brix
+     - Manual conclusion after statistical significance
+
+  - Defined schema for model_versions and regional_calibrations tables
+  - Mapped implementation to existing feature list (F017-F030)
+
+KEY FILES CREATED:
+- docs/adr-ml-architecture.md (comprehensive ADR with diagrams)
+
+DECISIONS SUMMARY:
+| Decision | Choice | Rationale |
+|----------|--------|-----------|
+| Hosting | Hybrid (TS inference + Python training) | Start simple, upgrade path clear |
+| Training | Batch weekly | Stable, auditable, agricultural data slow-changing |
+| Storage | Supabase tables/storage | Integrated, S3 if needed |
+| A/B | Database-driven | No deploy to change tests |
+
+GIT STATUS:
+- feature_list.json SPIKE-C marked passes: true
+- docs/adr-ml-architecture.md created
+
+BLOCKERS:
+- None
+
+NEXT STEPS:
+- F009: Reference Data Service (DB + constants fallback with feature flag)
+- F010: Seed Crops Table (full 15+ crops with GDD targets)

@@ -123,7 +123,7 @@
     {
       "id": "SPIKE-C",
       "name": "ML Architecture Decision",
-      "passes": false,
+      "passes": true,
       "phase": "0-spikes",
       "steps": [
         "Decide: Supabase Edge Functions vs separate Python service",
@@ -133,7 +133,8 @@
         "Create Architecture Decision Record (ADR)"
       ],
       "acceptance": "ADR created with ML hosting decisions",
-      "files": ["docs/adr-ml-architecture.md"]
+      "files": ["docs/adr-ml-architecture.md"],
+      "completion_notes": "Created ADR-001 with 4 key decisions: (1) Hybrid hosting - TypeScript inference in Next.js/Edge, Python for training; (2) Batch training pipeline with weekly retraining; (3) Supabase tables for small models, Storage for larger artifacts, S3 fallback; (4) Database-driven A/B testing with consistent hash assignment. Defined model_versions and regional_calibrations schema."
     },
     {
       "id": "F008",
