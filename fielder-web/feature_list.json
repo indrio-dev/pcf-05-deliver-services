@@ -503,6 +503,42 @@
       "acceptance": "Historical data available for ML training",
       "files": ["scripts/backfill-historical.ts"],
       "completion_notes": "Created scripts/backfill-historical.ts with: (1) Cultivar-region mappings for 12 cultivars across 21 regions; (2) Harvest season definitions per crop type; (3) Gaussian-distributed synthetic actuals from predictions; (4) Calibration calculation with Welford's running mean/stddev; (5) Command-line options: --dry-run, --seasons=N, --samples=N; (6) Batch inserts for predictions and actuals; (7) Upsert for calibrations with unique constraint. Added ts-node dependency and npm scripts: backfill, backfill:dry-run. Created unique index on regional_calibrations. 861 tests passing."
+    },
+    {
+      "id": "F031",
+      "name": "Data Model Clarification",
+      "passes": false,
+      "phase": "5-refinement",
+      "steps": [
+        "Audit naming: Product vs ProductType vs ProductVariant across codebase",
+        "Decide canonical naming: Product = SKU, ProductType = taxonomy level",
+        "Rename Product in product-model.ts to ProductSKU or ProductVariant if needed",
+        "Update all references and imports",
+        "Document the hierarchy clearly: Category → ProductType → Variety → Cultivar → ProductSKU",
+        "Add JSDoc comments explaining the distinction"
+      ],
+      "acceptance": "Clear, unambiguous naming throughout codebase with documentation",
+      "files": ["src/lib/constants/products.ts", "src/lib/constants/product-model.ts"],
+      "notes": "Current state: 'Product' is overloaded - means taxonomy level in products.ts but purchasable SKU in product-model.ts. 'product_variant' referenced in enrich-measurements.ts but no formal interface. Need to clarify: Taxonomy (for discovery) vs Product (what you buy) vs ProductVariant (SKU with retail attributes)."
+    },
+    {
+      "id": "F032",
+      "name": "Discovery Endpoint - What's At Peak Today",
+      "passes": false,
+      "phase": "5-refinement",
+      "depends_on": ["F031"],
+      "steps": [
+        "Create GET /api/discover/peak endpoint",
+        "Iterate all Cultivar × Region combinations",
+        "Run predictions for current date/GDD",
+        "Filter to harvestStatus === 'peak' or 'optimal'",
+        "Group results by category",
+        "Return aggregated 'what's at peak today' list",
+        "Add caching (results valid for ~1 day)"
+      ],
+      "acceptance": "Endpoint returns all products currently at peak quality across all regions",
+      "files": ["src/app/api/discover/peak/route.ts"],
+      "notes": "This is the ORIGINAL vision for the predictor - a discovery engine showing what's best RIGHT NOW. Not just single predictions, but a daily view of peak quality items across all categories, regions, and cultivars."
     }
   ]
 }
