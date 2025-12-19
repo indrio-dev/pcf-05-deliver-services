@@ -1,20 +1,32 @@
 /**
  * POST /api/predict
  *
- * Predict harvest window for a crop/region combination
+ * UNIFIED PREDICTION API
+ *
+ * This route uses the canonical quality-predictor as the single source of truth
+ * for all SHARE quality predictions. This ensures consistency across:
+ * - API consumers
+ * - Web UI pages
+ * - Mobile apps
+ *
+ * Core Formula: Peak Brix = Cultivar_Base + Rootstock_Mod + Age_Mod + Timing_Mod
  */
 
 import { NextRequest, NextResponse } from 'next/server'
 import { weatherService } from '@/lib/services/weather'
-import { harvestPredictor } from '@/lib/services/harvest-predictor'
-import { getGddTargets } from '@/lib/constants/gdd-targets'
 import { getRegion, US_GROWING_REGIONS } from '@/lib/constants/regions'
-import { subDays } from 'date-fns'
+import {
+  predictQuality,
+  findOptimalHarvestTime,
+  type QualityPredictionInput,
+} from '@/lib/prediction/quality-predictor'
+import { getCropPhenology, getBloomDate } from '@/lib/constants/crop-phenology'
+import { format } from 'date-fns'
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { crop, region, cultivar_brix, rootstock_mod, tree_age } = body
+    const { crop, region, cultivar_brix, rootstock_mod, tree_age, rootstock_id, cultivar_id } = body
 
     // Validate required fields
     if (!crop || !region) {
@@ -41,81 +53,100 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Get GDD targets for crop
-    const targets = getGddTargets(crop)
+    // Get phenology data (single source of truth for GDD parameters)
+    const phenology = getCropPhenology(crop, region)
+    const gddBase = phenology?.gddBase ?? 50
+    const gddToMaturity = phenology?.gddToMaturity ?? 2000
+    const gddToPeak = phenology?.gddToPeak ?? gddToMaturity + 300
+    const gddWindow = phenology?.gddWindow ?? 400
 
-    // Get recent weather to calculate current GDD accumulation
-    // Use Jan 1 as reference for perennial crops, or estimate bloom date
+    // Get bloom date for this year
     const today = new Date()
-    const referenceDate = new Date(today.getFullYear(), 0, 1) // Jan 1
+    const bloomDate = getBloomDate(crop, region, today.getFullYear())
+    const referenceDate = bloomDate ?? new Date(today.getFullYear(), 0, 1)
 
-    // Get GDD accumulation from reference date
+    // Get actual GDD accumulation from weather API
     const gddData = await weatherService.getGddAccumulation(
       region,
       referenceDate,
-      targets.baseTemp
+      gddBase
     )
 
-    // Predict harvest window
-    const window = harvestPredictor.predictHarvestWindow(
-      crop,
-      region,
-      gddData.totalGdd,
-      gddData.avgDailyGdd
-    )
-
-    // Format response
-    const formatted = harvestPredictor.formatHarvestWindow(window)
-    const status = harvestPredictor.getHarvestStatus(window)
-
-    // Estimate quality if Brix parameters provided
-    let quality = null
-    if (cultivar_brix) {
-      const brix = harvestPredictor.predictBrix(
-        cultivar_brix,
-        rootstock_mod || 0,
-        tree_age || null,
-        gddData.totalGdd,
-        targets.gddToPeak || targets.gddToMaturity
-      )
-      quality = brix
+    // Use the canonical quality predictor
+    const cultivarIdToUse = cultivar_id || crop
+    const predictionInput: QualityPredictionInput = {
+      cultivarId: cultivarIdToUse,
+      regionId: region,
+      rootstockId: rootstock_id,
+      treeAgeYears: tree_age,
+      currentGDD: gddData.totalGdd,
+      currentDate: today,
     }
 
-    // Estimate sugar/acid for citrus
-    let sugarAcid = null
-    if (crop.includes('orange') || crop.includes('grapefruit') || crop.includes('tangerine') || crop.includes('satsuma')) {
-      sugarAcid = harvestPredictor.estimateSugarAcid(gddData.totalGdd)
-    }
+    const prediction = predictQuality(predictionInput)
+
+    // Get optimal harvest timing
+    const harvestTiming = findOptimalHarvestTime(cultivarIdToUse, region, today.getFullYear())
+
+    // Format dates for response
+    const formatDate = (date: Date | undefined) =>
+      date ? format(date, 'MMMM dd') : undefined
 
     return NextResponse.json({
       crop,
       region,
       region_name: regionData.displayName,
 
-      // Dates
-      harvest_start_date: formatted.harvestStartDate,
-      harvest_end_date: formatted.harvestEndDate,
-      optimal_start_date: formatted.optimalStartDate,
-      optimal_end_date: formatted.optimalEndDate,
+      // Dates (from unified predictor)
+      harvest_start_date: formatDate(prediction.harvestWindowStart),
+      harvest_end_date: formatDate(prediction.harvestWindowEnd),
+      optimal_start_date: harvestTiming ? formatDate(harvestTiming.peakStart) : formatDate(prediction.optimalHarvestDate),
+      optimal_end_date: harvestTiming ? formatDate(harvestTiming.peakEnd) : formatDate(prediction.optimalHarvestDate),
 
-      // GDD info
+      // GDD info (from phenology - single source)
       current_gdd: gddData.totalGdd,
-      gdd_to_maturity: targets.gddToMaturity,
-      gdd_to_peak: targets.gddToPeak,
+      gdd_to_maturity: gddToMaturity,
+      gdd_to_peak: gddToPeak,
+      gdd_window: gddWindow,
       avg_daily_gdd: gddData.avgDailyGdd,
 
-      // Status
-      status: status.status,
-      status_message: status.message,
-      days_until: status.daysUntil,
+      // Status (from unified predictor)
+      status: prediction.ripen.harvestStatus,
+      status_message: getStatusMessage(prediction.ripen.harvestStatus, prediction.ripen.daysToPeak),
+      days_until: prediction.daysToPeak,
 
-      // Quality (if available)
-      quality,
-      sugar_acid: sugarAcid,
+      // Quality prediction (unified)
+      quality: {
+        predictedBrix: prediction.predictedBrix,
+        qualityTier: prediction.predictedTier,
+        qualityScore: prediction.predictedQualityScore,
+        // SHARE breakdown
+        heritage: {
+          cultivarBase: prediction.heritage.baseBrix,
+          rootstockModifier: prediction.heritage.rootstockModifier,
+        },
+        ripen: {
+          timingModifier: prediction.ripen.timingModifier,
+          percentToMaturity: prediction.ripen.percentToMaturity,
+          percentToPeak: prediction.ripen.percentToPeak,
+        },
+        confidence: prediction.confidence,
+      },
+
+      // Sugar/acid for citrus (from unified predictor)
+      sugar_acid: prediction.enrich?.titratableAcid !== undefined
+        ? {
+            ssc: prediction.predictedBrix,
+            ta: prediction.enrich.titratableAcid,
+            ratio: prediction.enrich.brixAcidRatio,
+          }
+        : null,
 
       // Metadata
-      confidence: window.confidence,
-      base_temp: targets.baseTemp
+      confidence: prediction.confidence,
+      base_temp: gddBase,
+      prediction_basis: prediction.predictionBasis,
+      warnings: prediction.warnings,
     })
 
   } catch (error) {
@@ -124,6 +155,31 @@ export async function POST(request: NextRequest) {
       { error: 'Failed to generate prediction' },
       { status: 500 }
     )
+  }
+}
+
+/**
+ * Convert harvest status to human-readable message.
+ */
+function getStatusMessage(
+  status: string,
+  daysToPeak: number | undefined
+): string {
+  switch (status) {
+    case 'pre_season':
+      return 'Not yet in season'
+    case 'approaching':
+      return daysToPeak ? `${daysToPeak} days until harvest` : 'Approaching harvest'
+    case 'harvest_window':
+      return daysToPeak ? `${daysToPeak} days to peak` : 'In harvest window'
+    case 'peak':
+      return 'At peak quality!'
+    case 'late_season':
+      return 'Past peak, quality declining'
+    case 'post_season':
+      return 'Season ended'
+    default:
+      return 'Status unknown'
   }
 }
 

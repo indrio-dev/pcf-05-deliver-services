@@ -163,22 +163,47 @@ export interface SoilInference {
  * The Ridge vs Flatwoods distinction is critical for citrus quality inference
  */
 export const FLORIDA_SOIL_ZONES = {
+  /**
+   * Ridge = elevated sandy spine through interior FL (Lake Wales Ridge)
+   * Deep, well-drained Entisols - the PREMIUM citrus terroir
+   */
   ridge: {
-    regions: ['indian_river', 'lake_wales_ridge'],
-    counties: ['Indian River', 'St. Lucie', 'Martin', 'Highlands', 'Polk'],
-    soilType: 'deep sandy (Ridge)',
+    regions: ['lake_wales_ridge', 'highlands'],
+    counties: ['Highlands', 'Polk', 'Lake'],
+    soilType: 'deep sandy Entisols (Ridge)',
     drainage: 'excellent' as const,
     terroirEffect: 'Premium citrus - stress-induced sugar concentration, higher Brix',
     qualityIndicator: 'premium'
   },
+  /**
+   * Indian River = east coast flatwoods, NOT Ridge
+   * Famous for "Indian River" brand but actually coastal flatwoods soil
+   * Still excellent citrus due to microclimate + marketing, but not Ridge geology
+   */
+  indian_river: {
+    regions: ['indian_river', 'treasure_coast'],
+    counties: ['Indian River', 'St. Lucie', 'Martin'],
+    soilType: 'coastal flatwoods (sandy over hardpan)',
+    drainage: 'moderate' as const,
+    terroirEffect: 'Indian River District - famous brand, coastal microclimate, good quality',
+    qualityIndicator: 'premium'  // Premium due to brand/microclimate, not geology
+  },
+  /**
+   * Flatwoods = interior sandy plains with spodic horizon (hardpan)
+   * Volume production areas
+   */
   flatwoods: {
-    regions: ['central_florida_flatwoods'],
-    counties: ['DeSoto', 'Hendry', 'Hardee'],
+    regions: ['central_florida_flatwoods', 'southwest_florida'],
+    counties: ['DeSoto', 'Hendry', 'Hardee', 'Collier'],
     soilType: 'sandy over spodic horizon',
     drainage: 'moderate' as const,
     terroirEffect: 'Volume production - higher yields, adequate but not premium quality',
     qualityIndicator: 'standard'
   },
+  /**
+   * Rockland = Miami-Dade oolitic limestone
+   * Unique tropical terroir
+   */
   rockland: {
     regions: ['homestead_redland'],
     counties: ['Miami-Dade'],

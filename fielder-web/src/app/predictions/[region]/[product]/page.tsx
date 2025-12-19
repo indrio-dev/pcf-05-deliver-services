@@ -806,26 +806,21 @@ export default async function ProductPredictionPage({ params }: Props) {
 
   const gddPrediction = calculateGDDHarvestDates()
 
-  // Calculate predicted Brix based on GDD position (sigmoid curve)
-  // Uses actual GDD from weather data when available
-  const calculatePredictedBrix = () => {
-    const brixMin = cultivar.brixRange?.[0] || 8
-    const brixMax = cultivar.brixRange?.[1] || cultivar.brixOptimal || 12
+  // ==========================================================================
+  // UNIFIED QUALITY PREDICTION (Single Source of Truth)
+  // ==========================================================================
+  // Use the canonical predictQuality() function to ensure consistency
+  // across all pages, API routes, and prediction displays
+  const qualityPrediction = predictQuality({
+    cultivarId: cultivar.id,
+    regionId: phenologyRegion,
+    currentGDD: currentGDD,
+    currentDate: new Date(),
+    bloomDate: bloomDate || undefined,
+  })
 
-    // Sigmoid calculation: SSC = SSC_min + (SSC_max - SSC_min) / (1 + exp(-(GDD - DD50) / s))
-    const dd50 = gddToMaturity // GDD at which Brix reaches 50% of range
-    const slopeFactor = (gddToPeak - gddToMaturity) / 4
-
-    if (slopeFactor === 0) return brixMax
-
-    // Use actual GDD when available for more accurate Brix prediction
-    const exponent = -(currentGDD - dd50) / slopeFactor
-    const sigmoidValue = 1 / (1 + Math.exp(exponent))
-
-    return Math.round((brixMin + (brixMax - brixMin) * sigmoidValue) * 10) / 10
-  }
-
-  const predictedBrix = calculatePredictedBrix()
+  // Use the canonical predicted Brix from the unified predictor
+  const predictedBrix = qualityPrediction.predictedBrix
 
   // Format date for display
   const formatDate = (date: Date) => date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
@@ -897,7 +892,7 @@ export default async function ProductPredictionPage({ params }: Props) {
   // Get Brix estimate from cultivar data
   const brixEstimate = cultivar.brixRange || cultivar.brixOptimal
     ? (cultivar.brixRange || [cultivar.brixOptimal! - 1, cultivar.brixOptimal! + 1])
-    : shareProfile?.estimatedBrixRange
+    : (shareProfile as any)?.estimatedBrixRange
 
   // ==========================================================================
   // SHARE QUALITY ANALYSIS
@@ -1557,7 +1552,7 @@ export default async function ProductPredictionPage({ params }: Props) {
                         : brixEstimate as number | [number, number] | undefined)
                     : undefined
                 }
-                omegaRatioEstimate={categoryConfig.primaryQualityMetric === 'omega_ratio' ? shareProfile?.estimatedOmegaRatioMidpoint : undefined}
+                omegaRatioEstimate={categoryConfig.primaryQualityMetric === 'omega_ratio' ? (shareProfile as any)?.estimatedOmegaRatioMidpoint : undefined}
                 pillarLabels={categoryConfig.sharePillarLabels}
               />
             </div>

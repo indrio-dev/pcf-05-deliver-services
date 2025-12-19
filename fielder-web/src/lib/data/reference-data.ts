@@ -543,12 +543,21 @@ export const referenceData = {
         return result
       }
 
+      // Cast to expected type since Supabase returns unknown without generated types
+      const cropData = data as {
+        base_temp: number
+        gdd_to_maturity: number
+        gdd_to_peak: number
+        gdd_window: number
+        chill_hours_required: number | null
+      }
+
       const result: GddTargets = {
-        baseTemp: data.base_temp,
-        gddToMaturity: data.gdd_to_maturity,
-        gddToPeak: data.gdd_to_peak,
-        gddWindow: data.gdd_window,
-        chillHoursRequired: data.chill_hours_required,
+        baseTemp: cropData.base_temp,
+        gddToMaturity: cropData.gdd_to_maturity,
+        gddToPeak: cropData.gdd_to_peak,
+        gddWindow: cropData.gdd_window,
+        chillHoursRequired: cropData.chill_hours_required ?? undefined,
       }
       cache.set(cacheKey, result)
       return result
@@ -592,7 +601,9 @@ export const referenceData = {
         return result
       }
 
-      const result = data.map(d => d.crop_id)
+      // Cast to expected type since Supabase returns unknown without generated types
+      const cropRows = data as Array<{ crop_id: string }>
+      const result = cropRows.map(d => d.crop_id)
       cache.set(cacheKey, result)
       return result
     } catch {
