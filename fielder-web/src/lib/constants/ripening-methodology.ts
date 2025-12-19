@@ -3,14 +3,54 @@
  * RIPENING METHODOLOGY (R Pillar Algorithm Mapping)
  * =============================================================================
  *
- * KEY INSIGHT: Different products need different R (Ripen) prediction algorithms
- * based on their E (Enrich) quality metrics.
+ * KEY INSIGHT: The R pillar has TWO components that work together:
  *
- * The R algorithm should PREDICT the E metric:
- * - GDD-Brix algorithm → predicts Brix (E metric for produce)
+ * =============================================================================
+ * R_MATURITY: How much of the genetic ceiling (H) can be expressed
+ * =============================================================================
+ *
+ * REPRODUCTIVE ALLOCATION THEORY (Tree Crops):
+ * Trees shift energy allocation from vegetative to reproductive as they mature:
+ *
+ * | Stage     | Age (Citrus) | Energy to Fruit | Quality Impact |
+ * |-----------|--------------|-----------------|----------------|
+ * | Seedling  | 0-2 years    | 0%              | No fruit       |
+ * | Juvenile  | 3-5 years    | ~20%            | Low (competing)|
+ * | Mature    | 6-8 years    | ~50%            | Medium         |
+ * | Prime     | 8-25 years   | ~85%            | Peak           |
+ * | Declining | 25+ years    | ~60%            | Still excellent|
+ *
+ * THE DECLINING TREE PARADOX:
+ * Old trees produce FEWER fruits, but each fruit receives MORE of the tree's
+ * reproductive energy. This is "natural thinning" - 50 units across 25 fruits
+ * = 2 units each, vs 100 units across 100 fruits = 1 unit each.
+ *
+ * LIVESTOCK MATURITY:
+ * Animals also need maturity to express full genetic potential:
+ * - Beef: 24-30 months for full flavor development (vs 14-18mo commodity)
+ * - Pork: 10-12 months heritage (vs 5-6mo commodity)
+ * - Poultry: 12+ weeks heritage (vs 6-8 weeks commodity)
+ *
+ * =============================================================================
+ * R_TIMING: When to capture the expressible potential
+ * =============================================================================
+ *
+ * The R algorithm predicts when E metric is optimal:
+ * - GDD-Brix algorithm → predicts Brix development (E metric for produce)
  * - GDD-Oil algorithm → predicts oil content (E metric for nuts)
- * - Age-Maturity algorithm → predicts omega ratio readiness (E metric for animals)
+ * - Age-Maturity algorithm → predicts omega ratio readiness (E for livestock)
  * - Calendar-Season → predicts quality window (when E metric is optimal)
+ *
+ * =============================================================================
+ * R = R_MATURITY × R_TIMING
+ * =============================================================================
+ *
+ * Full R pillar expression requires BOTH:
+ * - A mature producer (tree/animal) to maximize genetic expression
+ * - Optimal timing (GDD/age/season) to capture that expression
+ *
+ * Example: Prime tree (85% reproductive allocation) at peak GDD = maximum Brix
+ * Example: 24mo grass-fed beef (full maturity) harvested at ideal weight = optimal omega
  *
  * This file maps each product category to its appropriate R methodology.
  */
@@ -87,24 +127,28 @@ export const R_METHODOLOGY_DEFINITIONS: Record<RAlgorithmType, RMethodology> = {
     predictsMetric: 'brix',
     requiresGDD: true,
     requiresBloomDate: true,
-    requiresAge: true,              // Tree age affects Brix ceiling
+    requiresAge: true,              // R_MATURITY: Tree age affects reproductive allocation
     requiresCalendar: false,
     requiresTransformation: false,
     seasonalVariation: 'high',
     geographicVariation: 'high',
     modelMaturity: 'research_backed',
-    description: 'Growing Degree Days accumulation predicts sugar (Brix) development. Well-researched for citrus, stone fruit, and berries.',
+    description: 'Combines R_MATURITY (tree reproductive allocation) with R_TIMING (GDD accumulation) to predict Brix. Well-researched for citrus, stone fruit, and berries.',
     keyFactors: [
+      // R_MATURITY factors
+      'Tree maturity stage (seedling → prime → declining)',
+      'Reproductive allocation (% energy to fruit)',
+      // R_TIMING factors
       'Accumulated GDD from bloom',
-      'Cultivar genetic ceiling',
-      'Rootstock modifier',
-      'Tree age (prime vs young/old)',
-      'Crop load (fruit per tree)',
+      'Cultivar genetic ceiling (H pillar)',
+      'Rootstock modifier (H pillar)',
+      'Crop load (natural thinning)',
     ],
     limitations: [
       'Requires accurate bloom date',
       'Weather variability affects accuracy',
       'Late-season heat can degrade quality',
+      'Tree age unknown = lower confidence',
     ],
   },
 
@@ -190,24 +234,28 @@ export const R_METHODOLOGY_DEFINITIONS: Record<RAlgorithmType, RMethodology> = {
     predictsMetric: 'omega_ratio',
     requiresGDD: false,
     requiresBloomDate: false,
-    requiresAge: true,              // THE key factor
+    requiresAge: true,              // R_MATURITY: Animal maturity affects genetic expression
     requiresCalendar: false,
     requiresTransformation: false,
     seasonalVariation: 'none',
     geographicVariation: 'low',
     modelMaturity: 'research_backed',
-    description: 'Animal age and feeding duration determines omega ratio. Longer pasture time = better ratio; longer feedlot = worse ratio.',
+    description: 'Combines R_MATURITY (animal age for full genetic expression) with R_TIMING (feeding regime duration) to predict omega ratio.',
     keyFactors: [
-      'Total age at harvest',
-      'Time on pasture vs feedlot',
-      'Feeding regime (grass vs grain)',
-      'Breed (affects maturity rate)',
-      'Full maturity achievement',
+      // R_MATURITY factors
+      'Full maturity achievement (24mo beef, 10-12mo pork)',
+      'Breed maturity rate (heritage slower, commodity faster)',
+      'Physiological development stage',
+      // R_TIMING factors
+      'Time on pasture (longer = better omega)',
+      'Feedlot duration (longer = worse omega)',
+      'Feeding regime transitions (grass → grain)',
     ],
     limitations: [
       'Requires knowing feeding history',
       'Marketing claims may not match reality',
       'Lab verification needed for accuracy',
+      'R_MATURITY and R_TIMING can conflict (mature CAFO = still bad omega)',
     ],
   },
 

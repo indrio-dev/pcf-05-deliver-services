@@ -123,6 +123,73 @@
  *
  * Core Formula:
  *   Peak Brix = Cultivar_Base + Rootstock_Mod + Age_Mod + Timing_Mod
+ *
+ * =============================================================================
+ * THE NUTRIENT BALANCE EQUATION
+ * =============================================================================
+ *
+ * SHARE describes a CONSERVATION system. Think of the tree as a converter:
+ *
+ *   S + A inputs → [Tree] → E outputs
+ *                    ↑
+ *              H (genetic capacity)
+ *              R (maturity + timing)
+ *
+ * THE FUNDAMENTAL CONSTRAINT:
+ * A tree can only process so many "nutrient units" per season.
+ * How those units get distributed depends on fruit count:
+ *
+ *   "Pound Solids per Acre" = Pieces × Brix per Piece
+ *
+ * | Scenario           | Pieces/Tree | Brix per Piece | Total Solids |
+ * |--------------------|-------------|----------------|--------------|
+ * | High yield tree    | 500         | 10° Bx         | 5,000 units  |
+ * | Thinned tree       | 250         | 14° Bx         | 3,500 units  |
+ * | Old declining tree | 100         | 16° Bx         | 1,600 units  |
+ *
+ * INSIGHT: Total solids DECREASE with thinning/age, but QUALITY per piece increases.
+ * This is the economic trade-off farmers face: yield vs quality.
+ *
+ * THE DILUTION EFFECT (H pillar):
+ * Modern cultivars bred for high piece count = diluted nutrition per piece.
+ * Heritage cultivars bred for flavor = concentrated nutrition per piece.
+ *
+ * THE DECLINING TREE PARADOX (R_MATURITY):
+ * Old trees produce fewer pieces, but each piece gets MORE of the tree's
+ * limited processing capacity. This is "natural thinning."
+ *
+ * CROP LOAD MANAGEMENT (A pillar):
+ * Manual thinning mimics the declining tree effect - fewer pieces → higher Brix.
+ * This is why cropLoadManaged: true gives a +0.2 Brix modifier.
+ *
+ * THE EQUATION IN LIVESTOCK:
+ * Similar constraint applies. The animal can only convert so much feed:
+ *
+ *   Feed inputs → [Animal] → Tissue outputs
+ *                    ↑
+ *              H (breed capacity)
+ *              R (age + feeding duration)
+ *
+ * Grass inputs → accumulate as omega-3 in tissue
+ * Grain inputs → accumulate as omega-6 in tissue
+ * TOTAL fat is conserved; COMPOSITION depends on diet sequence (A) × duration (R)
+ *
+ * =============================================================================
+ * R PILLAR: TWO COMPONENTS (R_MATURITY × R_TIMING)
+ * =============================================================================
+ *
+ * R_MATURITY: How much of genetic ceiling (H) can be expressed
+ *   - Tree crops: Reproductive allocation shifts as trees mature
+ *   - Seedling (0% to fruit) → Juvenile (20%) → Mature (50%) → Prime (85%) → Declining (60%)
+ *   - Livestock: Full maturity needed to express breed potential (24mo beef vs 14mo commodity)
+ *
+ * R_TIMING: When to capture the expressible potential
+ *   - GDD accumulation for produce (when is Brix optimal?)
+ *   - Age/feeding duration for livestock (when is omega optimal?)
+ *   - Calendar seasons for seafood (spawning cycles)
+ *
+ * Full R = R_MATURITY × R_TIMING
+ * A prime tree (85% allocation) at peak GDD = maximum Brix expression
  */
 
 import { getCropPhenology, getBloomDate, CropPhenology } from '../constants/crop-phenology'
@@ -204,6 +271,7 @@ export interface AgriculturalContribution {
 }
 
 export interface RipenContribution {
+  // === R_TIMING: When to harvest (GDD-based) ===
   currentGDD: number
   gddToMaturity: number
   gddToPeak: number
@@ -214,6 +282,17 @@ export interface RipenContribution {
   daysToHarvest?: number
   daysToPeak?: number
   postHarvestBehavior: PostHarvestBehavior
+
+  // === R_MATURITY: How much of H ceiling is achievable ===
+  // Tree age determines reproductive allocation (energy to fruit vs vegetative growth)
+  treeMaturity?: {
+    stage: TreeMaturityStage
+    reproductiveAllocation: number  // 0-100 percentage of energy to fruit
+    modifier: number                // Brix modifier from maturity
+    insight: string                 // Human-readable explanation
+    decliningParadox?: boolean      // True if old tree with concentrated fruit quality
+  }
+
   confidence: number
 }
 
@@ -432,36 +511,137 @@ export function classifyOmegaRatio(ratio: number): {
 }
 
 // =============================================================================
-// AGE MODIFIERS
+// TREE MATURITY & REPRODUCTIVE ALLOCATION
 // =============================================================================
 
 /**
- * Tree age affects quality expression.
+ * Tree Maturity Model - Understanding why tree age matters for quality
  *
- * Young trees: Still developing root system, lower quality
- * Prime trees (8-18 years): Full genetic expression
- * Mature trees: May decline slightly but often stable
+ * REPRODUCTIVE ALLOCATION THEORY:
+ * Trees shift energy allocation as they mature:
  *
- * Research sources: UF/IFAS tree maturity studies
+ * | Stage     | Age (Citrus) | Energy Allocation              | Fruit Quality  |
+ * |-----------|--------------|--------------------------------|----------------|
+ * | Seedling  | 0-2 years    | 100% vegetative (roots/canopy) | None           |
+ * | Juvenile  | 3-5 years    | Mostly vegetative (~80%)       | Low (competing)|
+ * | Mature    | 6-8 years    | Balanced (50-50)               | Medium         |
+ * | Prime     | 8-25 years   | Mostly reproductive (~85%)     | Peak           |
+ * | Declining | 25+ years    | Reduced total capacity         | Still excellent|
+ *
+ * THE DECLINING TREE PARADOX:
+ * Old trees produce FEWER fruits, but each fruit gets MORE of the tree's
+ * reproductive energy. This is "natural thinning."
+ *
+ * | Tree Stage | Total Capacity | Fruit Count | Energy Per Fruit |
+ * |------------|----------------|-------------|------------------|
+ * | Prime      | 100 units      | 100 fruits  | 1 unit each      |
+ * | Declining  | 50 units       | 25 fruits   | 2 units each     |
+ *
+ * This explains why very old citrus trees often produce exceptional fruit
+ * quality despite lower yields - each fruit is maximally invested.
+ *
+ * Research sources: UF/IFAS tree maturity studies, plant physiology literature
  */
-export function getAgeModifier(ageYears: number | undefined): { modifier: number; confidence: number } {
+
+export type TreeMaturityStage = 'seedling' | 'juvenile' | 'mature' | 'prime' | 'declining'
+
+export interface TreeMaturityResult {
+  stage: TreeMaturityStage
+  modifier: number
+  reproductiveAllocation: number  // 0-100 percentage
+  confidence: number
+  insight: string
+  decliningParadox?: boolean
+}
+
+/**
+ * Get tree maturity stage and quality modifier.
+ *
+ * The modifier reflects both:
+ * 1. Reproductive allocation (how much energy goes to fruit)
+ * 2. Tree health/vigor at different life stages
+ */
+export function getTreeMaturityStage(
+  ageYears: number | undefined,
+  cropType?: string
+): TreeMaturityResult {
   if (ageYears === undefined) {
-    return { modifier: 0, confidence: 0.5 }  // Unknown age - assume neutral
+    return {
+      stage: 'mature',
+      modifier: 0,
+      reproductiveAllocation: 70,
+      confidence: 0.5,
+      insight: 'Tree age unknown - assuming mature tree',
+    }
   }
 
-  // Age modifier table (Brix points)
-  if (ageYears <= 2) {
-    return { modifier: -0.8, confidence: 0.9 }
-  } else if (ageYears <= 4) {
-    return { modifier: -0.5, confidence: 0.9 }
-  } else if (ageYears <= 7) {
-    return { modifier: -0.2, confidence: 0.85 }
-  } else if (ageYears <= 18) {
-    return { modifier: 0.0, confidence: 0.95 }  // Prime
-  } else if (ageYears <= 25) {
-    return { modifier: -0.2, confidence: 0.8 }
-  } else {
-    return { modifier: -0.3, confidence: 0.7 }  // Very old trees
+  // Species-specific age ranges (citrus is default)
+  // Stone fruit matures faster, nuts slower
+  const ranges = cropType?.includes('pecan') || cropType?.includes('walnut')
+    ? { seedling: 3, juvenile: 7, mature: 15, prime: 50 }  // Nuts mature slowly
+    : cropType?.includes('peach') || cropType?.includes('cherry') || cropType?.includes('apple')
+      ? { seedling: 2, juvenile: 4, mature: 6, prime: 20 }  // Stone/pome fruit
+      : { seedling: 2, juvenile: 5, mature: 8, prime: 25 }  // Citrus (default)
+
+  if (ageYears <= ranges.seedling) {
+    return {
+      stage: 'seedling',
+      modifier: -0.8,
+      reproductiveAllocation: 0,
+      confidence: 0.9,
+      insight: 'Seedling stage: All energy to vegetative growth, no fruit production',
+    }
+  }
+
+  if (ageYears <= ranges.juvenile) {
+    return {
+      stage: 'juvenile',
+      modifier: -0.5,
+      reproductiveAllocation: 20,
+      confidence: 0.9,
+      insight: 'Juvenile stage: Still building root system and canopy, fruit competes with growth',
+    }
+  }
+
+  if (ageYears <= ranges.mature) {
+    return {
+      stage: 'mature',
+      modifier: -0.2,
+      reproductiveAllocation: 50,
+      confidence: 0.85,
+      insight: 'Mature stage: Balanced energy allocation, quality improving',
+    }
+  }
+
+  if (ageYears <= ranges.prime) {
+    return {
+      stage: 'prime',
+      modifier: 0.0,
+      reproductiveAllocation: 85,
+      confidence: 0.95,
+      insight: 'Prime production: Optimized reproductive allocation, peak quality potential',
+    }
+  }
+
+  // Declining stage - the paradox
+  return {
+    stage: 'declining',
+    modifier: -0.2,  // Slight penalty for overall capacity, but not severe
+    reproductiveAllocation: 60,
+    confidence: 0.8,
+    insight: 'Declining tree paradox: Fewer fruits but each receives concentrated energy',
+    decliningParadox: true,
+  }
+}
+
+/**
+ * Legacy function for backwards compatibility
+ */
+export function getAgeModifier(ageYears: number | undefined): { modifier: number; confidence: number } {
+  const maturity = getTreeMaturityStage(ageYears)
+  return {
+    modifier: maturity.modifier,
+    confidence: maturity.confidence,
   }
 }
 
@@ -862,8 +1042,15 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
     warnings.push(`Unknown rootstock '${input.rootstockId}' - no modifier applied`)
   }
 
-  // Age modifier
-  const ageResult = getAgeModifier(input.treeAgeYears)
+  // Tree maturity model - determines reproductive allocation
+  // This is R_MATURITY: how much of the genetic ceiling (H) can be expressed
+  const cropType = cultivarProfile?.cropType ?? input.cultivarId
+  const treeMaturity = getTreeMaturityStage(input.treeAgeYears, cropType)
+
+  // Add declining tree paradox warning/insight
+  if (treeMaturity.decliningParadox) {
+    warnings.push('Declining tree paradox: Lower yield but concentrated quality per fruit')
+  }
 
   const heritage: HeritageContribution = {
     cultivarId: input.cultivarId,
@@ -890,7 +1077,7 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
   // === R METHODOLOGY SELECTION ===
   // Determine which ripening algorithm to use based on product category
   // This maps product type to the appropriate prediction model and E metric
-  const cropType = cultivarProfile?.cropType ?? input.cultivarId
+  // cropType was defined above for tree maturity calculation
   // Map cropType to ShareProfileCategory (e.g., 'orange' -> 'citrus', 'pecan' -> 'nuts')
   const categoryMapping: Record<string, string> = {
     // Citrus types
@@ -996,6 +1183,7 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
     const postHarvestBehavior = getPostHarvestBehavior(maturityType)
 
     ripen = {
+      // R_TIMING: GDD-based harvest timing
       currentGDD,
       gddToMaturity: phenology.gddToMaturity,
       gddToPeak: phenology.gddToPeak,
@@ -1006,6 +1194,14 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
       daysToHarvest,
       daysToPeak,
       postHarvestBehavior,
+      // R_MATURITY: Tree age → reproductive allocation
+      treeMaturity: input.treeAgeYears !== undefined ? {
+        stage: treeMaturity.stage,
+        reproductiveAllocation: treeMaturity.reproductiveAllocation,
+        modifier: treeMaturity.modifier,
+        insight: treeMaturity.insight,
+        decliningParadox: treeMaturity.decliningParadox,
+      } : undefined,
       confidence: input.currentGDD !== undefined ? 0.9 : 0.6,
     }
   } else {
@@ -1020,6 +1216,14 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
       timingModifier: 0,
       harvestStatus: 'pre_season',
       postHarvestBehavior: 'non_climacteric',
+      // R_MATURITY: Tree age → reproductive allocation
+      treeMaturity: input.treeAgeYears !== undefined ? {
+        stage: treeMaturity.stage,
+        reproductiveAllocation: treeMaturity.reproductiveAllocation,
+        modifier: treeMaturity.modifier,
+        insight: treeMaturity.insight,
+        decliningParadox: treeMaturity.decliningParadox,
+      } : undefined,
       confidence: 0.3,
     }
   }
@@ -1088,9 +1292,10 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
     predictedBrix = enrich.actualBrix
   } else {
     // Predict from factors
+    // Tree maturity modifier affects how much of genetic ceiling (H) is expressed
     predictedBrix = baseBrix
       + rootstockMod
-      + ageResult.modifier
+      + treeMaturity.modifier
       + soil.modifier
       + agricultural.modifier
       + ripen.timingModifier
@@ -1151,7 +1356,7 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
     soil.confidence * 0.15,
     agricultural.confidence * 0.1,
     ripen.confidence * 0.25,
-    ageResult.confidence * 0.1,
+    treeMaturity.confidence * 0.1,
   ]
   let confidence = confidenceFactors.reduce((a, b) => a + b, 0)
 
