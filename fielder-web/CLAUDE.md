@@ -472,12 +472,15 @@ LIVESTOCK: Diet Sequence (A) × Duration (R) → Omega Ratio (E)
 ┌────────────────────────────────────────────────────────────────────────────┐
 │ E (Enrich/Omega Ratio) - PROOF                                             │
 │                                                                            │
-│ TIER           RATIO      FEEDING REGIME                                   │
+│ TIER           RATIO      FEEDING REGIME             REALITY               │
 │ ─────────────────────────────────────────────────────────────             │
-│ Exceptional    ≤3:1       True grass-fed, heritage breeds on grass        │
-│ Premium        3-6:1      Grass-finished or pasture+grain supplement      │
-│ Standard       6-12:1     Mixed feeding, some grain finish                │
-│ Commodity      >12:1      Feedlot grain-finished (includes "premium" Wagyu)│
+│ True Grass     ≤3:1       100% grass-finished        Rare, strict protocol│
+│ True Pasture   3-7:1      No feedlot (Indrio model)  Pasture + free-choice│
+│ Marketing/Comm 10-20:1    Feedlot-finished           SAME omega outcome   │
+│ Premium CAFO   20-26:1    Extended feedlot (Wagyu)   WORST health profile │
+│                                                                            │
+│ KEY: "Marketing Grass" and "Commodity" are the SAME thing - both feedlot  │
+│ finished. The only difference is marketing labels, not omega outcomes.    │
 │                                                                            │
 │ Lab verification (Edacious, Texas A&M) catches false claims               │
 └────────────────────────────────────────────────────────────────────────────┘
@@ -678,12 +681,12 @@ Original Python prediction engine preserved for reference:
 
 | Ratio | Classification | What It Means |
 |-------|---------------|---------------|
-| ≤3:1 | Exceptional | True grass-fed, anti-inflammatory profile |
-| 3-6:1 | Premium | Good grass-finished |
-| 6-12:1 | Standard | Mixed feeding regime |
-| >12:1 | Commodity | Feedlot/grain-fed, pro-inflammatory |
+| ≤3:1 | True Grass | 100% grass-finished, anti-inflammatory profile |
+| 3-7:1 | True Pasture | No feedlot (Indrio model), pasture + free-choice grain |
+| 10-20:1 | Marketing/Commodity | Feedlot-finished (same outcome regardless of label) |
+| 20-26:1 | Premium CAFO | Extended feedlot (Wagyu), WORST health profile |
 
-**Lab verification** (e.g., Edacious, Texas A&M): If claimed grass-fed has >6:1 ratio, something's wrong with the claim.
+**Lab verification** (e.g., Edacious, Texas A&M): If claimed grass-fed has >7:1 ratio, something's wrong with the claim.
 
 ### Climacteric vs Non-Climacteric
 - **Climacteric** (apples, peaches, bananas): CAN ripen post-harvest, but early harvest sacrifices quality
@@ -1002,25 +1005,25 @@ EVERYTHING ELSE = ASSUME CAFO
 
 | Category | Breeds | Feedlot Duration | Age at Harvest | Omega Ratio |
 |----------|--------|------------------|----------------|-------------|
-| True Grass | Any | 0 | Varies | 2-3:1 |
-| True Pasture | Any | 0 | Varies | 4-6:1 |
-| Marketing Grass | Any | 3-4 months (finishing) | 18-24 mo | 8-15:1 |
-| Marketing Pasture | Any | 3-6 months | 18-24 mo | 12-18:1 |
-| Commodity | Commercial | 6-8 months | 14-18 mo | 15-20:1 |
-| "Natural" | Commercial | 6-8 months (same as commodity) | 14-18 mo | 15-20:1 |
+| True Grass | Any | 0 | Varies | ≤3:1 |
+| True Pasture | Any | 0 (on pasture, free-choice grain) | Varies | 3-7:1 |
+| Marketing Grass | Any | 3-6 months (finishing) | 18-24 mo | 10-20:1 |
+| Commodity | Commercial | 6-8 months | 14-18 mo | 10-20:1 |
+| "Natural" | Commercial | 6-8 months (same as commodity) | 14-18 mo | 10-20:1 |
 | Premium Wagyu | Wagyu crosses | **12+ months** | 24-30+ mo | **20-26:1** |
 
-**SHARE Profiles for Beef:**
+**KEY INSIGHT: Marketing Grass, Commodity, and "Natural" all have the SAME omega outcome (10-20:1) because they're ALL feedlot-finished. The label differences are marketing, not health outcomes.**
+
+**SHARE Profiles for Beef (Simplified - Based on Edacious Lab Data):**
 
 | Profile | Required Claims | CAFO? | Omega | Tier |
 |---------|-----------------|-------|-------|------|
-| **A: True Grass** | "100% grass-fed" OR "grass-fed + grass-finished" | No | 2-3:1 | Premium |
-| **B: True Pasture** | "Pasture-raised" + "no feedlot/CAFO" | No | 4-6:1 | Premium |
-| **C: Marketing Grass** | "Grass-fed" only (no finishing claim) | Yes | 8-15:1 | Standard |
-| **D: Marketing Pasture** | "Pasture-raised" only (no CAFO exclusion) | Yes | 12-18:1 | Standard |
-| **E: Commodity** | Generic or no process claims | Yes | 15-20:1 | Commodity |
-| **E2: "Natural"** | Commodity + one marketing claim | Yes | 15-20:1 | Commodity |
+| **A: True Grass** | "100% grass-fed" OR "grass-fed + grass-finished" | No | ≤3:1 | Premium |
+| **B: True Pasture** | "Pasture-raised" + "no feedlot/CAFO" | No | 3-7:1 | Premium |
+| **C-E: Feedlot** | "Grass-fed", "Pasture-raised", "Natural", or nothing | Yes | 10-20:1 | Commodity |
 | **F: Premium CAFO** | Breed/grade only (Wagyu, Prime), no process | Yes | 20-26:1 | **Worst** |
+
+**Why C-E collapsed into one tier:** Whether they say "grass-fed", "pasture-raised", "natural", or nothing at all - if there's no CAFO exclusion claim, the animal went to a feedlot and the omega ratio ends up 10-20:1. The label is marketing theater.
 
 **The "Natural" Marketing Play:**
 

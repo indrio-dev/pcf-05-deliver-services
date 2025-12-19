@@ -609,46 +609,60 @@ export function predictOmegaRatio(
 
 /**
  * Get quality tier from omega ratio
+ *
+ * Thresholds based on Edacious lab data from Indrio Brands beef:
+ * - True Grass: ≤3:1 (100% grass-finished)
+ * - True Pasture: 3-7:1 (no feedlot, pasture + free-choice grain)
+ * - Feedlot-Finished: 7-20:1 (same outcome regardless of "grass-fed" label)
+ * - Extended Feedlot: >20:1 (Premium CAFO, worst health profile)
  */
 export function getOmegaTier(ratio: number): QualityTier {
-  if (ratio <= 3) return 'artisan'
-  if (ratio <= 6) return 'premium'
-  if (ratio <= 12) return 'standard'
-  return 'commodity'
+  if (ratio <= 3) return 'artisan' // True Grass
+  if (ratio <= 7) return 'premium' // True Pasture (Indrio model)
+  if (ratio <= 20) return 'standard' // Feedlot-finished (marketing vs commodity = same)
+  return 'commodity' // Extended feedlot / Premium CAFO
 }
 
 /**
  * Get omega classification description
+ *
+ * Based on Edacious lab testing of Indrio Brands beef (6.3-6.7:1 = True Pasture)
  */
 export function getOmegaClassification(ratio: number): {
   tier: QualityTier
   description: string
   healthImplication: string
+  feedingRegime: string
 } {
   if (ratio <= 3) {
     return {
       tier: 'artisan',
-      description: 'Exceptional (≤3:1)',
+      description: 'True Grass (≤3:1)',
       healthImplication: 'Optimal anti-inflammatory profile, matches evolutionary diet',
+      feedingRegime: '100% grass-finished, strict protocol',
     }
   }
-  if (ratio <= 6) {
+  if (ratio <= 7) {
     return {
       tier: 'premium',
-      description: 'Premium (3-6:1)',
-      healthImplication: 'Good grass-finished profile, reduced inflammation risk',
+      description: 'True Pasture (3-7:1)',
+      healthImplication: 'Excellent profile, no feedlot exposure',
+      feedingRegime: 'Pasture-raised with free-choice grain access (Indrio model)',
     }
   }
-  if (ratio <= 12) {
+  if (ratio <= 20) {
     return {
       tier: 'standard',
-      description: 'Standard (6-12:1)',
-      healthImplication: 'Mixed feeding regime, moderate omega-6 content',
+      description: 'Feedlot-Finished (7-20:1)',
+      healthImplication: 'Pro-inflammatory profile from grain finishing',
+      feedingRegime:
+        'Feedlot-finished regardless of label ("grass-fed", "pasture-raised", "natural", commodity = same outcome)',
     }
   }
   return {
     tier: 'commodity',
-    description: 'Commodity (>12:1)',
-    healthImplication: 'Pro-inflammatory profile, typical of feedlot/grain-fed',
+    description: 'Extended Feedlot (>20:1)',
+    healthImplication: 'WORST health profile, extended omega-6 accumulation',
+    feedingRegime: 'Extended feedlot (12+ months) - includes "Premium" Wagyu',
   }
 }

@@ -5,12 +5,22 @@
  * based on omega-6:omega-3 ratio as the primary quality metric.
  *
  * The omega ratio is THE key differentiator for livestock health value:
- * - Grass-fed: 2-3:1 (anti-inflammatory, matches evolutionary diet)
- * - Grain-finished: 10-15:1 (pro-inflammatory)
- * - Extended CAFO: 20+:1 (worst health profile)
+ *
+ * TIER               RATIO       FEEDING REGIME
+ * ─────────────────────────────────────────────────────────
+ * True Grass         ≤3:1        100% grass-finished, strict protocol
+ * True Pasture       3-7:1       No feedlot, pasture + free-choice grain (Indrio model)
+ * Feedlot-Finished   7-20:1      Same outcome regardless of label ("grass-fed", "natural")
+ * Extended Feedlot   >20:1       Premium CAFO (Wagyu) - WORST health profile
+ *
+ * KEY INSIGHT: "Marketing Grass" and "Commodity" produce the SAME omega outcome (10-20:1)
+ * because both involve feedlot finishing. The label is marketing, not health outcome.
+ *
+ * Based on Edacious lab data from Indrio Brands beef (6.3-6.7:1 = True Pasture)
  *
  * Formula:
- *   Omega Ratio = Breed_Baseline + Diet_Modifier + Finishing_Penalty + Age_Modifier
+ *   Omega Ratio = Diet_Baseline + Finishing_Penalty + Soil_Modifier + Age_Modifier
+ *   (Breed affects fat AMOUNT, not fat COMPOSITION - omega is 100% diet-driven)
  *
  * This predictor handles: beef, pork, poultry, eggs, dairy, lamb
  */
@@ -316,14 +326,20 @@ export class LivestockPredictor implements CategoryPredictor {
     // Diet insights
     switch (input.feedingRegime.diet) {
       case 'grass_only':
-        insights.push('100% grass-fed produces optimal omega ratio (≤3:1)')
-        insights.push('No grain finishing preserves anti-inflammatory profile')
+        insights.push('TRUE GRASS: 100% grass-finished produces optimal omega ratio (≤3:1)')
+        insights.push('Rare, strict protocol - anti-inflammatory profile')
         break
       case 'pasture_forage':
-        insights.push('Pasture-raised with forage produces good omega ratio (3-6:1)')
+        insights.push('TRUE PASTURE: Pasture-raised with free-choice grain produces excellent omega ratio (3-7:1)')
+        insights.push('Indrio model - no feedlot, animal stays on pasture')
+        break
+      case 'pasture_grain_supplemented':
+        insights.push('TRUE PASTURE: Concurrent pasture + grain access (3-7:1)')
+        insights.push('Key: Animal stays on pasture (no feedlot removal)')
         break
       case 'grain_finished':
-        insights.push('Grain finishing degrades omega ratio significantly')
+        insights.push('FEEDLOT-FINISHED: Omega ratio 10-20:1 regardless of marketing label')
+        insights.push('"Grass-fed" without "grass-finished" = feedlot finished = same as commodity')
         if (input.feedingRegime.finishingMonths) {
           insights.push(
             `${input.feedingRegime.finishingMonths} months of grain finishing adds ~${finishingPenalty.toFixed(1)} to omega ratio`
@@ -331,7 +347,8 @@ export class LivestockPredictor implements CategoryPredictor {
         }
         break
       case 'grain_fed':
-        insights.push('Full grain-fed produces high omega-6 (pro-inflammatory profile)')
+        insights.push('EXTENDED FEEDLOT: High omega-6 (>20:1) - WORST health profile')
+        insights.push('Includes "Premium" Wagyu with 12+ month feedlot')
         break
     }
 
@@ -444,12 +461,13 @@ export class LivestockPredictor implements CategoryPredictor {
     // Proof: Snake River Wagyu (26:1) vs Everglades Ranch Wagyu (6:1) = same genetics, different diet
 
     // Diet baseline (the finishing diet determines the ratio)
+    // Based on Edacious lab testing of Indrio Brands beef (6.3-6.7:1 = True Pasture)
     const DIET_BASELINE: Record<string, number> = {
-      grass_only: 3,            // Best achievable: ~3:1
-      pasture_forage: 4,        // Pasture + hay: ~4:1
-      pasture_grain_supplemented: 6,  // Concurrent grass + grain on pasture: ~6:1
-      grain_finished: 14,       // Feedlot finishing: ~14:1
-      grain_fed: 22,            // Full CAFO/extended feedlot: ~22:1
+      grass_only: 2.5,            // TRUE GRASS (≤3:1): Strict 100% grass-finished
+      pasture_forage: 4,          // TRUE PASTURE (3-7:1): No feedlot, pasture + free-choice grain
+      pasture_grain_supplemented: 6,  // TRUE PASTURE (3-7:1): Concurrent pasture + grain (Indrio model = 6.3-6.7)
+      grain_finished: 14,         // FEEDLOT-FINISHED (7-20:1): Same as "marketing grass" or commodity
+      grain_fed: 22,              // EXTENDED FEEDLOT (>20:1): 12+ months CAFO, worst profile
     }
 
     const dietBaseline = DIET_BASELINE[input.feedingRegime.diet] ?? 14
@@ -535,8 +553,22 @@ export class LivestockPredictor implements CategoryPredictor {
   }
 
   private omegaToScore(ratio: number): number {
-    // 1.5:1 = 100, 20:1 = 0
-    return Math.min(100, Math.max(0, ((20 - ratio) / 18.5) * 100))
+    // Score mapping based on omega tier boundaries:
+    // ≤3:1 (True Grass) = 90-100
+    // 3-7:1 (True Pasture) = 70-90
+    // 7-20:1 (Feedlot-Finished) = 20-70
+    // >20:1 (Extended Feedlot) = 0-20
+    if (ratio <= 3) {
+      return 90 + ((3 - ratio) / 1.5) * 10 // 1.5:1 = 100, 3:1 = 90
+    }
+    if (ratio <= 7) {
+      return 70 + ((7 - ratio) / 4) * 20 // 3:1 = 90, 7:1 = 70
+    }
+    if (ratio <= 20) {
+      return 20 + ((20 - ratio) / 13) * 50 // 7:1 = 70, 20:1 = 20
+    }
+    // Extended feedlot (>20:1)
+    return Math.max(0, 20 - (ratio - 20) * 2) // 20:1 = 20, 30:1 = 0
   }
 
   private inferForageQuality(
