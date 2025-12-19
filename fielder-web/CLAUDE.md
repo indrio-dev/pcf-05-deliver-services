@@ -372,6 +372,117 @@ S (Soil) and A (Agricultural) can **compensate** for each other to reach similar
 - **E→S**: Lab results can inform soil management changes
 - **R→E**: Timing affects what E measures
 
+### SHARE Pillar Relationships (Full Model)
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        SHARE PILLAR RELATIONSHIPS                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+           ┌─────────────┐
+           │ H (Heritage)│    GENETIC CEILING
+           │  Cultivars  │    Sets MAXIMUM potential
+           └──────┬──────┘    (cannot be exceeded)
+                  │
+                  │ ceiling
+                  ▼
+    ┌─────────────────────────┐
+    │    S ↔ A (Compensatory) │    GROWING CONDITIONS
+    │    Soil ↔ Practices     │    Either pillar can compensate
+    │    Higher S = Lower A   │    Best outcome = both optimized
+    └────────────┬────────────┘
+                 │
+                 │ expresses
+                 ▼
+    ┌─────────────────────────┐
+    │   R (Ripen) - TIMING    │
+    │                         │
+    │ R_maturity: DEGREE of   │    Tree age, animal maturity
+    │   genetic expression    │    How much of H ceiling is achievable
+    │                         │
+    │ R_timing: CAPTURE of    │    Harvest window, GDD accumulation
+    │   expressible potential │    When to harvest to maximize E
+    └────────────┬────────────┘
+                 │
+                 │ measures
+                 ▼
+           ┌─────────────┐
+           │ E (Enrich)  │    PROOF/VERIFICATION
+           │ Actual      │    Brix, Omega ratio, Lab tests
+           │ Outcome     │    Validates all other pillars
+           └─────────────┘
+
+FOR PRODUCE: H (cultivar) → S+A (growing) → R (GDD timing) → E (Brix)
+
+FOR LIVESTOCK: H (breed) → A (diet sequence) × R (duration) → E (Omega ratio)
+```
+
+### Livestock-Specific Pillar Model
+
+For livestock, the pillar relationships differ from produce:
+
+```
+LIVESTOCK: Diet Sequence (A) × Duration (R) → Omega Ratio (E)
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ H (Heritage/Breed) - ~20% of omega outcome                                 │
+│ - CAN modify omega (Wagyu +0.8, Heritage grass breeds -1.0)               │
+│ - Primarily affects fat AMOUNT (marbling), not composition                │
+│ - On same diet, Galloway: 2.3:1, Wagyu: 4.1:1 (~2x range)                 │
+└────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│ A (Agricultural/Diet) - ~80% of omega outcome (LARGEST FACTOR)            │
+│                                                                            │
+│ First Sequence (backgrounding):   Second Sequence (finishing):            │
+│ "Grass-fed" claim                 Determines final omega                  │
+│                                                                            │
+│ FINISHING DIET          OMEGA BASELINE                                     │
+│ ─────────────────────────────────────────────────────────                 │
+│ grass_only              ~3:1 (exceptional) ← TRUE grass-finished          │
+│ pasture_grain_supp      ~6:1 (premium) ← CONCURRENT grass+grain (Everglades)│
+│ grain_finished          ~14:1 (commodity) ← SEQUENTIAL: feedlot after grass│
+│ grain_fed               ~20:1 (commodity) ← Extended feedlot              │
+│                                                                            │
+│ CRITICAL DISTINCTION:                                                      │
+│   CONCURRENT (Everglades): Animal STAYS on pasture, free choice grain     │
+│   SEQUENTIAL (Most beef): Animal REMOVED to feedlot for grain finish      │
+│                                                                            │
+│ KEY: "Grass-fed" without "grass-finished" = GRAIN FINISHED (silence = grain)│
+└────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│ R (Ripen/Duration) - Modifies A impact                                     │
+│                                                                            │
+│ Finishing Duration Penalty: +0.5 ratio per month beyond 4 months          │
+│                                                                            │
+│ SCENARIO                        GRAIN MONTHS    DURATION PENALTY           │
+│ ─────────────────────────────────────────────────────────────             │
+│ Standard grain finish           4 months        +0                        │
+│ Extended ("grass-fed" marketing) 6 months       +1.0                      │
+│ Commodity beef                  8 months        +2.0                      │
+│ Luxury Wagyu                    12 months       +4.0 ← WORST HEALTH       │
+│                                                                            │
+│ PRICE/HEALTH INVERSION: Luxury Wagyu = highest price, worst omega         │
+└────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────────┐
+│ E (Enrich/Omega Ratio) - PROOF                                             │
+│                                                                            │
+│ TIER           RATIO      FEEDING REGIME                                   │
+│ ─────────────────────────────────────────────────────────────             │
+│ Exceptional    ≤3:1       True grass-fed, heritage breeds on grass        │
+│ Premium        3-6:1      Grass-finished or pasture+grain supplement      │
+│ Standard       6-12:1     Mixed feeding, some grain finish                │
+│ Commodity      >12:1      Feedlot grain-finished (includes "premium" Wagyu)│
+│                                                                            │
+│ Lab verification (Edacious, Texas A&M) catches false claims               │
+└────────────────────────────────────────────────────────────────────────────┘
+```
+
 ### Fertility Strategy (S↔A Trade-off)
 | Strategy | Tendency | Focus |
 |----------|----------|-------|

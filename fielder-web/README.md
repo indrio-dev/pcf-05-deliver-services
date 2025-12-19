@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fielder Web
 
-## Getting Started
+AI-powered farm-to-table intelligence platform applying the SHARE quality framework to predict and verify internal food quality (flavor, nutrition) across time and geography.
 
-First, run the development server:
+## Quick Start
 
 ```bash
+# Validate environment and run tests
+./init.sh
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Environment Validation
 
-## Learn More
+Run `./init.sh` at the start of each session to:
+- Check Node.js version (18+)
+- Verify dependencies installed
+- Validate TypeScript compilation
+- Run test suite
+- Show feature completion status
 
-To learn more about Next.js, take a look at the following resources:
+### Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Run production server |
+| `npm test` | Run test suite |
+| `npm run test:watch` | Run tests in watch mode |
+| `npm run test:coverage` | Run tests with coverage |
+| `npm run test:ci` | Run tests in CI mode |
+| `npm run lint` | Run ESLint |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Test Suite
 
-## Deploy on Vercel
+The project includes comprehensive tests (829+ tests across 17 suites):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Unit tests** for prediction engine, rules engine, validation engine
+- **Integration tests** for API routes and orchestrator
+- **Feature tests** for SHARE framework components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run tests:
+```bash
+npm test              # Run all tests
+npm run test:watch    # Watch mode
+npm run test:coverage # With coverage report
+```
+
+## CI/CD
+
+### GitHub Actions
+
+The project uses GitHub Actions for continuous integration:
+
+- **Triggers**: Push to `main`/`master`, all pull requests
+- **Node versions**: 18.x and 20.x (matrix build)
+- **Steps**:
+  1. Lint codebase
+  2. TypeScript compilation check
+  3. Run test suite with coverage
+  4. Build production bundle
+
+### Branch Protection
+
+Recommended settings for `main` branch:
+- Require status checks to pass before merging
+- Require branches to be up to date before merging
+- Required checks: `Test & Build (18.x)`, `Test & Build (20.x)`
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js App Router pages and API routes
+│   ├── api/            # API endpoints
+│   └── ...             # Page routes
+├── lib/
+│   ├── analytics/      # Accuracy reporting
+│   ├── constants/      # Static data (rootstocks, phenology, etc.)
+│   ├── data/           # Reference data service
+│   ├── intelligence/   # Core prediction engine
+│   │   ├── rules-engine.ts       # SHARE rules
+│   │   ├── claim-inference.ts    # PLU/claim inference
+│   │   ├── validation-engine.ts  # Data validation
+│   │   ├── calibration-engine.ts # Farm calibration
+│   │   ├── exception-handler.ts  # Exception queue
+│   │   ├── brix-ml-service.ts    # ML service (MVP)
+│   │   └── orchestrator.ts       # Main orchestrator
+│   ├── prediction/     # GDD and quality prediction
+│   └── utils/          # Shared utilities
+└── __tests__/          # Test files
+```
+
+## Environment Variables
+
+Copy `.env.local.example` to `.env.local` and configure:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+These are optional for local development (features gracefully degrade).
+
+## Architecture
+
+### SHARE Framework
+
+| Pillar | Description |
+|--------|-------------|
+| **S**oil | Foundation - mineralized soil science |
+| **H**eritage | Genetic ceiling - cultivar/rootstock |
+| **A**gricultural | Growing practices - fertility, pest management |
+| **R**ipen | Timing - harvest window optimization |
+| **E**nrich | Proof - measured nutrition outcomes |
+
+### Prediction Layers
+
+1. **Deterministic**: Rules engine for known cultivar/rootstock combinations
+2. **Probabilistic**: ML models for enhanced predictions (stub)
+3. **Exception**: Human review for low-confidence cases
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Database**: Supabase (PostgreSQL)
+- **Styling**: Tailwind CSS v4
+- **Testing**: Jest + Testing Library
+- **CI/CD**: GitHub Actions
