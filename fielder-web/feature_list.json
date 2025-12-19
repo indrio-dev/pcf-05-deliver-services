@@ -526,7 +526,7 @@
     {
       "id": "F032",
       "name": "Discovery Endpoint - What's At Peak Today",
-      "passes": false,
+      "passes": true,
       "phase": "5-refinement",
       "depends_on": ["F031"],
       "steps": [
@@ -539,8 +539,9 @@
         "Add caching (results valid for ~1 day)"
       ],
       "acceptance": "Endpoint returns all products currently at peak quality across all regions",
-      "files": ["src/app/api/discover/peak/route.ts"],
-      "notes": "This is the ORIGINAL vision for the predictor - a discovery engine showing what's best RIGHT NOW. Not just single predictions, but a daily view of peak quality items across all categories, regions, and cultivars."
+      "files": ["src/app/api/discover/peak/route.ts", "src/__tests__/discover-peak-api.test.ts"],
+      "notes": "This is the ORIGINAL vision for the predictor - a discovery engine showing what's best RIGHT NOW. Not just single predictions, but a daily view of peak quality items across all categories, regions, and cultivars.",
+      "completion_notes": "Created GET /api/discover/peak using polymorphic predictUnified() system. Iterates all REGIONAL_OFFERINGS, runs SHARE predictions, returns items with full quality breakdown (qualityScore, qualityTier, primaryMetric, SHARE pillar summaries). Supports filtering by minScore, harvestStatus, and limit. 11 tests covering prediction logic."
     }
   ]
 }
