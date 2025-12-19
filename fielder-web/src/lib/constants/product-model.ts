@@ -1,15 +1,16 @@
 /**
  * =============================================================================
- * FIELDER PRODUCT MODEL (Corrected Hierarchy)
+ * FIELDER LISTING MODEL
  * =============================================================================
  *
  * CLASSIFICATION TAXONOMY (for organizing, searching, inferring):
- *   Category → Subcategory → ProductCategory → Variety → Cultivar → Trade Names
+ *   Category → Subcategory → ProductType → Variety → Cultivar → Trade Names
+ *   (Defined in products.ts)
  *
- * ACTUAL PRODUCT (what gets bought and sold):
- *   Product = Farm + Cultivar + SHARE data + Retail attributes
+ * MARKETPLACE LISTING (what gets bought and sold):
+ *   Listing = Farm + Cultivar + SHARE data + Retail attributes
  *
- * The taxonomy enables inference. The Product is the transaction.
+ * The taxonomy enables inference. The Listing is the transaction.
  *
  * =============================================================================
  * HIERARCHY EXAMPLE
@@ -17,21 +18,21 @@
  *
  * MEAT (Category)
  *   └── RED_MEAT (Subcategory)
- *         └── Beef (ProductCategory)
+ *         └── Beef (ProductType)
  *               └── Wagyu Cross (Variety)
  *                     └── Black Wagyu × Brangus (Cultivar)
  *                           └── "American Wagyu" (Trade Name)
  *                                 └── "Pasture Raised American Wagyu Ribeye 12oz
- *                                      from Everglades Ranch" (PRODUCT)
+ *                                      from Everglades Ranch" (LISTING)
  *
  * FRUIT (Category)
  *   └── CITRUS (Subcategory)
- *         └── Orange (ProductCategory)
+ *         └── Orange (ProductType)
  *               └── Navel (Variety)
  *                     └── Washington Navel (Cultivar)
  *                           └── "Heritage Navels" (Trade Name)
  *                                 └── "1/8 Bushel Heritage Navels
- *                                      from Hale Groves" (PRODUCT)
+ *                                      from Hale Groves" (LISTING)
  */
 
 import type {
@@ -46,12 +47,12 @@ import type { ShareProfileCategory } from './share-profiles'
 // FARM (Producer Attribution)
 // =============================================================================
 /**
- * Farm represents the producer/source of products.
+ * Farm represents the producer/source of listings.
  *
  * The Farm provides:
  *   - S pillar inference (via regionId → typicalSoil)
  *   - Default A pillar practices (farm-level defaults)
- *   - Attribution for the product ("from Everglades Ranch")
+ *   - Attribution for the listing ("from Everglades Ranch")
  */
 export interface Farm {
   id: string
@@ -71,7 +72,7 @@ export interface Farm {
   }
 
   // Farm-level SHARE defaults
-  // These can be overridden at the Product level
+  // These can be overridden at the Listing level
   defaultPractices?: HarvestingPractices  // A pillar defaults
   soilProfile?: {                         // S pillar (if known, overrides regional inference)
     type: string
@@ -99,22 +100,22 @@ export interface Farm {
 
 
 // =============================================================================
-// PRODUCT (The Actual Purchasable Item)
+// LISTING (The Actual Purchasable Item)
 // =============================================================================
 /**
- * Product is the actual purchasable item - what the customer buys.
+ * Listing is the actual purchasable item - what the customer buys.
  *
- * A Product brings together:
+ * A Listing brings together:
  *   - Farm attribution (who grew/raised it) → S inference
  *   - Cultivar reference (genetics) → H pillar
- *   - Actual SHARE data for this specific product (A, R, E)
+ *   - Actual SHARE data for this specific listing (A, R, E)
  *   - Retail attributes (cut, weight, form, packaging)
  *
- * The Product name encodes key SHARE differentiators:
+ * The Listing name encodes key SHARE differentiators:
  *   "Pasture Raised American Wagyu Ribeye 12oz from Everglades Ranch"
  *    └── A pillar ──┘ └── H (trade) ─┘ └─ cut ─┘ └── weight ──┘ └── farm ────┘
  */
-export interface Product {
+export interface Listing {
   id: string
 
   // === NAMING ===
@@ -124,8 +125,8 @@ export interface Product {
   description?: string
 
   // === TAXONOMY REFERENCE ===
-  // Links this product to the classification hierarchy
-  productCategoryId: string         // → "beef" (was Product.id)
+  // Links this listing to the classification hierarchy
+  productTypeId: string             // → "beef" (ProductType.id)
   varietyId?: string                // → "wagyu_cross"
   cultivarId: string                // → "wagyu_brangus" (H pillar baseline)
 
@@ -146,7 +147,7 @@ export interface Product {
   heritageNotes?: string            // Any product-specific heritage notes
 
   // === A - AGRICULTURAL PRACTICES ===
-  // The actual practices for THIS product (may differ from farm defaults)
+  // The actual practices for THIS listing (may differ from farm defaults)
   practices: {
     // Universal
     isOrganic?: boolean
@@ -177,7 +178,7 @@ export interface Product {
   }
 
   // === R - RIPEN / TIMING ===
-  // Timing to peak quality for THIS product
+  // Timing to peak quality for THIS listing
   timing: {
     // Produce: Harvest timing
     harvestDate?: string            // Actual harvest date if known
@@ -205,7 +206,7 @@ export interface Product {
   }
 
   // === E - ENRICH / QUALITY METRICS ===
-  // Measurable quality for THIS product
+  // Measurable quality for THIS listing
   quality: {
     // Produce: Brix and compounds
     brixMeasured?: number           // Actual measured Brix
@@ -244,7 +245,7 @@ export interface Product {
   }
 
   // === RETAIL ATTRIBUTES ===
-  // The physical product configuration
+  // The physical listing configuration
   retail: {
     // Cut (meat/seafood)
     cut?: string                    // 'ribeye', 'ny_strip', 'fillet', 'whole'
@@ -287,10 +288,56 @@ export interface Product {
 
 
 // =============================================================================
-// PRODUCT NAME BUILDER
+// LISTING VARIANT (Same Listing, Different Size/Packaging)
 // =============================================================================
 /**
- * Builds a product display name from its components.
+ * ListingVariant represents the same base listing in a different retail configuration.
+ *
+ * Use cases:
+ *   - Same ribeye, different weights: 12oz vs 16oz vs 24oz
+ *   - Same oranges, different packaging: 1/8 bushel vs 1/4 bushel vs full bushel
+ *   - Same honey, different sizes: 8oz vs 16oz vs 32oz jar
+ *
+ * The parent Listing contains all SHARE data (practices, timing, quality).
+ * The variant only overrides retail attributes (weight, packaging, price).
+ */
+export interface ListingVariant {
+  id: string
+  listingId: string                 // Parent Listing.id
+
+  // === NAMING ===
+  name: string                      // URL-safe: "wagyu-ribeye-16oz"
+  displayName: string               // "16oz" or "1/4 Bushel" (appended to parent name)
+
+  // === RETAIL OVERRIDES ===
+  // Only retail attributes differ from parent Listing
+  retail: {
+    weight?: number
+    weightUnit?: 'oz' | 'lb' | 'kg' | 'g'
+    count?: number                  // For "each" items
+    size?: 'small' | 'medium' | 'large' | 'jumbo'
+    packaging?: string
+    priceUsd: number                // Price for this variant
+    pricePerUnit?: string           // "$12.99/lb"
+  }
+
+  // === INVENTORY ===
+  status: 'available' | 'low_stock' | 'pre_order' | 'sold_out'
+  inventoryCount?: number
+  sku?: string                      // External SKU if different from id
+
+  // === METADATA ===
+  sortOrder?: number                // Display order within listing variants
+  isDefault?: boolean               // Is this the default variant shown?
+  isActive: boolean
+}
+
+
+// =============================================================================
+// LISTING NAME BUILDER
+// =============================================================================
+/**
+ * Builds a listing display name from its components.
  *
  * Pattern: [A Modifiers] [Trade Name/Cultivar] [Cut] [Weight] from [Farm]
  *
@@ -300,7 +347,7 @@ export interface Product {
  *   - "Wild Caught Copper River King Salmon Fillet 8oz"
  *   - "Grass Finished Heritage Beef Brisket 4lb from Texas Ranch"
  */
-export function buildProductDisplayName(product: {
+export function buildListingDisplayName(listing: {
   practices?: {
     isOrganic?: boolean
     animalWelfare?: string
@@ -317,36 +364,36 @@ export function buildProductDisplayName(product: {
   const parts: string[] = []
 
   // A pillar modifiers (practices that go in the name)
-  if (product.practices?.harvestMethod === 'wild_caught') {
+  if (listing.practices?.harvestMethod === 'wild_caught') {
     parts.push('Wild Caught')
-  } else if (product.practices?.grassFinished) {
+  } else if (listing.practices?.grassFinished) {
     parts.push('Grass Finished')
-  } else if (product.practices?.animalWelfare === 'pasture_raised') {
+  } else if (listing.practices?.animalWelfare === 'pasture_raised') {
     parts.push('Pasture Raised')
-  } else if (product.practices?.isOrganic) {
+  } else if (listing.practices?.isOrganic) {
     parts.push('Organic')
   }
 
   // H pillar (trade name or cultivar)
-  if (product.tradeName) {
-    parts.push(product.tradeName)
-  } else if (product.cultivarDisplayName) {
-    parts.push(product.cultivarDisplayName)
+  if (listing.tradeName) {
+    parts.push(listing.tradeName)
+  } else if (listing.cultivarDisplayName) {
+    parts.push(listing.cultivarDisplayName)
   }
 
   // Cut (for meat/seafood)
-  if (product.cut) {
-    parts.push(product.cut)
+  if (listing.cut) {
+    parts.push(listing.cut)
   }
 
   // Weight
-  if (product.weight && product.weightUnit) {
-    parts.push(`${product.weight}${product.weightUnit}`)
+  if (listing.weight && listing.weightUnit) {
+    parts.push(`${listing.weight}${listing.weightUnit}`)
   }
 
   // Farm attribution
-  if (product.farmName) {
-    parts.push(`from ${product.farmName}`)
+  if (listing.farmName) {
+    parts.push(`from ${listing.farmName}`)
   }
 
   return parts.join(' ')
@@ -354,10 +401,10 @@ export function buildProductDisplayName(product: {
 
 
 // =============================================================================
-// EXAMPLE PRODUCTS
+// EXAMPLE LISTINGS
 // =============================================================================
 
-export const EXAMPLE_PRODUCTS: Product[] = [
+export const EXAMPLE_LISTINGS: Listing[] = [
   {
     id: 'everglades-wagyu-ribeye-12oz',
     name: 'pasture-raised-american-wagyu-ribeye-12oz',
@@ -365,7 +412,7 @@ export const EXAMPLE_PRODUCTS: Product[] = [
     shortName: 'American Wagyu Ribeye',
     description: 'Premium American Wagyu ribeye from pasture-raised cattle in Fort Pierce, FL',
 
-    productCategoryId: 'beef',
+    productTypeId: 'beef',
     varietyId: 'wagyu_cross',
     cultivarId: 'wagyu_brangus',
     farmId: 'everglades_ranch',
@@ -416,7 +463,7 @@ export const EXAMPLE_PRODUCTS: Product[] = [
     shortName: 'Heritage Navels',
     description: 'Premium Washington Navel oranges from the Indian River district',
 
-    productCategoryId: 'orange',
+    productTypeId: 'orange',
     varietyId: 'navel',
     cultivarId: 'washington_navel',
     farmId: 'hale_groves',
@@ -458,18 +505,18 @@ export const EXAMPLE_PRODUCTS: Product[] = [
 
 
 // =============================================================================
-// SHARE SUMMARY FOR PRODUCT
+// SHARE SUMMARY FOR LISTING
 // =============================================================================
 /**
- * Generates a SHARE summary for a product, combining:
+ * Generates a SHARE summary for a listing, combining:
  *   - S: Inferred from farm → region → typicalSoil (or farm-specific if known)
  *   - H: From cultivar + trade name
- *   - A: From product.practices
- *   - R: From product.timing
- *   - E: From product.quality
+ *   - A: From listing.practices
+ *   - R: From listing.timing
+ *   - E: From listing.quality
  */
-export interface ProductShareSummary {
-  productId: string
+export interface ListingShareSummary {
+  listingId: string
 
   soil: {
     source: 'farm_specific' | 'region_inferred'

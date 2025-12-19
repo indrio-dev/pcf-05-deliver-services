@@ -30,8 +30,8 @@ export type EnrichLevel = 'E0' | 'E1' | 'E2' | 'E3'
 
 export type MeasurementTargetType =
   | 'share_profile'    // E0: Profile-level estimate
-  | 'product'          // E1/E2: Product-level
-  | 'product_variant'  // E1/E2: SKU-level
+  | 'listing'          // E1/E2: Listing-level (see product-model.ts)
+  | 'listing_variant'  // E1/E2: SKU-level variant (see product-model.ts)
   | 'harvest'          // E2/E3: Lot/batch-level
 
 export type MeasurementSource =

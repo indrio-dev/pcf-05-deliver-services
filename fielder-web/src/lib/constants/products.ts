@@ -414,13 +414,14 @@ export interface ProductType {
   description?: string
 }
 
-// Backwards compatibility alias
-export type Product = ProductType
+// NOTE: The "Product" alias was removed to avoid confusion.
+// ProductType = taxonomy level (Orange, Beef)
+// Listing = purchasable SKU (see product-model.ts)
 
 /**
  * Variety definition - the consumer-recognized grouping within a ProductType
  *
- * Hierarchy: ProductType → Variety → Cultivar → Trade Names → Product (SKU)
+ * Hierarchy: ProductType → Variety → Cultivar → Trade Names → Listing (SKU)
  *
  * Examples:
  *   - Orange (ProductType) → Navel (variety) → Washington, Cara Cara (cultivars)
@@ -440,7 +441,7 @@ export interface Variety {
 /**
  * Cultivar definition - the specific genetic selection within a variety
  *
- * Hierarchy: Product → Variety → Cultivar → Trade Names
+ * Hierarchy: ProductType → Variety → Cultivar → Trade Names
  *
  * Examples:
  *   - Navel → Washington Navel, Cara Cara, Lane Late, Fukumoto

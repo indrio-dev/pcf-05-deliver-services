@@ -21,7 +21,7 @@ import {
   getOfferingDetails,
   type RegionalOffering,
   type Cultivar,
-  type Product,
+  type ProductType,
 } from '@/lib/constants/products'
 import {
   calculatePeakWindow,
@@ -466,7 +466,7 @@ function ProductSchema({
   offering,
 }: {
   cultivar: Cultivar
-  product: Product
+  product: ProductType
   region: GrowingRegionExtended
   offering: RegionalOffering
 }) {

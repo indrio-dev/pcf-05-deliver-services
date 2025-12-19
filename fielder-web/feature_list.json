@@ -507,19 +507,21 @@
     {
       "id": "F031",
       "name": "Data Model Clarification",
-      "passes": false,
+      "passes": true,
       "phase": "5-refinement",
       "steps": [
         "Audit naming: Product vs ProductType vs ProductVariant across codebase",
-        "Decide canonical naming: Product = SKU, ProductType = taxonomy level",
-        "Rename Product in product-model.ts to ProductSKU or ProductVariant if needed",
-        "Update all references and imports",
-        "Document the hierarchy clearly: Category → ProductType → Variety → Cultivar → ProductSKU",
-        "Add JSDoc comments explaining the distinction"
+        "Decide canonical naming: ProductType = taxonomy, Listing = SKU, ListingVariant = size/packaging variant",
+        "Remove confusing Product = ProductType alias from products.ts",
+        "Rename Product to Listing in product-model.ts",
+        "Define new ListingVariant interface for size/packaging variants",
+        "Update enrich-measurements.ts target types: product → listing, product_variant → listing_variant",
+        "Update all references (predictions page ProductType import)",
+        "Document the hierarchy clearly"
       ],
       "acceptance": "Clear, unambiguous naming throughout codebase with documentation",
-      "files": ["src/lib/constants/products.ts", "src/lib/constants/product-model.ts"],
-      "notes": "Current state: 'Product' is overloaded - means taxonomy level in products.ts but purchasable SKU in product-model.ts. 'product_variant' referenced in enrich-measurements.ts but no formal interface. Need to clarify: Taxonomy (for discovery) vs Product (what you buy) vs ProductVariant (SKU with retail attributes)."
+      "files": ["src/lib/constants/products.ts", "src/lib/constants/product-model.ts", "src/lib/constants/enrich-measurements.ts"],
+      "completion_notes": "Clarified data model naming: (1) ProductType = taxonomy level (Orange, Beef) - stays in products.ts; (2) Listing = purchasable SKU (Farm + Cultivar + SHARE + Retail) - renamed from Product in product-model.ts; (3) ListingVariant = same listing, different size/packaging (new interface). Removed confusing Product = ProductType alias. Updated enrich-measurements.ts target types. Fixed predictions page import. Hierarchy: Category → ProductType → Variety → Cultivar → Listing → ListingVariant. 1118 tests passing."
     },
     {
       "id": "F032",
