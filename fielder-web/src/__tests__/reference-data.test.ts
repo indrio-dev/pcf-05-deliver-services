@@ -215,8 +215,8 @@ describe('Reference Data', () => {
 
     describe('getExpectedBrixRange', () => {
       it('returns correct ranges for each tier', () => {
-        expect(getExpectedBrixRange('artisan')).toEqual([14, 18])
-        expect(getExpectedBrixRange('premium')).toEqual([12, 15])
+        expect(getExpectedBrixRange('artisan')).toEqual([14, 17])
+        expect(getExpectedBrixRange('premium')).toEqual([12, 14])
         expect(getExpectedBrixRange('standard')).toEqual([10, 12])
         expect(getExpectedBrixRange('commodity')).toEqual([8, 10])
       })
@@ -234,8 +234,8 @@ describe('Reference Data', () => {
       it('has non-overlapping Brix ranges', () => {
         // Artisan starts at 14
         expect(QUALITY_TIER_INFO.artisan.typicalBrixRange[0]).toBe(14)
-        // Premium: 12-15 (overlaps with artisan at top, standard at bottom)
-        expect(QUALITY_TIER_INFO.premium.typicalBrixRange).toEqual([12, 15])
+        // Premium: 12-14 (overlaps with artisan at top, standard at bottom)
+        expect(QUALITY_TIER_INFO.premium.typicalBrixRange).toEqual([12, 14])
         // Standard: 10-12
         expect(QUALITY_TIER_INFO.standard.typicalBrixRange).toEqual([10, 12])
         // Commodity: 8-10

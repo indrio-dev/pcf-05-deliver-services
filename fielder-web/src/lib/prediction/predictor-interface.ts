@@ -85,6 +85,13 @@ export interface SoilContribution {
     // Livestock: forage quality instead of soil
     forageQuality?: 'poor' | 'fair' | 'good' | 'excellent'
     forageType?: string // e.g., 'native grasses', 'improved pasture', 'hay'
+    // Seafood: water quality instead of soil
+    waterQuality?: 'pristine' | 'good' | 'moderate' | 'poor'
+    waterBody?: string // e.g., 'Gulf of Mexico', 'Apalachicola Bay'
+    waterTemperature?: number
+    // Honey: floral source (terroir equivalent)
+    floralSource?: string // e.g., 'clover', 'wildflower', 'orange blossom'
+    floralDiversity?: 'monofloral' | 'multifloral' | 'wildflower'
   }
   insights: string[]
 }
@@ -109,6 +116,15 @@ export interface HeritageContribution {
     marblingPotential?: number
     omegaBaseline?: number
     maturityMonths?: number
+    // Seafood
+    speciesId?: string
+    speciesName?: string
+    omega3Baseline?: number // mg/100g baseline for species
+    isWildCaught?: boolean
+    // Honey
+    varietalId?: string
+    varietalName?: string
+    isPremiumVarietal?: boolean // e.g., Manuka, Sourwood
   }
   insights: string[]
 }
@@ -131,6 +147,15 @@ export interface AgriculturalContribution {
     animalWelfare?: string
     noAntibiotics?: boolean
     noHormones?: boolean
+    // Seafood
+    sourceType?: 'wild_caught' | 'farm_raised'
+    catchMethod?: string // e.g., 'line caught', 'net', 'trap'
+    farmFeedType?: string // for farm-raised
+    sustainabilityCertified?: boolean
+    // Honey
+    isRaw?: boolean
+    isFiltered?: boolean
+    processingMethod?: 'raw' | 'strained' | 'filtered' | 'pasteurized'
     // Universal
     isCertifiedOrganic?: boolean
   }
@@ -175,6 +200,15 @@ export interface RipenContribution {
     reproductiveAllocation?: number  // 0-100% of energy directed to fruit/reproduction
     maturityModifier?: number        // Brix/quality modifier from maturity stage
 
+    // === R_TIMING: Calendar-based (seafood) ===
+    catchSeason?: string // e.g., 'summer', 'winter', 'spawning'
+    isInSeason?: boolean
+    seasonalQualityFactor?: number // 0-1 multiplier
+
+    // === R_TIMING: Harvest-based (honey) ===
+    harvestSeason?: string // e.g., 'spring', 'fall'
+    nectarFlowTiming?: 'early' | 'peak' | 'late'
+
     // === Harvest status (all categories) ===
     harvestStatus: 'not_ready' | 'early' | 'optimal' | 'peak' | 'late' | 'past_peak'
   }
@@ -200,6 +234,13 @@ export interface EnrichContribution {
       value: number
       unit: string
     }[]
+    // Honey-specific quality metrics
+    moisturePct?: number // <18% ideal for raw honey
+    diastaseNumber?: number // enzyme activity
+    hmfLevel?: number // hydroxymethylfurfural (heat damage indicator)
+    // Seafood-specific
+    mercuryLevel?: number // ppm
+    freshnessScore?: number // 0-100
   }
   insights: string[]
 }
@@ -366,7 +407,7 @@ export interface HoneyPredictionInput extends BasePredictionInput {
 export interface VegetablePredictionInput extends BasePredictionInput {
   category: 'vegetables'
   varietyId: string
-  subcategory: 'leafy' | 'root' | 'cruciferous' | 'allium' | 'legume' | 'nightshade'
+  subcategory: 'leafy' | 'root' | 'cruciferous' | 'allium' | 'legume' | 'nightshade' | 'squash'
   daysSinceHarvest?: number // For freshness-based quality
   currentGDD?: number // For GDD-based vegetables
   storageConditions?: 'ambient' | 'refrigerated' | 'cold_storage'
