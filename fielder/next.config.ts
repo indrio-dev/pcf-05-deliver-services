@@ -1,28 +1,28 @@
 import type { NextConfig } from "next";
-import { PHASE_PRODUCTION_BUILD } from "next/constants";
 
-const nextConfig = (phase: string): NextConfig => {
-  // Inject IS_BUILD_TIME to skip external API calls during static generation
-  // This prevents rate limiting from Weather/NPN APIs when generating 7,700+ pages
-  const isBuildTime = phase === PHASE_PRODUCTION_BUILD;
+// Detect CI/build environment (Vercel sets CI=true during builds)
+// This skips external API calls during static generation to avoid rate limits
+// when generating 7,700+ pages
+const isCIBuild = process.env.CI === 'true';
 
-  return {
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'images.unsplash.com',
-        },
-        {
-          protocol: 'https',
-          hostname: 'images.pexels.com',
-        },
-      ],
-    },
-    env: {
-      IS_BUILD_TIME: isBuildTime ? 'true' : 'false',
-    },
-  };
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+    ],
+  },
+  env: {
+    // Pages check this to skip Weather/NPN API calls during build
+    // Falls back to estimated GDD values and static phenology data
+    IS_BUILD_TIME: isCIBuild ? 'true' : 'false',
+  },
 };
 
 export default nextConfig;
