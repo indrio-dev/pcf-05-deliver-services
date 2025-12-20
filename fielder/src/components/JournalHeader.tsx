@@ -13,8 +13,7 @@ export function JournalHeader() {
             </span>
           </Link>
           <nav className="journal-nav">
-            <Link href="/discover">Discover</Link>
-            <Link href="/predictions">Regions</Link>
+            <Link href="/">Browse</Link>
             <Link href="/about">About</Link>
           </nav>
         </div>
