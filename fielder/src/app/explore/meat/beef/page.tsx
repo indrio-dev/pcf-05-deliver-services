@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Header } from '@/components/Header'
+import { JournalHeader } from '@/components/JournalHeader'
+import { JournalFooter } from '@/components/JournalFooter'
 import { BEEF_PROFILES, type AnimalFreshShareProfile } from '@/lib/constants/share-profiles'
 import { getGridsForProfile, type ShareProfileGrid } from '@/lib/constants/profile-grids'
 
@@ -37,8 +38,8 @@ export default function BeefProfilesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--color-cream)]">
-      <Header />
+    <div className="min-h-screen bg-[var(--color-manila)]">
+      <JournalHeader />
 
       {/* Hero Section */}
       <section className="border-b border-stone-300">
@@ -151,25 +152,27 @@ export default function BeefProfilesPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="border-t border-stone-300 bg-stone-50">
+      <section className="border-t-2 border-stone-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="font-serif text-3xl text-stone-900 mb-4">
+            <h2 className="font-typewriter text-2xl text-stone-800 mb-4">
               Want to verify your beef?
             </h2>
-            <p className="font-serif text-lg text-stone-600 mb-8">
+            <p className="font-typewriter text-stone-600 mb-8">
               Lab testing proves what labels only promise. Fielder partners with Edacious Labs to verify omega ratios
               and nutrient profiles.
             </p>
             <Link
               href="/farm"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-accent)] text-white font-mono text-sm uppercase tracking-wider hover:bg-[var(--color-accent-dark)] transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-stone-800 bg-stone-800 text-[var(--color-manila)] font-typewriter text-sm uppercase tracking-wider hover:bg-stone-700 transition-colors"
             >
               Learn About Verification
             </Link>
           </div>
         </div>
       </section>
+
+      <JournalFooter />
     </div>
   )
 }

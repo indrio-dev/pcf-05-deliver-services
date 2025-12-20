@@ -2,7 +2,8 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { Header } from '@/components/Header'
+import { JournalHeader } from '@/components/JournalHeader'
+import { JournalFooter } from '@/components/JournalFooter'
 import { ALL_BRANDS, type Brand, type BrandTier } from '@/lib/constants/brands'
 
 // Tier display config
@@ -44,8 +45,8 @@ export default function BrandsPage() {
   }, [searchQuery, selectedCategory])
 
   return (
-    <div className="min-h-screen bg-[var(--color-cream)]">
-      <Header />
+    <div className="min-h-screen bg-[var(--color-manila)]">
+      <JournalHeader />
 
       {/* Hero Section */}
       <section className="border-b border-stone-300">
@@ -131,33 +132,7 @@ export default function BrandsPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-stone-900 mt-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-            <div>
-              <span className="font-serif text-xl text-white">Fielder</span>
-              <p className="mt-2 text-sm text-stone-400">Investigative food quality research.</p>
-            </div>
-            <div className="flex gap-8 font-mono text-xs uppercase tracking-wider">
-              <Link href="/discover" className="text-stone-400 hover:text-white transition-colors">
-                Discover
-              </Link>
-              <Link href="/predictions" className="text-stone-400 hover:text-white transition-colors">
-                Regions
-              </Link>
-              <Link href="/explore/brands" className="text-stone-400 hover:text-white transition-colors">
-                Brands
-              </Link>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-stone-800">
-            <p className="font-mono text-xs text-stone-500">
-              &copy; {new Date().getFullYear()} Fielder. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <JournalFooter />
     </div>
   )
 }
@@ -309,8 +284,8 @@ function BrandCard({ brand }: { brand: Brand }) {
             <h3 className="font-mono text-xs uppercase tracking-widest text-[var(--color-accent)] mb-3">
               Fielder&apos;s Assessment
             </h3>
-            <div className="bg-[var(--color-cream)] border border-stone-300 p-4">
-              <p className="font-serif text-base text-stone-900 leading-relaxed">
+            <div className="border-2 border-stone-300 bg-[var(--color-manila)] p-4">
+              <p className="font-typewriter text-base text-stone-800 leading-relaxed">
                 {brand.fielderAssessment}
               </p>
             </div>

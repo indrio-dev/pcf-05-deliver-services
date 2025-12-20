@@ -1,7 +1,8 @@
 'use client'
 
 import { useMemo } from 'react'
-import { Header } from '@/components/Header'
+import { JournalHeader } from '@/components/JournalHeader'
+import { JournalFooter } from '@/components/JournalFooter'
 import { CROP_PHENOLOGY, type CropPhenology } from '@/lib/constants/crop-phenology'
 
 // =============================================================================
@@ -248,8 +249,8 @@ export default function HarvestCalendarPage() {
   }, [calendarEntries])
 
   return (
-    <div className="min-h-screen bg-[#f5f3ef]">
-      <Header />
+    <div className="min-h-screen bg-[var(--color-manila)]">
+      <JournalHeader />
 
       {/* Hero */}
       <section className="border-b border-stone-300">
@@ -287,7 +288,7 @@ export default function HarvestCalendarPage() {
               {peakNow.map((entry, idx) => (
                 <div
                   key={`${entry.cropId}-${entry.region}-${idx}`}
-                  className="bg-[var(--color-cream)] border border-[var(--color-accent)] p-4 shadow-sm"
+                  className="border-2 border-green-600 bg-[var(--color-manila)] p-4"
                 >
                   <h3 className="font-serif text-lg text-stone-900">{entry.cropName}</h3>
                   <p className="font-mono text-xs text-stone-600 uppercase tracking-wide mt-1">
@@ -330,7 +331,7 @@ export default function HarvestCalendarPage() {
               {comingSoon.map((entry, idx) => (
                 <div
                   key={`${entry.cropId}-${entry.region}-${idx}`}
-                  className="bg-[var(--color-cream)] border border-stone-300 p-4 shadow-sm"
+                  className="border-2 border-stone-300 bg-[var(--color-manila)] p-4"
                 >
                   <h3 className="font-serif text-lg text-stone-900">{entry.cropName}</h3>
                   <p className="font-mono text-xs text-stone-600 uppercase tracking-wide mt-1">
@@ -429,14 +430,16 @@ export default function HarvestCalendarPage() {
         </div>
 
         {/* Footer note */}
-        <div className="mt-8 bg-[var(--color-cream)] border border-stone-300 p-4">
-          <p className="font-mono text-xs text-stone-600">
+        <div className="mt-8 border-2 border-stone-300 bg-[var(--color-manila)] p-4">
+          <p className="font-typewriter text-xs text-stone-600">
             <strong>Note:</strong> Harvest dates are calculated from bloom dates and Growing Degree Day (GDD)
             accumulation. Actual dates may vary by ±7-14 days based on weather patterns. Peak quality windows
             are the optimal time to buy for maximum flavor and nutrition.
           </p>
         </div>
       </section>
+
+      <JournalFooter />
     </div>
   )
 }

@@ -6,7 +6,8 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { Header } from '@/components/Header'
+import { JournalHeader } from '@/components/JournalHeader'
+import { JournalFooter } from '@/components/JournalFooter'
 import { CategoryIcon, getCategoryFromProduct } from '@/components/CategoryIcon'
 import { SHAREBreakdown } from '@/components/SHAREBreakdown'
 import {
@@ -937,8 +938,8 @@ export default async function ProductPredictionPage({ params }: Props) {
         offering={offering}
       />
 
-      <div className="min-h-screen bg-[var(--color-cream)]">
-        <Header />
+      <div className="min-h-screen bg-[var(--color-manila)]">
+        <JournalHeader />
 
         <main className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           {/* Breadcrumb - typewriter style */}
@@ -1214,11 +1215,11 @@ export default async function ProductPredictionPage({ params }: Props) {
 
             {/* Flavor Profile */}
             {cultivar.flavorProfile && (
-              <div className="mb-8 p-6 bg-[var(--color-cream)] border-l-4 border-[var(--color-accent)]">
-                <p className="font-mono text-xs uppercase tracking-widest text-stone-400 mb-2">
+              <div className="mb-8 p-6 border-2 border-stone-300 bg-[var(--color-manila)]">
+                <p className="font-typewriter text-xs uppercase tracking-widest text-stone-500 mb-2">
                   Flavor Profile
                 </p>
-                <p className="font-serif text-lg text-stone-800 italic leading-relaxed">
+                <p className="font-typewriter text-lg text-stone-800 italic leading-relaxed">
                   "{cultivar.flavorProfile}"
                 </p>
               </div>
@@ -1682,33 +1683,7 @@ export default async function ProductPredictionPage({ params }: Props) {
           </article>
         </main>
 
-        {/* Footer */}
-        <footer className="bg-stone-900 mt-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-              <div>
-                <span className="font-serif text-xl text-white">Fielder</span>
-                <p className="mt-2 text-sm text-stone-400">Fresh produce at peak quality.</p>
-              </div>
-              <div className="flex gap-8 font-mono text-xs uppercase tracking-wider">
-                <Link href="/discover" className="text-stone-400 hover:text-white transition-colors">
-                  Discover
-                </Link>
-                <Link href="/predictions" className="text-stone-400 hover:text-white transition-colors">
-                  Regions
-                </Link>
-                <Link href="/farm" className="text-stone-400 hover:text-white transition-colors">
-                  For Farms
-                </Link>
-              </div>
-            </div>
-            <div className="mt-8 pt-8 border-t border-stone-800">
-              <p className="font-mono text-xs text-stone-500">
-                &copy; {new Date().getFullYear()} Fielder. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </footer>
+        <JournalFooter />
       </div>
     </>
   )
