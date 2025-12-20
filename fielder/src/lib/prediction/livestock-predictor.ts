@@ -333,10 +333,6 @@ export class LivestockPredictor implements CategoryPredictor {
         insights.push('TRUE PASTURE: Pasture-raised with free-choice grain produces excellent omega ratio (3-7:1)')
         insights.push('Indrio model - no feedlot, animal stays on pasture')
         break
-      case 'pasture_grain_supplemented':
-        insights.push('TRUE PASTURE: Concurrent pasture + grain access (3-7:1)')
-        insights.push('Key: Animal stays on pasture (no feedlot removal)')
-        break
       case 'grain_finished':
         insights.push('FEEDLOT-FINISHED: Omega ratio 10-20:1 regardless of marketing label')
         insights.push('"Grass-fed" without "grass-finished" = feedlot finished = same as commodity')

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
+import { Inter, Playfair_Display, Courier_Prime } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,11 +15,12 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600"],
 });
 
-const mono = JetBrains_Mono({
-  variable: "--font-mono",
+// Courier Prime - Field Guide journal aesthetic
+const courierPrime = Courier_Prime({
+  variable: "--font-courier-prime",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} ${mono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} ${courierPrime.variable}`}>
       <body className="antialiased">
         {children}
       </body>
