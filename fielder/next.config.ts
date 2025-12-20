@@ -23,6 +23,33 @@ const nextConfig: NextConfig = {
     // Falls back to estimated GDD values and static phenology data
     IS_BUILD_TIME: isCIBuild ? 'true' : 'false',
   },
+  async redirects() {
+    return [
+      // Redirect old /predictions/[region]/[product] to /product/[region]/[product]
+      {
+        source: '/predictions/:region/:product',
+        destination: '/product/:region/:product',
+        permanent: true,
+      },
+      // Redirect old /predictions and /predictions/[region] to homepage
+      {
+        source: '/predictions',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/predictions/:region',
+        destination: '/',
+        permanent: true,
+      },
+      // Redirect /discover to homepage (merged)
+      {
+        source: '/discover',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

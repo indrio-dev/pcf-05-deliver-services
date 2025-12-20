@@ -1,428 +1,397 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
-import Link from 'next/link'
-import { NoteCard, NoteCardCompact } from '@/components/NoteCard'
+import { useState, useEffect, useMemo, useCallback, Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { ProductGridCard } from '@/components/ProductGridCard'
 import { JournalHeader } from '@/components/JournalHeader'
 import { JournalFooter } from '@/components/JournalFooter'
+import { FilterSidebar } from '@/components/FilterSidebar'
 import { useGeolocation, DEFAULT_LOCATION } from '@/lib/hooks/useGeolocation'
+import { useFilters } from '@/lib/hooks/useFilters'
 
 interface DiscoveryItem {
   id: string
-  offeringId: string
   varietyId: string
   productId: string
   regionId: string
   status: 'at_peak' | 'in_season' | 'approaching' | 'off_season'
-  statusMessage: string
-  harvestStart?: string | null
-  harvestEnd?: string | null
-  optimalStart?: string | null
-  optimalEnd?: string | null
-  daysUntilStart?: number | null
-  confidence: number
   distanceMiles: number
   category: string
   subcategory: string
-  modelType: string
-  qualityTier?: string
+  qualityTier: string | null
   productDisplayName: string
   varietyDisplayName: string
   regionDisplayName: string
   regionSlug: string
   state: string
-  flavorProfile?: string
-  flavorNotes?: string | null
-  seasons: string[]
 }
 
-interface DiscoveryResponse {
+interface DiscoveryData {
   atPeak: DiscoveryItem[]
   inSeason: DiscoveryItem[]
   approaching: DiscoveryItem[]
   offSeason: DiscoveryItem[]
   totalResults: number
   categoryCounts: Record<string, number>
-  seasonCounts: Record<string, number>
-  currentSeason: string
-  source: string
-  timestamp: string
 }
 
-const SEASON_NOTES: Record<string, string> = {
-  winter: "Cold nights concentrate sugars in the groves. Citrus is at its sweetest.",
-  spring: "Early berries and tender greens emerge as the earth warms.",
-  summer: "Stone fruits at their sun-ripened peak. Peaches, cherries, melons.",
-  fall: "Harvest brings apples from the orchard and the year's final bounty.",
-}
-
-export default function Home() {
-  const { location: geoLocation, requestLocation } = useGeolocation(true)
-  const [atPeak, setAtPeak] = useState<DiscoveryItem[]>([])
-  const [inSeason, setInSeason] = useState<DiscoveryItem[]>([])
-  const [approaching, setApproaching] = useState<DiscoveryItem[]>([])
+function HomePageContent() {
+  const searchParams = useSearchParams()
+  const { location, requestLocation } = useGeolocation(true)
+  const filterState = useFilters()
+  const [data, setData] = useState<DiscoveryData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [currentSeason, setCurrentSeason] = useState<string>('winter')
-  const [locationName, setLocationName] = useState<string>(DEFAULT_LOCATION.name)
-  const [showLocationInput, setShowLocationInput] = useState(false)
-  const [zipCode, setZipCode] = useState('')
-  const [zipError, setZipError] = useState<string | null>(null)
-  const [zipLoading, setZipLoading] = useState(false)
+  const [showLocationPicker, setShowLocationPicker] = useState(false)
   const [manualLocation, setManualLocation] = useState<{ lat: number; lon: number; name: string } | null>(null)
-  const [hasLoadedInitial, setHasLoadedInitial] = useState(false)
+  const [locationName, setLocationName] = useState<string>('')
+  const [zipInput, setZipInput] = useState('')
+  const [zipError, setZipError] = useState<string | null>(null)
+  const [lookingUpZip, setLookingUpZip] = useState(false)
+  const [urlParamsProcessed, setUrlParamsProcessed] = useState(false)
+  const hasUserLocation = manualLocation !== null || location !== null
 
-  const fetchDiscoveryData = useCallback(async (lat: number, lon: number) => {
-    setLoading(true)
-    setError(null)
-
-    try {
-      const params = new URLSearchParams({
-        lat: lat.toString(),
-        lon: lon.toString(),
-        status: 'at_peak,in_season,approaching',
-      })
-
-      const response = await fetch(`/api/discover?${params}`)
-      if (!response.ok) throw new Error('Failed to fetch')
-
-      const data: DiscoveryResponse = await response.json()
-      setAtPeak(data.atPeak || [])
-      setInSeason(data.inSeason || [])
-      setApproaching(data.approaching || [])
-      setCurrentSeason(data.currentSeason || 'winter')
-    } catch {
-      setError('Unable to load data')
-    } finally {
-      setLoading(false)
+  // Handle URL params for lat/lon
+  useEffect(() => {
+    if (urlParamsProcessed) return
+    const urlLat = searchParams.get('lat')
+    const urlLon = searchParams.get('lon')
+    if (urlLat && urlLon) {
+      const lat = parseFloat(urlLat)
+      const lon = parseFloat(urlLon)
+      if (!isNaN(lat) && !isNaN(lon)) {
+        setManualLocation({ lat, lon, name: `${lat.toFixed(2)}, ${lon.toFixed(2)}` })
+        fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`)
+          .then(res => res.json())
+          .then(data => {
+            const city = data.address?.city || data.address?.town || data.address?.village || data.address?.county
+            const state = data.address?.state
+            if (city && state) {
+              setManualLocation(prev => prev ? { ...prev, name: `${city}, ${state}` } : prev)
+            }
+          })
+          .catch(() => {})
+      }
     }
-  }, [])
+    setUrlParamsProcessed(true)
+  }, [searchParams, urlParamsProcessed])
 
   useEffect(() => {
-    if (!hasLoadedInitial) {
-      setHasLoadedInitial(true)
-      fetchDiscoveryData(DEFAULT_LOCATION.lat, DEFAULT_LOCATION.lon)
-    }
-  }, [hasLoadedInitial, fetchDiscoveryData])
-
-  useEffect(() => {
-    if (manualLocation) {
-      fetchDiscoveryData(manualLocation.lat, manualLocation.lon)
-      setLocationName(manualLocation.name)
-    }
-  }, [manualLocation, fetchDiscoveryData])
-
-  useEffect(() => {
-    if (geoLocation && !manualLocation) {
-      fetchDiscoveryData(geoLocation.lat, geoLocation.lon)
-      fetch(`https://nominatim.openstreetmap.org/reverse?lat=${geoLocation.lat}&lon=${geoLocation.lon}&format=json`)
+    if (location && !manualLocation) {
+      fetch(`https://nominatim.openstreetmap.org/reverse?lat=${location.lat}&lon=${location.lon}&format=json`)
         .then(res => res.json())
         .then(data => {
           const city = data.address?.city || data.address?.town || data.address?.village || data.address?.county
           const state = data.address?.state
-          if (city && state) {
-            const stateAbbr = STATE_ABBREVS[state] || state
-            setLocationName(`${city}, ${stateAbbr}`)
-          }
+          if (city && state) setLocationName(`${city}, ${state}`)
         })
         .catch(() => {})
     }
-  }, [geoLocation, manualLocation, fetchDiscoveryData])
+  }, [location?.lat, location?.lon, manualLocation])
 
-  const handleZipSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!zipCode.trim()) return
+  const activeLocation = useMemo(() => {
+    if (manualLocation) return manualLocation
+    if (location) return { ...location, name: locationName || 'Your Location' }
+    return null
+  }, [location?.lat, location?.lon, manualLocation, locationName])
 
+  const apiLocation = activeLocation || { lat: DEFAULT_LOCATION.lat, lon: DEFAULT_LOCATION.lon, name: DEFAULT_LOCATION.name }
+
+  const handleZipLookup = useCallback(async () => {
+    if (!zipInput || zipInput.length < 5) {
+      setZipError('Enter a valid 5-digit ZIP')
+      return
+    }
+    setLookingUpZip(true)
     setZipError(null)
-    setZipLoading(true)
-
     try {
-      const response = await fetch(
-        `https://nominatim.openstreetmap.org/search?postalcode=${encodeURIComponent(zipCode)}&country=US&format=json&limit=1`
-      )
-      const data = await response.json()
-
+      const res = await fetch(`https://nominatim.openstreetmap.org/search?postalcode=${zipInput}&country=US&format=json&limit=1`)
+      const data = await res.json()
       if (data && data.length > 0) {
-        const result = data[0]
-        const lat = parseFloat(result.lat)
-        const lon = parseFloat(result.lon)
-        const parts = result.display_name.split(', ')
-        const cityName = parts[1] && parts[3] ? `${parts[1]}, ${STATE_ABBREVS[parts[3]] || parts[3]}` : `Zip ${zipCode}`
-
-        setManualLocation({ lat, lon, name: cityName })
-        setShowLocationInput(false)
-        setZipCode('')
+        setManualLocation({
+          lat: parseFloat(data[0].lat),
+          lon: parseFloat(data[0].lon),
+          name: data[0].display_name.split(',').slice(0, 2).join(',').trim()
+        })
+        setShowLocationPicker(false)
+        setZipInput('')
       } else {
-        setZipError('Zip code not found')
+        setZipError('ZIP not found')
       }
     } catch {
-      setZipError('Unable to look up zip code')
+      setZipError('Lookup failed')
     } finally {
-      setZipLoading(false)
+      setLookingUpZip(false)
     }
-  }
+  }, [zipInput])
 
-  const handleUseMyLocation = () => {
+  const handleUseDeviceLocation = useCallback(() => {
+    setManualLocation(null)
+    setLocationName(DEFAULT_LOCATION.name)
     requestLocation()
-    setShowLocationInput(false)
-  }
+    setShowLocationPicker(false)
+  }, [requestLocation])
+
+  // Fetch data
+  useEffect(() => {
+    setLoading(true)
+    setError(null)
+    const queryString = filterState.buildQueryString(apiLocation.lat, apiLocation.lon)
+    fetch(`/api/discover?${queryString}`)
+      .then(res => res.json())
+      .then(result => {
+        if (result.error) {
+          setError(result.error)
+        } else {
+          setData(result)
+        }
+        setLoading(false)
+      })
+      .catch(() => {
+        setError('Failed to load data')
+        setLoading(false)
+      })
+  }, [apiLocation.lat, apiLocation.lon, filterState.buildQueryString])
+
+  // Combine all items into one sorted list
+  const allItems = useMemo(() => {
+    if (!data) return []
+    const statusOrder = { at_peak: 0, in_season: 1, approaching: 2, off_season: 3 }
+    const combined = [
+      ...data.atPeak,
+      ...data.inSeason,
+      ...data.approaching,
+      ...(filterState.filters.status.includes('off_season') ? data.offSeason : []),
+    ]
+    return combined.sort((a, b) => {
+      // Sort by status first, then by distance
+      const statusDiff = statusOrder[a.status] - statusOrder[b.status]
+      if (statusDiff !== 0) return statusDiff
+      return (a.distanceMiles || 0) - (b.distanceMiles || 0)
+    })
+  }, [data, filterState.filters.status])
 
   return (
     <div className="journal-page">
       <JournalHeader />
 
-      {/* Hero */}
-      <section style={{ borderBottom: '1px solid var(--color-rule)', padding: 'var(--space-2xl) 0' }}>
-        <div className="journal-container">
-          <p className="journal-meta" style={{ marginBottom: 'var(--space-sm)' }}>
-            {currentSeason} Notes
-          </p>
-          <h1 style={{ marginBottom: 'var(--space-md)' }}>
-            Fresh Near{' '}
+      {/* Location Bar */}
+      <div style={{
+        borderBottom: '1px solid var(--color-rule)',
+        padding: 'var(--space-sm) 0',
+        background: 'var(--color-manila)',
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 var(--space-lg)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+          <div style={{ position: 'relative' }}>
             <button
-              onClick={() => setShowLocationInput(!showLocationInput)}
+              onClick={() => setShowLocationPicker(!showLocationPicker)}
               style={{
                 background: 'none',
                 border: 'none',
                 font: 'inherit',
                 cursor: 'pointer',
-                textDecoration: 'underline',
-                textDecorationStyle: 'dashed',
-                textUnderlineOffset: '4px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 'var(--space-xs)',
                 padding: 0,
               }}
             >
-              {locationName}
+              <svg style={{ width: '1rem', height: '1rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span style={{
+                fontFamily: 'var(--font-typewriter)',
+                fontSize: '0.8125rem',
+                textDecoration: 'underline',
+                textDecorationStyle: 'dashed',
+                textUnderlineOffset: '3px',
+              }}>
+                {activeLocation ? activeLocation.name : 'Set location'}
+              </span>
             </button>
-          </h1>
-          <p className="journal-description" style={{ maxWidth: '32rem' }}>
-            {SEASON_NOTES[currentSeason] || SEASON_NOTES.winter}
-          </p>
 
-          {/* Location Input */}
-          {showLocationInput && (
-            <div style={{ marginTop: 'var(--space-lg)', maxWidth: '20rem' }}>
-              <form onSubmit={handleZipSubmit}>
-                <label style={{ display: 'block', marginBottom: 'var(--space-xs)', fontSize: '0.875rem' }}>
-                  Enter zip code:
-                </label>
-                <div style={{ display: 'flex', gap: 'var(--space-sm)' }}>
-                  <input
-                    type="text"
-                    value={zipCode}
-                    onChange={(e) => setZipCode(e.target.value.replace(/\D/g, '').slice(0, 5))}
-                    placeholder="e.g., 32789"
-                    style={{
-                      flex: 1,
-                      padding: 'var(--space-sm) var(--space-md)',
-                      border: '1px solid var(--color-rule)',
-                      background: 'var(--color-manila)',
-                      font: 'inherit',
-                      fontSize: '1rem',
-                    }}
-                    maxLength={5}
-                    inputMode="numeric"
-                  />
+            {/* Location Picker Dropdown */}
+            {showLocationPicker && (
+              <>
+                <div
+                  style={{ position: 'fixed', inset: 0, zIndex: 40 }}
+                  onClick={() => setShowLocationPicker(false)}
+                />
+                <div style={{
+                  position: 'absolute',
+                  left: 0,
+                  top: '100%',
+                  marginTop: 'var(--space-xs)',
+                  zIndex: 50,
+                  width: '16rem',
+                  background: 'var(--color-manila)',
+                  padding: 'var(--space-md)',
+                  border: '1px solid var(--color-rule)',
+                  boxShadow: '2px 2px 0 var(--color-rule)',
+                }}>
+                  <div style={{ marginBottom: 'var(--space-sm)' }}>
+                    <div style={{ display: 'flex', gap: 'var(--space-xs)' }}>
+                      <input
+                        type="text"
+                        value={zipInput}
+                        onChange={(e) => setZipInput(e.target.value.replace(/\D/g, '').slice(0, 5))}
+                        placeholder="ZIP code"
+                        style={{
+                          flex: 1,
+                          border: '1px solid var(--color-rule)',
+                          padding: 'var(--space-xs) var(--space-sm)',
+                          background: 'var(--color-manila)',
+                          fontFamily: 'var(--font-typewriter)',
+                          fontSize: '0.8125rem',
+                        }}
+                        onKeyDown={(e) => e.key === 'Enter' && handleZipLookup()}
+                      />
+                      <button
+                        onClick={handleZipLookup}
+                        disabled={lookingUpZip}
+                        style={{
+                          background: 'var(--color-ink)',
+                          color: 'var(--color-manila)',
+                          padding: 'var(--space-xs) var(--space-sm)',
+                          border: 'none',
+                          fontFamily: 'var(--font-typewriter)',
+                          fontSize: '0.75rem',
+                          textTransform: 'uppercase',
+                          cursor: lookingUpZip ? 'wait' : 'pointer',
+                        }}
+                      >
+                        Go
+                      </button>
+                    </div>
+                    {zipError && (
+                      <p style={{ marginTop: 'var(--space-xs)', fontSize: '0.75rem', color: 'var(--color-approaching)' }}>
+                        {zipError}
+                      </p>
+                    )}
+                  </div>
                   <button
-                    type="submit"
-                    disabled={zipCode.length !== 5 || zipLoading}
+                    onClick={handleUseDeviceLocation}
                     style={{
-                      padding: 'var(--space-sm) var(--space-md)',
-                      border: '1px solid var(--color-ink)',
-                      background: 'var(--color-ink)',
-                      color: 'var(--color-manila)',
-                      font: 'inherit',
-                      fontSize: '0.875rem',
-                      cursor: zipCode.length === 5 && !zipLoading ? 'pointer' : 'not-allowed',
-                      opacity: zipCode.length === 5 && !zipLoading ? 1 : 0.5,
+                      width: '100%',
+                      textAlign: 'left',
+                      padding: 0,
+                      background: 'none',
+                      border: 'none',
+                      fontFamily: 'var(--font-typewriter)',
+                      fontSize: '0.8125rem',
+                      cursor: 'pointer',
+                      textDecoration: 'underline',
                     }}
                   >
-                    {zipLoading ? '...' : 'Go'}
+                    Use my location
                   </button>
                 </div>
-                {zipError && (
-                  <p style={{ marginTop: 'var(--space-xs)', fontSize: '0.875rem', color: 'var(--color-approaching)' }}>
-                    {zipError}
-                  </p>
-                )}
-              </form>
+              </>
+            )}
+          </div>
+
+          <span style={{
+            fontFamily: 'var(--font-typewriter)',
+            fontSize: '0.75rem',
+            color: 'var(--color-ink-muted)',
+          }}>
+            {data ? `${allItems.length} products` : ''}
+          </span>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <main style={{
+        display: 'flex',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: 'var(--space-lg)',
+        gap: 'var(--space-lg)',
+        minHeight: 'calc(100vh - 200px)',
+      }}>
+        {/* Filter Sidebar */}
+        <FilterSidebar filterState={filterState} categoryCounts={data?.categoryCounts || {}} />
+
+        {/* Product Grid */}
+        <div style={{ flex: 1, minWidth: 0 }}>
+          {loading && (
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 'var(--space-3xl)',
+              fontFamily: 'var(--font-typewriter)',
+              color: 'var(--color-ink-muted)',
+            }}>
+              Loading...
+            </div>
+          )}
+
+          {error && (
+            <div style={{
+              padding: 'var(--space-xl)',
+              textAlign: 'center',
+              fontFamily: 'var(--font-typewriter)',
+              color: 'var(--color-ink-muted)',
+            }}>
+              {error}
+            </div>
+          )}
+
+          {!loading && !error && allItems.length === 0 && (
+            <div style={{
+              padding: 'var(--space-xl)',
+              textAlign: 'center',
+              fontFamily: 'var(--font-typewriter)',
+            }}>
+              <p style={{ color: 'var(--color-ink-muted)', marginBottom: 'var(--space-md)' }}>
+                No products found. Try adjusting your filters.
+              </p>
               <button
-                onClick={handleUseMyLocation}
+                onClick={() => filterState.resetFilters()}
                 style={{
-                  marginTop: 'var(--space-sm)',
                   background: 'none',
                   border: 'none',
-                  font: 'inherit',
-                  fontSize: '0.875rem',
-                  cursor: 'pointer',
+                  fontFamily: 'var(--font-typewriter)',
                   textDecoration: 'underline',
-                  padding: 0,
+                  cursor: 'pointer',
                 }}
               >
-                Use my current location
+                Reset filters
               </button>
             </div>
           )}
+
+          {!loading && !error && allItems.length > 0 && (
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: 'var(--space-md)',
+            }}>
+              {allItems.map((item) => (
+                <ProductGridCard
+                  key={item.id}
+                  title={item.varietyDisplayName}
+                  productType={item.productDisplayName}
+                  region={item.regionDisplayName}
+                  state={item.state}
+                  status={item.status}
+                  href={`/product/${item.regionSlug}/${item.varietyId.replace(/_/g, '-').toLowerCase()}`}
+                  distance={hasUserLocation ? item.distanceMiles : undefined}
+                  qualityTier={item.qualityTier || undefined}
+                />
+              ))}
+            </div>
+          )}
         </div>
-      </section>
-
-      {/* Main Content */}
-      <main className="journal-container" style={{ padding: 'var(--space-2xl) var(--space-lg)' }}>
-        {loading ? (
-          <div className="journal-loading">Loading field notes...</div>
-        ) : error ? (
-          <div className="journal-empty">
-            <p>{error}</p>
-            <button
-              onClick={() => fetchDiscoveryData(DEFAULT_LOCATION.lat, DEFAULT_LOCATION.lon)}
-              style={{
-                marginTop: 'var(--space-md)',
-                background: 'none',
-                border: 'none',
-                font: 'inherit',
-                textDecoration: 'underline',
-                cursor: 'pointer',
-              }}
-            >
-              Try again
-            </button>
-          </div>
-        ) : (
-          <>
-            {/* At Peak */}
-            {atPeak.length > 0 && (
-              <section>
-                <div className="journal-section-header">
-                  At Peak Now
-                  {atPeak.length > 6 && (
-                    <Link
-                      href="/discover?status=at_peak"
-                      style={{ float: 'right', textTransform: 'none', letterSpacing: 'normal' }}
-                    >
-                      View all ({atPeak.length})
-                    </Link>
-                  )}
-                </div>
-                <div>
-                  {atPeak.slice(0, 6).map((item) => (
-                    <NoteCard
-                      key={item.id}
-                      id={item.id}
-                      title={item.varietyDisplayName}
-                      category={item.category}
-                      subcategory={item.subcategory}
-                      region={item.regionDisplayName}
-                      state={item.state}
-                      status={item.status}
-                      statusMessage={item.statusMessage}
-                      href={`/predictions/${item.regionSlug}/${item.varietyId.replace(/_/g, '-').toLowerCase()}`}
-                      distance={item.distanceMiles}
-                      qualityTier={item.qualityTier}
-                      flavorProfile={item.flavorProfile}
-                      flavorNotes={item.flavorNotes}
-                      productType={item.productDisplayName}
-                    />
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* In Season */}
-            {inSeason.length > 0 && (
-              <section style={{ marginTop: 'var(--space-2xl)' }}>
-                <div className="journal-section-header">
-                  In Season
-                  {inSeason.length > 6 && (
-                    <Link
-                      href="/discover?status=in_season"
-                      style={{ float: 'right', textTransform: 'none', letterSpacing: 'normal' }}
-                    >
-                      View all ({inSeason.length})
-                    </Link>
-                  )}
-                </div>
-                <div>
-                  {inSeason.slice(0, 6).map((item) => (
-                    <NoteCard
-                      key={item.id}
-                      id={item.id}
-                      title={item.varietyDisplayName}
-                      category={item.category}
-                      subcategory={item.subcategory}
-                      region={item.regionDisplayName}
-                      state={item.state}
-                      status={item.status}
-                      statusMessage={item.statusMessage}
-                      href={`/predictions/${item.regionSlug}/${item.varietyId.replace(/_/g, '-').toLowerCase()}`}
-                      distance={item.distanceMiles}
-                      qualityTier={item.qualityTier}
-                      flavorProfile={item.flavorProfile}
-                      flavorNotes={item.flavorNotes}
-                      productType={item.productDisplayName}
-                    />
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* Coming Soon */}
-            {approaching.length > 0 && (
-              <section style={{ marginTop: 'var(--space-2xl)' }}>
-                <div className="journal-section-header">
-                  Coming Soon
-                  {approaching.length > 4 && (
-                    <Link
-                      href="/discover?status=approaching"
-                      style={{ float: 'right', textTransform: 'none', letterSpacing: 'normal' }}
-                    >
-                      View all ({approaching.length})
-                    </Link>
-                  )}
-                </div>
-                <div>
-                  {approaching.slice(0, 4).map((item) => (
-                    <NoteCardCompact
-                      key={item.id}
-                      title={item.varietyDisplayName}
-                      category={item.category}
-                      region={item.regionDisplayName}
-                      state={item.state}
-                      status={item.status}
-                      href={`/predictions/${item.regionSlug}/${item.varietyId.replace(/_/g, '-').toLowerCase()}`}
-                      distance={item.distanceMiles}
-                    />
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* Empty State */}
-            {atPeak.length === 0 && inSeason.length === 0 && approaching.length === 0 && (
-              <div className="journal-empty">
-                <p>No produce data available for this location yet.</p>
-                <Link href="/predictions" style={{ marginTop: 'var(--space-md)', display: 'inline-block' }}>
-                  Browse by region
-                </Link>
-              </div>
-            )}
-
-            {/* Explore More */}
-            {(atPeak.length > 0 || inSeason.length > 0) && (
-              <hr className="journal-divider" style={{ marginTop: 'var(--space-3xl)' }} />
-            )}
-            {(atPeak.length > 0 || inSeason.length > 0) && (
-              <section style={{ textAlign: 'center' }}>
-                <p style={{ marginBottom: 'var(--space-md)', color: 'var(--color-ink-muted)' }}>
-                  Browse all regions or search by what you&apos;re looking for.
-                </p>
-                <div style={{ display: 'flex', gap: 'var(--space-lg)', justifyContent: 'center' }}>
-                  <Link href="/discover">Browse All</Link>
-                  <Link href="/predictions">View Regions</Link>
-                </div>
-              </section>
-            )}
-          </>
-        )}
       </main>
 
       <JournalFooter />
@@ -430,15 +399,24 @@ export default function Home() {
   )
 }
 
-const STATE_ABBREVS: Record<string, string> = {
-  'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA',
-  'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE', 'Florida': 'FL', 'Georgia': 'GA',
-  'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA',
-  'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD',
-  'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS', 'Missouri': 'MO',
-  'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ',
-  'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH',
-  'Oklahoma': 'OK', 'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
-  'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT',
-  'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY',
+export default function HomePage() {
+  return (
+    <Suspense fallback={
+      <div className="journal-page">
+        <JournalHeader />
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: 'var(--space-3xl)',
+          fontFamily: 'var(--font-typewriter)',
+          color: 'var(--color-ink-muted)',
+        }}>
+          Loading...
+        </div>
+      </div>
+    }>
+      <HomePageContent />
+    </Suspense>
+  )
 }
