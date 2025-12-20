@@ -9,9 +9,8 @@ export function JournalFooter() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 'var(--space-md)' }}>
           <span>Fielder</span>
           <nav className="journal-nav">
-            <Link href="/discover">Discover</Link>
-            <Link href="/predictions">Regions</Link>
-            <Link href="/farm">For Farms</Link>
+            <Link href="/field-guide">Field Guide</Link>
+            <Link href="/about">About</Link>
           </nav>
         </div>
         <p style={{ marginTop: 'var(--space-md)', fontSize: '0.8125rem' }}>
