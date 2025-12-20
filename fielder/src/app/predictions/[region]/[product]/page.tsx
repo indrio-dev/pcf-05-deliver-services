@@ -563,7 +563,8 @@ export default async function ProductPredictionPage({ params }: Props) {
   // - Weather API 429 rate limits
   // - NPN API 404 errors (endpoint not available)
   // Pages will use estimated/fallback values during build, live data at runtime
-  const isBuildPhase = process.env.NEXT_PHASE === 'phase-production-build'
+  // IS_BUILD_TIME is injected via next.config.ts using PHASE_PRODUCTION_BUILD
+  const isBuildPhase = process.env.IS_BUILD_TIME === 'true'
 
   // ==========================================================================
   // GDD PREDICTION ENGINE (only for produce)
