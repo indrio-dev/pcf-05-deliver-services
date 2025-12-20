@@ -439,25 +439,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export async function generateStaticParams() {
-  const params: { region: string; product: string }[] = []
-
-  for (const offering of REGIONAL_OFFERINGS) {
-    if (!offering.isActive) continue
-
-    const region = ALL_GROWING_REGIONS[offering.regionId]
-    const cultivar = CULTIVARS_BY_ID[offering.varietyId || '']
-
-    if (region && cultivar) {
-      params.push({
-        region: region.slug,
-        product: getProductSlug(cultivar.id),
-      })
-    }
-  }
-
-  return params
-}
+// Static generation disabled - 7,700+ pages exceed Vercel's 75MB build limit
+// TODO: Implement seasonal static generation (pre-render only in-season pages)
+// For now, all pages render dynamically on-demand
+export const dynamic = 'force-dynamic'
 
 function ProductSchema({
   cultivar,

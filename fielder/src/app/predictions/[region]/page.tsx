@@ -39,11 +39,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export async function generateStaticParams() {
-  return Object.values(ALL_GROWING_REGIONS).map((region) => ({
-    region: region.slug,
-  }))
-}
+// Static generation disabled - 7,700+ pages exceed Vercel's 75MB build limit
+// TODO: Implement seasonal static generation (pre-render only in-season pages)
+// For now, all pages render dynamically on-demand
+export const dynamic = 'force-dynamic'
 
 function getProductSlug(cultivarId: string): string {
   // Convert cultivar ID to URL-friendly slug
