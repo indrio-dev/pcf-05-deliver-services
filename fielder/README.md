@@ -1,4 +1,4 @@
-# Fielder Web
+# Fielder
 
 AI-powered farm-to-table intelligence platform applying the SHARE quality framework to predict and verify internal food quality (flavor, nutrition) across time and geography.
 
@@ -40,7 +40,7 @@ Run `./init.sh` at the start of each session to:
 
 ### Test Suite
 
-The project includes comprehensive tests (829+ tests across 17 suites):
+The project includes comprehensive tests (1,150+ tests across 17 suites):
 
 - **Unit tests** for prediction engine, rules engine, validation engine
 - **Integration tests** for API routes and orchestrator
@@ -77,25 +77,30 @@ Recommended settings for `main` branch:
 ## Project Structure
 
 ```
-src/
-├── app/                 # Next.js App Router pages and API routes
-│   ├── api/            # API endpoints
-│   └── ...             # Page routes
-├── lib/
-│   ├── analytics/      # Accuracy reporting
-│   ├── constants/      # Static data (rootstocks, phenology, etc.)
-│   ├── data/           # Reference data service
-│   ├── intelligence/   # Core prediction engine
-│   │   ├── rules-engine.ts       # SHARE rules
-│   │   ├── claim-inference.ts    # PLU/claim inference
-│   │   ├── validation-engine.ts  # Data validation
-│   │   ├── calibration-engine.ts # Farm calibration
-│   │   ├── exception-handler.ts  # Exception queue
-│   │   ├── brix-ml-service.ts    # ML service (MVP)
-│   │   └── orchestrator.ts       # Main orchestrator
-│   ├── prediction/     # GDD and quality prediction
-│   └── utils/          # Shared utilities
-└── __tests__/          # Test files
+fielder/
+├── src/
+│   ├── app/                 # Next.js App Router pages and API routes
+│   │   ├── api/            # API endpoints
+│   │   └── ...             # Page routes
+│   ├── lib/
+│   │   ├── analytics/      # Accuracy reporting
+│   │   ├── constants/      # Static data (rootstocks, phenology, etc.)
+│   │   ├── data/           # Reference data service
+│   │   ├── intelligence/   # Core prediction engine
+│   │   │   ├── rules-engine.ts       # SHARE rules
+│   │   │   ├── claim-inference.ts    # PLU/claim inference
+│   │   │   ├── validation-engine.ts  # Data validation
+│   │   │   ├── calibration-engine.ts # Farm calibration
+│   │   │   ├── exception-handler.ts  # Exception queue
+│   │   │   ├── brix-ml-service.ts    # ML service (MVP)
+│   │   │   └── orchestrator.ts       # Main orchestrator
+│   │   ├── prediction/     # GDD and quality prediction
+│   │   └── utils/          # Shared utilities
+│   └── __tests__/          # Test files
+├── legacy/
+│   └── fielder-engine/     # Archived Python Flask prototype
+│       └── src/            # Original Python package
+└── docs/                   # Architecture and design documentation
 ```
 
 ## Environment Variables

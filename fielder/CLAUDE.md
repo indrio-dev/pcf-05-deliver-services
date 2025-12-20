@@ -536,7 +536,7 @@ Example: Washington Navel (base 11.5) on Carrizo (+0.6) at prime age (0.0) at pe
 
 ## Prediction Engine (TypeScript)
 
-The prediction engine was ported from Python (`legacy/python_engine/`) to TypeScript in Dec 2025.
+The prediction engine was ported from Python (`legacy/fielder-engine/src/`) to TypeScript in Dec 2025.
 
 ### Key Algorithms
 
@@ -652,11 +652,11 @@ More nuanced than simple isHeritage/isHeirloom boolean flags. Key insight: **"He
 | `inference-chains.ts` | SHARE pillar inference logic |
 | `growing-regions.ts` | ~150 US regions with typicalSoil profiles |
 
-### Legacy Reference (`legacy/python_engine/`)
-Original Python prediction engine preserved for reference:
-- `fielder/models/quality.py` - SHARE framework dataclasses
-- `fielder/models/crop.py` - Rootstock definitions
-- `fielder/services/harvest_predictor.py` - Brix prediction
+### Legacy Reference (`legacy/fielder-engine/`)
+Original Python Flask prediction engine preserved for reference:
+- `src/fielder/models/quality.py` - SHARE framework dataclasses
+- `src/fielder/models/crop.py` - Rootstock definitions
+- `src/fielder/services/harvest_predictor.py` - Brix prediction
 - `app.py` - CROP_PHENOLOGY with bloom dates
 
 ---
@@ -1274,4 +1274,4 @@ const omegaClass = classifyOmegaRatio(3.2)
 
 *This file is read automatically by Claude Code at session start. Update it when making significant architectural decisions.*
 
-*Last updated: December 14, 2025 - Added Fielder business model, corporate structure (Fielder/Indrio 90/10), Flavor App architecture with AI agent brand scoring system, Dan Kittredge/BFA relationship, market validation (Yuka, Seed Oil Scout, Angel Acres), SHARE framework updates (rootstock under H, Enrich = maximize good/minimize bad)*
+*Last updated: December 20, 2025 - Consolidated project structure (fielder-engine → legacy/fielder-engine/, renamed fielder-web → fielder), updated legacy references, 1,154 tests passing across 32 features*

@@ -15,7 +15,23 @@ Service delivery operations:
 
 ## Current Projects
 
-(To be added as service delivery projects are developed)
+### Fielder
+
+AI-powered farm-to-table intelligence platform applying the SHARE quality framework to predict and verify internal food quality (flavor, nutrition) across time and geography.
+
+```
+fielder/
+├── src/              # TypeScript/Next.js application
+├── legacy/           # Archived Python prototype
+│   └── fielder-engine/
+└── docs/             # Architecture and design docs
+```
+
+**Key features:**
+- SHARE framework quality prediction (Soil, Heritage, Agricultural, Ripen, Enrich)
+- GDD-based harvest window forecasting
+- Polymorphic prediction engine (produce, livestock, dairy)
+- 1,150+ tests with 32 completed features
 
 ## Workflows
 
