@@ -898,8 +898,8 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'strawberry',
     displayName: 'Chandler',
     modelType: 'calendar',
-    flavorProfile: 'Large, very sweet, California classic',
-    peakMonths: [3, 4, 5, 6], // March-June (CA); May-June elsewhere
+    flavorProfile: 'Large, very sweet, excellent flavor',
+    peakMonths: [3, 4, 5, 6], // March-June (CA default); Dec-Mar for Florida (via offering override)
   },
   {
     id: 'earliglow',
@@ -946,6 +946,7 @@ export const CULTIVARS: Cultivar[] = [
   },
 
   // === TOMATO VARIETIES ===
+  // Summer crops - typically July-September harvest
   {
     id: 'brandywine',
     productId: 'tomato',
@@ -954,6 +955,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Pink, rich, complex heirloom flavor',
     baseTemp: 50, gddToMaturity: 1600, gddToPeak: 1800, gddWindow: 400,
+    peakMonths: [7, 8, 9], // July-Sept
   },
   {
     id: 'cherokee_purple',
@@ -963,6 +965,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Deep purple, smoky-sweet, pre-Columbian origin',
     baseTemp: 50, gddToMaturity: 1500, gddToPeak: 1700, gddWindow: 400,
+    peakMonths: [7, 8, 9], // July-Sept
   },
   {
     id: 'san_marzano',
@@ -972,6 +975,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Paste tomato, low acid, sweet, Italian classic',
     baseTemp: 50, gddToMaturity: 1400, gddToPeak: 1600, gddWindow: 350,
+    peakMonths: [7, 8, 9], // July-Sept
   },
   {
     id: 'sungold',
@@ -980,9 +984,11 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Orange cherry, intensely sweet, tropical notes',
     baseTemp: 50, gddToMaturity: 1200, gddToPeak: 1400, gddWindow: 400,
+    peakMonths: [6, 7, 8, 9], // June-Sept (early cherry)
   },
 
   // === PEPPER VARIETIES ===
+  // Late summer/fall crops - typically July-October
   {
     id: 'jimmy_nardello',
     productId: 'pepper',
@@ -991,6 +997,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Sweet frying pepper, Italian heirloom',
     baseTemp: 55, gddToMaturity: 1200, gddToPeak: 1400, gddWindow: 350,
+    peakMonths: [7, 8, 9, 10], // July-Oct
   },
   {
     id: 'shishito',
@@ -999,6 +1006,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Mild, blistering pepper, occasional heat',
     baseTemp: 55, gddToMaturity: 1100, gddToPeak: 1300, gddWindow: 400,
+    peakMonths: [7, 8, 9, 10], // July-Oct
   },
   {
     id: 'hatch_chile',
@@ -1008,9 +1016,11 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Medium heat, earthy, roasting chile',
     baseTemp: 55, gddToMaturity: 1300, gddToPeak: 1500, gddWindow: 350,
+    peakMonths: [8, 9], // Aug-Sept (Hatch season)
   },
 
   // === CARROT VARIETIES ===
+  // Cool-season crops - spring and fall harvests
   {
     id: 'nantes_carrot',
     productId: 'carrot',
@@ -1019,6 +1029,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Sweet, tender, cylindrical',
     baseTemp: 40, gddToMaturity: 1100, gddToPeak: 1250, gddWindow: 300,
+    peakMonths: [6, 7, 10, 11], // Early summer and fall harvests
   },
   {
     id: 'purple_haze',
@@ -1028,9 +1039,11 @@ export const CULTIVARS: Cultivar[] = [
     flavorProfile: 'Purple exterior, orange core, sweet',
     nutritionNotes: 'High in anthocyanins',
     baseTemp: 40, gddToMaturity: 1150, gddToPeak: 1300, gddWindow: 300,
+    peakMonths: [6, 7, 10, 11], // Early summer and fall harvests
   },
 
   // === POTATO VARIETIES ===
+  // Summer harvest - typically July-September
   {
     id: 'yukon_gold',
     productId: 'potato',
@@ -1038,6 +1051,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Buttery, golden, all-purpose',
     baseTemp: 45, gddToMaturity: 1400, gddToPeak: 1600, gddWindow: 400,
+    peakMonths: [7, 8, 9], // July-Sept
   },
   {
     id: 'fingerling',
@@ -1047,6 +1061,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Nutty, firm, waxy texture',
     baseTemp: 45, gddToMaturity: 1500, gddToPeak: 1700, gddWindow: 400,
+    peakMonths: [8, 9, 10], // Aug-Oct
   },
   {
     id: 'purple_peruvian',
@@ -1057,9 +1072,11 @@ export const CULTIVARS: Cultivar[] = [
     flavorProfile: 'Deep purple, earthy, antioxidant-rich',
     nutritionNotes: 'High in anthocyanins',
     baseTemp: 45, gddToMaturity: 1600, gddToPeak: 1800, gddWindow: 400,
+    peakMonths: [8, 9, 10], // Aug-Oct
   },
 
   // === ONION VARIETIES ===
+  // Spring harvest for sweet onions
   {
     id: 'vidalia_onion',
     productId: 'onion',
@@ -1067,6 +1084,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Exceptionally sweet, low sulfur',
     baseTemp: 40, gddToMaturity: 1400, gddToPeak: 1600, gddWindow: 350,
+    peakMonths: [4, 5, 6], // Apr-June (Vidalia season)
   },
   {
     id: 'walla_walla',
@@ -1076,9 +1094,11 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Sweet, mild, Pacific Northwest treasure',
     baseTemp: 40, gddToMaturity: 1500, gddToPeak: 1700, gddWindow: 350,
+    peakMonths: [6, 7, 8], // June-Aug (WA season)
   },
 
   // === GARLIC VARIETIES ===
+  // Summer harvest - typically July-August
   {
     id: 'music_garlic',
     productId: 'garlic',
@@ -1087,6 +1107,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Robust, complex, large cloves',
     baseTemp: 35, gddToMaturity: 1800, gddToPeak: 2000, gddWindow: 400,
+    peakMonths: [7, 8], // July-Aug
   },
   {
     id: 'inchelium_red',
@@ -1096,6 +1117,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Mild, creamy, excellent for roasting',
     baseTemp: 35, gddToMaturity: 1700, gddToPeak: 1900, gddWindow: 400,
+    peakMonths: [7, 8], // July-Aug
   },
 
   // === MEAT VARIETIES ===
@@ -1199,6 +1221,7 @@ export const CULTIVARS: Cultivar[] = [
   },
 
   // === TREE NUTS ===
+  // Fall harvest - typically September-November
   {
     id: 'pecan',
     productId: 'pecan',
@@ -1206,6 +1229,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Rich, buttery, classic pecan flavor',
     baseTemp: 50, gddToMaturity: 2800, gddToPeak: 3200, gddWindow: 600,
+    peakMonths: [10, 11], // Oct-Nov
   },
   {
     id: 'walnut',
@@ -1214,6 +1238,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Mild, versatile, light-colored',
     baseTemp: 50, gddToMaturity: 2600, gddToPeak: 3000, gddWindow: 500,
+    peakMonths: [9, 10], // Sept-Oct
   },
   {
     id: 'almond',
@@ -1222,6 +1247,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Sweet, delicate, paper-thin shell',
     baseTemp: 50, gddToMaturity: 2400, gddToPeak: 2800, gddWindow: 400,
+    peakMonths: [8, 9], // Aug-Sept
   },
   {
     id: 'hazelnut',
@@ -1231,6 +1257,7 @@ export const CULTIVARS: Cultivar[] = [
     isHeritage: true,
     flavorProfile: 'Intense flavor, Oregon classic',
     baseTemp: 45, gddToMaturity: 2200, gddToPeak: 2600, gddWindow: 500,
+    peakMonths: [9, 10], // Sept-Oct
   },
   {
     id: 'pistachio',
@@ -1239,6 +1266,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'gdd',
     flavorProfile: 'Rich, green, California grown',
     baseTemp: 55, gddToMaturity: 3200, gddToPeak: 3600, gddWindow: 500,
+    peakMonths: [9, 10], // Sept-Oct
   },
 
   // === PROCESSED ===
@@ -1740,7 +1768,7 @@ const CURATED_REGIONAL_OFFERINGS: RegionalOffering[] = [
   { id: 'chandler_ventura', varietyId: 'chandler_strawberry', regionId: 'california_coastal', isActive: true, qualityTier: 'exceptional' },
   { id: 'seascape_ventura', varietyId: 'seascape', regionId: 'california_coastal', isActive: true, qualityTier: 'excellent' },
   { id: 'earliglow_new_england', varietyId: 'earliglow', regionId: 'new_england', isActive: true, qualityTier: 'excellent' },
-  { id: 'chandler_central_florida', varietyId: 'chandler_strawberry', regionId: 'central_florida', isActive: true, qualityTier: 'excellent', flavorNotes: 'Winter strawberries' },
+  { id: 'chandler_central_florida', varietyId: 'chandler_strawberry', regionId: 'central_florida', isActive: true, qualityTier: 'excellent', flavorNotes: 'Winter strawberries', peakMonthsOverride: [12, 1, 2, 3] }, // Dec-Mar for Florida winter crop
 
   // === BLUEBERRIES ===
   { id: 'duke_pacific_northwest', varietyId: 'duke_blueberry', regionId: 'pacific_nw_yakima', isActive: true, qualityTier: 'excellent' },
