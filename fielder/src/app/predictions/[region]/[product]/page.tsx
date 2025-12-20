@@ -556,6 +556,16 @@ export default async function ProductPredictionPage({ params }: Props) {
   const categoryConfig = getCategoryDisplayConfig(product.category, product.subcategory)
 
   // ==========================================================================
+  // BUILD-TIME DETECTION
+  // ==========================================================================
+  // Skip external API calls during static generation to avoid rate limits
+  // With 7,700+ pages, unbounded API calls during build cause:
+  // - Weather API 429 rate limits
+  // - NPN API 404 errors (endpoint not available)
+  // Pages will use estimated/fallback values during build, live data at runtime
+  const isBuildPhase = process.env.NEXT_PHASE === 'phase-production-build'
+
+  // ==========================================================================
   // GDD PREDICTION ENGINE (only for produce)
   // ==========================================================================
   // Get crop phenology data for this cultivar × region
@@ -678,7 +688,9 @@ export default async function ProductPredictionPage({ params }: Props) {
   let bloomDate: Date | null = null
   let typicalBloomDate: Date | null = null
 
-  if (categoryConfig.showGddPrediction && region.id) {
+  // Skip bloom prediction API calls during build (calls NPN API which returns 404s at scale)
+  // Falls back to static phenology data from crop-phenology.ts
+  if (categoryConfig.showGddPrediction && region.id && !isBuildPhase) {
     try {
       bloomPrediction = await predictBloomDate(cropType, region.id, currentYear)
       if (bloomPrediction) {
@@ -690,7 +702,7 @@ export default async function ProductPredictionPage({ params }: Props) {
     }
   }
 
-  // Fallback to static phenology bloom date if prediction unavailable
+  // Fallback to static phenology bloom date if prediction unavailable (always used during build)
   if (!bloomDate && phenology) {
     bloomDate = new Date(currentYear, phenology.bloomMonth - 1, phenology.bloomDay)
     typicalBloomDate = bloomDate
@@ -706,11 +718,12 @@ export default async function ProductPredictionPage({ params }: Props) {
   // REAL-TIME WEATHER DATA (Open-Meteo API)
   // ==========================================================================
   // Fetch current weather and actual GDD accumulation from real weather data
+  // SKIP during build to avoid API rate limits (7,700+ pages would spam the API)
   let currentWeather: CurrentWeather | null = null
   let actualGddAccumulation: { totalGdd: number; avgDailyGdd: number; days: number } | null = null
 
-  // Only fetch weather for produce categories (GDD-based predictions)
-  if (categoryConfig.showGddPrediction && region.id) {
+  // Only fetch weather for produce categories (GDD-based predictions) at runtime
+  if (categoryConfig.showGddPrediction && region.id && !isBuildPhase) {
     try {
       // Fetch current weather conditions (live temp, humidity, conditions)
       currentWeather = await weatherService.getCurrentWeather(region.id, gddBase)
