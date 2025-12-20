@@ -45,15 +45,16 @@ function dateToDoy(month: number, day: number): number {
  * Calculate live harvest status
  */
 function calculateLiveStatus(peakMonths: number[] | undefined): {
-  status: 'at_peak' | 'approaching' | 'in_season' | 'off_season'
+  status: 'at_peak' | 'approaching' | 'in_season' | 'off_season' | 'year_round'
   label: string
   color: string
 } {
+  // No peakMonths = year-round availability (e.g., meat, dairy)
   if (!peakMonths || peakMonths.length === 0) {
     return {
-      status: 'off_season',
-      label: 'Off Season',
-      color: 'var(--color-off)',
+      status: 'year_round',
+      label: 'Year-Round',
+      color: 'var(--color-season)',
     }
   }
 
@@ -235,6 +236,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 padding: 'var(--space-xs) var(--space-sm)',
                 background: liveStatus.status === 'at_peak' ? 'rgba(34, 197, 94, 0.1)'
                   : liveStatus.status === 'in_season' ? 'rgba(16, 185, 129, 0.1)'
+                  : liveStatus.status === 'year_round' ? 'rgba(16, 185, 129, 0.1)'
                   : liveStatus.status === 'approaching' ? 'rgba(245, 158, 11, 0.1)'
                   : 'rgba(120, 113, 108, 0.1)',
                 color: liveStatus.color,

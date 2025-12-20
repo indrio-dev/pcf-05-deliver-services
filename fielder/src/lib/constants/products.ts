@@ -1099,6 +1099,8 @@ export const CULTIVARS: Cultivar[] = [
   },
 
   // === MEAT VARIETIES ===
+  // Most meat is year-round (no peakMonths) - livestock is raised continuously
+  // Exception: Spring Lamb is genuinely seasonal
   {
     id: 'grass_fed_beef',
     productId: 'beef',
@@ -1106,8 +1108,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'calendar',
     flavorProfile: 'Lean, rich, true beef flavor',
     nutritionNotes: 'Higher omega-3s than grain-fed',
-    peakMonths: [9, 10, 11],
-    peakSeasons: ['fall'],
+    // Year-round - cattle raised continuously
   },
   {
     id: 'heritage_pork',
@@ -1116,8 +1117,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'calendar',
     isHeritage: true,
     flavorProfile: 'Berkshire/Duroc, marbled, exceptional flavor',
-    peakMonths: [10, 11, 12],
-    peakSeasons: ['fall', 'winter'],
+    // Year-round - pigs raised continuously
   },
   {
     id: 'spring_lamb',
@@ -1127,6 +1127,7 @@ export const CULTIVARS: Cultivar[] = [
     flavorProfile: 'Tender, mild, milk-fed',
     peakMonths: [4, 5, 6],
     peakSeasons: ['spring'],
+    // Genuinely seasonal - lambs born in spring
   },
   {
     id: 'pasture_chicken',
@@ -1134,8 +1135,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Pasture-Raised Chicken',
     modelType: 'calendar',
     flavorProfile: 'Rich, firm texture, true chicken flavor',
-    peakMonths: [5, 6, 7, 8, 9, 10],
-    peakSeasons: ['summer', 'fall'],
+    // Year-round - chickens raised continuously
   },
   {
     id: 'heritage_turkey',
@@ -1144,8 +1144,7 @@ export const CULTIVARS: Cultivar[] = [
     modelType: 'calendar',
     isHeritage: true,
     flavorProfile: 'Bourbon Red/Narragansett, deep flavor',
-    peakMonths: [10, 11],
-    peakSeasons: ['fall'],
+    // Year-round (though traditional demand peaks at Thanksgiving)
   },
 
   // === DAIRY/EGGS ===
