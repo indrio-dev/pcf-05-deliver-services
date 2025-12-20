@@ -189,10 +189,10 @@ describe('Polymorphic Prediction System', () => {
 
         const result = predictUnified(input)
 
-        // CORRECTED: grain_finished baseline is 14:1 (commodity level)
-        // Feedlot finishing produces poor omega regardless of breed
+        // grain_finished baseline is 14:1, which falls in 'standard' tier (7-20:1)
+        // 'commodity' tier is reserved for >20:1 (extended feedlot like Premium Wagyu)
         expect(result.primaryMetric.value).toBeGreaterThan(12)
-        expect(result.qualityTier).toBe('commodity')
+        expect(result.qualityTier).toBe('standard')
       })
 
       it('grain-fed diet produces highest omega ratio', () => {
