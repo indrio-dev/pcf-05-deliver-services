@@ -778,12 +778,14 @@ export const CULTIVARS: Cultivar[] = [
 
   // === APPLE VARIETIES ===
   // Apples - perennial tree fruit, calendar-based harvest
+  // USDA tracks top 7 states: WA, NY, MI, PA, VA, CA, OR
   {
     id: 'honeycrisp',
     productId: 'apple',
     displayName: 'Honeycrisp',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['WA', 'NY', 'MI', 'MN'], // MN origin, top apple states
     flavorProfile: 'Explosive crunch, honey-sweet with tang',
     nutritionNotes: 'High in fiber and vitamin C',
     peakMonths: [9, 10], // September-October
@@ -793,6 +795,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'apple',
     displayName: 'Fuji',
     modelType: 'calendar',
+    validatedStates: ['WA', 'CA'], // West Coast production
     flavorProfile: 'Very sweet, dense, long storage',
     peakMonths: [10, 11], // October-November
   },
@@ -801,6 +804,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'apple',
     displayName: 'Gala',
     modelType: 'calendar',
+    validatedStates: ['WA', 'NY', 'MI', 'PA', 'VA'], // Major apple states
     flavorProfile: 'Mild sweet, crisp, kids favorite',
     peakMonths: [8, 9], // August-September (early variety)
   },
@@ -810,6 +814,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Granny Smith',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['WA', 'CA'], // West Coast, needs long season
     flavorProfile: 'Tart, firm, excellent for baking',
     peakMonths: [10, 11], // October-November
   },
@@ -818,6 +823,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'apple',
     displayName: 'Pink Lady (Cripps Pink)',
     modelType: 'calendar',
+    validatedStates: ['WA', 'CA'], // West Coast, needs warm days/cool nights
     flavorProfile: 'Sweet-tart balance, effervescent',
     peakMonths: [10, 11, 12], // October-December (late variety)
   },
@@ -827,6 +833,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Arkansas Black',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['AR', 'VA', 'CA'], // Heritage, limited production
     flavorProfile: 'Deep purple, complex, improves in storage',
     peakMonths: [10, 11], // October-November
   },
@@ -836,18 +843,21 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Cosmic Crisp',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['WA'], // WSU exclusive variety, Washington only
     flavorProfile: 'Ultra crisp, balanced sweet-acid, slow browning',
     peakMonths: [10, 11], // October-November
   },
 
   // === PEACH VARIETIES ===
   // Peaches - perennial stone fruit, calendar-based harvest
+  // CA 75% of US production, SC and GA are #2/#3
   {
     id: 'elberta_peach',
     productId: 'peach',
     displayName: 'Elberta',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['CA', 'GA', 'SC', 'NJ'], // Heritage, widely grown
     flavorProfile: 'Classic peach flavor, freestone, great for canning',
     peakMonths: [7, 8], // July-August
   },
@@ -857,6 +867,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Georgia Belle',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['GA', 'SC'], // Southern specialty
     flavorProfile: 'White flesh, incredibly sweet and aromatic',
     peakMonths: [7, 8], // July-August
   },
@@ -865,6 +876,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'peach',
     displayName: 'Redhaven',
     modelType: 'calendar',
+    validatedStates: ['CA', 'GA', 'SC', 'MI', 'NJ'], // Widely grown, early variety
     flavorProfile: 'Bright red skin, firm yellow flesh, balanced flavor',
     peakMonths: [6, 7], // June-July (early variety)
   },
@@ -873,18 +885,22 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'peach',
     displayName: 'White Lady',
     modelType: 'calendar',
+    validatedStates: ['CA', 'GA'], // Primarily California
     flavorProfile: 'White flesh, sub-acid, intensely sweet',
     peakMonths: [7, 8], // July-August
   },
 
   // === CHERRY VARIETIES ===
   // Cherries - perennial stone fruit, calendar-based harvest
+  // Sweet: WA, OR, CA (Pacific Northwest dominates)
+  // Tart: MI, WI, NY, UT
   {
     id: 'bing_cherry',
     productId: 'cherry',
     displayName: 'Bing',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['WA', 'OR', 'CA'], // Pacific Northwest + CA
     flavorProfile: 'Deep red, firm, intensely sweet',
     peakMonths: [6, 7], // June-July
   },
@@ -893,6 +909,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'cherry',
     displayName: 'Rainier',
     modelType: 'calendar',
+    validatedStates: ['WA', 'OR'], // Pacific Northwest specialty
     flavorProfile: 'Yellow-red blush, delicate, ultra-sweet',
     peakMonths: [6, 7], // June-July
   },
@@ -902,6 +919,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Montmorency',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['MI', 'WI', 'NY', 'UT'], // Tart cherry states
     flavorProfile: 'Tart, bright red, perfect for pies',
     peakMonths: [7], // July
   },
