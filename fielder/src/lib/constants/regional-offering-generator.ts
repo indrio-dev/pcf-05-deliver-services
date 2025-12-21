@@ -116,8 +116,17 @@ export function generateRegionalOfferings(cultivars: Cultivar[]): RegionalOfferi
       seen.add(offeringId)
 
       // Verify region exists
-      if (!ALL_GROWING_REGIONS[regionId as keyof typeof ALL_GROWING_REGIONS]) {
+      const region = ALL_GROWING_REGIONS[regionId as keyof typeof ALL_GROWING_REGIONS]
+      if (!region) {
         continue
+      }
+
+      // If cultivar has validatedStates, only generate for regions in those states
+      // This ensures e.g., Blood Oranges only appear in CA, not all citrus-capable states
+      if (cultivar.validatedStates && cultivar.validatedStates.length > 0) {
+        if (!cultivar.validatedStates.includes(region.state)) {
+          continue
+        }
       }
 
       const offering: RegionalOffering = {

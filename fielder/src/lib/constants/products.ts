@@ -429,6 +429,7 @@ export interface Cultivar {
   isHeritage?: boolean             // Legacy field - true if heirloom/heritage/landrace
   isNonGmo?: boolean               // Non-GMO verified
   originLocked?: boolean           // True = only appears in curated origin regions (e.g., Kona Coffee, Vidalia Onion)
+  validatedStates?: string[]       // US states where commercially grown (verified via USDA/extension data)
   yearIntroduced?: number          // Year cultivar was developed/released
   originStory?: string             // Heritage/breeding background
 
@@ -647,12 +648,14 @@ export const VARIETIES: Variety[] = [
 export const CULTIVARS: Cultivar[] = [
   // === ORANGE VARIETIES ===
   // Citrus uses calendar model - perennial crops with predictable harvest windows
+  // validatedStates based on USDA NASS citrus production data
   {
     id: 'navel_orange',
     productId: 'orange',
     displayName: 'Washington Navel',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['CA', 'FL', 'TX', 'AZ'], // All major citrus states
     flavorProfile: 'Sweet, seedless, ideal for eating fresh',
     peakMonths: [11, 12, 1], // Nov-Jan
   },
@@ -662,6 +665,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Cara Cara',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['CA'], // Specialty navel, primarily California
     flavorProfile: 'Pink flesh, low acid, berry notes',
     peakMonths: [12, 1, 2], // Dec-Feb
   },
@@ -671,6 +675,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Valencia',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['CA', 'FL', 'TX'], // Major juicing orange
     flavorProfile: 'Premier juicing orange, sweet-tart balance',
     peakMonths: [3, 4, 5, 6], // Mar-Jun
   },
@@ -680,6 +685,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Moro Blood Orange',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['CA'], // Needs cool nights for color development
     flavorProfile: 'Deep red flesh, raspberry-citrus notes',
     peakMonths: [12, 1, 2, 3], // Dec-Mar
   },
@@ -691,6 +697,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Ruby Red',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['TX', 'FL', 'CA', 'AZ'], // TX famous for Ruby Red
     flavorProfile: 'Sweet-tart, deep pink flesh',
     peakMonths: [11, 12, 1, 2, 3, 4, 5], // Nov-May
   },
@@ -700,6 +707,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Rio Star',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['TX'], // Texas Rio Grande Valley specialty
     flavorProfile: 'Very sweet, red flesh, Texas favorite',
     peakMonths: [11, 12, 1, 2, 3], // Nov-Mar
   },
@@ -709,6 +717,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Marsh White',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['FL', 'TX', 'CA', 'AZ'], // Heritage variety, all citrus states
     flavorProfile: 'Classic tart grapefruit, white flesh',
     peakMonths: [11, 12, 1, 2, 3, 4, 5], // Nov-May
   },
@@ -720,6 +729,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Owari Satsuma',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['CA', 'FL', 'LA', 'AL', 'TX'], // Gulf Coast satsuma belt + CA
     flavorProfile: 'Very sweet, seedless, easy peel',
     peakMonths: [10, 11, 12], // Oct-Dec
   },
@@ -729,6 +739,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Clementine',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['CA'], // Primarily California
     flavorProfile: 'Sweet, seedless, perfect snack size',
     peakMonths: [11, 12, 1], // Nov-Jan
   },
@@ -738,6 +749,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Honey Tangerine (Murcott)',
     modelType: 'calendar',
     isNonGmo: true,
+    validatedStates: ['FL', 'CA'], // Florida specialty, some CA
     flavorProfile: 'Intensely sweet, rich flavor, some seeds',
     peakMonths: [1, 2, 3, 4], // Jan-Apr
   },
@@ -749,6 +761,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'lemon',
     displayName: 'Eureka',
     modelType: 'calendar',
+    validatedStates: ['CA', 'AZ'], // CA coastal, AZ desert
     flavorProfile: 'Classic lemon, true sour, year-round',
     peakMonths: [11, 12, 1, 2, 3], // Nov-Mar peak, available year-round
   },
@@ -758,6 +771,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Meyer Lemon',
     modelType: 'calendar',
     isHeritage: true,
+    validatedStates: ['CA', 'TX', 'FL'], // CA primarily, some TX/FL
     flavorProfile: 'Sweet-tart, floral, thin skin',
     peakMonths: [11, 12, 1, 2, 3], // Nov-Mar
   },
