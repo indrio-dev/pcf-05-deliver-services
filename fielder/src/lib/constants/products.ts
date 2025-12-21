@@ -926,11 +926,13 @@ export const CULTIVARS: Cultivar[] = [
 
   // === STRAWBERRY VARIETIES ===
   // Strawberries - calendar-based (varies by region)
+  // CA ~90% of US production, FL ~8% (winter crop), minor: NC, OR
   {
     id: 'chandler_strawberry',
     productId: 'strawberry',
     displayName: 'Chandler',
     modelType: 'calendar',
+    validatedStates: ['CA', 'FL'], // UC Davis origin, dominated CA 1983-mid90s, FL winter production
     flavorProfile: 'Large, very sweet, excellent flavor',
     peakMonths: [3, 4, 5, 6], // March-June (CA default); Dec-Mar for Florida (via offering override)
   },
@@ -939,6 +941,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'strawberry',
     displayName: 'Earliglow',
     modelType: 'calendar',
+    validatedStates: ['MD', 'NJ', 'PA', 'NY', 'NC', 'VA'], // USDA Beltsville origin (1975), East Coast
     flavorProfile: 'Exceptional flavor, early season',
     peakMonths: [5, 6], // May-June
   },
@@ -947,17 +950,20 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'strawberry',
     displayName: 'Seascape',
     modelType: 'calendar',
+    validatedStates: ['CA'], // UC Davis day-neutral, California coastal production
     flavorProfile: 'Day-neutral, complex flavor, long season',
     peakMonths: [5, 6, 7, 8, 9], // May-September (day-neutral, long season)
   },
 
   // === BLUEBERRY VARIETIES ===
   // Blueberries - perennial shrubs, calendar-based harvest
+  // Top states: WA, OR, GA, MI, NJ, FL, NC
   {
     id: 'duke_blueberry',
     productId: 'blueberry',
     displayName: 'Duke',
     modelType: 'calendar',
+    validatedStates: ['NJ', 'MI', 'OR', 'WA'], // USDA Beltsville (1987), northern highbush
     flavorProfile: 'Mild sweet, firm, early season',
     peakMonths: [6, 7], // June-July (early)
   },
@@ -966,6 +972,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'blueberry',
     displayName: 'Bluecrop',
     modelType: 'calendar',
+    validatedStates: ['NJ', 'MI', 'OR', 'WA'], // Most widely grown northern highbush
     flavorProfile: 'Classic blueberry flavor, reliable producer',
     peakMonths: [7, 8], // July-August (mid-season)
   },
@@ -974,6 +981,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'blueberry',
     displayName: 'Rabbiteye',
     modelType: 'calendar',
+    validatedStates: ['GA', 'FL', 'AL', 'MS'], // Native to SE US, Tifton GA breeding program
     flavorProfile: 'Heat-tolerant, sweet, southern variety',
     peakMonths: [6, 7, 8], // June-August (southern variety)
   },
