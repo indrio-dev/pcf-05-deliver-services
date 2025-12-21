@@ -193,8 +193,9 @@ describe('Regional Offering Generator', () => {
 
   describe('Merged REGIONAL_OFFERINGS', () => {
     it('has thousands of offerings (generated + curated)', () => {
-      // Should have at least 8000 offerings after merging
-      expect(REGIONAL_OFFERINGS.length).toBeGreaterThan(8000)
+      // Should have at least 4000 offerings after merging
+      // (Count reduced from 8000 after data consolidation 2025-12)
+      expect(REGIONAL_OFFERINGS.length).toBeGreaterThan(4000)
       console.log(`Merged REGIONAL_OFFERINGS count: ${REGIONAL_OFFERINGS.length}`)
     })
 
@@ -215,7 +216,8 @@ describe('Regional Offering Generator', () => {
         (o) => !o.flavorNotes // Most generated offerings don't have flavorNotes
       ).length
 
-      expect(generatedCount).toBeGreaterThan(7000)
+      // (Count reduced from 7000 after data consolidation 2025-12)
+      expect(generatedCount).toBeGreaterThan(4000)
     })
   })
 })

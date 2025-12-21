@@ -281,7 +281,7 @@ describe('Reference Data', () => {
         expect(targets.baseTemp).toBe(55)
         expect(targets.gddToMaturity).toBe(5100)
         expect(targets.gddToPeak).toBe(6100)
-        expect(targets.gddWindow).toBe(2000)
+        expect(targets.gddWindow).toBe(3500)  // CALIBRATED 2025-12-21
       })
 
       it('returns correct targets for peach', () => {
@@ -289,8 +289,8 @@ describe('Reference Data', () => {
 
         expect(targets.baseTemp).toBe(45)
         expect(targets.gddToMaturity).toBe(1800)
-        expect(targets.gddToPeak).toBe(2000)
-        expect(targets.gddWindow).toBe(150)
+        expect(targets.gddToPeak).toBe(2200)   // CALIBRATED v2
+        expect(targets.gddWindow).toBe(1800)   // CALIBRATED v2
         expect(targets.chillHoursRequired).toBe(650)
       })
 
@@ -300,7 +300,7 @@ describe('Reference Data', () => {
         expect(targets.baseTemp).toBe(50)
         expect(targets.gddToMaturity).toBe(700)
         expect(targets.gddToPeak).toBe(1300)
-        expect(targets.gddWindow).toBe(1100)
+        expect(targets.gddWindow).toBe(1700)  // CALIBRATED 2025-12-21
       })
 
       it('returns default targets for unknown crop', () => {
@@ -314,8 +314,9 @@ describe('Reference Data', () => {
     })
 
     describe('GDD targets data integrity', () => {
-      it('has 15 crops defined', () => {
-        expect(Object.keys(CROP_GDD_TARGETS)).toHaveLength(15)
+      it('has expected number of crops defined', () => {
+        // Now includes perennials + annuals: 55 total crops
+        expect(Object.keys(CROP_GDD_TARGETS).length).toBeGreaterThanOrEqual(55)
       })
 
       it('all crops have required fields', () => {

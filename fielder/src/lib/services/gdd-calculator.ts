@@ -29,25 +29,47 @@ export interface GDDAccumulation {
 
 /**
  * Calculate GDD for a single day
+ *
+ * Supports the modified 86/50 method for heat-sensitive crops:
+ * - Standard GDD: max(0, (Tmax + Tmin) / 2 - baseTemp)
+ * - Modified 86/50: cap Tmax at maxTemp before averaging
+ *
+ * Research shows that above certain temperatures, crops stop
+ * accumulating GDD (photosynthesis slows, stress occurs).
+ *
+ * Common maxTemp values:
+ * - Tomatoes: 86°F (modified 86/50 method)
+ * - Lettuce: 75°F (heat-sensitive)
+ * - Sweet corn: 86°F
+ * - Citrus: No cap (heat tolerant)
+ * - Stone fruit: 90°F (some varieties)
  */
 export function calculateDailyGdd(
   tempHighF: number,
   tempLowF: number,
-  baseTemp: number = 55.0
+  baseTemp: number = 55.0,
+  maxTemp?: number
 ): number {
-  const avgTemp = (tempHighF + tempLowF) / 2
+  // Apply maxTemp cap if specified (modified 86/50 method)
+  const effectiveHigh = maxTemp !== undefined
+    ? Math.min(tempHighF, maxTemp)
+    : tempHighF
+
+  const avgTemp = (effectiveHigh + tempLowF) / 2
   return Math.max(0, avgTemp - baseTemp)
 }
 
 /**
  * Calculate cumulative GDD from an array of daily weather
+ * Supports optional maxTemp for modified 86/50 method
  */
 export function calculateCumulativeGdd(
   dailyWeather: DailyWeather[],
-  baseTemp: number = 55.0
+  baseTemp: number = 55.0,
+  maxTemp?: number
 ): number {
   return dailyWeather.reduce((total, day) => {
-    return total + calculateDailyGdd(day.tempHighF, day.tempLowF, baseTemp)
+    return total + calculateDailyGdd(day.tempHighF, day.tempLowF, baseTemp, maxTemp)
   }, 0)
 }
 
@@ -78,13 +100,15 @@ export function estimateDaysToTarget(
 
 /**
  * Calculate average daily GDD from a weather array
+ * Supports optional maxTemp for modified 86/50 method
  */
 export function calculateAvgDailyGdd(
   dailyWeather: DailyWeather[],
-  baseTemp: number = 55.0
+  baseTemp: number = 55.0,
+  maxTemp?: number
 ): number {
   if (dailyWeather.length === 0) return 0
-  const total = calculateCumulativeGdd(dailyWeather, baseTemp)
+  const total = calculateCumulativeGdd(dailyWeather, baseTemp, maxTemp)
   return total / dailyWeather.length
 }
 
@@ -111,13 +135,14 @@ export interface ForecastDay {
 
 export function calculateForecastGdd(
   forecast: ForecastDay[],
-  baseTemp: number = 55.0
+  baseTemp: number = 55.0,
+  maxTemp?: number
 ): { totalGdd: number; weightedGdd: number } {
   let totalGdd = 0
   let weightedGdd = 0
 
   for (const day of forecast) {
-    const dailyGdd = calculateDailyGdd(day.tempHighF, day.tempLowF, baseTemp)
+    const dailyGdd = calculateDailyGdd(day.tempHighF, day.tempLowF, baseTemp, maxTemp)
     totalGdd += dailyGdd
     weightedGdd += dailyGdd * day.confidence
   }

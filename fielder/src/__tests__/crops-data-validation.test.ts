@@ -8,19 +8,20 @@
 import { CROP_GDD_TARGETS, GDDTarget } from '@/lib/constants/gdd-targets'
 
 // Expected database values (should match constants exactly)
+// CALIBRATED 2025-12-21: Updated to match weather-validated values from gdd-targets.ts
 const EXPECTED_CROPS: Record<string, GDDTarget> = {
-  navel_orange: { baseTemp: 55.0, gddToMaturity: 5100, gddToPeak: 6100, gddWindow: 2000 },
+  navel_orange: { baseTemp: 55.0, gddToMaturity: 5100, gddToPeak: 6100, gddWindow: 3500 },  // window widened per farm data
   valencia: { baseTemp: 55.0, gddToMaturity: 8000, gddToPeak: 9000, gddWindow: 2200 },
   grapefruit: { baseTemp: 55.0, gddToMaturity: 5500, gddToPeak: 7100, gddWindow: 4000 },
-  tangerine: { baseTemp: 55.0, gddToMaturity: 5300, gddToPeak: 5700, gddWindow: 900 },
+  tangerine: { baseTemp: 55.0, gddToMaturity: 4800, gddToPeak: 5700, gddWindow: 1800 },  // calibrated per farm data
   satsuma: { baseTemp: 55.0, gddToMaturity: 4600, gddToPeak: 5100, gddWindow: 700 },
-  peach: { baseTemp: 45.0, gddToMaturity: 1800, gddToPeak: 2000, gddWindow: 150, chillHoursRequired: 650 },
-  sweet_cherry: { baseTemp: 40.0, gddToMaturity: 1400, gddToPeak: 1550, gddWindow: 100, chillHoursRequired: 1100 },
+  peach: { baseTemp: 45.0, gddToMaturity: 1800, gddToPeak: 2200, gddWindow: 1800, chillHoursRequired: 650 },  // calibrated v2
+  sweet_cherry: { baseTemp: 40.0, gddToMaturity: 1100, gddToPeak: 1500, gddWindow: 900, chillHoursRequired: 1100 },  // calibrated v2
   tart_cherry: { baseTemp: 39.2, gddToMaturity: 1000, gddToPeak: 1100, gddWindow: 80, chillHoursRequired: 954 },
-  apple: { baseTemp: 43.0, gddToMaturity: 2200, gddToPeak: 2500, gddWindow: 200, chillHoursRequired: 1000 },
-  pear: { baseTemp: 40.0, gddToMaturity: 2400, gddToPeak: 2700, gddWindow: 800, chillHoursRequired: 800 },
-  strawberry: { baseTemp: 50.0, gddToMaturity: 700, gddToPeak: 1300, gddWindow: 1100 },
-  blueberry: { baseTemp: 45.0, gddToMaturity: 1200, gddToPeak: 1400, gddWindow: 100, chillHoursRequired: 800 },
+  apple: { baseTemp: 43.0, gddToMaturity: 2400, gddToPeak: 2900, gddWindow: 1600, chillHoursRequired: 1000 },  // calibrated v3
+  pear: { baseTemp: 40.0, gddToMaturity: 2800, gddToPeak: 3300, gddWindow: 1200, chillHoursRequired: 800 },  // calibrated v3
+  strawberry: { baseTemp: 50.0, gddToMaturity: 700, gddToPeak: 1300, gddWindow: 1700 },  // window widened per farm data
+  blueberry: { baseTemp: 45.0, gddToMaturity: 1050, gddToPeak: 1350, gddWindow: 900, chillHoursRequired: 800 },  // calibrated v2
   mango: { baseTemp: 60.0, gddToMaturity: 2800, gddToPeak: 3200, gddWindow: 300, chillHoursRequired: 0 },
   pomegranate: { baseTemp: 50.0, gddToMaturity: 3800, gddToPeak: 4500, gddWindow: 1000, chillHoursRequired: 150 },
   pecan: { baseTemp: 65.0, gddToMaturity: 2600, gddToPeak: 2900, gddWindow: 400, chillHoursRequired: 500 },
@@ -31,9 +32,10 @@ describe('Crops Data Validation (F010)', () => {
   // CONSTANTS COMPLETENESS
   // ===========================================================================
   describe('Constants Completeness', () => {
-    it('has all 15 expected crops in constants', () => {
+    it('has all expected crops in constants', () => {
       const cropIds = Object.keys(CROP_GDD_TARGETS)
-      expect(cropIds.length).toBe(15)
+      // Now includes perennials + annuals: 55 total crops
+      expect(cropIds.length).toBeGreaterThanOrEqual(55)
     })
 
     it('constants contain all expected crop IDs', () => {
@@ -58,7 +60,7 @@ describe('Crops Data Validation (F010)', () => {
       const crop = CROP_GDD_TARGETS.navel_orange
       expect(crop.gddToMaturity).toBe(5100)
       expect(crop.gddToPeak).toBe(6100)
-      expect(crop.gddWindow).toBe(2000)
+      expect(crop.gddWindow).toBe(3500)  // CALIBRATED 2025-12-21: widened per farm data
     })
 
     it('valencia has correct GDD values', () => {
@@ -83,18 +85,18 @@ describe('Crops Data Validation (F010)', () => {
     it('peach has correct values with chill hours', () => {
       const crop = CROP_GDD_TARGETS.peach
       expect(crop.baseTemp).toBe(45.0)
-      expect(crop.gddToMaturity).toBe(1800)
-      expect(crop.gddToPeak).toBe(2000)
-      expect(crop.gddWindow).toBe(150)
+      expect(crop.gddToMaturity).toBe(1800)  // CALIBRATED v2
+      expect(crop.gddToPeak).toBe(2200)      // CALIBRATED v2
+      expect(crop.gddWindow).toBe(1800)      // CALIBRATED v2: widened for May-Sept coverage
       expect(crop.chillHoursRequired).toBe(650)
     })
 
     it('sweet_cherry has correct values with chill hours', () => {
       const crop = CROP_GDD_TARGETS.sweet_cherry
       expect(crop.baseTemp).toBe(40.0)
-      expect(crop.gddToMaturity).toBe(1400)
-      expect(crop.gddToPeak).toBe(1550)
-      expect(crop.gddWindow).toBe(100)
+      expect(crop.gddToMaturity).toBe(1100)  // CALIBRATED v2
+      expect(crop.gddToPeak).toBe(1500)      // CALIBRATED v2
+      expect(crop.gddWindow).toBe(900)       // CALIBRATED v2: widened for Jun-Aug coverage
       expect(crop.chillHoursRequired).toBe(1100)
     })
 
@@ -116,18 +118,18 @@ describe('Crops Data Validation (F010)', () => {
     it('apple has correct values with chill hours', () => {
       const crop = CROP_GDD_TARGETS.apple
       expect(crop.baseTemp).toBe(43.0)
-      expect(crop.gddToMaturity).toBe(2200)
-      expect(crop.gddToPeak).toBe(2500)
-      expect(crop.gddWindow).toBe(200)
+      expect(crop.gddToMaturity).toBe(2400)  // CALIBRATED v3: 2100→2400 for MI late harvest
+      expect(crop.gddToPeak).toBe(2900)      // CALIBRATED v3
+      expect(crop.gddWindow).toBe(1600)      // CALIBRATED v3: widened 1400→1600 for regional variation
       expect(crop.chillHoursRequired).toBe(1000)
     })
 
     it('pear has correct values with chill hours', () => {
       const crop = CROP_GDD_TARGETS.pear
       expect(crop.baseTemp).toBe(40.0)
-      expect(crop.gddToMaturity).toBe(2400)
-      expect(crop.gddToPeak).toBe(2700)
-      expect(crop.gddWindow).toBe(800)
+      expect(crop.gddToMaturity).toBe(2800)  // CALIBRATED v3: 2500→2800 for WA late harvest
+      expect(crop.gddToPeak).toBe(3300)      // CALIBRATED v3
+      expect(crop.gddWindow).toBe(1200)      // CALIBRATED v3: widened 1000→1200 for regional variation
       expect(crop.chillHoursRequired).toBe(800)
     })
   })
@@ -141,15 +143,15 @@ describe('Crops Data Validation (F010)', () => {
       expect(crop.baseTemp).toBe(50.0)
       expect(crop.gddToMaturity).toBe(700)
       expect(crop.gddToPeak).toBe(1300)
-      expect(crop.gddWindow).toBe(1100)
+      expect(crop.gddWindow).toBe(1700)  // CALIBRATED: widened for Dec-Apr coverage
     })
 
     it('blueberry has correct values with chill hours', () => {
       const crop = CROP_GDD_TARGETS.blueberry
       expect(crop.baseTemp).toBe(45.0)
-      expect(crop.gddToMaturity).toBe(1200)
-      expect(crop.gddToPeak).toBe(1400)
-      expect(crop.gddWindow).toBe(100)
+      expect(crop.gddToMaturity).toBe(1050)  // CALIBRATED v2: shifted Jun→Jul
+      expect(crop.gddToPeak).toBe(1350)      // CALIBRATED v2
+      expect(crop.gddWindow).toBe(900)       // CALIBRATED v2: widened for Jul-Sept coverage
       expect(crop.chillHoursRequired).toBe(800)
     })
   })

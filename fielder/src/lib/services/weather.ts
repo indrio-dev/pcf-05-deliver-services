@@ -303,10 +303,15 @@ class WeatherService {
   /**
    * Get current weather conditions from Open-Meteo
    * Includes today's high/low for GDD calculation
+   *
+   * @param locationId - Region identifier
+   * @param gddBaseTemp - Base temperature for GDD (default 55°F)
+   * @param gddMaxTemp - Upper temperature cap for modified 86/50 method (optional)
    */
   async getCurrentWeather(
     locationId: string,
-    gddBaseTemp: number = 55
+    gddBaseTemp: number = 55,
+    gddMaxTemp?: number
   ): Promise<CurrentWeather | null> {
     const { lat, lon } = this.getCoordinates(locationId)
 
@@ -339,8 +344,8 @@ class WeatherService {
       ? this.celsiusToFahrenheit(daily.temperature_2m_min[0])
       : tempF
 
-    // Calculate today's GDD using the daily high/low
-    const todayGdd = calculateDailyGdd(highF, lowF, gddBaseTemp)
+    // Calculate today's GDD using the daily high/low (with optional maxTemp cap)
+    const todayGdd = calculateDailyGdd(highF, lowF, gddBaseTemp, gddMaxTemp)
 
     return {
       locationId,
@@ -361,10 +366,15 @@ class WeatherService {
 
   /**
    * Calculate climatology from historical archive (5-year average)
+   *
+   * @param locationId - Region identifier
+   * @param month - Month number (1-12)
+   * @param gddMaxTemp - Optional upper temperature cap for modified 86/50 method
    */
   async getClimatology(
     locationId: string,
-    month: number
+    month: number,
+    gddMaxTemp?: number
   ): Promise<Climatology> {
     const cacheKey = `${locationId}-${month}`
     const cached = this.climatologyCache.get(cacheKey)
@@ -394,10 +404,11 @@ class WeatherService {
     const avgHigh = allObservations.reduce((sum, o) => sum + o.tempHigh, 0) / allObservations.length
     const avgLow = allObservations.reduce((sum, o) => sum + o.tempLow, 0) / allObservations.length
     const avgPrecip = allObservations.reduce((sum, o) => sum + o.precipInches, 0) / allObservations.length
+    // Calculate GDD with optional maxTemp cap for heat-sensitive crops
     const avgGdd50 = allObservations.reduce((sum, o) =>
-      sum + calculateDailyGdd(o.tempHigh, o.tempLow, 50), 0) / allObservations.length
+      sum + calculateDailyGdd(o.tempHigh, o.tempLow, 50, gddMaxTemp), 0) / allObservations.length
     const avgGdd55 = allObservations.reduce((sum, o) =>
-      sum + calculateDailyGdd(o.tempHigh, o.tempLow, 55), 0) / allObservations.length
+      sum + calculateDailyGdd(o.tempHigh, o.tempLow, 55, gddMaxTemp), 0) / allObservations.length
 
     const result: Climatology = {
       avgHigh: Math.round(avgHigh * 10) / 10,
@@ -451,17 +462,24 @@ class WeatherService {
 
   /**
    * Calculate GDD accumulation from a reference date to today
+   *
+   * @param locationId - Region identifier from REGION_COORDINATES
+   * @param referenceDate - Start date for GDD accumulation (e.g., bloom date)
+   * @param baseTemp - Base temperature below which no GDD accumulates (default 55°F)
+   * @param maxTemp - Upper temperature cap for modified 86/50 method (optional)
+   *                  Common values: 86°F (tomato), 75°F (lettuce), undefined (citrus)
    */
   async getGddAccumulation(
     locationId: string,
     referenceDate: Date,
-    baseTemp: number = 55
+    baseTemp: number = 55,
+    maxTemp?: number
   ): Promise<{ totalGdd: number; avgDailyGdd: number; days: number }> {
     const today = new Date()
     const observations = await this.getHistorical(locationId, referenceDate, today)
 
     const totalGdd = observations.reduce((sum, o) =>
-      sum + calculateDailyGdd(o.tempHigh, o.tempLow, baseTemp), 0)
+      sum + calculateDailyGdd(o.tempHigh, o.tempLow, baseTemp, maxTemp), 0)
 
     return {
       totalGdd: Math.round(totalGdd),
@@ -474,12 +492,19 @@ class WeatherService {
 
   /**
    * Get summary stats for a region over a time period
+   *
+   * @param regionId - Region identifier
+   * @param startDate - Start of period
+   * @param endDate - End of period
+   * @param baseTemp - Base temperature for GDD calculation (default 55°F)
+   * @param gddMaxTemp - Upper temperature cap for modified 86/50 method (optional)
    */
   async getRegionalSummary(
     regionId: string,
     startDate: Date,
     endDate: Date,
-    baseTemp: number = 55
+    baseTemp: number = 55,
+    gddMaxTemp?: number
   ): Promise<RegionalWeatherSummary> {
     const observations = await this.getHistorical(regionId, startDate, endDate)
 
@@ -505,7 +530,7 @@ class WeatherService {
     }
 
     const totalGdd = observations.reduce((sum, o) =>
-      sum + calculateDailyGdd(o.tempHigh, o.tempLow, baseTemp), 0)
+      sum + calculateDailyGdd(o.tempHigh, o.tempLow, baseTemp, gddMaxTemp), 0)
 
     const frostDays = observations.filter(o => o.tempLow < 32)
     const lastFrost = frostDays.length > 0

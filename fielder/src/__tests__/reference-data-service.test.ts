@@ -235,7 +235,7 @@ describe('Reference Data Service', () => {
         expect(targets.baseTemp).toBe(55)
         expect(targets.gddToMaturity).toBe(5100)
         expect(targets.gddToPeak).toBe(6100)
-        expect(targets.gddWindow).toBe(2000)
+        expect(targets.gddWindow).toBe(3500)  // CALIBRATED 2025-12-21
       })
 
       it('returns correct targets for peach', async () => {

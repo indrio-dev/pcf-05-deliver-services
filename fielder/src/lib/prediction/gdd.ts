@@ -8,15 +8,30 @@
  * GDD is the scientific basis for predicting harvest timing. Crops develop
  * based on accumulated heat, not calendar days.
  *
- * Formula: GDD = max(0, (Tmax + Tmin) / 2 - base_temp)
+ * CALCULATION METHODS:
  *
- * Each crop has a base temperature below which no development occurs:
- * - Citrus: 55°F (12.8°C)
- * - Stone fruit: 40-45°F
- * - Berries: 50°F
+ * 1. Simple Method (default):
+ *    GDD = max(0, (Tmax + Tmin) / 2 - base_temp)
+ *
+ * 2. Modified Method (86/50):
+ *    GDD = max(0, (cappedTmax + cappedTmin) / 2 - base_temp)
+ *    where cappedTmax = min(Tmax, maxTemp) and cappedTmin = max(Tmin, baseTemp)
+ *
+ *    The modified method accounts for upper developmental thresholds. Most crops
+ *    slow growth above 86°F due to heat stress. This is especially important for
+ *    Zone 10 Florida where summer temps often exceed 95°F.
+ *
+ * Base temperatures by crop:
+ * - Citrus: 55°F (subtropical, no upper limit)
+ * - Corn, tomatoes, beans: 50°F base, 86°F max (86/50 method)
+ * - Peppers: 55°F base, 95°F max (more heat-tolerant)
+ * - Cool season (lettuce, brassicas): 40°F base, 75°F max (heat-sensitive)
+ * - Cotton: 60°F base, 95°F max (tropical)
  *
  * Sources:
- * - UF/IFAS Citrus Extension
+ * - UF/IFAS Extension ABE381/AE428 (Florida GDD methods)
+ * - AgroClimate GDD Calculator (Southeast US, including FL)
+ * - Climate Smart Farming (Northeast US, 86/50 standard)
  * - UC Davis fruit production guides
  * - MSU/JASHS Zavalloni et al. 2006 (tart cherry model)
  */
@@ -62,17 +77,32 @@ export interface HarvestPrediction {
 /**
  * Calculate Growing Degree Days for a single day.
  *
+ * Supports both simple and modified (86/50) calculation methods.
+ *
  * @param tempMaxF - Maximum temperature in Fahrenheit
  * @param tempMinF - Minimum temperature in Fahrenheit
  * @param baseTemp - Base temperature for the crop (default 55°F for citrus)
+ * @param maxTemp - Optional upper developmental threshold (e.g., 86°F for corn/tomatoes)
  * @returns GDD for that day (minimum 0)
+ *
+ * @example
+ * // Simple method (no cap)
+ * calculateDailyGDD(95, 75, 50) // = 35 GDD (may overestimate during heat stress)
+ *
+ * // Modified method (86/50)
+ * calculateDailyGDD(95, 75, 50, 86) // = 18 GDD (accounts for heat stress)
  */
 export function calculateDailyGDD(
   tempMaxF: number,
   tempMinF: number,
-  baseTemp: number = 55
+  baseTemp: number = 55,
+  maxTemp?: number
 ): number {
-  const avgTemp = (tempMaxF + tempMinF) / 2
+  // Apply caps if maxTemp provided (modified method)
+  const cappedTmax = maxTemp ? Math.min(tempMaxF, maxTemp) : tempMaxF
+  const cappedTmin = Math.max(tempMinF, baseTemp)
+
+  const avgTemp = (cappedTmax + cappedTmin) / 2
   return Math.max(0, avgTemp - baseTemp)
 }
 
@@ -82,12 +112,14 @@ export function calculateDailyGDD(
  * @param weatherData - Array of daily weather observations
  * @param bloomDate - Date when bloom occurred (starts GDD clock)
  * @param baseTemp - Base temperature for the crop
+ * @param maxTemp - Optional upper developmental threshold
  * @returns Array of daily GDD accumulations
  */
 export function calculateCumulativeGDD(
   weatherData: DailyWeather[],
   bloomDate: Date,
-  baseTemp: number = 55
+  baseTemp: number = 55,
+  maxTemp?: number
 ): GDDAccumulation[] {
   const results: GDDAccumulation[] = []
   let cumulativeGDD = 0
@@ -98,7 +130,7 @@ export function calculateCumulativeGDD(
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
   for (const day of sorted) {
-    const dailyGDD = calculateDailyGDD(day.tempMaxF, day.tempMinF, baseTemp)
+    const dailyGDD = calculateDailyGDD(day.tempMaxF, day.tempMinF, baseTemp, maxTemp)
     cumulativeGDD += dailyGDD
 
     const dayDate = new Date(day.date)
