@@ -211,6 +211,13 @@ import {
   type EMetricType,
   type AlgorithmSelection,
 } from '../constants/ripening-methodology'
+import {
+  getLifecycleAgeModifier,
+  requiresAgeModifier,
+  type AgeModifierResult,
+  type MaturityStage,
+} from './age-modifier'
+import { CROP_GDD_TARGETS } from '../constants/gdd-targets'
 
 // =============================================================================
 // TYPES
@@ -543,10 +550,13 @@ export function classifyOmegaRatio(ratio: number): {
  * Research sources: UF/IFAS tree maturity studies, plant physiology literature
  */
 
-export type TreeMaturityStage = 'seedling' | 'juvenile' | 'mature' | 'prime' | 'declining'
+/**
+ * @deprecated Use MaturityStage from age-modifier.ts instead
+ */
+export type TreeMaturityStage = MaturityStage
 
 export interface TreeMaturityResult {
-  stage: TreeMaturityStage
+  stage: MaturityStage
   modifier: number
   reproductiveAllocation: number  // 0-100 percentage
   confidence: number
@@ -557,80 +567,30 @@ export interface TreeMaturityResult {
 /**
  * Get tree maturity stage and quality modifier.
  *
+ * NOW LIFECYCLE-AWARE: Uses the crop's lifecycle type to determine
+ * the appropriate age modifier curve (tree, bush, vine, or none for annuals).
+ *
  * The modifier reflects both:
  * 1. Reproductive allocation (how much energy goes to fruit)
  * 2. Tree health/vigor at different life stages
+ *
+ * @param ageYears - Plant/tree age in years
+ * @param cropType - Crop type or ID (used to look up lifecycle)
  */
 export function getTreeMaturityStage(
   ageYears: number | undefined,
   cropType?: string
 ): TreeMaturityResult {
-  if (ageYears === undefined) {
-    return {
-      stage: 'mature',
-      modifier: 0,
-      reproductiveAllocation: 70,
-      confidence: 0.5,
-      insight: 'Tree age unknown - assuming mature tree',
-    }
-  }
+  // Use the lifecycle-aware age modifier
+  const result = getLifecycleAgeModifier(ageYears, cropType || 'tree_perennial')
 
-  // Species-specific age ranges (citrus is default)
-  // Stone fruit matures faster, nuts slower
-  const ranges = cropType?.includes('pecan') || cropType?.includes('walnut')
-    ? { seedling: 3, juvenile: 7, mature: 15, prime: 50 }  // Nuts mature slowly
-    : cropType?.includes('peach') || cropType?.includes('cherry') || cropType?.includes('apple')
-      ? { seedling: 2, juvenile: 4, mature: 6, prime: 20 }  // Stone/pome fruit
-      : { seedling: 2, juvenile: 5, mature: 8, prime: 25 }  // Citrus (default)
-
-  if (ageYears <= ranges.seedling) {
-    return {
-      stage: 'seedling',
-      modifier: -0.8,
-      reproductiveAllocation: 0,
-      confidence: 0.9,
-      insight: 'Seedling stage: All energy to vegetative growth, no fruit production',
-    }
-  }
-
-  if (ageYears <= ranges.juvenile) {
-    return {
-      stage: 'juvenile',
-      modifier: -0.5,
-      reproductiveAllocation: 20,
-      confidence: 0.9,
-      insight: 'Juvenile stage: Still building root system and canopy, fruit competes with growth',
-    }
-  }
-
-  if (ageYears <= ranges.mature) {
-    return {
-      stage: 'mature',
-      modifier: -0.2,
-      reproductiveAllocation: 50,
-      confidence: 0.85,
-      insight: 'Mature stage: Balanced energy allocation, quality improving',
-    }
-  }
-
-  if (ageYears <= ranges.prime) {
-    return {
-      stage: 'prime',
-      modifier: 0.0,
-      reproductiveAllocation: 85,
-      confidence: 0.95,
-      insight: 'Prime production: Optimized reproductive allocation, peak quality potential',
-    }
-  }
-
-  // Declining stage - the paradox
   return {
-    stage: 'declining',
-    modifier: -0.2,  // Slight penalty for overall capacity, but not severe
-    reproductiveAllocation: 60,
-    confidence: 0.8,
-    insight: 'Declining tree paradox: Fewer fruits but each receives concentrated energy',
-    decliningParadox: true,
+    stage: result.stage,
+    modifier: result.modifier,
+    reproductiveAllocation: result.reproductiveAllocation,
+    confidence: result.confidence,
+    insight: result.insight,
+    decliningParadox: result.decliningParadox,
   }
 }
 

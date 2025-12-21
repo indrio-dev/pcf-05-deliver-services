@@ -239,6 +239,65 @@ export interface HarvestingPractices {
 export type AgriculturalPractices = HarvestingPractices
 
 /**
+ * =============================================================================
+ * CROP LIFECYCLE CLASSIFICATION
+ * =============================================================================
+ *
+ * Critical distinction for how the R (Ripen) pillar applies:
+ *
+ * | Lifecycle        | R_maturity          | R_timing (GDD)    | Examples                    |
+ * |------------------|---------------------|-------------------|-----------------------------|
+ * | tree_perennial   | Tree age (years)    | Seasonal window   | Citrus, apple, peach, pear  |
+ * | bush_perennial   | Bush age (years)    | Seasonal window   | Blueberry, blackberry       |
+ * | vine_perennial   | Vine age (years)    | Seasonal window   | Grapes, kiwi                |
+ * | annual_row       | N/A                 | Seasonal window   | Tomato, pepper, corn        |
+ * | annual_replanted | N/A                 | Seasonal window   | FL strawberry (perennial    |
+ * |                  |                     |                   | grown as annual)            |
+ *
+ * KEY INSIGHT:
+ *   - Tree/bush/vine crops: R = R_maturity × R_timing (both factors matter)
+ *   - Annuals: R = R_timing only (no age component)
+ *
+ * TREE AGE MODIFIER (for tree_perennial):
+ *   | Age       | Modifier | Notes                     |
+ *   |-----------|----------|---------------------------|
+ *   | 0-2 years | -0.8     | Young, developing         |
+ *   | 3-4 years | -0.5     | Coming into bearing       |
+ *   | 5-7 years | -0.2     | Approaching prime         |
+ *   | 8-18 yrs  | 0.0      | **Prime production**      |
+ *   | 19-25 yrs | -0.2     | Mature                    |
+ *   | 25+ years | -0.3     | Declining                 |
+ *
+ * BUSH AGE MODIFIER (for bush_perennial - different curve):
+ *   | Age       | Modifier | Notes                     |
+ *   |-----------|----------|---------------------------|
+ *   | 1-2 years | -0.5     | Establishment period      |
+ *   | 3-5 years | 0.0      | **Prime production**      |
+ *   | 6-10 yrs  | -0.1     | Mature, still productive  |
+ *   | 10+ years | -0.3     | Declining, often replaced |
+ */
+export type CropLifecycle =
+  | 'tree_perennial'    // Tree crops: citrus, stone fruit, pome fruit, nuts
+  | 'bush_perennial'    // Perennial bushes: blueberry, blackberry, raspberry
+  | 'vine_perennial'    // Perennial vines: grapes, kiwi, hops
+  | 'annual_row'        // Annual vegetables: tomato, pepper, beans, corn
+  | 'annual_replanted'  // Perennials grown as annuals: FL strawberry model
+
+/**
+ * R_maturity: Long-term genetic expression factor
+ * Applies to perennial crops only (tree, bush, vine)
+ */
+export interface MaturityProfile {
+  lifecycle: CropLifecycle
+  // For perennials: age affects genetic expression ceiling
+  primeAgeRangeYears?: [number, number]  // e.g., [8, 18] for citrus trees
+  yearsToFirstBearing?: number           // Years until first commercial crop
+  productiveLifespanYears?: number       // Total productive lifespan
+  // Age modifier function type (implemented in prediction engine)
+  ageModifierType?: 'tree_standard' | 'bush_standard' | 'vine_standard' | 'none'
+}
+
+/**
  * R - Ripen/Ready: Timing to peak quality
  * Translates by category:
  *   - Produce: Harvest timing, ripening behavior, transit
