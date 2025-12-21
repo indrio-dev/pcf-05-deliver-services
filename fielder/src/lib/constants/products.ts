@@ -926,24 +926,18 @@ export const CULTIVARS: Cultivar[] = [
 
   // === STRAWBERRY VARIETIES ===
   // Strawberries - calendar-based (varies by region)
-  // CA ~90% of US production, FL ~8% (winter crop), minor: NC, OR
+  // CA ~90% of US production, FL ~8% (winter crop Dec-Mar), minor: NC, OR
+  // UF/IFAS breeding program (Plant City) since 1948 - major FL cultivar source
+
+  // --- California Cultivars (UC Davis) ---
   {
     id: 'chandler_strawberry',
     productId: 'strawberry',
     displayName: 'Chandler',
     modelType: 'calendar',
-    validatedStates: ['CA', 'FL'], // UC Davis origin, dominated CA 1983-mid90s, FL winter production
+    validatedStates: ['CA'], // UC Davis origin, dominated CA 1983-mid90s
     flavorProfile: 'Large, very sweet, excellent flavor',
-    peakMonths: [3, 4, 5, 6], // March-June (CA default); Dec-Mar for Florida (via offering override)
-  },
-  {
-    id: 'earliglow',
-    productId: 'strawberry',
-    displayName: 'Earliglow',
-    modelType: 'calendar',
-    validatedStates: ['MD', 'NJ', 'PA', 'NY', 'NC', 'VA'], // USDA Beltsville origin (1975), East Coast
-    flavorProfile: 'Exceptional flavor, early season',
-    peakMonths: [5, 6], // May-June
+    peakMonths: [3, 4, 5, 6], // March-June
   },
   {
     id: 'seascape',
@@ -953,6 +947,65 @@ export const CULTIVARS: Cultivar[] = [
     validatedStates: ['CA'], // UC Davis day-neutral, California coastal production
     flavorProfile: 'Day-neutral, complex flavor, long season',
     peakMonths: [5, 6, 7, 8, 9], // May-September (day-neutral, long season)
+  },
+
+  // --- Florida Cultivars (UF/IFAS Gulf Coast Research Center) ---
+  {
+    id: 'florida_brilliance',
+    productId: 'strawberry',
+    displayName: 'Florida Brilliance',
+    modelType: 'calendar',
+    validatedStates: ['FL'], // UF/IFAS 2017, ~60% of FL acreage, current market leader
+    flavorProfile: 'Firm, bright red, excellent shelf life',
+    peakMonths: [12, 1, 2, 3], // Dec-Mar (FL winter crop)
+  },
+  {
+    id: 'sweet_sensation',
+    productId: 'strawberry',
+    displayName: 'Sweet Sensation (Florida127)',
+    modelType: 'calendar',
+    validatedStates: ['FL'], // UF/IFAS 2013, ~20% of FL acreage, exceptional sweetness
+    flavorProfile: 'Very sweet, fruity aroma, excellent size',
+    peakMonths: [12, 1, 2, 3], // Dec-Mar (FL winter crop)
+  },
+  {
+    id: 'florida_medallion',
+    productId: 'strawberry',
+    displayName: 'Florida Medallion',
+    modelType: 'calendar',
+    validatedStates: ['FL'], // UF/IFAS 2020, ~20% of FL acreage, best flavor
+    flavorProfile: 'Exceptionally sweet, fruity aroma, FL best-tasting',
+    peakMonths: [12, 1, 2, 3], // Dec-Mar (FL winter crop)
+  },
+  {
+    id: 'florida_radiance',
+    productId: 'strawberry',
+    displayName: 'Florida Radiance',
+    modelType: 'calendar',
+    validatedStates: ['FL'], // UF/IFAS 2008, was #1 until Brilliance, attractive luster
+    flavorProfile: 'Attractive luster, balanced sweet-tart',
+    peakMonths: [12, 1, 2, 3], // Dec-Mar (FL winter crop)
+  },
+  {
+    id: 'sweet_charlie',
+    productId: 'strawberry',
+    displayName: 'Sweet Charlie',
+    modelType: 'calendar',
+    isHeritage: true,
+    validatedStates: ['FL'], // UF/IFAS 1992, early release, still grown
+    flavorProfile: 'Very sweet, soft, aromatic',
+    peakMonths: [12, 1, 2, 3], // Dec-Mar (FL winter crop)
+  },
+
+  // --- East Coast Cultivars (USDA Beltsville) ---
+  {
+    id: 'earliglow',
+    productId: 'strawberry',
+    displayName: 'Earliglow',
+    modelType: 'calendar',
+    validatedStates: ['MD', 'NJ', 'PA', 'NY', 'NC', 'VA'], // USDA Beltsville origin (1975), East Coast
+    flavorProfile: 'Exceptional flavor, early season',
+    peakMonths: [5, 6], // May-June
   },
 
   // === BLUEBERRY VARIETIES ===
