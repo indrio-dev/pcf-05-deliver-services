@@ -1,0 +1,391 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-20",
+  "description": "USDA Plant Hardiness Zone Index - Primary lookup key for agricultural intelligence",
+  "source": "USDA Plant Hardiness Zone Map (https://planthardiness.ars.usda.gov/)",
+  "structure_note": "USDA zone is the PRIMARY KEY. All geographic lookups resolve to USDA zone first, then drill down.",
+  "weather_foundation": "USDA zones are weather-based (30-year average minimum winter temperatures). This provides the foundational link to harvest window and peak timing predictions (R pillar in SHARE framework).",
+  "why_zones_predict_timing": {
+    "frost_dates": "USDA zone determines last spring frost and first fall frost → defines growing season length",
+    "gdd_accumulation": "Zone temperature patterns determine GDD accumulation rate → predicts days to maturity",
+    "harvest_windows": "Zone-based growing season = when crops CAN be harvested in that geography",
+    "peak_timing": "GDD models + zone-specific temperature patterns = peak quality window predictions",
+    "example": {
+      "zone_8": "10-20°F minimum → Spring frost to ~April, Fall frost ~October → 9-month season → Tomatoes ONLY spring+fall",
+      "zone_10": "30-40°F minimum → Rare/no frost → 12-month season → Tomatoes Oct-Jun year-round",
+      "insight": "Same cultivar, different zone = different harvest timing. Zone IS the timing."
+    }
+  },
+  "zones": {
+    "3": {
+      "tempRange": "-40 to -30°F winter minimum",
+      "subzones": ["3a", "3b"],
+      "description": "Northern tier, very short growing season",
+      "states": ["MN", "ND", "SD", "MT", "WI", "MI"],
+      "fielderRegions": [
+        "minnesota_wild_rice"
+      ],
+      "crops": {
+        "limitedTo": ["cold-hardy vegetables", "short-season crops"],
+        "excludes": ["citrus", "subtropical fruit", "heat-loving crops"]
+      },
+      "harvestPatterns": {
+        "growingSeason": "May-September (very short)",
+        "winterProduction": false,
+        "notes": "Single growing season, hard frost inevitable"
+      }
+    },
+    "4": {
+      "tempRange": "-30 to -20°F winter minimum",
+      "subzones": ["4a", "4b"],
+      "description": "Northern states, short growing season",
+      "states": ["ME", "VT", "NH", "NY", "MI", "WI", "MN", "MT", "WY", "ID"],
+      "fielderRegions": [
+        "michigan_upper_peninsula",
+        "wisconsin_cranberry",
+        "central_minnesota",
+        "minnesota_apples",
+        "iowa_northeast",
+        "maine_aroostook"
+      ],
+      "crops": {
+        "specialty": ["apples", "cherries", "berries", "cold-hardy vegetables"],
+        "excludes": ["citrus", "peaches", "long-season crops"]
+      },
+      "harvestPatterns": {
+        "growingSeason": "May-October",
+        "winterProduction": false,
+        "notes": "Single growing season, frost-tolerant crops excel"
+      }
+    },
+    "5": {
+      "tempRange": "-20 to -10°F winter minimum",
+      "subzones": ["5a", "5b"],
+      "description": "Northern-transition states",
+      "states": ["NY", "PA", "OH", "IN", "IL", "IA", "NE", "CO", "UT", "NV"],
+      "fielderRegions": [
+        "northwest_michigan",
+        "door_county",
+        "wisconsin_driftless",
+        "northern_indiana_amish",
+        "northern_illinois",
+        "pioneer_valley_ma",
+        "berkshires_ma",
+        "vermont_champlain",
+        "vermont_statewide",
+        "maine_blueberry",
+        "maine_midcoast",
+        "new_hampshire"
+      ],
+      "crops": {
+        "specialty": ["apples", "peaches", "cherries", "grapes", "vegetables"],
+        "excludes": ["citrus", "avocado", "tropical fruit"]
+      },
+      "harvestPatterns": {
+        "growingSeason": "April-October",
+        "winterProduction": false,
+        "notes": "Single season, but longer than Zone 4"
+      }
+    },
+    "6": {
+      "tempRange": "-10 to 0°F winter minimum",
+      "subzones": ["6a", "6b"],
+      "description": "Transition zone, moderate seasons",
+      "states": ["PA", "NJ", "OH", "IN", "IL", "MO", "KS", "OK", "NM", "AZ"],
+      "fielderRegions": [
+        "northern_nm",
+        "southwest_michigan",
+        "ohio_lake_erie",
+        "ohio_amish_country",
+        "central_ohio",
+        "central_indiana",
+        "nc_mountains",
+        "hudson_valley",
+        "finger_lakes",
+        "adams_county_pa",
+        "lancaster_county_pa",
+        "connecticut",
+        "rhode_island",
+        "shenandoah_valley",
+        "wv_eastern_panhandle",
+        "kentucky_bluegrass"
+      ],
+      "crops": {
+        "specialty": ["apples", "peaches", "berries", "vegetables", "melons"],
+        "excludes": ["citrus", "avocado", "most tropical fruit"]
+      },
+      "harvestPatterns": {
+        "growingSeason": "April-November",
+        "winterProduction": "limited (with protection)",
+        "notes": "Extended season compared to Zone 5"
+      }
+    },
+    "7": {
+      "tempRange": "0 to 10°F winter minimum",
+      "subzones": ["7a", "7b"],
+      "description": "Mid-latitude, mild winters",
+      "states": ["VA", "NC", "TN", "AR", "OK", "TX", "NM", "AZ", "NV", "CA"],
+      "fielderRegions": [
+        "middle_rio_grande",
+        "georgia_piedmont",
+        "south_carolina_ridge",
+        "sc_upstate",
+        "nc_piedmont",
+        "eastern_nc_coastal_plain",
+        "long_island",
+        "pine_barrens_nj",
+        "central_jersey",
+        "cape_cod_ma",
+        "virginia_piedmont",
+        "maryland_eastern_shore",
+        "delaware",
+        "east_tennessee",
+        "middle_tennessee"
+      ],
+      "crops": {
+        "specialty": ["peaches", "apples", "berries", "vegetables", "melons", "pecans"],
+        "developing": ["fig", "pomegranate", "cold-hardy citrus"],
+        "excludes": ["tropical citrus", "mango", "papaya"]
+      },
+      "harvestPatterns": {
+        "growingSeason": "March-November",
+        "winterProduction": "possible with protection",
+        "notes": "Long season, frost still limits winter production"
+      }
+    },
+    "8": {
+      "tempRange": "10 to 20°F winter minimum",
+      "subzones": ["8a", "8b"],
+      "description": "Subtropical transition, occasional frost",
+      "states": ["NC", "SC", "GA", "AL", "MS", "LA", "TX", "AZ", "CA", "WA", "FL"],
+      "fielderRegions": [
+        "mendocino_county",
+        "texas_hill_country",
+        "texas_pecan_belt",
+        "east_texas",
+        "texas_blackland_prairie",
+        "central_texas",
+        "hatch_valley",
+        "mesilla_valley",
+        "cochise_county",
+        "vidalia_region",
+        "middle_georgia",
+        "southwest_georgia",
+        "sc_lowcountry"
+      ],
+      "crops": {
+        "specialty": ["peaches", "pecans", "blueberries", "vegetables", "melons"],
+        "developing": ["citrus (cold-hardy)", "fig", "pomegranate"],
+        "excludes": ["tropical citrus", "mango", "papaya", "key lime"]
+      },
+      "harvestPatterns": {
+        "growingSeason": "March-November (9 months)",
+        "winterProduction": "limited, frost risk remains",
+        "twoSeason": true,
+        "notes": "Spring and fall planting windows for warm-season crops"
+      },
+      "stateExamples": {
+        "FL": {
+          "name": "North Florida",
+          "counties": ["Escambia", "Santa Rosa", "Leon", "Duval", "Nassau"],
+          "notes": "Similar to Georgia/South Carolina. Two distinct growing seasons."
+        }
+      }
+    },
+    "9": {
+      "tempRange": "20 to 30°F winter minimum",
+      "subzones": ["9a", "9b"],
+      "description": "Subtropical, rare frost",
+      "states": ["CA", "AZ", "TX", "LA", "FL"],
+      "fielderRegions": [
+        "sacramento_valley",
+        "san_joaquin_valley_north",
+        "san_joaquin_valley_central",
+        "san_joaquin_valley_south",
+        "salinas_valley",
+        "central_coast_north",
+        "napa_valley",
+        "sonoma_county",
+        "plant_city",
+        "central_florida_citrus",
+        "florida_panhandle",
+        "northeast_florida",
+        "texas_rgv",
+        "winter_garden",
+        "santa_cruz_valley"
+      ],
+      "crops": {
+        "specialty": ["citrus", "avocado", "stone fruit", "berries", "vegetables"],
+        "yearRound": ["lettuce", "greens", "herbs (with some protection)"],
+        "excludes": ["true tropical fruit requiring no frost"]
+      },
+      "harvestPatterns": {
+        "growingSeason": "February-December (10+ months)",
+        "winterProduction": "significant, rare frost risk",
+        "extendedSeason": true,
+        "notes": "Approaching year-round production for many crops"
+      },
+      "stateExamples": {
+        "FL": {
+          "name": "Central Florida",
+          "counties": ["Hillsborough", "Polk", "Orange", "Brevard"],
+          "notes": "Citrus belt. Extended growing seasons, occasional damaging frost."
+        },
+        "CA": {
+          "name": "Sacramento Valley",
+          "counties": ["Glenn", "Colusa", "Yuba", "Sutter"],
+          "notes": "Rice, almonds, walnuts, stone fruit"
+        }
+      }
+    },
+    "10": {
+      "tempRange": "30 to 40°F winter minimum",
+      "subzones": ["10a", "10b"],
+      "description": "Tropical/subtropical, frost-free or extremely rare",
+      "states": ["CA", "AZ", "FL"],
+      "fielderRegions": [
+        "central_coast_south",
+        "imperial_valley",
+        "coachella_valley",
+        "san_diego_county",
+        "indian_river",
+        "homestead_redland",
+        "yuma_county",
+        "salt_river_valley"
+      ],
+      "crops": {
+        "specialty": ["citrus", "avocado", "mango", "tropical vegetables"],
+        "yearRound": ["tomatoes", "peppers", "cucumbers", "squash", "lettuce"],
+        "commercial": "Winter vegetable capital of USA (Florida)"
+      },
+      "harvestPatterns": {
+        "growingSeason": "Year-round",
+        "winterProduction": "peak commercial production period",
+        "notes": "Warm-season crops can be grown year-round. South Florida supplies eastern US in winter."
+      },
+      "stateExamples": {
+        "FL": {
+          "name": "South Florida",
+          "counties": ["Collier", "Lee", "Palm Beach", "Miami-Dade", "Martin"],
+          "notes": "Winter vegetable capital. Year-round commercial production."
+        }
+      }
+    },
+    "11": {
+      "tempRange": "40°F+ winter minimum",
+      "subzones": ["11a"],
+      "description": "True tropical, never frosts",
+      "states": ["FL", "HI"],
+      "fielderRegions": [
+        "florida_keys"
+      ],
+      "crops": {
+        "specialty": ["mango", "papaya", "key lime", "tropical fruit"],
+        "yearRound": "All warm-season crops",
+        "unique": "Only zone in continental US that never experiences frost"
+      },
+      "harvestPatterns": {
+        "growingSeason": "Year-round (365 days)",
+        "winterProduction": "year-round",
+        "notes": "True tropical climate. Limited commercial agriculture due to isolation, water scarcity, land constraints."
+      },
+      "stateExamples": {
+        "FL": {
+          "name": "Florida Keys",
+          "counties": ["Monroe"],
+          "notes": "Only true tropical zone in continental US. Key limes, mangoes, tropical fruit."
+        }
+      }
+    }
+  },
+  "integration_with_share": {
+    "R_pillar_connection": "USDA zone provides the weather foundation for Ripen (R) pillar predictions",
+    "how_it_works": {
+      "step1": "USDA zone → Average frost dates (last spring, first fall)",
+      "step2": "Frost dates → Growing season length in days",
+      "step3": "Zone temperature patterns → Expected GDD accumulation rate",
+      "step4": "GDD accumulation + cultivar requirements → Days to harvest",
+      "step5": "Days to harvest + optimal timing window → Peak quality prediction"
+    },
+    "gdd_model_integration": {
+      "example_tomato_cherokee_purple": {
+        "cultivar": "Cherokee Purple",
+        "gdd_requirement": "~2800 GDD base 50°F",
+        "zone_8_scenario": {
+          "growing_season": "April 1 - October 31 (214 days)",
+          "avg_daily_gdd": "~18 GDD/day (summer months)",
+          "days_to_harvest": "~85 days",
+          "planting_windows": ["March-April (spring)", "August (fall)"],
+          "harvest_windows": ["June-July", "October-November"],
+          "peak_timing": "Mid-June (spring plant), Late October (fall plant)"
+        },
+        "zone_10_scenario": {
+          "growing_season": "Year-round (frost-free)",
+          "avg_daily_gdd": "~22 GDD/day (consistent)",
+          "days_to_harvest": "~75 days (faster accumulation)",
+          "planting_windows": ["August-September", "January-March"],
+          "harvest_windows": ["October-June (8-9 months)"],
+          "peak_timing": "December-March (winter commercial peak)"
+        },
+        "insight": "Same cultivar, same GDD requirement, but different ZONES = different accumulation rates = different timing = different harvest windows"
+      }
+    },
+    "why_this_matters": [
+      "USDA zone is OBJECTIVE (30-year weather data, not opinion)",
+      "Zone → GDD rates are PREDICTABLE (physics-based, not guesswork)",
+      "Harvest windows are VERIFIABLE (can measure actual vs predicted)",
+      "Quality timing is CALCULABLE (peak = optimal GDD within harvest window)",
+      "This makes Fielder's R pillar predictions DEFENSIBLE and SCIENTIFIC"
+    ]
+  },
+  "lookupLogic": {
+    "description": "How to use USDA zones as primary key",
+    "steps": [
+      "1. GPS coordinates → USDA zone lookup (via USDA zone map API or database)",
+      "2. USDA zone → Harvest timing patterns (from this file)",
+      "3. USDA zone → Fielder growing regions in that zone",
+      "4. Fielder region → Specific soil/climate for SHARE predictions",
+      "5. Cross-reference state + zone for state-specific cultivar recommendations"
+    ],
+    "example": {
+      "input": "Farm in Collier County, FL",
+      "step1": "Collier County, FL → USDA Zone 10a",
+      "step2": "Zone 10a → Year-round growing, winter peak",
+      "step3": "Zone 10a in FL → Fielder regions: southwest_fl, everglades_ag_area",
+      "step4": "southwest_fl → Sandy loam soil, high drainage",
+      "step5": "FL + Zone 10 → Tomatoes Oct-Jun, strawberries Nov-Apr"
+    }
+  },
+  "researchQueue": {
+    "priority_1": "Map remaining Fielder growing regions to their USDA zones",
+    "method_1": "Read growing-regions.ts, extract climate.usdaZone for each region, populate this index",
+    "priority_2": "Collect existing GDD models by USDA zone",
+    "method_2": "Extension services (MSU, UC Davis, etc.) publish GDD accumulation tables by zone. Don't calculate from scratch - use existing academic data.",
+    "priority_3": "Systematically collect seed company zone recommendations",
+    "method_3": "Johnny's Seeds, Burpee, Baker Creek, etc. all publish cultivar × zone timing. See docs/SEED_COMPANY_RESEARCH.md",
+    "states_to_complete": ["CA", "TX", "NY", "OH", "PA", "MI", "NC", "GA", "WA", "OR", "VA", "TN", "NJ", "MA", "WI", "MN", "IN", "CO", "AL", "SC"]
+  },
+  "existingDataSources": {
+    "gdd_by_zone": {
+      "description": "Extension services publish GDD accumulation tables by USDA zone - don't reinvent",
+      "sources": [
+        "Michigan State University - GDD accumulation by zone",
+        "University of California - Zone-based GDD models",
+        "NOAA/NWS - Historical GDD data by weather station",
+        "Regional agricultural research stations"
+      ]
+    },
+    "seed_companies": {
+      "description": "Every seed packet has 'Plant in Zone X: [dates]' - commercially validated",
+      "sources": [
+        "Johnny's Selected Seeds - Most detailed zone/timing data",
+        "Burpee - Comprehensive catalog with zone guides",
+        "Baker Creek - Heirloom focus, heritage cultivars",
+        "Seed Savers Exchange - Heritage preservation",
+        "Park Seed - 150 years of cultivation data"
+      ],
+      "what_they_provide": "Days to maturity + planting dates by zone = cultivar-specific timing already validated"
+    },
+    "triangulation": "Seed company (commercial) + Extension (academic) + State calendars (aggregate) = Three-way validation makes predictions bulletproof"
+  }
+}

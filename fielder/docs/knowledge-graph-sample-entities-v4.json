@@ -1,0 +1,749 @@
+{
+  "meta": {
+    "version": "4.0.0",
+    "created": "2025-12-21",
+    "description": "Sample knowledge graph entities demonstrating polymorphic SHARE model across all product categories",
+    "schema": "knowledge-graph-schema-design-v4.md"
+  },
+
+  "geographic": {
+    "states": [
+      {
+        "id": "florida",
+        "name": "Florida",
+        "code": "FL",
+        "zones": ["zone_8a", "zone_8b", "zone_9a", "zone_9b", "zone_10a", "zone_10b"]
+      }
+    ],
+
+    "zones": [
+      {
+        "id": "zone_10a",
+        "zoneNumber": "10a",
+        "avgAnnualMinTemp": 35,
+        "frostDates": {
+          "lastSpring": "Feb 15",
+          "firstFall": "Dec 15"
+        },
+        "avgDailyGDD": 25,
+        "heatDays": 180
+      }
+    ],
+
+    "regions": [
+      {
+        "id": "indian_river_fl",
+        "name": "Indian River",
+        "state": "florida",
+        "zone": "zone_10a",
+        "lat": 27.6466,
+        "lon": -80.3970,
+        "typicalSoil": "soil_indian_river_ridge",
+        "pastureType": null,
+        "waterType": null
+      },
+      {
+        "id": "texas_hill_country",
+        "name": "Texas Hill Country",
+        "state": "texas",
+        "zone": "zone_8a",
+        "lat": 30.2672,
+        "lon": -98.7453,
+        "typicalSoil": null,
+        "pastureType": "pasture_hill_country",
+        "waterType": null
+      },
+      {
+        "id": "copper_river_alaska",
+        "name": "Copper River, Alaska",
+        "state": "alaska",
+        "zone": "zone_6b",
+        "lat": 60.5436,
+        "lon": -144.6219,
+        "typicalSoil": null,
+        "pastureType": null,
+        "waterType": "cold_ocean"
+      }
+    ]
+  },
+
+  "produce": {
+    "productTypes": [
+      {
+        "id": "orange",
+        "name": "Orange",
+        "category": "fruit",
+        "subcategory": "citrus"
+      }
+    ],
+
+    "varieties": [
+      {
+        "id": "navel",
+        "name": "Navel",
+        "productType": "orange"
+      }
+    ],
+
+    "cultivars": [
+      {
+        "id": "washington_navel",
+        "displayName": "Washington Navel",
+        "variety": "navel",
+
+        "heritageIntent": "heirloom_quality",
+        "isNonGmo": true,
+        "flavorProfile": "Sweet, low acid, seedless. Rich orange flavor with minimal bitterness.",
+        "nutritionNotes": "High vitamin C, good fiber",
+
+        "brixRange": {
+          "min": 10.5,
+          "max": 14.0,
+          "typical": 12.0
+        },
+
+        "baseTemp": 55,
+        "maxTemp": null,
+        "gddToMaturity": 5100,
+        "gddToPeak": 5400,
+        "gddWindow": 900,
+        "plantingMethod": null,
+        "transplantAge": null,
+        "chillHoursRequired": 200,
+
+        "validatedStates": ["florida", "california", "texas", "arizona"]
+      }
+    ],
+
+    "rootstocks": [
+      {
+        "id": "carrizo",
+        "name": "Carrizo Citrange",
+        "scientificName": "Citrus sinensis × Poncirus trifoliata",
+        "brixModifier": 0.6,
+        "diseaseResistance": ["CTV", "Phytophthora"]
+      }
+    ],
+
+    "soilProfiles": [
+      {
+        "id": "soil_indian_river_ridge",
+        "soilType": "Sandy loam",
+        "texture": "Sandy",
+        "drainage": "Excellent",
+        "ph": 6.5,
+        "organicMatter": 3.2,
+        "cec": 8.5,
+        "nitrogen": "Medium",
+        "phosphorus": "Medium",
+        "potassium": "High",
+        "calcium": "High",
+        "magnesium": "Medium",
+        "sulfur": "Low",
+        "isMineralized": true,
+        "mineralizationNotes": "Ridge soils naturally well-drained and mineralized. Centuries of citrus production with soil banking practices."
+      }
+    ],
+
+    "produceOfferings": [
+      {
+        "id": "washington_navel_indian_river_fl",
+        "cultivar": "washington_navel",
+        "region": "indian_river_fl",
+
+        "soil": "soil_indian_river_ridge",
+        "terroirNotes": "Indian River terroir produces exceptionally sweet navels due to well-drained sandy loam and consistent warm temperatures.",
+
+        "rootstock": "carrizo",
+        "heritageScore": 0.85,
+
+        "practices": "practices_indian_river_organic",
+
+        "plantingWindows": ["planting_navel_zone10a"],
+        "harvestWindows": ["harvest_navel_zone10a_2025"],
+        "peakMonths": [12, 1, 2],
+        "availableMonths": [11, 12, 1, 2, 3],
+
+        "expectedBrix": 12.6,
+        "expectedQualityTier": "excellent",
+
+        "farms": ["farm_indian_river_citrus"]
+      }
+    ],
+
+    "agriculturalPractices": [
+      {
+        "id": "practices_indian_river_organic",
+        "fertilityStrategy": {
+          "approach": "soil_banking",
+          "coverCropping": true,
+          "compostApplication": true,
+          "mineralizedSoil": true,
+          "mineralizationSystem": "ACRES USA"
+        },
+        "pestManagement": "organic",
+        "irrigationMethod": "Micro-sprinkler",
+        "coverCropping": true,
+        "compostApplication": true,
+        "cropRotation": false,
+        "cropLoadManaged": true,
+        "isOrganic": true,
+        "certifications": ["USDA Organic"]
+      }
+    ],
+
+    "plantingWindows": [
+      {
+        "id": "planting_navel_zone10a",
+        "offering": "washington_navel_indian_river_fl",
+        "startMonth": 3,
+        "endMonth": 5,
+        "startDay": 60,
+        "endDay": 150,
+        "method": null,
+        "transplantAge": null,
+        "zone": "zone_10a",
+        "frostRiskStart": "Low",
+        "frostRiskEnd": "None",
+        "confidence": 0.9,
+        "source": "uf_ifas_extension"
+      }
+    ],
+
+    "harvestWindows": [
+      {
+        "id": "harvest_navel_zone10a_2025",
+        "offering": "washington_navel_indian_river_fl",
+        "plantingWindow": null,
+        "startMonth": 11,
+        "endMonth": 3,
+        "peakStartMonth": 12,
+        "peakEndMonth": 2,
+        "startDay": 305,
+        "endDay": 90,
+        "peakStartDay": 335,
+        "peakEndDay": 59,
+        "gddToStart": 4800,
+        "gddToPeak": 5400,
+        "gddToEnd": 6300,
+        "expectedBrixAtStart": 11.0,
+        "expectedBrixAtPeak": 12.6,
+        "expectedBrixAtEnd": 11.5,
+        "confidence": 0.88,
+        "source": "gdd_model"
+      }
+    ],
+
+    "farms": [
+      {
+        "id": "farm_indian_river_citrus",
+        "name": "Indian River Organic Citrus",
+        "region": "indian_river_fl",
+        "lat": 27.6500,
+        "lon": -80.4000,
+        "practices": "practices_indian_river_organic",
+        "isVerified": true,
+        "verificationDate": "2025-01-15",
+        "verificationSource": "USDA Organic"
+      }
+    ],
+
+    "farmOfferings": [
+      {
+        "id": "farm_offering_navel_indian_river_2025",
+        "farm": "farm_indian_river_citrus",
+        "offering": "washington_navel_indian_river_fl",
+        "rootstock": "carrizo",
+        "treeAge": 12,
+        "acreage": 25.0,
+        "plantingDate": "2013-04-01",
+        "practices": "practices_indian_river_organic",
+        "expectedHarvestDate": "2025-12-15",
+        "actualHarvestDate": null,
+        "currentAvailability": "preorder",
+        "quantityAvailable": 50000,
+        "pricePerUnit": 1.25
+      }
+    ]
+  },
+
+  "livestock": {
+    "animalTypes": [
+      {
+        "id": "beef_cattle",
+        "name": "Beef Cattle",
+        "category": "meat",
+        "subcategory": "red_meat"
+      }
+    ],
+
+    "breeds": [
+      {
+        "id": "american_wagyu",
+        "displayName": "American Wagyu",
+        "animalType": "beef_cattle",
+        "origin": "Japan × USA",
+        "heritageIntent": "Marbling genetics from Japanese Wagyu, hybrid vigor from Angus",
+        "omegaModifier": 0.8,
+        "marblingPotential": "Exceptional",
+        "typicalMaturityAge": 24,
+        "typicalHarvestAge": 24
+      }
+    ],
+
+    "pastureTypes": [
+      {
+        "id": "pasture_hill_country",
+        "type": "Native grass",
+        "primaryForage": ["Native grasses", "Forbs", "Browse"],
+        "pastureSystem": "pasture_with_supplement",
+        "rotationalGrazing": true,
+        "acresPerAnimal": 15.0
+      }
+    ],
+
+    "pastureQuality": [
+      {
+        "id": "quality_hill_country_everglades",
+        "forageDiversity": "High",
+        "mineralizedSoil": true,
+        "seasonalRotation": true,
+        "qualityScore": 0.92
+      }
+    ],
+
+    "feedingRegimes": [
+      {
+        "id": "feeding_everglades_ranch",
+        "diet": "pasture_grain_supp",
+        "isOrganicGrain": false,
+        "sequence": "concurrent",
+        "grainType": ["Non-GMO Corn", "Non-GMO Barley"],
+        "grainStartAge": 12,
+        "grainPercentage": 25,
+        "noFeedlot": true,
+        "noCAFO": true,
+        "neverConfined": true,
+        "noAntibiotics": true,
+        "noHormones": true,
+        "noVaccines": false
+      }
+    ],
+
+    "livestockFarms": [
+      {
+        "id": "farm_everglades_ranch",
+        "name": "Everglades Ranch",
+        "region": "texas_hill_country",
+        "pastureType": "pasture_hill_country",
+        "pastureAcres": 3000.0,
+        "pastureQuality": "quality_hill_country_everglades",
+        "feedingRegime": "feeding_everglades_ranch",
+        "animalWelfare": {
+          "housingType": "Pasture",
+          "outdoorAccess": true,
+          "spacePerAnimal": 15000,
+          "enrichment": ["Natural foraging", "Social herd structure", "Shade trees"]
+        }
+      }
+    ],
+
+    "livestockOfferings": [
+      {
+        "id": "offering_wagyu_everglades",
+        "breed": "american_wagyu",
+        "farm": "farm_everglades_ranch",
+
+        "pastureType": "pasture_hill_country",
+        "pastureQuality": "quality_hill_country_everglades",
+
+        "omegaBaseline": 0.8,
+
+        "feedingRegime": "feeding_everglades_ranch",
+
+        "ageAtHarvest": 24,
+        "feedlotDuration": 0,
+        "durationPenalty": 0.0,
+
+        "expectedOmegaRatio": 4.5,
+        "omegaTier": "true_pasture",
+
+        "products": [
+          "product_wagyu_ribeye",
+          "product_wagyu_ground",
+          "product_wagyu_tenderloin"
+        ]
+      }
+    ],
+
+    "meatProducts": [
+      {
+        "id": "product_wagyu_ribeye",
+        "offering": "offering_wagyu_everglades",
+        "cut": "Ribeye",
+        "weightOz": 16,
+        "inheritedOmegaRatio": 4.5,
+        "inheritedTier": "true_pasture",
+        "pricePerLb": 38.00,
+        "availability": "available_now"
+      },
+      {
+        "id": "product_wagyu_ground",
+        "offering": "offering_wagyu_everglades",
+        "cut": "Ground Beef",
+        "weightOz": 16,
+        "inheritedOmegaRatio": 4.5,
+        "inheritedTier": "true_pasture",
+        "pricePerLb": 15.00,
+        "availability": "available_now"
+      }
+    ]
+  },
+
+  "seafood": {
+    "seafoodTypes": [
+      {
+        "id": "salmon",
+        "name": "Salmon",
+        "category": "seafood",
+        "subcategory": "fish"
+      }
+    ],
+
+    "species": [
+      {
+        "id": "sockeye_salmon",
+        "displayName": "Sockeye Salmon",
+        "scientificName": "Oncorhynchus nerka",
+        "seafoodType": "salmon",
+        "omega3Baseline": 2500,
+        "mercuryLevel": "very_low",
+        "nativeWaters": ["North Pacific", "Alaska", "British Columbia"],
+        "depthRange": "Surface to 200m",
+        "waterTypeRequired": "cold_ocean",
+        "migratory": true,
+        "spawningLocation": "Freshwater rivers and lakes"
+      }
+    ],
+
+    "waterTypes": [
+      {
+        "id": "water_copper_river",
+        "type": "cold_ocean",
+        "temperature": "Cold",
+        "salinity": "Saltwater",
+        "pollutionLevel": "Pristine",
+        "habitatHealth": "Excellent",
+        "qualityScore": 0.98
+      }
+    ],
+
+    "seafoodOfferings": [
+      {
+        "id": "offering_sockeye_copper_river",
+        "species": "sockeye_salmon",
+        "region": "copper_river_alaska",
+
+        "waterType": "cold_ocean",
+        "waterQuality": "water_copper_river",
+
+        "omega3Baseline": 2500,
+        "mercuryLevel": "very_low",
+
+        "harvestMethod": "wild_day_boat",
+        "isSustainable": true,
+        "certifications": ["MSC Certified"],
+
+        "seasonalAvailability": [5, 6],
+        "typicalDaysToDock": 1,
+        "typicalDaysToMarket": 3,
+
+        "expectedOmega3": 2500,
+        "expectedQuality": "exceptional"
+      }
+    ]
+  },
+
+  "measurements": {
+    "qualityPredictions": [
+      {
+        "id": "prediction_navel_2025_001",
+        "offeringId": "washington_navel_indian_river_fl",
+        "category": "produce",
+        "expectedBrix": 12.6,
+        "expectedOmegaRatio": null,
+        "expectedOmega3": null,
+        "qualityTier": "excellent",
+        "confidence": 0.88,
+        "sharePillars": {
+          "s_score": 0.92,
+          "h_score": 0.85,
+          "a_score": 0.88,
+          "r_score": 0.90,
+          "e_confidence": 0.88,
+          "overall": 0.886,
+          "s_description": "Indian River Ridge soil: sandy loam, excellent drainage, mineralized (ACRES USA). Perfect for citrus.",
+          "h_description": "Washington Navel (heirloom quality) on Carrizo rootstock (+0.6 Brix modifier). 12-year-old trees at prime age.",
+          "a_description": "Organic soil banking with cover cropping, compost application, and crop load management.",
+          "r_description": "Peak harvest window Dec-Feb. Estimated harvest Dec 15 at optimal GDD accumulation (5400).",
+          "e_confidence": "High confidence based on cultivar genetics, region history, and farm practices."
+        },
+        "predictedDate": "2025-11-01",
+        "source": "gdd_model"
+      },
+      {
+        "id": "prediction_wagyu_2025_001",
+        "offeringId": "offering_wagyu_everglades",
+        "category": "meat",
+        "expectedBrix": null,
+        "expectedOmegaRatio": 4.5,
+        "expectedOmega3": null,
+        "qualityTier": "excellent",
+        "confidence": 0.85,
+        "sharePillars": {
+          "s_score": 0.92,
+          "h_score": 0.78,
+          "a_score": 0.95,
+          "r_score": 0.88,
+          "e_confidence": 0.85,
+          "overall": 0.876,
+          "s_description": "Texas Hill Country native grass pasture, rotational grazing, mineralized soil. 15 acres per animal.",
+          "h_description": "American Wagyu (marbling genetics, +0.8 omega modifier). Breed naturally has slightly higher omega-6 than heritage grass breeds.",
+          "a_description": "Pasture-raised with free-choice non-GMO grain supplement (concurrent, not sequential). No feedlot, no CAFO. Animal stays on pasture entire life.",
+          "r_description": "24 months age at harvest (full maturity). Zero feedlot duration = no duration penalty.",
+          "e_confidence": "High confidence. Concurrent grain supplement expected to produce 4-6:1 ratio (True Pasture tier)."
+        },
+        "predictedDate": "2025-10-01",
+        "source": "omega_model"
+      }
+    ],
+
+    "qualityMeasurements": [
+      {
+        "id": "measurement_navel_2025_001",
+        "predictionId": "prediction_navel_2025_001",
+        "offeringId": "washington_navel_indian_river_fl",
+        "category": "produce",
+        "measuredBrix": 12.2,
+        "measuredOmegaRatio": null,
+        "measuredOmega3": null,
+        "measuredMercury": null,
+        "labVerified": false,
+        "labName": null,
+        "labTestDate": null,
+        "measurementDate": "2025-12-18",
+        "measurementLocation": {
+          "lat": 28.5383,
+          "lon": -81.3792,
+          "city": "Orlando",
+          "state": "FL"
+        },
+        "measuredBy": "consumer"
+      },
+      {
+        "id": "measurement_wagyu_2025_001",
+        "predictionId": "prediction_wagyu_2025_001",
+        "offeringId": "offering_wagyu_everglades",
+        "category": "meat",
+        "measuredBrix": null,
+        "measuredOmegaRatio": 4.2,
+        "measuredOmega3": null,
+        "measuredMercury": null,
+        "labVerified": true,
+        "labName": "Edacious",
+        "labTestDate": "2025-11-15",
+        "measurementDate": "2025-11-20",
+        "measurementLocation": {
+          "city": "Austin",
+          "state": "TX"
+        },
+        "measuredBy": "lab"
+      }
+    ],
+
+    "calibrations": [
+      {
+        "id": "calibration_navel_2025_001",
+        "predictionId": "prediction_navel_2025_001",
+        "measurementId": "measurement_navel_2025_001",
+        "predictedValue": 12.6,
+        "actualValue": 12.2,
+        "delta": -0.4,
+        "percentError": -3.17,
+        "adjustedConfidence": 0.90,
+        "modelVersion": "gdd_v2.1",
+        "calibrationDate": "2025-12-18"
+      },
+      {
+        "id": "calibration_wagyu_2025_001",
+        "predictionId": "prediction_wagyu_2025_001",
+        "measurementId": "measurement_wagyu_2025_001",
+        "predictedValue": 4.5,
+        "actualValue": 4.2,
+        "delta": -0.3,
+        "percentError": -6.67,
+        "adjustedConfidence": 0.88,
+        "modelVersion": "omega_v1.3",
+        "calibrationDate": "2025-11-20"
+      }
+    ]
+  },
+
+  "inferenceChains": {
+    "examples": [
+      {
+        "id": "inference_plu_organic",
+        "category": "produce",
+        "pillar": "h_heritage",
+        "input": {
+          "inputType": "plu_code",
+          "inputValue": "94011"
+        },
+        "output": {
+          "pillar": "h_heritage",
+          "estimatedValue": "Non-GMO",
+          "reasoning": "PLU prefix 9 indicates USDA Organic certification, which requires non-GMO."
+        },
+        "confidence": "high",
+        "source": "plu_lookup"
+      },
+      {
+        "id": "inference_grass_fed_no_finished",
+        "category": "meat",
+        "pillar": "a_agricultural",
+        "input": {
+          "inputType": "marketing_claim",
+          "inputValue": "Grass-fed"
+        },
+        "output": {
+          "pillar": "a_agricultural",
+          "estimatedValue": "Grain-finished (14:1 omega expected)",
+          "reasoning": "Claim says 'grass-fed' but does NOT say 'grass-finished' or 'no feedlot'. Silence on finishing = grain-finished in feedlot."
+        },
+        "confidence": "high",
+        "source": "claim_inference"
+      },
+      {
+        "id": "inference_organic_meat",
+        "category": "meat",
+        "pillar": "a_agricultural",
+        "input": {
+          "inputType": "certification",
+          "inputValue": "USDA Organic"
+        },
+        "output": {
+          "pillar": "a_agricultural",
+          "estimatedValue": "Grain-fed (organic grain, 15-20:1 omega expected)",
+          "reasoning": "Organic certification for meat requires organic feed but does NOT require grass. Most organic meat is grain-fed with organic grain. Red flag for omega ratio."
+        },
+        "confidence": "high",
+        "source": "certification_inference"
+      },
+      {
+        "id": "inference_copper_river_season",
+        "category": "seafood",
+        "pillar": "r_ripen",
+        "input": {
+          "inputType": "scan_date",
+          "inputValue": "2025-12-15"
+        },
+        "output": {
+          "pillar": "r_ripen",
+          "estimatedValue": "Out of season (May-June only)",
+          "reasoning": "Copper River Sockeye has extremely short season (May-June). December scan = out of season, likely frozen or different region."
+        },
+        "confidence": "high",
+        "source": "seasonal_pattern"
+      }
+    ]
+  },
+
+  "shareComparisons": {
+    "produceExample": {
+      "name": "Washington Navel Orange - Indian River",
+      "s_pillar": {
+        "type": "Soil",
+        "value": "Sandy loam, mineralized, excellent drainage",
+        "score": 0.92
+      },
+      "h_pillar": {
+        "type": "Heritage/Genetics",
+        "value": "Heirloom quality cultivar + Carrizo rootstock",
+        "score": 0.85
+      },
+      "a_pillar": {
+        "type": "Agricultural Practices",
+        "value": "Organic soil banking, cover cropping",
+        "score": 0.88
+      },
+      "r_pillar": {
+        "type": "Timing",
+        "value": "Harvested at peak (Dec-Feb), 5400 GDD",
+        "score": 0.90
+      },
+      "e_pillar": {
+        "type": "Quality Measurement",
+        "value": "Brix 12.2 (predicted 12.6)",
+        "score": 0.97
+      }
+    },
+
+    "livestockExample": {
+      "name": "American Wagyu - Everglades Ranch",
+      "s_pillar": {
+        "type": "Pasture",
+        "value": "Native grass, rotational grazing, mineralized",
+        "score": 0.92
+      },
+      "h_pillar": {
+        "type": "Breed",
+        "value": "American Wagyu (marbling genetics, +0.8 omega)",
+        "score": 0.78
+      },
+      "a_pillar": {
+        "type": "Feeding Regime",
+        "value": "Pasture + concurrent grain, no feedlot",
+        "score": 0.95
+      },
+      "r_pillar": {
+        "type": "Duration",
+        "value": "24 months, zero feedlot time",
+        "score": 0.88
+      },
+      "e_pillar": {
+        "type": "Omega Ratio",
+        "value": "4.2:1 (predicted 4.5:1) - True Pasture tier",
+        "score": 0.93
+      }
+    },
+
+    "seafoodExample": {
+      "name": "Sockeye Salmon - Copper River",
+      "s_pillar": {
+        "type": "Water",
+        "value": "Cold pristine ocean, excellent habitat",
+        "score": 0.98
+      },
+      "h_pillar": {
+        "type": "Species",
+        "value": "Sockeye (highest omega-3 of all salmon)",
+        "score": 0.95
+      },
+      "a_pillar": {
+        "type": "Harvest Method",
+        "value": "Wild day-boat, MSC certified",
+        "score": 0.92
+      },
+      "r_pillar": {
+        "type": "Freshness",
+        "value": "3 days since catch, maintained cold chain",
+        "score": 0.88
+      },
+      "e_pillar": {
+        "type": "Omega-3 + Mercury",
+        "value": "2,500mg omega-3, very low mercury",
+        "score": 0.95
+      }
+    }
+  }
+}

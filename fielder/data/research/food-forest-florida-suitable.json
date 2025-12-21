@@ -1,0 +1,1167 @@
+{
+  "collectionDate": "2025-12-20",
+  "source": "Food Forest Plant Options - Florida Suitable Subset",
+  "floridaZones": [
+    "8A",
+    "8B",
+    "9A",
+    "9B",
+    "10A",
+    "10B",
+    "11A",
+    "11B"
+  ],
+  "totalPlants": 92,
+  "plants": [
+    {
+      "name": "Bamboo (Moso)",
+      "scientificName": "Phyllostachys edulis",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable"
+      }
+    },
+    {
+      "name": "Bay Laural Tree",
+      "scientificName": "Laurus nobilis",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal"
+      }
+    },
+    {
+      "name": "Beech Tree",
+      "scientificName": "Fagus grandifolia",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Breadfruit Tree",
+      "scientificName": "Artocarpus altilis",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Chestnut Tree",
+      "scientificName": "Castanea dentata",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Eucalyptus Tree",
+      "scientificName": "Eucalyptus cinerea",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal",
+        "11A": "optimal",
+        "11B": "optimal"
+      }
+    },
+    {
+      "name": "Finger Lime Tree",
+      "scientificName": "Citrus australasica",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Linden Trees",
+      "scientificName": "Tilia sp.",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "9A": "too_cold",
+        "9B": "too_cold",
+        "10A": "too_cold",
+        "10B": "too_cold",
+        "11A": "too_cold",
+        "11B": "too_cold"
+      }
+    },
+    {
+      "name": "Papaya tree",
+      "scientificName": "Carica papaya L.",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Pistachio Tree",
+      "scientificName": "Pistacia vera ",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Russian Olive Tree",
+      "scientificName": "Elaeagnus angustifolia",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal",
+        "11A": "too_cold",
+        "11B": "too_cold"
+      }
+    },
+    {
+      "name": "Sassafras Tree",
+      "scientificName": " Sassafras albium",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "11A": "too_cold",
+        "11B": "too_cold"
+      }
+    },
+    {
+      "name": "Starfruit Tree",
+      "scientificName": "Carambola",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "too_cold",
+        "8B": "too_cold",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Stone Pine Tree",
+      "scientificName": "Pinus pinea",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "White Oak Tree",
+      "scientificName": "Quercus alba",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Willow Tree",
+      "scientificName": "Salix spp",
+      "layer": "Canopy Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Agave",
+      "scientificName": "Agave",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Boldo",
+      "scientificName": "Peumus boldus",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "8A": "too_cold",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Cassava",
+      "scientificName": "Manihot esculenta",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Curry Tree",
+      "scientificName": "Murraya koenigii",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Guava Tree",
+      "scientificName": "Psidium guajava",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Pear Tree (Semi Dwarf - Dwarf)",
+      "scientificName": "Pyrus communis",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good"
+      }
+    },
+    {
+      "name": "Plantain Tree",
+      "scientificName": "Musa paradisiaca",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Sugar Apple",
+      "scientificName": "Annona squamosa L",
+      "layer": "Understory Layer",
+      "floridaZones": {
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Caper Bush",
+      "scientificName": "Capparis spinosa",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "too_cold",
+        "11B": "too_cold"
+      }
+    },
+    {
+      "name": "Gooseberry",
+      "scientificName": "Ribes spp.",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good"
+      }
+    },
+    {
+      "name": "Pidgeon Peas",
+      "scientificName": "Cajanus cajan",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Prickily Pear",
+      "scientificName": "Opuntia spp",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal",
+        "11A": "optimal",
+        "11B": "optimal"
+      }
+    },
+    {
+      "name": "Sasparilla Bush",
+      "scientificName": "Aralia nudicaulis L",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "too_cold",
+        "10B": "too_cold",
+        "11A": "too_cold",
+        "11B": "too_cold"
+      }
+    },
+    {
+      "name": "Saw Palmetto",
+      "scientificName": "Serenoa repens",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Sugarcane",
+      "scientificName": "Saccharum officinarum",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good"
+      }
+    },
+    {
+      "name": "Tea Plant",
+      "scientificName": "Camellia sinensis",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal"
+      }
+    },
+    {
+      "name": "Tree Collards",
+      "scientificName": "brassica oleracea v. acephala",
+      "layer": "Shrub Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Artichoke",
+      "scientificName": "Cynara scolymus",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Basil",
+      "scientificName": "Ocimum basiiicum L",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "too_cold",
+        "8B": "too_cold",
+        "9A": "too_cold",
+        "9B": "too_cold",
+        "10A": "optimal",
+        "10B": "optimal",
+        "11A": "optimal",
+        "11B": "optimal"
+      }
+    },
+    {
+      "name": "Cardoon",
+      "scientificName": "Cynara cardunculus",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable"
+      }
+    },
+    {
+      "name": "Chicory",
+      "scientificName": "Cichorium intybus",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Chives",
+      "scientificName": "Allium spp.",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal"
+      }
+    },
+    {
+      "name": "Cotton (Levant)",
+      "scientificName": "Gossypium herbaceum",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "too_cold",
+        "8B": "too_cold",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Fennel",
+      "scientificName": "Foeniculum vulgare",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "too_cold",
+        "10B": "too_cold"
+      }
+    },
+    {
+      "name": "Garden Sorrel",
+      "scientificName": "Rumex spp.",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal"
+      }
+    },
+    {
+      "name": "Good King Henrey",
+      "scientificName": "Chenopodium Bonus-Henricus",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Hosta",
+      "scientificName": "Hosta spp.",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Lemon Balm",
+      "scientificName": "Melissa officinalis",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Majoram",
+      "scientificName": "Origanum majorana",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Mallow (common)",
+      "scientificName": "Malva neglecta",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal"
+      }
+    },
+    {
+      "name": "Miner's Lettuce",
+      "scientificName": "Claytonia perfoliata",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good"
+      }
+    },
+    {
+      "name": "Nettles",
+      "scientificName": "Urtica dioic",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal"
+      }
+    },
+    {
+      "name": "Okra",
+      "scientificName": "Abelmoschus esculentus",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "too_cold",
+        "8B": "too_cold",
+        "9A": "too_cold",
+        "9B": "too_cold",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Plantain Weed",
+      "scientificName": "Plantago major",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Rosemary",
+      "scientificName": "Salvia rosmarinus",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good"
+      }
+    },
+    {
+      "name": "Scallions",
+      "scientificName": "Allium fistulosum",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Stevia",
+      "scientificName": "Stevia rebaudiana",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Taragon (French)",
+      "scientificName": "Artemisia dracunculus",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "too_cold",
+        "10B": "too_cold",
+        "11A": "too_cold"
+      }
+    },
+    {
+      "name": "Three Cornered Leek",
+      "scientificName": "Allium Triquetrum",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "too_cold"
+      }
+    },
+    {
+      "name": "Tomatillo",
+      "scientificName": "Physalis philadelphica",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal",
+        "11A": "optimal"
+      }
+    },
+    {
+      "name": "Turkish Rocket",
+      "scientificName": "Bunias orientalis",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Winter Savory",
+      "scientificName": "S. montana",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Wormwood",
+      "scientificName": "Artemisia absinthium",
+      "layer": "Herbaceous Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal"
+      }
+    },
+    {
+      "name": "Hops",
+      "scientificName": "Humulus lupulus",
+      "layer": "Vertical Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Jasmine",
+      "scientificName": "Jasminum spp.",
+      "layer": "Vertical Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal"
+      }
+    },
+    {
+      "name": "Kiwi Vines (Hardy)",
+      "scientificName": "Actinidia arguta",
+      "layer": "Vertical Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable"
+      }
+    },
+    {
+      "name": "Winged Bean",
+      "scientificName": "Psophocarpus tetragonolobus",
+      "layer": "Vertical Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Apple Mint",
+      "scientificName": "Mentha suaveolens",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Australian Wild Rice",
+      "scientificName": "Oryza australiensis",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "too_cold",
+        "8B": "too_cold",
+        "9A": "too_cold",
+        "9B": "too_cold",
+        "10A": "too_cold",
+        "10B": "too_cold",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Horse Mint",
+      "scientificName": "Monarda punctata",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good"
+      }
+    },
+    {
+      "name": "Indian Rice Grass",
+      "scientificName": "Achnatherum hymenoides",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "too_cold",
+        "10B": "too_cold",
+        "11A": "too_cold",
+        "11B": "too_cold"
+      }
+    },
+    {
+      "name": "Lungwort",
+      "scientificName": "Pulmonaria spp.",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "too_cold",
+        "9B": "too_cold"
+      }
+    },
+    {
+      "name": "Perinnial Peanut",
+      "scientificName": "Arachis glabrata",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "too_cold",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Russial Comprey",
+      "scientificName": "Symphytum x uplandicum",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal"
+      }
+    },
+    {
+      "name": "Siberian Spring Beauty",
+      "scientificName": "Claytonia perfoliata",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good"
+      }
+    },
+    {
+      "name": "Sweet Woodruff",
+      "scientificName": "Galium odoratum",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good"
+      }
+    },
+    {
+      "name": "Wild Garlic",
+      "scientificName": "Allium ursinum",
+      "layer": "Groundcover Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable"
+      }
+    },
+    {
+      "name": "Arrowroot",
+      "scientificName": "Maranta arundinacea",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Bath Asparagus",
+      "scientificName": "Ornithogalum pyrenaicum",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Garlic",
+      "scientificName": "Allium sativum",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good",
+        "11A": "too_cold",
+        "11B": "too_cold"
+      }
+    },
+    {
+      "name": "Good King Henry",
+      "scientificName": "Blitum bonus-henricus ",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good"
+      }
+    },
+    {
+      "name": "Shallots",
+      "scientificName": "Allium spp.",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal"
+      }
+    },
+    {
+      "name": "Skirret",
+      "scientificName": "Sium sisarum",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Valerian",
+      "scientificName": "Valeriana officinalis",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Walking Onions",
+      "scientificName": "Allium x proliferum",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal"
+      }
+    },
+    {
+      "name": "Wasabi",
+      "scientificName": "Wasabia japonica",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable"
+      }
+    },
+    {
+      "name": "Welsh Onions",
+      "scientificName": "Allium fistulosum",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal",
+        "10A": "optimal",
+        "10B": "optimal"
+      }
+    },
+    {
+      "name": "Wild Garlic",
+      "scientificName": "Allium ursinum",
+      "layer": "Rhizosphere Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Common Reed",
+      "scientificName": "Phragmites australis",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good",
+        "10A": "good",
+        "10B": "good"
+      }
+    },
+    {
+      "name": "Golden Leather Fern",
+      "scientificName": "Acrostichum aureum",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "10A": "good",
+        "10B": "good",
+        "11A": "good",
+        "11B": "good"
+      }
+    },
+    {
+      "name": "Kombu Seaweed",
+      "scientificName": "Saccharina japonica",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Mangrove Palm",
+      "scientificName": "Nypa fruticans",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "11A": "optimal",
+        "11B": "optimal"
+      }
+    },
+    {
+      "name": "Marshmallow",
+      "scientificName": "Althaea officinalis",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "8A": "suitable",
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable"
+      }
+    },
+    {
+      "name": "Sea Lettuce",
+      "scientificName": "Ulva lactuca",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "8A": "good",
+        "8B": "good",
+        "9A": "good",
+        "9B": "good"
+      }
+    },
+    {
+      "name": "Umibudo Seaweed",
+      "scientificName": "Caulerpa lentillifera",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "8B": "suitable",
+        "9A": "suitable",
+        "9B": "suitable",
+        "10A": "suitable",
+        "10B": "suitable",
+        "11A": "suitable",
+        "11B": "suitable"
+      }
+    },
+    {
+      "name": "Wakame Seaweed",
+      "scientificName": "Undaria pinnatifida",
+      "layer": "Aquatic Layer",
+      "floridaZones": {
+        "8A": "optimal",
+        "8B": "optimal",
+        "9A": "optimal",
+        "9B": "optimal"
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "farmName": "Fresh Gardens",
+  "csawareUrl": "https://freshgardens.csaware.com/store/",
+  "localharvestUrl": null,
+  "location": {
+    "address": "31400 SW 194th Ave",
+    "city": "Homestead",
+    "county": "Miami-Dade County",
+    "state": "FL",
+    "zip": "33030",
+    "usdaZone": "10b",
+    "phone": "(305) 245-8388"
+  },
+  "productsFound": [
+    {
+      "productName": "Lychee",
+      "category": "Tropical Fruit",
+      "availability": "June-July",
+      "seasonalNotes": "Pre-Order item, limited season window",
+      "price": null
+    },
+    {
+      "productName": "Black Sapote",
+      "category": "Sapote Family",
+      "availability": "Seasonal",
+      "seasonalNotes": "Pre-Order item",
+      "price": null
+    },
+    {
+      "productName": "Mangoes",
+      "category": "Tropical Fruit",
+      "availability": "Unknown",
+      "seasonalNotes": "Multiple varieties available",
+      "price": null
+    },
+    {
+      "productName": "Avocados",
+      "category": "Tropical Fruit",
+      "availability": "Unknown",
+      "seasonalNotes": null,
+      "price": null
+    },
+    {
+      "productName": "Dragon Fruit",
+      "category": "Specialty Fruit",
+      "availability": "Unknown",
+      "seasonalNotes": "Multiple varieties",
+      "price": null
+    },
+    {
+      "productName": "Passion Fruit",
+      "category": "Specialty Fruit",
+      "availability": "Unknown",
+      "seasonalNotes": null,
+      "price": null
+    },
+    {
+      "productName": "Jackfruit",
+      "category": "Tropical Fruit",
+      "availability": "Unknown",
+      "seasonalNotes": null,
+      "price": null
+    },
+    {
+      "productName": "Mamey Sapote",
+      "category": "Sapote Family",
+      "availability": "Unknown",
+      "seasonalNotes": null,
+      "price": null
+    },
+    {
+      "productName": "White Sapote",
+      "category": "Sapote Family",
+      "availability": "Seasonal",
+      "seasonalNotes": "Pre-Order item",
+      "price": null
+    },
+    {
+      "productName": "Rambutan",
+      "category": "Asian Varieties",
+      "availability": "Unknown",
+      "seasonalNotes": null,
+      "price": null
+    },
+    {
+      "productName": "Longan",
+      "category": "Asian Varieties",
+      "availability": "Unknown",
+      "seasonalNotes": null,
+      "price": null
+    },
+    {
+      "productName": "Thai Banana",
+      "category": "Asian Varieties",
+      "availability": "Unknown",
+      "seasonalNotes": null,
+      "price": null
+    }
+  ],
+  "dataQuality": {
+    "hasSeasonalData": true,
+    "hasExplicitMonths": true,
+    "hasPricing": true,
+    "hasDescriptions": true,
+    "completeness": "medium",
+    "notes": "Seasonal markers present (Pre-Order, specific months for lychee). Need to visit individual product pages for full seasonal details."
+  },
+  "fielderRelevance": {
+    "usdaZone": "10b",
+    "specialtyFocus": "Tropical/exotic fruits",
+    "heritageIntent": "Yes - multiple rare/specialty cultivars",
+    "stateValidation": "Can validate against FL Zone 10 state calendar",
+    "products": [
+      "lychee",
+      "mango",
+      "avocado",
+      "sapote",
+      "jackfruit",
+      "passion_fruit",
+      "dragon_fruit"
+    ]
+  },
+  "researchDate": "2025-12-20",
+  "notes": [
+    "Perfect proof-of-concept farm for LocalHarvest/CSAware integration",
+    "Located in Homestead, FL (Zone 10b) - matches our South Florida research",
+    "Specializes in tropical/exotic fruits - exactly Fielder's heritage focus",
+    "Has seasonal availability markers - can extract harvest timing",
+    "Need to investigate individual product pages for detailed seasonal windows",
+    "Free shipping noted (except California restriction)",
+    "Price range $9.99-$1,499 (includes annual subscription box)",
+    "Uses CSAware platform - consistent with other LocalHarvest farms"
+  ],
+  "nextSteps": [
+    "Visit individual product pages to extract detailed seasonal availability",
+    "Map products to Florida state harvest calendar for validation",
+    "Compare lychee June-July timing with state/zone data",
+    "Extract additional FL CSAware farms for triangulation",
+    "Document CSAware product page data structure"
+  ]
+}

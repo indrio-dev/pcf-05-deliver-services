@@ -1,0 +1,263 @@
+{
+  "validationDate": "2025-12-21",
+  "hierarchy": "Farm > Extension > State",
+  "florida": {
+    "state": "FL",
+    "source": "UF/IFAS Extension",
+    "matches": [
+      {
+        "product": "citrus_orange",
+        "extension_product": "citrus_orange",
+        "farm_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          11,
+          12
+        ],
+        "extension_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          11,
+          12
+        ],
+        "overlap_pct": 88.9,
+        "farm_count": 2,
+        "extension_source": "UF/IFAS harvest_seasons",
+        "extension_details": "October \u2013 June (peak fresh orange season)"
+      },
+      {
+        "product": "citrus_grapefruit",
+        "extension_product": "citrus_grapefruit",
+        "farm_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          11,
+          12
+        ],
+        "extension_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9,
+          10,
+          11,
+          12
+        ],
+        "overlap_pct": 80.0,
+        "farm_count": 1,
+        "extension_source": "UF/IFAS harvest_seasons",
+        "extension_details": "September \u2013 June (peak fresh season)"
+      },
+      {
+        "product": "citrus_tangerine",
+        "extension_product": "citrus_tangerine",
+        "farm_months": [
+          1,
+          2,
+          11,
+          12
+        ],
+        "extension_months": [
+          1,
+          2,
+          11,
+          12
+        ],
+        "overlap_pct": 100.0,
+        "farm_count": 1,
+        "extension_source": "UF/IFAS harvest_seasons",
+        "extension_details": "November \u2013 February"
+      },
+      {
+        "product": "tomato",
+        "extension_product": "tomato",
+        "farm_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          11,
+          12
+        ],
+        "extension_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          12
+        ],
+        "overlap_pct": 77.8,
+        "farm_count": 1,
+        "extension_source": "UF/IFAS planting_windows (inferred harvest)",
+        "extension_details": "{'north_florida': 'July\u2013Aug; Feb\u2013Apr', 'central_florida': 'Aug\u2013Sept; Jan\u2013Feb', 'south_florida': 'Aug\u2013Feb'}"
+      }
+    ],
+    "discrepancies": [
+      {
+        "product": "strawberry",
+        "extension_product": "strawberry",
+        "farm_months": [
+          1,
+          2,
+          3,
+          4,
+          12
+        ],
+        "extension_months": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "overlap_pct": 66.7,
+        "farm_count": 1,
+        "extension_source": "UF/IFAS harvest_timing",
+        "extension_details": "First: January (approximately 90-110 days after planting), Peak: March, End: April or May",
+        "note": "Farm data differs from extension - farm is ground truth"
+      }
+    ],
+    "extension_only": [
+      {
+        "product": "citrus_ruby red",
+        "extension_months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "citrus_flame",
+        "extension_months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "citrus_thompson",
+        "extension_months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "citrus_marsh",
+        "extension_months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "citrus_duncan",
+        "extension_months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "citrus_meyer lemon",
+        "extension_months": [
+          11,
+          12,
+          1,
+          2,
+          3
+        ],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "citrus_key lime",
+        "extension_months": [],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "citrus_lime",
+        "extension_months": [],
+        "note": "No farm validation data"
+      },
+      {
+        "product": "pepper",
+        "extension_months": [
+          11,
+          12,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "note": "No farm validation data"
+      }
+    ],
+    "farm_only": [],
+    "agreement_score": 82.7
+  },
+  "coverage": {
+    "FL": "UF/IFAS Extension (detailed)",
+    "NY": "Cornell Extension (days to maturity only)",
+    "PA": "Cornell Extension (days to maturity only)"
+  }
+}

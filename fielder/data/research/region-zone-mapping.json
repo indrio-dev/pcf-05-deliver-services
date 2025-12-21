@@ -1,0 +1,549 @@
+{
+  "version": "1.0.0",
+  "generatedDate": "2025-12-21T03:41:13.214Z",
+  "description": "Fielder Growing Regions mapped to USDA zones",
+  "source": "Extracted from src/lib/constants/growing-regions.ts",
+  "totalRegions": 87,
+  "zones": {
+    "3": [
+      {
+        "regionId": "minnesota_wild_rice",
+        "name": "Wild Rice Country",
+        "state": "MN",
+        "macroRegion": "midwest"
+      }
+    ],
+    "4": [
+      {
+        "regionId": "michigan_upper_peninsula",
+        "name": "Michigan Upper Peninsula",
+        "state": "MI",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "wisconsin_cranberry",
+        "name": "Central Wisconsin Cranberry Country",
+        "state": "WI",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "central_minnesota",
+        "name": "Central Minnesota",
+        "state": "MN",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "minnesota_apples",
+        "name": "Minnesota Apple Regions",
+        "state": "MN",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "iowa_northeast",
+        "name": "Northeast Iowa (Driftless)",
+        "state": "IA",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "maine_aroostook",
+        "name": "Aroostook County",
+        "state": "ME",
+        "macroRegion": "northeast"
+      }
+    ],
+    "5": [
+      {
+        "regionId": "northwest_michigan",
+        "name": "Northwest Michigan",
+        "state": "MI",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "door_county",
+        "name": "Door County Peninsula",
+        "state": "WI",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "wisconsin_driftless",
+        "name": "Wisconsin Driftless Region",
+        "state": "WI",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "northern_indiana_amish",
+        "name": "Northern Indiana Amish Country",
+        "state": "IN",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "northern_illinois",
+        "name": "Northern Illinois",
+        "state": "IL",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "pioneer_valley_ma",
+        "name": "Pioneer Valley",
+        "state": "MA",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "berkshires_ma",
+        "name": "Berkshires",
+        "state": "MA",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "vermont_champlain",
+        "name": "Champlain Valley",
+        "state": "VT",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "vermont_statewide",
+        "name": "Vermont Statewide",
+        "state": "VT",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "maine_blueberry",
+        "name": "Downeast/Blueberry Barrens",
+        "state": "ME",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "maine_midcoast",
+        "name": "Midcoast Maine",
+        "state": "ME",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "new_hampshire",
+        "name": "New Hampshire Statewide",
+        "state": "NH",
+        "macroRegion": "northeast"
+      }
+    ],
+    "6": [
+      {
+        "regionId": "northern_nm",
+        "name": "Northern New Mexico",
+        "state": "NM",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "southwest_michigan",
+        "name": "Southwest Michigan",
+        "state": "MI",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "ohio_lake_erie",
+        "name": "Lake Erie Shore",
+        "state": "OH",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "ohio_amish_country",
+        "name": "Ohio Amish Country",
+        "state": "OH",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "central_ohio",
+        "name": "Central Ohio",
+        "state": "OH",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "central_indiana",
+        "name": "Central Indiana",
+        "state": "IN",
+        "macroRegion": "midwest"
+      },
+      {
+        "regionId": "nc_mountains",
+        "name": "North Carolina Mountain Region",
+        "state": "NC",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "hudson_valley",
+        "name": "Hudson Valley",
+        "state": "NY",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "finger_lakes",
+        "name": "Finger Lakes",
+        "state": "NY",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "adams_county_pa",
+        "name": "Adams County (South Mountain)",
+        "state": "PA",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "lancaster_county_pa",
+        "name": "Lancaster County",
+        "state": "PA",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "connecticut",
+        "name": "Connecticut Statewide",
+        "state": "CT",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "rhode_island",
+        "name": "Rhode Island Statewide",
+        "state": "RI",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "shenandoah_valley",
+        "name": "Shenandoah Valley",
+        "state": "VA",
+        "macroRegion": "mid_atlantic"
+      },
+      {
+        "regionId": "wv_eastern_panhandle",
+        "name": "West Virginia Eastern Panhandle",
+        "state": "WV",
+        "macroRegion": "mid_atlantic"
+      },
+      {
+        "regionId": "kentucky_bluegrass",
+        "name": "Kentucky Bluegrass Region",
+        "state": "KY",
+        "macroRegion": "mid_atlantic"
+      }
+    ],
+    "7": [
+      {
+        "regionId": "middle_rio_grande",
+        "name": "Middle Rio Grande Valley",
+        "state": "NM",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "georgia_piedmont",
+        "name": "Georgia Piedmont",
+        "state": "GA",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "south_carolina_ridge",
+        "name": "South Carolina Ridge",
+        "state": "SC",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "sc_upstate",
+        "name": "South Carolina Upstate",
+        "state": "SC",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "nc_piedmont",
+        "name": "North Carolina Piedmont",
+        "state": "NC",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "eastern_nc_coastal_plain",
+        "name": "Eastern North Carolina Coastal Plain",
+        "state": "NC",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "long_island",
+        "name": "Long Island",
+        "state": "NY",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "pine_barrens_nj",
+        "name": "New Jersey Pine Barrens",
+        "state": "NJ",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "central_jersey",
+        "name": "Central Jersey",
+        "state": "NJ",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "cape_cod_ma",
+        "name": "Cape Cod and Southeast MA",
+        "state": "MA",
+        "macroRegion": "northeast"
+      },
+      {
+        "regionId": "virginia_piedmont",
+        "name": "Virginia Piedmont",
+        "state": "VA",
+        "macroRegion": "mid_atlantic"
+      },
+      {
+        "regionId": "maryland_eastern_shore",
+        "name": "Maryland Eastern Shore",
+        "state": "MD",
+        "macroRegion": "mid_atlantic"
+      },
+      {
+        "regionId": "delaware",
+        "name": "Delaware/Delmarva",
+        "state": "DE",
+        "macroRegion": "mid_atlantic"
+      },
+      {
+        "regionId": "east_tennessee",
+        "name": "East Tennessee",
+        "state": "TN",
+        "macroRegion": "mid_atlantic"
+      },
+      {
+        "regionId": "middle_tennessee",
+        "name": "Middle Tennessee",
+        "state": "TN",
+        "macroRegion": "mid_atlantic"
+      }
+    ],
+    "8": [
+      {
+        "regionId": "mendocino_county",
+        "name": "Mendocino County",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "texas_hill_country",
+        "name": "Texas Hill Country",
+        "state": "TX",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "texas_pecan_belt",
+        "name": "Texas Pecan Belt",
+        "state": "TX",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "east_texas",
+        "name": "East Texas",
+        "state": "TX",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "texas_blackland_prairie",
+        "name": "Texas Blackland Prairie",
+        "state": "TX",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "central_texas",
+        "name": "Central Texas",
+        "state": "TX",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "hatch_valley",
+        "name": "Hatch Valley",
+        "state": "NM",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "mesilla_valley",
+        "name": "Mesilla Valley",
+        "state": "NM",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "cochise_county",
+        "name": "Cochise County",
+        "state": "AZ",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "vidalia_region",
+        "name": "Vidalia Onion Region",
+        "state": "GA",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "middle_georgia",
+        "name": "Middle Georgia",
+        "state": "GA",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "southwest_georgia",
+        "name": "Southwest Georgia",
+        "state": "GA",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "sc_lowcountry",
+        "name": "South Carolina Lowcountry",
+        "state": "SC",
+        "macroRegion": "southeast"
+      }
+    ],
+    "9": [
+      {
+        "regionId": "sacramento_valley",
+        "name": "Sacramento Valley",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "san_joaquin_valley_north",
+        "name": "San Joaquin Valley - North",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "san_joaquin_valley_central",
+        "name": "San Joaquin Valley - Central",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "san_joaquin_valley_south",
+        "name": "San Joaquin Valley - South",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "salinas_valley",
+        "name": "Salinas Valley",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "central_coast_north",
+        "name": "Central Coast - North",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "napa_valley",
+        "name": "Napa Valley",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "sonoma_county",
+        "name": "Sonoma County",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "plant_city",
+        "name": "Plant City Strawberry Belt",
+        "state": "FL",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "central_florida_citrus",
+        "name": "Central Florida Citrus Belt",
+        "state": "FL",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "florida_panhandle",
+        "name": "Florida Panhandle",
+        "state": "FL",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "northeast_florida",
+        "name": "Northeast Florida",
+        "state": "FL",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "texas_rgv",
+        "name": "Rio Grande Valley",
+        "state": "TX",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "winter_garden",
+        "name": "Winter Garden Region",
+        "state": "TX",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "santa_cruz_valley",
+        "name": "Santa Cruz Valley",
+        "state": "AZ",
+        "macroRegion": "southwest"
+      }
+    ],
+    "10": [
+      {
+        "regionId": "central_coast_south",
+        "name": "Central Coast - South",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "imperial_valley",
+        "name": "Imperial Valley",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "coachella_valley",
+        "name": "Coachella Valley",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "san_diego_county",
+        "name": "San Diego County",
+        "state": "CA",
+        "macroRegion": "west_coast"
+      },
+      {
+        "regionId": "indian_river",
+        "name": "Indian River District",
+        "state": "FL",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "homestead_redland",
+        "name": "Homestead/Redland Agricultural District",
+        "state": "FL",
+        "macroRegion": "southeast"
+      },
+      {
+        "regionId": "yuma_county",
+        "name": "Yuma County",
+        "state": "AZ",
+        "macroRegion": "southwest"
+      },
+      {
+        "regionId": "salt_river_valley",
+        "name": "Salt River Valley",
+        "state": "AZ",
+        "macroRegion": "southwest"
+      }
+    ],
+    "11": [
+      {
+        "regionId": "florida_keys",
+        "name": "Florida Keys",
+        "state": "FL",
+        "macroRegion": "southeast"
+      }
+    ]
+  }
+}

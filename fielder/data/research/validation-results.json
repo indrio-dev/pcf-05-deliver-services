@@ -1,0 +1,4977 @@
+{
+  "validationDate": "2025-12-21",
+  "summary": {
+    "totalStates": 50,
+    "statesWithCalendar": 50,
+    "totalFarms": 440,
+    "highAgreement": 30,
+    "moderateAgreement": 11,
+    "lowAgreement": 2,
+    "noCalendarData": 0
+  },
+  "stateResults": [
+    {
+      "state": "FL",
+      "farm_count": 2,
+      "matches": [
+        {
+          "product": "citrus orange",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        },
+        {
+          "product": "citrus grapefruit",
+          "calendar_product": "citrus grapefruit",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 83.3,
+          "farm_count": 1
+        },
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 77.8,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "citrus tangerine",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [],
+      "calendar_only": [
+        "blueberry",
+        "pepper",
+        "sweet corn",
+        "cucumber",
+        "watermelon"
+      ],
+      "agreement_score": 82.2
+    },
+    {
+      "state": "GA",
+      "farm_count": 3,
+      "matches": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            4,
+            5,
+            6
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "pecan",
+          "calendar_product": "pecan",
+          "farm_months": [
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [],
+      "farm_only": [],
+      "calendar_only": [
+        "blueberry",
+        "watermelon"
+      ],
+      "agreement_score": 100.0
+    },
+    {
+      "state": "WA",
+      "farm_count": 3,
+      "matches": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        },
+        {
+          "product": "pear",
+          "calendar_product": "pear",
+          "farm_months": [
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        },
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [],
+      "farm_only": [],
+      "calendar_only": [
+        "grape"
+      ],
+      "agreement_score": 100.0
+    },
+    {
+      "state": "OH",
+      "farm_count": 12,
+      "matches": [],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 42.9,
+          "farm_count": 6,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 42.9,
+          "farm_count": 3,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 37.5,
+          "farm_count": 5,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "berry blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 28.6,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "berry strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 25.0,
+          "farm_count": 5,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "berry blackberry",
+          "farm_count": 1
+        },
+        {
+          "product": "berry raspberry",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "sweet corn",
+        "grape",
+        "pumpkin",
+        "pepper"
+      ],
+      "agreement_score": 35.4
+    },
+    {
+      "state": "TX",
+      "farm_count": 13,
+      "matches": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 80.0,
+          "farm_count": 5
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "citrus grapefruit",
+          "calendar_product": "citrus grapefruit",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "citrus orange",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 58.3,
+          "farm_count": 3,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "citrus lemon",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 58.3,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "citrus",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 37.5,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "pecan",
+          "calendar_product": "pecan",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            10,
+            11,
+            12
+          ],
+          "overlap_pct": 25.0,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "vegetables",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "citrus tangerine",
+        "strawberry",
+        "watermelon",
+        "apple",
+        "tomato",
+        "sweet corn"
+      ],
+      "agreement_score": 51.5
+    },
+    {
+      "state": "MI",
+      "farm_count": 12,
+      "matches": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 9
+        },
+        {
+          "product": "berry blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 4
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 30.0,
+          "farm_count": 9,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "cherry tart",
+          "calendar_product": "cherry tart",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 9,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "pear",
+          "calendar_product": "pear",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "cherry sweet",
+          "calendar_product": "cherry sweet",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 7,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "berry raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "berry strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6,
+            7
+          ],
+          "calendar_months": [
+            6
+          ],
+          "overlap_pct": 33.3,
+          "farm_count": 3,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "cherry",
+          "calendar_product": "cherry tart",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 33.3,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [],
+      "calendar_only": [
+        "grape"
+      ],
+      "agreement_score": 58.0
+    },
+    {
+      "state": "MN",
+      "farm_count": 5,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 1
+        },
+        {
+          "product": "pumpkin",
+          "calendar_product": "pumpkin",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "honeyberry",
+          "farm_count": 1
+        },
+        {
+          "product": "cherry",
+          "farm_count": 1
+        },
+        {
+          "product": "saskatoon",
+          "farm_count": 1
+        },
+        {
+          "product": "currant",
+          "farm_count": 1
+        },
+        {
+          "product": "gooseberry",
+          "farm_count": 1
+        },
+        {
+          "product": "kiwi",
+          "farm_count": 1
+        },
+        {
+          "product": "maple syrup",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        }
+      ],
+      "calendar_only": [
+        "sweet corn",
+        "tomato"
+      ],
+      "agreement_score": 85.0
+    },
+    {
+      "state": "WI",
+      "farm_count": 14,
+      "matches": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "overlap_pct": 80.0,
+          "farm_count": 6
+        },
+        {
+          "product": "cherry",
+          "calendar_product": "cherry tart",
+          "farm_months": [
+            7
+          ],
+          "calendar_months": [
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "berry raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 3
+        },
+        {
+          "product": "berry blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "cranberry",
+          "calendar_product": "cranberry",
+          "farm_months": [
+            10,
+            11
+          ],
+          "calendar_months": [
+            9,
+            10
+          ],
+          "overlap_pct": 33.3,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "berry strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "pear",
+          "farm_count": 3
+        },
+        {
+          "product": "vegetables",
+          "farm_count": 4
+        },
+        {
+          "product": "dairy",
+          "farm_count": 1
+        },
+        {
+          "product": "beef",
+          "farm_count": 2
+        },
+        {
+          "product": "melon",
+          "farm_count": 1
+        },
+        {
+          "product": "tomato",
+          "farm_count": 1
+        },
+        {
+          "product": "maple syrup",
+          "farm_count": 1
+        },
+        {
+          "product": "bison",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "cherry sweet"
+      ],
+      "agreement_score": 75.8
+    },
+    {
+      "state": "CA",
+      "farm_count": 10,
+      "matches": [
+        {
+          "product": "citrus grapefruit",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 71.4,
+          "farm_count": 3
+        },
+        {
+          "product": "citrus mandarin",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 2
+        },
+        {
+          "product": "citrus lemon",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 2
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "overlap_pct": 71.4,
+          "farm_count": 4
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "citrus orange",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "avocado",
+          "calendar_product": "avocado",
+          "farm_months": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 55.6,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "overlap_pct": 41.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "artichoke",
+          "calendar_product": "artichoke",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "calendar_months": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apricot",
+          "calendar_product": "apricot",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "persimmon",
+          "farm_count": 1
+        },
+        {
+          "product": "berry raspberry",
+          "farm_count": 1
+        },
+        {
+          "product": "berry blackberry",
+          "farm_count": 2
+        },
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "berry blueberry",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetables",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "watermelon",
+        "citrus tangelo",
+        "asparagus"
+      ],
+      "agreement_score": 61.2
+    },
+    {
+      "state": "NY",
+      "farm_count": 10,
+      "matches": [
+        {
+          "product": "berry blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 4
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 4
+        },
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 33.3,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            1,
+            2,
+            3,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 44.4,
+          "farm_count": 5,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "berry strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 40.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "berry raspberry",
+          "farm_count": 4
+        },
+        {
+          "product": "berry blackberry",
+          "farm_count": 2
+        },
+        {
+          "product": "nectarine",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetables",
+          "farm_count": 3
+        },
+        {
+          "product": "beef",
+          "farm_count": 1
+        },
+        {
+          "product": "pork",
+          "farm_count": 1
+        },
+        {
+          "product": "poultry",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "pear",
+        "grape",
+        "tomato",
+        "sweet corn"
+      ],
+      "agreement_score": 69.6
+    },
+    {
+      "state": "PA",
+      "farm_count": 10,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        },
+        {
+          "product": "blackberry",
+          "calendar_product": "blackberry",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 60.0,
+          "farm_count": 5,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 4
+        },
+        {
+          "product": "berries",
+          "farm_count": 3
+        },
+        {
+          "product": "fruit",
+          "farm_count": 2
+        },
+        {
+          "product": "meat",
+          "farm_count": 1
+        },
+        {
+          "product": "rhubarb",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "raspberry",
+        "grape",
+        "tomato"
+      ],
+      "agreement_score": 70.3
+    },
+    {
+      "state": "NC",
+      "farm_count": 10,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            4,
+            5,
+            6
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        },
+        {
+          "product": "sweet potato",
+          "calendar_product": "sweet potato",
+          "farm_months": [
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 6,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            1,
+            2
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 5,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "blackberry",
+          "farm_count": 5
+        },
+        {
+          "product": "melon",
+          "farm_count": 2
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "muscadine",
+          "farm_count": 2
+        },
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "fig",
+          "farm_count": 1
+        },
+        {
+          "product": "persimmon",
+          "farm_count": 1
+        },
+        {
+          "product": "pawpaw",
+          "farm_count": 1
+        },
+        {
+          "product": "chestnut",
+          "farm_count": 1
+        },
+        {
+          "product": "asian pear",
+          "farm_count": 1
+        },
+        {
+          "product": "raspberry",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "herbs",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "tomato",
+        "grape"
+      ],
+      "agreement_score": 76.7
+    },
+    {
+      "state": "VA",
+      "farm_count": 7,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 6
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "blackberry",
+          "calendar_product": "blackberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "overlap_pct": 60.0,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "cherry",
+          "farm_count": 1
+        },
+        {
+          "product": "muscadine",
+          "farm_count": 1
+        },
+        {
+          "product": "nectarine",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "grape",
+        "tomato"
+      ],
+      "agreement_score": 66.9
+    },
+    {
+      "state": "IN",
+      "farm_count": 7,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 4
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 40.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "raspberry",
+          "farm_count": 2
+        },
+        {
+          "product": "blackberry",
+          "farm_count": 2
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "peach",
+        "melon",
+        "tomato",
+        "sweet corn"
+      ],
+      "agreement_score": 80.0
+    },
+    {
+      "state": "IL",
+      "farm_count": 7,
+      "matches": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 5
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6
+          ],
+          "calendar_months": [
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "pumpkin",
+          "farm_count": 2
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "christmas tree",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "blackberry",
+          "farm_count": 1
+        },
+        {
+          "product": "raspberry",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "cherry",
+        "blueberry",
+        "tomato",
+        "sweet corn",
+        "melon"
+      ],
+      "agreement_score": 91.7
+    },
+    {
+      "state": "MO",
+      "farm_count": 6,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 4
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 4
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 80.0,
+          "farm_count": 6
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 40.0,
+          "farm_count": 6,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "blackberry",
+          "calendar_product": "blackberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 33.3,
+          "farm_count": 5,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "cherry",
+          "farm_count": 4
+        },
+        {
+          "product": "raspberry",
+          "farm_count": 3
+        },
+        {
+          "product": "gooseberry",
+          "farm_count": 2
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "asian pear",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "tomato",
+        "sweet corn",
+        "melon"
+      ],
+      "agreement_score": 70.7
+    },
+    {
+      "state": "NJ",
+      "farm_count": 7,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 5
+        },
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 3
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "corn",
+          "calendar_product": "sweet corn",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 3,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 3,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "asparagus",
+          "farm_count": 1
+        },
+        {
+          "product": "cherry",
+          "farm_count": 4
+        },
+        {
+          "product": "nectarine",
+          "farm_count": 2
+        },
+        {
+          "product": "plum",
+          "farm_count": 3
+        },
+        {
+          "product": "raspberry",
+          "farm_count": 2
+        },
+        {
+          "product": "blackberry",
+          "farm_count": 3
+        },
+        {
+          "product": "pear",
+          "farm_count": 2
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "cranberry",
+        "pepper"
+      ],
+      "agreement_score": 76.4
+    },
+    {
+      "state": "OR",
+      "farm_count": 7,
+      "matches": [
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10,
+            11
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            1,
+            2,
+            3
+          ],
+          "overlap_pct": 37.5,
+          "farm_count": 7,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "pear",
+          "calendar_product": "pear",
+          "farm_months": [
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "overlap_pct": 60.0,
+          "farm_count": 6,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 20.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 3,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "blackberry",
+          "calendar_product": "blackberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "plum",
+          "farm_count": 4
+        },
+        {
+          "product": "marionberry",
+          "farm_count": 1
+        },
+        {
+          "product": "peach",
+          "farm_count": 4
+        },
+        {
+          "product": "currant",
+          "farm_count": 1
+        },
+        {
+          "product": "gooseberry",
+          "farm_count": 1
+        },
+        {
+          "product": "boysenberry",
+          "farm_count": 1
+        },
+        {
+          "product": "aronia",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "grape",
+          "farm_count": 1
+        },
+        {
+          "product": "walnut",
+          "farm_count": 1
+        },
+        {
+          "product": "apricot",
+          "farm_count": 1
+        },
+        {
+          "product": "nectarine",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "hazelnut"
+      ],
+      "agreement_score": 52.5
+    },
+    {
+      "state": "AZ",
+      "farm_count": 5,
+      "matches": [
+        {
+          "product": "citrus",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 83.3,
+          "farm_count": 2
+        },
+        {
+          "product": "orange",
+          "calendar_product": "citrus orange",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3,
+            4
+          ],
+          "overlap_pct": 83.3,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "grapefruit",
+          "calendar_product": "citrus grapefruit",
+          "farm_months": [
+            1,
+            2,
+            3,
+            4,
+            12
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "fruit",
+          "calendar_product": "citrus grapefruit",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            11,
+            12,
+            1,
+            2,
+            3
+          ],
+          "overlap_pct": 0.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "date",
+          "farm_count": 1
+        },
+        {
+          "product": "tangerine",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        }
+      ],
+      "calendar_only": [
+        "melon",
+        "tomato",
+        "strawberry",
+        "apple"
+      ],
+      "agreement_score": 58.3
+    },
+    {
+      "state": "CO",
+      "farm_count": 6,
+      "matches": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 5
+        },
+        {
+          "product": "pear",
+          "calendar_product": "pear",
+          "farm_months": [
+            8,
+            9
+          ],
+          "calendar_months": [
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "overlap_pct": 40.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            8,
+            9
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "apricot",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 2
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "melon",
+        "strawberry",
+        "raspberry"
+      ],
+      "agreement_score": 78.0
+    },
+    {
+      "state": "SC",
+      "farm_count": 5,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            4,
+            5,
+            6
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 5
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "blackberry",
+          "farm_count": 3
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        },
+        {
+          "product": "raspberry",
+          "farm_count": 1
+        },
+        {
+          "product": "muscadine",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "watermelon",
+        "apple",
+        "sweet corn"
+      ],
+      "agreement_score": 77.1
+    },
+    {
+      "state": "TN",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 4
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 40.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "blackberry",
+          "farm_count": 3
+        },
+        {
+          "product": "muscadine",
+          "farm_count": 1
+        },
+        {
+          "product": "mulberry",
+          "farm_count": 1
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        },
+        {
+          "product": "flower",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "sweet corn"
+      ],
+      "agreement_score": 74.7
+    },
+    {
+      "state": "KY",
+      "farm_count": 5,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "blackberry",
+          "calendar_product": "blackberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 4
+        },
+        {
+          "product": "raspberry",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "ginger",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "peach",
+        "apple",
+        "tomato",
+        "sweet corn"
+      ],
+      "agreement_score": 77.8
+    },
+    {
+      "state": "CT",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6
+          ],
+          "calendar_months": [
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "pear",
+          "calendar_product": "pear",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "nectarine",
+          "farm_count": 1
+        },
+        {
+          "product": "chestnut",
+          "farm_count": 1
+        },
+        {
+          "product": "greens",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "maple syrup",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "peach",
+        "tomato"
+      ],
+      "agreement_score": 76.7
+    },
+    {
+      "state": "MA",
+      "farm_count": 5,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 4
+        },
+        {
+          "product": "pear",
+          "calendar_product": "pear",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "cherry",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 2
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 2
+        },
+        {
+          "product": "tomato",
+          "farm_count": 1
+        },
+        {
+          "product": "corn",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "cranberry"
+      ],
+      "agreement_score": 72.2
+    },
+    {
+      "state": "ME",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 3
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 3,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "pumpkin",
+          "farm_count": 2
+        },
+        {
+          "product": "peach",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "tomato"
+      ],
+      "agreement_score": 75.0
+    },
+    {
+      "state": "VT",
+      "farm_count": 3,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "grape",
+          "farm_count": 1
+        },
+        {
+          "product": "gooseberry",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "tomato"
+      ],
+      "agreement_score": 66.7
+    },
+    {
+      "state": "NH",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            8,
+            9
+          ],
+          "calendar_months": [
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "nectarine",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "flower",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "raspberry",
+        "tomato"
+      ],
+      "agreement_score": 83.3
+    },
+    {
+      "state": "LA",
+      "farm_count": 3,
+      "matches": [],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "honey",
+          "farm_count": 1
+        },
+        {
+          "product": "dairy",
+          "farm_count": 1
+        },
+        {
+          "product": "eggs",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "blueberry",
+        "peach",
+        "citrus orange",
+        "citrus tangerine",
+        "tomato",
+        "sweet corn",
+        "watermelon"
+      ],
+      "agreement_score": 0
+    },
+    {
+      "state": "MS",
+      "farm_count": 3,
+      "matches": [],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "plant",
+          "farm_count": 1
+        },
+        {
+          "product": "herbs",
+          "farm_count": 1
+        },
+        {
+          "product": "flower",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "blueberry",
+        "peach",
+        "tomato",
+        "sweet corn",
+        "watermelon",
+        "sweet potato",
+        "grape"
+      ],
+      "agreement_score": 0
+    },
+    {
+      "state": "AL",
+      "farm_count": 3,
+      "matches": [],
+      "discrepancies": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "eggs",
+          "farm_count": 1
+        },
+        {
+          "product": "honey",
+          "farm_count": 1
+        },
+        {
+          "product": "shrimp",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "peach",
+        "tomato",
+        "apple",
+        "sweet potato",
+        "watermelon"
+      ],
+      "agreement_score": 50.0
+    },
+    {
+      "state": "AR",
+      "farm_count": 3,
+      "matches": [],
+      "discrepancies": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            4,
+            5
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "greens",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "herbs",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 2
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "eggs",
+          "farm_count": 1
+        },
+        {
+          "product": "meat",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "blueberry",
+        "peach",
+        "tomato",
+        "apple",
+        "melon",
+        "sweet corn"
+      ],
+      "agreement_score": 66.7
+    },
+    {
+      "state": "OK",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 75.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            4,
+            5
+          ],
+          "calendar_months": [
+            4,
+            5,
+            6
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "fruit",
+          "farm_count": 2
+        },
+        {
+          "product": "blackberry",
+          "farm_count": 1
+        },
+        {
+          "product": "herbs",
+          "farm_count": 1
+        },
+        {
+          "product": "eggs",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "peach",
+        "apple",
+        "sweet corn",
+        "watermelon",
+        "pumpkin"
+      ],
+      "agreement_score": 80.6
+    },
+    {
+      "state": "KS",
+      "farm_count": 2,
+      "matches": [],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "beef",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "blueberry",
+        "peach",
+        "apple",
+        "tomato",
+        "sweet corn",
+        "melon",
+        "pumpkin"
+      ],
+      "agreement_score": 0
+    },
+    {
+      "state": "NE",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "melon",
+          "calendar_product": "melon",
+          "farm_months": [
+            8,
+            9
+          ],
+          "calendar_months": [
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 4
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "raspberry",
+        "apple",
+        "tomato",
+        "sweet corn",
+        "pumpkin"
+      ],
+      "agreement_score": 100.0
+    },
+    {
+      "state": "IA",
+      "farm_count": 4,
+      "matches": [],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 4
+        },
+        {
+          "product": "fruit",
+          "farm_count": 2
+        },
+        {
+          "product": "mushroom",
+          "farm_count": 1
+        },
+        {
+          "product": "flower",
+          "farm_count": 1
+        },
+        {
+          "product": "herbs",
+          "farm_count": 2
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "blueberry",
+        "raspberry",
+        "apple",
+        "sweet corn",
+        "tomato",
+        "melon"
+      ],
+      "agreement_score": 0
+    },
+    {
+      "state": "ID",
+      "farm_count": 3,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "herbs",
+          "farm_count": 1
+        },
+        {
+          "product": "flower",
+          "farm_count": 2
+        }
+      ],
+      "calendar_only": [
+        "cherry",
+        "apple",
+        "peach",
+        "tomato"
+      ],
+      "agreement_score": 100.0
+    },
+    {
+      "state": "UT",
+      "farm_count": 3,
+      "matches": [
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "wheat",
+          "farm_count": 1
+        },
+        {
+          "product": "grape",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "apricot",
+        "strawberry",
+        "raspberry",
+        "tomato"
+      ],
+      "agreement_score": 72.2
+    },
+    {
+      "state": "NM",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "tomato",
+          "calendar_product": "tomato",
+          "farm_months": [
+            7,
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "chile",
+          "calendar_product": "chile",
+          "farm_months": [
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "pepper",
+          "farm_count": 1
+        },
+        {
+          "product": "pear",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "apricot",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "peach",
+        "melon"
+      ],
+      "agreement_score": 91.7
+    },
+    {
+      "state": "HI",
+      "farm_count": 4,
+      "matches": [],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "tropical fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "lychee",
+          "farm_count": 1
+        },
+        {
+          "product": "longan",
+          "farm_count": 1
+        },
+        {
+          "product": "honey",
+          "farm_count": 1
+        },
+        {
+          "product": "ginger",
+          "farm_count": 1
+        },
+        {
+          "product": "turmeric",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "mango",
+        "papaya",
+        "banana",
+        "avocado",
+        "pineapple",
+        "strawberry",
+        "citrus orange"
+      ],
+      "agreement_score": 0
+    },
+    {
+      "state": "WV",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "raspberry",
+          "farm_count": 1
+        },
+        {
+          "product": "honey",
+          "farm_count": 2
+        },
+        {
+          "product": "maple syrup",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "beef",
+          "farm_count": 1
+        },
+        {
+          "product": "chicken",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "blackberry",
+        "peach",
+        "tomato"
+      ],
+      "agreement_score": 75.0
+    },
+    {
+      "state": "MD",
+      "farm_count": 6,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 4,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "cherry",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "nectarine",
+          "farm_count": 1
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 2
+        },
+        {
+          "product": "blackberry",
+          "farm_count": 1
+        },
+        {
+          "product": "raspberry",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "tomato",
+        "sweet corn",
+        "watermelon"
+      ],
+      "agreement_score": 79.2
+    },
+    {
+      "state": "DE",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            5,
+            6
+          ],
+          "calendar_months": [
+            5,
+            6
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 2
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "asian pear",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "tomato",
+        "sweet corn",
+        "watermelon"
+      ],
+      "agreement_score": 83.3
+    },
+    {
+      "state": "RI",
+      "farm_count": 5,
+      "matches": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "peach",
+          "calendar_product": "peach",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            8
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 25.0,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        },
+        {
+          "product": "blueberry",
+          "calendar_product": "blueberry",
+          "farm_months": [
+            6,
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8,
+            9
+          ],
+          "overlap_pct": 50.0,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "nectarine",
+          "farm_count": 1
+        },
+        {
+          "product": "plum",
+          "farm_count": 1
+        },
+        {
+          "product": "pawpaw",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "fruit",
+          "farm_count": 3
+        },
+        {
+          "product": "flower",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "tomato"
+      ],
+      "agreement_score": 56.2
+    },
+    {
+      "state": "MT",
+      "farm_count": 2,
+      "matches": [
+        {
+          "product": "cherry",
+          "calendar_product": "cherry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            9,
+            10,
+            11
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 1,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "herbs",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "raspberry",
+        "tomato"
+      ],
+      "agreement_score": 83.3
+    },
+    {
+      "state": "ND",
+      "farm_count": 3,
+      "matches": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "crabapple",
+          "calendar_product": "apple",
+          "farm_months": [
+            8,
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "watermelon",
+          "farm_count": 1
+        },
+        {
+          "product": "muskmelon",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "honeyberry",
+          "farm_count": 1
+        },
+        {
+          "product": "aronia",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "raspberry",
+        "tomato",
+        "sweet corn",
+        "pumpkin"
+      ],
+      "agreement_score": 100.0
+    },
+    {
+      "state": "SD",
+      "farm_count": 4,
+      "matches": [
+        {
+          "product": "strawberry",
+          "calendar_product": "strawberry",
+          "farm_months": [
+            6,
+            7
+          ],
+          "calendar_months": [
+            6,
+            7
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "raspberry",
+          "calendar_product": "raspberry",
+          "farm_months": [
+            7,
+            8
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        },
+        {
+          "product": "pumpkin",
+          "calendar_product": "pumpkin",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            9,
+            10
+          ],
+          "overlap_pct": 100.0,
+          "farm_count": 1
+        }
+      ],
+      "discrepancies": [
+        {
+          "product": "apple",
+          "calendar_product": "apple",
+          "farm_months": [
+            9,
+            10
+          ],
+          "calendar_months": [
+            8,
+            9,
+            10
+          ],
+          "overlap_pct": 66.7,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "aronia",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 1
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "tomato",
+        "sweet corn",
+        "melon"
+      ],
+      "agreement_score": 91.7
+    },
+    {
+      "state": "WY",
+      "farm_count": 2,
+      "matches": [],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 2
+        },
+        {
+          "product": "fruit",
+          "farm_count": 1
+        },
+        {
+          "product": "beef",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "raspberry",
+        "apple",
+        "tomato"
+      ],
+      "agreement_score": 0
+    },
+    {
+      "state": "NV",
+      "farm_count": 3,
+      "matches": [],
+      "discrepancies": [
+        {
+          "product": "watermelon",
+          "calendar_product": "melon",
+          "farm_months": [
+            8,
+            9
+          ],
+          "calendar_months": [
+            7,
+            8
+          ],
+          "overlap_pct": 33.3,
+          "farm_count": 2,
+          "note": "Low overlap - may indicate regional variation or data issue"
+        }
+      ],
+      "farm_only": [
+        {
+          "product": "cantaloupe",
+          "farm_count": 2
+        },
+        {
+          "product": "corn",
+          "farm_count": 1
+        },
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "pumpkin",
+          "farm_count": 1
+        },
+        {
+          "product": "berries",
+          "farm_count": 1
+        },
+        {
+          "product": "lavender",
+          "farm_count": 1
+        },
+        {
+          "product": "fig",
+          "farm_count": 1
+        },
+        {
+          "product": "pomegranate",
+          "farm_count": 1
+        },
+        {
+          "product": "grape",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "cherry",
+        "peach",
+        "apple",
+        "tomato"
+      ],
+      "agreement_score": 33.3
+    },
+    {
+      "state": "AK",
+      "farm_count": 3,
+      "matches": [],
+      "discrepancies": [],
+      "farm_only": [
+        {
+          "product": "vegetable",
+          "farm_count": 3
+        },
+        {
+          "product": "berries",
+          "farm_count": 2
+        },
+        {
+          "product": "potato",
+          "farm_count": 1
+        }
+      ],
+      "calendar_only": [
+        "strawberry",
+        "blueberry",
+        "raspberry",
+        "apple",
+        "tomato"
+      ],
+      "agreement_score": 0
+    }
+  ]
+}

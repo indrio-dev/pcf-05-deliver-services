@@ -1,0 +1,3157 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-21",
+  "description": "State-level harvest timing data from official agriculture department sources",
+  "states": {
+    "FL": {
+      "name": "Florida",
+      "department": "Florida Department of Agriculture and Consumer Services",
+      "sources": [
+        {
+          "url": "https://ccmedia.fdacs.gov/content/download/16790/file/florida-produce-seasonal-availability-chart.pdf",
+          "type": "official",
+          "title": "Florida Produce Seasonal Availability Chart (PDF)",
+          "capturedDate": "2025-12-20",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.fdacs.gov/consumer-resources/buy-fresh-from-florida/crops-in-season",
+          "type": "official",
+          "title": "Buy Fresh From Florida - Crops in Season (Web)",
+          "capturedDate": "2025-12-20",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.growables.org/information/documents/FloridaSeasonalFruitCalendar.pdf",
+          "type": "extension",
+          "title": "Florida Seasonal Fruit Calendar",
+          "capturedDate": "2025-12-20",
+          "confidence": 0.85,
+          "notes": "Focuses on fruit crops specifically"
+        },
+        {
+          "url": "https://growincrazyacres.com/florida-planting-guide/",
+          "type": "inference",
+          "title": "Florida Planting Guide (Growin' Crazy Acres)",
+          "capturedDate": "2025-12-20",
+          "confidence": 0.70,
+          "notes": "Planting calendar - inverse validation. Shows WHEN to plant to achieve harvest windows. Planting Date + Days to Maturity = Harvest validation."
+        }
+      ],
+      "triangulationNote": "Multiple official sources confirm harvest windows. Planting guide provides inverse validation (when to plant to achieve those harvests). Web page is regularly updated, PDFs are point-in-time snapshots.",
+      "zones": {
+        "usda_map_source": "USDA Plant Hardiness Zone Map (1976-2005 data)",
+        "usda_map_url": "https://planthardiness.ars.usda.gov/",
+        "zone_gradient": "Florida spans USDA zones 8a (Panhandle) to 11a (Keys) - 7 zone transition across ~450 miles",
+        "mapping_note": "State agricultural zones correlate directly with USDA zone numbers: Zone 8 = North, Zone 9 = Central, Zone 10 = South, Zone 11 = Keys (only true tropical zone in continental US)",
+        "8": {
+          "name": "North Florida",
+          "description": "USDA Zone 8 (Panhandle to Gainesville area)",
+          "usda_zones": ["8a", "8b"],
+          "counties": ["Escambia", "Santa Rosa", "Okaloosa", "Walton", "Bay", "Jackson", "Gadsden", "Leon", "Jefferson", "Madison", "Taylor", "Hamilton", "Suwannee", "Columbia", "Baker", "Nassau", "Duval"],
+          "temperature_range": "10-20°F winter minimum",
+          "climate": "Subtropical, experiences frost",
+          "notes": "Similar growing patterns to Georgia/South Carolina. Cannot support year-round production of warm-season crops. Hard freezes occur."
+        },
+        "9": {
+          "name": "Central Florida",
+          "description": "USDA Zone 9 (Tampa, Orlando, Space Coast)",
+          "usda_zones": ["9a", "9b"],
+          "counties": ["Citrus", "Hernando", "Pasco", "Hillsborough", "Pinellas", "Polk", "Osceola", "Orange", "Seminole", "Lake", "Volusia", "Brevard", "Marion", "Sumter"],
+          "temperature_range": "20-30°F winter minimum",
+          "climate": "Subtropical, occasional light frost",
+          "notes": "Citrus belt. Extended growing seasons but not fully tropical. Rare freezes can damage sensitive crops."
+        },
+        "10": {
+          "name": "South Florida",
+          "description": "USDA Zone 10 (Miami-Dade, Collier, Palm Beach)",
+          "usda_zones": ["10a", "10b"],
+          "counties": ["Charlotte", "Lee", "Collier", "Hendry", "Glades", "Palm Beach", "Martin", "St. Lucie", "Indian River", "Okeechobee", "Highlands", "Hardee", "DeSoto", "Sarasota", "Manatee", "Broward", "Miami-Dade"],
+          "temperature_range": "30-40°F winter minimum",
+          "climate": "Subtropical, frost-free or extremely rare frost",
+          "notes": "Year-round production of warm-season crops. Winter vegetable capital of USA. Commercial agriculture dominates."
+        },
+        "11": {
+          "name": "Florida Keys",
+          "description": "USDA Zone 11 (Monroe County - Keys only)",
+          "usda_zones": ["11a"],
+          "counties": ["Monroe"],
+          "temperature_range": "40°F+ winter minimum",
+          "climate": "True tropical, never frosts",
+          "notes": "Only true tropical zone in continental US. Can grow tropical fruits that won't survive in Zone 10 (mango, papaya, key lime). Limited commercial agriculture due to isolation and water scarcity."
+        }
+      },
+      "products": {
+        "tomato": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+          "peakMonths": [12, 1, 2, 3],
+          "notes": "Year-round production with winter peak. Major growing regions: Southwest Florida, East Coast",
+          "zoneVariation": {
+            "8": {
+              "zoneName": "North Florida",
+              "plantingWindows": ["March-April (spring)", "August-September (fall)"],
+              "harvestMonths": [5, 6, 7, 10, 11],
+              "notes": "Two distinct seasons, no winter production due to frost"
+            },
+            "9": {
+              "zoneName": "Central Florida",
+              "plantingWindows": ["February-March", "August-September"],
+              "harvestMonths": [4, 5, 6, 10, 11, 12],
+              "notes": "Extended seasons, occasional winter production"
+            },
+            "10": {
+              "zoneName": "South Florida",
+              "plantingWindows": ["August-September", "January-March"],
+              "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+              "notes": "Year-round potential, peak winter production for commercial market"
+            },
+            "11": {
+              "zoneName": "Florida Keys",
+              "plantingWindows": ["Year-round"],
+              "harvestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+              "notes": "True tropical zone, year-round production possible. Limited commercial tomato production due to water/land constraints."
+            }
+          }
+        },
+        "strawberry": {
+          "harvestMonths": [11, 12, 1, 2, 3, 4],
+          "peakMonths": [12, 1, 2, 3],
+          "notes": "Winter crop. Plant City is the 'Winter Strawberry Capital'. Varieties: Florida Brilliance, Sweet Sensation"
+        },
+        "blueberry": {
+          "harvestMonths": [3, 4, 5],
+          "peakMonths": [4],
+          "notes": "Early spring harvest. Rabbiteye and Southern Highbush varieties dominate"
+        },
+        "pepper": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+          "peakMonths": [12, 1, 2, 3, 4],
+          "notes": "Bell and specialty peppers year-round with winter-spring peak"
+        },
+        "sweet_corn": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5],
+          "peakMonths": [2, 3, 4],
+          "notes": "Cool season crop in Florida. Multiple plantings for extended harvest"
+        },
+        "cucumber": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+          "peakMonths": [12, 1, 2, 3],
+          "notes": "Fall through spring production"
+        },
+        "watermelon": {
+          "harvestMonths": [3, 4, 5, 6, 7],
+          "peakMonths": [4, 5, 6],
+          "notes": "Spring to early summer. Florida is major early-season supplier to eastern US"
+        },
+        "citrus_orange": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5],
+          "peakMonths": [12, 1, 2],
+          "notes": "Navel: Nov-Feb, Valencia: Feb-Jun. Multiple varieties extend season"
+        },
+        "citrus_grapefruit": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5],
+          "peakMonths": [12, 1, 2, 3],
+          "notes": "Peak winter fruit. White and red varieties"
+        }
+      },
+      "regionalNotes": {
+        "southwest": "Major production region: Lee, Collier, Hendry counties. Tomatoes, peppers, specialty crops",
+        "eastCoast": "Indian River region: Citrus. Palm Beach County: Winter vegetables",
+        "central": "Plant City (Hillsborough): Strawberries. Polk County: Citrus",
+        "north": "Limited commercial production, more small farms and U-pick operations"
+      }
+    },
+    "CA": {
+      "name": "California",
+      "department": "California Department of Food & Agriculture",
+      "sources": [
+        {
+          "url": "https://cdn.agclassroom.org/ca/resources/gardens/seasonalchart.pdf",
+          "type": "official",
+          "title": "California Fruits and Vegetables Seasonal Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://harvestofthemonth.cdph.ca.gov/Pages/Produce-List---Criteria.aspx",
+          "type": "official",
+          "title": "Harvest Of The Month Produce List",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://fruitgrowers.com/the-ultimate-california-seasonal-produce-guide/",
+          "type": "industry",
+          "title": "Ultimate California Seasonal Produce Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11, 12],
+          "peakMonths": [9, 10, 11],
+          "notes": "Available year-round via storage, with slight dip in spring quality"
+        },
+        "strawberry": {
+          "harvestMonths": [3, 4, 5, 6, 7],
+          "peakMonths": [4, 5, 6],
+          "notes": "Peak Apr-Jun, up to 10 million pint baskets shipped daily during peak"
+        },
+        "cherry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [5, 6],
+          "notes": "California cherries early in national supply chain"
+        },
+        "peach": {
+          "harvestMonths": [4, 5, 6, 7, 8, 9],
+          "peakMonths": [6, 7, 8],
+          "notes": "First peaches late April from Salton Sea region"
+        },
+        "apricot": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "Peak flavor early summer"
+        },
+        "watermelon": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Best consumed summer and fall"
+        },
+        "citrus_orange": {
+          "harvestMonths": [11, 12, 1, 2, 3, 4],
+          "peakMonths": [12, 1, 2],
+          "notes": "Navels winter, Valencias spring"
+        },
+        "citrus_tangelo": {
+          "harvestMonths": [11, 12, 1, 2],
+          "peakMonths": [12, 1],
+          "notes": "Peak winter only"
+        },
+        "avocado": {
+          "harvestMonths": [4, 5, 6, 7, 8, 9, 10, 11],
+          "peakMonths": [5, 6, 7, 8],
+          "notes": "California avocados arrive April, continue through fall"
+        },
+        "artichoke": {
+          "harvestMonths": [3, 4, 5, 6],
+          "peakMonths": [4, 5],
+          "notes": "Peak spring, extending into early summer"
+        },
+        "asparagus": {
+          "harvestMonths": [3, 4, 5, 6],
+          "peakMonths": [4, 5],
+          "notes": "Best spring to early summer"
+        }
+      },
+      "regionalNotes": {
+        "centralValley": "Major production: stone fruit, tomatoes, grapes, nuts",
+        "southernCalifornia": "Early season citrus, avocados, dates",
+        "coastalValleys": "Strawberries, artichokes, cool-weather vegetables",
+        "saltonSea": "Earliest stone fruit in nation (late April)"
+      }
+    },
+    "TX": {
+      "name": "Texas",
+      "department": "Texas Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.gotexan.org/Portals/1/PDF/produce availability brochure 2015-nocropmarks.pdf",
+          "type": "official",
+          "title": "GO TEXAN Produce Availability Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://texasagriculture.gov/Portals/0/forms/MKT/TDA Produce Commodity Card.pdf",
+          "type": "official",
+          "title": "Texas Produce: Always in Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://squaremeals.org/FandN-Resources/Texas-Farm-Fresh/Seasonality-Wheel",
+          "type": "extension",
+          "title": "Farm to School Seasonality Wheel",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "citrus_orange": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3, 4],
+          "peakMonths": [12, 1, 2],
+          "notes": "Navel, Temple, Valencia oranges from Rio Grande Valley"
+        },
+        "citrus_grapefruit": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3],
+          "peakMonths": [11, 12, 1, 2],
+          "notes": "Texas Ruby Red from Rio Grande Valley"
+        },
+        "citrus_tangerine": {
+          "harvestMonths": [11, 12, 1, 2],
+          "peakMonths": [12, 1],
+          "notes": "Includes tangelos"
+        },
+        "strawberry": {
+          "harvestMonths": [3, 4, 5],
+          "peakMonths": [4],
+          "notes": "Spring crop"
+        },
+        "watermelon": {
+          "harvestMonths": [5, 6, 7, 8, 9, 10],
+          "peakMonths": [6, 7, 8],
+          "notes": "Texas is top US producer, early May through October"
+        },
+        "peach": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [6, 7],
+          "notes": "Hill Country peaches, Fredericksburg area"
+        },
+        "apple": {
+          "harvestMonths": [9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall crop"
+        },
+        "pecan": {
+          "harvestMonths": [10, 11, 12],
+          "peakMonths": [11],
+          "notes": "Texas is major pecan producer"
+        },
+        "tomato": {
+          "harvestMonths": [5, 6, 7, 8, 9, 10],
+          "peakMonths": [6, 7, 8],
+          "notes": "Summer peak"
+        },
+        "sweet_corn": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer crop"
+        }
+      },
+      "regionalNotes": {
+        "rioGrandeValley": "Winter citrus capital, South Texas produce",
+        "hillCountry": "Peaches, Fredericksburg area famous",
+        "highPlains": "Onions, peppers, cotton",
+        "eastTexas": "Watermelon, sweet potatoes",
+        "centralTexas": "Spring through early fall vegetables"
+      }
+    },
+    "MI": {
+      "name": "Michigan",
+      "department": "Michigan Department of Agriculture and Rural Development",
+      "sources": [
+        {
+          "url": "https://www.michigan.gov/-/media/Project/Websites/mdhhs/Folder1/Folder100/Season_Avail_Guide.pdf",
+          "type": "official",
+          "title": "Michigan Seasonal Availability Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.canr.msu.edu/uploads/236/59248/MI_Availability_Guide.pdf",
+          "type": "extension",
+          "title": "MSU Extension Michigan Availability Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "cherry_tart": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Michigan is nation's top producer of tart cherries"
+        },
+        "cherry_sweet": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Sweet cherries start early June"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Early blueberries June, sweeter through season until Labor Day"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Late August start, fall is quintessential Michigan apple season"
+        },
+        "strawberry": {
+          "harvestMonths": [6],
+          "peakMonths": [6],
+          "notes": "June strawberries signal start of berry season"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Mid-July through early September"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Available mid-July"
+        },
+        "pear": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Fall pears follow apples"
+        },
+        "grape": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall grape harvest supports Michigan wine industry"
+        }
+      },
+      "regionalNotes": {
+        "westMichigan": "Fruit belt along Lake Michigan - cherries, blueberries, apples",
+        "traverseCity": "Cherry capital of the world",
+        "southwestMichigan": "Blueberry production center"
+      }
+    },
+    "NY": {
+      "name": "New York",
+      "department": "New York State Department of Agriculture and Markets",
+      "sources": [
+        {
+          "url": "https://agriculture.ny.gov/system/files/documents/2019/03/harvestchart2016english.pdf",
+          "type": "official",
+          "title": "From Apples to Zucchini - NY Produce Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www3.erie.gov/agriculture/sites/www3.erie.gov.agriculture/files/2021-03/AG_HarvestChart.pdf",
+          "type": "extension",
+          "title": "Erie County Harvest Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Late August to mid-November, NY is 2nd largest apple producing state"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Late June to mid-July, Hudson Valley orchards"
+        },
+        "pear": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9],
+          "notes": "September peak"
+        },
+        "grape": {
+          "harvestMonths": [9, 10, 11],
+          "peakMonths": [10],
+          "notes": "Finger Lakes region, wine grapes and table grapes"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June strawberries"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Hudson Valley peaches"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Summer to early fall"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer staple"
+        }
+      },
+      "regionalNotes": {
+        "hudsonValley": "Apples, stone fruit, berries - major orchard region",
+        "fingerLakes": "Grape production, wine industry",
+        "longIsland": "Specialty vegetables, potatoes, wine grapes",
+        "westernNY": "Apples, grapes, vegetables"
+      }
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "department": "Pennsylvania Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/business-industry/pa_preferred/documents/SeasonalCalendar-2022.pdf",
+          "type": "official",
+          "title": "PA Preferred Seasonal Produce Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://extension.psu.edu/harvest-calendar",
+          "type": "extension",
+          "title": "Penn State Extension Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://farmtotablepa.com/wp-content/uploads/2017/02/FTT-Seasonal-Calendar.pdf",
+          "type": "industry",
+          "title": "Farm to Table PA Seasonal Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [7, 8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Late July to early November, apples grown in every PA county"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Peak July-August, Adams County major producer"
+        },
+        "strawberry": {
+          "harvestMonths": [6],
+          "peakMonths": [6],
+          "notes": "June berries herald start of berry season"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Late July through August"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Sweet and tart cherries June-July"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Red raspberries early August to early October"
+        },
+        "blackberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Late June to early September"
+        },
+        "grape": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Late summer to early fall, Erie grape belt"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Summer to early fall"
+        }
+      },
+      "regionalNotes": {
+        "adamsCounty": "Pennsylvania's fruit bowl - apples, peaches, cherries",
+        "erieCounty": "Grape belt along Lake Erie",
+        "lancasterCounty": "Diverse vegetable production",
+        "southeasternPA": "Early season due to warmer climate"
+      }
+    },
+    "OH": {
+      "name": "Ohio",
+      "department": "Ohio Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://ohioproud.org/farm-markets-all/produce-availability/",
+          "type": "official",
+          "title": "Ohio Proud Produce Availability",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://ofbf.org/about/farm-to-table/whats-in-season/",
+          "type": "industry",
+          "title": "Ohio Farm Bureau What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://www.fpconservatory.org/wp-content/uploads/2018/11/Ohio-Harvest-Calendar-PDF.pdf",
+          "type": "extension",
+          "title": "Ohio Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Early varieties Aug 10, main season Sep-Oct"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer staple, peak August"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer crop"
+        },
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [6],
+          "notes": "Late spring to early summer"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7],
+          "notes": "July-August"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer stone fruit"
+        },
+        "grape": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest, Lake Erie shore"
+        },
+        "pumpkin": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Fall staple"
+        },
+        "pepper": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer vegetables"
+        }
+      },
+      "regionalNotes": {
+        "lakeErie": "Grape production, moderate climate",
+        "northernOhio": "Later season due to cooler temps",
+        "southernOhio": "Earlier season, warmer climate"
+      }
+    },
+    "GA": {
+      "name": "Georgia",
+      "department": "Georgia Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.localharvest.org",
+          "type": "farm_data",
+          "title": "LocalHarvest Farm Data",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "peach": {
+          "harvestMonths": [5, 6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Georgia peaches - May through September, peak July-August. Cultivars: Loring, Red Haven, Georgia Belle, Alberta",
+          "cultivars": ["Loring", "Red Haven", "Georgia Belle", "Alberta", "Red Skins", "Big Reds", "Sun Prince"]
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "North Georgia mountains"
+        },
+        "strawberry": {
+          "harvestMonths": [4, 5, 6],
+          "peakMonths": [4, 5],
+          "notes": "Spring strawberries"
+        },
+        "blueberry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "Georgia is major blueberry producer"
+        },
+        "pecan": {
+          "harvestMonths": [10, 11, 12],
+          "peakMonths": [11],
+          "notes": "Fall pecan harvest"
+        },
+        "watermelon": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer watermelons"
+        }
+      },
+      "regionalNotes": {
+        "peachCounty": "Fort Valley area - historic peach belt",
+        "northGeorgia": "Apples, cooler mountain climate",
+        "southGeorgia": "Pecans, watermelons, Vidalia onions"
+      }
+    },
+    "WA": {
+      "name": "Washington",
+      "department": "Washington State Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.localharvest.org",
+          "type": "farm_data",
+          "title": "LocalHarvest Farm Data",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Washington is #1 US apple producer, Yakima/Wenatchee valleys"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Pacific NW cherry season June-August, major producer"
+        },
+        "pear": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Major pear production, multiple varieties"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Stone fruit production in Yakima Valley"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "grape": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Washington wine grapes, major producer"
+        }
+      },
+      "regionalNotes": {
+        "yakimaValley": "Tree fruit capital - apples, cherries, stone fruit",
+        "wenatchee": "Apple production center",
+        "lakeChelan": "Cherries, organic production",
+        "columbiaValley": "Wine grapes"
+      }
+    },
+    "NC": {
+      "name": "North Carolina",
+      "department": "North Carolina Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://files.nc.gov/ncoshr/Wellness_AvailabilityChart.pdf",
+          "type": "official",
+          "title": "NC Fruit and Vegetable Availability Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://homegrown.extension.ncsu.edu/wp-content/uploads/2020/08/Seasonal-Availability-Calendar-Chart-for-Fresh-Produce_Homegrown-Final.pdf",
+          "type": "extension",
+          "title": "NC State Extension Seasonal Availability Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [4, 5, 6],
+          "peakMonths": [5],
+          "notes": "Late April through early June, peak in May"
+        },
+        "blueberry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "Peak May-June, continues into July"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11, 12, 1, 2],
+          "peakMonths": [9, 10],
+          "notes": "Western NC hub - Hendersonville apple festival. Storage extends to February"
+        },
+        "peach": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer stone fruit"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9, 10],
+          "peakMonths": [7, 8],
+          "notes": "Summer peak"
+        },
+        "sweet_potato": {
+          "harvestMonths": [9, 10, 11],
+          "peakMonths": [10],
+          "notes": "NC is #1 sweet potato producer"
+        },
+        "grape": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Muscadine grapes native to NC"
+        }
+      },
+      "regionalNotes": {
+        "westernNC": "Apple country - Hendersonville area, mountain climate",
+        "piedmont": "Diverse production, tobacco transition to produce",
+        "coastal": "Earlier season, sweet potatoes"
+      }
+    },
+    "OR": {
+      "name": "Oregon",
+      "department": "Oregon Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://oregonfresh.net/local-products/whats-in-season/",
+          "type": "official",
+          "title": "Oregon Fresh What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://doubleuporegon.org/wp-content/uploads/2022/11/Seasonal-Produce-Chart.pdf",
+          "type": "extension",
+          "title": "Oregon Seasonal Produce Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11, 12, 1, 2, 3],
+          "peakMonths": [9, 10, 11],
+          "notes": "Aug-Nov harvest, storage extends to March"
+        },
+        "pear": {
+          "harvestMonths": [8, 9, 10, 11, 12],
+          "peakMonths": [9, 10],
+          "notes": "Bartlett first, winter varieties through October"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Mid-June through July, Hood River area"
+        },
+        "strawberry": {
+          "harvestMonths": [5, 6, 7, 8, 9],
+          "peakMonths": [6, 7],
+          "notes": "Mid-May through September"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Mid-June through mid-September"
+        },
+        "raspberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Mid-June through September"
+        },
+        "blackberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Marionberry developed at OSU, late June-September"
+        },
+        "hazelnut": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Oregon produces 99% of US hazelnuts"
+        }
+      },
+      "regionalNotes": {
+        "hoodRiver": "Cherry and pear capital, Columbia Gorge",
+        "willametteValley": "Berries, wine grapes, hazelnuts",
+        "southernOregon": "Pears, wine grapes"
+      }
+    },
+    "VA": {
+      "name": "Virginia",
+      "department": "Virginia Department of Agriculture and Consumer Services",
+      "sources": [
+        {
+          "url": "https://www.vdacs.virginia.gov/pdf/producechart.pdf",
+          "type": "official",
+          "title": "Virginia Fruit & Vegetable Availability Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://vagrown.vdacs.virginia.gov/whats-in-season",
+          "type": "official",
+          "title": "Virginia Grown What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11, 12],
+          "peakMonths": [9, 10],
+          "notes": "Multiple varieties, storage apples through December"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Freestone varieties Jul-Sep, peak late July"
+        },
+        "strawberry": {
+          "harvestMonths": [4, 5, 6],
+          "peakMonths": [5],
+          "notes": "April start possible, peak May in Central VA"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June peak, good for freezing"
+        },
+        "raspberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [6, 8],
+          "notes": "Two peaks - June and mid-Aug to Sep"
+        },
+        "blackberry": {
+          "harvestMonths": [7],
+          "peakMonths": [7],
+          "notes": "July harvest peak"
+        },
+        "grape": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Virginia wine country"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9, 10],
+          "peakMonths": [7, 8],
+          "notes": "Summer peak"
+        }
+      },
+      "regionalNotes": {
+        "shenandoahValley": "Apple orchards, wine country",
+        "piedmont": "Diverse production",
+        "easternShore": "Vegetables, potatoes"
+      }
+    },
+    "TN": {
+      "name": "Tennessee",
+      "department": "Tennessee Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.picktnproducts.org/seasonal.html",
+          "type": "official",
+          "title": "Pick Tennessee Products Seasonal",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://bedford.tennessee.edu/wp-content/uploads/sites/162/2020/08/Tennessee-Seasonal-Produce-Chart.pdf",
+          "type": "extension",
+          "title": "Tennessee Seasonal Produce Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "peach": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Late June through August"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Aug-Oct, varieties include Honeycrisp, Fuji, Gala"
+        },
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [5, 6],
+          "notes": "Spring berries"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Summer berries"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9, 10],
+          "peakMonths": [7, 8],
+          "notes": "Peak Jun-Aug, continues until frost"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer staple"
+        }
+      },
+      "regionalNotes": {
+        "eastTennessee": "Mountain climate, later season",
+        "middleTennessee": "Diverse production",
+        "westTennessee": "Earlier season, warmer"
+      }
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "department": "New Jersey Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://nj.gov/agriculture/applic/forms/Fruit  Vegetable Calendar.pdf",
+          "type": "official",
+          "title": "NJ Fruit Vegetable Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.nj.gov/agriculture/divisions/fn/pdf/njseasonalitychart.pdf",
+          "type": "official",
+          "title": "Jersey Fresh Seasonality Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "blueberry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "NJ is major blueberry producer, late June-early August"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Early July through late September"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8],
+          "notes": "Jersey tomatoes famous, July-October"
+        },
+        "cranberry": {
+          "harvestMonths": [10],
+          "peakMonths": [10],
+          "notes": "NJ is #3 cranberry producer, Pine Barrens"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall apples"
+        },
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [6],
+          "notes": "Late May through June"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        },
+        "pepper": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Summer vegetables"
+        }
+      },
+      "regionalNotes": {
+        "southJersey": "Blueberries, cranberries, vegetables",
+        "centralJersey": "Diverse production, tomatoes",
+        "northJersey": "Apples, smaller farms"
+      }
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "department": "Massachusetts Department of Agricultural Resources",
+      "sources": [
+        {
+          "url": "https://www.mass.gov/doc/produce-availability-chart/download",
+          "type": "official",
+          "title": "Massachusetts-Grown Produce Availability Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "30+ varieties, mid-Aug through early Nov"
+        },
+        "cranberry": {
+          "harvestMonths": [9, 10, 11],
+          "peakMonths": [10],
+          "notes": "MA is #2 cranberry producer, Cape Cod area"
+        },
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "Early June to early July"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Native to MA, early July through late August"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "July, then mid-Aug to September"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Mid-July to September"
+        },
+        "pear": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9],
+          "notes": "Fall pears"
+        }
+      },
+      "regionalNotes": {
+        "capeCod": "Cranberry bogs, historic production",
+        "centralMA": "Apple orchards",
+        "berkshires": "Apples, mountain climate"
+      }
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "department": "Wisconsin Department of Agriculture, Trade and Consumer Protection",
+      "sources": [
+        {
+          "url": "https://foodsystems.extension.wisc.edu/files/2023/05/nutr3-seasonal-availability-of-wisconsin-foods.pdf",
+          "type": "extension",
+          "title": "UW Extension Seasonal Availability Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.cias.wisc.edu/foodservtools/2-Get-started/wisconsin-produce-calendar.pdf",
+          "type": "extension",
+          "title": "Wisconsin Produce Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11, 12],
+          "peakMonths": [9, 10],
+          "notes": "Door County and Gays Mills (Apple Capital of WI)"
+        },
+        "cherry_tart": {
+          "harvestMonths": [7],
+          "peakMonths": [7],
+          "notes": "Door County Montmorency cherries, mid-late July"
+        },
+        "cherry_sweet": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Mid-June through late July"
+        },
+        "cranberry": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "WI is #1 cranberry producer, central Wisconsin marshes"
+        },
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer through early fall"
+        }
+      },
+      "regionalNotes": {
+        "doorCounty": "Cherry capital, apples, wine",
+        "gaysMills": "Apple Capital of Wisconsin",
+        "centralWI": "Cranberry marshes - Warrens, Wisconsin Rapids"
+      }
+    },
+    "MN": {
+      "name": "Minnesota",
+      "department": "Minnesota Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://minnesotagrown.com/wp-content/uploads/Whats-in-Season-Chart.pdf",
+          "type": "official",
+          "title": "Minnesota Grown What's In Season Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://minnesotagrown.com/whats-in-season/",
+          "type": "official",
+          "title": "Minnesota Grown What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Honeycrisp developed at UMN, late summer to fall"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer through early fall"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Minnesota sweet corn, summer staple"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        },
+        "pumpkin": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        }
+      },
+      "regionalNotes": {
+        "twincities": "Urban farms, diverse production",
+        "southernMN": "Sweet corn, vegetables",
+        "northernMN": "Short season, berries"
+      }
+    },
+    "IN": {
+      "name": "Indiana",
+      "department": "Indiana State Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.in.gov/dwd/job-seekers/migrant-and-seasonal-farm-worker/indiana-seasonal-crop-calendar/",
+          "type": "official",
+          "title": "Indiana Seasonal Crop Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://marionswcd.org/wp-content/uploads/Indiana-Fruits-and-Vegetable-Harvest-Calander.pdf",
+          "type": "extension",
+          "title": "Indiana Fruits and Vegetable Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "apple": {
+          "harvestMonths": [7, 8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "July 15 - Nov 1, Gala ready by 3rd week of August"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "July 1 - Aug 15"
+        },
+        "melon": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "July through October"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "July 15 - Oct 15"
+        },
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [6],
+          "notes": "Spring berries"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer berries"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        }
+      },
+      "regionalNotes": {
+        "centralIndiana": "Diverse production",
+        "southernIndiana": "Earlier season",
+        "northernIndiana": "Fruit orchards"
+      }
+    },
+    "CO": {
+      "name": "Colorado",
+      "department": "Colorado Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://ag.colorado.gov/markets/colorado-proud/colorado-produce-calendar",
+          "type": "official",
+          "title": "Colorado Produce Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://ag.colorado.gov/sites/ag/files/documents/ColoradoProduceCalendar_0.pdf",
+          "type": "official",
+          "title": "Colorado Produce Calendar PDF",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Palisade peaches famous, arrives ~July 4, peak late Aug"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Bing and Rainier, mid-June to mid-July, short window"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11, 12],
+          "peakMonths": [9, 10],
+          "notes": "Mid-Aug start, North Fork Valley harvest to December"
+        },
+        "melon": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8, 9],
+          "notes": "Rocky Ford melons famous, early Aug to mid-Sep"
+        },
+        "pear": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [9],
+          "notes": "Aug-Sep"
+        },
+        "strawberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7],
+          "notes": "June-September"
+        },
+        "raspberry": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        }
+      },
+      "regionalNotes": {
+        "palisade": "Peach capital, Western Slope fruit region",
+        "rockyFord": "Melon capital, southeastern CO",
+        "northForkValley": "Apples, cherries, wine"
+      }
+    },
+    "AL": {
+      "name": "Alabama",
+      "department": "Alabama Department of Agriculture and Industries",
+      "sources": [
+        {
+          "url": "https://www.sweetgrownalabama.org/resources/harvest-calendar",
+          "type": "official",
+          "title": "Sweet Grown Alabama Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://alabamafarmtoece.org/wp-content/uploads/2022/04/ALSeasonal-Produce-Guide.pdf",
+          "type": "extension",
+          "title": "Alabama Seasonal Produce Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [3, 4, 5, 6],
+          "peakMonths": [4, 5],
+          "notes": "March start possible, peak April-May"
+        },
+        "blueberry": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [5, 6],
+          "notes": "Late May through August, peak May-June"
+        },
+        "peach": {
+          "harvestMonths": [5, 6, 7, 8, 9],
+          "peakMonths": [6, 7],
+          "notes": "Chilton County peaches famous, May-September"
+        },
+        "tomato": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [6, 7],
+          "notes": "May through August"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "sweet_potato": {
+          "harvestMonths": [9, 10, 11],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        },
+        "watermelon": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "chiltonCounty": "Peach capital of Alabama",
+        "southAlabama": "Earlier season, longer growing",
+        "northAlabama": "Later season, mountain influence"
+      }
+    },
+    "SC": {
+      "name": "South Carolina",
+      "department": "South Carolina Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://certifiedsc.com/where-to-buy-local/whats-in-season/",
+          "type": "official",
+          "title": "Certified SC Grown What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://hgic.clemson.edu/seasonal-fruit-veggies-in-south-carolina/",
+          "type": "extension",
+          "title": "Clemson Extension Seasonal Fruit & Veggies",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "peach": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [6, 7],
+          "notes": "SC famous for peaches, late May through August, peak Jun-Jul"
+        },
+        "strawberry": {
+          "harvestMonths": [4, 5, 6],
+          "peakMonths": [4, 5],
+          "notes": "April through early June"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer peak"
+        },
+        "blueberry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "May-July"
+        },
+        "watermelon": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer melons"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Upstate SC orchards"
+        },
+        "sweet_corn": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer corn"
+        }
+      },
+      "regionalNotes": {
+        "upstate": "Apple orchards, cooler mountain climate",
+        "midlands": "Diverse production, peaches",
+        "lowcountry": "Early season, coastal crops"
+      }
+    },
+    "AR": {
+      "name": "Arkansas",
+      "department": "Arkansas Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.agriculture.arkansas.gov/wp-content/uploads/2021/05/Local-Harvest-Calendar-Final-5.26.2021.pdf",
+          "type": "official",
+          "title": "Arkansas Local Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.uaex.uada.edu/publications/pdf/FCS812A.pdf",
+          "type": "extension",
+          "title": "Arkansas Local Produce Fruit & Vegetable Harvest Calendars",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [4, 5, 6],
+          "peakMonths": [5],
+          "notes": "Spring strawberries, peak late spring"
+        },
+        "blueberry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "Late spring into summer"
+        },
+        "peach": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer stone fruit"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer peak"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "melon": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Cantaloupe July-October"
+        },
+        "sweet_corn": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer corn"
+        }
+      },
+      "regionalNotes": {
+        "ozarks": "Apples, berries, cooler mountain climate",
+        "delta": "Earlier season, row crops",
+        "timberlands": "Diverse small farms"
+      }
+    },
+    "IA": {
+      "name": "Iowa",
+      "department": "Iowa Department of Agriculture and Land Stewardship",
+      "sources": [
+        {
+          "url": "https://iowaagriculture.gov/sites/default/files/ag-diversification/Specialty%20Crops/FINAL3281IowaFVmagnet.pdf",
+          "type": "official",
+          "title": "Iowa Fruit and Vegetable Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://store.extension.iastate.edu/Product/Planting-and-Harvesting-Times-for-Garden-Vegetables-PDF",
+          "type": "extension",
+          "title": "ISU Extension Planting and Harvesting Times",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Early summer"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer through early fall"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Iowa sweet corn, summer staple"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        },
+        "melon": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Muskmelon, watermelon"
+        }
+      },
+      "regionalNotes": {
+        "centralIowa": "Reference for planting dates",
+        "southernIowa": "About 1 week earlier than central",
+        "northernIowa": "About 1 week later than central"
+      }
+    },
+    "IL": {
+      "name": "Illinois",
+      "department": "Illinois Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://extension.illinois.edu/sites/default/files/cjmmwhatsinseason.pdf",
+          "type": "extension",
+          "title": "University of Illinois Extension What's in Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://agr.illinois.gov/content/dam/soi/en/web/agr/consumers/farmersmarkets/documents/whatsinseason.pdf",
+          "type": "official",
+          "title": "Illinois What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6],
+          "peakMonths": [6],
+          "notes": "June strawberries"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Early summer"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Mid-summer"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Peak July-August"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Late summer through fall"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "July through October"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        },
+        "melon": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "northernIllinois": "Later season, Chicago area",
+        "centralIllinois": "Major production zone",
+        "southernIllinois": "Earlier season, diverse fruit"
+      }
+    },
+    "KS": {
+      "name": "Kansas",
+      "department": "Kansas Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://bookstore.ksre.ksu.edu/pubs/buying-guide-for-kansas-grown-fruits-and-vegetables_MF2647.pdf",
+          "type": "extension",
+          "title": "K-State Buying Guide for Kansas-Grown Fruits and Vegetables",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [5, 6],
+          "notes": "Late spring"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Best June-August"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Mid-summer"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall apples, storage through November"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer harvest"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer corn"
+        },
+        "melon": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer melons"
+        },
+        "pumpkin": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        }
+      },
+      "regionalNotes": {
+        "easternKansas": "More humid, diverse fruit",
+        "centralKansas": "Wheat country, some produce",
+        "westernKansas": "Arid, limited fruit production"
+      }
+    },
+    "KY": {
+      "name": "Kentucky",
+      "department": "Kentucky Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.kyagr.com/marketing/documents/FM_ProduceAvailabilityGuide.pdf",
+          "type": "official",
+          "title": "Kentucky Produce Availability Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [5, 6],
+          "notes": "Late spring"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer berries"
+        },
+        "blackberry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Mid-summer"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer stone fruit"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer peak"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "July-September"
+        }
+      },
+      "regionalNotes": {
+        "bluegrass": "Central KY, diverse production",
+        "appalachia": "Eastern KY, small farms",
+        "western": "Earlier season"
+      }
+    },
+    "LA": {
+      "name": "Louisiana",
+      "department": "Louisiana Department of Agriculture and Forestry",
+      "sources": [
+        {
+          "url": "https://www.lsuagcenter.com/~/media/system/e/6/0/5/e605caacb98b90277cb9d0cbd4e3926b/la%20produce%20seasonality%20chartpdf.pdf",
+          "type": "extension",
+          "title": "LSU AgCenter Louisiana Produce Seasonality Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.louisianafitkids.com/FarmToSchool/SeasonalityWheel",
+          "type": "official",
+          "title": "Louisiana Cycle Menu Seasonality Wheel",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [2, 3, 4, 5],
+          "peakMonths": [3, 4],
+          "notes": "Early season, Ponchatoula strawberry festival"
+        },
+        "blueberry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "May through July"
+        },
+        "peach": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "Ruston peaches famous"
+        },
+        "citrus_orange": {
+          "harvestMonths": [10, 11, 12, 1, 2, 3],
+          "peakMonths": [12, 1],
+          "notes": "Louisiana Sweet oranges"
+        },
+        "citrus_tangerine": {
+          "harvestMonths": [10, 11, 12, 1],
+          "peakMonths": [11, 12],
+          "notes": "Satsuma mandarins"
+        },
+        "tomato": {
+          "harvestMonths": [4, 5, 6, 7],
+          "peakMonths": [5, 6],
+          "notes": "Creole tomatoes"
+        },
+        "sweet_corn": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [6, 7],
+          "notes": "Late May through August"
+        },
+        "watermelon": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "northLouisiana": "Ruston peaches, later season",
+        "acadiana": "Diverse Cajun country production",
+        "southLouisiana": "Citrus, early season vegetables"
+      }
+    },
+    "MO": {
+      "name": "Missouri",
+      "department": "Missouri Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://extension.missouri.edu/publications/mp909",
+          "type": "extension",
+          "title": "MU Extension Seasonal and Simple Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [5, 6],
+          "notes": "Late spring"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Early summer"
+        },
+        "blackberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Summer berries"
+        },
+        "peach": {
+          "harvestMonths": [6, 7, 8, 9, 10],
+          "peakMonths": [7, 8],
+          "notes": "June through October"
+        },
+        "apple": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Early varieties July, peak fall"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer peak"
+        },
+        "sweet_corn": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Mid-June to mid-August"
+        },
+        "melon": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "ozarks": "Apples, berries, cooler climate",
+        "bootheel": "Earlier season, southern",
+        "kansasCity": "Urban farms, diverse production"
+      }
+    },
+    "MS": {
+      "name": "Mississippi",
+      "department": "Mississippi Department of Agriculture and Commerce",
+      "sources": [
+        {
+          "url": "https://agnet.mdac.ms.gov/agManage/uploads/1452.pdf",
+          "type": "official",
+          "title": "Mississippi Fresh Produce Availability Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://extension.msstate.edu/publications/buy-fresh-fruits-and-vegetables-season",
+          "type": "extension",
+          "title": "MSU Extension Buy Fresh Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [3, 4, 5],
+          "peakMonths": [4],
+          "notes": "Early spring, March start in south"
+        },
+        "blueberry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "May-July"
+        },
+        "peach": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [6, 7],
+          "notes": "May through August"
+        },
+        "tomato": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [6, 7],
+          "notes": "Summer harvest"
+        },
+        "sweet_corn": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [5, 6],
+          "notes": "Earlier than northern states"
+        },
+        "watermelon": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer melons"
+        },
+        "sweet_potato": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "grape": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [9],
+          "notes": "Muscadines native to MS"
+        }
+      },
+      "regionalNotes": {
+        "delta": "Rich soil, early vegetables",
+        "pinewoods": "Blueberries, sweet potatoes",
+        "coastalMS": "Earliest season in state"
+      }
+    },
+    "NE": {
+      "name": "Nebraska",
+      "department": "Nebraska Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.education.ne.gov/ns/farm-to-school/harvest-of-the-month/",
+          "type": "official",
+          "title": "Nebraska Harvest of the Month",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://lancaster.unl.edu/vegetable-gardening-summer-fall/",
+          "type": "extension",
+          "title": "Nebraska Extension Vegetable Gardening",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        },
+        "melon": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8, 9],
+          "notes": "Late summer"
+        },
+        "pumpkin": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        }
+      },
+      "regionalNotes": {
+        "easternNE": "More humid, longer season",
+        "panhandle": "Short season, limited production",
+        "sandhills": "Unique growing conditions"
+      }
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "department": "Oklahoma Department of Agriculture, Food and Forestry",
+      "sources": [
+        {
+          "url": "http://okfarmtoschool.com/wp-content/uploads/harvest-calendar.pdf",
+          "type": "official",
+          "title": "Oklahoma Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://extension.okstate.edu/fact-sheets/oklahoma-garden-planning-guide.html",
+          "type": "extension",
+          "title": "OSU Extension Garden Planning Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [4, 5, 6],
+          "peakMonths": [5],
+          "notes": "Spring berries"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Early summer"
+        },
+        "peach": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer stone fruit"
+        },
+        "apple": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Late summer through fall"
+        },
+        "tomato": {
+          "harvestMonths": [6, 7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer harvest"
+        },
+        "sweet_corn": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer corn"
+        },
+        "watermelon": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Rush Springs watermelon festival"
+        },
+        "pumpkin": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        }
+      },
+      "regionalNotes": {
+        "easternOK": "More humid, diverse production",
+        "westernOK": "Arid, limited fruit",
+        "southernOK": "Earlier season, longer growing"
+      }
+    },
+    "ND": {
+      "name": "North Dakota",
+      "department": "North Dakota Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.pickyourown.org/NDharvestcalendar.htm",
+          "type": "reference",
+          "title": "North Dakota Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Short season berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Late summer"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Hardy varieties for cold climate"
+        },
+        "tomato": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8, 9],
+          "notes": "Short summer season"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        },
+        "pumpkin": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        }
+      },
+      "regionalNotes": {
+        "redRiverValley": "Most productive region",
+        "western": "Very short season",
+        "notes": "~130 frost-free days, zones 3-4"
+      }
+    },
+    "SD": {
+      "name": "South Dakota",
+      "department": "South Dakota Department of Agriculture and Natural Resources",
+      "sources": [
+        {
+          "url": "https://www.pickyourown.org/SDharvestcalendar.htm",
+          "type": "reference",
+          "title": "South Dakota Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Hardy varieties"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        },
+        "melon": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8],
+          "notes": "Late summer"
+        },
+        "pumpkin": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        }
+      },
+      "regionalNotes": {
+        "eastern": "Longer season, more humid",
+        "blackHills": "Unique microclimate",
+        "western": "Semi-arid, short season"
+      }
+    },
+    "ID": {
+      "name": "Idaho",
+      "department": "Idaho State Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://idahopreferred.com/products/",
+          "type": "official",
+          "title": "Idaho Preferred Products",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://www.uidaho.edu/-/media/UIdaho-Responsive/Files/Extension/topic/eat-smart-idaho/seasonal-produce-guide.pdf",
+          "type": "extension",
+          "title": "University of Idaho Seasonal Produce Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "cherry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Pacific NW cherry production"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall apples"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer stone fruit"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "Early summer"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        }
+      },
+      "regionalNotes": {
+        "treasureValley": "Boise area, diverse production",
+        "snakeRiverPlain": "Agriculture corridor",
+        "panhandle": "Cooler, shorter season"
+      }
+    },
+    "MT": {
+      "name": "Montana",
+      "department": "Montana Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://opi.mt.gov/Portals/182/Page Files/School Nutrition/FFVP/MT Seasonal Food Chart.pdf",
+          "type": "official",
+          "title": "Montana Seasonal Food Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "cherry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7],
+          "notes": "Flathead Lake cherries famous"
+        },
+        "apple": {
+          "harvestMonths": [9, 10, 11],
+          "peakMonths": [10],
+          "notes": "Fall harvest"
+        },
+        "strawberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Short summer season"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Late summer"
+        },
+        "tomato": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8, 9],
+          "notes": "Short growing season"
+        }
+      },
+      "regionalNotes": {
+        "flatheadValley": "Cherry production, lake effect",
+        "gallatin": "Diverse small farms",
+        "easternMT": "Very short season ~95 frost-free days"
+      }
+    },
+    "UT": {
+      "name": "Utah",
+      "department": "Utah Department of Agriculture and Food",
+      "sources": [
+        {
+          "url": "https://extension.usu.edu/yardandgarden/research/local-fruit-and-vegetable-availability-along-the-wasatch-front",
+          "type": "extension",
+          "title": "USU Extension Local Fruit and Vegetable Availability",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://extension.usu.edu/yardandgarden/research/suggested-vegetable-planting-dates-for-utah",
+          "type": "extension",
+          "title": "USU Suggested Vegetable Planting Dates",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Utah cherries, Santaquin area"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Brigham City peaches famous"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "apricot": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Early summer"
+        },
+        "strawberry": {
+          "harvestMonths": [5, 6, 7, 8, 9],
+          "peakMonths": [6],
+          "notes": "May through September"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer through early fall"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        }
+      },
+      "regionalNotes": {
+        "wasatchFront": "Main production area, Salt Lake to Provo",
+        "brighamCity": "Peach capital",
+        "southernUtah": "Warmer climate, longer season"
+      }
+    },
+    "WY": {
+      "name": "Wyoming",
+      "department": "Wyoming Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.pickyourown.org/WYharvestcalendar.htm",
+          "type": "reference",
+          "title": "Wyoming Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7],
+          "notes": "Short summer season"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Late summer"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Hardy varieties"
+        },
+        "tomato": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8],
+          "notes": "Very short season"
+        }
+      },
+      "regionalNotes": {
+        "notes": "Very short growing season 20-130 days, zones 3-6",
+        "bigHornBasin": "Warmest area, longest season",
+        "mountainAreas": "Very limited production"
+      }
+    },
+    "AZ": {
+      "name": "Arizona",
+      "department": "Arizona Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://agriculture.az.gov/sites/default/files/Harvest%20Calendar.pdf",
+          "type": "official",
+          "title": "Arizona Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://extension.arizona.edu/sites/default/files/2024-08/az1005-2018.pdf",
+          "type": "extension",
+          "title": "University of Arizona Vegetable Planting Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "citrus_orange": {
+          "harvestMonths": [11, 12, 1, 2, 3, 4],
+          "peakMonths": [12, 1, 2],
+          "notes": "Desert citrus"
+        },
+        "citrus_grapefruit": {
+          "harvestMonths": [11, 12, 1, 2, 3],
+          "peakMonths": [12, 1],
+          "notes": "Arizona grapefruit"
+        },
+        "melon": {
+          "harvestMonths": [5, 6, 7, 8],
+          "peakMonths": [6, 7],
+          "notes": "Yuma melons"
+        },
+        "tomato": {
+          "harvestMonths": [4, 5, 6, 11, 12],
+          "peakMonths": [5, 12],
+          "notes": "Two seasons - spring and fall/winter"
+        },
+        "strawberry": {
+          "harvestMonths": [1, 2, 3, 4],
+          "peakMonths": [2, 3],
+          "notes": "Winter strawberries"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "High elevation orchards"
+        }
+      },
+      "regionalNotes": {
+        "lowDesert": "Phoenix/Yuma, winter vegetables, summer melons",
+        "highDesert": "Prescott area, traditional seasons",
+        "mountains": "Northern AZ, apples, short season"
+      }
+    },
+    "NM": {
+      "name": "New Mexico",
+      "department": "New Mexico Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://farmersmarketsnm.org/resources/shopper-resources/whats-in-season/",
+          "type": "official",
+          "title": "New Mexico Farmers Marketing Association What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "chile": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Hatch green chile famous, August-October"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "High altitude orchards"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer stone fruit"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Early summer"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        },
+        "melon": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "hatchValley": "Chile capital, southern NM",
+        "rio Grande": "Traditional agriculture corridor",
+        "northernNM": "Unique native chile varieties, Chimayo"
+      }
+    },
+    "NV": {
+      "name": "Nevada",
+      "department": "Nevada Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://agri.nv.gov/Plant/SCG/What_s_in_Season/",
+          "type": "official",
+          "title": "Nevada Department of Agriculture What's in Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://nevadagrown.com/wp-content/uploads/2017/08/NevadaGrown-Seasonal-Harvest-Chart-English-FB.pdf",
+          "type": "official",
+          "title": "Nevada Grown Seasonal Harvest Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [4, 5, 6],
+          "peakMonths": [5],
+          "notes": "Spring berries"
+        },
+        "cherry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6, 7],
+          "notes": "Early summer"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer stone fruit"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        },
+        "melon": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "renoTahoe": "Cooler climate, orchards",
+        "carsonValley": "Agricultural center",
+        "lasVegas": "Limited production, desert climate"
+      }
+    },
+    "HI": {
+      "name": "Hawaii",
+      "department": "Hawaii Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://dab.hawaii.gov/farmtoschool/hhom/",
+          "type": "official",
+          "title": "Hawaiian Harvest of the Month",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "mango": {
+          "harvestMonths": [5, 6, 7, 8, 9],
+          "peakMonths": [6, 7, 8],
+          "notes": "Summer mangoes, multiple varieties"
+        },
+        "papaya": {
+          "harvestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+          "peakMonths": [5, 6, 7, 8, 9],
+          "notes": "Year-round, peak summer"
+        },
+        "banana": {
+          "harvestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+          "peakMonths": [6, 7, 8],
+          "notes": "Year-round, apple bananas popular"
+        },
+        "avocado": {
+          "harvestMonths": [9, 10, 11, 12, 1, 2, 3, 4],
+          "peakMonths": [11, 12, 1],
+          "notes": "Fall through spring"
+        },
+        "pineapple": {
+          "harvestMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+          "peakMonths": [4, 5, 6],
+          "notes": "Year-round, sweetest spring-summer"
+        },
+        "strawberry": {
+          "harvestMonths": [1, 2, 3, 4],
+          "peakMonths": [2, 3],
+          "notes": "Winter-spring berries"
+        },
+        "citrus_orange": {
+          "harvestMonths": [11, 12, 1, 2, 3, 4],
+          "peakMonths": [12, 1, 2],
+          "notes": "Winter citrus"
+        }
+      },
+      "regionalNotes": {
+        "bigIsland": "Diverse agriculture, largest production",
+        "maui": "Pineapple, upcountry vegetables",
+        "oahu": "Urban farms, specialty crops",
+        "kauai": "Year-round production"
+      }
+    },
+    "AK": {
+      "name": "Alaska",
+      "department": "Alaska Department of Natural Resources",
+      "sources": [
+        {
+          "url": "https://www.pickyourown.org/AKharvestcalendar.htm",
+          "type": "reference",
+          "title": "Alaska Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7],
+          "notes": "Short season, intense sun"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Wild and cultivated"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Late summer"
+        },
+        "apple": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9],
+          "notes": "Hardy varieties only"
+        },
+        "tomato": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8],
+          "notes": "Greenhouse and outdoor, short season"
+        }
+      },
+      "regionalNotes": {
+        "matnusuValley": "Main agricultural region, giant vegetables",
+        "kenaiPeninsula": "Diverse small farms",
+        "interior": "Very short season, greenhouses essential"
+      }
+    },
+    "CT": {
+      "name": "Connecticut",
+      "department": "Connecticut Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://portal.ct.gov/-/media/DOAG/Marketing/Crop-Calendar-Updated-2022.pdf",
+          "type": "official",
+          "title": "Connecticut Grown Crop Availability Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.snap4ct.org/ct-crop-calendar.html",
+          "type": "extension",
+          "title": "SNAP4CT Crop Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer through early fall"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Mid-August to mid-September"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "pear": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9],
+          "notes": "Late summer to fall"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Summer to early fall"
+        }
+      },
+      "regionalNotes": {
+        "litchfieldHills": "Apple orchards",
+        "centralCT": "Diverse production",
+        "coastalCT": "Earlier season"
+      }
+    },
+    "DE": {
+      "name": "Delaware",
+      "department": "Delaware Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://www.pickyourown.org/DEharvestcalendar.htm",
+          "type": "reference",
+          "title": "Delaware Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [6],
+          "notes": "Late May through June"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [7],
+          "notes": "Summer berries"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer stone fruit"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        },
+        "watermelon": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "sussexCounty": "Major agriculture, southern DE",
+        "newCastleCounty": "Urban farms, northern DE",
+        "delmarva": "Shared peninsula agriculture"
+      }
+    },
+    "MD": {
+      "name": "Maryland",
+      "department": "Maryland Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://marylandsbest.maryland.gov/wp-content/uploads/Maryland-Fruit-and-Vegetable-Seasonality-Charts.pdf",
+          "type": "official",
+          "title": "Maryland Fruit and Vegetable Seasonality Charts",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://msa.maryland.gov/msa/mdmanual/01glance/html/agripro.html",
+          "type": "official",
+          "title": "Calendar of Maryland Harvests",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [5, 6],
+          "notes": "May 15 through June 20"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer berries"
+        },
+        "peach": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer stone fruit"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Summer to early fall"
+        },
+        "sweet_corn": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer corn"
+        },
+        "watermelon": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer melons"
+        }
+      },
+      "regionalNotes": {
+        "westernMD": "Mountain climate, apples",
+        "centralMD": "Diverse production",
+        "easternShore": "Vegetables, earlier season"
+      }
+    },
+    "ME": {
+      "name": "Maine",
+      "department": "Maine Department of Agriculture, Conservation and Forestry",
+      "sources": [
+        {
+          "url": "https://www.gsfb.org/wp-content/uploads/2018/06/Season-Produce-Chart.pdf",
+          "type": "extension",
+          "title": "Seasonal Availability of Maine Fruits & Vegetables",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://mainefarmersmarkets.org/shoppers/whats-in-season/",
+          "type": "official",
+          "title": "Maine Federation of Farmers Markets What's In Season",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June strawberries"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Wild Maine blueberries, barrens harvest August"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [8],
+          "notes": "Summer berries"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest, storage through winter"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Mid-July through October"
+        }
+      },
+      "regionalNotes": {
+        "downeast": "Wild blueberry barrens",
+        "midcoast": "Diverse small farms",
+        "aroostook": "Potato country, short season"
+      }
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "department": "New Hampshire Department of Agriculture, Markets & Food",
+      "sources": [
+        {
+          "url": "https://www.agriculture.nh.gov/publications-forms/documents/peak-harvest-guide.pdf",
+          "type": "official",
+          "title": "NH Fruit and Vegetable Harvest Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://extension.unh.edu/resource/nh-harvest-season-chart",
+          "type": "extension",
+          "title": "UNH Extension NH Harvest Season Chart",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer through early fall"
+        },
+        "peach": {
+          "harvestMonths": [8, 9],
+          "peakMonths": [8],
+          "notes": "Late summer"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9, 10],
+          "peakMonths": [8, 9],
+          "notes": "Summer to early fall"
+        }
+      },
+      "regionalNotes": {
+        "seacoast": "Earlier season",
+        "lakesRegion": "Diverse production",
+        "whitesMountains": "Shorter season, apples"
+      }
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "department": "Rhode Island Department of Environmental Management - Agriculture",
+      "sources": [
+        {
+          "url": "https://www.pickyourown.org/RIharvestcalendar.htm",
+          "type": "reference",
+          "title": "Rhode Island Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.85
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [5, 6, 7],
+          "peakMonths": [6],
+          "notes": "Late May through July"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Mid-July through September"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [7, 8],
+          "notes": "Summer through early fall"
+        },
+        "peach": {
+          "harvestMonths": [8],
+          "peakMonths": [8],
+          "notes": "August peak"
+        },
+        "apple": {
+          "harvestMonths": [9, 10],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        }
+      },
+      "regionalNotes": {
+        "southCounty": "Diverse farms",
+        "northernRI": "Apple orchards",
+        "aquidneckIsland": "Specialty production"
+      }
+    },
+    "VT": {
+      "name": "Vermont",
+      "department": "Vermont Agency of Agriculture, Food and Markets",
+      "sources": [
+        {
+          "url": "https://vtfeed.org/sites/default/files/imce/uploads/Vermont%20Harvest%20Calendar.pdf",
+          "type": "official",
+          "title": "Vermont Harvest Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.95
+        },
+        {
+          "url": "https://www.vermontharvestofthemonth.org/",
+          "type": "official",
+          "title": "Vermont Harvest of the Month",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [6, 7],
+          "peakMonths": [6],
+          "notes": "June berries"
+        },
+        "blueberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "raspberry": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer through early fall"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Vermont apple orchards, cider production"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        }
+      },
+      "regionalNotes": {
+        "champlainValley": "Main agriculture region",
+        "northeastKingdom": "Shorter season",
+        "southernVT": "Apple orchards"
+      }
+    },
+    "WV": {
+      "name": "West Virginia",
+      "department": "West Virginia Department of Agriculture",
+      "sources": [
+        {
+          "url": "https://extension.wvu.edu/lawn-gardening-pests/gardening/wv-garden-guide",
+          "type": "extension",
+          "title": "WVU Extension West Virginia Garden Guide",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        },
+        {
+          "url": "https://extension.wvu.edu/files/d/99343661-dff6-4106-9b4d-cd6be816439f/wvu-extension-service-garden-calendar.pdf",
+          "type": "extension",
+          "title": "WVU Extension Service Garden Calendar",
+          "capturedDate": "2025-12-21",
+          "confidence": 0.90
+        }
+      ],
+      "products": {
+        "strawberry": {
+          "harvestMonths": [5, 6],
+          "peakMonths": [5, 6],
+          "notes": "Late spring"
+        },
+        "blueberry": {
+          "harvestMonths": [6, 7, 8],
+          "peakMonths": [7],
+          "notes": "Summer berries"
+        },
+        "blackberry": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer berries"
+        },
+        "peach": {
+          "harvestMonths": [7, 8],
+          "peakMonths": [7, 8],
+          "notes": "Summer stone fruit"
+        },
+        "apple": {
+          "harvestMonths": [8, 9, 10, 11],
+          "peakMonths": [9, 10],
+          "notes": "Fall harvest"
+        },
+        "tomato": {
+          "harvestMonths": [7, 8, 9],
+          "peakMonths": [8],
+          "notes": "Summer harvest"
+        }
+      },
+      "regionalNotes": {
+        "easternPanhandle": "Apple country",
+        "mountainAreas": "Shorter season",
+        "ohioValley": "Diverse production"
+      }
+    }
+  },
+  "researchQueue": [],
+  "notes": [
+    "Month numbers: 1=January, 12=December",
+    "harvestMonths: All months with some availability",
+    "peakMonths: Highest volume/quality period",
+    "Data should be updated annually as harvest patterns shift with climate",
+    "Regional notes capture important sub-state geographic distinctions"
+  ]
+}

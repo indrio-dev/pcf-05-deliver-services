@@ -1,0 +1,204 @@
+{
+  "calibrationDate": "2025-12-21",
+  "methodology": "Farm data (ground truth) used to calibrate GDD predictions",
+  "keyInsights": [
+    "Farm 'availability' includes storage, not just harvest window",
+    "GDD predicts HARVEST timing, not market availability",
+    "Florida has bimodal seasons for warm-season crops (fall + spring)",
+    "Cultivar staggering extends apparent window beyond single-cultivar GDD"
+  ],
+  "calibrationUpdates": {
+    "citrus_grapefruit_FL": {
+      "status": "VALIDATED",
+      "overlap": 100,
+      "currentGDD": {"maturity": 5500, "peak": 7100, "window": 4400},
+      "recommendedGDD": null,
+      "notes": "Perfect fit - no changes needed"
+    },
+    "citrus_orange_FL": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 50,
+      "farmMonths": [10,11,12,1,2,3,4,5],
+      "predictedMonths": [10,11,12,1],
+      "currentGDD": {"maturity": 5100, "peak": 6100, "window": 2000},
+      "recommendedGDD": {"maturity": 5100, "peak": 6100, "window": 3500},
+      "notes": "Extend window from 2000 to 3500 GDD to cover Oct-May"
+    },
+    "citrus_tangerine_FL": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 40,
+      "farmMonths": [11,12,1,2],
+      "predictedMonths": [10,11,12],
+      "currentGDD": {"maturity": 5300, "peak": 5700, "window": 900},
+      "recommendedGDD": {"maturity": 4800, "peak": 5700, "window": 1800},
+      "notes": "Earlier maturity, wider window to cover Nov-Feb"
+    },
+    "strawberry_FL": {
+      "status": "NEEDS_RECALIBRATION",
+      "overlap": 28.6,
+      "farmMonths": [12,1,2,3,4],
+      "predictedMonths": [10,11,12,1],
+      "currentGDD": {"maturity": 660, "peak": 1485, "window": 1400},
+      "recommendedGDD": {"maturity": 700, "peak": 1300, "window": 1700},
+      "notes": "Extend window through April, peak Feb-Mar"
+    },
+    "tomato_FL": {
+      "status": "BIMODAL_SEASON",
+      "overlap": 28.6,
+      "farmMonths": [11,12,1,2,3,4,5],
+      "predictedMonths": [1,2],
+      "issue": "Florida has FALL (Sept plant, Nov-Jan harvest) and SPRING (Jan plant, Mar-May harvest) seasons",
+      "solution": "Model requires TWO bloom/planting events per year for bimodal crops",
+      "currentGDD": {"maturity": 2600, "peak": 2800, "window": 800},
+      "recommendedGDD": {"maturity": 2400, "peak": 2600, "window": 2400},
+      "notes": "Wider window to capture full season, or split into fall/spring models"
+    },
+    "peach_GA": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 20,
+      "farmMonths": [5,6,7,8,9],
+      "predictedMonths": [6],
+      "currentGDD": {"maturity": 1800, "peak": 2000, "window": 400},
+      "recommendedGDD": {"maturity": 1600, "peak": 2000, "window": 1200},
+      "notes": "Multiple cultivars stagger May-Sept, earlier maturity start"
+    },
+    "apple_WA": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 25,
+      "farmMonths": [8,9,10,11],
+      "predictedMonths": [8],
+      "currentGDD": {"maturity": 2000, "peak": 2400, "window": 600},
+      "recommendedGDD": {"maturity": 1800, "peak": 2400, "window": 1400},
+      "notes": "Multiple cultivars stagger Aug-Nov"
+    },
+    "apple_MI": {
+      "status": "STORAGE_INCLUDED",
+      "overlap": 0,
+      "farmMonths": [1,2,3,4,5,9,10,11,12],
+      "predictedMonths": [7,8],
+      "issue": "Farm data includes STORAGE availability (Jan-May), not harvest",
+      "solution": "Separate harvest window from storage availability in model",
+      "trueHarvestMonths": [9,10,11],
+      "storageMonths": [1,2,3,4,5,12],
+      "currentGDD": {"maturity": 1900, "peak": 2200, "window": 500},
+      "recommendedGDD": {"maturity": 2000, "peak": 2400, "window": 800},
+      "notes": "Adjust bloom date and GDD for Sept-Nov harvest; model storage separately"
+    },
+    "apple_NY": {
+      "status": "STORAGE_INCLUDED",
+      "overlap": 22.2,
+      "farmMonths": [1,2,3,7,8,9,10,11,12],
+      "predictedMonths": [7,8],
+      "issue": "Same as MI - storage months included",
+      "trueHarvestMonths": [8,9,10,11],
+      "storageMonths": [1,2,3,12],
+      "currentGDD": {"maturity": 1900, "peak": 2200, "window": 500},
+      "recommendedGDD": {"maturity": 1800, "peak": 2200, "window": 1000},
+      "notes": "Earlier varieties start Aug, extends through Nov"
+    },
+    "cherry_WA": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 33.3,
+      "farmMonths": [6,7,8],
+      "predictedMonths": [6],
+      "currentGDD": {"maturity": 1200, "peak": 1400, "window": 300},
+      "recommendedGDD": {"maturity": 1100, "peak": 1400, "window": 600},
+      "notes": "Multiple cultivars from Rainier to Skeena extend Jun-Aug"
+    },
+    "cherry_MI": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 33.3,
+      "farmMonths": [6,7,8],
+      "predictedMonths": [6],
+      "currentGDD": {"maturity": 1000, "peak": 1200, "window": 200},
+      "recommendedGDD": {"maturity": 900, "peak": 1200, "window": 500},
+      "notes": "Extend window for tart + sweet cherry varieties"
+    },
+    "blueberry_MI": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 33.3,
+      "farmMonths": [7,8,9],
+      "predictedMonths": [7],
+      "currentGDD": {"maturity": 1000, "peak": 1200, "window": 400},
+      "recommendedGDD": {"maturity": 900, "peak": 1200, "window": 700},
+      "notes": "Multiple cultivar types extend Jul-Sept"
+    },
+    "blueberry_NJ": {
+      "status": "NEEDS_WIDER_WINDOW",
+      "overlap": 33.3,
+      "farmMonths": [6,7,8],
+      "predictedMonths": [6],
+      "currentGDD": {"maturity": 900, "peak": 1100, "window": 350},
+      "recommendedGDD": {"maturity": 850, "peak": 1100, "window": 600},
+      "notes": "Extend to cover Jun-Aug"
+    },
+    "pear_WA": {
+      "status": "CLOSE",
+      "overlap": 66.7,
+      "farmMonths": [8,9,10],
+      "predictedMonths": [8,9],
+      "currentGDD": {"maturity": 2400, "peak": 2700, "window": 800},
+      "recommendedGDD": {"maturity": 2200, "peak": 2700, "window": 1000},
+      "notes": "Minor adjustment - extend into Oct"
+    },
+    "pear_OR": {
+      "status": "CLOSE",
+      "overlap": 66.7,
+      "farmMonths": [8,9,10],
+      "predictedMonths": [8,9],
+      "currentGDD": {"maturity": 2400, "peak": 2700, "window": 800},
+      "recommendedGDD": {"maturity": 2200, "peak": 2700, "window": 1000},
+      "notes": "Same as WA - Hood River extends through Oct"
+    }
+  },
+  "modelImprovements": {
+    "storageTracking": {
+      "description": "Separate harvest window from market availability",
+      "crops": ["apple", "pear", "citrus"],
+      "implementation": "Add storage_months field to product model"
+    },
+    "bimodalSeasons": {
+      "description": "Handle crops with multiple planting seasons per year",
+      "crops": ["tomato", "strawberry", "lettuce"],
+      "regions": ["FL", "CA", "TX"],
+      "implementation": "Allow multiple bloom_date entries per crop×region"
+    },
+    "cultivarStaggering": {
+      "description": "Account for multiple cultivars extending harvest window",
+      "solution": "Wider GDD windows OR cultivar-specific GDD targets",
+      "priority": "High for stone fruit (peach, cherry)"
+    },
+    "weatherIntegration": {
+      "description": "Replace estimated GDD rates with actual weather data",
+      "sources": ["Open-Meteo API", "NOAA Climate Data"],
+      "benefit": "Actual vs estimated GDD improves prediction accuracy"
+    }
+  },
+  "summaryMetrics": {
+    "beforeCalibration": {
+      "avgOverlap": 38.7,
+      "wellCalibrated": 1,
+      "needsWork": 14
+    },
+    "afterCalibration": {
+      "calibrationDate": "2025-12-21",
+      "avgOverlap": 51.3,
+      "wellCalibrated": 3,
+      "needsCalibration": 7,
+      "poorFit": 5,
+      "improvement": "+12.6% overlap",
+      "notes": "Storage vs harvest distinction explains remaining poor fits (apple MI/NY)"
+    },
+    "expectedWithStorageModel": {
+      "avgOverlap": 75,
+      "wellCalibrated": 12,
+      "needsWork": 3,
+      "notes": "Storage model will extend availability beyond harvest window"
+    }
+  },
+  "limitations": {
+    "estimatedVsActualGDD": "Using estimated monthly GDD rates instead of actual weather data",
+    "maxTempCapping": "Modified 86/50 method (max_temp) not applied to estimated rates",
+    "resolution": "Integrate real weather data (Open-Meteo, NOAA) to apply crop-specific temperature caps"
+  }
+}

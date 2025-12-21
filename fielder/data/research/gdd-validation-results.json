@@ -1,0 +1,374 @@
+{
+  "validationDate": "2025-12-21",
+  "totalCombinations": 15,
+  "averageOverlap": 51.3,
+  "wellCalibrated": 3,
+  "needsCalibration": 7,
+  "poorFit": 5,
+  "results": [
+    {
+      "crop": "citrus_orange",
+      "state": "FL",
+      "bloom_date": "2025-03-15",
+      "gdd_to_maturity": 5100,
+      "gdd_to_peak": 6100,
+      "days_to_maturity": 206,
+      "days_to_peak": 257,
+      "predicted_months": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12
+      ],
+      "actual_farm_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        11,
+        12
+      ],
+      "overlap_pct": 87.5,
+      "farm_count": 2,
+      "status": "GOOD"
+    },
+    {
+      "crop": "citrus_grapefruit",
+      "state": "FL",
+      "bloom_date": "2025-03-01",
+      "gdd_to_maturity": 5500,
+      "gdd_to_peak": 7100,
+      "days_to_maturity": 226,
+      "days_to_peak": 318,
+      "predicted_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        11,
+        12
+      ],
+      "actual_farm_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        11,
+        12
+      ],
+      "overlap_pct": 100.0,
+      "farm_count": 1,
+      "status": "GOOD"
+    },
+    {
+      "crop": "citrus_tangerine",
+      "state": "FL",
+      "bloom_date": "2025-03-20",
+      "gdd_to_maturity": 4800,
+      "gdd_to_peak": 5700,
+      "days_to_maturity": 193,
+      "days_to_peak": 235,
+      "predicted_months": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "actual_farm_months": [
+        1,
+        2,
+        11,
+        12
+      ],
+      "overlap_pct": 33.3,
+      "farm_count": 1,
+      "status": "POOR"
+    },
+    {
+      "crop": "strawberry",
+      "state": "FL",
+      "bloom_date": "2025-10-01",
+      "gdd_to_maturity": 700,
+      "gdd_to_peak": 1300,
+      "days_to_maturity": 31,
+      "days_to_peak": 66,
+      "predicted_months": [
+        1,
+        2,
+        11,
+        12
+      ],
+      "actual_farm_months": [
+        1,
+        2,
+        3,
+        4,
+        12
+      ],
+      "overlap_pct": 50.0,
+      "farm_count": 1,
+      "status": "NEEDS_CALIBRATION"
+    },
+    {
+      "crop": "tomato",
+      "state": "FL",
+      "bloom_date": "2025-09-01",
+      "gdd_to_maturity": 2400,
+      "gdd_to_peak": 2600,
+      "days_to_maturity": 119,
+      "days_to_peak": 132,
+      "predicted_months": [
+        1,
+        2,
+        3,
+        4,
+        12
+      ],
+      "actual_farm_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        11,
+        12
+      ],
+      "overlap_pct": 71.4,
+      "farm_count": 1,
+      "status": "GOOD"
+    },
+    {
+      "crop": "peach",
+      "state": "GA",
+      "bloom_date": "2025-03-15",
+      "gdd_to_maturity": 1600,
+      "gdd_to_peak": 2000,
+      "days_to_maturity": 78,
+      "days_to_peak": 92,
+      "predicted_months": [
+        6,
+        7
+      ],
+      "actual_farm_months": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "overlap_pct": 40.0,
+      "farm_count": 3,
+      "status": "NEEDS_CALIBRATION"
+    },
+    {
+      "crop": "apple",
+      "state": "WA",
+      "bloom_date": "2025-04-20",
+      "gdd_to_maturity": 1800,
+      "gdd_to_peak": 2400,
+      "days_to_maturity": 95,
+      "days_to_peak": 121,
+      "predicted_months": [
+        7,
+        8,
+        9
+      ],
+      "actual_farm_months": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "overlap_pct": 40.0,
+      "farm_count": 3,
+      "status": "NEEDS_CALIBRATION"
+    },
+    {
+      "crop": "apple",
+      "state": "MI",
+      "bloom_date": "2025-05-01",
+      "gdd_to_maturity": 2000,
+      "gdd_to_peak": 2400,
+      "days_to_maturity": 92,
+      "days_to_peak": 108,
+      "predicted_months": [
+        8
+      ],
+      "actual_farm_months": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12
+      ],
+      "overlap_pct": 0.0,
+      "farm_count": 9,
+      "status": "POOR"
+    },
+    {
+      "crop": "apple",
+      "state": "NY",
+      "bloom_date": "2025-05-01",
+      "gdd_to_maturity": 1800,
+      "gdd_to_peak": 2200,
+      "days_to_maturity": 84,
+      "days_to_peak": 100,
+      "predicted_months": [
+        7,
+        8
+      ],
+      "actual_farm_months": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "overlap_pct": 22.2,
+      "farm_count": 5,
+      "status": "POOR"
+    },
+    {
+      "crop": "cherry",
+      "state": "WA",
+      "bloom_date": "2025-04-10",
+      "gdd_to_maturity": 1100,
+      "gdd_to_peak": 1400,
+      "days_to_maturity": 69,
+      "days_to_peak": 84,
+      "predicted_months": [
+        6,
+        7
+      ],
+      "actual_farm_months": [
+        6,
+        7,
+        8
+      ],
+      "overlap_pct": 66.7,
+      "farm_count": 3,
+      "status": "NEEDS_CALIBRATION"
+    },
+    {
+      "crop": "cherry",
+      "state": "MI",
+      "bloom_date": "2025-05-01",
+      "gdd_to_maturity": 900,
+      "gdd_to_peak": 1200,
+      "days_to_maturity": 46,
+      "days_to_peak": 60,
+      "predicted_months": [
+        6,
+        7
+      ],
+      "actual_farm_months": [
+        6,
+        7,
+        8
+      ],
+      "overlap_pct": 66.7,
+      "farm_count": 9,
+      "status": "NEEDS_CALIBRATION"
+    },
+    {
+      "crop": "blueberry",
+      "state": "MI",
+      "bloom_date": "2025-05-15",
+      "gdd_to_maturity": 900,
+      "gdd_to_peak": 1200,
+      "days_to_maturity": 43,
+      "days_to_peak": 56,
+      "predicted_months": [
+        6,
+        7
+      ],
+      "actual_farm_months": [
+        7,
+        8,
+        9
+      ],
+      "overlap_pct": 25.0,
+      "farm_count": 4,
+      "status": "POOR"
+    },
+    {
+      "crop": "blueberry",
+      "state": "NJ",
+      "bloom_date": "2025-05-01",
+      "gdd_to_maturity": 850,
+      "gdd_to_peak": 1100,
+      "days_to_maturity": 40,
+      "days_to_peak": 50,
+      "predicted_months": [
+        6
+      ],
+      "actual_farm_months": [
+        6,
+        7,
+        8
+      ],
+      "overlap_pct": 33.3,
+      "farm_count": 5,
+      "status": "POOR"
+    },
+    {
+      "crop": "pear",
+      "state": "WA",
+      "bloom_date": "2025-04-05",
+      "gdd_to_maturity": 2200,
+      "gdd_to_peak": 2700,
+      "days_to_maturity": 120,
+      "days_to_peak": 141,
+      "predicted_months": [
+        8,
+        9
+      ],
+      "actual_farm_months": [
+        8,
+        9,
+        10
+      ],
+      "overlap_pct": 66.7,
+      "farm_count": 2,
+      "status": "NEEDS_CALIBRATION"
+    },
+    {
+      "crop": "pear",
+      "state": "OR",
+      "bloom_date": "2025-04-05",
+      "gdd_to_maturity": 2200,
+      "gdd_to_peak": 2700,
+      "days_to_maturity": 120,
+      "days_to_peak": 141,
+      "predicted_months": [
+        8,
+        9
+      ],
+      "actual_farm_months": [
+        8,
+        9,
+        10
+      ],
+      "overlap_pct": 66.7,
+      "farm_count": 6,
+      "status": "NEEDS_CALIBRATION"
+    }
+  ]
+}

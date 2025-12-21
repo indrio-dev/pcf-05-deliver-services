@@ -1,0 +1,7065 @@
+{
+  "collectionDate": "2025-12-20",
+  "source": "Food Forest Plant Options",
+  "description": "Perennial crops organized by permaculture layers with USDA zone compatibility",
+  "totalPlants": 377,
+  "plants": [
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Acai Palm",
+      "scientificName": "Euterpe oleracea",
+      "growingGuide": "https://www.phytotheca.com/phytotheca/acai-palm/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Allspice Tree",
+      "scientificName": "Pimenta dioica",
+      "growingGuide": "https://megsediblelandscapes.com/how-to-grow-allspice/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "American Redbud",
+      "scientificName": "Cercis canadensis",
+      "growingGuide": "https://www.thespruce.com/key-facts-about-growing-the-eastern-redbud-bush-4122417",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Apple (Full sized)",
+      "scientificName": "Malus domestica",
+      "growingGuide": "https://www.almanac.com/plant/apples",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Apricot (Full sized)",
+      "scientificName": "Prunus armeniaca",
+      "growingGuide": "https://www.rhs.org.uk/fruit/apricots/grow-your-own",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Avocado Tree",
+      "scientificName": "Persea americana",
+      "growingGuide": "https://www.thespruce.com/avocado-tree-growing-guide-5214445",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Bamboo (Moso)",
+      "scientificName": "Phyllostachys edulis",
+      "growingGuide": "https://www.picturethisai.com/care/Phyllostachys_edulis.html",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Banana Tree",
+      "scientificName": "Musa spp.",
+      "growingGuide": "https://www.thespruce.com/banana-tree-growing-profile-3269353",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Bay Laural Tree",
+      "scientificName": "Laurus nobilis",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-your-own-bay-laurel-tree-1402602",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Beech Tree",
+      "scientificName": "Fagus grandifolia",
+      "growingGuide": "https://www.epicgardening.com/american-beech-tree/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Birch Tree",
+      "scientificName": "Betula",
+      "growingGuide": "https://www.hgtv.com/outdoors/gardens/planting-and-caring-for-birch-trees",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Black Cherry Tree",
+      "scientificName": "Prunus serotina",
+      "growingGuide": "https://www.planetnatural.com/black-cherry-tree/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Black Walnut Tree",
+      "scientificName": "Juglans nigra",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/nut-trees/black-walnut/planting-black-walnut-trees.htm",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Brazil Nut Tree",
+      "scientificName": "Bertholletia excelsa",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/nut-trees/brazil-nut/how-to-grow-brazil-nut-trees.htm",
+      "zones": [
+        "11A",
+        "11B",
+        "12A",
+        "12B",
+        "13A",
+        "13B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Breadfruit Tree",
+      "scientificName": "Artocarpus altilis",
+      "growingGuide": "https://morningchores.com/growing-breadfruit-tree/",
+      "zones": [
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Butternut Tree",
+      "scientificName": "Juglans cinerea",
+      "growingGuide": "https://www.thespruce.com/butternut-growing-profile-3269254",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Carob Tree",
+      "scientificName": "Ceratonia siliqua",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/trees/carob/carob-tree-care.htm",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Cashew Tree",
+      "scientificName": "Anacardium occidentale",
+      "growingGuide": "https://gardenandhappy.com/growing-cashew-tree/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Cherry (Full sized)",
+      "scientificName": "Prunus avium",
+      "growingGuide": "https://www.almanac.com/plant/cherries",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Chestnut Tree",
+      "scientificName": "Castanea dentata",
+      "growingGuide": "https://greenupside.com/where-can-you-grow-chestnut-trees/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Cinnamon tree",
+      "scientificName": "Cinnamomun zeylanicum",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/trees/ceylon-cinnamon/ceylon-cinnamon-care.htm",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Cocoa Tree",
+      "scientificName": "Theobroma cacao",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/fruits/coconut/growing-coconut-palm-trees.htm",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Coconut Palm",
+      "scientificName": "Cocos nucifera",
+      "growingGuide": "https://www.planetnatural.com/coconut-palm/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Date Palm Tree",
+      "scientificName": "Phoenix dactylifera",
+      "growingGuide": "https://www.planetnatural.com/date-palm/",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Durian Tree",
+      "scientificName": "Durio zibethinus",
+      "growingGuide": "https://www.wikihow.com/Plant-Durian-Seeds",
+      "zones": []
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "English Walnut",
+      "scientificName": "Juglans regia",
+      "growingGuide": "https://www.thespruce.com/english-walnut-growing-guide-5210871",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Eucalyptus Tree",
+      "scientificName": "Eucalyptus cinerea",
+      "growingGuide": "https://www.southernliving.com/eucalyptus-plant-7567169",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Fig Tree",
+      "scientificName": "Ficus carica",
+      "growingGuide": "https://www.almanac.com/plant/figs",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Finger Lime Tree",
+      "scientificName": "Citrus australasica",
+      "growingGuide": "https://aussiegreenthumb.com/finger-limes/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Ginko Tree",
+      "scientificName": "Gingko biloba",
+      "growingGuide": "https://www.thespruce.com/ginkgo-biloba-trees-fall-foliage-champ-4119900",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Gum Arabic Tree",
+      "scientificName": "Acacia arabica\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+      "growingGuide": "https://www.picturethisai.com/care/Vachellia_nilotica.html",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Heartnuts",
+      "scientificName": "Juglans ailantifolia",
+      "growingGuide": "https://morningchores.com/growing-heartnut-trees/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Hickory Tree",
+      "scientificName": "Carya spp",
+      "growingGuide": "https://gardenerspath.com/plants/nut-trees/grow-hickory-trees/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Honey Locust Tree",
+      "scientificName": "Gleditsia triacanthos",
+      "growingGuide": "https://extension.usu.edu/forestry/files/resources/plant-and-take-care-of-honeylocust-tree.pdf",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Honey Mesquite Tree",
+      "scientificName": "Prosopis glandulosa",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/trees/mesquite/honey-mesquite-information.htm",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Horse Chestnut Tree",
+      "scientificName": "Aesculus hippocastanum",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/trees/horse-chestnut/how-to-grow-a-horse-chestnut-tree.htm",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Ice Cream Bean Tree",
+      "scientificName": "Inga edulis",
+      "growingGuide": "https://www.epicgardening.com/ice-cream-bean/",
+      "zones": [
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Jackfruit Tree",
+      "scientificName": "Artocarpus heterophyllus",
+      "growingGuide": "https://www.thespruce.com/grow-jackfruit-trees-1902445",
+      "zones": [
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Jujube Tree",
+      "scientificName": "Ziziphus jujuba",
+      "growingGuide": "https://garden.org/learn/howto/grow/jujubes/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Kentucky Coffeetree",
+      "scientificName": "Gymnocladus dioicus",
+      "growingGuide": "https://www.thespruce.com/kentucky-coffee-tree-plant-profile-5199832",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Kola Nut Tree",
+      "scientificName": "Cola nitida",
+      "growingGuide": "https://urbantropicals.com/product/caffeine-kola-nut-tree-cola-nitida/?srsltid=AfmBOooNZjzHI6ZEZ8GErOmw9It9FiZ8VjEBv3ZkHW2tFkX6hAFCvBm8",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Korean Stone Pine",
+      "scientificName": "Pinus koraiensis",
+      "growingGuide": "https://www.picturethisai.com/care/Pinus_koraiensis.html",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Lemon Tree",
+      "scientificName": "Citrus limon",
+      "growingGuide": "https://www.almanac.com/plant/how-grow-lemon-trees-complete-guide",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Lime Tree",
+      "scientificName": "Citrus \u00d7 latifolia",
+      "growingGuide": "https://www.thespruce.com/lime-tree-care-guide-7554268",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Linden Trees",
+      "scientificName": "Tilia sp.",
+      "growingGuide": "https://www.iscapeit.com/blog/plant-spotlight-linden-tree",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Longan Tree",
+      "scientificName": "Dimocarpus longan",
+      "growingGuide": "https://morningchores.com/growing-longans/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Lychee Tree",
+      "scientificName": "Litchi chinensis",
+      "growingGuide": "https://www.thespruce.com/grow-lychee-inside-1902624",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Macadamia Nut Tree",
+      "scientificName": "Macadamia spp",
+      "growingGuide": "https://www.thespruce.com/macadamia-nut-tree-growing-guide-7486966",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Mangosteen tree",
+      "scientificName": "Garcinia mangostana",
+      "growingGuide": "https://morningchores.com/growing-mangosteen/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Mango Tree",
+      "scientificName": "Mangifera indica",
+      "growingGuide": "https://www.plantfoodathome.com/how-to-grow-a-mango-tree/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Mayhaw",
+      "scientificName": "Crataegus ser. Aestivales",
+      "growingGuide": "https://www.nrcs.usda.gov/plantmaterials/etpmcbr13660.pdf",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Mulberry (Red) Tree ",
+      "scientificName": "Morus rubra",
+      "growingGuide": "https://www.thespruce.com/growing-red-mulberry-trees-5101681",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Nectarine Tree (Full sized)",
+      "scientificName": "Prunus persica var. nucipersica",
+      "growingGuide": "https://morningchores.com/growing-nectarine-trees/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Nutmeg Tree",
+      "scientificName": "Myristica fragrans",
+      "growingGuide": "https://www.thespruce.com/nutmeg-tree-myristica-fragrans-guide-5120676",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Olive Tree",
+      "scientificName": "Olea europaea",
+      "growingGuide": "https://www.gardendesign.com/trees/olive.html",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Orange Tree",
+      "scientificName": "Citrus sinensis",
+      "growingGuide": "https://morningchores.com/growing-orange-tree/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Papaya tree",
+      "scientificName": "Carica papaya L.",
+      "growingGuide": "https://balconygardenweb.com/how-to-grow-papaya-growing-papaya-tree-care/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "PawPaw Tree",
+      "scientificName": "Asimina triloba",
+      "growingGuide": "https://gardenerspath.com/plants/fruit-trees/grow-pawpaw/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Peach (Full sized)",
+      "scientificName": "Prunus persica var. nucipersica",
+      "growingGuide": "https://morningchores.com/growing-peaches/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Pear (Full sized)",
+      "scientificName": "Pyrus",
+      "growingGuide": "https://morningchores.com/growing-pears/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Pecan Tree",
+      "scientificName": "Carya illinoinensis",
+      "growingGuide": "https://www.thespruce.com/pecan-tree-growing-guide-5195532",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Persimmon (American) ",
+      "scientificName": "Diospyros virginiana",
+      "growingGuide": "https://gardenerspath.com/plants/fruit-trees/grow-american-persimmon/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Persimmon (Asian)",
+      "scientificName": "Diospyros kaki",
+      "growingGuide": "https://www.southernliving.com/garden/grow-oriental-persimmon-tree",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Pistachio Tree",
+      "scientificName": "Pistacia vera ",
+      "growingGuide": "https://www.thespruce.com/growing-pistachio-trees-5093484",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Plum Tree",
+      "scientificName": "Prunus spp.",
+      "growingGuide": "https://www.almanac.com/plant/plums",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Quandong Tree",
+      "scientificName": "Santalum acuminatum",
+      "growingGuide": "https://8billiontrees.com/trees/quandong-tree/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Red Oak Tree",
+      "scientificName": "Quercus rubra",
+      "growingGuide": "https://www.thespruce.com/red-oak-growing-guide-5195395",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Rubber Tree (Indian)",
+      "scientificName": "Ficus elastica",
+      "growingGuide": "https://gardenerspath.com/plants/houseplants/grow-rubber-tree/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Rubber Tree (Para)",
+      "scientificName": "Hevea brasiliensis",
+      "growingGuide": "https://earthone.io/plant/hevea%20brasiliensis?srsltid=AfmBOorsiqxJo8S_jG9bXJWNaRbEx5J9dmd-caggqqOBoQ6xRjiOsmoc",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Russian Olive Tree",
+      "scientificName": "Elaeagnus angustifolia",
+      "growingGuide": "https://www.picturethisai.com/care/Elaeagnus_angustifolia.html",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Sassafras Tree",
+      "scientificName": " Sassafras albium",
+      "growingGuide": "https://www.thespruce.com/sassafras-tree-plant-profile-5199214",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Shea Nut Plant",
+      "scientificName": "Vitellaria paradoxa",
+      "growingGuide": "https://floratalk.com/planting-shea-nut-see-how-to-plant-shea-nut/",
+      "zones": []
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Starfruit Tree",
+      "scientificName": "Carambola",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/fruits/starfruit/starfruit-tree-growing.htm",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Soapnut Tree",
+      "scientificName": "Sapindus spp.",
+      "growingGuide": "https://morningchores.com/growing-soapnuts/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Stone Pine Tree",
+      "scientificName": "Pinus pinea",
+      "growingGuide": "https://www.thespruce.com/italian-stone-pine-growing-tips-3269335",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Sugar Maple Tree",
+      "scientificName": "Acer saccharum",
+      "growingGuide": "https://www.thespruce.com/sugar-maple-growing-profile-3269324",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Tamarind Tree",
+      "scientificName": "Tamarindus indica",
+      "growingGuide": "https://fairchildgarden.org/visit/tamarind/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Tonka Bean",
+      "scientificName": "Dipteryx odorata",
+      "growingGuide": "https://www.inaturalist.org/taxa/479410-Dipteryx-odorata",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "White Oak Tree",
+      "scientificName": "Quercus alba",
+      "growingGuide": "https://www.thespruce.com/white-oak-tree-guide-5176466",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Willow Tree",
+      "scientificName": "Salix spp",
+      "growingGuide": "https://gardenerspath.com/plants/landscape-trees/grow-willow/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Yangmei Tree",
+      "scientificName": "Myrica rubra",
+      "growingGuide": "https://www.edulisdesigns.com/blog/yangmei",
+      "zones": []
+    },
+    {
+      "layer": "Canopy Layer",
+      "commonName": "Yerba Mate",
+      "scientificName": "Ilex paraguariensis",
+      "growingGuide": "https://www.thespruce.com/yerba-mate-plant-profile-5071184",
+      "zones": []
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Acerola Tree",
+      "scientificName": "Malpighia emarginata",
+      "growingGuide": "https://www.epicgardening.com/barbados-cherry/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Agave",
+      "scientificName": "Agave",
+      "growingGuide": "https://www.thespruce.com/agave-tips-for-growing-this-easy-succulent-1402874",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Almond Tree",
+      "scientificName": "Prunus dulcis",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-almond-trees-4779869",
+      "zones": [
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Apple Tree (Semi Dwarf - Dwarf)",
+      "scientificName": "Malus spp",
+      "growingGuide": "https://www.weekand.com/home-garden/article/planting-requirements-semidwarf-apple-trees-18057008.php",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Apricot Tree (Semi Dwarf - Dwarf)",
+      "scientificName": "Prunus armeniaca",
+      "growingGuide": "https://rennieorchards.com/semi-dwarf-apricot-trees/https://rennieorchards.com/semi-dwarf-apricot-trees/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Autumn Olive",
+      "scientificName": "Elaeagnus umbellata",
+      "growingGuide": "https://www.westonnurseries.com/autumn-olive-a-challenging-species/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Boldo",
+      "scientificName": "Peumus boldus",
+      "growingGuide": "https://www.agrownet.com/contents/en-us/d341616_Boldo_cultivation_at_home.html",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Buffalo Berry",
+      "scientificName": "Shepherdia argentea",
+      "growingGuide": "https://nativefoodsnursery.com/buffaloberry/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Cassava",
+      "scientificName": "Manihot esculenta",
+      "growingGuide": "https://www.thespruce.com/growing-cassava-plants-5087849",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Cherry Tree (Semi Dwarf - Dwarf)",
+      "scientificName": "Prunus spp.",
+      "growingGuide": "https://www.weekand.com/home-garden/article/plant-semi-dwarf-cherry-tree-18058740.php",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Clove Tree",
+      "scientificName": "Syzygium aromaticum",
+      "growingGuide": "https://www.thespruce.com/growing-clove-trees-5089231",
+      "zones": [
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Coffee Tree (Robusta)",
+      "scientificName": "Coffea canephora ",
+      "growingGuide": "https://greeninguganda.com/images/product/coffee/robusta.pdf",
+      "zones": [
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Cornelian Cherry",
+      "scientificName": "Cornus mas",
+      "growingGuide": "https://practicalselfreliance.com/cornelian-cherry/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Curry Tree",
+      "scientificName": "Murraya koenigii",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-and-care-for-curry-trees-5075352",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Dragonfruit",
+      "scientificName": "Hylocereus undatus",
+      "growingGuide": "https://www.thespruce.com/growing-dragonfruit-plants-5086867",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Garcinia Tree",
+      "scientificName": "Garcinia subelliptica",
+      "growingGuide": "https://www.growplants.org/growing/garcinia-intermedia",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B",
+        "13A",
+        "13B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Guava Tree",
+      "scientificName": "Psidium guajava",
+      "growingGuide": "https://www.epicgardening.com/guava-tree/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Hazlenut Tree",
+      "scientificName": "Corylus avellana",
+      "growingGuide": "https://www.thespruce.com/hazelnut-tree-growing-guide-5196351",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Loquat Trees",
+      "scientificName": "Eriobotrya japonica",
+      "growingGuide": "https://www.thespruce.com/loquat-tree-plant-profile-5091599",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Manzanita (common)",
+      "scientificName": "Arctostaphylos manzanita",
+      "growingGuide": "https://www.epicgardening.com/manzanita/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Medlar",
+      "scientificName": "Mespilus germanica",
+      "growingGuide": "https://www.rhs.org.uk/fruit/medlars/grow-your-own",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Miracle Berry Plant",
+      "scientificName": "Synsepalum dulcificum",
+      "growingGuide": "https://www.gardeningknowhow.com/houseplants/miracle-berry/miracle-fruit-plant.htm",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Mountain Pepper",
+      "scientificName": "Tasmannia lanceolata",
+      "growingGuide": "https://www.bunnings.com.au/diy-advice/garden/planting-and-growing/how-to-grow-mountain-pepper?srsltid=AfmBOor8rKEXWpBerrsaudmW94qTdm9lu6qJw9kOLKtdsnwha8jsvqmN",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Nannyberry",
+      "scientificName": "Viburnum lentago",
+      "growingGuide": "https://grownative.org/native_plants/nannyberry-viburnum/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Nectarine Tree (Semi Dwarf - Dwarf)",
+      "scientificName": "Prunus persica var. nucipersica",
+      "growingGuide": "https://fruittreehub.com/how-to-plant-dwarf-nectarine-tree/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Peach Tree (Semi Dwarf - Dwarf)",
+      "scientificName": "Prunus persica",
+      "growingGuide": "https://myperfectplants.com/blogs/grow-guides/peach-planting-guide?srsltid=AfmBOorLN4jWRYJznlafxOOGuEZOB21Gs7IobqHvc5YuJgmMEe7sqBOP",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Pear Tree (Semi Dwarf - Dwarf)",
+      "scientificName": "Pyrus communis",
+      "growingGuide": "https://www.growveg.com/plants/us-and-canada/how-to-grow-dwarf-pear-trees/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Plantain Tree",
+      "scientificName": "Musa paradisiaca",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/fruits/banana/plantain-plant-care.htm",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Plum (American)",
+      "scientificName": "Prunus Americana ",
+      "growingGuide": "https://minnetonkaorchards.com/american-plum/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Plum Trees",
+      "scientificName": "Prunus spp.",
+      "growingGuide": "https://myperfectplants.com/blogs/grow-guides/plum-tree-grow-guide?srsltid=AfmBOooPAIsspkMOBMH19xYJh6lZlEbYhLbgn-TkFQTbrq7ueNiuo_j-",
+      "zones": [
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Pomegranate",
+      "scientificName": "Punica granatum",
+      "growingGuide": "https://www.thespruce.com/pomegranate-growing-tips-3269232",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Quince Tree",
+      "scientificName": "Cydonia oblonga",
+      "growingGuide": "https://www.thespruce.com/growing-quince-trees-5114042",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Rose Apple Tree",
+      "scientificName": "Syzygium jambos",
+      "growingGuide": "https://www.growables.org/information/TropicalFruit/RoseAppleCRFG.htm",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Siberian pea-shrub",
+      "scientificName": "Caragana arborescens",
+      "growingGuide": "https://gardeninglovy.com/pea-tree/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Star Anise Tree",
+      "scientificName": "Illicium verum",
+      "growingGuide": "https://www.epicgardening.com/star-anise-plant/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Strawberry Tree",
+      "scientificName": "Arbutus unedo ",
+      "growingGuide": "https://www.thespruce.com/strawberry-tree-arbutus-unedo-3269240",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Sugar Apple",
+      "scientificName": "Annona squamosa L",
+      "growingGuide": "https://edis.ifas.ufl.edu/publication/MG330",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Sumac",
+      "scientificName": "Rhus",
+      "growingGuide": "https://www.bhg.com/gardening/plant-dictionary/shrub/sumac/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Szechuan Pepper Tree",
+      "scientificName": "Zanthoxylum spp",
+      "growingGuide": "https://www.epicgardening.com/sichuan-pepper-plant/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Witch Hazel",
+      "scientificName": "Hamamelis virginiana",
+      "growingGuide": "https://www.thespruce.com/witch-hazel-growing-guide-5191457",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Understory Layer",
+      "commonName": "Yaupon Holly",
+      "scientificName": "Ilex vomitoria",
+      "growingGuide": "https://www.thespruce.com/yaupon-holly-growing-profile-3269333",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Aloe Vera Plant",
+      "scientificName": "Aloe vera",
+      "growingGuide": "https://gardenerspath.com/plants/succulents/grow-aloe-outdoors/",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Aronia Berry",
+      "scientificName": "Aronia melanocarpa",
+      "growingGuide": "https://raintreenursery.com/pages/growing-fruit-trees-aronia?srsltid=AfmBOorytjjSmH1xfmbnNI01piXiiIHOPnvUvT8k76nXwPmBNebiuDHa",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Banana Yucta",
+      "scientificName": "Yucca baccata",
+      "growingGuide": "https://www.thespruce.com/growing-yucca-baccata-5079092",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Banana (Dwarf)",
+      "scientificName": "Musa acuminata",
+      "growingGuide": "https://bloomscape.com/plant-care-guide/dwarf-banana-tree/?srsltid=AfmBOopjg7rnSKkK7_WaYSsRj8fo5ne_WRKEIslyfqdopCNYgURhbBbk",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Beach Plum",
+      "scientificName": "Prunus maritima",
+      "growingGuide": "https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_prma2.pdf",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Bilberry",
+      "scientificName": "Vaccinium myrtillus",
+      "growingGuide": "https://plantura.garden/uk/fruits/blueberries/bilberry",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Blackberry",
+      "scientificName": "Rubus fruticosus",
+      "growingGuide": "https://www.almanac.com/plant/blackberries",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Blueberry",
+      "scientificName": "Vaccinium caesariense",
+      "growingGuide": "https://www.gurneys.com/pages/growing-blueberry-plants?srsltid=AfmBOorFxJ_OsTuZ_D5CqGlaXHOMnKjWavdgb5CibV5oMMaxwxXBjU78",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Boysenberry",
+      "scientificName": "Rubus ursinus \u00d7 R. idaeus",
+      "growingGuide": "https://gardenerspath.com/plants/fruit/grow-boysenberry/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Bush Cherry",
+      "scientificName": "Prunus tomentosa",
+      "growingGuide": "https://www.foodgardenlife.com/learn/grow-nanking-cherry",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Caper Bush",
+      "scientificName": "Capparis spinosa",
+      "growingGuide": "https://www.thespruce.com/caper-bush-care-and-growing-guide-5073162",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Coffee (Arabian)",
+      "scientificName": "Coffea arabica",
+      "growingGuide": "https://www.thespruce.com/grow-coffee-plants-1902614",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Cotton (Tree)",
+      "scientificName": "Gossypium arboreum",
+      "growingGuide": "https://pfaf.org/user/Plant.aspx?LatinName=Gossypium+arboreum",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Cranberry (American)",
+      "scientificName": "Viburnum opulus var. americanum",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/shrubs/viburnum/highbush-cranberry-plants.htm",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Creosote Bush",
+      "scientificName": "Zygophyllaceae",
+      "growingGuide": "https://gardenoracle.com/images/larrea-tridentata.html",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Current (Black)",
+      "scientificName": "Ribes nigrum",
+      "growingGuide": "https://morningchores.com/growing-black-currants/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Current (Red)",
+      "scientificName": "Ribes rubrum",
+      "growingGuide": "https://www.thespruce.com/red-currant-growing-guide-5201212",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Elderberry",
+      "scientificName": "Sambucus spp.",
+      "growingGuide": "https://www.almanac.com/plant/elderberries",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Goji Berry",
+      "scientificName": "Lycium barbarum",
+      "growingGuide": "https://www.almanac.com/plant/goji-berries",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Gooseberry",
+      "scientificName": "Ribes spp.",
+      "growingGuide": "https://morningchores.com/growing-gooseberries/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Goumi Berry",
+      "scientificName": "Elaeagnus multiflora",
+      "growingGuide": "https://www.phillyorchards.org/2021/06/07/spotlight-on-goumi-berry-nitrogen-fixer-extraordinaire/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Hawianin Chilli pepper",
+      "scientificName": "Capsicum frutescens",
+      "growingGuide": "https://tropicalselfsufficiency.com/hawaiian-hot-pepper-capsicum-frutescens/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Hobbleberries",
+      "scientificName": "Viburnum lantanoides",
+      "growingGuide": "https://pfaf.org/user/Plant.aspx?LatinName=Viburnum+lantanoides",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Honeyberry",
+      "scientificName": "Lonicera caerulea",
+      "growingGuide": "https://morningchores.com/growing-honeyberry/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Huckleberry (Evergreen)",
+      "scientificName": "Vaccinium Ovatum",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/fruits/huckleberries/huckleberry-plant-care.htm",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Indigo Bush (False)",
+      "scientificName": "amorpha fruticosa",
+      "growingGuide": "https://www.gardenia.net/plant/amorpha-fruticosa",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Jostaberry",
+      "scientificName": "Ribes \u00d7 nidigrolaria",
+      "growingGuide": "https://morningchores.com/growing-jostaberries/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Juneberry",
+      "scientificName": "Amelanchier alnifolia",
+      "growingGuide": "https://fruit.webhosting.cals.wisc.edu/wp-content/uploads/sites/36/2016/03/Juneberry-crop-profile.pdf",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Kumquat Tree",
+      "scientificName": "Citrus japonica",
+      "growingGuide": "https://www.masterclass.com/articles/kumquat-tree-gardening-guide",
+      "zones": [
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Lemongrass",
+      "scientificName": "Cymbopogon citratus",
+      "growingGuide": "https://www.thespruce.com/lemongrass-plant-profile-4686088",
+      "zones": [
+        "1B",
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Lingonberry",
+      "scientificName": "Vaccinium vitis-idaea",
+      "growingGuide": "https://practicalselfreliance.com/growing-lingonberries/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Northern Wild Rasin",
+      "scientificName": "Viburnum nudum",
+      "growingGuide": "https://www.gardenia.net/plant/viburnum-cassinoides-witherod-viburnum",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Pepino Melon",
+      "scientificName": "Solanum muricatum",
+      "growingGuide": "https://rurallivingtoday.com/gardens/pepino-melon/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Pepper Plants",
+      "scientificName": "Capsicum annuum",
+      "growingGuide": "https://www.thespruce.com/types-of-peppers-7629495",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Pidgeon Peas",
+      "scientificName": "Cajanus cajan",
+      "growingGuide": "https://www.bhg.com/how-to-plant-and-grow-pigeon-peas-7553732",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Pineapple Plants",
+      "scientificName": "Ananas comosus",
+      "growingGuide": "https://harvesttotable.com/how-to-grow-pineapple/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Prickily Pear",
+      "scientificName": "Opuntia spp",
+      "growingGuide": "https://www.thespruce.com/grow-prickly-pear-cactus-inside-1902533",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Raspberry",
+      "scientificName": "Rubus spp.",
+      "growingGuide": "https://www.almanac.com/plant/raspberries",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Russian Almond",
+      "scientificName": "Prunus tenella",
+      "growingGuide": "http://plants.cashmannursery.com/12080008/Plant/353/Russian_Almond/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Salmonberry",
+      "scientificName": "Rubus spectabilis",
+      "growingGuide": "https://practicalselfreliance.com/salmonberry/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Sasparilla Bush",
+      "scientificName": "Aralia nudicaulis L",
+      "growingGuide": "https://www.picturethisai.com/care/Aralia_nudicaulis.html",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Saw Palmetto",
+      "scientificName": "Serenoa repens",
+      "growingGuide": "https://sowexotic.com/pages/sawpalmetto?srsltid=AfmBOorOHRXh0WDVduMryT60z5aqRaWJYzJeVXuTG2hLbIstRiHpQhTT",
+      "zones": [
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Spicebush",
+      "scientificName": "Calycanthus floridus",
+      "growingGuide": "https://www.thespruce.com/carolina-allspice-growing-guide-5213158",
+      "zones": [
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Seaberry",
+      "scientificName": "Hippophae rhamnoides",
+      "growingGuide": "https://onegreenworld.com/sea-berry-growing-guide/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Sugarcane",
+      "scientificName": "Saccharum officinarum",
+      "growingGuide": "https://www.thespruce.com/growing-sugar-cane-plants-5086465",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Sumac Shrubs",
+      "scientificName": "Rhus spp.",
+      "growingGuide": "https://www.thespruce.com/sumac-trees-and-shrubs-3269722",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Tamarillo",
+      "scientificName": "Solanum betaceum",
+      "growingGuide": "https://www.bhg.com/how-to-grow-a-tree-tomato-7966367",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Tea Plant",
+      "scientificName": "Camellia sinensis",
+      "growingGuide": "https://morningchores.com/growing-tea/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Thimbleberry",
+      "scientificName": "Rubus odoratus or Rubus parviflorus",
+      "growingGuide": "https://practicalselfreliance.com/thimbleberry/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Shrub Layer",
+      "commonName": "Tree Collards",
+      "scientificName": "brassica oleracea v. acephala",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/vegetables/grow-and-care-for-tree-collards",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Anise Hysop",
+      "scientificName": "Agastache foeniculum",
+      "growingGuide": "https://www.thespruce.com/anise-hyssop-plant-profile-5118429",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Artichoke",
+      "scientificName": "Cynara scolymus",
+      "growingGuide": "https://www.thespruce.com/tips-for-growing-artichokes-1403455",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Asparagus",
+      "scientificName": "Asparagus officinalis",
+      "growingGuide": "https://www.thespruce.com/how-to-plant-and-grow-asparagus-1402814",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Basil",
+      "scientificName": "Ocimum basiiicum L",
+      "growingGuide": "https://www.thespruce.com/is-basil-a-perennial-8621223",
+      "zones": [
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Basil (Wild)",
+      "scientificName": "Clinopodium vulgare",
+      "growingGuide": "https://www.picturethisai.com/care/Clinopodium_vulgare.html",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Cardoon",
+      "scientificName": "Cynara cardunculus",
+      "growingGuide": "https://morningchores.com/growing-cardoon/",
+      "zones": [
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Caucausian Spinach",
+      "scientificName": "Hablitzia tamnoides",
+      "growingGuide": "https://backyardlarder.co.uk/plants/caucasian-spinach/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Chia Plant",
+      "scientificName": "Salvia hispanica",
+      "growingGuide": "https://morningchores.com/growing-chia/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Chicory",
+      "scientificName": "Cichorium intybus",
+      "growingGuide": "https://www.epicgardening.com/chicory/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Chives",
+      "scientificName": "Allium spp.",
+      "growingGuide": "https://www.gardenia.net/guide/how-to-plant-grow-harvest-chives",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "CloudBerry",
+      "scientificName": "Rubus chamaemorus",
+      "growingGuide": "https://morningchores.com/growing-cloudberries/",
+      "zones": []
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Common Camas",
+      "scientificName": "Camassia quamash",
+      "growingGuide": "https://www.gardenia.net/genus/camassia-camas",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Cotton (Levant)",
+      "scientificName": "Gossypium herbaceum",
+      "growingGuide": "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=282562&=",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Dandelion",
+      "scientificName": "Taraxacum officinale",
+      "growingGuide": "https://www.phytotheca.com/phytotheca/dandelion/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Daubenton\u2019s kale",
+      "scientificName": "Brassica oleracea var ramosa",
+      "growingGuide": "https://www.foodforest.garden/2012/10/12/daubentons-kale-growing-and-cooking/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Daylilies",
+      "scientificName": "Hemerocallis spp.",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-and-care-for-daylilies-5075400",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Fennel",
+      "scientificName": "Foeniculum vulgare",
+      "growingGuide": "https://www.almanac.com/plant/fennel",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Feverfew",
+      "scientificName": "Tanacetum parthenium",
+      "growingGuide": "https://www.epicgardening.com/feverfew/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Garden Sorrel",
+      "scientificName": "Rumex spp.",
+      "growingGuide": "https://www.rhs.org.uk/herbs/sorrel/grow-your-own",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Garlic Cress",
+      "scientificName": "Peltaria alliacea",
+      "growingGuide": "https://pfaf.org/user/plant.aspx?latinname=Peltaria+alliacea",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Good King Henrey",
+      "scientificName": "Chenopodium Bonus-Henricus",
+      "growingGuide": "https://harvesttotable.com/how-to-grow-harvest-and-serve-good-king-henry/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Grains Of Paradise",
+      "scientificName": "Aframomum melegueta",
+      "growingGuide": "https://www.mayernikkitchen.com/medicinal-plants/grains-of-paradise?srsltid=AfmBOoou4rH5p5XUVMayH-ckE0Fk3lw8QBpGjWjHr3T0CCW0TZntS4kO",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Hosta",
+      "scientificName": "Hosta spp.",
+      "growingGuide": "https://www.almanac.com/plant/hostas",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Husk Cherries",
+      "scientificName": "Physalis pruinosa",
+      "growingGuide": "https://morningchores.com/growing-ground-cherries/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Indigo (True)",
+      "scientificName": "Indigofera tinctoria",
+      "growingGuide": "https://www.epicgardening.com/indigo/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Kernza",
+      "scientificName": "Thinopyrum intermedium\n",
+      "growingGuide": "https://kernza.org/wp-content/uploads/Kernza-production-guide.pdf",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Lavender",
+      "scientificName": "Lavandula spp.",
+      "growingGuide": "https://www.thespruce.com/growing-lavender-1402779",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Lemon Balm",
+      "scientificName": "Melissa officinalis",
+      "growingGuide": "https://harvesttotable.com/how_to_grow_lemon_balm/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Lovage",
+      "scientificName": "Levisticum officinale",
+      "growingGuide": "https://www.planetnatural.com/growing-lovage/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Majoram",
+      "scientificName": "Origanum majorana",
+      "growingGuide": "https://www.hillsboroughswcd.com/spice-up-your-life-a-beginner-s-guide-to-growing-marjoram",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B",
+        "13A",
+        "13B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Mallow (common)",
+      "scientificName": "Malva neglecta",
+      "growingGuide": "https://www.gardenia.net/plant/malva-sylvestris",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Milkweed",
+      "scientificName": "Asclepias spp.",
+      "growingGuide": "https://www.almanac.com/plant/milkweed",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Miner's Lettuce",
+      "scientificName": "Claytonia perfoliata",
+      "growingGuide": "https://practicalselfreliance.com/miners-lettuce/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Natsurums",
+      "scientificName": "Tropaeolum spp.",
+      "growingGuide": "https://www.gardenary.com/blog/how-to-grow-harvest-and-enjoy-nasturtium-flowers",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Nettles",
+      "scientificName": "Urtica dioic",
+      "growingGuide": "https://www.thespruce.com/description-of-stinging-nettles-plants-2132937",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Okra",
+      "scientificName": "Abelmoschus esculentus",
+      "growingGuide": "https://www.backyardboss.net/okra-varieties-garden/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Oregano",
+      "scientificName": "Origanum spp.",
+      "growingGuide": "https://www.thespruce.com/growing-oregano-plants-1402818",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Ostrich fern",
+      "scientificName": "Matteuccia struthiopteris",
+      "growingGuide": "https://www.thespruce.com/growing-ostrich-ferns-5094167",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Ox Eye Daisy",
+      "scientificName": "Leucanthemum vulgare",
+      "growingGuide": "https://www.thespruce.com/oxeye-daisy-growing-guide-5190951",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Papyrus Plant",
+      "scientificName": "Cyperus papyrus ",
+      "growingGuide": "https://www.thespruce.com/papyrus-plants-for-water-gardens-4125678",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Plantain Weed",
+      "scientificName": "Plantago major",
+      "growingGuide": "https://www.thespruce.com/what-is-a-plantain-herb-1762301",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Radicchio",
+      "scientificName": "Cichorium intybus",
+      "growingGuide": "https://www.epicgardening.com/radicchio-plant/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Ramps",
+      "scientificName": "Allium tricoccum",
+      "growingGuide": "https://gardenerspath.com/plants/vegetables/grow-ramps/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Rhubarb",
+      "scientificName": "Rheum rhabarbarum",
+      "growingGuide": "https://harvesttotable.com/how_to_grow_rhubarb/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Rosemary",
+      "scientificName": "Salvia rosmarinus",
+      "growingGuide": "https://morningchores.com/growing-rosemary/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Sage",
+      "scientificName": "Salvia officinalis",
+      "growingGuide": "https://www.thespruce.com/growing-sage-1402599",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Scallions",
+      "scientificName": "Allium fistulosum",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-scallions-4125799",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Sea Beet",
+      "scientificName": "Beta vulgaris maritima",
+      "growingGuide": "https://pfaf.org/user/Plant.aspx?LatinName=Beta+vulgaris+maritima",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Seasame Plants",
+      "scientificName": "Sesamum indicum",
+      "growingGuide": "https://www.epicgardening.com/sesame-plant/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Siberian Purslane",
+      "scientificName": "Claytonia sibirica",
+      "growingGuide": "https://morningchores.com/growing-sweet-candy-flower/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Stevia",
+      "scientificName": "Stevia rebaudiana",
+      "growingGuide": "https://morningchores.com/growing-stevia/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B",
+        "13A",
+        "13B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Sweet Cicley",
+      "scientificName": "Myrrhis odorata",
+      "growingGuide": "https://harvesttotable.com/how-to-grow-sweet-cicely-2/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Taragon (French)",
+      "scientificName": "Artemisia dracunculus",
+      "growingGuide": "https://extension.usu.edu/yardandgarden/research/french-tarragon-in-the-garden",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Three Cornered Leek",
+      "scientificName": "Allium Triquetrum",
+      "growingGuide": "https://www.gardenia.net/plant/allium-triquetrum",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Thyme",
+      "scientificName": "Thymus vulgaris",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-thyme-1402630",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Tomatillo",
+      "scientificName": "Physalis philadelphica",
+      "growingGuide": "https://www.almanac.com/plant/tomatillos",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Toothache Plant",
+      "scientificName": "Spilanthes oleracea",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/herbs/spilanthes/growing-spilanthes-plants.htm",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Turkish Rocket",
+      "scientificName": "Bunias orientalis",
+      "growingGuide": "https://backyardlarder.co.uk/plants/turkish-rocket/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Watercress",
+      "scientificName": "Nasturtium officinale",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-watercress-7965923",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Winter Savory",
+      "scientificName": "S. montana",
+      "growingGuide": "https://gardenerspath.com/plants/herbs/grow-winter-savory/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Wormwood",
+      "scientificName": "Artemisia absinthium",
+      "growingGuide": "https://www.gardeningchannel.com/how-to-grow-wormwood-artemisia-absinthium/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Herbaceous Layer",
+      "commonName": "Yarrow",
+      "scientificName": "Achillea spp",
+      "growingGuide": "https://www.almanac.com/plant/yarrow",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Caucausian Spinach",
+      "scientificName": "Hablitzia tamnoides",
+      "growingGuide": "https://backyardlarder.co.uk/plants/caucasian-spinach/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Chayote",
+      "scientificName": "Sechium edule",
+      "growingGuide": "https://www.motherearthgardener.com/plant-profiles/chayote-on-the-rise-zm0z20szbut/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Chinese Yams",
+      "scientificName": "Dioscorea Polystachya",
+      "growingGuide": "https://www.ethicalshift.com/garden/grow-your-own/how-to-grow-chinese-yam/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Chocolate Vine",
+      "scientificName": "Akebia quinata ",
+      "growingGuide": "https://www.thespruce.com/grow-chocolate-vine-1316033",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Clemitus",
+      "scientificName": "Clematis spp",
+      "growingGuide": "https://www.epicgardening.com/clematis/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Creeping Fig",
+      "scientificName": "Ficus pumila",
+      "growingGuide": "https://www.thespruce.com/grow-creeping-fig-indoors-1902441",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Gac Melon Vine",
+      "scientificName": "nomordica cochinchinensis",
+      "growingGuide": "https://www.gardeningtipsandtools.com/fruit-gardening/gac-melon-the-next-super-fruit/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Guarana",
+      "scientificName": "Paullinia cupana",
+      "growingGuide": "https://urbantropicals.com/product/true-guarana-bush-paullinia-cupana/?srsltid=AfmBOoomglYCsFrxbANKYEcHeM4mMvh7PWcOfHnOABQvyNHjPKlC-qXO",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Honeysuckle",
+      "scientificName": "Lonicera spp.",
+      "growingGuide": "https://www.thespruce.com/honeysuckle-care-guide-8628036",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Hopniss",
+      "scientificName": "Apios Americana",
+      "growingGuide": "https://www.tyrantfarms.com/how-to-grow-american-groundnuts/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Hops",
+      "scientificName": "Humulus lupulus",
+      "growingGuide": "https://www.almanac.com/plant/hops",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Jasmine",
+      "scientificName": "Jasminum spp.",
+      "growingGuide": "https://www.almanac.com/plant/jasmine",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Kiwi Vines (Hardy)",
+      "scientificName": "Actinidia arguta",
+      "growingGuide": "https://www.thespruce.com/kiwi-vines-spring-foliage-2132895",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Kiwi Vines (Fuzzy)",
+      "scientificName": "Actinidia chinensis",
+      "growingGuide": "https://www.backyardgardener.com/plantname/actinidia-chinensis-chinese-gooseberry/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Magnolia Vine",
+      "scientificName": "Schisandra Chinensis",
+      "growingGuide": "https://www.gardenia.net/plant/schisandra-chinensis-magnolia-vine",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Maypops",
+      "scientificName": "Passiflora incarnata",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/vines/passion-flower/grow-maypops-in-the-garden.htm",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Passionfruit",
+      "scientificName": "Passiflora edulis",
+      "growingGuide": "https://homesteadandchill.com/how-to-grow-passion-fruit-maypops/?srsltid=AfmBOop4Y80-ny0PBRWMuM0vTNiGs8V-fwqQLoyAeiOluMi7Nll9eKrR",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Peppercorn plant",
+      "scientificName": "Piper nigrum",
+      "growingGuide": "https://www.thespruce.com/peppercorn-plant-profile-4584776",
+      "zones": [
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Perinnial Pea",
+      "scientificName": "Lathyrus latifolius",
+      "growingGuide": "https://plants.ces.ncsu.edu/plants/lathyrus-latifolius/",
+      "zones": [
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Scarlet Runner Beans",
+      "scientificName": "Phaseolus coccineus ",
+      "growingGuide": "https://hort.extension.wisc.edu/articles/scarlet-runner-bean-phaseolus-coccineus/",
+      "zones": [
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Vanilla Bean Orchid",
+      "scientificName": "Vanilla planifolia",
+      "growingGuide": "https://www.thespruce.com/vanilla-orchid-care-1315974",
+      "zones": [
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Vertical Layer",
+      "commonName": "Winged Bean",
+      "scientificName": "Psophocarpus tetragonolobus",
+      "growingGuide": "https://www.epicgardening.com/winged-bean/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Apple Mint",
+      "scientificName": "Mentha suaveolens",
+      "growingGuide": "https://www.thespruce.com/apple-mint-8686195",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Australian Wild Rice",
+      "scientificName": "Oryza australiensis",
+      "growingGuide": "https://greg.app/oryza-australiensis-overview/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Bugleweed",
+      "scientificName": "Ajuga reptans",
+      "growingGuide": "https://www.thespruce.com/ajuga-or-bugleweed-plants-2132213",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Creeping Raspberry",
+      "scientificName": "Rubus hayata-koidzumii",
+      "growingGuide": "https://www.epicgardening.com/creeping-raspberry/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Creeping Thyme",
+      "scientificName": "Thymus spp.",
+      "growingGuide": "https://www.thespruce.com/types-of-creeping-thyme-2132329",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Dwarf Comflry",
+      "scientificName": "Symphytum grandiflorum",
+      "growingGuide": "https://plants.ces.ncsu.edu/plants/symphytum-grandiflorum/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Horse Mint",
+      "scientificName": "Monarda punctata",
+      "growingGuide": "https://unrulygardening.com/spotted-bee-balm/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Indian Rice Grass",
+      "scientificName": "Achnatherum hymenoides",
+      "growingGuide": "https://www.greatbearnativeplants.com/post/featured-plant-achnatherum-hymenoides-indian-ricegrass?srsltid=AfmBOorHN78tFTfpBkCQ3OUaKeS5K0XQda79ZB9D-Nf-qFOfj4P3Tysi",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Job's Tears",
+      "scientificName": "Coix lacryma-jobi",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/foliage/jobs-tears/jobs-tears-cultivation.htm",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Kernza",
+      "scientificName": "Thinopyrum intermedium\n",
+      "growingGuide": "https://kernza.org/wp-content/uploads/Kernza-production-guide.pdf",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Mint",
+      "scientificName": "Mentha spp",
+      "growingGuide": "https://www.thespruce.com/growing-mint-1402628",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Licorice",
+      "scientificName": "Glycyrrhiza glabra",
+      "growingGuide": "https://www.growveg.com/guides/grow-your-own-licorice-for-healthier-treats//",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Lungwort",
+      "scientificName": "Pulmonaria spp.",
+      "growingGuide": "https://www.plantdelights.com/blogs/articles/pulmonaria-lungworts?srsltid=AfmBOoo1eHJCTg9BEhsK9P-CwGb1IDcxAsDCZB3RysPoIq4eKubP9QSd",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Partidgeberry",
+      "scientificName": "Mitchella repens",
+      "growingGuide": "https://www.wildflower.org/plants/result.php?id_plant=MIRE",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Perinnial Flax",
+      "scientificName": "linum perenne",
+      "growingGuide": "https://www.gardenia.net/plant/linum-perenne",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Perinial Pea",
+      "scientificName": "Lathyrus latifolius",
+      "growingGuide": "https://plants.ces.ncsu.edu/plants/lathyrus-latifolius/#poison",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Perinnial Peanut",
+      "scientificName": "Arachis glabrata",
+      "growingGuide": "https://davesgarden.com/guides/articles/view/2765/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Pineberries",
+      "scientificName": "Fragaria chiloensis x virginiana",
+      "growingGuide": "https://www.epicgardening.com/pineberries/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Rock Saxifrage",
+      "scientificName": "Saxifraga",
+      "growingGuide": "https://www.gardeningknowhow.com/ornamental/groundcover/rockfoil/growing-rockfoil-plants.htm",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Russial Comprey",
+      "scientificName": "Symphytum x uplandicum",
+      "growingGuide": "https://gardenerspath.com/plants/herbs/grow-comfrey/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Siberian Spring Beauty",
+      "scientificName": "Claytonia perfoliata",
+      "growingGuide": "https://practicalselfreliance.com/miners-lettuce/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Strawberry",
+      "scientificName": "Fragaria virginiana",
+      "growingGuide": "https://www.gardeningknowhow.com/edible/fruits/strawberry/growing-wild-strawberries.htm",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Sweet Violets",
+      "scientificName": "Viola odorata",
+      "growingGuide": "https://www.gardenia.net/plant/viola-odorata-sweet-violet",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Sweet Woodruff",
+      "scientificName": "Galium odoratum",
+      "growingGuide": "https://www.thespruce.com/sweet-woodruff-plants-2132332",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "White Clover",
+      "scientificName": "Trifolium repens",
+      "growingGuide": "https://www.thespruce.com/growing-white-clover-trifolium-repens-5101230",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Wild Garlic",
+      "scientificName": "Allium ursinum",
+      "growingGuide": "https://www.countrylife.co.uk/gardens/gardening-tips/wild-garlic-how-to-forage-it-and-how-to-grow-your-own-252196",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Groundcover Layer",
+      "commonName": "Wintergreen",
+      "scientificName": "Gaultheria procumbens",
+      "growingGuide": "https://www.thespruce.com/grow-wintergreen-plants-for-a-splash-of-winter-color-4685614",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Arrowroot",
+      "scientificName": "Maranta arundinacea",
+      "growingGuide": "https://www.picturethisai.com/care/Maranta_arundinacea.html",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Bath Asparagus",
+      "scientificName": "Ornithogalum pyrenaicum",
+      "growingGuide": "https://www.picturethisai.com/care/Ornithogalum_pyrenaicum.html",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Camassica",
+      "scientificName": "Camas spp.",
+      "growingGuide": "https://www.longfield-gardens.com/article/all-about-camassia/?srsltid=AfmBOoo9KlnapTdMIqlVUO3TBx6NRBUoXuTYpFSf9RsovitriM_jkV1o",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Dog Tooth Violets",
+      "scientificName": "Erythronium albidum",
+      "growingGuide": "https://marshallsgarden.com/pages/how-to-grow-erythronium-dogs-tooth-violet",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Garlic",
+      "scientificName": "Allium sativum",
+      "growingGuide": "https://practicalselfreliance.com/perennial-garlic/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Ginger",
+      "scientificName": "Zingiber officinale",
+      "growingGuide": "https://www.almanac.com/plant/ginger",
+      "zones": [
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Ginsing",
+      "scientificName": "Panax quinquefolius",
+      "growingGuide": "https://unitedplantsavers.org/american-ginseng-cultivation-growing-guide/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Good King Henry",
+      "scientificName": "Blitum bonus-henricus ",
+      "growingGuide": "https://harvesttotable.com/how-to-grow-harvest-and-serve-good-king-henry/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Hopniss",
+      "scientificName": "Apios Americana",
+      "growingGuide": "https://www.tyrantfarms.com/how-to-grow-american-groundnuts/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Horseradish",
+      "scientificName": "Armoracia rusticana",
+      "growingGuide": "https://www.almanac.com/plant/horseradish",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Mashuma",
+      "scientificName": "Tropaeolum tuberosum",
+      "growingGuide": "https://pfaf.org/user/plant.aspx?latinname=Tropaeolum+tuberosum",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Oca",
+      "scientificName": "Oxalis tuberosa",
+      "growingGuide": "https://greg.app/oca-hardiness-zone/",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Shallots",
+      "scientificName": "Allium spp.",
+      "growingGuide": "https://www.almanac.com/plant/shallots",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Skirret",
+      "scientificName": "Sium sisarum",
+      "growingGuide": "https://morningchores.com/growing-skirret/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Skorzonera",
+      "scientificName": "Scorzonera hispanica",
+      "growingGuide": "https://harvesttotable.com/how_to_grow_salsify/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Sunchokes",
+      "scientificName": "Helianthus tuberosus",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-organic-jerusalem-artichokes-2539639",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Sweet Potatoes",
+      "scientificName": "Ipomoea batatas",
+      "growingGuide": "https://www.thespruce.com/how-to-grow-sweet-potatoes-in-the-home-garden-1403479",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Taro",
+      "scientificName": "Colocasia Esculenta",
+      "growingGuide": "https://www.gardenia.net/plants/common-names/taro",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Turmeric",
+      "scientificName": "Curcuma longa",
+      "growingGuide": "https://www.thespruce.com/turmeric-plant-profile-4779812",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Valerian",
+      "scientificName": "Valeriana officinalis",
+      "growingGuide": "https://theherbgardener.blogspot.com/2013/04/how-to-grow-valerian.html",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Walking Onions",
+      "scientificName": "Allium x proliferum",
+      "growingGuide": "https://gardenerspath.com/plants/vegetables/grow-egyptian-walking-onions/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Wasabi",
+      "scientificName": "Wasabia japonica",
+      "growingGuide": "https://www.thespruce.com/growing-wasabi-plants-5082985",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Welsh Onions",
+      "scientificName": "Allium fistulosum",
+      "growingGuide": "https://harvesttotable.com/how-to-grow-welsh-onions/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Wild Garlic",
+      "scientificName": "Allium ursinum",
+      "growingGuide": "https://www.gardenia.net/plant/allium-ursinum-wild-garlic",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Yacon",
+      "scientificName": "Smallanthus sonchifolius",
+      "growingGuide": "https://morningchores.com/growing-yacon/",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Rhizosphere Layer",
+      "commonName": "Yams",
+      "scientificName": "Dioscorea spp.",
+      "growingGuide": "https://morningchores.com/growing-yams/",
+      "zones": []
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Arame Seaweed",
+      "scientificName": "Eisenia bicyclis",
+      "growingGuide": "https://www.youtube.com/watch?v=SWsoZXfBXaE",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Arrowhead",
+      "scientificName": "Sagittaria latifolia",
+      "growingGuide": "https://pondinformer.com/common-arrowhead-sagittaria-latifolia/l",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Bulrush",
+      "scientificName": "Typha latifolia",
+      "growingGuide": "https://www.thespruce.com/growing-common-cattail-plants-5088737",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Common Reed",
+      "scientificName": "Phragmites australis",
+      "growingGuide": "https://plants.usda.gov/DocumentLibrary/factsheet/pdf/fs_phau7.pdf",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Dulse Seaweed",
+      "scientificName": "Palmaria palmata",
+      "growingGuide": "https://taim.io/plants/how-do-you-grow-dulse",
+      "zones": [
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B",
+        "13A",
+        "13B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Golden Leather Fern",
+      "scientificName": "Acrostichum aureum",
+      "growingGuide": "https://www.picturethisai.com/care/Acrostichum_aureum.html",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B",
+        "13A",
+        "13B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Irish Moss Seaweed",
+      "scientificName": "Chondrus crispus",
+      "growingGuide": "https://seaveg.com/pages/what-is-irish-moss?srsltid=AfmBOooVSEN9mqUxLu1Sf1D26oCisAnmEmUlTP4z5frgzY6vlCS09bg7",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Kombu Seaweed",
+      "scientificName": "Saccharina japonica",
+      "growingGuide": "https://wiki.oceanbuilders.com/books/sustainable-aquaculture/page/kombu",
+      "zones": [
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Lotus (American)",
+      "scientificName": "Nelumbo lutea",
+      "growingGuide": "https://www.thespruce.com/lotus-plant-7964244",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Mangrove Palm",
+      "scientificName": "Nypa fruticans",
+      "growingGuide": "https://pfaf.org/user/Plant.aspx?LatinName=Nypa+fruticans",
+      "zones": [
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Marshmallow",
+      "scientificName": "Althaea officinalis",
+      "growingGuide": "https://www.thespruce.com/growing-marshmallow-plants-5082977",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Nori Seaweed",
+      "scientificName": "Porphyra spp",
+      "growingGuide": "https://www.olivierrobert.net/post/japan-the-nori-seaweed-farms-of-the-ariake-sea",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Sea Lettuce",
+      "scientificName": "Ulva lactuca",
+      "growingGuide": "https://seaveg.com/pages/what-is-sea-lettuce?srsltid=AfmBOoqGvntWTgqoi81O3w-OwlHenyMAv4ALU9m4hDhtrbuI-wGKapAe",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Umibudo Seaweed",
+      "scientificName": "Caulerpa lentillifera",
+      "growingGuide": "https://www.boonthidafarm.com/en/how-to-cultivate-sea-grapes/",
+      "zones": [
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Aquatic Layer",
+      "commonName": "Wakame Seaweed",
+      "scientificName": "Undaria pinnatifida",
+      "growingGuide": "https://thefishsite.com/articles/how-to-farm-wakame-undaria-pinnatifida-seaweed",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Abalone Mushroom",
+      "scientificName": "Pleurotus cystidiosus",
+      "growingGuide": "",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Almond Mushroom",
+      "scientificName": "Agaricus subrufescens",
+      "growingGuide": "https://mushroology.com/almond-agaricus-mushroom/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Bamboo Fungus",
+      "scientificName": "Dictyophora indusiata",
+      "growingGuide": "",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Beech Mushroom",
+      "scientificName": "Hypsizygus marmoreus",
+      "growingGuide": "",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Beefstake Mushrrom",
+      "scientificName": "Fistulina hepatica",
+      "growingGuide": "https://practicalselfreliance.com/foraging-beefsteak-mushrooms-fistulina-sp/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Black Poplar Mushroom",
+      "scientificName": "Agrocybe aegerita",
+      "growingGuide": "https://mushroology.com/grow-poplar-mushrooms/",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Black Trumpet Mushroom",
+      "scientificName": "Craterellus cornucopioides",
+      "growingGuide": "https://grocycle.com/black-trumpet-mushroom/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Branched Oyster Mushroom",
+      "scientificName": "Pleurotus cornucopiae",
+      "growingGuide": "https://mushroomsage.com/how-to-grow-branched-oyster-mushrooms-a-step-by-step-cultivation-guide/",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Brown Wood Ear Mushroom",
+      "scientificName": "Auricularia fuscosuccinea",
+      "growingGuide": "",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Button Mushroom",
+      "scientificName": "Agaricus bisporus",
+      "growingGuide": "",
+      "zones": [
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Chanterelle Mushroom",
+      "scientificName": "Cantharellus cibarius",
+      "growingGuide": "https://grocycle.com/chanterelle-mushrooms-guide/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Chicken of the Woods",
+      "scientificName": "Laetiporus cincinnatus",
+      "growingGuide": "https://www.fieldforest.net/product/chicken-of-the-woods-on-logs-instruction-sheet/instruction-sheets?srsltid=AfmBOorTY__aHKSRAbd87q8-KBYht2-vXIeYfVlHgcM8-4kYZ4vB6pBA",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Cloud Ear Mushroom",
+      "scientificName": "Auricularia polytricha",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Deep Root Mushroom",
+      "scientificName": "Oudemansiella radicata",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Deer Sheild Mushroom",
+      "scientificName": "Pluteus cervinus",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Dryad's Saddle",
+      "scientificName": "Cerioporus squamosus",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Elm Oyster Mushroom",
+      "scientificName": "Lyophyllum ulmarium",
+      "growingGuide": "https://grocycle.com/elm-oyster-mushroom/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Enoki Mushroom",
+      "scientificName": "Flammulina velutipes",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Feild Mushroom",
+      "scientificName": "Agaricus campestris",
+      "growingGuide": "https://www.shroomer.com/agaricus-campestris/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Ferula Mushroom",
+      "scientificName": "Pleurotus ferulae",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Giant Funnel",
+      "scientificName": "Clitocybe geotropa",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Giant Knight",
+      "scientificName": "Tricholoma giganteum",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Giant Oyster Mushroom",
+      "scientificName": "Lentinula giganteus",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Giant Puffball",
+      "scientificName": "Calvatia gigantea",
+      "growingGuide": "https://grocycle.com/puffball-mushrooms-guide/",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Golden Jelly Fungus",
+      "scientificName": "Tremella aurantialba",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Golden Oyster Mushroom",
+      "scientificName": "Pleurotus citrinopileatus",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Green Craking Russula",
+      "scientificName": "Russula virescens",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Grey Oyster Mushroom",
+      "scientificName": "Pleurotus sajor-caju",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Indigo Milk Cap",
+      "scientificName": "Lactarius indigo",
+      "growingGuide": "https://practicalselfreliance.com/indigo-milk-cap-lactarius-indigo/",
+      "zones": [
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B",
+        "12A",
+        "12B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "King bolete",
+      "scientificName": "Boletus edulis",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "King Oyster Mushroom",
+      "scientificName": "Pleurotus eryngii",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Lion's Mane Mushroom",
+      "scientificName": "Hericium erinaceus",
+      "growingGuide": "https://www.mars-hydro.com/info/post/growing-lions-mane-mushrooms-a-step-by-step-guide",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Lobster mushroom",
+      "scientificName": "Hypomyces lactifluorum",
+      "growingGuide": "https://growyourpantry.com/blogs/mushroom-guides/lobster-mushrooms-the-complete-guide?srsltid=AfmBOoo_3CAC2zOZLyI5F9D7EYWv8vBoCvM3CWo-BGEtGDyo_MxMu0WY",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Maitake (Hen of Woods)",
+      "scientificName": "Grifola frondosa",
+      "growingGuide": "https://www.fieldforest.net/product/maitake-on-logs-instruction-sheet/instruction-sheets?srsltid=AfmBOoqzkATPREW_iXJOLFKRLSyq3phTNfS8HkaVtSvvZ4EO77JtTOJ9",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Morel Mushroom",
+      "scientificName": "Morchella Sp.",
+      "growingGuide": "https://www.mansfieldnewsjournal.com/story/news/2021/04/27/stroll-through-garden-can-you-grow-morels-your-own-yard/7349658002/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Mushroom of Immortality",
+      "scientificName": "Ganoderma lucidum",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Nameko Mushroom",
+      "scientificName": "Pholiota nameko",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Orange oak bolete",
+      "scientificName": "Leccinum aurantiacum",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Oyster Mushroom",
+      "scientificName": "Pleurotus ostreatus",
+      "growingGuide": "https://www.farmersalmanac.com/how-to-grow-delicious-oyster-mushrooms",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Parasol Mushroom",
+      "scientificName": "Macrolepiota procera",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Pavement Mushroom",
+      "scientificName": "Agaricus bitorquis",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Pink Oyster Mushroom",
+      "scientificName": "Pleurotus djamor",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Sicilian Mushroom",
+      "scientificName": "Pleurotus nebrodensis",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Shaggy Mane Mushroom",
+      "scientificName": "Coprinus comatus",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Shiitake Mushroom",
+      "scientificName": "Lentinula edodes",
+      "growingGuide": "https://wholefedhomestead.com/how-to-grow-shiitake-mushrooms-in-your-own-backyard/",
+      "zones": [
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Snow Fungus",
+      "scientificName": "Tremella fuciformis",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Straw Mushroom",
+      "scientificName": "Volvariella volvacea",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Tea Tree Mushroom",
+      "scientificName": "Agrocybe chaxinggu",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "White Oyster Mushroom",
+      "scientificName": "Pleurotus florida",
+      "growingGuide": "",
+      "zones": []
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Wine Cap Mushroom",
+      "scientificName": "Stropharia rugoso-annulata",
+      "growingGuide": "https://www.fieldforest.net/product/wine-cap-instruction-sheet/instruction-sheets?srsltid=AfmBOop5QeXdgog6b6vqLucaEoDMIrhxXzT0YIUP9iRcFd9dRTPpXkjy",
+      "zones": [
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Wood Blewit",
+      "scientificName": "Lepista nuda",
+      "growingGuide": "https://www.fieldforest.net/product/wood-blewit-and-bleu-foot-on-organic-matter-instruction-sheet/instruction-sheets?srsltid=AfmBOorvI4Ui1VpOME7tXFOSY3mvrtFcqvHYnzm8gN4f0v3gaaFtAbxO",
+      "zones": [
+        "2A",
+        "2B",
+        "3A",
+        "3B",
+        "4A",
+        "4B",
+        "5A",
+        "5B",
+        "6A",
+        "6B",
+        "7A",
+        "7B",
+        "8A",
+        "8B",
+        "9A",
+        "9B",
+        "10A",
+        "10B",
+        "11A",
+        "11B"
+      ]
+    },
+    {
+      "layer": "Fungal Layer",
+      "commonName": "Wood Ear Mushroom",
+      "scientificName": "Auricularia auricula",
+      "growingGuide": "",
+      "zones": []
+    }
+  ]
+}

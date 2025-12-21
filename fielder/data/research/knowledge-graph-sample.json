@@ -1,0 +1,748 @@
+{
+  "version": "1.0.0",
+  "created": "2025-12-20",
+  "description": "Sample knowledge graph demonstrating how Florida research data interconnects to enable intelligent predictions, validations, and queries",
+  "schema": {
+    "entity_types": [
+      "State",
+      "Zone",
+      "Region",
+      "Farm",
+      "Product",
+      "Cultivar",
+      "Season",
+      "HarvestWindow",
+      "PlantingWindow"
+    ],
+    "relationship_types": [
+      "HAS_ZONE",
+      "INCLUDES_REGION",
+      "LOCATED_IN",
+      "GROWS",
+      "IS_VARIETY_OF",
+      "HARVESTED_IN",
+      "PLANTED_IN",
+      "VALIDATES",
+      "PREDICTS"
+    ]
+  },
+  "sample_entities": {
+    "states": {
+      "FL": {
+        "id": "state:FL",
+        "type": "State",
+        "name": "Florida",
+        "properties": {
+          "zones": ["8", "9", "10", "11"],
+          "climateGradient": "Subtropical to Tropical (450 miles)",
+          "commercialStrength": "Winter vegetable capital of USA"
+        }
+      }
+    },
+    "zones": {
+      "zone_8": {
+        "id": "zone:8",
+        "type": "Zone",
+        "name": "USDA Zone 8",
+        "properties": {
+          "tempRange": "10-20°F winter minimum",
+          "subzones": ["8a", "8b"],
+          "growingSeason": "March-November (9 months)",
+          "frostRisk": "Hard freezes occur",
+          "winterProduction": false
+        }
+      },
+      "zone_9": {
+        "id": "zone:9",
+        "type": "Zone",
+        "name": "USDA Zone 9",
+        "properties": {
+          "tempRange": "20-30°F winter minimum",
+          "subzones": ["9a", "9b"],
+          "growingSeason": "February-December (10+ months)",
+          "frostRisk": "Occasional light frost",
+          "winterProduction": "limited"
+        }
+      },
+      "zone_10": {
+        "id": "zone:10",
+        "type": "Zone",
+        "name": "USDA Zone 10",
+        "properties": {
+          "tempRange": "30-40°F winter minimum",
+          "subzones": ["10a", "10b"],
+          "growingSeason": "Year-round",
+          "frostRisk": "Extremely rare or none",
+          "winterProduction": "peak commercial period"
+        }
+      },
+      "zone_11": {
+        "id": "zone:11",
+        "type": "Zone",
+        "name": "USDA Zone 11",
+        "properties": {
+          "tempRange": "40°F+ winter minimum",
+          "subzones": ["11a"],
+          "growingSeason": "Year-round (365 days)",
+          "frostRisk": "Never frosts",
+          "winterProduction": "year-round",
+          "unique": "Only true tropical zone in continental US"
+        }
+      }
+    },
+    "regions": {
+      "homestead_redland": {
+        "id": "region:homestead_redland",
+        "type": "Region",
+        "name": "Homestead/Redland Agricultural District",
+        "properties": {
+          "state": "FL",
+          "zone": "10b",
+          "macroRegion": "southeast",
+          "typicalSoil": "Rockdale-Krome complex (limestone-based, well-drained)",
+          "specialties": ["Tropical fruit", "Specialty vegetables"]
+        }
+      },
+      "indian_river": {
+        "id": "region:indian_river",
+        "type": "Region",
+        "name": "Indian River District",
+        "properties": {
+          "state": "FL",
+          "zone": "10a",
+          "macroRegion": "southeast",
+          "typicalSoil": "Sandy loam, high drainage",
+          "specialties": ["Premium citrus", "Indian River grapefruit"]
+        }
+      },
+      "plant_city": {
+        "id": "region:plant_city",
+        "type": "Region",
+        "name": "Plant City Strawberry Belt",
+        "properties": {
+          "state": "FL",
+          "zone": "9b",
+          "macroRegion": "southeast",
+          "typicalSoil": "Sandy soil, excellent drainage",
+          "specialties": ["Winter strawberries", "Vegetables"]
+        }
+      }
+    },
+    "farms": {
+      "cypress_creek": {
+        "id": "farm:cypress_creek",
+        "type": "Farm",
+        "name": "Cypress Creek Farms and Ranch",
+        "properties": {
+          "location": {
+            "city": "Alva",
+            "county": "Hendry",
+            "state": "FL",
+            "zone": "10a"
+          },
+          "seasonalWindow": {
+            "start": 11,
+            "end": 4,
+            "description": "November through April growing season"
+          },
+          "csawareStore": "https://cypresscreekfarmsandranch.csaware.com/store/",
+          "productsGrown": ["tomatoes", "mixed_vegetables", "eggs", "beef", "pork"]
+        }
+      },
+      "fresh_gardens": {
+        "id": "farm:fresh_gardens",
+        "type": "Farm",
+        "name": "Fresh Gardens",
+        "properties": {
+          "location": {
+            "city": "Homestead",
+            "county": "Miami-Dade",
+            "state": "FL",
+            "zone": "10b"
+          },
+          "specialization": "Tropical/exotic fruit",
+          "csawareStore": "https://freshgardens.csaware.com/store/",
+          "productsGrown": ["lychee", "mango", "avocado", "black_sapote", "dragon_fruit"]
+        }
+      }
+    },
+    "products": {
+      "tomato_generic": {
+        "id": "product:tomato",
+        "type": "Product",
+        "name": "Tomato",
+        "properties": {
+          "category": "vegetable",
+          "subcategory": "solanaceae",
+          "gddBase": 50,
+          "gddRequirement": "2000-3000 (varies by cultivar)"
+        }
+      },
+      "lychee_generic": {
+        "id": "product:lychee",
+        "type": "Product",
+        "name": "Lychee",
+        "properties": {
+          "category": "tropical_fruit",
+          "subcategory": "soapberry",
+          "harvestPeriod": "June-July",
+          "zoneRequirement": "10b-11a (tropical only)"
+        }
+      }
+    },
+    "cultivars": {
+      "cherokee_purple": {
+        "id": "cultivar:cherokee_purple",
+        "type": "Cultivar",
+        "name": "Cherokee Purple",
+        "properties": {
+          "productType": "tomato",
+          "heritageIntent": "true_heritage",
+          "daysToMaturity": 80,
+          "gddRequirement": 2800,
+          "flavorProfile": "Rich, smoky, sweet",
+          "brixRange": "6-9",
+          "qualityTier": "premium"
+        }
+      },
+      "brandywine": {
+        "id": "cultivar:brandywine",
+        "type": "Cultivar",
+        "name": "Brandywine",
+        "properties": {
+          "productType": "tomato",
+          "heritageIntent": "heirloom_quality",
+          "daysToMaturity": 85,
+          "gddRequirement": 2900,
+          "flavorProfile": "Sweet, complex, meaty",
+          "brixRange": "7-10",
+          "qualityTier": "artisan"
+        }
+      },
+      "early_girl": {
+        "id": "cultivar:early_girl",
+        "type": "Cultivar",
+        "name": "Early Girl",
+        "properties": {
+          "productType": "tomato",
+          "heritageIntent": "modern_flavor",
+          "daysToMaturity": 52,
+          "gddRequirement": 2000,
+          "flavorProfile": "Good flavor, early producer",
+          "brixRange": "4-6",
+          "qualityTier": "standard"
+        }
+      }
+    },
+    "harvest_windows": {
+      "fl_tomato_state": {
+        "id": "harvest:fl_tomato_state",
+        "type": "HarvestWindow",
+        "name": "Florida State Tomato Harvest",
+        "properties": {
+          "product": "tomato",
+          "geography": "FL (statewide aggregate)",
+          "months": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+          "peakMonths": [12, 1, 2, 3],
+          "source": "FL Dept of Agriculture",
+          "confidence": 0.95
+        }
+      },
+      "fl_tomato_zone10": {
+        "id": "harvest:fl_tomato_zone10",
+        "type": "HarvestWindow",
+        "name": "Florida Zone 10 Tomato Harvest",
+        "properties": {
+          "product": "tomato",
+          "geography": "FL Zone 10",
+          "months": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+          "peakMonths": [12, 1, 2, 3],
+          "source": "State calendar zone detail",
+          "confidence": 0.90
+        }
+      },
+      "cypress_creek_tomato": {
+        "id": "harvest:cypress_creek_tomato",
+        "type": "HarvestWindow",
+        "name": "Cypress Creek Tomato Harvest",
+        "properties": {
+          "product": "tomato",
+          "geography": "Cypress Creek Farm (Zone 10a)",
+          "months": [11, 12, 1, 2, 3, 4],
+          "peakMonths": [12, 1, 2, 3],
+          "source": "Farm CSAware data",
+          "confidence": 0.85,
+          "farmId": "farm:cypress_creek"
+        }
+      }
+    },
+    "planting_windows": {
+      "fl_tomato_zone10_planting": {
+        "id": "planting:fl_tomato_zone10",
+        "type": "PlantingWindow",
+        "name": "Florida Zone 10 Tomato Planting",
+        "properties": {
+          "product": "tomato",
+          "geography": "FL Zone 10",
+          "plantingMonths": [8, 9, 1, 2, 3],
+          "windows": ["August-September (fall)", "January-March (spring)"],
+          "source": "FL planting guide",
+          "confidence": 0.85
+        }
+      }
+    }
+  },
+  "sample_relationships": [
+    {
+      "from": "state:FL",
+      "to": "zone:8",
+      "type": "HAS_ZONE",
+      "properties": {
+        "counties": ["Escambia", "Leon", "Duval", "Nassau"]
+      }
+    },
+    {
+      "from": "state:FL",
+      "to": "zone:9",
+      "type": "HAS_ZONE",
+      "properties": {
+        "counties": ["Hillsborough", "Polk", "Orange", "Brevard"]
+      }
+    },
+    {
+      "from": "state:FL",
+      "to": "zone:10",
+      "type": "HAS_ZONE",
+      "properties": {
+        "counties": ["Collier", "Lee", "Palm Beach", "Miami-Dade", "Martin"]
+      }
+    },
+    {
+      "from": "state:FL",
+      "to": "zone:11",
+      "type": "HAS_ZONE",
+      "properties": {
+        "counties": ["Monroe (Keys only)"]
+      }
+    },
+    {
+      "from": "zone:10",
+      "to": "region:homestead_redland",
+      "type": "INCLUDES_REGION",
+      "properties": {
+        "subzone": "10b"
+      }
+    },
+    {
+      "from": "zone:10",
+      "to": "region:indian_river",
+      "type": "INCLUDES_REGION",
+      "properties": {
+        "subzone": "10a"
+      }
+    },
+    {
+      "from": "farm:cypress_creek",
+      "to": "zone:10",
+      "type": "LOCATED_IN",
+      "properties": {
+        "subzone": "10a",
+        "county": "Hendry"
+      }
+    },
+    {
+      "from": "farm:fresh_gardens",
+      "to": "zone:10",
+      "type": "LOCATED_IN",
+      "properties": {
+        "subzone": "10b",
+        "county": "Miami-Dade"
+      }
+    },
+    {
+      "from": "farm:cypress_creek",
+      "to": "product:tomato",
+      "type": "GROWS",
+      "properties": {
+        "seasonalWindow": "November-April",
+        "cultivars": ["Cherokee Purple", "Brandywine", "others"]
+      }
+    },
+    {
+      "from": "cultivar:cherokee_purple",
+      "to": "product:tomato",
+      "type": "IS_VARIETY_OF",
+      "properties": {
+        "heritageIntent": "true_heritage"
+      }
+    },
+    {
+      "from": "cultivar:cherokee_purple",
+      "to": "harvest:fl_tomato_zone10",
+      "type": "HARVESTED_IN",
+      "properties": {
+        "predictedMonths": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+        "peakQuality": [12, 1, 2, 3]
+      }
+    },
+    {
+      "from": "cultivar:cherokee_purple",
+      "to": "planting:fl_tomato_zone10",
+      "type": "PLANTED_IN",
+      "properties": {
+        "plantingMonths": [8, 9],
+        "daysToMaturity": 80,
+        "gddRequired": 2800
+      }
+    },
+    {
+      "from": "harvest:cypress_creek_tomato",
+      "to": "harvest:fl_tomato_zone10",
+      "type": "VALIDATES",
+      "properties": {
+        "validation": "Farm timing (Nov-Apr) falls within zone window (Oct-Jun)",
+        "confidence": "high",
+        "overlap": [11, 12, 1, 2, 3, 4]
+      }
+    },
+    {
+      "from": "harvest:fl_tomato_zone10",
+      "to": "harvest:fl_tomato_state",
+      "type": "VALIDATES",
+      "properties": {
+        "validation": "Zone 10 window (Oct-Jun) matches state aggregate (Oct-Jun)",
+        "confidence": "high",
+        "source": "Official FL Dept of Ag data"
+      }
+    },
+    {
+      "from": "zone:10",
+      "to": "harvest:fl_tomato_zone10",
+      "type": "PREDICTS",
+      "properties": {
+        "mechanism": "Year-round frost-free climate enables 9-month harvest",
+        "gddAccumulation": "~22 GDD/day consistent",
+        "daysToHarvest": "~75 days for Cherokee Purple"
+      }
+    }
+  ],
+  "query_examples": {
+    "query_1": {
+      "question": "When are tomatoes available in South Florida?",
+      "cypher": "MATCH (s:State {id: 'state:FL'})-[:HAS_ZONE]->(z:Zone {id: 'zone:10'})-[:PREDICTS]->(hw:HarvestWindow)-[:IS_FOR]->(p:Product {name: 'Tomato'}) RETURN hw.months",
+      "traversal": [
+        "state:FL",
+        "zone:10",
+        "harvest:fl_tomato_zone10"
+      ],
+      "result": {
+        "months": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+        "peakMonths": [12, 1, 2, 3],
+        "description": "October through June with peak December-March"
+      },
+      "confidence": 0.90,
+      "sources": ["FL Dept of Agriculture", "Zone climate data"]
+    },
+    "query_2": {
+      "question": "What farms in Zone 10 grow heritage tomatoes?",
+      "cypher": "MATCH (z:Zone {id: 'zone:10'})<-[:LOCATED_IN]-(f:Farm)-[:GROWS]->(p:Product {name: 'Tomato'})<-[:IS_VARIETY_OF]-(c:Cultivar) WHERE c.heritageIntent IN ['true_heritage', 'heirloom_quality'] RETURN f, c",
+      "traversal": [
+        "zone:10",
+        "farm:cypress_creek",
+        "cultivar:cherokee_purple",
+        "cultivar:brandywine"
+      ],
+      "result": {
+        "farms": [
+          {
+            "farmName": "Cypress Creek Farms and Ranch",
+            "zone": "10a",
+            "cultivars": ["Cherokee Purple", "Brandywine"]
+          }
+        ]
+      },
+      "confidence": 0.85,
+      "sources": ["LocalHarvest farm data", "CSAware product listings"]
+    },
+    "query_3": {
+      "question": "When should I plant Cherokee Purple in Homestead, FL?",
+      "cypher": "MATCH (r:Region {id: 'region:homestead_redland'})-[:IN_ZONE]->(z:Zone)-[:HAS_PLANTING_WINDOW]->(pw:PlantingWindow)-[:FOR_CULTIVAR]->(c:Cultivar {name: 'Cherokee Purple'}) RETURN pw.plantingMonths, pw.windows",
+      "traversal": [
+        "region:homestead_redland",
+        "zone:10",
+        "planting:fl_tomato_zone10",
+        "cultivar:cherokee_purple"
+      ],
+      "result": {
+        "plantingMonths": [8, 9],
+        "windows": ["August-September (fall planting)"],
+        "expectedHarvest": "October-December (80 days after planting)",
+        "gddRequired": 2800,
+        "reasoning": "Zone 10b accumulates ~22 GDD/day = 75 days to harvest"
+      },
+      "confidence": 0.80,
+      "sources": ["FL planting guide", "GDD model", "Cultivar data"]
+    },
+    "query_4": {
+      "question": "Validate Cypress Creek's tomato timing against state data",
+      "cypher": "MATCH (f:Farm {id: 'farm:cypress_creek'})-[:REPORTS_HARVEST]->(fh:HarvestWindow)-[:VALIDATES]->(zh:HarvestWindow)-[:VALIDATES]->(sh:HarvestWindow) WHERE sh.geography = 'FL (statewide aggregate)' RETURN fh.months, zh.months, sh.months",
+      "traversal": [
+        "farm:cypress_creek",
+        "harvest:cypress_creek_tomato",
+        "harvest:fl_tomato_zone10",
+        "harvest:fl_tomato_state"
+      ],
+      "result": {
+        "farmTiming": {
+          "months": [11, 12, 1, 2, 3, 4],
+          "source": "Cypress Creek CSAware"
+        },
+        "zoneTiming": {
+          "months": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+          "source": "FL Zone 10 aggregate"
+        },
+        "stateTiming": {
+          "months": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+          "source": "FL Dept of Agriculture"
+        },
+        "validation": {
+          "status": "PASS",
+          "reasoning": "Farm timing (Nov-Apr) is subset of zone window (Oct-Jun)",
+          "confidence": "high",
+          "notes": "Farm's narrower window may reflect choice to focus on peak quality months"
+        }
+      },
+      "confidence": 0.85,
+      "sources": ["CSAware data", "State calendar", "Zone mapping"]
+    },
+    "query_5": {
+      "question": "Why can Zone 10 grow tomatoes year-round but Zone 8 cannot?",
+      "cypher": "MATCH (z8:Zone {id: 'zone:8'}), (z10:Zone {id: 'zone:10'}) RETURN z8.frostRisk, z8.growingSeason, z10.frostRisk, z10.growingSeason",
+      "traversal": [
+        "zone:8",
+        "zone:10"
+      ],
+      "result": {
+        "zone8": {
+          "tempRange": "10-20°F winter minimum",
+          "frostRisk": "Hard freezes occur",
+          "growingSeason": "March-November (9 months)",
+          "tomatoWindow": "May-July (spring), October-November (fall)",
+          "limitation": "Winter too cold - tomatoes killed by frost"
+        },
+        "zone10": {
+          "tempRange": "30-40°F winter minimum",
+          "frostRisk": "Extremely rare or none",
+          "growingSeason": "Year-round",
+          "tomatoWindow": "October-June (9 months)",
+          "advantage": "Frost-free winter enables continuous production"
+        },
+        "reasoning": "Tomatoes are frost-sensitive. Zone 8 experiences hard freezes November-March. Zone 10 rarely drops below 30°F, allowing winter production when eastern US markets demand Florida tomatoes."
+      },
+      "confidence": 0.95,
+      "sources": ["USDA zone definitions", "Crop physiology", "State harvest calendars"]
+    }
+  },
+  "prediction_chains": {
+    "cherokee_purple_zone10": {
+      "description": "Full prediction chain: cultivar + zone → harvest timing",
+      "inputs": {
+        "cultivar": "Cherokee Purple",
+        "zone": "10a",
+        "region": "Cypress Creek (Hendry County, FL)",
+        "plantingDate": "2025-08-15"
+      },
+      "chain": [
+        {
+          "step": 1,
+          "entity": "cultivar:cherokee_purple",
+          "data": {
+            "gddRequirement": 2800,
+            "daysToMaturity": 80
+          }
+        },
+        {
+          "step": 2,
+          "entity": "zone:10",
+          "data": {
+            "avgDailyGDD": 22,
+            "frostFree": true,
+            "tempRange": "30-40°F minimum"
+          }
+        },
+        {
+          "step": 3,
+          "calculation": "GDD accumulation",
+          "formula": "2800 GDD ÷ 22 GDD/day = 127 days",
+          "result": "127 days from planting to harvest"
+        },
+        {
+          "step": 4,
+          "calculation": "Harvest date",
+          "formula": "2025-08-15 + 127 days = 2025-12-20",
+          "result": "Expected harvest: mid-December 2025"
+        },
+        {
+          "step": 5,
+          "validation": "Compare to state calendar",
+          "data": {
+            "predicted": "December",
+            "stateWindow": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+            "statePeak": [12, 1, 2, 3]
+          },
+          "result": "VALIDATED - December is in peak window"
+        },
+        {
+          "step": 6,
+          "validation": "Compare to farm data",
+          "data": {
+            "predicted": "December",
+            "cypressCreekWindow": [11, 12, 1, 2, 3, 4]
+          },
+          "result": "VALIDATED - December is when Cypress Creek harvests"
+        }
+      ],
+      "prediction": {
+        "harvestDate": "2025-12-20",
+        "harvestWindow": "2025-12-15 to 2025-12-25",
+        "confidence": 0.85,
+        "brixEstimate": "7-9 (heritage premium range)",
+        "qualityTier": "Premium",
+        "reasoning": "Peak season + heritage cultivar + Zone 10 optimal conditions"
+      }
+    },
+    "early_girl_zone8": {
+      "description": "Comparison: same planting date, different zone and cultivar",
+      "inputs": {
+        "cultivar": "Early Girl",
+        "zone": "8b",
+        "region": "North Florida (Leon County)",
+        "plantingDate": "2025-08-15"
+      },
+      "chain": [
+        {
+          "step": 1,
+          "entity": "cultivar:early_girl",
+          "data": {
+            "gddRequirement": 2000,
+            "daysToMaturity": 52
+          }
+        },
+        {
+          "step": 2,
+          "entity": "zone:8",
+          "data": {
+            "avgDailyGDD": 18,
+            "frostRisk": "Hard freezes November-March",
+            "tempRange": "10-20°F minimum"
+          }
+        },
+        {
+          "step": 3,
+          "calculation": "GDD accumulation",
+          "formula": "2000 GDD ÷ 18 GDD/day = 111 days",
+          "result": "111 days from planting to harvest"
+        },
+        {
+          "step": 4,
+          "calculation": "Harvest date",
+          "formula": "2025-08-15 + 111 days = 2025-12-04",
+          "result": "Expected harvest: early December 2025"
+        },
+        {
+          "step": 5,
+          "validation": "Frost risk check",
+          "data": {
+            "harvestDate": "2025-12-04",
+            "firstFrostDate": "~2025-11-15",
+            "riskLevel": "HIGH"
+          },
+          "result": "CAUTION - Harvest may be cut short by frost"
+        },
+        {
+          "step": 6,
+          "validation": "Compare to state calendar",
+          "data": {
+            "predicted": "December",
+            "zone8Window": [5, 6, 7, 10, 11],
+            "zone8Peak": [6, 10, 11]
+          },
+          "result": "MARGINAL - December not in typical Zone 8 window (frost risk)"
+        }
+      ],
+      "prediction": {
+        "harvestDate": "2025-12-04 (if no frost)",
+        "harvestWindow": "2025-11-25 to 2025-12-10",
+        "confidence": 0.55,
+        "frostRisk": "HIGH - likely crop loss",
+        "recommendation": "Plant earlier (March) or later (fall harvest by October)",
+        "brixEstimate": "4-6 (standard commercial range)",
+        "qualityTier": "Standard",
+        "reasoning": "Late-season planting in frost-prone zone = high risk"
+      }
+    }
+  },
+  "validation_chains": {
+    "three_way_triangulation": {
+      "description": "How we validate predictions using three data sources",
+      "product": "Tomato",
+      "geography": "Florida Zone 10",
+      "sources": [
+        {
+          "source": "State Calendar",
+          "type": "Official",
+          "data": {
+            "harvestMonths": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+            "peakMonths": [12, 1, 2, 3]
+          },
+          "confidence": 0.95,
+          "coverage": "Statewide aggregate"
+        },
+        {
+          "source": "Zone Mapping",
+          "type": "Inference",
+          "data": {
+            "zone10Window": [10, 11, 12, 1, 2, 3, 4, 5, 6],
+            "reasoning": "Frost-free climate enables year-round"
+          },
+          "confidence": 0.90,
+          "coverage": "Zone-specific"
+        },
+        {
+          "source": "Farm Data",
+          "type": "Ground Truth",
+          "data": {
+            "cypressCreek": [11, 12, 1, 2, 3, 4],
+            "tinyFarm": [11, 12, 1, 2, 3, 4]
+          },
+          "confidence": 0.85,
+          "coverage": "Farm-level actual"
+        }
+      ],
+      "triangulation": {
+        "overlap": [11, 12, 1, 2, 3, 4],
+        "validation": "STRONG - All three sources agree on Nov-Apr core window",
+        "confidence": 0.93,
+        "notes": "Farm data slightly narrower (omits Oct, May, Jun) but within zone window. Likely reflects focus on peak quality months."
+      }
+    }
+  },
+  "investor_narrative": {
+    "problem": "Food labels promise quality but don't prove it. Consumers can't tell if 'grass-fed' actually means healthier or if 'heirloom' actually means better flavor.",
+    "solution": "Fielder connects WHAT is grown (genetics) + WHERE (climate/soil) + WHEN (timing) + HOW (practices) to predict AND verify internal quality (nutrition, flavor).",
+    "moat": "Knowledge graph data is unreplicable. We're building prediction→measurement pairs that AI can't synthesize from the internet. Every scan, every lab test, every harvest window deepens the moat.",
+    "example_use_case": {
+      "consumer_question": "Are tomatoes from Cypress Creek Farm actually higher quality?",
+      "fielder_answer": {
+        "step1": "Identify genetics: Cherokee Purple (true heritage, 7-9 Brix potential)",
+        "step2": "Check location: Zone 10a (optimal winter growing)",
+        "step3": "Verify timing: Nov-Apr harvest (in peak window)",
+        "step4": "Predict quality: 7-9 Brix, rich flavor, premium tier",
+        "step5": "Lab verification: (when measured) actual Brix vs predicted",
+        "result": "YES - Cherokee Purple in Zone 10 at peak timing = scientifically defensible premium quality"
+      }
+    },
+    "scale": "Start with Florida (winter vegetables), expand to California (year-round), then national. Each state adds zones, regions, farms, cultivars, timing windows. Network effect: more data = better predictions = more users = more data.",
+    "business_model": "Consumers pay for predictions (app subscriptions). Farms pay to be listed (marketplace commission). Labs pay for data access (API licensing). Every stakeholder benefits from the intelligence layer."
+  }
+}

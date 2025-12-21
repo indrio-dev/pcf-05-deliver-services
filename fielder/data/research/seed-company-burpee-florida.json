@@ -1,0 +1,690 @@
+{
+  "source": "Burpee Seeds",
+  "collectionDate": "2025-12-20",
+  "targetRegion": "Florida",
+  "targetZones": ["8", "9", "10", "11"],
+  "notes": "Data collected from Burpee grow calendars, product pages, and support documentation. Burpee's product pages blocked direct access (403 errors), so data was compiled from search results, support articles, and third-party sources citing Burpee information. Zone-specific calendars exist but detailed content was not accessible via web scraping.",
+  "limitations": [
+    "Burpee grow calendar PDFs exist but could not be accessed via WebFetch",
+    "Product pages returned 403 errors preventing direct data extraction",
+    "Zone 8 calendar mentioned but detailed content not rendered in HTML",
+    "Zone 10-11 calendar exists but specific cultivar data not accessible",
+    "Most data represents general guidelines rather than cultivar-specific timing"
+  ],
+  "cultivars": [
+    {
+      "cultivarName": "Cherokee Purple",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": true,
+      "daysToMaturity": 80,
+      "daysToMaturityNote": "From transplant; 60-75 days after planting starter plants",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "March 31",
+            "method": "transplant",
+            "notes": "Sow indoors 6-8 weeks before last frost, transplant 4 weeks after last frost"
+          },
+          "harvestWindow": {
+            "start": "June 1",
+            "end": "September 30"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant",
+            "notes": "February-March planting window to avoid intense summer heat"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "September 15"
+          }
+        }
+      },
+      "temperatureRequirements": {
+        "minTemperature": "55°F",
+        "optimalRange": "75-95°F",
+        "soilTemperature": "60-85°F"
+      },
+      "notes": "Large purple slicing tomato with rich flavor. Annual for all zones 1-11. Tolerates heat well but best planted before intense summer arrives."
+    },
+    {
+      "cultivarName": "Brandywine Pink",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": true,
+      "daysToMaturity": 80,
+      "daysToMaturityNote": "From transplant; dates back to 1885",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "March 31",
+            "method": "transplant",
+            "notes": "Start seeds 6-8 weeks before last frost"
+          },
+          "harvestWindow": {
+            "start": "June 1",
+            "end": "September 30"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant",
+            "notes": "Plant early spring before summer heat"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "September 15"
+          }
+        }
+      },
+      "notes": "Large beefsteak-shaped fruits on upright, potato-leaved plants. Sets one or two fruits per cluster. Ripens late. Heirloom standard since 1885."
+    },
+    {
+      "cultivarName": "Early Girl",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": 59,
+      "daysToMaturityNote": "From transplant",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 15",
+            "method": "transplant",
+            "notes": "Sow indoors 6-8 weeks before last frost, transplant 4 weeks after last frost"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "September 30"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant",
+            "notes": "Heat-resistant variety suitable for Florida"
+          },
+          "harvestWindow": {
+            "start": "May 1",
+            "end": "September 15"
+          }
+        },
+        "11": {
+          "plantingWindow": {
+            "start": "October 1",
+            "end": "December 31",
+            "method": "transplant",
+            "notes": "South Florida optimal planting during dry season with cooler nights (65-70°F)"
+          },
+          "harvestWindow": {
+            "start": "December 15",
+            "end": "April 30"
+          }
+        }
+      },
+      "notes": "Heat-resistant hybrid. Bush Early Girl variety produces harvest in 65 days. Listed among Burpee's best heat-tolerant tomatoes."
+    },
+    {
+      "cultivarName": "Better Boy",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": 75,
+      "daysToMaturityNote": "From transplant; produces starting midseason to frost",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 15",
+            "method": "transplant",
+            "notes": "Sow indoors 6-8 weeks before last frost, harden off and transplant after frost danger"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "October 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant",
+            "notes": "Heat-resistant, highly adaptable to most climates"
+          },
+          "harvestWindow": {
+            "start": "May 1",
+            "end": "September 30"
+          }
+        },
+        "11": {
+          "plantingWindow": {
+            "start": "October 1",
+            "end": "December 31",
+            "method": "transplant",
+            "notes": "Plant during South Florida dry season"
+          },
+          "harvestWindow": {
+            "start": "December 15",
+            "end": "April 30"
+          }
+        }
+      },
+      "notes": "Large red fruits, many reaching 1 lb. Great disease resistance with good foliage protection. Indeterminate, requires staking. Heat-resistant variety."
+    },
+    {
+      "cultivarName": "Super Beefsteak",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": 80,
+      "daysToMaturityNote": "From transplant",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 15",
+            "method": "transplant",
+            "notes": "Start seeds 6-8 weeks before last frost"
+          },
+          "harvestWindow": {
+            "start": "June 1",
+            "end": "October 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "September 30"
+          }
+        }
+      },
+      "notes": "Deep red beefsteak tomatoes. Indeterminate vines produce all summer. Annual for zones 1-13."
+    },
+    {
+      "cultivarName": "Burpee's Supersteak Hybrid",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": 80,
+      "daysToMaturityNote": "From transplant",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 15",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "June 1",
+            "end": "October 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "September 30"
+          }
+        }
+      },
+      "notes": "Vigorous indeterminate vines, heavy crops of uniform deep red tomatoes. VFN disease resistance."
+    },
+    {
+      "cultivarName": "Burpee's Big Boy Hybrid",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": 78,
+      "daysToMaturityNote": "From transplant",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 15",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "June 1",
+            "end": "October 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "September 30"
+          }
+        }
+      },
+      "notes": "Large beefsteak tomatoes on upright plants. Classic Burpee variety."
+    },
+    {
+      "cultivarName": "Brandy Boy Hybrid",
+      "crop": "tomato",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": 76,
+      "daysToMaturityNote": "75-78 days from transplant",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 15",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "May 20",
+            "end": "October 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "March 31",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "May 10",
+            "end": "September 30"
+          }
+        }
+      },
+      "notes": "Large red beefsteak slicing tomato. Indeterminate variety."
+    },
+    {
+      "cultivarName": "Bell Peppers (general)",
+      "crop": "pepper",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": null,
+      "daysToMaturityNote": "Varies by specific variety",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "March 15",
+            "end": "May 1",
+            "method": "transplant",
+            "notes": "Plant after all danger of frost has passed"
+          },
+          "harvestWindow": {
+            "start": "June 15",
+            "end": "October 31"
+          }
+        },
+        "9": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 30",
+            "method": "transplant",
+            "notes": "Better grown in cooler shoulder seasons"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "October 15"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "April 30",
+            "method": "transplant",
+            "notes": "Can grow year-round with protection when temps below 50°F. Need shade during hottest part of day in summer"
+          },
+          "harvestWindow": {
+            "start": "May 1",
+            "end": "November 30"
+          }
+        }
+      },
+      "notes": "Bell peppers prefer cooler shoulder seasons in Florida. Can be grown in hot summer with afternoon shade. Year-round in South Florida with frost protection."
+    },
+    {
+      "cultivarName": "Jalapeño",
+      "crop": "pepper",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": null,
+      "daysToMaturityNote": "Varies by variety (Early Jalapeno available)",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "March 15",
+            "end": "May 1",
+            "method": "transplant",
+            "notes": "Plant after frost danger"
+          },
+          "harvestWindow": {
+            "start": "June 15",
+            "end": "October 31"
+          }
+        },
+        "9": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "April 30",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "October 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "April 30",
+            "method": "transplant",
+            "notes": "Most grown hot chili pepper in Florida. Yields well in hot or cool, dry or humid climates"
+          },
+          "harvestWindow": {
+            "start": "May 1",
+            "end": "November 30"
+          }
+        }
+      },
+      "notes": "Most popular hot pepper grown in Florida. UF-IFAS recommends Early Jalapeno and Jalapeno M as Florida-friendly varieties. Bountiful harvest in diverse climates."
+    },
+    {
+      "cultivarName": "Poblano",
+      "crop": "pepper",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": null,
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "March 15",
+            "end": "May 1",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "June 15",
+            "end": "October 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "February 1",
+            "end": "April 30",
+            "method": "transplant"
+          },
+          "harvestWindow": {
+            "start": "May 1",
+            "end": "November 30"
+          }
+        }
+      },
+      "notes": "General pepper timing applies. No specific Burpee cultivar data found."
+    },
+    {
+      "cultivarName": "Cantaloupe (general)",
+      "crop": "melon",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": null,
+      "daysToMaturityNote": "Typically 70-90 days depending on variety",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "March 20",
+            "end": "April 10",
+            "method": "transplant",
+            "notes": "Choose early-maturing varieties or start with 3-4 week old seedlings"
+          },
+          "harvestWindow": {
+            "start": "June 15",
+            "end": "August 31"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "January 1",
+            "end": "January 31",
+            "method": "direct_sow",
+            "notes": "Last month to plant in Zone 10. Seeds can be planted directly into garden"
+          },
+          "harvestWindow": {
+            "start": "April 1",
+            "end": "June 30"
+          }
+        }
+      },
+      "notes": "Zone 8 has shorter growing season requiring early varieties. Zones 9-10 have sufficient warm days for direct sowing."
+    },
+    {
+      "cultivarName": "Watermelon (general)",
+      "crop": "melon",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": null,
+      "daysToMaturityNote": "Typically 80-95 days depending on variety",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "March 25",
+            "end": "April 10",
+            "method": "transplant",
+            "notes": "Use early-maturing varieties or seedlings"
+          },
+          "harvestWindow": {
+            "start": "June 20",
+            "end": "September 15"
+          }
+        },
+        "9": {
+          "plantingWindow": {
+            "start": "April 1",
+            "end": "April 30",
+            "method": "direct_sow",
+            "notes": "April is perfect time in Central Florida"
+          },
+          "harvestWindow": {
+            "start": "June 15",
+            "end": "September 30"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "January 1",
+            "end": "January 31",
+            "method": "direct_sow",
+            "notes": "Last month to plant in Zone 10"
+          },
+          "harvestWindow": {
+            "start": "April 1",
+            "end": "July 31"
+          }
+        }
+      },
+      "notes": "Zone 8 requires early varieties. Zones 9-10 suitable for direct sowing."
+    },
+    {
+      "cultivarName": "Seascape",
+      "crop": "strawberry",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": 90,
+      "daysToMaturityNote": "About 3 months from planting regardless of planting date",
+      "zones": {
+        "8": {
+          "plantingWindow": {
+            "start": "February 15",
+            "end": "March 31",
+            "method": "transplant",
+            "notes": "Plant in late spring after last frost threat"
+          },
+          "harvestWindow": {
+            "start": "May 15",
+            "end": "October 31",
+            "notes": "Day-neutral variety fruits continuously"
+          }
+        }
+      },
+      "temperatureRequirements": {
+        "notes": "Heat-tolerant and remarkably disease resistant"
+      },
+      "notes": "Day-neutral strawberry suitable for zones 4-8. Starts fruiting about 3 months from planting regardless of when planted. Not recommended for zones 9-10 (grow as cool-season annual instead)."
+    },
+    {
+      "cultivarName": "Strawberries (general for Zones 9-10)",
+      "crop": "strawberry",
+      "supplier": "Burpee",
+      "isHeirloom": false,
+      "daysToMaturity": null,
+      "daysToMaturityNote": "Flowering begins in November",
+      "zones": {
+        "9": {
+          "plantingWindow": {
+            "start": "September 1",
+            "end": "November 15",
+            "method": "transplant",
+            "notes": "Single-crown plants. Grown as cool-season annual"
+          },
+          "harvestWindow": {
+            "start": "November 1",
+            "end": "May 31",
+            "notes": "Flowering and fruit continue through April or May"
+          }
+        },
+        "10": {
+          "plantingWindow": {
+            "start": "September 15",
+            "end": "November 15",
+            "method": "transplant",
+            "notes": "Plant in fall. Commercial growers use day-neutral varieties for winter growing"
+          },
+          "harvestWindow": {
+            "start": "November 1",
+            "end": "May 31",
+            "notes": "Production continues into April or May"
+          }
+        }
+      },
+      "notes": "In Florida zones 9-10, strawberries are planted in fall and grown as cool-season annuals. Everbearing or June-bearing day-neutral varieties recommended for commercial winter production."
+    }
+  ],
+  "generalGuidelines": {
+    "zone8": {
+      "frostDates": {
+        "lastFrost": "March 15",
+        "firstFrost": "November 15"
+      },
+      "notes": "Relatively short growing season. Choose early-maturing varieties or use transplants."
+    },
+    "zone9": {
+      "frostDates": {
+        "lastFrost": "February 15",
+        "firstFrost": "December 1"
+      },
+      "notes": "Heat becomes limiting factor in summer rather than frost. Extended growing season."
+    },
+    "zone10": {
+      "frostDates": {
+        "lastFrost": "January 10",
+        "firstFrost": "January 10"
+      },
+      "notes": "Essentially frost-free year-round. Nearly year-round warm weather allows continuous planting cycle."
+    },
+    "zone11": {
+      "frostDates": {
+        "lastFrost": "No frost",
+        "firstFrost": "No frost"
+      },
+      "notes": "Tropical climate. Plant tomatoes in October-December dry season. Avoid May-September due to 85% humidity and heat."
+    }
+  },
+  "floridaSpecificConsiderations": {
+    "tomatoes": {
+      "zones8-9": "Plant February-April before intense summer heat",
+      "zone10": "Plant February-March for spring/summer, or October-December for winter production in South Florida",
+      "zone11": "Optimal planting October-December during dry season with cooler nights (65-70°F). Avoid May-September (85% humidity, 88°F average)"
+    },
+    "peppers": {
+      "general": "Better grown in cooler shoulder seasons. Can grow in summer with afternoon shade.",
+      "zone10": "Year-round with protection when temperatures below 50°F"
+    },
+    "melons": {
+      "zones8-9": "March-April planting, use early varieties",
+      "zone10": "January last planting window, direct sow possible"
+    },
+    "strawberries": {
+      "zone8": "February-March as perennial",
+      "zones9-10": "September-November as cool-season annual. Winter production."
+    }
+  },
+  "resources": [
+    {
+      "title": "Burpee Zone 8 Grow Calendar",
+      "url": "https://support.burpee.com/support/solutions/articles/60000728530-grow-calendar-zone-8",
+      "notes": "PDF calendar available but content not accessible via web scraping"
+    },
+    {
+      "title": "Burpee Zone 9 Grow Calendar",
+      "url": "https://support.burpee.com/support/solutions/articles/60000728533-do-you-have-a-grow-calendar-for-zone-9-",
+      "notes": "Calendar exists but detailed data not accessible"
+    },
+    {
+      "title": "Burpee Zone 10 & 11 Grow Calendar",
+      "url": "https://support.burpee.com/support/solutions/articles/60000725005-do-you-have-a-grow-calendar-for-zone-10-11-",
+      "notes": "Combined calendar for zones 10-11 with PDF attachment"
+    },
+    {
+      "title": "Cherokee Purple Tomato - Burpee Product Page",
+      "url": "https://www.burpee.com/tomato-cherokee-purple-prod000984.html",
+      "notes": "403 error on direct access"
+    },
+    {
+      "title": "Brandywine Pink Tomato - Burpee Product Page",
+      "url": "https://www.burpee.com/tomato-brandywine-pink-prod000974.html",
+      "notes": "403 error on direct access"
+    },
+    {
+      "title": "Early Girl Hybrid Tomato - Burpee Product Page",
+      "url": "https://www.burpee.com/tomato-early-girl-hybrid-prod000986.html",
+      "notes": "403 error on direct access"
+    },
+    {
+      "title": "Better Boy Hybrid Tomato - Burpee Product Page",
+      "url": "https://www.burpee.com/tomato-better-boy-hybrid-prod000964.html",
+      "notes": "URL found via search"
+    },
+    {
+      "title": "Seascape Strawberry - Burpee Product Page",
+      "url": "https://www.burpee.com/strawberry-seascape-prod000534.html",
+      "notes": "Day-neutral variety for zones 4-8"
+    },
+    {
+      "title": "University of Florida IFAS - Peppers",
+      "url": "https://gardeningsolutions.ifas.ufl.edu/plants/edibles/vegetables/peppers/",
+      "notes": "Florida-specific pepper growing information"
+    },
+    {
+      "title": "University of Florida IFAS - Growing Strawberries",
+      "url": "https://sfyl.ifas.ufl.edu/lawn-and-garden/growing-strawberries/",
+      "notes": "Florida strawberry cultivation guide"
+    }
+  ]
+}

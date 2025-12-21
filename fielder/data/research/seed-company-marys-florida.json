@@ -1,0 +1,593 @@
+{
+  "source": {
+    "company": "Mary's Heirloom Seeds",
+    "url": "https://www.marysheirloomseeds.com",
+    "guides": [
+      "https://www.marysheirloomseeds.com/blogs/news/78187969-south-florida-vegetable-planting-guide",
+      "https://www.marysheirloomseeds.com/blogs/news/78189249-central-florida-vegetable-planting-guide",
+      "https://www.marysheirloomseeds.com/blogs/news/78191617-north-florida-vegetable-planting-guide"
+    ],
+    "collectedDate": "2025-12-20",
+    "dataQuality": {
+      "hasSpecificDates": false,
+      "hasMonthlyWindows": true,
+      "hasDaysToMaturity": true,
+      "hasMethodDetails": false,
+      "hasHarvestTiming": false,
+      "notes": "Mary's provides monthly planting windows by Florida region and days-to-maturity on product pages, but does not provide specific planting dates, transplant vs direct sow guidance, or harvest timing in their guides."
+    }
+  },
+  "floridaRegions": {
+    "southFlorida": {
+      "name": "South Florida",
+      "zones": ["10a", "10b", "11a"],
+      "description": "Covers zones 10a, 10b, and 11a"
+    },
+    "centralFlorida": {
+      "name": "Central Florida",
+      "zones": ["9a", "9b"],
+      "description": "Covers zones 9a and 9b"
+    },
+    "northFlorida": {
+      "name": "North Florida",
+      "zones": ["8a", "8b", "9a"],
+      "description": "Covers zones 8a, 8b, and 9a"
+    }
+  },
+  "cultivars": [
+    {
+      "cultivarName": "Cherokee Purple",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "daysToMaturity": 80,
+      "plantType": "indeterminate",
+      "diseaseResistance": [
+        "Bacterial Speck",
+        "Fusarium Wilt 1",
+        "Fusarium Wilt 2",
+        "Fusarium Wilt 3",
+        "Root Knot Nematode",
+        "Tomato Spotted Wilt Virus",
+        "Verticillium Wilt"
+      ],
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Recommended variety for South Florida"
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Recommended variety for Central Florida"
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"],
+          "notes": "Recommended variety for North Florida"
+        }
+      ],
+      "productUrl": "https://www.marysheirloomseeds.com/products/cherokee-purple-tomato"
+    },
+    {
+      "cultivarName": "Brandywine Pink",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "daysToMaturity": 85,
+      "daysToMaturityRange": [80, 90],
+      "plantType": "indeterminate",
+      "fruitWeight": "up to 1.5 lbs",
+      "notes": "One of the most popular heirloom tomatoes from 1885",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Recommended variety for South Florida"
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Recommended variety for Central Florida"
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"],
+          "notes": "Recommended variety for North Florida"
+        }
+      ],
+      "productUrl": "https://www.marysheirloomseeds.com/products/brandywine-tomato"
+    },
+    {
+      "cultivarName": "Matt's Wild Cherry",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "daysToMaturity": 60,
+      "plantType": "indeterminate",
+      "diseaseResistance": ["Early Blight", "Late Blight"],
+      "characteristics": ["vigorous", "sprawling", "self-sows readily", "prolific"],
+      "notes": "Excellent for hot climates, thrives in Texas heat. Customer reports successful fall planting in Central Florida.",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Emphasized variety for South Florida. Customer success with fall planting in Central Florida."
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "cherryVarietyMonths": ["March", "October"],
+          "notes": "Emphasized variety for Central Florida. Cherry varieties specifically can be planted in March and October in addition to main season."
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"],
+          "notes": "Listed as recommended variety"
+        }
+      ],
+      "productUrl": "https://www.marysheirloomseeds.com/products/matts-wild-cherry-tomato"
+    },
+    {
+      "cultivarName": "Wild Everglades",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "notes": "Florida-adapted variety, emphasized in guides",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Emphasized variety for South Florida adaptation"
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Emphasized variety for Central Florida adaptation"
+        }
+      ]
+    },
+    {
+      "cultivarName": "Marglobe",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Green Zebra",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Homestead",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "daysToMaturity": 80,
+      "plantType": "indeterminate (semi-determinant)",
+      "fruitWeight": "medium-sized globes",
+      "characteristics": ["heat-tolerant", "humidity-tolerant", "sets fruit under wide range of conditions"],
+      "uses": ["slicer", "canning"],
+      "notes": "Bred for hot and humid conditions. Does extremely well in southern climates. Florida-adapted variety emphasized in guides.",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Emphasized variety for South Florida, bred for heat and humidity"
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Emphasized variety for Central Florida"
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ],
+      "productUrl": "https://www.marysheirloomseeds.com/products/homestead-tomato"
+    },
+    {
+      "cultivarName": "Floradade",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "daysToMaturity": 75,
+      "plantType": "determinate",
+      "fruitWeight": "5-7 ounces",
+      "characteristics": ["heat-tolerant", "humidity-tolerant", "withstands 90-100F and still produces"],
+      "uses": ["all-purpose", "slicing"],
+      "origin": "Dade County, Florida",
+      "notes": "Specifically bred for Florida's hot, humid climate. Legendary ability to produce heavy crops in extreme heat when other tomatoes fail.",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Bred for Florida conditions, originated in Dade County"
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ],
+      "productUrl": "https://www.marysheirloomseeds.com/products/floradade-tomato"
+    },
+    {
+      "cultivarName": "Mortgage Lifter",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Roma",
+      "crop": "tomato",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Black Hungarian",
+      "crop": "pepper",
+      "pepperType": "hot",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "July", "August", "September"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Cayenne",
+      "crop": "pepper",
+      "pepperType": "hot",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "July", "August", "September"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Chinese 5-Color",
+      "crop": "pepper",
+      "pepperType": "hot",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "July", "August", "September"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Chocolate Habanero",
+      "crop": "pepper",
+      "pepperType": "hot",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Jalapeno (Tam)",
+      "crop": "pepper",
+      "pepperType": "hot",
+      "isHeirloom": true,
+      "daysToMaturity": 80,
+      "plantHeight": "24-30 inches",
+      "characteristics": ["mild heat", "container-friendly", "patio-friendly"],
+      "notes": "Tam Jalapeno variety - mild with same flavor but less heat than standard jalapeno",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "July", "August", "September"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ],
+      "productUrl": "https://www.marysheirloomseeds.com/products/jalapeno-pepper"
+    },
+    {
+      "cultivarName": "Cal Wonder",
+      "crop": "pepper",
+      "pepperType": "sweet",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "July", "August", "September"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Golden Marconi",
+      "crop": "pepper",
+      "pepperType": "sweet",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "July", "August", "September"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Pimiento",
+      "crop": "pepper",
+      "pepperType": "sweet",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "April", "May", "June", "August", "September", "October"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March", "July", "August", "September"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Golden Midget",
+      "crop": "watermelon",
+      "isHeirloom": true,
+      "daysToMaturity": 70,
+      "fruitWeight": "around 3 lbs",
+      "characteristics": ["miniature", "golden-yellow rind when ripe", "salmon-pink flesh", "sweet and refreshing"],
+      "origin": "Discovered in 1959",
+      "scientificName": "Citrullus lanatus",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March"]
+        }
+      ],
+      "productUrl": "https://www.marysheirloomseeds.com/products/golden-midget-watermelon"
+    },
+    {
+      "cultivarName": "Georgia Rattlesnake",
+      "crop": "watermelon",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Blacktail Mountain",
+      "crop": "watermelon",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Charleston Grey",
+      "crop": "watermelon",
+      "isHeirloom": true,
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March"]
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["January", "February", "March"]
+        }
+      ]
+    },
+    {
+      "cultivarName": "Florida High Bush",
+      "crop": "eggplant",
+      "isHeirloom": true,
+      "characteristics": ["heat-adapted"],
+      "notes": "Specifically noted as heat-adapted variety for Florida",
+      "floridaTimings": [
+        {
+          "region": "South Florida",
+          "zones": ["10a", "10b", "11a"],
+          "plantingMonths": ["January", "February", "March", "August", "September", "October"],
+          "notes": "Heat-adapted variety specifically recommended for South Florida"
+        },
+        {
+          "region": "Central Florida",
+          "zones": ["9a", "9b"],
+          "plantingMonths": ["February", "March", "August", "September"]
+        },
+        {
+          "region": "North Florida",
+          "zones": ["8a", "8b", "9a"],
+          "plantingMonths": ["February", "March", "April", "May", "June"]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Mary's Heirloom Seeds provides monthly planting windows rather than specific calendar dates",
+    "Days to maturity data is available on individual product pages but not in regional guides",
+    "No distinction between transplant and direct sow timing in the guides",
+    "No harvest window data provided",
+    "Florida guides emphasize heat-tolerant and humidity-tolerant varieties",
+    "Several cultivars are specifically Florida-adapted: Matt's Wild Cherry, Wild Everglades, Homestead, Floradade, Florida High Bush",
+    "South Florida has the longest growing season with planting possible nearly year-round for many crops",
+    "Central and North Florida have more defined seasons with summer gaps for many crops",
+    "Guides organize by region (South/Central/North Florida) rather than by specific USDA zone"
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "source": "Johnny's Selected Seeds",
+  "url": "https://www.johnnyseeds.com",
+  "collectionDate": "2025-12-20",
+  "notes": "Johnny's Selected Seeds provides days to maturity from transplant date rather than zone-specific planting calendars. For zone-specific timing, they recommend using their Seed Starting Date Calculator based on local last frost dates. Zone recommendations were limited or not specified on most product pages.",
+  "cultivars": [
+    {
+      "cultivarName": "Cherokee Purple",
+      "crop": "tomato",
+      "daysToMaturity": 72,
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": true,
+      "isOpenPollinated": true,
+      "isOrganic": true,
+      "description": "Famously rich flavor and texture. Unusual variety with full flavor.",
+      "growthHabit": "indeterminate",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/tomatoes/heirloom-tomatoes/cherokee-purple-organic-tomato-seed-753G.html",
+      "zoneRecommendations": {
+        "note": "Standard warm-season tomato. Start indoors 5-6 weeks before transplant date."
+      }
+    },
+    {
+      "cultivarName": "Black Cherry",
+      "crop": "tomato",
+      "daysToMaturity": 64,
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": false,
+      "isOpenPollinated": true,
+      "isOrganic": true,
+      "description": "Sweet and robust. Round, 20 gm fruits regarded as one of the best-tasting tomatoes.",
+      "growthHabit": "indeterminate",
+      "fruitSize": "20g",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/tomatoes/cherry-tomatoes/black-cherry-organic-tomato-seed-88G.html",
+      "zoneRecommendations": {
+        "note": "Cherry tomato suitable for field, greenhouse, or backyard garden"
+      }
+    },
+    {
+      "cultivarName": "Matt's Wild Cherry",
+      "crop": "tomato",
+      "daysToMaturity": 60,
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": true,
+      "isOpenPollinated": true,
+      "isOrganic": false,
+      "description": "The wild tomato with great flavor.",
+      "growthHabit": "indeterminate",
+      "fruitSize": "5g",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/tomatoes/heirloom-tomatoes/matts-wild-cherry-tomato-seed-732.html",
+      "zoneRecommendations": {
+        "note": "Very early maturing cherry tomato"
+      }
+    },
+    {
+      "cultivarName": "Brandywine",
+      "crop": "tomato",
+      "daysToMaturity": 78,
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": true,
+      "isOpenPollinated": true,
+      "isOrganic": true,
+      "description": "One of the most flavorful tomatoes. Luscious, heirloom flavor as very rich, loud, and distinctively spicy. Large fruits often exceed 1 lb.",
+      "growthHabit": "indeterminate",
+      "fruitSize": "1+ lb",
+      "leafType": "potato-leaf",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/tomatoes/heirloom-tomatoes/brandywine-organic-tomato-seed-2845.html",
+      "zoneRecommendations": {
+        "note": "Classic indeterminate heirloom. Best staked or caged."
+      }
+    },
+    {
+      "cultivarName": "Pruden's Purple",
+      "crop": "tomato",
+      "daysToMaturity": 67,
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": true,
+      "isOpenPollinated": true,
+      "isOrganic": true,
+      "description": "Early Brandywine type. Large slicing tomato with traditional heirloom qualities.",
+      "growthHabit": "indeterminate",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/tomatoes/heirloom-tomatoes/prudens-purple-organic-tomato-seed-712.html",
+      "zoneRecommendations": {
+        "note": "Suitable for warm-season growing. Start seeds indoors 6-8 weeks before last frost."
+      }
+    },
+    {
+      "cultivarName": "Sun Gold",
+      "crop": "tomato",
+      "daysToMaturity": "not specified",
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": false,
+      "isOpenPollinated": false,
+      "isOrganic": false,
+      "description": "Exceptionally sweet, bright tangerine-orange cherry tomatoes. Intense fruity flavor.",
+      "growthHabit": "indeterminate",
+      "hybridType": "F1",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/tomatoes/cherry-tomatoes/sun-gold-f1-tomato-seed-770.html",
+      "zoneRecommendations": {
+        "note": "Easy-to-grow cherry tomato variety"
+      }
+    },
+    {
+      "cultivarName": "Ace",
+      "crop": "pepper",
+      "daysToMaturity": {
+        "green": 50,
+        "redRipe": 70
+      },
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": false,
+      "isOpenPollinated": false,
+      "isOrganic": false,
+      "description": "Extra-early, highly productive standard. Huge yields of medium-size, 3-4 lobed fruits.",
+      "pepperType": "bell",
+      "heatLevel": "sweet",
+      "hybridType": "F1",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/peppers/sweet-bell-peppers/ace-f1-bell-pepper-seed-574.html",
+      "zoneRecommendations": {
+        "note": "Warm-season crop. Will not thrive below 60°F. Start indoors 8 weeks before transplant."
+      }
+    },
+    {
+      "cultivarName": "Padron",
+      "crop": "pepper",
+      "daysToMaturity": 60,
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": true,
+      "isOpenPollinated": true,
+      "isOrganic": true,
+      "description": "Famous Spanish heirloom. About 1 out of 20 fruits will be hot, the rest mild. All fruits become hot if allowed to grow 2-3 inches long.",
+      "pepperType": "specialty",
+      "heatLevel": "mild to hot",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/peppers/hot-peppers/padron-organic-padron-pepper-seed-666G.html",
+      "zoneRecommendations": {
+        "note": "Standard pepper transplanting. Start indoors 6-8 weeks before last frost."
+      }
+    },
+    {
+      "cultivarName": "Early Jalapeño",
+      "crop": "pepper",
+      "daysToMaturity": {
+        "green": 60,
+        "redRipe": 80
+      },
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": false,
+      "isOpenPollinated": true,
+      "isOrganic": true,
+      "description": "Open-pollinated jalapeño variety with early maturity.",
+      "pepperType": "jalapeño",
+      "heatLevel": "hot",
+      "productUrl": "https://www.johnnyseeds.com/vegetables/peppers/hot-peppers/early-jalapen%CC%83o-organic-jalapeno-pepper-seed-586G.html",
+      "zoneRecommendations": {
+        "note": "Very little fruit set above 90°F. Sow seed about 8 weeks prior to transplanting."
+      }
+    },
+    {
+      "cultivarName": "Sugar Cube",
+      "crop": "melon",
+      "melonType": "cantaloupe",
+      "daysToMaturity": 80,
+      "daysToMaturityFrom": "seeding",
+      "isHeirloom": false,
+      "isOpenPollinated": false,
+      "isOrganic": false,
+      "description": "Personal-size melon variety described as widely adapted.",
+      "hybridType": "F1",
+      "diseaseResistance": ["Fusarium Wilt (F)", "Powdery Mildew (PM)", "Watermelon Mosaic Virus (WMV)", "Papaya Ringspot Virus (PRSV)", "Zucchini Yellow Mosaic Virus (ZYMV)"],
+      "productUrl": "https://www.johnnyseeds.com/vegetables/melons/cantaloupe-muskmelon/sugar-cube-f1-melon-seed-4399.html",
+      "zoneRecommendations": {
+        "note": "Widely adapted. Add about 10 days to maturity if direct-seeded."
+      }
+    },
+    {
+      "cultivarName": "Athena",
+      "crop": "melon",
+      "melonType": "cantaloupe",
+      "daysToMaturity": 79,
+      "daysToMaturityFrom": "transplant",
+      "isHeirloom": false,
+      "isOpenPollinated": false,
+      "isOrganic": false,
+      "description": "Disease-tolerant and shippable. Melons resist cracking at maturity with sturdy rinds.",
+      "hybridType": "F1",
+      "diseaseResistance": ["Fusarium Wilt (F)", "Powdery Mildew (PM)"],
+      "productUrl": "https://www.johnnyseeds.com/fruits/melons/cantaloupe-muskmelon/athena-f1-melon-seed-457.html",
+      "zoneRecommendations": {
+        "note": "Standard melon growing. Add 10 days if direct-seeded."
+      }
+    },
+    {
+      "cultivarName": "Crimson Sweet",
+      "crop": "watermelon",
+      "daysToMaturity": 85,
+      "daysToMaturityFrom": "seeding",
+      "isHeirloom": false,
+      "isOpenPollinated": true,
+      "isOrganic": false,
+      "description": "Classic large watermelon with excellent flavor and texture. Dark and light yellow-green striped, 10 x 12 inch blocky oval fruits weighing 15-25 lb. Crisp, sweet pink flesh.",
+      "fruitSize": "15-25 lb",
+      "productUrl": "https://www.johnnyseeds.com/fruits/watermelons/diploid-watermelons/crimson-sweet-watermelon-seed-2133.html",
+      "zoneRecommendations": {
+        "note": "Add about 10 days to maturity if direct-seeded vs transplant."
+      }
+    },
+    {
+      "cultivarName": "San Andreas",
+      "crop": "strawberry",
+      "daysToMaturity": "begins fruiting second year after planting",
+      "isHeirloom": false,
+      "isOpenPollinated": false,
+      "isOrganic": false,
+      "description": "Day-neutral variety, productive for Southern growers. High productivity, disease resistance, and large delicious fruit. Low chill requirement makes it ideal for growers in warmer climates.",
+      "strawberryType": "day-neutral",
+      "productUrl": "https://www.johnnyseeds.com/fruits/strawberry/strawberry-bare-root-plants/san-andreas-strawberry-plants-5333.html",
+      "zoneRecommendations": {
+        "zones": "4-7",
+        "note": "Low chill requirement ideal for warmer climates. Specifically noted as productive for Southern growers.",
+        "8": { "note": "Suitable for warm climate growing with low chill requirement" },
+        "9": { "note": "Suitable for warm climate growing with low chill requirement" },
+        "10": { "note": "Suitable for warm climate growing with low chill requirement" }
+      }
+    },
+    {
+      "cultivarName": "Seascape",
+      "crop": "strawberry",
+      "daysToMaturity": "flowers and fruits all season; midsummer through October in North",
+      "isHeirloom": false,
+      "isOpenPollinated": false,
+      "isOrganic": true,
+      "description": "Day-neutral variety with large, prolific berries. Flowers and fruits all season.",
+      "strawberryType": "day-neutral",
+      "productUrl": "https://www.johnnyseeds.com/fruits/strawberry/strawberry-bare-root-plants/seascape-spring-planted-organic-strawberry-plants-246G.html",
+      "zoneRecommendations": {
+        "zones": "4-7",
+        "note": "In the North, plants will set fruit from midsummer through October."
+      }
+    },
+    {
+      "cultivarName": "Sparkle",
+      "crop": "strawberry",
+      "daysToMaturity": "harvest begins second spring and for 3-5 years thereafter",
+      "isHeirloom": false,
+      "isOpenPollinated": false,
+      "isOrganic": false,
+      "description": "Yields medium-size, dark red berries with excellent flavor.",
+      "strawberryType": "June-bearing",
+      "productUrl": "https://www.johnnyseeds.com/fruits/strawberry/strawberry-bare-root-plants/sparkle-spring-planted-strawberry-plants-2500.html",
+      "zoneRecommendations": {
+        "zones": "3-8",
+        "note": "Summer-bearing variety. Harvest begins second spring after planting."
+      }
+    }
+  ],
+  "limitations": {
+    "zoneSpecificTiming": "Johnny's Selected Seeds does not provide zone-specific planting calendars on product pages. They focus on days to maturity from transplant or seeding date.",
+    "calculatorRequired": "For zone-specific timing, Johnny's recommends using their Seed Starting Date Calculator based on local last frost dates: https://www.johnnyseeds.com/growers-library/seed-planting-schedule-calculator.html",
+    "floridaGuidance": "Limited Florida-specific guidance. General notes indicate peppers struggle above 90°F fruit set, and several varieties (San Andreas strawberry) are noted as suitable for warm climates."
+  },
+  "generalGuidance": {
+    "tomatoes": {
+      "startIndoors": "5-6 weeks before transplant date",
+      "transplant": "After last frost when soil warms",
+      "daysToMaturityNote": "Measured from transplant date"
+    },
+    "peppers": {
+      "startIndoors": "6-8 weeks before last frost",
+      "temperatureMinimum": "Will not thrive below 60°F",
+      "temperatureMaximum": "Very little fruit set above 90°F (especially bell peppers)",
+      "daysToMaturityNote": "Measured from transplant date"
+    },
+    "melons": {
+      "daysToMaturityNote": "Most varieties measured from transplant date. Add about 10 days if direct-seeded.",
+      "succession": "Multiple plantings more effective than relying on staggered maturity dates"
+    },
+    "strawberries": {
+      "dayNeutral": "Fruit through summer months during first year",
+      "juneBearing": "Harvest begins second spring after planting and continues 3-5 years"
+    }
+  }
+}

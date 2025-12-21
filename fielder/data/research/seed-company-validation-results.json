@@ -1,0 +1,580 @@
+{
+  "validationDate": "2025-12-21",
+  "hierarchy": "Farm > Extension > State > Seed Company",
+  "florida": {
+    "state": "FL",
+    "sources": [
+      "Burpee",
+      "Mary's Heirloom Seeds",
+      "Johnny's Selected Seeds"
+    ],
+    "matches": [],
+    "discrepancies": [
+      {
+        "product": "tomato",
+        "seed_product": "tomato_cherokee_purple",
+        "farm_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          11,
+          12
+        ],
+        "seed_months": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "overlap_pct": 9.1,
+        "farm_count": 1,
+        "seed_source": "Burpee explicit harvestWindow",
+        "days_to_maturity": 80,
+        "note": "Seed company timing differs from farm reality"
+      }
+    ],
+    "seed_only": [
+      {
+        "product": "tomato_black_cherry",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Black Cherry",
+          "days_to_maturity": 64,
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_matt's_wild_cherry",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Matt's Wild Cherry",
+          "planting_months": [
+            1,
+            2,
+            3,
+            8,
+            9,
+            10
+          ],
+          "days_to_maturity": 60,
+          "calculated_harvest_months": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12
+          ],
+          "source": "Mary's planting + DTM calculation"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_brandywine",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Brandywine",
+          "days_to_maturity": 78,
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_pruden's_purple",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Pruden's Purple",
+          "days_to_maturity": 67,
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "pepper_ace",
+        "seed_data": {
+          "crop": "pepper",
+          "cultivar": "Ace",
+          "days_to_maturity": {
+            "green": 50,
+            "redRipe": 70
+          },
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "pepper_padron",
+        "seed_data": {
+          "crop": "pepper",
+          "cultivar": "Padron",
+          "days_to_maturity": 60,
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "pepper_early_jalape\u00f1o",
+        "seed_data": {
+          "crop": "pepper",
+          "cultivar": "Early Jalape\u00f1o",
+          "days_to_maturity": {
+            "green": 60,
+            "redRipe": 80
+          },
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "melon_sugar_cube",
+        "seed_data": {
+          "crop": "melon",
+          "cultivar": "Sugar Cube",
+          "days_to_maturity": 80,
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "melon_athena",
+        "seed_data": {
+          "crop": "melon",
+          "cultivar": "Athena",
+          "days_to_maturity": 79,
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "watermelon_crimson_sweet",
+        "seed_data": {
+          "crop": "watermelon",
+          "cultivar": "Crimson Sweet",
+          "days_to_maturity": 85,
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "strawberry_seascape",
+        "seed_data": {
+          "crop": "strawberry",
+          "cultivar": "Seascape",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 90
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "strawberry_sparkle",
+        "seed_data": {
+          "crop": "strawberry",
+          "cultivar": "Sparkle",
+          "days_to_maturity": "harvest begins second spring and for 3-5 years thereafter",
+          "source": "Johnny's DTM only (no zone timing)"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_brandywine_pink",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Brandywine Pink",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 80
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_homestead",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Homestead",
+          "planting_months": [
+            1,
+            2,
+            3,
+            8,
+            9,
+            10
+          ],
+          "days_to_maturity": 80,
+          "calculated_harvest_months": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12
+          ],
+          "source": "Mary's planting + DTM calculation"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_floradade",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Floradade",
+          "planting_months": [
+            1,
+            2,
+            3,
+            8,
+            9,
+            10
+          ],
+          "days_to_maturity": 75,
+          "calculated_harvest_months": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12
+          ],
+          "source": "Mary's planting + DTM calculation"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "pepper_jalapeno_(tam)",
+        "seed_data": {
+          "crop": "pepper",
+          "cultivar": "Jalapeno (Tam)",
+          "planting_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "days_to_maturity": 80,
+          "calculated_harvest_months": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "source": "Mary's planting + DTM calculation"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "watermelon_golden_midget",
+        "seed_data": {
+          "crop": "watermelon",
+          "cultivar": "Golden Midget",
+          "planting_months": [
+            1,
+            2,
+            3
+          ],
+          "days_to_maturity": 70,
+          "calculated_harvest_months": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "source": "Mary's planting + DTM calculation"
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_early_girl",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Early Girl",
+          "harvest_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            12
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 59
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_better_boy",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Better Boy",
+          "harvest_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 75
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_super_beefsteak",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Super Beefsteak",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 80
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_burpee's_supersteak_hybrid",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Burpee's Supersteak Hybrid",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 80
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_burpee's_big_boy_hybrid",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Burpee's Big Boy Hybrid",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 78
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "tomato_brandy_boy_hybrid",
+        "seed_data": {
+          "crop": "tomato",
+          "cultivar": "Brandy Boy Hybrid",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": 76
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "pepper_bell_peppers_(general)",
+        "seed_data": {
+          "crop": "pepper",
+          "cultivar": "Bell Peppers (general)",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": null
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "pepper_jalape\u00f1o",
+        "seed_data": {
+          "crop": "pepper",
+          "cultivar": "Jalape\u00f1o",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": null
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "pepper_poblano",
+        "seed_data": {
+          "crop": "pepper",
+          "cultivar": "Poblano",
+          "harvest_months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": null
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "melon_cantaloupe_(general)",
+        "seed_data": {
+          "crop": "melon",
+          "cultivar": "Cantaloupe (general)",
+          "harvest_months": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": null
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "melon_watermelon_(general)",
+        "seed_data": {
+          "crop": "melon",
+          "cultivar": "Watermelon (general)",
+          "harvest_months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": null
+        },
+        "note": "No farm validation available"
+      },
+      {
+        "product": "strawberry_strawberries_(general_for_zones_9-10)",
+        "seed_data": {
+          "crop": "strawberry",
+          "cultivar": "Strawberries (general for Zones 9-10)",
+          "harvest_months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            11,
+            12
+          ],
+          "source": "Burpee explicit harvestWindow",
+          "days_to_maturity": null
+        },
+        "note": "No farm validation available"
+      }
+    ],
+    "farm_only": [
+      {
+        "product": "citrus orange",
+        "farm_count": 2,
+        "note": "No matching seed company data"
+      },
+      {
+        "product": "citrus grapefruit",
+        "farm_count": 1,
+        "note": "No matching seed company data"
+      },
+      {
+        "product": "citrus tangerine",
+        "farm_count": 1,
+        "note": "No matching seed company data"
+      },
+      {
+        "product": "strawberry",
+        "farm_count": 1,
+        "seed_info": "DTM only: begins fruiting second year after planting days",
+        "note": "Seed company has no harvest timing"
+      }
+    ],
+    "agreement_score": 9.1
+  },
+  "sources": {
+    "burpee_cultivars": 15,
+    "marys_cultivars": 7,
+    "johnnys_cultivars": 14
+  }
+}

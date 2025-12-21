@@ -1,0 +1,1034 @@
+{
+  "metadata": {
+    "source": "University of Florida IFAS Extension (UF/IFAS)",
+    "extraction_date": "2025-12-20",
+    "description": "Cultivar-specific planting and harvest timing data from UF/IFAS Extension publications for Florida zones",
+    "regions": {
+      "north_florida": {
+        "description": "All of Florida north of State Road 40",
+        "usda_zones": ["8a", "8b", "9a"],
+        "characteristics": "Cooler climate, vulnerable to late frosts"
+      },
+      "central_florida": {
+        "description": "Central peninsula region",
+        "usda_zones": ["9a", "9b"],
+        "characteristics": "Occasional frost/freeze events"
+      },
+      "south_florida": {
+        "description": "Southern peninsula and coastal areas",
+        "usda_zones": ["10a", "10b", "11a"],
+        "characteristics": "Rarely experiences frost conditions"
+      }
+    }
+  },
+  "publications": [
+    {
+      "title": "Vegetable Production Handbook of Florida, 2025–2026 edition",
+      "url": "https://edis.ifas.ufl.edu/publication/CV292",
+      "publication_code": "VPH/CV292",
+      "type": "commercial_production_guide",
+      "crops_covered": ["tomato", "pepper", "strawberry", "all_vegetables"],
+      "notes": "Comprehensive commercial production handbook, updated annually"
+    },
+    {
+      "title": "Florida Vegetable Gardening Guide",
+      "url": "https://edis.ifas.ufl.edu/publication/VH021",
+      "publication_code": "SP 103/VH021",
+      "type": "home_garden_guide",
+      "crops_covered": ["40+ vegetables"],
+      "notes": "Complete planting calendar with variety recommendations for home gardeners"
+    },
+    {
+      "title": "Chapter 18. Tomato Production",
+      "url": "https://edis.ifas.ufl.edu/publication/CV137",
+      "publication_code": "HS739/CV137",
+      "type": "commercial_production_guide",
+      "crops_covered": ["tomato"],
+      "notes": "Detailed tomato production guide with cultivar recommendations"
+    },
+    {
+      "title": "Tomato Cultivar Selection Considerations for Open-Field and Protected Culture in North Florida",
+      "url": "https://edis.ifas.ufl.edu/publication/HS1273",
+      "publication_code": "HS1273/HS1273",
+      "type": "regional_cultivar_guide",
+      "crops_covered": ["tomato"],
+      "region": "north_florida",
+      "notes": "Seasonal cultivar recommendations specific to North Florida"
+    },
+    {
+      "title": "Common Pepper Cultivars for Florida Production",
+      "url": "https://edis.ifas.ufl.edu/in757",
+      "publication_code": "IPM-204/IN757",
+      "type": "cultivar_catalog",
+      "crops_covered": ["pepper"],
+      "notes": "Comprehensive listing of bell, mini sweet, and specialty pepper cultivars with disease resistance"
+    },
+    {
+      "title": "Chapter 13. Pepper Production",
+      "url": "https://edis.ifas.ufl.edu/publication/CV130",
+      "publication_code": "HS732/CV130",
+      "type": "commercial_production_guide",
+      "crops_covered": ["pepper"],
+      "notes": "Detailed pepper production guide"
+    },
+    {
+      "title": "Growing Strawberries in the Florida Home Garden",
+      "url": "https://edis.ifas.ufl.edu/publication/hs403",
+      "publication_code": "HS1154/HS403",
+      "type": "home_garden_guide",
+      "crops_covered": ["strawberry"],
+      "notes": "Zone-specific planting dates and cultivar recommendations"
+    },
+    {
+      "title": "'Florida Beauty' Strawberry",
+      "url": "https://edis.ifas.ufl.edu/publication/HS1307",
+      "publication_code": "HS1307/HS1307",
+      "type": "cultivar_release",
+      "crops_covered": ["strawberry"],
+      "notes": "Cultivar-specific planting and harvest timing for early-season production"
+    },
+    {
+      "title": "2025–2026 Florida Citrus Production Guide: Rootstock and Scion Selection",
+      "url": "https://edis.ifas.ufl.edu/publication/HS1308",
+      "publication_code": "HS1308/HS1308",
+      "type": "commercial_production_guide",
+      "crops_covered": ["citrus"],
+      "notes": "Comprehensive citrus cultivar guide with harvest timing and regional recommendations"
+    },
+    {
+      "title": "North Florida Gardening Calendar",
+      "url": "https://edis.ifas.ufl.edu/publication/EP451",
+      "publication_code": "ENH1190/EP451",
+      "type": "regional_planting_calendar",
+      "crops_covered": ["vegetables", "herbs", "ornamentals"],
+      "region": "north_florida",
+      "notes": "Month-by-month planting guide for Zone 8"
+    },
+    {
+      "title": "Central Florida Gardening Calendar",
+      "url": "https://edis.ifas.ufl.edu/publication/EP450",
+      "publication_code": "ENH1189/EP450",
+      "type": "regional_planting_calendar",
+      "crops_covered": ["vegetables", "herbs", "ornamentals"],
+      "region": "central_florida",
+      "notes": "Month-by-month planting guide for Zone 9"
+    },
+    {
+      "title": "South Florida Gardening Calendar",
+      "url": "https://edis.ifas.ufl.edu/publication/EP452",
+      "publication_code": "ENH1191/EP452",
+      "type": "regional_planting_calendar",
+      "crops_covered": ["vegetables", "herbs", "ornamentals"],
+      "region": "south_florida",
+      "notes": "Month-by-month planting guide for Zone 10-11"
+    }
+  ],
+  "cultivar_data": {
+    "tomato": {
+      "planting_windows": {
+        "north_florida": "July–Aug; Feb–Apr",
+        "central_florida": "Aug–Sept; Jan–Feb",
+        "south_florida": "Aug–Feb"
+      },
+      "days_to_maturity": "70–90 days (typical range)",
+      "cultivars": {
+        "spring_season": {
+          "region": "north_florida",
+          "planting_months": ["March", "April", "May", "June"],
+          "varieties": [
+            {
+              "name": "Tasti-Lee",
+              "type": "determinate",
+              "fruit_type": "large_fruited",
+              "notes": "Released for premium tomato market; moderate heat tolerance"
+            },
+            {
+              "name": "Florida 47",
+              "type": "determinate",
+              "fruit_type": "globe",
+              "maturity": "late midseason",
+              "notes": "Uniformly green, globe-shaped fruit; jointed hybrid"
+            },
+            {
+              "name": "Amelia",
+              "type": "determinate",
+              "fruit_type": "large_fruited",
+              "notes": "Spring season recommendation for North Florida"
+            },
+            {
+              "name": "Panzer",
+              "type": "indeterminate",
+              "fruit_type": "large_fruited",
+              "notes": "Spring season recommendation for North Florida"
+            },
+            {
+              "name": "Celebrity",
+              "type": "determinate",
+              "fruit_type": "large_fruited",
+              "notes": "Popular variety for Florida home gardens"
+            },
+            {
+              "name": "Heat Wave II",
+              "type": "determinate",
+              "fruit_type": "large_fruited",
+              "notes": "Heat-tolerant variety"
+            },
+            {
+              "name": "Better Boy",
+              "type": "indeterminate",
+              "fruit_type": "large_fruited",
+              "notes": "Classic variety for home gardens"
+            }
+          ],
+          "heirloom_varieties": [
+            "Brandywine",
+            "Cherokee Purple",
+            "Arkansas Traveler",
+            "Brown Cherry",
+            "Green Zebra"
+          ]
+        },
+        "fall_season": {
+          "region": "north_florida",
+          "planting_months": ["July", "August"],
+          "notes": "Extremely high temperatures during bloom reduce fruit set; hot-set types and disease-resistant varieties essential",
+          "hot_set_varieties": [
+            {
+              "name": "Solar Fire",
+              "type": "determinate",
+              "heat_tolerance": "high",
+              "notes": "Sets fruit in extreme heat"
+            },
+            {
+              "name": "Florida 91",
+              "type": "determinate",
+              "maturity": "midseason",
+              "heat_tolerance": "high",
+              "notes": "Uniformly green fruit; good fruit-setting ability under high temperatures"
+            },
+            {
+              "name": "Phoenix",
+              "type": "determinate",
+              "heat_tolerance": "high",
+              "notes": "Hot-set variety for fall production"
+            }
+          ],
+          "tylcv_resistant_varieties": [
+            {
+              "name": "Charger",
+              "disease_resistance": "TYLCV",
+              "notes": "Tomato Yellow Leaf Curl Virus resistant"
+            },
+            {
+              "name": "Tygress",
+              "disease_resistance": "TYLCV",
+              "notes": "Tomato Yellow Leaf Curl Virus resistant"
+            },
+            {
+              "name": "Security 28",
+              "disease_resistance": "TYLCV",
+              "notes": "Tomato Yellow Leaf Curl Virus resistant"
+            }
+          ]
+        },
+        "greenhouse_production": {
+          "season": "year-round",
+          "primary_cultivar": {
+            "name": "Trust",
+            "type": "indeterminate",
+            "notes": "Most common hydroponic cultivar for Florida greenhouse production"
+          },
+          "alternative_varieties": [
+            "Geronimo",
+            "Big Dena"
+          ],
+          "heirloom_varieties": [
+            "Brandywine",
+            "Cherokee Purple",
+            "Arkansas Traveler"
+          ]
+        },
+        "cherry_grape_types": [
+          {
+            "name": "Sweet 100",
+            "type": "cherry",
+            "notes": "Popular cherry tomato for home gardens"
+          },
+          {
+            "name": "Juliet",
+            "type": "grape",
+            "notes": "Popular grape tomato for home gardens"
+          },
+          {
+            "name": "Sweethearts",
+            "type": "grape",
+            "maturity": "70-75 days",
+            "fruit_description": "Brilliant red, firm, elongated grape shaped",
+            "plant_type": "indeterminate bush",
+            "notes": "Early to midseason"
+          },
+          {
+            "name": "Sweet Treats",
+            "type": "cherry",
+            "fruit_description": "Deep-pink, firm, globe-shaped",
+            "notes": "Outstanding flavor potential"
+          }
+        ],
+        "roma_plum_types": [
+          {
+            "name": "Mariana",
+            "type": "determinate",
+            "fruit_description": "Extra large and extremely uniform in shape",
+            "notes": "Commercial Roma variety"
+          },
+          {
+            "name": "Picus",
+            "type": "determinate",
+            "maturity": "main-season",
+            "notes": "Widely adapted Roma tomato"
+          }
+        ],
+        "commercial_varieties": [
+          {
+            "name": "BHN 602",
+            "type": "determinate",
+            "maturity": "early midseason",
+            "fruit_type": "globe",
+            "fruit_description": "Green-shouldered",
+            "notes": "Commercial production variety"
+          },
+          {
+            "name": "BHN 3353",
+            "type": "determinate",
+            "fruit_type": "beefsteak",
+            "notes": "Continuous yield of large to extra-large fruit"
+          }
+        ]
+      },
+      "key_insights": [
+        "Spring season (March-June) presents most favorable conditions due to lower pest/disease pressure",
+        "Fall production requires hot-set varieties or TYLCV-resistant types",
+        "Heirloom varieties cannot set fruit in extreme heat (July-August)",
+        "Days to maturity: 70-90 days typical range",
+        "Spacing: 18-32 inches between plants",
+        "North Florida: two planting windows (early spring and late summer)",
+        "South Florida: extended planting window Aug-Feb"
+      ]
+    },
+    "pepper": {
+      "planting_windows": {
+        "north_florida": "March–April (spring); July–August (fall)",
+        "central_florida": "January–April; August–September",
+        "south_florida": "Multiple plantings possible throughout year"
+      },
+      "cultivars": {
+        "bell_peppers": [
+          {
+            "name": "Aristotle",
+            "type": "bell",
+            "fruit_color": "dark green maturing red",
+            "disease_resistance": ["bacterial_spot_1-3", "PVY", "Tobamo"],
+            "source": "Seminis"
+          },
+          {
+            "name": "Blitz",
+            "type": "bell",
+            "fruit_size": "extra-large blocky",
+            "disease_resistance": ["bacterial_spot_1-5_7-9", "TMV"],
+            "source": "Sakata"
+          },
+          {
+            "name": "Crusader",
+            "type": "bell",
+            "fruit_color": "mature red",
+            "notes": "Maintains firmness at mature red stage",
+            "disease_resistance": ["bacterial_spot_1-3", "PVY", "pepper_mottle", "TMV"],
+            "source": "Syngenta"
+          },
+          {
+            "name": "Gridiron",
+            "type": "bell",
+            "fruit_description": "Uniform blocky shape with thick walls",
+            "disease_resistance": ["bacterial_spot_1-5_7-9", "TMV", "tobacco_etch_IR"],
+            "source": "Sakata"
+          },
+          {
+            "name": "HM 2641",
+            "type": "bell",
+            "plant_type": "tall, vigorous",
+            "notes": "Suited for warm weather; extended harvests",
+            "disease_resistance": ["bacterial_spot_1-4", "TMV"],
+            "source": "Harris Moran"
+          },
+          {
+            "name": "Hunter",
+            "type": "bell",
+            "maturity": "early",
+            "fruit_description": "Blocky dark green glossy fruit",
+            "disease_resistance": ["bacterial_spot_1-5", "tobacco_etch", "TMV"],
+            "source": "Syngenta"
+          },
+          {
+            "name": "PS 9928302",
+            "type": "bell",
+            "fruit_description": "Large firm red fruit",
+            "disease_resistance": ["bacterial_spot_1-5", "Tobamo_P0"],
+            "source": "Seminis"
+          },
+          {
+            "name": "PS 09979325",
+            "type": "bell",
+            "fruit_color": "blocky green-to-red",
+            "disease_resistance": ["bacterial_spot_1-10"],
+            "source": "Seminis",
+            "notes": "Resistant to all 10 bacterial spot strains"
+          },
+          {
+            "name": "Seedway 48",
+            "type": "bell",
+            "plant_type": "medium",
+            "fruit_size": "large-to-jumbo uniform",
+            "disease_resistance": ["bacterial_spot_1-10"],
+            "source": "Seedway"
+          },
+          {
+            "name": "Revolution",
+            "type": "bell",
+            "maturity": "early",
+            "cold_tolerance": "high",
+            "notes": "Concentrated early fruit set",
+            "disease_resistance": ["bacterial_spot_1_2_3_5"],
+            "source": "Harris Moran"
+          },
+          {
+            "name": "Tom Cat",
+            "type": "bell",
+            "maturity": "early",
+            "notes": "Concentrated harvest",
+            "disease_resistance": ["bacterial_spot_1-5", "tobacco_etch", "TMV"],
+            "source": "Syngenta"
+          },
+          {
+            "name": "Touchdown",
+            "type": "bell",
+            "notes": "Continuous fruit setting",
+            "disease_resistance": ["bacterial_spot_1-5_7-9", "TMV"],
+            "source": "Sakata"
+          },
+          {
+            "name": "Vanguard",
+            "type": "bell",
+            "maturity": "early",
+            "fruit_description": "Dark green, blocky, 4-lobed, extra large with thick firm walls",
+            "notes": "Concentrated harvest",
+            "disease_resistance": ["pepper_mottle", "TMV", "bacterial_spot_1-5"],
+            "source": "Harris Moran"
+          },
+          {
+            "name": "California Wonder",
+            "type": "bell",
+            "notes": "Classic sweet bell pepper for home gardens"
+          },
+          {
+            "name": "Red Knight",
+            "type": "bell",
+            "notes": "Sweet bell pepper for home gardens"
+          }
+        ],
+        "mini_sweet_peppers": [
+          {
+            "name": "Boris",
+            "type": "mini_sweet",
+            "fruit_description": "Straight fruit with thick flesh",
+            "disease_resistance": ["TSWV"],
+            "source": "Seedway"
+          },
+          {
+            "name": "Natasha",
+            "type": "mini_sweet",
+            "maturity": "very early",
+            "fruit_description": "Long straight fruit",
+            "disease_resistance": ["bacterial_spot_1-3"],
+            "source": "Seedway"
+          },
+          {
+            "name": "Orange You Sweet",
+            "type": "mini_sweet",
+            "fruit_description": "Flat round fruit maturing to deep orange",
+            "disease_resistance": [],
+            "source": "Sakata"
+          },
+          {
+            "name": "Right on Red",
+            "type": "mini_sweet",
+            "notes": "Continuous high yields",
+            "disease_resistance": [],
+            "source": "Sakata"
+          },
+          {
+            "name": "Sopron",
+            "type": "mini_sweet",
+            "maturity": "mid-early",
+            "fruit_description": "Straight fruit for fresh or processing",
+            "disease_resistance": ["bacterial_spot_1-3"],
+            "source": "Seminis"
+          },
+          {
+            "name": "Yellow Sparkler",
+            "type": "mini_sweet",
+            "fruit_color": "yellow",
+            "notes": "Prolific",
+            "disease_resistance": ["TMV"],
+            "source": "Sakata"
+          },
+          {
+            "name": "Yes to Yellow",
+            "type": "mini_sweet",
+            "fruit_description": "Flat round fruit maturing to deep yellow",
+            "disease_resistance": [],
+            "source": "Sakata"
+          },
+          {
+            "name": "Yummy Orange",
+            "type": "mini_sweet",
+            "size": "petite",
+            "notes": "Nearly seedless",
+            "disease_resistance": [],
+            "source": "Seedway"
+          },
+          {
+            "name": "Yummy Red",
+            "type": "mini_sweet",
+            "notes": "Nearly seedless, requires staking",
+            "disease_resistance": [],
+            "source": "Seedway"
+          },
+          {
+            "name": "Yummy Yellow",
+            "type": "mini_sweet",
+            "plant_type": "medium-large",
+            "disease_resistance": [],
+            "source": "Seedway"
+          }
+        ],
+        "specialty_peppers": [
+          {
+            "name": "Aruba",
+            "type": "Cubanelle",
+            "maturity": "early",
+            "fruit_description": "Elongated, pale lime green to bright red",
+            "source": "Syngenta"
+          }
+        ],
+        "hot_peppers": [
+          {
+            "name": "Early Jalapeno",
+            "type": "jalapeno",
+            "notes": "Home garden variety"
+          },
+          {
+            "name": "Thai",
+            "type": "hot",
+            "notes": "Adapts well to hot and humid weather in Florida"
+          },
+          {
+            "name": "Habanero",
+            "type": "very_hot",
+            "notes": "Home garden variety"
+          },
+          {
+            "name": "Cayenne",
+            "type": "hot",
+            "plant_height": "2-4 feet",
+            "days_to_maturity": "100 days after germination",
+            "notes": "Adapts well to hot and humid weather conditions in Miami-Dade County"
+          },
+          {
+            "name": "Tabasco",
+            "type": "hot",
+            "notes": "Mentioned for Miami-Dade County production"
+          },
+          {
+            "name": "Serrano",
+            "type": "hot",
+            "notes": "Mentioned for Miami-Dade County production"
+          }
+        ]
+      },
+      "key_insights": [
+        "4-5 cultivars constitute 80-90% of commercial production in Florida",
+        "Disease resistance (especially bacterial spot) is critical for Florida production",
+        "Bacterial spot has 10 strains; newest varieties resist all strains",
+        "North Florida: plant after frost danger passes (March-April) and late summer (July-August)",
+        "Central/South Florida: extended planting windows due to milder climate",
+        "Hot peppers (cayenne, Thai) adapt well to hot, humid Florida conditions"
+      ]
+    },
+    "strawberry": {
+      "planting_windows": {
+        "north_florida": "September 15 – October 15",
+        "central_florida": "September 25 – October 25",
+        "south_florida": "October 1 – December 1"
+      },
+      "harvest_timing": {
+        "first_fruits": "January (approximately 90-110 days after planting)",
+        "peak_season": "March",
+        "season_end": "April or May"
+      },
+      "cultivars": [
+        {
+          "name": "Camarosa",
+          "best_region": "north_florida",
+          "notes": "Most productive variety in North Florida; recommended for home gardens",
+          "yield": "1-2 pints per plant over season"
+        },
+        {
+          "name": "Florida Brilliance",
+          "best_region": "central_florida",
+          "maturity": "early-season producer",
+          "notes": "Top commercial choice for Central Florida; enhanced early-season productivity",
+          "yield": "1-2 pints per plant over season"
+        },
+        {
+          "name": "Sweet Sensation (Florida127)",
+          "best_region": "central_florida",
+          "planting_dates": "October 10-20 (recommended for central Florida)",
+          "maturity": "early-season producer",
+          "notes": "Leading commercial variety for Central Florida; significantly higher soluble solids than Florida Radiance; released 2013",
+          "flavor_profile": "Greater sweetness and strawberry flavor than Florida Radiance",
+          "yield": "1-2 pints per plant over season"
+        },
+        {
+          "name": "Florida Beauty",
+          "planting_window": "September 20 – October 1",
+          "planting_deadline": "October 5 (without prior experience)",
+          "harvest_start": "Mid-November",
+          "harvest_end": "End of season (April/May)",
+          "best_region": "central_florida",
+          "soil_preference": "Deep sandy soils typical of west-central Florida",
+          "spacing": "14-15 inches in-row for early plantings; 12 inches for lighter soils or later transplanting",
+          "notes": "Ideal for early planting window; harvest begins 6-7 weeks after planting; trials conducted at GCREC Wimauma"
+        },
+        {
+          "name": "Festival",
+          "best_region": "central_florida",
+          "notes": "Recommended for Florida home gardens"
+        },
+        {
+          "name": "Sweet Charlie",
+          "notes": "Florida-friendly cultivar"
+        },
+        {
+          "name": "Chandler",
+          "notes": "Florida-friendly cultivar"
+        },
+        {
+          "name": "Oso Grande",
+          "notes": "Florida-friendly cultivar"
+        },
+        {
+          "name": "Selva",
+          "notes": "Florida-friendly cultivar"
+        },
+        {
+          "name": "Florida Radiance",
+          "release_year": 2008,
+          "notes": "Most popular variety currently grown in Florida; known for early season yields"
+        }
+      ],
+      "growing_requirements": {
+        "temperature_range": "50°F – 80°F",
+        "daylight_requirement": "Less than 14 hours for flowering and fruiting",
+        "florida_season": "Fall, winter, and spring naturally provide ideal conditions",
+        "harvest_frequency": "Every 2-4 days to prevent deterioration",
+        "harvest_indicator": "Three-quarters of surface area is red"
+      },
+      "key_insights": [
+        "Florida has unique winter strawberry production compared to rest of US",
+        "Planting dates shift progressively later moving south in Florida",
+        "First harvest approximately 90-110 days after planting",
+        "Production occurs in 2-3 cycles, may be interrupted by freezing weather",
+        "Early planting (Sept 20-Oct 1) enables mid-November harvest start",
+        "UF/IFAS varieties (Florida Beauty, Florida127, Florida Brilliance) optimized for Florida conditions",
+        "Central Florida varieties focus on early-season production",
+        "North Florida benefits from longer-season varieties like Camarosa"
+      ]
+    },
+    "citrus": {
+      "harvest_seasons": {
+        "oranges": "October – June (peak fresh orange season)",
+        "grapefruit": "September – June (peak fresh season)",
+        "mandarins": "November – February",
+        "lemons_limes": "Year-round (periodic ripening)"
+      },
+      "regional_recommendations": {
+        "north_florida": {
+          "zones": ["8a", "8b", "9a"],
+          "recommended_types": ["satsuma", "kumquat", "meyer_lemon"],
+          "cold_hardy_varieties": ["UF-Glow", "Mandalate"],
+          "notes": "Most oranges grown in southern two-thirds of state where freezes rare"
+        },
+        "central_florida": {
+          "zones": ["9a", "9b"],
+          "recommended_types": ["sweet_orange", "mandarin", "grapefruit", "meyer_lemon"],
+          "scion_varieties": ["EV1/EV2", "Tango", "Sugar Belle"],
+          "notes": "Primary citrus production region; well-drained sandy soils (Ridge)"
+        },
+        "south_florida": {
+          "zones": ["10a", "10b", "11a"],
+          "recommended_types": ["all_citrus_types", "key_lime", "tropical_varieties"],
+          "notes": "Warmest region; key limes harvested year-round"
+        }
+      },
+      "cultivars": {
+        "sweet_oranges": {
+          "early_season": [
+            {
+              "name": "EV1",
+              "type": "early_valencia",
+              "harvest_timing": "December – January (central Florida)",
+              "notes": "Matures 8-12 weeks earlier than standard Valencia"
+            },
+            {
+              "name": "EV2",
+              "type": "early_valencia",
+              "harvest_timing": "December – January (central Florida)",
+              "notes": "Matures 8-12 weeks earlier than standard Valencia"
+            },
+            {
+              "name": "Hamlin",
+              "type": "juice_orange",
+              "harvest_timing": "October – December",
+              "notes": "Early-season variety"
+            },
+            {
+              "name": "Navel",
+              "type": "fresh_eating",
+              "harvest_timing": "November – January",
+              "notes": "Peak harvest January"
+            }
+          ],
+          "midseason": [
+            {
+              "name": "Pineapple",
+              "type": "juice_orange",
+              "harvest_timing": "December – February",
+              "notes": "Common Florida variety"
+            },
+            {
+              "name": "Vernia",
+              "harvest_timing": "February – March",
+              "notes": "Highest color scores noted"
+            }
+          ],
+          "late_season": [
+            {
+              "name": "Valencia",
+              "type": "juice_orange",
+              "harvest_timing": "March – June",
+              "notes": "Standard late-season variety"
+            },
+            {
+              "name": "Valencia UF B9-65",
+              "harvest_timing": "March – June",
+              "notes": "Superior yield and pound solids"
+            },
+            {
+              "name": "Valquarius",
+              "type": "early_valencia_somaclone",
+              "harvest_timing": "Earlier than standard Valencia",
+              "notes": "Valencia somaclone"
+            },
+            {
+              "name": "Midknight",
+              "origin": "South Africa",
+              "harvest_timing": "Several weeks before traditional Valencia",
+              "notes": "Valencia selection"
+            },
+            {
+              "name": "Delta",
+              "origin": "South Africa",
+              "harvest_timing": "Several weeks before traditional Valencia",
+              "notes": "Valencia selection"
+            },
+            {
+              "name": "OLL-4",
+              "type": "late_season",
+              "notes": "High pound solids and yields"
+            },
+            {
+              "name": "OLL-8",
+              "type": "late_season",
+              "notes": "High pound solids and yields"
+            },
+            {
+              "name": "OLL-20",
+              "type": "late_season",
+              "notes": "High pound solids and yields"
+            },
+            {
+              "name": "US Sun Dragon",
+              "source": "USDA release",
+              "disease_tolerance": "HLB-tolerant",
+              "notes": "Late-season variety"
+            }
+          ],
+          "specialty": [
+            {
+              "name": "Ambersweet",
+              "type": "hybrid",
+              "notes": "Orange-tangerine hybrid"
+            }
+          ]
+        },
+        "mandarins": {
+          "fresh_market": [
+            {
+              "name": "Sugar Belle (LB8-9)",
+              "harvest_timing": "Late November – early January",
+              "maturity": "Mid-December (first harvest)",
+              "plant_characteristics": "Vigorous",
+              "disease_tolerance": "HLB-tolerant",
+              "regional_notes": {
+                "central_florida_ridge": "Faces coloration challenges",
+                "north_florida": "Shows fewer problems"
+              },
+              "notes": "Popular mandarin variety"
+            },
+            {
+              "name": "Tango",
+              "harvest_timing": "December",
+              "seed_status": "Virtually seedless",
+              "regional_notes": {
+                "central_florida_ridge": "Faces coloration challenges",
+                "north_florida": "Shows fewer problems"
+              },
+              "notes": "Seedless mandarin"
+            },
+            {
+              "name": "Marathon",
+              "maturity": "Early",
+              "characteristics": "Seedless, easy-peeling",
+              "notes": "Early maturity potential"
+            },
+            {
+              "name": "Roe",
+              "harvest_timing": "Thanksgiving – January",
+              "notes": "Holds on tree through January"
+            },
+            {
+              "name": "Mandalate",
+              "type": "Mediterranean mandarin",
+              "best_region": "Panhandle and Big Bend regions",
+              "notes": "Suited for North Florida"
+            },
+            {
+              "name": "UF-Glow",
+              "harvest_timing": "Mid-October",
+              "characteristics": "Self-fertile, cold-tolerant",
+              "best_region": "North Florida",
+              "notes": "Early-season mandarin"
+            },
+            {
+              "name": "Satsuma",
+              "harvest_timing": "November – January",
+              "cold_tolerance": "High",
+              "notes": "Peak harvest January; suited for North Florida"
+            }
+          ],
+          "tangelos": [
+            {
+              "name": "Tangelo",
+              "harvest_timing": "November – February",
+              "notes": "Grapefruit-tangerine hybrid"
+            }
+          ]
+        },
+        "grapefruit": [
+          {
+            "name": "Ruby Red",
+            "harvest_timing": "October – June",
+            "peak_harvest": "January",
+            "notes": "Most common Florida variety"
+          },
+          {
+            "name": "Flame",
+            "harvest_timing": "October – June",
+            "notes": "Red grapefruit variety"
+          },
+          {
+            "name": "Thompson",
+            "harvest_timing": "October – June",
+            "notes": "Pink grapefruit variety"
+          },
+          {
+            "name": "Marsh",
+            "harvest_timing": "October – June",
+            "notes": "White grapefruit variety"
+          },
+          {
+            "name": "Duncan",
+            "harvest_timing": "October – June",
+            "notes": "Seeded white grapefruit"
+          }
+        ],
+        "lemons_limes": [
+          {
+            "name": "Meyer Lemon",
+            "harvest_timing": "November – March",
+            "cold_tolerance": "Relatively cold-hardy",
+            "regional_suitability": "Can be grown throughout state",
+            "notes": "More cold-tolerant than standard lemons"
+          },
+          {
+            "name": "Key Lime",
+            "harvest_timing": "Year-round",
+            "best_region": "South Florida and warmer parts of Central Florida",
+            "notes": "Harvested periodically throughout year in warmer regions"
+          },
+          {
+            "name": "Lime",
+            "harvest_timing": "Year-round (periodic ripening)",
+            "cold_sensitivity": "Very cold-sensitive",
+            "regional_suitability": "Central and South Florida",
+            "notes": "Acid fruits best suited for warmer locations"
+          }
+        ]
+      },
+      "rootstock_recommendations": {
+        "central_florida_ridge": {
+          "soil_type": "Well-drained sandy soils",
+          "recommended": ["SS1 SuperSour", "US-942", "US-812", "most_rootstocks"],
+          "notes": "Well-drained sandy soils suit most rootstocks"
+        },
+        "southwest_east_flatwoods": {
+          "soil_type": "Flatwoods soils",
+          "recommended": ["US-942", "US-812", "US-1279-1284", "SS2", "SS3"],
+          "notes": "US-1279-1284 rootstocks adapted to Florida's flatwood soils"
+        },
+        "high_ph_calcareous_soils": {
+          "tolerant": ["Volkamer lemon", "C-22"],
+          "avoid": ["C-35", "Carrizo", "Swingle"],
+          "notes": "Soil pH tolerance critical for rootstock selection"
+        },
+        "hlb_tolerance": {
+          "recommended": ["US-942", "US-812", "UFR-4", "UFR-5", "C-54 (Carpenter)", "C-57 (Furr)"],
+          "notes": "Good yields under high HLB pressure; lower-than-average fruit drop rates"
+        },
+        "tree_size_management": {
+          "small_tree": ["C-22 (Bitters)", "US-897", "UFR-6", "Flying Dragon"],
+          "medium_tree": ["US-942", "US-812", "US-802", "Volkamer lemon", "Cleopatra mandarin"],
+          "large_tree": ["X-639", "Rough lemon", "Carrizo", "Swingle"]
+        }
+      },
+      "key_insights": [
+        "Florida citrus season runs September-June for most varieties",
+        "Valencia types now have early-maturing selections (EV1/EV2) that mature 8-12 weeks earlier",
+        "Mandarins are concentrated in Nov-Feb harvest window",
+        "HLB (Huanglongbing/citrus greening) tolerance is critical factor in rootstock selection",
+        "North Florida: cold-hardy varieties essential (Meyer lemon, Satsuma, UF-Glow)",
+        "Central Florida Ridge: well-drained sandy soils ideal for most varieties",
+        "South Florida: warmest region allows year-round lime/lemon production",
+        "Rootstock selection impacts tree size, disease tolerance, and soil adaptation",
+        "Recent releases (2015-2023) focus on HLB tolerance and disease resistance",
+        "Regional coloration challenges noted for Sugar Belle and Tango in Central Florida Ridge"
+      ]
+    }
+  },
+  "planting_calendar_summary": {
+    "north_florida": {
+      "zone": "8a-9a",
+      "spring_planting": {
+        "months": ["March", "April"],
+        "crops": ["beans", "tomatoes", "squash", "corn", "peppers", "cucumbers", "eggplant"],
+        "notes": "After last frost danger passes"
+      },
+      "summer_planting": {
+        "months": ["May", "June", "July"],
+        "crops": ["swiss chard", "okra", "southern pea", "sweet potato", "cucumbers", "peppers", "southern peas"]
+      },
+      "fall_planting": {
+        "months": ["August", "September"],
+        "crops": ["tomato seeds (for fall harvest)", "cool-season crops", "lima beans", "cucumbers", "eggplant", "peppers", "strawberries (Sept 15-Oct 15)", "broccoli", "carrot", "cabbage", "collards"]
+      },
+      "winter_planting": {
+        "months": ["October", "November", "December", "January", "February"],
+        "crops": ["irish potatoes", "broccoli", "kale", "carrots", "lettuce", "cabbage", "collards", "beets", "arugula", "lettuce", "spinach", "bulbing onions"]
+      }
+    },
+    "central_florida": {
+      "zone": "9a-9b",
+      "warm_season_planting": {
+        "months": ["January", "February", "March", "April"],
+        "crops": ["beans", "peppers", "tomatoes", "squash", "eggplant"],
+        "notes": "Extended warm-season window compared to North Florida"
+      },
+      "fall_planting": {
+        "months": ["August", "September"],
+        "crops": ["peppers", "tomatoes", "cucumbers", "eggplant"],
+        "notes": "Second major planting window"
+      },
+      "strawberry_planting": {
+        "optimal_window": "September 25 – October 25",
+        "notes": "Slightly later than North Florida"
+      }
+    },
+    "south_florida": {
+      "zone": "10a-11a",
+      "extended_growing_season": {
+        "tomatoes": "August – February",
+        "peppers": "Multiple plantings throughout year",
+        "warm_season_crops": "Nearly year-round with strategic timing"
+      },
+      "spring_planting_last_chance": {
+        "month": "March",
+        "crops": ["cantaloupes", "cucumbers", "eggplant", "lettuce", "peppers", "spinach", "tomatoes"],
+        "notes": "Last month for late spring harvest"
+      },
+      "summer_planting": {
+        "crops": ["sweet potatoes", "boniato", "hot peppers", "tropical spinach (Sisso, Malabar, New Zealand)"]
+      },
+      "strawberry_planting": {
+        "optimal_window": "October 1 – December 1",
+        "notes": "Latest planting window in Florida"
+      }
+    }
+  },
+  "data_quality_notes": {
+    "strengths": [
+      "Comprehensive cultivar listings for major crops",
+      "Zone-specific planting windows clearly defined",
+      "Disease resistance data for peppers and tomatoes",
+      "Regional rootstock recommendations for citrus",
+      "Harvest timing windows documented for citrus",
+      "UF/IFAS variety trial results incorporated",
+      "Commercial and home garden varieties distinguished"
+    ],
+    "limitations": [
+      "Exact days-to-maturity not specified for all cultivars",
+      "Some publications reference tables not accessible via web scraping",
+      "Variety trial performance data (yields, quality metrics) requires accessing full PDFs",
+      "Not all cultivars have complete zone-specific recommendations",
+      "Some older publications may have superseded varieties"
+    ],
+    "recommended_next_steps": [
+      "Access full PDF versions of Vegetable Production Handbook chapters",
+      "Contact UF/IFAS Extension agents for regional cultivar trials data",
+      "Review GCREC (Gulf Coast Research and Education Center) variety trial reports",
+      "Check UF/IFAS Plant Breeding Program for newest cultivar releases",
+      "Consult Florida Fresh (https://floridafresh.ifas.ufl.edu) for zip-code specific planting dates"
+    ]
+  },
+  "key_sources_for_ongoing_updates": {
+    "uf_ifas_edis": "https://edis.ifas.ufl.edu - Electronic Data Information Source (primary publication database)",
+    "vegetable_production_handbook": "https://edis.ifas.ufl.edu/publication/CV292 - Updated annually",
+    "florida_fresh": "https://floridafresh.ifas.ufl.edu - Zip-code specific planting dates",
+    "gcrec_strawberry": "https://gcrec.ifas.ufl.edu/strawberry-production-guide/ - Strawberry variety trials",
+    "uf_plant_breeding": "https://programs.ifas.ufl.edu/plant-breeding/ - New cultivar releases",
+    "regional_calendars": {
+      "north": "https://edis.ifas.ufl.edu/publication/EP451",
+      "central": "https://edis.ifas.ufl.edu/publication/EP450",
+      "south": "https://edis.ifas.ufl.edu/publication/EP452"
+    }
+  }
+}

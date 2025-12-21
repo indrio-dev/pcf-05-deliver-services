@@ -1,0 +1,632 @@
+{
+  "version": "1.0.0",
+  "collectionDate": "2025-12-20",
+  "description": "Florida farms collected from LocalHarvest for harvest timing triangulation",
+  "totalFarms": 20,
+  "farmsWithCSAware": 3,
+  "farmsWithTimingData": 8,
+  "farms": [
+    {
+      "farmId": "fresh_gardens",
+      "farmName": "Fresh Gardens",
+      "location": {
+        "city": "Homestead",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "address": "31400 SW 194th Ave, Homestead, FL 33030",
+        "usdaZone": "10b"
+      },
+      "csawareStore": "https://freshgardens.csaware.com/store/",
+      "localharvestUrl": "https://www.localharvest.org/fresh-gardens-M26409",
+      "products": {
+        "lychee": {
+          "category": "tropical_fruit",
+          "availability": "June-July",
+          "notes": "Pre-order item"
+        },
+        "mango": {
+          "category": "tropical_fruit",
+          "availability": "unknown",
+          "notes": "Multiple varieties"
+        },
+        "avocado": {
+          "category": "tropical_fruit",
+          "availability": "unknown"
+        },
+        "black_sapote": {
+          "category": "sapote",
+          "availability": "November-January",
+          "notes": "Pre-order, estimated from zone 10b patterns"
+        },
+        "white_sapote": {
+          "category": "sapote",
+          "availability": "seasonal",
+          "notes": "Pre-order item"
+        },
+        "dragon_fruit": {
+          "category": "specialty",
+          "availability": "unknown"
+        },
+        "passion_fruit": {
+          "category": "specialty",
+          "availability": "unknown"
+        },
+        "jackfruit": {
+          "category": "tropical_fruit",
+          "availability": "unknown"
+        }
+      },
+      "dataQuality": "high",
+      "notes": "Proof of concept farm - tropical/exotic focus, some explicit timing (lychee Jun-Jul)"
+    },
+    {
+      "farmId": "cypress_creek",
+      "farmName": "Cypress Creek Farms and Ranch",
+      "location": {
+        "city": "Alva",
+        "county": "Hendry",
+        "state": "FL",
+        "address": "19141 Persimmon Ridge Road, Alva, FL 33920",
+        "usdaZone": "10a"
+      },
+      "csawareStore": "https://cypresscreekfarmsandranch.csaware.com/store/",
+      "localharvestUrl": "https://www.localharvest.org/cypress-creek-farms-and-ranch-M73894",
+      "seasonalWindow": {
+        "start": 11,
+        "end": 4,
+        "description": "November through April growing season"
+      },
+      "products": {
+        "tomatoes": {
+          "category": "vegetables",
+          "availability": "November-April",
+          "notes": "10lb flats available"
+        },
+        "mixed_vegetables": {
+          "category": "vegetables",
+          "availability": "November-April",
+          "notes": "Weekly CSA box, seasonal mix"
+        },
+        "eggs": {
+          "category": "animal_products",
+          "availability": "year-round",
+          "notes": "Pasture-raised"
+        },
+        "beef": {
+          "category": "animal_products",
+          "availability": "year-round",
+          "notes": "Multiple cuts"
+        },
+        "pork": {
+          "category": "animal_products",
+          "availability": "year-round"
+        }
+      },
+      "dataQuality": "excellent",
+      "notes": "Explicit Nov-Apr growing season stated, CSA subscription model"
+    },
+    {
+      "farmId": "greens_and_goodness",
+      "farmName": "Greens and Goodness",
+      "location": {
+        "city": "Inverness",
+        "county": "Citrus",
+        "state": "FL",
+        "address": "4445 S. Pleasant Grove Rd, Inverness, FL 34452",
+        "usdaZone": "9a"
+      },
+      "csawareStore": "https://greensandgoodness.csaware.com/store/",
+      "localharvestUrl": "https://www.localharvest.org/greens-and-goodness-M58764",
+      "seasonalWindow": {
+        "start": 10,
+        "end": null,
+        "description": "Organic produce starts October 15th"
+      },
+      "products": {
+        "organic_produce_box": {
+          "category": "vegetables",
+          "availability": "October 15th start",
+          "notes": "Seasonal produce from local farms"
+        },
+        "fruit_box": {
+          "category": "fruit",
+          "availability": "seasonal"
+        }
+      },
+      "dataQuality": "good",
+      "notes": "Central FL, Oct 15 start date explicit"
+    },
+    {
+      "farmId": "tiny_farm",
+      "farmName": "Tiny Farm",
+      "location": {
+        "city": "Aventura",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "usdaZone": "10b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/tiny-farm-M55782",
+      "seasonalWindow": {
+        "start": 11,
+        "end": 4,
+        "description": "Weekly boxes November-April, 20 weeks"
+      },
+      "products": {
+        "mixed_produce": {
+          "category": "vegetables",
+          "availability": "November-April",
+          "notes": "7-10 items per weekly share"
+        }
+      },
+      "dataQuality": "excellent",
+      "notes": "Explicit 20-week season Nov-Apr, South FL Zone 10b"
+    },
+    {
+      "farmId": "lake_meadow_naturals",
+      "farmName": "Lake Meadow Naturals, LLC",
+      "location": {
+        "city": "Ocoee",
+        "county": "Orange",
+        "state": "FL",
+        "address": "10000 Mark Adam Road, Ocoee, FL 34761",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "website": "www.lakemeadownaturals.com",
+      "localharvestUrl": "https://www.localharvest.org/lake-meadow-naturals-llc-M16952",
+      "products": {
+        "eggs": {
+          "category": "animal_products",
+          "availability": "year-round"
+        },
+        "beef": {
+          "category": "animal_products",
+          "availability": "year-round",
+          "notes": "Grass-fed"
+        },
+        "pork": {
+          "category": "animal_products",
+          "availability": "year-round",
+          "notes": "Heritage breeds"
+        },
+        "beets": {
+          "category": "vegetables",
+          "availability": "winter",
+          "seasonalMonths": [12, 1, 2]
+        },
+        "collards": {
+          "category": "vegetables",
+          "availability": "winter",
+          "seasonalMonths": [12, 1, 2]
+        },
+        "arugula": {
+          "category": "vegetables",
+          "availability": "spring",
+          "seasonalMonths": [3, 4, 5]
+        },
+        "blueberries": {
+          "category": "fruit",
+          "availability": "spring",
+          "seasonalMonths": [3, 4, 5]
+        },
+        "figs": {
+          "category": "fruit",
+          "availability": "summer",
+          "seasonalMonths": [6, 7, 8]
+        },
+        "carrots": {
+          "category": "vegetables",
+          "availability": "fall",
+          "seasonalMonths": [9, 10, 11]
+        },
+        "lemons": {
+          "category": "citrus",
+          "availability": "fall",
+          "seasonalMonths": [9, 10, 11]
+        }
+      },
+      "dataQuality": "good",
+      "notes": "Central FL Zone 9b, seasonal produce by season documented"
+    },
+    {
+      "farmId": "geraldson_community",
+      "farmName": "Geraldson Community Farm",
+      "location": {
+        "city": "Bradenton",
+        "county": "Manatee",
+        "state": "FL",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/geraldson-community-farm-M13023",
+      "certification": "USDA Certified Organic",
+      "products": {
+        "organic_produce": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "CSA membership farm"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Northwest Bradenton, organic CSA, timing TBD"
+    },
+    {
+      "farmId": "bilbrey_family",
+      "farmName": "Bilbrey Family Farm",
+      "location": {
+        "city": "Auburndale",
+        "county": "Polk",
+        "state": "FL",
+        "usdaZone": "9a"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/bilbrey-family-farm-M27944",
+      "products": {
+        "mixed_produce": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Farm stand and CSA, organic methods"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Central FL Ridge area, timing TBD"
+    },
+    {
+      "farmId": "steed_farms",
+      "farmName": "Steed Farms",
+      "location": {
+        "city": "Plant City",
+        "county": "Hillsborough",
+        "state": "FL",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/steed-farms-M39829",
+      "products": {
+        "strawberries": {
+          "category": "berries",
+          "availability": "unknown",
+          "notes": "Plant City strawberry region"
+        },
+        "mixed_vegetables": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Small diversified CSA"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Plant City strawberry belt, timing TBD"
+    },
+    {
+      "farmId": "sandspur_farms",
+      "farmName": "Sandspur Farms",
+      "location": {
+        "city": "Marianna",
+        "county": "Jackson",
+        "state": "FL",
+        "usdaZone": "8b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/sandspur-farms-M52883",
+      "products": {
+        "heirloom_tomatoes": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Heritage focus"
+        },
+        "non_gmo_vegetables": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "CSA boxes"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "North FL Zone 8b, heritage cultivars, timing TBD"
+    },
+    {
+      "farmId": "orchard_pond",
+      "farmName": "Orchard Pond Organics",
+      "location": {
+        "city": "Tallahassee",
+        "county": "Leon",
+        "state": "FL",
+        "usdaZone": "8b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/orchard-pond-organics-M4699",
+      "certification": "USDA Certified Organic",
+      "products": {
+        "organic_produce": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Diverse organic farm, Red Hills region"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "North FL Zone 8b, timing TBD"
+    },
+    {
+      "farmId": "camellia_groves",
+      "farmName": "Camellia Groves",
+      "location": {
+        "city": "Winter Haven",
+        "county": "Polk",
+        "state": "FL",
+        "usdaZone": "9a"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/camellia-groves-M66438",
+      "products": {
+        "lemons": {
+          "category": "citrus",
+          "availability": "unknown",
+          "notes": "Pesticide-free, seedless Florida lemons"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Central FL citrus region, timing TBD"
+    },
+    {
+      "farmId": "radiant_farms",
+      "farmName": "Radiant Farms",
+      "location": {
+        "city": "Fort Meade",
+        "county": "Polk",
+        "state": "FL",
+        "usdaZone": "9a"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/radiant-farms-M74635",
+      "products": {
+        "organic_vegetables": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Six acres organic vegetables"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Central FL Ridge, timing TBD"
+    },
+    {
+      "farmId": "florida_herb_house",
+      "farmName": "Florida Herb House",
+      "location": {
+        "city": "Port Orange",
+        "county": "Volusia",
+        "state": "FL",
+        "address": "5889 S. Williamson Blvd., # 1413, Port Orange, FL 32128",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "website": "FloridaHerbHouse.com",
+      "localharvestUrl": "https://www.localharvest.org/florida-herb-house-M35834",
+      "products": {
+        "herbs": {
+          "category": "herbs",
+          "availability": "year-round",
+          "notes": "400+ certified organic/wild-harvested herbs"
+        }
+      },
+      "dataQuality": "medium",
+      "notes": "Year-round herb availability, not produce-focused"
+    },
+    {
+      "farmId": "ragged_glory",
+      "farmName": "The Ragged Glory Farm",
+      "location": {
+        "city": "Havana",
+        "county": "Gadsden",
+        "state": "FL",
+        "usdaZone": "8b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/ragged-glory-farm-M74869",
+      "products": {
+        "heirloom_vegetables": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Organic, open-pollinated, heirloom varieties"
+        },
+        "herbs": {
+          "category": "herbs",
+          "availability": "unknown"
+        },
+        "flowers": {
+          "category": "flowers",
+          "availability": "unknown"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "North FL Zone 8b, heritage focus, timing TBD"
+    },
+    {
+      "farmId": "life_farms",
+      "farmName": "Life Farms, LLC",
+      "location": {
+        "city": "Clearwater",
+        "county": "Pinellas",
+        "state": "FL",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/life-farms-llc-M71299",
+      "founded": "2013",
+      "products": {
+        "organic_produce": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Community-supported organic farm and education center"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Gulf coast Zone 9b, timing TBD"
+    },
+    {
+      "farmId": "3_boys_farm",
+      "farmName": "3 Boys Farm",
+      "location": {
+        "city": "Ruskin",
+        "county": "Hillsborough",
+        "state": "FL",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/3-boys-farm-M7481",
+      "certification": "USDA Certified Organic",
+      "products": {
+        "hydroponic_greens": {
+          "category": "vegetables",
+          "availability": "year-round",
+          "notes": "Greenhouse hydroponic"
+        }
+      },
+      "dataQuality": "medium",
+      "notes": "Year-round hydroponic, different from field timing"
+    },
+    {
+      "farmId": "gateway_organic",
+      "farmName": "Gateway Organic Farm",
+      "location": {
+        "city": "Clearwater",
+        "county": "Pinellas",
+        "state": "FL",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/gateway-organic-farm-M41947",
+      "certification": "USDA Certified Organic (2010)",
+      "size": "3.19 acres",
+      "products": {
+        "organic_produce": {
+          "category": "vegetables",
+          "availability": "unknown"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Small organic operation, timing TBD"
+    },
+    {
+      "farmId": "black_finger",
+      "farmName": "Black Finger Farm",
+      "location": {
+        "city": "Lutz",
+        "county": "Hillsborough",
+        "state": "FL",
+        "usdaZone": "9b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/black-finger-farm-M79026",
+      "founded": "Fall 2016",
+      "products": {
+        "organic_produce": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Bio-intensive organic methods"
+        },
+        "wild_harvested": {
+          "category": "specialty",
+          "availability": "unknown"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "Tampa area Zone 9b, timing TBD"
+    },
+    {
+      "farmId": "ripe_city_urban",
+      "farmName": "Ripe City Urban Farm",
+      "location": {
+        "city": "Tallahassee",
+        "county": "Leon",
+        "state": "FL",
+        "usdaZone": "8b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/ripe-city-urban-farm-M78523",
+      "products": {
+        "vegetables": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Small urban farm, supplies restaurants and markets"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "North FL Zone 8b, urban farm, timing TBD"
+    },
+    {
+      "farmId": "turkey_hill",
+      "farmName": "Turkey Hill Farm",
+      "location": {
+        "city": "Tallahassee",
+        "county": "Leon",
+        "state": "FL",
+        "usdaZone": "8b"
+      },
+      "csawareStore": null,
+      "localharvestUrl": "https://www.localharvest.org/turkey-hill-farm-M55644",
+      "products": {
+        "vegetables": {
+          "category": "vegetables",
+          "availability": "unknown",
+          "notes": "Organic production with on-farm compost"
+        },
+        "fruits": {
+          "category": "fruit",
+          "availability": "unknown"
+        }
+      },
+      "dataQuality": "low",
+      "notes": "North FL Zone 8b, timing TBD"
+    }
+  ],
+  "zoneDistribution": {
+    "8b": 5,
+    "9a": 4,
+    "9b": 8,
+    "10a": 1,
+    "10b": 2
+  },
+  "triangulationOpportunities": {
+    "tomatoes": {
+      "farmsReporting": 2,
+      "farms": ["cypress_creek", "sandspur_farms"],
+      "notes": "Need more data for triangulation"
+    },
+    "citrus": {
+      "farmsReporting": 2,
+      "farms": ["lake_meadow_naturals", "camellia_groves"],
+      "notes": "Central FL citrus belt, timing TBD"
+    },
+    "mixed_vegetables": {
+      "farmsReporting": 10,
+      "farms": [
+        "cypress_creek",
+        "greens_and_goodness",
+        "tiny_farm",
+        "geraldson_community",
+        "bilbrey_family",
+        "steed_farms",
+        "sandspur_farms",
+        "orchard_pond",
+        "radiant_farms",
+        "life_farms"
+      ],
+      "notes": "Widespread, various zones, good triangulation potential"
+    }
+  },
+  "nextSteps": [
+    "Visit CSAware stores for farms with null store URLs to find actual URLs",
+    "Extract detailed product/seasonal data from 3 confirmed CSAware stores",
+    "Search for additional FL CSAware farms (target: 20 with CSAware stores)",
+    "Follow up with farms that have timing data but no CSAware (contact for more details)",
+    "Triangulate vegetable timing across Zone 9b farms (most common)",
+    "Compare South FL (Zone 10) Nov-Apr window across multiple farms"
+  ],
+  "keyFindings": {
+    "zone_10_timing": "November-April growing season confirmed by multiple farms (Cypress Creek, Tiny Farm)",
+    "zone_9_timing": "Greens and Goodness starts Oct 15th, suggests Oct-Apr window",
+    "csaware_adoption": "Low adoption rate - only 3 CSAware stores found out of 20 farms",
+    "timing_transparency": "Most farms don't explicitly state seasonal windows - THIS IS THE PROBLEM WE'RE SOLVING",
+    "heritage_focus": "Several farms emphasize heirloom/heritage varieties (Sandspur, Ragged Glory, Fresh Gardens tropical)"
+  }
+}

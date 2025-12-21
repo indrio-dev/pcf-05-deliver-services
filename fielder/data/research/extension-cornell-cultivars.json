@@ -1,0 +1,443 @@
+{
+  "metadata": {
+    "source": "Cornell Cooperative Extension - Garden Cultivar Database",
+    "url": "https://gardening.cals.cornell.edu/cultivar-reviews/",
+    "extractionDate": "2025-12-20",
+    "totalCultivars": "1000+",
+    "description": "User-reviewed cultivar database with ratings, days to maturity, and growing notes from Cornell Cooperative Extension",
+    "confidence": 0.90,
+    "sourceType": "extension + crowdsourced"
+  },
+
+  "dataValue": {
+    "thirdPartyValidation": "Cornell Extension + user reviews provide independent verification",
+    "crossReference": "Can validate days to maturity against Burpee, Mary's, UF/IFAS",
+    "qualitySignals": "Star ratings indicate cultivar performance across diverse growers",
+    "geographicScope": "Northeast US focus but includes adaptable varieties"
+  },
+
+  "cultivars": {
+    "tomatoes": [
+      {
+        "cultivarName": "Cherokee Purple",
+        "category": "tomatoes",
+        "found": "Referenced in other sources",
+        "note": "Not explicitly listed in extracted portion but referenced"
+      }
+    ],
+
+    "beans": {
+      "cherokee_trail_of_tears": {
+        "cultivarName": "Cherokee Trail of Tears",
+        "type": "beans",
+        "subtype": "Pole dry and snap bean",
+        "rating": 5.0,
+        "reviews": 6,
+        "daysToMaturity": 85,
+        "description": "Plants bear 6-inch green pods with purple overlay and shiny, jet-black seeds",
+        "heritageIntent": "true_heritage",
+        "origin": "Native American (Cherokee Nation)",
+        "qualityTier": "premium"
+      },
+      "jumbo": {
+        "cultivarName": "Jumbo",
+        "type": "beans",
+        "subtype": "Bush, Italian Romano type",
+        "rating": 5.0,
+        "reviews": 4,
+        "daysToMaturity": 55,
+        "description": "Cross between Romano and Kentucky Wonder. 6-7 inch flat-podded beans stay stringless up to 10 inches",
+        "diseaseResistance": ["bean mosaic virus"],
+        "qualityTier": "premium"
+      },
+      "gold_mine": {
+        "cultivarName": "Gold Mine",
+        "type": "beans",
+        "subtype": "Bush yellow (wax)",
+        "rating": 5.0,
+        "reviews": 3,
+        "daysToMaturity": "53-55",
+        "description": "5-5.5 inch smooth, straight, bright-yellow pods with white beans borne in clusters",
+        "diseaseResistance": ["bacterial brown spot", "bean mosaic virus", "common bean mosaic", "halo blight"],
+        "qualityTier": "premium"
+      },
+      "greencrop": {
+        "cultivarName": "Greencrop",
+        "type": "beans",
+        "subtype": "Bush green/Romano",
+        "rating": 5.0,
+        "reviews": 3,
+        "daysToMaturity": "51-55",
+        "description": "Flat, wide, stringless, 8-inch pods with white beans",
+        "awards": ["All American Selection"],
+        "diseaseResistance": ["common bean mosaic", "bean mosaic virus"],
+        "qualityTier": "premium"
+      },
+      "grandma_nellies_yellow_mushroom": {
+        "cultivarName": "Grandma Nellie's Yellow Mushroom",
+        "type": "beans",
+        "subtype": "Pole yellow (wax)",
+        "rating": 5.0,
+        "reviews": 3,
+        "daysToMaturity": "NA",
+        "description": "Vines bear yellow pods tender when picked at 5 inches, taste somewhat like mushrooms when cooked",
+        "heritageIntent": "heirloom_quality",
+        "qualityTier": "artisan"
+      },
+      "empress": {
+        "cultivarName": "Empress",
+        "type": "beans",
+        "subtype": "Bush green bean",
+        "rating": 5.0,
+        "reviews": 3,
+        "daysToMaturity": 55,
+        "description": "Plants bear straight, 5-6 inch stringless pods",
+        "qualityTier": "premium"
+      },
+      "hidatsa_shield_figure": {
+        "cultivarName": "Hidatsa Shield Figure",
+        "type": "beans",
+        "subtype": "Pole dry bean",
+        "rating": 5.0,
+        "reviews": 3,
+        "daysToMaturity": 90,
+        "description": "Vines bear white beans with speckled tan 'shield'",
+        "heritageIntent": "true_heritage",
+        "origin": "Native American (Hidatsa)",
+        "qualityTier": "artisan"
+      },
+      "kentucky_king": {
+        "cultivarName": "Kentucky King",
+        "type": "beans",
+        "subtype": "Bush green bean",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": 57,
+        "description": "Bearing clusters of flat, 7-inch pods. Bush form of Kentucky Wonder",
+        "qualityTier": "premium"
+      },
+      "stringless_blue_lake": {
+        "cultivarName": "Stringless Blue Lake",
+        "type": "beans",
+        "subtype": "Pole green bean",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": "60-65",
+        "description": "6-7 foot vines bearing 6-6.5 inch, slender, smooth, clustered pods",
+        "qualityTier": "premium"
+      },
+      "willow_leaf": {
+        "cultivarName": "Willow Leaf",
+        "type": "beans",
+        "subtype": "Heirloom pole lima bean",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": 90,
+        "description": "3.5-inch pods containing 3 or 4 creamy white beans. Heat and drought resistant",
+        "heritageIntent": "heirloom_quality",
+        "specialFeatures": ["heat resistant", "drought resistant"],
+        "qualityTier": "premium"
+      },
+      "emerite": {
+        "cultivarName": "Emerite",
+        "type": "beans",
+        "subtype": "Pole green bean",
+        "rating": 4.9,
+        "reviews": 12,
+        "daysToMaturity": "53-64",
+        "description": "Slim, straight, round, smooth, light-green pods. Harvest at 4-5 inches for filet or 7 inches for snap",
+        "qualityTier": "premium"
+      },
+      "jade": {
+        "cultivarName": "Jade",
+        "type": "beans",
+        "subtype": "Bush green bean",
+        "rating": 4.7,
+        "reviews": 19,
+        "daysToMaturity": "53-57",
+        "description": "Upright plants bearing straight, slender 6-7 inch, deep-green pods with pale-green beans. Tolerant of heat and cold",
+        "diseaseResistance": ["bean mosaic virus (race 15)", "common bean mosaic", "curly top virus", "rust"],
+        "specialFeatures": ["heat tolerant", "cold tolerant"],
+        "qualityTier": "premium"
+      }
+    ],
+
+    "broccoli": {
+      "green_magic": {
+        "cultivarName": "Green Magic",
+        "type": "broccoli",
+        "subtype": "Hybrid",
+        "rating": 5.0,
+        "reviews": 3,
+        "daysToMaturity": 57,
+        "description": "Heat-tolerant plants produce smooth, well-domed heads. For summer or fall harvest",
+        "specialFeatures": ["heat tolerant"],
+        "qualityTier": "premium"
+      },
+      "bonanza": {
+        "cultivarName": "Bonanza",
+        "type": "broccoli",
+        "subtype": "Hybrid",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": 55,
+        "description": "Tight-budded, 9-inch central head and 5-inch side shoots",
+        "qualityTier": "premium"
+      },
+      "premium_crop": {
+        "cultivarName": "Premium Crop",
+        "type": "broccoli",
+        "subtype": "F1 Hybrid",
+        "rating": 4.9,
+        "reviews": 8,
+        "daysToMaturity": "62-82",
+        "description": "8-10 inch heads are tight-budded, small-beaded with very few side shoots. Holds prime condition exceptionally well",
+        "diseaseResistance": ["downy mildew"],
+        "awards": ["All American Selection"],
+        "qualityTier": "premium"
+      },
+      "arcadia": {
+        "cultivarName": "Arcadia",
+        "type": "broccoli",
+        "subtype": "Hybrid",
+        "rating": 4.8,
+        "reviews": 6,
+        "daysToMaturity": "63-94",
+        "description": "Tall, heavy stems with heavy, firm, dark blue-green, finely beaded, high-domed heads with frosted appearance. Late summer or fall harvest",
+        "diseaseResistance": ["brown bead", "black rot", "downy mildew", "head rot"],
+        "specialFeatures": ["cold tolerant", "heat tolerant"],
+        "qualityTier": "premium"
+      },
+      "small_miracle": {
+        "cultivarName": "Small Miracle",
+        "type": "broccoli",
+        "subtype": "Hybrid",
+        "rating": 4.8,
+        "reviews": 4,
+        "daysToMaturity": 54,
+        "description": "6-7 inch, dome-shaped, tight heads on 1-1.5 foot plants with abundant side shoots",
+        "qualityTier": "premium"
+      }
+    },
+
+    "beets": {
+      "forono": {
+        "cultivarName": "Forono",
+        "type": "beets",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": 55,
+        "description": "Smooth, deep-purple, cylindrical, 5-8 inch by 2-3 inch roots. Harvest young, don't keep well. Sweeter than other cylindrical beets",
+        "alternateNames": ["Forona", "Cook's Delight"],
+        "qualityTier": "premium"
+      },
+      "warrior": {
+        "cultivarName": "Warrior",
+        "type": "beets",
+        "subtype": "Hybrid",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": 57,
+        "description": "Dark-red, globe-shaped, smooth-textured, uniform, tender roots develop quickly and hold quality. Strong tops tinged with red",
+        "qualityTier": "premium"
+      },
+      "ruby_queen": {
+        "cultivarName": "Ruby Queen",
+        "type": "beets",
+        "subtype": "Open-pollinated",
+        "rating": 4.7,
+        "reviews": 7,
+        "daysToMaturity": 60,
+        "description": "Deep-red, globe-shaped roots with small crowns. Short, dark-green tops",
+        "awards": ["All American Selection"],
+        "qualityTier": "premium"
+      },
+      "lutz_green_leaf": {
+        "cultivarName": "Lutz Green Leaf",
+        "type": "beets",
+        "rating": 4.7,
+        "reviews": 6,
+        "daysToMaturity": "60-80",
+        "description": "Slow grower producing 4-6 inch, slightly elongated globe-shaped roots and dark-green, chard-like leaves with no purple. Stores well",
+        "alternateNames": ["Lutz", "Lutz Winter Keeper", "Lutz Salad Leaf"],
+        "specialFeatures": ["stores well"],
+        "qualityTier": "premium"
+      }
+    },
+
+    "cabbage": {
+      "gonzales": {
+        "cultivarName": "Gonzales",
+        "type": "cabbage",
+        "subtype": "Hybrid",
+        "rating": 5.0,
+        "reviews": 7,
+        "daysToMaturity": "55-66",
+        "description": "Early-season, common European variety producing dense, uniform, spicy, 4-6 inch mini-heads",
+        "alternateNames": ["Gonzales Baby"],
+        "qualityTier": "premium"
+      },
+      "stonehead": {
+        "cultivarName": "Stonehead",
+        "type": "cabbage",
+        "subtype": "Hybrid",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": "50-67",
+        "description": "Early, 6-inch, round, 3-4 pound heads with extremely solid interiors, short cores and few outer leaves. Slow to split",
+        "diseaseResistance": ["fusarium yellows"],
+        "specialFeatures": ["tip burn tolerant", "bursting tolerant"],
+        "qualityTier": "premium"
+      },
+      "super_red_80": {
+        "cultivarName": "Super Red 80",
+        "type": "cabbage",
+        "subtype": "Hybrid",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": "73-80",
+        "description": "Mid-season, tight, 3-5 pound, red head with peppery flavor. Stores well",
+        "diseaseResistance": ["black rot (somewhat tolerant)"],
+        "specialFeatures": ["tip burn tolerant", "thrips tolerant", "stores well"],
+        "qualityTier": "premium"
+      },
+      "january_king": {
+        "cultivarName": "January King",
+        "type": "cabbage",
+        "subtype": "Semi-savoyed type",
+        "rating": 5.0,
+        "reviews": 2,
+        "daysToMaturity": "100-120",
+        "description": "Late-season, 4-6 pound, flat, light-green heads with blue-green wrapper leaves tinged with purple in cool weather. Frost resistant",
+        "specialFeatures": ["frost resistant"],
+        "qualityTier": "premium"
+      }
+    },
+
+    "brussels_sprouts": {
+      "tasty_nuggets": {
+        "cultivarName": "Tasty Nuggets",
+        "type": "brussels_sprouts",
+        "subtype": "Hybrid",
+        "rating": 5.0,
+        "reviews": 3,
+        "daysToMaturity": 78,
+        "description": "Vigorous bearing small 1-1.25 inch sprouts",
+        "qualityTier": "premium"
+      }
+    },
+
+    "carrots": {
+      "royal_chantenay": {
+        "cultivarName": "Royal Chantenay",
+        "type": "carrots",
+        "subtype": "Chantenay type",
+        "rating": 4.8,
+        "reviews": 4,
+        "daysToMaturity": "60-70",
+        "description": "Early- to main-season, blocky roots with little or no taper. Good for shallow and heavy soils",
+        "qualityTier": "premium"
+      }
+    },
+
+    "asparagus": {
+      "guelph_millenium": {
+        "cultivarName": "Guelph Millenium",
+        "type": "asparagus",
+        "subtype": "Male hybrid",
+        "rating": 5.0,
+        "reviews": 1,
+        "daysToMaturity": "NA",
+        "diseaseResistance": ["rust tolerant"],
+        "qualityTier": "premium"
+      },
+      "viking_kb3": {
+        "cultivarName": "Viking KB3",
+        "type": "asparagus",
+        "subtype": "Open pollinated",
+        "rating": 5.0,
+        "reviews": 1,
+        "daysToMaturity": "NA",
+        "description": "Hardy in sub zero and hot desert areas. Lower winterkill",
+        "diseaseResistance": ["fusarium tolerant", "rust tolerant"],
+        "specialFeatures": ["extreme temperature tolerance"],
+        "qualityTier": "premium"
+      },
+      "mary_washington": {
+        "cultivarName": "Mary Washington",
+        "type": "asparagus",
+        "rating": 5.0,
+        "reviews": 1,
+        "daysToMaturity": "NA",
+        "description": "Thick, straight, dark green stalks tinged with purple at tightly folded tips",
+        "diseaseResistance": ["asparagus rust"],
+        "qualityTier": "standard"
+      }
+    }
+  },
+
+  "keyFindings": {
+    "averageDaysToMaturity": {
+      "beans": "53-85 days (bush green), 60-90 days (pole)",
+      "broccoli": "54-82 days (hybrid), 57-95 days (open-pollinated)",
+      "beets": "55-80 days",
+      "cabbage": "50-120 days (early to late season)",
+      "brussels_sprouts": "78-115 days",
+      "carrots": "60-70 days (Chantenay type)"
+    },
+
+    "topRatedCultivars": {
+      "beans": [
+        {"name": "Jade", "rating": 4.7, "reviews": 19, "significance": "Most reviewed, heat/cold tolerant"},
+        {"name": "Emerite", "rating": 4.9, "reviews": 12, "significance": "Filet type, highly rated"},
+        {"name": "Cherokee Trail of Tears", "rating": 5.0, "reviews": 6, "significance": "Heritage cultivar"}
+      ],
+      "broccoli": [
+        {"name": "Premium Crop", "rating": 4.9, "reviews": 8, "significance": "All American Selection"},
+        {"name": "Arcadia", "rating": 4.8, "reviews": 6, "significance": "Heat/cold tolerant, disease resistant"}
+      ],
+      "beets": [
+        {"name": "Ruby Queen", "rating": 4.7, "reviews": 7, "significance": "All American Selection"},
+        {"name": "Lutz Green Leaf", "rating": 4.7, "reviews": 6, "significance": "Storage beet"}
+      ]
+    },
+
+    "diseaseResistance": {
+      "common": [
+        "bean mosaic virus",
+        "common bean mosaic",
+        "fusarium yellows",
+        "downy mildew",
+        "bacterial brown spot",
+        "rust"
+      ],
+      "significance": "Many 5-star cultivars have strong disease resistance - quality AND resilience"
+    },
+
+    "heritageStatus": {
+      "identified": [
+        "Cherokee Trail of Tears (Native American)",
+        "Hidatsa Shield Figure (Native American)",
+        "Grandma Nellie's Yellow Mushroom (heirloom)",
+        "Willow Leaf (heirloom lima)"
+      ],
+      "significance": "Heritage cultivars achieve 5.0 ratings alongside modern hybrids - proves quality isn't just modern breeding"
+    }
+  },
+
+  "integrationValue": {
+    "crossValidation": "Can compare days to maturity: Cornell vs Burpee vs Mary's vs UF/IFAS",
+    "qualitySignals": "User ratings indicate real-world performance across diverse conditions",
+    "diseaseResistance": "Many listings include disease resistance - adds to SHARE A pillar",
+    "geographicExpansion": "Northeast focus complements Florida data (zones 4-7 vs 8-11)",
+    "thirdPartyProof": "Independent extension + crowdsourced reviews validate seed company claims"
+  },
+
+  "nextSteps": [
+    "Extract full 1000+ cultivars from complete file",
+    "Cross-reference days to maturity against other sources",
+    "Map disease resistance to A pillar scoring",
+    "Identify rating patterns (what makes 5.0 vs 4.5 cultivars)",
+    "Add to knowledge graph as validation layer"
+  ]
+}
