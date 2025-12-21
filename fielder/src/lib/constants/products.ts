@@ -778,14 +778,14 @@ export const CULTIVARS: Cultivar[] = [
 
   // === APPLE VARIETIES ===
   // Apples - perennial tree fruit, calendar-based harvest
-  // USDA tracks top 7 states: WA, NY, MI, PA, VA, CA, OR
+  // USDA tracks top states: WA, NY, MI, PA, VA, CA, OR, NC (Henderson County)
   {
     id: 'honeycrisp',
     productId: 'apple',
     displayName: 'Honeycrisp',
     modelType: 'calendar',
     isNonGmo: true,
-    validatedStates: ['WA', 'NY', 'MI', 'MN'], // MN origin, top apple states
+    validatedStates: ['WA', 'NY', 'MI', 'MN', 'NC'], // MN origin, top apple states + NC mountains
     flavorProfile: 'Explosive crunch, honey-sweet with tang',
     nutritionNotes: 'High in fiber and vitamin C',
     peakMonths: [9, 10], // September-October
@@ -804,7 +804,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'apple',
     displayName: 'Gala',
     modelType: 'calendar',
-    validatedStates: ['WA', 'NY', 'MI', 'PA', 'VA'], // Major apple states
+    validatedStates: ['WA', 'NY', 'MI', 'PA', 'VA', 'NC'], // Major apple states + NC mountains
     flavorProfile: 'Mild sweet, crisp, kids favorite',
     peakMonths: [8, 9], // August-September (early variety)
   },
@@ -833,7 +833,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Arkansas Black',
     modelType: 'calendar',
     isHeritage: true,
-    validatedStates: ['AR', 'VA', 'CA'], // Heritage, limited production
+    validatedStates: ['AR', 'VA', 'CA', 'NC'], // Heritage, limited production, Appalachian states
     flavorProfile: 'Deep purple, complex, improves in storage',
     peakMonths: [10, 11], // October-November
   },
