@@ -12,7 +12,10 @@
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage --passWithNoTests",
     "backfill": "ts-node scripts/backfill-historical.ts",
-    "backfill:dry-run": "ts-node scripts/backfill-historical.ts --dry-run"
+    "backfill:dry-run": "ts-node scripts/backfill-historical.ts --dry-run",
+    "research:state": "ts-node scripts/research-state-harvest.ts",
+    "research:localharvest": "ts-node scripts/research-localharvest.ts",
+    "research:triangulate": "ts-node scripts/triangulate-florida-data.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.87.1",
