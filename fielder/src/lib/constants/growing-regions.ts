@@ -634,7 +634,7 @@ export const FLORIDA_REGIONS: Record<string, GrowingRegionExtended> = {
   plant_city: {
     id: 'plant_city',
     name: 'Plant City Strawberry Belt',
-    displayName: 'Plant City',
+    displayName: 'Plant City Strawberry Belt',
     slug: 'plant-city-fl',
     state: 'FL',
     macroRegion: 'southeast',

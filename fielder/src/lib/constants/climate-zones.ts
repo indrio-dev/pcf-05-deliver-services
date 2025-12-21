@@ -301,14 +301,11 @@ export const SUBCATEGORY_CLIMATE_COMPATIBILITY: Record<string, ClimateZone[]> = 
   // Dairy
   milk: ['humid_continental', 'maritime', 'continental', 'cold'],
 
-  // Fish
-  fish: ['tropical', 'subtropical', 'warm_temperate', 'mediterranean', 'humid_continental', 'maritime', 'cold'],
-
-  // Shellfish
-  shellfish: ['subtropical', 'maritime', 'humid_continental', 'cold'],
-
-  // Crustacean
-  crustacean: ['subtropical', 'warm_temperate', 'maritime', 'humid_continental'],
+  // SEAFOOD: Do NOT auto-generate based on climate!
+  // Seafood has specific geographic origins (e.g., Alaskan King Crab from Alaska,
+  // Gulf Shrimp from Gulf Coast). Unlike produce which can grow in compatible climates,
+  // seafood is HARVESTED from specific bodies of water. Use curated offerings only.
+  // fish: [], shellfish: [], crustacean: [] - intentionally excluded
 
   // Coffee - tropical only
   coffee: ['tropical'],
