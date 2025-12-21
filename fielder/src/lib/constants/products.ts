@@ -428,6 +428,7 @@ export interface Cultivar {
   heritageStatus?: HeritageStatus  // Legacy: heirloom, heritage, landrace, modern_quality
   isHeritage?: boolean             // Legacy field - true if heirloom/heritage/landrace
   isNonGmo?: boolean               // Non-GMO verified
+  originLocked?: boolean           // True = only appears in curated origin regions (e.g., Kona Coffee, Vidalia Onion)
   yearIntroduced?: number          // Year cultivar was developed/released
   originStory?: string             // Heritage/breeding background
 
@@ -1014,6 +1015,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Hatch Green Chile',
     modelType: 'gdd',
     isHeritage: true,
+    originLocked: true, // Hatch Chile = New Mexico only (geographic designation)
     flavorProfile: 'Medium heat, earthy, roasting chile',
     baseTemp: 55, gddToMaturity: 1300, gddToPeak: 1500, gddWindow: 350,
     peakMonths: [8, 9], // Aug-Sept (Hatch season)
@@ -1082,6 +1084,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'onion',
     displayName: 'Vidalia',
     modelType: 'gdd',
+    originLocked: true, // Vidalia = Georgia only (legally protected designation)
     flavorProfile: 'Exceptionally sweet, low sulfur',
     baseTemp: 40, gddToMaturity: 1400, gddToPeak: 1600, gddWindow: 350,
     peakMonths: [4, 5, 6], // Apr-June (Vidalia season)
@@ -1092,6 +1095,7 @@ export const CULTIVARS: Cultivar[] = [
     displayName: 'Walla Walla',
     modelType: 'gdd',
     isHeritage: true,
+    originLocked: true, // Walla Walla = Washington only (geographic designation)
     flavorProfile: 'Sweet, mild, Pacific Northwest treasure',
     baseTemp: 40, gddToMaturity: 1500, gddToPeak: 1700, gddWindow: 350,
     peakMonths: [6, 7, 8], // June-Aug (WA season)
@@ -1446,6 +1450,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'coffee',
     displayName: 'Kona Coffee',
     modelType: 'calendar',
+    originLocked: true, // Kona Coffee = Hawaii only (geographic designation)
     flavorProfile: 'Smooth, low acid, nutty, chocolate notes',
     peakMonths: [8, 9, 10, 11, 12],
     peakSeasons: ['fall', 'winter'],
@@ -1531,6 +1536,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'hatch_chile',
     displayName: 'Hatch Green Chile',
     modelType: 'calendar',
+    originLocked: true, // Hatch Chile = New Mexico only
     flavorProfile: 'Earthy, smoky, medium heat',
     peakMonths: [8, 9],
     peakSeasons: ['summer', 'fall'],
@@ -1540,6 +1546,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'hatch_chile',
     displayName: 'Hatch Red Chile',
     modelType: 'calendar',
+    originLocked: true, // Hatch Chile = New Mexico only
     flavorProfile: 'Sweeter, deeper flavor, dried pods',
     peakMonths: [9, 10],
     peakSeasons: ['fall'],
@@ -1601,6 +1608,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'wild_rice',
     displayName: 'Minnesota Wild Rice',
     modelType: 'calendar',
+    originLocked: true, // Minnesota Wild Rice = Minnesota/Great Lakes only (native tradition)
     flavorProfile: 'Nutty, earthy, hand-harvested',
     peakMonths: [9, 10],
     peakSeasons: ['fall'],
@@ -1632,6 +1640,7 @@ export const CULTIVARS: Cultivar[] = [
     productId: 'birch_syrup',
     displayName: 'Alaska Birch Syrup',
     modelType: 'calendar',
+    originLocked: true, // Alaska Birch Syrup = Alaska only
     flavorProfile: 'Molasses-like, complex, earthy',
     peakMonths: [4, 5],
     peakSeasons: ['spring'],

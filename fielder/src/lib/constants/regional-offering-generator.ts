@@ -86,6 +86,10 @@ export function generateRegionalOfferings(cultivars: Cultivar[]): RegionalOfferi
 
   // Generate offerings for each cultivar
   for (const cultivar of cultivars) {
+    // Skip origin-locked cultivars (e.g., Kona Coffee, Vidalia Onion)
+    // These only appear via curated offerings in their specific origin regions
+    if (cultivar.originLocked) continue
+
     const subcategory = getCultivarSubcategory(cultivar)
     if (!subcategory) continue  // Skip cultivars without a valid product type
 
