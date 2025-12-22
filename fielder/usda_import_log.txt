@@ -1,0 +1,88 @@
+╔════════════════════════════════════════════════════════╗
+║       IMPORT USDA DATA TO NEO4J                        ║
+╚════════════════════════════════════════════════════════╝
+
+📂 Loading USDA entities...
+   Loaded 22780 entities
+
+🔍 Checking for duplicates...
+   Sampling 100 entities for duplicate check...
+   Sample duplicate rate: 4/100 (4%)
+
+📥 Importing entities to Neo4j...
+   (This will take several minutes for 22K entities)
+
+   Imported 500/22780 (3.5/sec, 141.0s elapsed)
+   Imported 1000/22780 (3.6/sec, 277.6s elapsed)
+   Imported 1500/22780 (3.6/sec, 414.2s elapsed)
+   Imported 2000/22780 (3.6/sec, 552.3s elapsed)
+   Imported 2500/22780 (3.6/sec, 696.4s elapsed)
+   Imported 3000/22780 (3.6/sec, 836.9s elapsed)
+   Imported 3500/22780 (3.6/sec, 980.9s elapsed)
+   Imported 4000/22780 (3.6/sec, 1120.4s elapsed)
+   Imported 4500/22780 (3.6/sec, 1259.9s elapsed)
+   Imported 5000/22780 (3.6/sec, 1406.7s elapsed)
+   Imported 5500/22780 (3.5/sec, 1553.1s elapsed)
+   Imported 6000/22780 (3.5/sec, 1697.2s elapsed)
+   Imported 6500/22780 (3.5/sec, 1843.1s elapsed)
+   Imported 7000/22780 (3.5/sec, 1990.2s elapsed)
+   Imported 7500/22780 (3.5/sec, 2137.4s elapsed)
+   Imported 8000/22780 (3.5/sec, 2280.5s elapsed)
+   Imported 8500/22780 (3.5/sec, 2424.3s elapsed)
+   Imported 9000/22780 (3.5/sec, 2565.1s elapsed)
+   Imported 9500/22780 (3.5/sec, 2707.9s elapsed)
+   Imported 10000/22780 (3.5/sec, 2849.5s elapsed)
+   Imported 10500/22780 (3.5/sec, 2989.6s elapsed)
+   Imported 11000/22780 (3.5/sec, 3131.2s elapsed)
+   Imported 11500/22780 (3.5/sec, 3269.6s elapsed)
+   Imported 12000/22780 (3.5/sec, 3409.3s elapsed)
+   Imported 12500/22780 (3.5/sec, 3548.3s elapsed)
+   Imported 13000/22780 (3.5/sec, 3688.3s elapsed)
+   Imported 13500/22780 (3.5/sec, 3825.6s elapsed)
+   Imported 14000/22780 (3.5/sec, 3965.8s elapsed)
+   Imported 14500/22780 (3.3/sec, 4364.6s elapsed)
+   Imported 15000/22780 (3.0/sec, 4925.3s elapsed)
+   Imported 15500/22780 (3.0/sec, 5124.2s elapsed)
+   Imported 16000/22780 (3.0/sec, 5269.9s elapsed)
+   Imported 16500/22780 (3.1/sec, 5406.8s elapsed)
+   Imported 17000/22780 (3.1/sec, 5543.7s elapsed)
+   Imported 17500/22780 (3.1/sec, 5678.5s elapsed)
+   Imported 18000/22780 (3.1/sec, 5814.7s elapsed)
+   Imported 18500/22780 (3.1/sec, 5950.2s elapsed)
+   Imported 19000/22780 (3.1/sec, 6085.1s elapsed)
+   Imported 19500/22780 (3.1/sec, 6220.8s elapsed)
+   Imported 20000/22780 (3.1/sec, 6359.5s elapsed)
+   Imported 20500/22780 (3.2/sec, 6498.3s elapsed)
+
+╔════════════════════════════════════════════════════════╗
+║                  IMPORT COMPLETE                       ║
+╠════════════════════════════════════════════════════════╣
+║  Total processed:      22780                        ║
+║  Imported:             20842                        ║
+║  Duplicates skipped:    1938                        ║
+║  Time:                 109.9 min                     ║
+╚════════════════════════════════════════════════════════╝
+
+By role:
+  retailer              20401
+  grower                14751
+  packinghouse            441
+
+Product coverage:
+  With products:           740 (4%)
+  Needs research:        20102 (96%)
+
+Top 10 states:
+  NY:  1302
+  CA:  1157
+  MI:  1087
+  FL:   874
+  NC:   848
+  PA:   789
+  MN:   777
+  GA:   722
+  VA:   716
+  TX:   701
+
+✨ Import complete!
+
