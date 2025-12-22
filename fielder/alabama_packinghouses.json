@@ -1,0 +1,213 @@
+[
+  {
+    "name": "Jim Durbin Farms",
+    "state": "AL",
+    "city": "Clanton",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches"
+    ],
+    "website": "https://jimdurbinfarms.com/",
+    "phone": "205-755-4203",
+    "notes": "One of the five largest peach growers in Alabama. Only large-scale peach packaging operation in the state. Ships Sunshine brand peaches to major wholesalers including Walmart, Bruno's, and Winn-Dixie. On-site packing shed with processing and packing capability. About 600 acres of fruit. Ships throughout eastern United States."
+  },
+  {
+    "name": "Bentley Farms",
+    "state": "AL",
+    "city": "Thorsby",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches",
+      "nectarines",
+      "sweet potatoes"
+    ],
+    "website": null,
+    "phone": "800-489-3762",
+    "notes": "One of the five largest peach growers in Alabama. Packs and ships produce for out-of-state sale. Located at 20466 US Highway 31 South, Thorsby, AL. Commercial packinghouse operation."
+  },
+  {
+    "name": "Culp Fruits",
+    "state": "AL",
+    "city": "Jemison",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches"
+    ],
+    "website": "http://www.culpfruits.com/",
+    "phone": "205-688-4553",
+    "notes": "One of the five largest peach growers in Alabama. Charles Culp began growing peaches in 1951. Now farms 100 acres of orchards. Commercial packing operations. Located at 11602 County Road 51, Exit 219 off I-65 in Jemison."
+  },
+  {
+    "name": "Sirmon Farms (Sweet Potato Processing Facility)",
+    "state": "AL",
+    "city": "Daphne",
+    "region": "South (Baldwin County)",
+    "products": [
+      "sweet potatoes",
+      "corn",
+      "cotton",
+      "peanuts",
+      "hydroponic lettuce"
+    ],
+    "website": "https://sirmonfarms.com/",
+    "phone": "251-621-1532",
+    "notes": "One of the largest sweet potato processing facilities in the South. Family-run for over 5 generations, began in early 1900s. GAP Certified. Over 4,500 acres in Baldwin County. Modern processing: washer, sorting conveyors, grading line. Packs in forty-pound boxes. Wholesale distribution to grocery store warehouses and restaurants. Hours: Mon-Fri 8am-5pm, closed weekends."
+  },
+  {
+    "name": "Wildfork Blueberries",
+    "state": "AL",
+    "city": "Brewton",
+    "region": "South (Escambia County)",
+    "products": [
+      "blueberries"
+    ],
+    "website": "https://wildforkblueberries.com/",
+    "phone": null,
+    "notes": "The largest commercial wholesale blueberry farm in the State of Alabama. 60-acre farm. Wholesale distributor. Mailing address: 30530 Middle Creek Cir, Spanish Fort, AL 36527. Physical address: 3070 Hammac Rd, Brewton, AL 36426. Sales team available through website contact form."
+  },
+  {
+    "name": "Regional Produce Distributors, LLC",
+    "state": "AL",
+    "city": "Birmingham",
+    "region": "Central (Jefferson County)",
+    "products": [
+      "fresh produce",
+      "dairy products"
+    ],
+    "website": "https://regionalproduce.net/",
+    "phone": "205-324-4569",
+    "notes": "Alabama's premier foodservice distributor. 30,000 square foot state-of-the-art facility. Located at 624 16th Avenue West, Birmingham, AL 35204. Serves foodservice industry. Alternative phone: 800-726-0711. Hours: 4am-3pm daily."
+  },
+  {
+    "name": "Forestwood Farm Inc",
+    "state": "AL",
+    "city": "Birmingham",
+    "region": "Central (Jefferson County)",
+    "products": [
+      "fresh produce",
+      "vegetables",
+      "fruits",
+      "dairy products",
+      "eggs"
+    ],
+    "website": "https://www.forestwood.com/",
+    "phone": "205-252-4139",
+    "notes": "Family-owned wholesale produce distributor. Started as poultry farm in Dora, AL. Now serves three-fourths of Alabama. Two main warehouses: Birmingham (4101 Coalburg Road, P.O. Box 310728) and Huntsville (256-536-9083). Serves restaurants, schools, military facilities across Southeast. Also has Jackson, TN location (731-513-5353)."
+  },
+  {
+    "name": "Forestwood Farm (Huntsville Location)",
+    "state": "AL",
+    "city": "Huntsville",
+    "region": "North (Madison County)",
+    "products": [
+      "fresh produce",
+      "vegetables",
+      "fruits",
+      "dairy products",
+      "eggs"
+    ],
+    "website": "https://www.forestwood.com/",
+    "phone": "256-536-9083",
+    "notes": "Regional distribution warehouse for Forestwood Farm. Located at 2105 Langford Ave. NW, Huntsville, AL 35807. Serves restaurants, schools, military facilities and other institutional buyers across Southeast."
+  },
+  {
+    "name": "Peach Park",
+    "state": "AL",
+    "city": "Clanton",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches",
+      "produce",
+      "farm market products"
+    ],
+    "website": null,
+    "phone": "205-755-5065",
+    "notes": "Family-owned and operated business opened in 1984. Farm market that grows own peaches and produce. Also purchases and sells products from local farmers. Located at 2300 7th Street South, Clanton, AL 35046. Includes barbecue restaurant, bakery, gift shop, boutique. Open seasonally Presidents' Day through Christmas. Hours: Mon-Fri 10am-5pm, Sat-Sun 10am-6pm."
+  },
+  {
+    "name": "Reeves Peach Farm",
+    "state": "AL",
+    "city": "Hartselle",
+    "region": "North (Madison County)",
+    "products": [
+      "peaches",
+      "crops"
+    ],
+    "website": "https://www.reevespeaches.com/",
+    "phone": "256-773-9479",
+    "notes": "Historic farm settled in 1835 by Thomas 'Jack' Reeves. Located at 334 Highway 36 E, Hartselle, AL 35640. Large variety of crops with special focus on peaches. Hours: Mon-Sat 9am-6pm, Sun 12pm-6pm."
+  },
+  {
+    "name": "First Fruit Farms Inc",
+    "state": "AL",
+    "city": "Birmingham",
+    "region": "Central (Jefferson County)",
+    "products": [
+      "fresh produce",
+      "fruits"
+    ],
+    "website": "http://www.firstfruitfarms.com/",
+    "phone": "205-980-2330",
+    "notes": "Founded in 2002. Located at 4898 Valleydale Rd, Birmingham, AL 35242. Contact: Randy Griffin. Estimated annual revenue $391,994. Approximately 3 employees."
+  },
+  {
+    "name": "Muzzarelli Farms (Curing/Packing Facility for Sweet Potatoes)",
+    "state": "AL",
+    "city": "Vineland",
+    "region": "Out of State (NJ-based, serves AL)",
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": "https://www.muzzarellifarms.com/",
+    "phone": "856-691-2497",
+    "notes": "New Jersey-based company with sweet potato packing operations serving Alabama. 20,000 sq. ft. packing facility capable of processing 20 cases per minute during peak operations. Certified Organic sweet potatoes selected, planted, sorted, sized, and packed by hand. Uses environmentally controlled curing facility. Address: 3460 Oak Road, Vineland, NJ 08360. Fax: 856-692-9007. Serves Alabama and numerous other US states."
+  },
+  {
+    "name": "Oakes Farms (Flat Rock, Alabama Operation)",
+    "state": "AL",
+    "city": "Flat Rock",
+    "region": "Central/South",
+    "products": [
+      "grower-packer-shipper",
+      "fresh produce",
+      "fruits",
+      "vegetables"
+    ],
+    "website": "https://oakesfarms.com/",
+    "phone": null,
+    "notes": "Oakes Farms expanding farming operations in Alabama. New farm operation and facility in Flat Rock, Alabama as part of becoming a 52-week Grower, Packer, and Shipper. Company headquarters: Naples, FL. Contact main office for Flat Rock facility details."
+  },
+  {
+    "name": "Alabama Sweet Potato Growers Association",
+    "state": "AL",
+    "city": "Multiple",
+    "region": "Statewide",
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": null,
+    "phone": null,
+    "notes": "Industry organization representing collective farmers, packers, shippers with vested interest in sweet potato industry from Alabama and Tennessee. Works closely with Auburn University Horticulture Research and Experiment Station and Alabama Ag and Industries."
+  },
+  {
+    "name": "Alabama Fruit and Vegetable Growers Association (AFVGA)",
+    "state": "AL",
+    "city": "Montgomery",
+    "region": "Central",
+    "products": [
+      "peaches",
+      "strawberries",
+      "blueberries",
+      "sweet potatoes",
+      "pumpkins",
+      "squash",
+      "tomatoes",
+      "watermelons",
+      "sweet corn",
+      "pecans"
+    ],
+    "website": "https://www.afvga.org/",
+    "phone": "334-301-4392",
+    "notes": "Trade organization promoting, advancing, and protecting growing, harvesting and marketing of fruits and vegetables. Located at 2108 East South Boulevard, Montgomery, AL 36116. Email: bthaxton@alfafarmers.org. Represents growers throughout Alabama producing specialty crops."
+  }
+]

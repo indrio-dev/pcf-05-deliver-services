@@ -1,0 +1,287 @@
+[
+  {
+    "id": "WA001",
+    "company_name": "Easterday Produce",
+    "state": "WA",
+    "cities": ["Pasco", "Othello"],
+    "products": ["Yellow Spanish onions", "Red onions", "White onions"],
+    "facilities": [
+      {
+        "location": "Pasco, WA",
+        "opened": 1995,
+        "specialty": "Yellow Spanish type onions"
+      },
+      {
+        "location": "Othello, WA",
+        "opened": 2005,
+        "specialty": "Red and white onions"
+      },
+      {
+        "location": "Northern Florida",
+        "opened": 2016
+      }
+    ],
+    "website": "https://www.easterdayproduce.com/",
+    "phone": "(509) 544-9595",
+    "fax": "(509) 544-9004",
+    "description": "Family-owned and operated farming business, vertically integrated grower, packer, and shipper"
+  },
+  {
+    "id": "WA002",
+    "company_name": "Sunset Produce LLC",
+    "state": "WA",
+    "city": "Prosser",
+    "products": ["Yellow onions", "Red onions", "White onions", "Sweet onions", "Shallots"],
+    "website": "https://sunsetonions.com/",
+    "description": "Premier Washington onion grower/shipper operation for over 30 years, began Eastern Washington onion production in 1976"
+  },
+  {
+    "id": "WA003",
+    "company_name": "ByBee Produce LLC",
+    "state": "WA",
+    "city": "Prosser",
+    "products": ["US onions"],
+    "website": "http://www.bybeeproduce.com/",
+    "description": "Premier quality grower, packer and shipper of US onions in the Columbia Basin region"
+  },
+  {
+    "id": "WA004",
+    "company_name": "River Point Farms",
+    "state": "WA",
+    "cities": ["Plymouth", "Hermiston"],
+    "products": ["Onions"],
+    "website": "https://riverpointfarms.com/",
+    "founded": 1983,
+    "description": "Vertically integrated grower, processor, packer, and shipper of onions with locations in both WA and OR"
+  },
+  {
+    "id": "OR001",
+    "company_name": "Eagle Eye Produce",
+    "state": "OR",
+    "cities": ["Ontario", "Nyssa"],
+    "products": ["Premium onions"],
+    "facilities": [
+      {
+        "location": "Ontario, OR",
+        "specialty": "State-of-the-art facility with AI-powered grading and sorting, automation"
+      },
+      {
+        "location": "Nyssa, OR"
+      }
+    ],
+    "website": "https://www.eagleeyeproduce.com/",
+    "headquarters": "Idaho Falls, ID",
+    "description": "Grower-packer-shipper of premium onions; acquired Baker & Murakami Produce in April 2025; operates advanced facility known locally as 'super shed'"
+  },
+  {
+    "id": "OR002",
+    "company_name": "Baker & Murakami Produce Company",
+    "state": "OR",
+    "city": "Ontario",
+    "products": ["Onions (multiple varieties)"],
+    "website": "https://bakerandmurakami.com/",
+    "phone": "(541) 889-9663",
+    "founded": 2017,
+    "description": "Largest volume onion shipper in Idaho and Eastern Oregon and one of largest shippers in the United States; acquired by Eagle Eye Produce in April 2025; features state-of-the-art facility with extensive automation and AI-powered grading"
+  },
+  {
+    "id": "OR003",
+    "company_name": "Northwest Onion Company",
+    "state": "OR",
+    "city": "Brooks",
+    "products": ["Onions"],
+    "website": "https://northwestonion.com/",
+    "founded": 1985,
+    "description": "One of the largest onion shippers in Western Oregon, located in the Willamette Valley; family-owned facility"
+  },
+  {
+    "id": "OR004",
+    "company_name": "J.C. Watson Packing Company (Soo Brand Onions)",
+    "state": "OR",
+    "region": "Treasure Valley",
+    "products": ["Onions"],
+    "website": "https://soobrand.com/",
+    "description": "Works with growers in the Treasure Valley spanning from eastern Oregon to western Idaho; shipping facilities strategically located throughout the West and Southwest"
+  },
+  {
+    "id": "ID001",
+    "company_name": "Fort Boise Produce",
+    "state": "ID",
+    "city": "Parma",
+    "products": ["Onions"],
+    "website": "https://fortboise.com/",
+    "description": "Grows onions in the heart of the Idaho-Eastern Oregon growing region with offices and packing facility located in Parma"
+  },
+  {
+    "id": "ID002",
+    "company_name": "Owyhee Produce",
+    "state": "ID",
+    "city": "Parma",
+    "products": ["Certified onions"],
+    "website": "https://owyheeproduce.com/",
+    "description": "Oregon/Idaho onion program operator based in Parma"
+  },
+  {
+    "id": "ID003",
+    "company_name": "Obendorf Farms",
+    "state": "ID",
+    "city": "Parma",
+    "products": ["Onions"],
+    "facility_opened": 2019,
+    "description": "Built a state-of-the-art onion packing facility for the 2019/2020 season"
+  },
+  {
+    "id": "ID004",
+    "company_name": "Golden West Produce",
+    "state": "ID",
+    "city": "Parma",
+    "products": ["Onions"],
+    "facility_acquired": 2000,
+    "description": "Operates in Parma where they purchased an existing onion packing facility in March 2000"
+  },
+  {
+    "id": "TX001",
+    "company_name": "The Onion House LLC",
+    "state": "TX",
+    "city": "Weslaco",
+    "products": ["Yellow onions", "White onions", "Red onions"],
+    "website": "https://www.producemarketguide.com/company/176239/onion-house-llc-the-hq",
+    "founded": 1999,
+    "description": "Onion shipping and marketing firm; acquired in late 2023; installed equipment for 2-, 3-, and 5-pound consumer packs with new palletizer"
+  },
+  {
+    "id": "TX002",
+    "company_name": "Charles Wetegrove Co.",
+    "state": "TX",
+    "city": "Raymondville",
+    "address": "12374 FM 1762, Raymondville, TX",
+    "products": ["1015-type sweet yellow onions", "White onions", "Red onions"],
+    "description": "Fourth-generation onion grower in South Texas; partner company of Southwest Onion Growers LLC; increased packing capacity for consumer onion packs by about 50%"
+  },
+  {
+    "id": "TX003",
+    "company_name": "Southwest Onion Growers LLC",
+    "state": "TX",
+    "city": "McAllen",
+    "products": ["Onions"],
+    "description": "Onion growers and handlers in South Texas; partner with Charles Wetegrove Co."
+  },
+  {
+    "id": "TX004",
+    "company_name": "Little Bear Produce",
+    "state": "TX",
+    "city": "Edinburg",
+    "products": ["Yellow onions", "Sweet onions", "Red onions"],
+    "description": "Specializes in sweet onions and handles multiple onion varieties in South Texas"
+  },
+  {
+    "id": "TX005",
+    "company_name": "A&W Produce",
+    "state": "TX",
+    "city": "Weslaco",
+    "addresses": [
+      "2300 Vo-Tech Drive, Weslaco",
+      "504 E. Railroad St., Weslaco",
+      "502 S. Pleasantview Dr., Weslaco"
+    ],
+    "products": ["Onions"],
+    "description": "Onion packing facility in Weslaco area"
+  },
+  {
+    "id": "TX006",
+    "company_name": "Val Verde Vegetable Co.",
+    "state": "TX",
+    "city": "McAllen",
+    "products": ["Onions"],
+    "shipping_season": "April to mid-May",
+    "description": "South Texas onion shipper with seasonal operations"
+  },
+  {
+    "id": "TX007",
+    "company_name": "Grow Farm Texas",
+    "state": "TX",
+    "city": "Donna",
+    "products": ["Onions"],
+    "description": "South Texas onion grower and shipper"
+  },
+  {
+    "id": "GA001",
+    "company_name": "Bland Farms",
+    "state": "GA",
+    "city": "Glennville",
+    "products": ["Vidalia Sweet onions"],
+    "website": "https://blandfarms.com/",
+    "founded": 1940,
+    "description": "Largest grower, packer, and shipper of Vidalia Sweet Onions in the United States; family-owned and operated for over 75 years; known for mild and sweet flavor profile"
+  },
+  {
+    "id": "GA002",
+    "company_name": "Morris Farms",
+    "state": "GA",
+    "city": "Uvalda",
+    "products": ["Vidalia Sweet onions"],
+    "website": "https://www.sweetonion.com/",
+    "founded": 1950,
+    "description": "Licensed Vidalia onion grower and packer specializing in world-famous Vidalia Sweet Onions with national reputation for finest quality"
+  },
+  {
+    "id": "GA003",
+    "company_name": "Shuman Farms",
+    "state": "GA",
+    "region": "Southeast Georgia",
+    "products": ["Sweet onions", "Vidalia onions"],
+    "website": "https://www.shumanfarmsga.com/",
+    "description": "Dedicated to growing and delivering highest quality sweet onions in Southeast Georgia"
+  },
+  {
+    "id": "GA004",
+    "company_name": "McLain Farms",
+    "state": "GA",
+    "city": "Lyons",
+    "products": ["Vidalia sweet onions"],
+    "website": "https://mclainfarms.com/",
+    "description": "Growing award-winning Vidalia sweet onions for generations; licensed grower and packer"
+  },
+  {
+    "id": "GA005",
+    "company_name": "A&M Farms",
+    "state": "GA",
+    "city": "Lyons",
+    "products": ["Vidalia onions"],
+    "founded": 1990,
+    "description": "Family owned and operated for over 30 years; licensed Vidalia onion grower and packer"
+  },
+  {
+    "id": "GA006",
+    "company_name": "5W Farms",
+    "state": "GA",
+    "city": "Uvalda",
+    "products": ["Vidalia onions"],
+    "description": "Licensed Vidalia onion grower and packer"
+  },
+  {
+    "id": "GA007",
+    "company_name": "Roberson Onion Co.",
+    "state": "GA",
+    "city": "Hazlehurst",
+    "products": ["Onions"],
+    "description": "Member of the original Vidalia Onion Committee that wrote and established the Federal Marketing Order defining the Vidalia Onion"
+  },
+  {
+    "id": "GENERAL001",
+    "company_name": "Walla Walla River Packing",
+    "state": "WA",
+    "region": "Walla Walla",
+    "products": ["Onions"],
+    "description": "Transports onions across the nation"
+  },
+  {
+    "id": "GENERAL002",
+    "company_name": "Green Valley Onion Co. Inc.",
+    "state": "NY",
+    "region": "Black Dirt Region, Orange County",
+    "products": ["Onions"],
+    "website": "https://www.greenvalleyonion.com/",
+    "description": "One of the largest onion packaging & shipping companies; family-owned business"
+  }
+]

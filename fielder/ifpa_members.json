@@ -1,0 +1,163 @@
+[
+  {
+    "name": "Taylor Farms",
+    "state": "California",
+    "city": "Salinas",
+    "products": ["Fresh-cut salads", "Meal kits", "Salad kits", "Fresh blends", "Fruits", "Vegetables"],
+    "website": "https://www.taylorfarms.com"
+  },
+  {
+    "name": "Mission Produce",
+    "state": "California",
+    "city": "Oxnard",
+    "products": ["Avocados", "Hass avocados"],
+    "website": "https://www.missionproduce.com"
+  },
+  {
+    "name": "Duda Farm Fresh Foods",
+    "state": "Florida",
+    "city": "Oviedo",
+    "products": ["Celery", "Radishes", "Corn", "Lettuce", "Leafy greens"],
+    "website": "https://www.dudafresh.com"
+  },
+  {
+    "name": "Fresh Express Inc",
+    "state": "Florida",
+    "city": "Windermere",
+    "products": ["Salads", "Leafy greens", "Vegetables", "Fruits"],
+    "website": "https://www.freshexpress.com"
+  },
+  {
+    "name": "Boskovich Farms",
+    "state": "California",
+    "city": "Oxnard",
+    "products": ["Fresh produce", "Vegetables"],
+    "website": "https://www.boskovichfarms.com"
+  },
+  {
+    "name": "Gills Onions",
+    "state": "California",
+    "city": "Oxnard",
+    "products": ["Onions", "Whole peeled onions", "Pre-sliced onions", "Diced onions", "Pureed onions"],
+    "website": "https://www.gillsonions.com"
+  },
+  {
+    "name": "Dole Fresh Fruit",
+    "state": "Delaware",
+    "city": "Wilmington",
+    "products": ["Bananas", "Pineapples", "Tropical fruits"],
+    "website": "https://www.dole.com"
+  },
+  {
+    "name": "Calavo",
+    "state": "California",
+    "city": "Santa Paula",
+    "products": ["Avocados"],
+    "website": "https://www.calavo.com"
+  },
+  {
+    "name": "Cal Flavor",
+    "state": "California",
+    "city": "Los Angeles",
+    "products": ["Avocados"],
+    "website": null
+  },
+  {
+    "name": "Cal Sun Produce",
+    "state": "California",
+    "city": "Oxnard",
+    "products": ["Avocados"],
+    "website": null
+  },
+  {
+    "name": "Corona College Heights Orange and Lemon Association",
+    "state": "California",
+    "city": "Riverside",
+    "products": ["Oranges", "Lemons", "Citrus"],
+    "website": "https://www.cchcitrus.com"
+  },
+  {
+    "name": "Del Monte Fresh Produce N.A., Inc.",
+    "state": "California",
+    "city": "Santa Fe Springs",
+    "products": ["Fresh produce"],
+    "website": null
+  },
+  {
+    "name": "Del Rey Avocado",
+    "state": "California",
+    "city": "Fallbrook",
+    "products": ["Avocados"],
+    "website": "https://www.delreyavocado.com"
+  },
+  {
+    "name": "Eco Farms Avocados, Inc.",
+    "state": "California",
+    "city": "Temecula",
+    "products": ["Avocados"],
+    "website": "https://www.ecofarmsusa.com"
+  },
+  {
+    "name": "Henry Avocado",
+    "state": "California",
+    "city": "Escondido",
+    "products": ["Avocados"],
+    "website": "https://www.henryavocado.com"
+  },
+  {
+    "name": "Las Palmalitas Ranch",
+    "state": "California",
+    "city": "Carpinteria",
+    "products": ["Avocados (Organic)"],
+    "website": null
+  },
+  {
+    "name": "Index Fresh",
+    "state": "California",
+    "city": "Corona",
+    "products": ["Avocados"],
+    "website": "https://www.indexfresh.com"
+  },
+  {
+    "name": "McDaniel Fruit",
+    "state": "California",
+    "city": "Fallbrook",
+    "products": ["Avocados"],
+    "website": "https://www.mcdanielavocado.com"
+  },
+  {
+    "name": "Rincon Farms Produce",
+    "state": "California",
+    "city": "Carpinteria",
+    "products": ["Avocados"],
+    "website": "https://www.rinconfarms.com"
+  },
+  {
+    "name": "Stehly Farms Organics",
+    "state": "California",
+    "city": "Bonsall",
+    "products": ["Avocados (Organic)"],
+    "website": "https://www.stehlyfarmsorganics.com"
+  },
+  {
+    "name": "The Giumarra Companies",
+    "state": "California",
+    "city": "Escondido",
+    "products": ["Fresh produce", "Grapes", "Citrus"],
+    "website": "https://www.giumarra.com"
+  },
+  {
+    "name": "Westfalia Fruit Marketing",
+    "state": "California",
+    "city": "Oxnard",
+    "products": ["Avocados", "Fresh fruit"],
+    "website": "https://www.westfaliafruit.com"
+  },
+  {
+    "name": "West Pak Avocado, Inc.",
+    "state": "California",
+    "city": "Murrieta",
+    "products": ["Avocados"],
+    "website": "https://www.westpakavocado.com"
+  }
+]

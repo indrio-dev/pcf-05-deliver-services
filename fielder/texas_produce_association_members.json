@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Lone Star Citrus Growers",
+    "state": "Texas",
+    "city": "Mission",
+    "products": ["Grapefruit", "Ruby Red Grapefruit", "Sweet Oranges", "Navel Oranges", "Valencia Oranges", "Pineapples"],
+    "website": "lonestarcitrus.com",
+    "address": "9625 N. Moorefield Rd., Mission, TX 78574",
+    "phone": "956-424-3334",
+    "type": "Packinghouse - Citrus",
+    "notes": "Last independent, family-owned and operated Texas citrus packing house. Established in 2007."
+  },
+  {
+    "name": "South Tex Organics, LC",
+    "state": "Texas",
+    "city": "Mission",
+    "products": ["Rio Star Grapefruit", "Oranges", "Navel Oranges", "Meyer Lemons", "Onions", "Watermelons"],
+    "website": "stxorganics.com",
+    "address": "6700 N. Doffing Rd., Mission, TX 78574",
+    "phone": "956-585-1040",
+    "type": "Packinghouse - Citrus & Vegetables",
+    "notes": "Largest organic citrus and vegetable grower in Texas. Over 500 certified organic acres. USDA certified organic."
+  },
+  {
+    "name": "Triple J Organics, LLC",
+    "state": "Texas",
+    "city": "Mission",
+    "products": ["Early Season Oranges", "Marrs Oranges", "Navel Oranges", "Ruby Sweet Grapefruit", "Rio Star Grapefruit", "Meyer Lemons", "Tangerines", "Tangelos"],
+    "website": "triplejorganics.com",
+    "address": "14702 N. Trosper Rd., Mission, TX 78572",
+    "phone": "956-789-1966",
+    "type": "Packinghouse - Citrus",
+    "notes": "USDA Certified Organic. Founded in 1995. 83 acres. Family and minority-owned business."
+  },
+  {
+    "name": "Wonderful Citrus",
+    "state": "Texas",
+    "city": "Mission",
+    "products": ["Grapefruit", "Texas Red Grapefruit", "Sweet Scarletts Grapefruit", "Oranges", "Navel Oranges", "Valencia Oranges", "Lemons", "Limes", "Mandarins", "Wonderful Halos", "Citrus Juice"],
+    "website": "wonderfulcitrus.com",
+    "address": "4000 E. Goodwin Rd., Mission, TX 78574",
+    "phone": "661-720-2500",
+    "type": "Packinghouse - Citrus",
+    "notes": "Largest fresh citrus grower in western United States. Processing and juicing facility in Mission."
+  },
+  {
+    "name": "Growers Select Produce Inc",
+    "state": "Texas",
+    "city": "Mission",
+    "products": ["Seedless Watermelon"],
+    "website": "groselpro.com",
+    "address": "Mission, TX",
+    "type": "Packinghouse - Vegetables",
+    "notes": "Founded in 1987. Year-round watermelon operation. Grows, packs, and ships seedless watermelon 52 weeks a year. All farms and facilities are third-party certified."
+  },
+  {
+    "name": "Rio Fresh",
+    "state": "Texas",
+    "city": "Rio Grande Valley",
+    "products": ["Greens", "Herbs", "Onions", "Various leaf vegetables"],
+    "website": "riofresh.com",
+    "type": "Packinghouse - Vegetables",
+    "notes": "Third-generation, family-owned business. Farming for over 75 years. Over 30 varieties of fresh Texas greens, herbs, and onions. State-of-the-art packing facility."
+  },
+  {
+    "name": "Thompson Farms",
+    "state": "Texas",
+    "city": "Mission",
+    "products": ["Citrus"],
+    "address": "2409 E. 4 Mile Line, Mission, TX 78572",
+    "type": "Packinghouse - Citrus",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Paul Obst Farm",
+    "state": "Texas",
+    "city": "Alamo",
+    "products": ["Citrus"],
+    "address": "1520 N. Alamo Rd., Alamo, TX 78516",
+    "phone": "956-787-6917",
+    "type": "Packinghouse - Citrus",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Perez Groves, LLC",
+    "state": "Texas",
+    "city": "Edinburg",
+    "products": ["Citrus"],
+    "address": "2507 N. Sharp Rd., Edinburg, TX 78542",
+    "phone": "956-457-0211",
+    "type": "Packinghouse - Citrus",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "River Star Farms",
+    "state": "Texas",
+    "city": "Mercedes / Donna",
+    "products": ["Produce"],
+    "website": "riverstarfarms.com",
+    "address": "901 S. Valley View Rd. #9, Donna, TX 78537",
+    "phone": "956-461-2828",
+    "type": "Farm / Packinghouse",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Saenz Produce Company",
+    "state": "Texas",
+    "city": "Edinburg",
+    "products": ["Produce"],
+    "address": "1651 N. Tower Rd., Edinburg, TX 78542",
+    "phone": "956-867-4641",
+    "type": "Packinghouse - Vegetables",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Strohmeyer Family Farm LLC",
+    "state": "Texas",
+    "city": "McAllen",
+    "products": ["Citrus"],
+    "address": "8221 N Ware Rd., McAllen, TX 78504",
+    "phone": "956-686-6047",
+    "type": "Farm / Packinghouse",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "XO Produce Inc",
+    "state": "Texas",
+    "city": "Rio Grande Valley",
+    "products": ["Citrus", "Onions", "Peppers", "Green Vegetables"],
+    "website": "xoproduce.com",
+    "type": "Packinghouse - Citrus & Vegetables",
+    "notes": "Founded in 1998. Connection to Rio Grande Valley's fresh produce. Sources from Texas, Mexico, and South America."
+  }
+]

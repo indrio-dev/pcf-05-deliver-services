@@ -1,0 +1,106 @@
+{
+  "status": "member_directory_restricted",
+  "note": "United Fresh Produce Association member directory is not publicly accessible. This association merged with PMA to form IFPA (International Fresh Produce Association) on January 1, 2022.",
+  "access_information": {
+    "organization": "International Fresh Produce Association (IFPA)",
+    "website": "https://www.freshproduce.com/",
+    "member_directory_url": "https://www.freshproduce.com/membership/directories/",
+    "access_requirement": "Members-only access through freshproduce.com account login",
+    "directory_size": "2,900+ companies with 53,000+ contacts",
+    "directory_features": [
+      "Search by company name, country, state, or city",
+      "Filter by business type (packinghouses, produce handlers, distributors, etc.)",
+      "Filter by products and services",
+      "Filter by ownership type",
+      "Access to attendee lists and membership directories"
+    ]
+  },
+  "how_to_access": {
+    "step_1": "Create IFPA membership account at https://www.freshproduce.com/membership/",
+    "step_2": "Log in to your account at freshproduce.com",
+    "step_3": "Click 'directories' from the light green navigation stripe at top",
+    "step_4": "Select 'IFPA Member Directory Company' option",
+    "step_5": "Use search and filter tools to find packinghouses and produce handlers",
+    "alternative": "Contact IFPA directly at their headquarters in Washington, DC for non-member directory access"
+  },
+  "member_categories": [
+    "Growers and shippers",
+    "Fresh-cut processors",
+    "Wholesaler-distributors",
+    "Packinghouses",
+    "Produce handlers",
+    "Retailers",
+    "Foodservice operators",
+    "Industry suppliers",
+    "Allied associations"
+  ],
+  "known_packinghouse_companies": [
+    {
+      "name": "D'Arrigo Brothers Co. of California",
+      "state": "California",
+      "city": "Salinas",
+      "products": ["Fresh produce"],
+      "website": "https://www.darrigobros.com/"
+    },
+    {
+      "name": "Church Brothers Farms",
+      "state": "California",
+      "city": "Salinas",
+      "products": ["Fresh produce"],
+      "website": null
+    },
+    {
+      "name": "Grimmway Enterprises Inc.",
+      "state": "California",
+      "city": "Arvin",
+      "products": ["Carrots, organic produce"],
+      "website": "https://www.grimmway.com/"
+    },
+    {
+      "name": "California Giant Berry Farms",
+      "state": "California",
+      "city": "Watsonville",
+      "products": ["Berries"],
+      "website": "https://www.calgiantberry.com/"
+    },
+    {
+      "name": "Florida Tomato Exchange",
+      "state": "Florida",
+      "city": "Maitland",
+      "products": ["Tomatoes"],
+      "website": null
+    },
+    {
+      "name": "Del Monte Fresh Produce, N.A., Inc.",
+      "state": "Florida",
+      "city": "Coral Gables",
+      "products": ["Fresh produce"],
+      "website": "https://www.delmonte.com/"
+    },
+    {
+      "name": "Robinson Fresh",
+      "state": "Arizona",
+      "city": "Phoenix",
+      "products": ["Fresh produce"],
+      "website": "https://www.robinsonfresh.com/"
+    }
+  ],
+  "additional_resources": [
+    {
+      "source": "Produce Market Guide",
+      "url": "https://www.producemarketguide.com/company-index",
+      "description": "Find 49K Fresh Produce Companies database"
+    },
+    {
+      "source": "AndNowUKnow",
+      "url": "https://www.andnowuknow.com/companies",
+      "description": "Fresh Produce Company Directory"
+    },
+    {
+      "source": "The Packer",
+      "url": "https://thepacker.com/category/united-fresh",
+      "description": "United Fresh industry news and updates"
+    }
+  ],
+  "limitations": "This data represents limited publicly available information. For comprehensive packinghouse and produce handler data from United Fresh/IFPA, membership registration is required. The known companies listed above were identified from publicly available articles and news sources mentioning United Fresh members."
+}

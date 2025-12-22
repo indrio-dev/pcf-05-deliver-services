@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lexington Produce Terminal",
+    "state": "KY",
+    "city": "Lexington",
+    "region": "Central Kentucky (Bluegrass)",
+    "products": ["vegetables", "fruits", "produce", "seasonal produce"],
+    "website": "Not available",
+    "phone": "Contact Lexington-Fayette Government",
+    "notes": "Major produce terminal facility serving central Kentucky region"
+  },
+  {
+    "name": "Warren County Produce Cooperative",
+    "state": "KY",
+    "city": "Bowling Green",
+    "region": "South-Central Kentucky",
+    "products": ["vegetables", "melons", "squash", "cucumbers", "tomatoes"],
+    "website": "Not available",
+    "phone": "Not available",
+    "notes": "Cooperative packing facility for local produce growers in Warren County area"
+  },
+  {
+    "name": "Kentucky Apple Association Member Facilities",
+    "state": "KY",
+    "city": "Multiple locations",
+    "region": "Eastern Kentucky Mountains",
+    "products": ["apples", "apple products"],
+    "website": "Not available",
+    "phone": "Not available",
+    "notes": "Multiple packing facilities across Eastern Kentucky for apple processing and packing. Check with Kentucky Apple Association for specific member locations."
+  },
+  {
+    "name": "Homestead Seed Company (Historical)",
+    "state": "KY",
+    "city": "Lancaster",
+    "region": "Central Kentucky",
+    "products": ["seeds", "vegetables"],
+    "website": "Not available",
+    "phone": "Not available",
+    "notes": "Historic Kentucky seed and produce facility. Verify current operations status."
+  },
+  {
+    "name": "Kentucky Department of Agriculture - Produce Safety Program",
+    "state": "KY",
+    "city": "Frankfort",
+    "region": "Statewide",
+    "products": ["all produce types"],
+    "website": "https://www.kyagr.com/",
+    "phone": "Contact KDA for licensed facility directory",
+    "notes": "Contact Kentucky Department of Agriculture for complete, official directory of all licensed produce packinghouses and handlers. Maintain current licenses required."
+  }
+]

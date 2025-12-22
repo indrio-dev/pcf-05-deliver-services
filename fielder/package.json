@@ -11,6 +11,12 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage --passWithNoTests",
+    "graph:setup": "dotenv -e .env.local -- tsx scripts/setup-graph.ts",
+    "graph:test": "dotenv -e .env.local -- tsx -e \"import { testConnection } from './src/lib/graph'; testConnection().then(console.log)\"",
+    "graph:test:full": "dotenv -e .env.local -- tsx scripts/test-graph.ts",
+    "graph:explore": "dotenv -e .env.local -- tsx scripts/explore-graph.ts",
+    "graph:import-supabase": "dotenv -e .env.local -- tsx scripts/import-supabase.ts",
+    "graph:migrate-entities": "dotenv -e .env.local -- tsx scripts/migrate-to-entities.ts",
     "backfill": "ts-node scripts/backfill-historical.ts",
     "backfill:dry-run": "ts-node scripts/backfill-historical.ts --dry-run",
     "research:state": "ts-node scripts/research-state-harvest.ts",
@@ -20,6 +26,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.87.1",
     "date-fns": "^4.1.0",
+    "neo4j-driver": "^6.0.1",
     "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1"
@@ -32,6 +39,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.2.3",
+    "dotenv-cli": "^11.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
     "jest": "^30.2.0",
@@ -39,6 +48,7 @@
     "tailwindcss": "^4",
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

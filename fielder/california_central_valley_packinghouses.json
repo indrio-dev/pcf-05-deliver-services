@@ -1,0 +1,184 @@
+[
+  {
+    "name": "Trinity Fruit Company",
+    "state": "CA",
+    "city": "Fresno",
+    "products": ["peach", "nectarine", "plum", "citrus", "pomegranate", "persimmon"],
+    "website": "https://www.trinityfruit.com",
+    "region": "Central Valley",
+    "established": 1999
+  },
+  {
+    "name": "Mountain View Fruit Sales",
+    "state": "CA",
+    "city": "Reedley",
+    "products": ["peach", "nectarine", "plum", "pluot"],
+    "website": "https://mvfruit.com",
+    "region": "Central Valley",
+    "established": 1994
+  },
+  {
+    "name": "Brandt Farms",
+    "state": "CA",
+    "city": "Reedley",
+    "products": ["peach", "nectarine", "plum", "grape", "persimmon", "orange", "mandarin", "kiwi"],
+    "website": "https://www.brandtfarms.com",
+    "region": "Central Valley",
+    "established": 1941
+  },
+  {
+    "name": "Fowler Packing Company",
+    "state": "CA",
+    "city": "Fresno",
+    "products": ["table grape", "citrus", "nectarine", "peach", "plum", "pomegranate", "apricot"],
+    "website": "https://fowlerpacking.com",
+    "region": "Central Valley",
+    "established": 1950
+  },
+  {
+    "name": "Kings River Packing",
+    "state": "CA",
+    "city": "Sanger",
+    "products": ["orange", "mandarin", "lemon", "grapefruit", "minneola", "cara cara"],
+    "website": "https://kingorange.com",
+    "region": "Central Valley",
+    "established": 1977,
+    "note": "8 generations, farming since 1800s"
+  },
+  {
+    "name": "Cecelia Packing Corporation",
+    "state": "CA",
+    "city": "Orange Cove",
+    "products": ["orange", "mandarin", "tangelo", "tangerine", "lemon", "grapefruit"],
+    "website": "https://ceceliapack.com",
+    "region": "Central Valley",
+    "established": 1988
+  },
+  {
+    "name": "Porterville Citrus, Inc.",
+    "state": "CA",
+    "city": "Porterville",
+    "products": ["orange", "mandarin", "lemon", "grapefruit", "tangelo", "cara cara"],
+    "website": "https://portervillecitrus.com",
+    "region": "Central Valley",
+    "established": 1992
+  },
+  {
+    "name": "California Fruit Depot",
+    "state": "CA",
+    "city": "Bakersfield",
+    "products": ["orange", "mandarin", "tangelo", "lemon", "sweet lime"],
+    "website": "https://www.calfruitdepot.com",
+    "region": "Central Valley",
+    "established": 2003
+  },
+  {
+    "name": "Wonderful Citrus",
+    "state": "CA",
+    "city": "Lost Hills",
+    "products": ["orange", "mandarin", "grapefruit", "lemon"],
+    "website": "https://www.wonderfulcitrus.com",
+    "region": "Central Valley",
+    "note": "75 years experience, largest citrus grower in America"
+  },
+  {
+    "name": "Grapeman Farms",
+    "state": "CA",
+    "city": "Bakersfield",
+    "products": ["table grape"],
+    "website": "https://grapeman.com",
+    "region": "Central Valley",
+    "established": 1974
+  },
+  {
+    "name": "Sunview Marketing",
+    "state": "CA",
+    "city": "Delano",
+    "products": ["table grape"],
+    "website": "https://sunviewmarketing.com",
+    "region": "Central Valley",
+    "established": 1950
+  },
+  {
+    "name": "Jasmine Vineyards",
+    "state": "CA",
+    "city": "Central Valley",
+    "products": ["table grape"],
+    "website": "https://jasminevineyards.com",
+    "region": "Central Valley",
+    "established": 1947
+  },
+  {
+    "name": "Bari Produce",
+    "state": "CA",
+    "city": "Madera",
+    "products": ["table grape", "stone fruit", "pomegranate"],
+    "website": "http://www.bariproduce.com",
+    "region": "Central Valley",
+    "established": 2009
+  },
+  {
+    "name": "Royal Madera Vineyards",
+    "state": "CA",
+    "city": "Madera",
+    "products": ["table grape"],
+    "website": "https://www.royalmaderavineyards.com",
+    "region": "Central Valley",
+    "established": 1970
+  },
+  {
+    "name": "Wonderful Pistachios",
+    "state": "CA",
+    "city": "Lost Hills",
+    "products": ["pistachio", "almond"],
+    "website": "https://www.wonderfulpistachios.com",
+    "region": "Central Valley",
+    "established": 1989
+  },
+  {
+    "name": "Setton Farms (Setton Pistachio)",
+    "state": "CA",
+    "city": "Terra Bella",
+    "products": ["pistachio"],
+    "website": "https://www.settonfarms.com",
+    "region": "Central Valley",
+    "note": "5 facilities, 250+ million pounds processing capacity"
+  },
+  {
+    "name": "Hansen Ranches",
+    "state": "CA",
+    "city": "Corcoran",
+    "products": ["pistachio", "almond", "pomegranate", "cotton"],
+    "website": "https://www.hansenranches.com",
+    "region": "Central Valley",
+    "established": 1907,
+    "note": "5th generation farming, 20,000+ acres"
+  },
+  {
+    "name": "California Almond Packers & Exporters (CAPEX)",
+    "state": "CA",
+    "city": "Corning",
+    "products": ["almond", "walnut"],
+    "website": "https://capex.apesteve.com",
+    "region": "Northern Valley",
+    "established": 1986
+  },
+  {
+    "name": "Peach on Earth Farm",
+    "state": "CA",
+    "city": "Fresno",
+    "products": ["peach", "plum", "nectarine"],
+    "website": null,
+    "region": "Central Valley",
+    "note": "Minority-owned, family farm"
+  },
+  {
+    "name": "Fowler Packing - Peelz Citrus Brand",
+    "state": "CA",
+    "city": "Fresno",
+    "products": ["mandarin orange"],
+    "website": "https://fowlerpacking.com",
+    "region": "Central Valley",
+    "note": "Parent company Fowler Packing"
+  }
+]

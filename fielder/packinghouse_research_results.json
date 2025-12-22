@@ -1,0 +1,552 @@
+[
+  {
+    "name": "Stemilt Growers",
+    "state": "WA",
+    "city": "Wenatchee",
+    "region": "Washington - Yakima Valley",
+    "products": ["apple", "pear", "cherry", "stone fruit"],
+    "website": "https://www.stemilt.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Largest fresh market sweet cherry shipper in the world. Family-owned since 1964. Signature varieties include Piñata, Honeycrisp, Gala, Pink Lady."
+  },
+  {
+    "name": "McDougall & Sons",
+    "state": "WA",
+    "city": "Wenatchee",
+    "region": "Washington - Wenatchee to Mattawa",
+    "products": ["apple", "pear", "cherry"],
+    "website": "https://www.cmiorchards.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Founded 1976. 2,200 acres of orchards. Packs 260,000 bins of apples/pears and 11,000-12,000 tons of cherries. Exclusive rights to Ambrosia apple variety. Conventional and organic."
+  },
+  {
+    "name": "Borton Fruit",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Yakima Valley",
+    "products": ["apple", "pear", "cherry"],
+    "website": "https://bortonfruit.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Premium grower, packer, shipper. Located at 2550 Borton Road, Yakima, WA 98903. Phone: 509-966-3905"
+  },
+  {
+    "name": "Allan Brothers",
+    "state": "WA",
+    "city": "Naches",
+    "region": "Washington - Yakima Valley",
+    "products": ["apple", "cherry"],
+    "website": "https://allanbrosfruit.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Founded early 1900s. Over 100 years of operation. Cold/controlled atmosphere storage. 31 Allan Road, Naches, WA 98937. Phone: 509-653-2625"
+  },
+  {
+    "name": "Domex Superfresh Growers",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Pacific Northwest",
+    "products": ["apple", "pear", "cherry", "blueberry", "kiwi berry"],
+    "website": "https://superfreshgrowers.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Sixth generation family-owned. Exclusive grower of Autumn Glory® apple. 151 Low Rd, Yakima, WA"
+  },
+  {
+    "name": "Rainier Fruit Company",
+    "state": "WA",
+    "city": "Brewster",
+    "region": "Washington - Yakima Valley",
+    "products": ["apple", "pear", "cherry"],
+    "website": "https://waapple.org/suppliers/",
+    "association": "Washington Apple Commission",
+    "notes": "Offers Envy, Jazz, and Pacific Rose varieties. 510 N. 7th, Brewster, WA 98812"
+  },
+  {
+    "name": "Washington Fruit Growers",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Yakima Valley",
+    "products": ["apple"],
+    "website": "https://washfruitgrowers.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Operating since 1916. Family-owned. Year-round supply of conventional and organic apples. State-of-the-art technologies."
+  },
+  {
+    "name": "Gebbers Farms",
+    "state": "WA",
+    "city": "Cascade Range Base",
+    "region": "Washington - Northwestern",
+    "products": ["apple", "cherry"],
+    "website": "https://gebbersfarms.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Over a century of experience. One of the most trusted apple growers in the northwestern U.S."
+  },
+  {
+    "name": "Starr Ranch Growers",
+    "state": "WA",
+    "city": "Washington's apple country",
+    "region": "Washington - Pacific Northwest",
+    "products": ["apple", "pear", "cherry", "stone fruit"],
+    "website": "https://starranch.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Founded 1934. Leading fruit grower, packer, and shipper of Northwest-grown fruit."
+  },
+  {
+    "name": "CMI Orchards",
+    "state": "WA",
+    "city": "Washington State",
+    "region": "Washington",
+    "products": ["apple", "pear", "cherry"],
+    "website": "https://www.wagrown.com/wagrown-farms/farms/item/cmi-orchards",
+    "association": "Northwest Horticultural Council",
+    "notes": "One of Washington's largest grower, packer, shipper. CMI Orchards and Daisy Girl Organics are #1 selling brands in the U.S."
+  },
+  {
+    "name": "Matson Fruit",
+    "state": "WA",
+    "city": "Selah",
+    "region": "Washington - Yakima Valley",
+    "products": ["apple", "pear", "cherry"],
+    "website": "http://matsonfruit.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Over 100 years of experience. Renowned grower and distributor."
+  },
+  {
+    "name": "Chelan Fresh Marketing",
+    "state": "WA",
+    "city": "Chelan",
+    "region": "Washington",
+    "products": ["apple", "cherry", "pear"],
+    "website": "https://chelanfresh.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "AltaFresh L.L.C. d/b/a Chelan Fresh Marketing. Top marketer providing 250,000+ boxes of fruit per week year-round."
+  },
+  {
+    "name": "Apple King",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Yakima Valley",
+    "products": ["apple", "pear", "cherry"],
+    "website": "https://www.appleking.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Family owned since 1914. Conventional and organic fruit packer. Growing, packing, and shipping company."
+  },
+  {
+    "name": "Fowler Packing Company",
+    "state": "CA",
+    "city": "Fresno",
+    "region": "California - San Joaquin Valley",
+    "products": ["grape", "apricot", "mandarin orange", "nectarine", "peach", "plum", "pomegranate"],
+    "website": "https://fowlerpacking.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Established 1950. Parent company to Peelz Citrus, Samsons Grapes, G3 Development. 8570 S Cedar Ave, Fresno, CA"
+  },
+  {
+    "name": "Bari Produce",
+    "state": "CA",
+    "city": "Madera/Fresno County",
+    "region": "California - San Joaquin Valley",
+    "products": ["apricot", "peach", "plum", "nectarine", "grape"],
+    "website": "http://www.bariproduce.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Founded ~1915. Stone fruit packed in premium BARI® label. Extra large apricots from Panoche Hills micro-climate."
+  },
+  {
+    "name": "Trinity Fruit Company",
+    "state": "CA",
+    "city": "Fresno",
+    "region": "California - Central Valley",
+    "products": ["stone fruit", "citrus"],
+    "website": "https://www.trinityfruit.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Family-owned grower, packer, shipper. 7571 N. Remington Ave, Suite 104, Fresno, CA 93711. Organic produce available."
+  },
+  {
+    "name": "Sunnyside Packing Company",
+    "state": "CA",
+    "city": "Fresno",
+    "region": "California - Central Valley",
+    "products": ["fresh fruit", "vegetable"],
+    "website": "http://sunnysidepacking.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Third generation family owned and operated grower, packer, shipper of fresh fruits and vegetables."
+  },
+  {
+    "name": "Family Tree Farms",
+    "state": "CA",
+    "city": "Reedley",
+    "region": "California - Central Valley",
+    "products": ["stone fruit", "grape", "citrus"],
+    "website": "https://familytreefarms.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Ranches in California, Mexico, and Peru. Focus on flavor, quality, integrity, and safety."
+  },
+  {
+    "name": "Giumarra Vineyards",
+    "state": "CA",
+    "city": "Edison/Bakersfield",
+    "region": "California - San Joaquin Valley",
+    "products": ["table grape"],
+    "website": "http://www.giumarravineyards.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Family-owned for 80+ years. Premium California table grapes. P.O. Box 861449 Los Angeles, CA 90086. Phone: 213-627-2900"
+  },
+  {
+    "name": "Pandol Bros Inc",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin Valley",
+    "products": ["table grape"],
+    "website": "https://www.producemarketguide.com/company/108248/pandol-bros-inc-hq",
+    "association": "California Fresh Fruit Association",
+    "notes": "Leading producer for 70+ years. Grower-shipper and marketer. Imports/exports worldwide."
+  },
+  {
+    "name": "Delano Farms",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin/Coachella Valley",
+    "products": ["table grape"],
+    "website": "https://www.delanofarms.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "In production since 1991. Thousands of acres in San Joaquin, Coachella, and Mexico. Trademarked Pristine® green seedless."
+  },
+  {
+    "name": "Four Star Fruit",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin/Coachella Valley",
+    "products": ["table grape"],
+    "website": "https://www.fourstarfruit.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Since 1987. Campbell family owned for three generations. Fields in San Joaquin, Coachella, and Mexico. Organic and conventional."
+  },
+  {
+    "name": "Castle Rock Vineyards",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin Valley",
+    "products": ["table grape"],
+    "website": "http://www.castlerockvineyards.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Vineyards in Coachella, Arvin, Bakersfield, Delano, Ducor, Lindsay, and Reedley. Sales staff at Delano cold storage."
+  },
+  {
+    "name": "Jasmine Vineyards",
+    "state": "CA",
+    "city": "San Joaquin Valley",
+    "region": "California - San Joaquin Valley",
+    "products": ["table grape"],
+    "website": "https://jasminevineyards.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Founded 1947 by Martin and Vincent Zaninovich. One of the largest table grape growers in the United States."
+  },
+  {
+    "name": "Anthony Vineyards Inc",
+    "state": "CA",
+    "city": "Bakersfield/Delano area",
+    "region": "California - San Joaquin Valley",
+    "products": ["table grape", "stone fruit"],
+    "website": "https://cafreshfruit.com/membership/members-links/",
+    "association": "California Fresh Fruit Association",
+    "notes": "CFFA member. Shipper/Marketer member."
+  },
+  {
+    "name": "Lane Southern Orchards",
+    "state": "GA",
+    "city": "Fort Valley",
+    "region": "Georgia - Peach County",
+    "products": ["peach", "pecan"],
+    "website": "https://www.n-georgia.com/lane-packing-company.html",
+    "association": "Georgia Peach Council",
+    "notes": "100+ years in business. Started 1908. State-of-the-art facility completed 1990. Capacity: 1 million 25-lb cartons/season. Merged with Taylor Orchards 2018 to create largest peach/pecan operation in U.S."
+  },
+  {
+    "name": "Pearson Farm",
+    "state": "GA",
+    "city": "Fort Valley",
+    "region": "Georgia - Peach County",
+    "products": ["peach", "pecan"],
+    "website": "https://pearsonfarm.com",
+    "association": "Georgia Peach Council",
+    "notes": "100+ years growing on same land. 1,500 acres peaches, 2,000 acres pecans. Packing facility converted from old Zenith Consolidated School in 1975."
+  },
+  {
+    "name": "Dickey Farms",
+    "state": "GA",
+    "city": "Musella",
+    "region": "Georgia - Central",
+    "products": ["peach"],
+    "website": "http://www.genuinega.com",
+    "association": "Genuine Georgia Group",
+    "notes": "One of four commercial peach farms in Georgia with Genuine Georgia Group relationship."
+  },
+  {
+    "name": "Fitzgerald Fruit Farms",
+    "state": "GA",
+    "city": "Woodbury",
+    "region": "Georgia - Central",
+    "products": ["peach"],
+    "website": "http://www.genuinega.com",
+    "association": "Genuine Georgia Group",
+    "notes": "One of four commercial peach farms in Georgia with Genuine Georgia Group relationship."
+  },
+  {
+    "name": "IMG Citrus",
+    "state": "FL",
+    "city": "Vero Beach",
+    "region": "Florida - Indian River",
+    "products": ["orange", "grapefruit", "citrus"],
+    "website": "https://citrusindustry.net/2025/12/03/img-citrus-completes-packinghouse-consolidation/",
+    "association": "Florida Citrus Packers",
+    "notes": "Citrus grower, importer, packer. New flagship facility 'Sweet Sixty' - integrated cold storage, packing, distribution hub."
+  },
+  {
+    "name": "Dundee Citrus Growers Association",
+    "state": "FL",
+    "city": "Dundee",
+    "region": "Florida - Central",
+    "products": ["orange", "grapefruit", "citrus"],
+    "website": "https://dun-d.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Established 1924. One of largest fresh fruit cooperatives in Florida. 10,000+ acres. Multiple citrus varieties."
+  },
+  {
+    "name": "Florida Classic Growers",
+    "state": "FL",
+    "city": "Dundee",
+    "region": "Florida - Central",
+    "products": ["citrus", "blueberry", "peach"],
+    "website": "https://flclassic.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Co-operative owned by Dundee Citrus Growers Association. Fresh Florida citrus since 1924."
+  },
+  {
+    "name": "Hollieanna Groves",
+    "state": "FL",
+    "city": "Maitland",
+    "region": "Florida - Central",
+    "products": ["orange", "grapefruit", "citrus"],
+    "website": "https://www.hollieanna.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Family owned and operated since 1954. Store and packing house in Maitland."
+  },
+  {
+    "name": "Countryside Citrus",
+    "state": "FL",
+    "city": "Indian River Region",
+    "region": "Florida - Indian River",
+    "products": ["orange", "grapefruit"],
+    "website": "https://www.countrysidecitrus.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Family business for five generations. Leading grower, harvester, shipper of pristine Florida oranges and grapefruit."
+  },
+  {
+    "name": "Hyatt Fruit Company",
+    "state": "FL",
+    "city": "Vero Beach",
+    "region": "Florida - Indian River County",
+    "products": ["orange", "grapefruit", "honeybell"],
+    "website": "https://www.hyattfruitco.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Shipping since 1946. 75+ years in business. Family owned and operated. Fresh fruit gift baskets and citrus candy."
+  },
+  {
+    "name": "Al's Family Farms",
+    "state": "FL",
+    "city": "Florida",
+    "region": "Florida - Indian River",
+    "products": ["grapefruit", "orange", "tangerine", "honeybell"],
+    "website": "https://www.alsfamilyfarms.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Indian River grapefruit, Honeybells, Navel oranges, Temple oranges, Valencia oranges, tangerines fresh-picked."
+  },
+  {
+    "name": "Lone Star Citrus Growers",
+    "state": "TX",
+    "city": "Mission",
+    "region": "Texas - Rio Grande Valley",
+    "products": ["grapefruit", "orange"],
+    "website": "https://www.linkedin.com/company/lonestarcitrusgrowers",
+    "association": "Texas International Produce Association",
+    "notes": "Last independent family-owned Texas citrus packing house. Flowers family. 9625 N. Moorefield Rd., Mission, TX 78574. Phone: 956-424-3334. Ships Oct-Mar/Apr."
+  },
+  {
+    "name": "Rio Grande Juice Company",
+    "state": "TX",
+    "city": "Mission",
+    "region": "Texas - Rio Grande Valley",
+    "products": ["citrus juice"],
+    "website": "https://www.riograndejuice.com",
+    "association": "Texas International Produce Association",
+    "notes": "Largest citrus juice manufacturer in Texas. Division of Wonderful Citrus since 2015. Processing plant in Mission."
+  },
+  {
+    "name": "Hudson River Fruit Distributors",
+    "state": "NY",
+    "city": "Hudson Valley",
+    "region": "New York - Hudson Valley",
+    "products": ["apple"],
+    "website": "https://www.hudsonriverfruit.com",
+    "association": "New York Apple Association",
+    "notes": "One of largest East Coast apple shippers. State-of-the-art equipment. Represents 10,000+ acres in NY State and New England."
+  },
+  {
+    "name": "George W. Saulpaugh & Son",
+    "state": "NY",
+    "city": "Hudson Valley",
+    "region": "New York - Hudson Valley",
+    "products": ["apple"],
+    "website": "https://www.saulpaughapples.com",
+    "association": "New York Apple Association",
+    "notes": "Wholesale apple grower, packer, shipper. ~20 varieties. 8 Controlled Atmosphere Storage Rooms for 150,000 bushels. GlobalGap and SCS GMP Certified."
+  },
+  {
+    "name": "Dressel Farms",
+    "state": "NY",
+    "city": "Hudson Valley",
+    "region": "New York - Hudson Valley",
+    "products": ["apple"],
+    "website": "https://www.applesfromny.com/food-service-retail/directories/",
+    "association": "New York Apple Association",
+    "notes": "300+ acres of apple trees, 20+ varieties. Annually packs and ships 100,000+ bushels (4M lbs) to east coast and overseas."
+  },
+  {
+    "name": "Apple Acres",
+    "state": "NY",
+    "city": "New York State",
+    "region": "New York",
+    "products": ["apple"],
+    "website": "https://www.thepacker.com/news/produce-crops-news/packer-tech/apple-acres-opens-ny-packing-facility",
+    "association": "New York Apple Association",
+    "notes": "Family owned. Varieties include Rubyfrost, SnapDragon, Macintosh, Empire. Packs for other NY apple growers."
+  },
+  {
+    "name": "Fowler Farms",
+    "state": "NY",
+    "city": "New York State",
+    "region": "New York",
+    "products": ["apple"],
+    "website": "https://www.thepacker.com/article/fowler-farms-begins-major-expansion-0",
+    "association": "New York Apple Association, Crunch Time Apple Growers",
+    "notes": "Sixth generation. Largest grower of Honeycrisp and SweeTango in NY State. 30+ varieties, 30 acres certified organic."
+  },
+  {
+    "name": "Applewood Fresh Growers LLC",
+    "state": "MI",
+    "city": "Multiple locations",
+    "region": "Michigan",
+    "products": ["apple"],
+    "website": "https://applewoodfresh.com",
+    "association": "Michigan Apple Association",
+    "notes": "Aligns with: Applewood Orchards (Deerfield), Elite Apple Co. (Sparta), Michigan Apple Packers Cooperative (Sparta), Umlor Orchards (Conklin)."
+  },
+  {
+    "name": "Ridgeking Apple Packing / Heeren Brothers",
+    "state": "MI",
+    "city": "Michigan",
+    "region": "Michigan",
+    "products": ["apple"],
+    "website": "https://www.goodfruit.com/packing-capacity-grows-in-michigan/",
+    "association": "Michigan Apple Association",
+    "notes": "Stores and packs apples for 75+ family-owned Michigan growers. Packs 20%+ of all fresh apples grown in Michigan. Joint venture with Applewood Orchards = All Fresh GPS."
+  },
+  {
+    "name": "Underwood Fruit and Warehouse Co",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River/White Salmon",
+    "products": ["pear", "apple", "cherry"],
+    "website": "https://underwoodfruit.com",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Established early 1900s. Major packer in Hood River, The Dalles, White Salmon districts. Hood River/White Salmon pears renowned for appearance, flavor, storage."
+  },
+  {
+    "name": "Stadelman Fruit LLC",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River",
+    "products": ["pear"],
+    "website": "https://www.chamberofcommerce.com/united-states/oregon/hood-river/fruit-and-vegetable-growers-and-shippers/5848845-stadelman-fruit-llc-pear-facility",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Pear facility at 3366 Stadelman Dr, Hood River, OR 97031. Phone: 541-354-1224"
+  },
+  {
+    "name": "Oregon Growers & Shippers LLC",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River",
+    "products": ["apple", "pear", "cherry", "specialty food"],
+    "website": "https://oregongrowers.com",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Farm Direct Foods from Pacific Northwest. 508 Oak Ave, Hood River, OR 97031."
+  },
+  {
+    "name": "Pearl's Place Fruit / Viewmont Orchards",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River",
+    "products": ["apple", "pear"],
+    "website": "https://shop.pearlsplacefruit.com",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Established 1901 by Walter Wells. 500+ acres. Pack and ship under Viewmont Orchards label."
+  },
+  {
+    "name": "Diamond Fruit Growers",
+    "state": "OR",
+    "city": "Odell",
+    "region": "Oregon - Hood River",
+    "products": ["pear", "apple", "cherry"],
+    "website": "https://nwhort.org/packersshippersmarketers/",
+    "association": "Columbia Gorge Fruit Growers, Northwest Horticultural Council",
+    "notes": "Full member of NHC. Export Trade Certificate of Review holder."
+  },
+  {
+    "name": "Rice Fruit Company",
+    "state": "PA",
+    "city": "Gardners",
+    "region": "Pennsylvania - Adams County",
+    "products": ["apple"],
+    "website": "https://ricefruit.com",
+    "association": "Adams County Fruit Growers Association",
+    "notes": "Largest apple-packing facility in Eastern half of U.S. Founded 1913 by Arthur Rice. Receives/stores/packs 1M+ boxes annually for 40+ farm families."
+  },
+  {
+    "name": "Bear Mountain Orchards",
+    "state": "PA",
+    "city": "Aspers",
+    "region": "Pennsylvania - Adams County",
+    "products": ["peach", "apple", "nectarine"],
+    "website": "https://www.bearmountainorchards.com",
+    "association": "Adams County Fruit Growers Association",
+    "notes": "Family owned and operated for 75+ years. Grower, packer, shipper. Specialize in fresh, local, safe produce. Potato Road near Aspers."
+  },
+  {
+    "name": "Associated Citrus Packers Inc",
+    "state": "AZ",
+    "city": "Yuma",
+    "region": "Arizona - Yuma County",
+    "products": ["citrus"],
+    "website": "https://www.manta.com/mb_45_C2094000_03/fresh_fruits_and_vegetables/arizona",
+    "association": "Arizona Department of Agriculture CFV",
+    "notes": "48 years in business. 2 W 6th St, Yuma, AZ 85364. Wholesale fruits and vegetables, frozen foods."
+  },
+  {
+    "name": "Limoneira Company",
+    "state": "AZ",
+    "city": "Yuma County",
+    "region": "Arizona - Yuma County",
+    "products": ["citrus"],
+    "website": "https://www.yellowpages.com/yuma-az/citrus-growers",
+    "association": "Arizona Department of Agriculture CFV",
+    "notes": "Citrus shipper in Yuma County."
+  },
+  {
+    "name": "Mission Citrus",
+    "state": "AZ",
+    "city": "Yuma County",
+    "region": "Arizona - Yuma County",
+    "products": ["citrus"],
+    "website": "https://www.yellowpages.com/yuma-az/citrus-growers",
+    "association": "Arizona Department of Agriculture CFV",
+    "notes": "Citrus shipper in Yuma County."
+  }
+]

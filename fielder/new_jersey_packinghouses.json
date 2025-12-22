@@ -1,0 +1,172 @@
+[
+  {
+    "name": "Muzzarelli Farms",
+    "state": "NJ",
+    "city": "Vineland",
+    "region": "South Jersey (Cumberland County)",
+    "products": ["sweet potatoes", "kale", "blueberries", "romaine lettuce", "tomatoes", "peppers", "cucumbers"],
+    "website": "https://www.muzzarellifarms.com/",
+    "phone": "(856) 691-2497",
+    "notes": "Fourth-generation family operation, 350 acres, Primus Certified, non-GMO, solar-powered facility, supplies 30+ states including NYC, Boston, Philadelphia, LA"
+  },
+  {
+    "name": "Atlantic Blueberry Company",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": ["blueberries (highbush)"],
+    "website": "https://www.atlanticblueberry.com/",
+    "phone": "(609) 561-8600",
+    "notes": "One of largest blueberry producers, 750+ acres, five fresh packing lines, PrimusGFS certified, family-owned 85+ years, also at 6200 Black Horse Pike, Mays Landing (609) 625-1154"
+  },
+  {
+    "name": "D'Ottavio Produce",
+    "state": "NJ",
+    "city": "Minotola",
+    "region": "Atlantic County",
+    "products": ["blueberries", "organic blackberries", "raspberries", "golden berries", "wine grapes", "New Jersey vegetables"],
+    "website": "https://www.mdottavioproduce.com/",
+    "phone": "(856) 692-3311",
+    "notes": "Three climate-controlled coolers (50,000+ package capacity), 60x100 cooler, satellite irrigation, forced air cooling, picks/packs/ships within 12 hours, E&A Trucking subsidiary with 20+ tractors"
+  },
+  {
+    "name": "Consalo Family Farms",
+    "state": "NJ",
+    "city": "Vineland",
+    "region": "South Jersey",
+    "products": ["blueberries", "mixed vegetables"],
+    "website": "https://www.consalofamilyfarms.com/",
+    "phone": "(856) 839-0264",
+    "notes": "Family-owned grower, packer, shipper, importer, distributor, locations in Vineland, Newfield, Hammonton, Egg Harbor City, custom packaging and private label options"
+  },
+  {
+    "name": "Dandrea Produce, LLC",
+    "state": "NJ",
+    "city": "Vineland",
+    "region": "South Jersey (Cumberland County)",
+    "products": ["mixed produce", "fresh vegetables", "fruits"],
+    "website": "https://dandreaproduce.com/",
+    "phone": "(856) 205-1830",
+    "notes": "Established 1917, 150+ employees, grower-distributor with vertical integration, year-round fresh produce supply"
+  },
+  {
+    "name": "Whalen Farms LLC",
+    "state": "NJ",
+    "city": "Shamong",
+    "region": "Burlington County",
+    "products": ["blueberries", "cranberries"],
+    "website": "http://www.whalenfarms.com/",
+    "phone": "(609) 268-0847",
+    "notes": "180 acres blueberries, 125 acres cranberry bogs, 395 acres conservation land, state-of-the-art packing facility, IPM (Integrative Pest Management), since 1985"
+  },
+  {
+    "name": "American Cranberry Co.",
+    "state": "NJ",
+    "city": "Pemberton",
+    "region": "Burlington County",
+    "products": ["cranberries (whole, frozen, fresh)", "blueberries", "produce"],
+    "website": "https://www.americancranberryco.com/",
+    "phone": "(609) 760-0951",
+    "notes": "Family-owned producer and distributor in NJ Pinelands, custom packing/repacking services, wholesale boxes and bulk totes"
+  },
+  {
+    "name": "Eastern Propak",
+    "state": "NJ",
+    "city": "Glassboro",
+    "region": "Gloucester County",
+    "products": ["all fresh produce types"],
+    "website": "https://easternpropak.com/",
+    "phone": "(856) 881-3553",
+    "notes": "State-of-the-art cold storage and packing facility, Primus GFS and Organic certified, USDA cold treatment certified, 24/7 cold chain monitoring, forced air cooling, bar coding, RF tracking"
+  },
+  {
+    "name": "JSM Blueberries LLC",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": ["blueberries"],
+    "website": "https://www.manta.com/c/mmn3tzh/jsm-blueberries-llc",
+    "phone": "(609) 412-4224",
+    "notes": "Owned by Sharon and Joe Montalbano (former Newark firefighter), established 2005, Jersey Fruit cooperative member, started with 10 acres in 1985"
+  },
+  {
+    "name": "Glossy Fruit Farms",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": ["blueberries", "tomatoes", "sweet potatoes"],
+    "website": "https://glossy-fruit-farms.wheree.com/",
+    "phone": "(609) 561-9556",
+    "notes": "Fifth-generation family farm established 1887, 500 acres, on-site farm market, Jersey Fruit member, blueberries start around June 12"
+  },
+  {
+    "name": "Stoney Creek Blueberries",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": ["blueberries"],
+    "website": null,
+    "phone": null,
+    "notes": "Established 1970, family-owned 3 generations, 155 acres, 100% solar energy since 2011, drip irrigation (50% less water), state-of-the-art equipment, rigorous farm audits"
+  },
+  {
+    "name": "Big Buck Farms LLC",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": ["blueberries (organic)"],
+    "website": "https://jerseyfruit.com/about/growers/",
+    "phone": null,
+    "notes": "Certified organic and kosher, family-owned 25+ years, NOFA-NJ member, packs under Little Buck brand, Sunny Valley International exclusive sales/marketing, Jersey Fruit member"
+  },
+  {
+    "name": "LoSasso Farms",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": ["blueberries"],
+    "website": "https://jerseyfruit.com/about/growers/",
+    "phone": null,
+    "notes": "Family-owned since 1956, 21 acres, drip irrigation system, Jersey Fruit cooperative member"
+  },
+  {
+    "name": "Pine Island Cranberry Co., Inc.",
+    "state": "NJ",
+    "city": "Chatsworth",
+    "region": "Burlington County (Pinelands)",
+    "products": ["cranberries"],
+    "website": "https://www.picranberry.com/",
+    "phone": null,
+    "notes": "Owned by Haines and Haines, Inc., 1,400 acres (largest cranberry farm in NJ), produces average 13 million pounds annually"
+  },
+  {
+    "name": "Jersey Fruit Cooperative",
+    "state": "NJ",
+    "city": "Multiple locations",
+    "region": "Statewide",
+    "products": ["blueberries", "stone fruits", "peaches", "nectarines"],
+    "website": "https://jerseyfruit.com/",
+    "phone": "(856) 863-9100",
+    "notes": "Established 1940, premier fruit marketing cooperative, member growers in Hammonton, Shamong, Egg Harbor City, Glassboro, Mullica Hill"
+  },
+  {
+    "name": "Summer Wind Farms",
+    "state": "NJ",
+    "city": "Vineland area",
+    "region": "South Jersey",
+    "products": ["certified organic vegetables"],
+    "website": "https://www.summerwindfarms.com/",
+    "phone": "(856) 207-7792",
+    "notes": "Certified organic Jersey Fresh vegetables, pickup at farm packing house north of Vineland"
+  },
+  {
+    "name": "Cuttler Produce NJ",
+    "state": "NJ",
+    "city": "Linden",
+    "region": "Union County",
+    "products": ["wholesale produce"],
+    "website": "https://cuttlerproduce.com/",
+    "phone": "(732) 380-0625",
+    "notes": "One of largest wholesale produce warehouses in NJ, refrigerated delivery vehicles"
+  }
+]

@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "title": "Minnesota Produce Packinghouses and Fresh Produce Handlers",
+    "last_updated": "2025-12-21",
+    "data_source": "Minnesota Department of Agriculture, Public Records",
+    "notes": "This list represents facilities identified from public sources. Minnesota does not maintain a publicly available comprehensive packinghouse directory. Many facilities may not be listed as they are not required to be public. For complete current list, contact MDA Licensing.",
+    "licensing_authority": "Minnesota Department of Agriculture",
+    "licensing_contact": {
+      "phone": "651-201-6062",
+      "email": "mda.licensing@state.mn.us",
+      "website": "https://www.mda.state.mn.us/licensing/license-lookup"
+    },
+    "inspection_contact": {
+      "phone": "651-201-6067",
+      "service": "Fruit and Vegetable Inspections"
+    }
+  },
+  "packinghouses": [
+    {
+      "id": 1,
+      "name": "Minnesota Department of Agriculture - Licensing Database",
+      "state": "MN",
+      "city": "Saint Paul",
+      "region": "Twin Cities Metro",
+      "products": [
+        "All licensed produce facilities"
+      ],
+      "website": "https://www.mda.state.mn.us/licensing/license-lookup",
+      "phone": "651-201-6062",
+      "notes": "Online licensing lookup system displays all MDA licensed wholesale food handlers and produce packinghouses. Search by facility name, city, county, or license type. This is the primary resource for finding current licensed facilities."
+    },
+    {
+      "id": 2,
+      "name": "MDA Fruit and Vegetable Inspection Program",
+      "state": "MN",
+      "city": "Saint Paul",
+      "region": "Statewide",
+      "products": [
+        "fresh produce",
+        "fruits",
+        "vegetables",
+        "potatoes",
+        "sweet corn",
+        "apples",
+        "raw nuts",
+        "ornamental crops"
+      ],
+      "website": "https://www.mda.state.mn.us/fruit-vegetable-inspections",
+      "phone": "651-201-6067",
+      "notes": "USDA-federally licensed inspection and audit program. Provides market inspections, processed inspections at local facilities, shipping point inspections, and GAP/GHP food safety audits for growers, shippers, receivers, and packers."
+    },
+    {
+      "id": 3,
+      "name": "Minnesota Wholesale Produce Dealer Program",
+      "state": "MN",
+      "city": "Saint Paul",
+      "region": "Statewide",
+      "products": [
+        "produce",
+        "fresh fruits",
+        "fresh vegetables"
+      ],
+      "website": "https://mda.state.mn.us/food-feed/wholesale-produce-dealers-licensing",
+      "phone": "651-201-6062",
+      "notes": "Licenses wholesale businesses that buy produce directly from farmers and re-sell or distribute farmers' produce. Managed by Farm Products Dealers Trust program."
+    },
+    {
+      "id": 4,
+      "name": "Minnesota Co-Packer Directory",
+      "state": "MN",
+      "city": "Saint Paul",
+      "region": "Statewide",
+      "products": [
+        "all processed food products",
+        "contract manufacturing",
+        "specialty processing",
+        "frozen products",
+        "canned products"
+      ],
+      "website": "https://www.mda.state.mn.us/minnesota-co-packer-directory",
+      "phone": "651-201-6000",
+      "notes": "Directory of 80+ co-packers (contract manufacturers) in Minnesota and nearby states. Includes facilities offering produce processing, specialty processing (spray-drying, freezing, canning), and value-added produce products."
+    },
+    {
+      "id": 5,
+      "name": "Minnesota Farmers' Market Association",
+      "state": "MN",
+      "city": "Nerstrand",
+      "region": "South Central Minnesota",
+      "products": [
+        "local produce",
+        "farmers market products",
+        "specialty foods"
+      ],
+      "website": "https://www.mfma.org",
+      "phone": "507-664-9446",
+      "notes": "Network organization supporting local food producers and farmers' markets. Can provide referrals to produce handlers and packers serving local food systems."
+    }
+  ],
+  "licensing_requirements": {
+    "wholesale_food_handler_license": {
+      "required_for": [
+        "Produce packing operations",
+        "Fresh/raw produce handlers",
+        "Produce aggregating locations",
+        "Packing facilities"
+      ],
+      "description": "Required for operations that hold, store, sell, and/or distribute food to other businesses from permanent location or mobile units",
+      "application_process": "Contact MDA, determine area inspector, arrange in-person inspection"
+    },
+    "wholesale_produce_dealer_license": {
+      "required_for": [
+        "Wholesale produce distributors",
+        "Farmers' produce resellers",
+        "Commission-based produce distribution"
+      ],
+      "description": "For businesses buying produce directly from farmers and re-selling or distributing for commission"
+    }
+  },
+  "major_commodities_in_minnesota": {
+    "potatoes": {
+      "notes": "Minnesota major potato producing state. Daily inspections at local processing facilities for raw potatoes and sweet potatoes. Mandatory certification for Canadian shipments.",
+      "inspection_service": "Available through MDA Fruit and Vegetable Inspection Program"
+    },
+    "sweet_corn": {
+      "notes": "Minnesota produces significant sweet corn volumes. Processing facilities and packers serve regional and national markets.",
+      "inspection_service": "Market and processing facility inspections available"
+    },
+    "apples": {
+      "notes": "Minnesota apple production with packing and storage facilities. Many with regional distribution.",
+      "inspection_service": "Commodity-specific inspections available"
+    }
+  },
+  "search_instructions": {
+    "step_1": "Visit MDA Online Licensing System: https://www.mda.state.mn.us/licensing/license-lookup",
+    "step_2": "Select 'Food Licenses' category from the licensing programs",
+    "step_3": "Search for 'Wholesale Food Handler' license type to find produce packinghouses",
+    "step_4": "Filter by city, county, or region to find specific facilities",
+    "step_5": "Alternative: Contact MDA Licensing directly at 651-201-6062 or mda.licensing@state.mn.us for current facility list"
+  },
+  "data_limitations": {
+    "no_public_directory": "Minnesota does not publish a comprehensive public packinghouse directory",
+    "private_facilities": "Some packing operations may not require state licensing if they meet exemptions",
+    "contact_required": "Most detailed facility information requires direct contact with MDA or individual businesses",
+    "recommendation": "For complete current list of licensed facilities, use MDA Online Licensing Lookup or contact MDA Licensing department directly"
+  }
+}

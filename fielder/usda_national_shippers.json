@@ -1,0 +1,612 @@
+[
+  {
+    "name": "E. Armata Inc.",
+    "state": "NY",
+    "city": "Bronx",
+    "products": [
+      "Strawberries",
+      "Blackberries",
+      "Blueberries",
+      "Raspberries",
+      "Grapes",
+      "Apples",
+      "Pears",
+      "Stone fruit",
+      "Citrus",
+      "Exotic fruits",
+      "Honeydews",
+      "Cantaloupes",
+      "Watermelons",
+      "Mushrooms",
+      "Potatoes",
+      "Onions",
+      "Carrots",
+      "Arugula",
+      "Spring mix",
+      "Romaine",
+      "Spinach",
+      "Kale",
+      "Tomatoes"
+    ],
+    "website": "earmata.com",
+    "address": "114 NYC Terminal Market, Bronx, NY 10474-7303",
+    "phone": "718-991-5600",
+    "email": "info@earmata.com",
+    "notes": "One of the largest produce distributors in USA, servicing tri-state area for over 100 years"
+  },
+  {
+    "name": "Dole Fresh Vegetables",
+    "state": "CA",
+    "city": "Monterey",
+    "products": [
+      "Fresh vegetables",
+      "Leafy greens",
+      "Lettuce",
+      "Specialty crops"
+    ],
+    "website": "dole.com",
+    "address": "Monterey, CA 93940",
+    "notes": "Major shipper in Salinas Valley, operates throughout US and Latin America"
+  },
+  {
+    "name": "Calavo Growers",
+    "state": "CA",
+    "city": "Santa Paula",
+    "products": [
+      "Avocados"
+    ],
+    "website": "calavo.com",
+    "address": "1141A Cummings Road, Santa Paula, CA 93060",
+    "email": "hello@calavo.com",
+    "notes": "Major avocado shipper with operations in Mexico (Michoacán and Jalisco)"
+  },
+  {
+    "name": "Driscoll's",
+    "state": "CA",
+    "city": "Watsonville",
+    "products": [
+      "Berries",
+      "Strawberries",
+      "Raspberries",
+      "Blueberries",
+      "Blackberries"
+    ],
+    "website": "driscoll-s.com",
+    "notes": "Major berry shipper with facilities in Watsonville and Red Bluff, CA"
+  },
+  {
+    "name": "Crystal Valley West",
+    "state": "CA",
+    "city": "Los Angeles",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "notes": "Family-operated wholesale produce distributor shipping nationwide"
+  },
+  {
+    "name": "Specialty Produce",
+    "state": "CA",
+    "city": "San Diego",
+    "products": [
+      "Fresh produce",
+      "Specialty items"
+    ],
+    "address": "San Diego, CA 92110",
+    "notes": "Foodservice and retail distributor"
+  },
+  {
+    "name": "Produce Services of Los Angeles",
+    "state": "CA",
+    "city": "Los Angeles",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "address": "Los Angeles, CA 90021",
+    "notes": "Wholesale produce for Southern California foodservice"
+  },
+  {
+    "name": "Charlie's Produce",
+    "state": "CA",
+    "city": "Los Angeles",
+    "products": [
+      "Fruits",
+      "Vegetables"
+    ],
+    "notes": "Supplies restaurants, grocery stores, institutions"
+  },
+  {
+    "name": "Hacienda Foods Distribution",
+    "state": "CA",
+    "city": "San Bernardino",
+    "products": [
+      "Fresh produce"
+    ],
+    "address": "San Bernardino, CA 92408",
+    "notes": "Serves Inland Empire region"
+  },
+  {
+    "name": "Sunrise Produce Company",
+    "state": "CA",
+    "city": "Fullerton",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "address": "Fullerton, CA 92833",
+    "notes": "Serves restaurants, schools, healthcare, retail"
+  },
+  {
+    "name": "Global Best Produce",
+    "state": "CA",
+    "city": "Vernon",
+    "products": [
+      "Asian produce"
+    ],
+    "address": "Vernon, CA 90058",
+    "notes": "Asian produce wholesaler"
+  },
+  {
+    "name": "Shasta Produce",
+    "state": "CA",
+    "city": "South San Francisco",
+    "products": [
+      "Fruits",
+      "Vegetables"
+    ],
+    "address": "South San Francisco, CA 94080",
+    "notes": "Serves Northern California"
+  },
+  {
+    "name": "General Produce Company",
+    "state": "CA",
+    "city": "Sacramento",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "address": "Sacramento, CA 95837",
+    "notes": "Serves Northern and Central California, Western Nevada, Southern Oregon"
+  },
+  {
+    "name": "D.H. Oriental Produce",
+    "state": "CA",
+    "city": "Vernon",
+    "products": [
+      "Exotic fruits",
+      "Exotic vegetables"
+    ],
+    "address": "Vernon, CA 90058"
+  },
+  {
+    "name": "Carcione's Fresh Produce",
+    "state": "CA",
+    "city": "South San Francisco",
+    "products": [
+      "Fresh produce"
+    ],
+    "address": "South San Francisco, CA 94080",
+    "notes": "Wholesale produce to Bay Area restaurants"
+  },
+  {
+    "name": "Hitchcock Farms",
+    "state": "CA",
+    "city": "Salinas",
+    "products": [
+      "Fresh vegetables",
+      "Leafy greens"
+    ],
+    "website": "hitchcockfarms.com",
+    "notes": "Supplies foodservice and retail establishments throughout USA and Canada"
+  },
+  {
+    "name": "May Food Produce Wholesale",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Asian fresh fruits",
+      "Asian vegetables"
+    ]
+  },
+  {
+    "name": "Longhing Wholesale",
+    "state": "TX",
+    "city": "Stafford",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Supplies hospitality industry"
+  },
+  {
+    "name": "Nicho Produce",
+    "state": "TX",
+    "city": "Edinburg",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables"
+    ]
+  },
+  {
+    "name": "DiMare Fresh - Dallas/Fort Worth",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Full line produce"
+    ],
+    "notes": "Major produce distributor"
+  },
+  {
+    "name": "DiMare Fresh - Houston",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Full line produce"
+    ]
+  },
+  {
+    "name": "Gilmore Produce Ltd",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce",
+      "Wholesale"
+    ]
+  },
+  {
+    "name": "Flavorful Fresh Inc.",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Wholesaler and distributor"
+  },
+  {
+    "name": "Segovia's Distributing Inc.",
+    "state": "TX",
+    "city": "El Paso",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Quality Fruit & Veg. Co.",
+    "state": "TX",
+    "city": "El Paso",
+    "products": [
+      "Fresh produce",
+      "Vegetables"
+    ],
+    "notes": "Serves Southwest region"
+  },
+  {
+    "name": "River City Produce Company",
+    "state": "TX",
+    "city": "San Antonio",
+    "products": [
+      "Fresh fruit",
+      "Fresh vegetables"
+    ]
+  },
+  {
+    "name": "Chefs Produce Company",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Supplies restaurants"
+  },
+  {
+    "name": "Rio Produce",
+    "state": "TX",
+    "city": "Edinburg",
+    "products": [
+      "Mexican produce"
+    ],
+    "notes": "Mexican produce wholesaler"
+  },
+  {
+    "name": "J Luna Produce Co Inc",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce",
+      "Wholesale"
+    ],
+    "notes": "Family-owned"
+  },
+  {
+    "name": "Brothers Produce",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Statewide distributor"
+  },
+  {
+    "name": "Potato Specialty Company",
+    "state": "TX",
+    "city": "Lubbock",
+    "products": [
+      "Fresh produce",
+      "Potatoes"
+    ],
+    "notes": "Food service supplier"
+  },
+  {
+    "name": "Coast Citrus Distributors",
+    "state": "TX",
+    "city": "McAllen",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables",
+      "Citrus"
+    ]
+  },
+  {
+    "name": "Brothers Food Service",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce",
+      "Specialty items"
+    ],
+    "notes": "Full-line distributor, operations in Dallas, Austin, Houston"
+  },
+  {
+    "name": "Franks Distributing, Inc",
+    "state": "TX",
+    "city": "Edinburg",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables"
+    ]
+  },
+  {
+    "name": "Empire Fresh Produce",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Wholesaler"
+  },
+  {
+    "name": "Allied Produce Inc.",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Asian vegetables"
+    ]
+  },
+  {
+    "name": "Fresh Tex Produce",
+    "state": "TX",
+    "city": "Alamo",
+    "products": [
+      "Mexican produce"
+    ],
+    "notes": "Mexican produce importer"
+  },
+  {
+    "name": "Sandoval Produce Company",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Restaurant supplier"
+  },
+  {
+    "name": "Superior Trading Dallas",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Asian produce"
+    ],
+    "notes": "Asian produce distributor"
+  },
+  {
+    "name": "NBC Foods Inc.",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce",
+      "Food items"
+    ]
+  },
+  {
+    "name": "Scarmardo Foodservice Inc.",
+    "state": "TX",
+    "city": "Bryan",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Nogales Produce Inc.",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Mexican produce",
+      "Grocery items"
+    ]
+  },
+  {
+    "name": "Taxco Produce, Inc.",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Mexican products",
+      "Hispanic products"
+    ]
+  },
+  {
+    "name": "Mex Flores Produce Company Inc.",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Hispanic produce",
+      "Mexican specialty products"
+    ]
+  },
+  {
+    "name": "Best Choice Food Group",
+    "state": "TX",
+    "city": "Fort Worth",
+    "products": [
+      "Fresh produce",
+      "Institutional food"
+    ]
+  },
+  {
+    "name": "Latin Specialties LLC",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Specialty produce"
+    ]
+  },
+  {
+    "name": "Grande Produce Ltd.",
+    "state": "TX",
+    "city": "San Juan",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables"
+    ]
+  },
+  {
+    "name": "Panamerican Farms",
+    "state": "CA",
+    "city": "Camarillo",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Sofia Produce LLC",
+    "state": "AZ",
+    "city": "Nogales",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Fresh Alliance",
+    "state": "GA",
+    "city": "Suwanee",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Davis Elite Group LLC",
+    "state": "TX",
+    "city": "Conroe",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Gold Coast Produce Inc",
+    "state": "IL",
+    "city": "Gurnee",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Viva Chestnuts Inc",
+    "state": "DE",
+    "city": "Dover",
+    "products": [
+      "Chestnuts"
+    ]
+  },
+  {
+    "name": "Pico Bravo LLC",
+    "state": "NM",
+    "city": "Las Cruces",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "American Onion, Inc.",
+    "state": "OR",
+    "city": "Hermiston",
+    "products": [
+      "Onions"
+    ],
+    "notes": "Major onion shipper"
+  },
+  {
+    "name": "Baker Packing & Murakami Produce Co.",
+    "state": "ID",
+    "city": "Boise",
+    "products": [
+      "Onions"
+    ],
+    "notes": "Largest volume onion shipper in Idaho and Eastern Oregon, one of largest US shippers"
+  },
+  {
+    "name": "Cheney Brothers",
+    "state": "FL",
+    "city": "Riviera Beach",
+    "products": [
+      "Fresh produce",
+      "Foodservice items"
+    ],
+    "founded": "1925",
+    "annual_revenue": "$3.0 billion",
+    "notes": "Major foodservice distributor with 11 distribution centers serving 20,000+ customers"
+  },
+  {
+    "name": "Divine Flavor LLC",
+    "state": "AZ",
+    "city": "Rio Rico",
+    "products": [
+      "Specialty produce"
+    ]
+  },
+  {
+    "name": "Export Fresh Company",
+    "state": "AZ",
+    "city": "Rio Rico",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Farmer's Best International",
+    "state": "AZ",
+    "city": "Rio Rico",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Divine Ripe LLC",
+    "state": "TX",
+    "city": "Pharr",
+    "products": [
+      "Specialty produce"
+    ]
+  },
+  {
+    "name": "Dixon Tom-A-Toe",
+    "state": "TX",
+    "city": "Grand Prairie",
+    "products": [
+      "Tomatoes"
+    ]
+  }
+]

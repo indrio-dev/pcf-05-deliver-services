@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Anthony Vineyards, Inc.",
+    "state": "CA",
+    "city": "Bakersfield",
+    "products": ["Fresh grapes", "Table grapes"],
+    "website": "https://www.anthonyvineyards.com"
+  },
+  {
+    "name": "Brandt Farms",
+    "state": "CA",
+    "city": "Reedley",
+    "products": ["Peaches", "Plums", "Nectarines", "Grapes"],
+    "website": "https://www.brandtfarms.com"
+  },
+  {
+    "name": "Dayka & Hackett, LLC",
+    "state": "CA",
+    "city": "Reedley",
+    "products": ["Oranges", "Mandarins", "Lemons", "Peaches", "Plums", "Nectarines"],
+    "website": "https://www.daykahackett.com"
+  },
+  {
+    "name": "Del Mar Farms",
+    "state": "CA",
+    "city": "Patterson",
+    "products": ["Tree fruit"],
+    "website": "https://www.delmarpacking.com"
+  },
+  {
+    "name": "A.D.P. DePalma Farms, Inc.",
+    "state": "CA",
+    "city": "Ripon",
+    "products": ["Cherries", "Peaches", "Persimmons", "Nectarines", "Almonds", "Olives", "Pistachios", "Walnuts"],
+    "website": "https://depalmafarms.com"
+  },
+  {
+    "name": "DJ Forry Co., Inc.",
+    "state": "CA",
+    "city": "Reedley",
+    "products": ["Cherries", "Peaches", "Plums", "Nectarines", "Apricots", "Grapes", "Pomegranates", "Persimmons"],
+    "website": "https://www.djforry.com"
+  },
+  {
+    "name": "Family Tree Farms",
+    "state": "CA",
+    "city": "Unknown",
+    "products": ["Tree fruit"],
+    "website": "https://familytreefarms.com"
+  },
+  {
+    "name": "The Flavor Tree Fruit Co., LLC",
+    "state": "CA",
+    "city": "Hanford",
+    "products": ["Pomegranates", "Plums", "Cherries", "Kiwifruit", "Peaches", "Nectarines"],
+    "website": "https://flavortreefruit.com"
+  },
+  {
+    "name": "Four Star Sales (Four Star Fruit, Inc.)",
+    "state": "CA",
+    "city": "Delano",
+    "products": ["Table grapes", "Fresh grapes"],
+    "website": "https://www.fourstarfruit.com"
+  },
+  {
+    "name": "Fowler Packing Company, Inc.",
+    "state": "CA",
+    "city": "Fresno",
+    "products": ["Packed tree fruit"],
+    "website": "https://fowlerpacking.com"
+  },
+  {
+    "name": "Giumarra Vineyards Corporation",
+    "state": "CA",
+    "city": "Bakersfield",
+    "products": ["Table grapes", "Fresh grapes"],
+    "website": "https://giumarra.com"
+  },
+  {
+    "name": "Grapeman Farms (dba Stevco)",
+    "state": "CA",
+    "city": "Bakersfield",
+    "products": ["Table grapes", "Fresh grapes"],
+    "website": "https://grapeman.com"
+  },
+  {
+    "name": "Mountain View Fruit Sales, Inc.",
+    "state": "CA",
+    "city": "Reedley",
+    "products": ["Stone fruit", "Tree fruit", "Grapes"],
+    "website": "https://mvfruit.com"
+  },
+  {
+    "name": "Pandol Bros., Inc.",
+    "state": "CA",
+    "city": "Delano",
+    "products": ["Fresh grapes", "Table grapes", "Tree fruit"],
+    "website": "https://pandol.com"
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Kimball & Thompson Produce Company",
+    "state": "AR",
+    "city": "Lowell",
+    "region": "Northwest Arkansas",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables",
+      "Mixed produce"
+    ],
+    "website": "https://www.ktproduce.com/",
+    "phone": "(479) 872-0200",
+    "notes": "Major produce distributor with 22,055 sq ft warehouse in Lowell. Additional facilities in Oklahoma City (9,000 sq ft) and North Little Rock (10,000 sq ft). Operates Monday-Friday 7am-4pm CST. Holds $165 million military and school supply contracts. Five-generation family business."
+  },
+  {
+    "name": "Matthews Ridgeview Farms",
+    "state": "AR",
+    "city": "Wynne",
+    "region": "East Arkansas (Phillips County)",
+    "products": [
+      "Sweet potatoes",
+      "Yams"
+    ],
+    "website": "https://www.arsweetpotatoes.com/",
+    "phone": "(870) 238-8828",
+    "notes": "Largest grower/packer/shipper of sweet potatoes in Arkansas. State-of-the-art automated packing facility with electronic sizing line. Warehouse facility employs 80+ workers. Cold storage for entire crop. Sells over 1 million bushels annually to major retailers. Year-round supply for retail and wholesale. Seasonal shipping starts mid-to-late September. Family-owned with 100+ years history, operating since 2006 as Matthews Ridgeview Farms."
+  },
+  {
+    "name": "Proffer Wholesale Produce",
+    "state": "AR",
+    "city": "Crossett",
+    "region": "Southeast Arkansas (Ashley County)",
+    "products": [
+      "Tomatoes",
+      "Green peppers",
+      "Cucumbers",
+      "Eggplant",
+      "Okra",
+      "Yellow squash",
+      "Zucchini",
+      "Chili peppers",
+      "Cabbage",
+      "Corn",
+      "Winter squash"
+    ],
+    "website": "https://www.profferproduce.com/",
+    "phone": "(573) 431-0625",
+    "notes": "Operating 50+ years with farm and cold storage facility in Crossett. Full-service packinghouse in Park Hills, Missouri for custom packaging. Harvest season May-October. Seven-day availability. Sales representatives available 7am-5pm. Email: tiffany@profferproduce.com"
+  },
+  {
+    "name": "Barnhill Orchards",
+    "state": "AR",
+    "city": "Lonoke",
+    "region": "Central Arkansas (Lonoke County)",
+    "products": [
+      "Strawberries",
+      "Blackberries",
+      "Blueberries",
+      "Peaches",
+      "Watermelons",
+      "Cantaloupes",
+      "Summer vegetables"
+    ],
+    "website": "https://www.barnhillorchards.com/",
+    "phone": "(501) 286-2677",
+    "notes": "Family-owned sustainable farm established in 1980 by retired Air Force Lt. Col. Bob Barnhill. Hand-picked and hand-sorted produce for quality assurance. Strawberries available April, followed by blackberries, blueberries, peaches, then watermelons and cantaloupes in summer. On-farm sales Thursday-Sunday 9am-5:30pm. Email: barnhillorchards@aol.com"
+  },
+  {
+    "name": "Arkansas Natural Produce",
+    "state": "AR",
+    "city": "Malvern",
+    "region": "Central Arkansas (Hot Spring County)",
+    "products": [
+      "Salad greens",
+      "Baby greens",
+      "Fresh herbs",
+      "Seasonal vegetables"
+    ],
+    "website": "https://www.arkansasnaturalproduce.com/",
+    "phone": "(501) 865-1331",
+    "notes": "Year-round greenhouse facility specializing in salad greens with seasonal vegetables. In business since 1988. Delivers to Little Rock and Hot Springs markets year-round. Over 50,000 sq ft of heated greenhouse space. Owners: Jay and Deanna Fulbright."
+  },
+  {
+    "name": "Peebles Organic Farms LLC",
+    "state": "AR",
+    "city": "Augusta",
+    "region": "Southeast Arkansas (Woodruff County)",
+    "products": [
+      "Organic edamame",
+      "Green beans",
+      "Sweet potatoes",
+      "Processor pumpkins",
+      "Corn",
+      "Rice",
+      "Soybeans",
+      "Watermelon",
+      "Wheat"
+    ],
+    "website": "https://www.peeblesorganics.com/",
+    "phone": "(870) 347-2044",
+    "notes": "800-acre organic vegetable farm. USDA Organic certified. Retail and wholesale operations. Season: July-November. Processes pumpkins and produces certified organic edamame and green beans. Also operates Peebles Farm with corn maze and U-pick attractions."
+  },
+  {
+    "name": "Liberty Fruit Company",
+    "state": "AR",
+    "city": "Multiple locations",
+    "region": "Midwest distribution (AR, IL, IA, KS, MO, NE, OK, SD)",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables",
+      "USDA Organic",
+      "Custom-cut produce",
+      "Made-to-order fresh-cut products"
+    ],
+    "website": "https://www.libertyfruit.com/",
+    "phone": "Not listed",
+    "notes": "Founded 1965. Acquired by Russ Davis Wholesale. 350+ dedicated employees. Hand-selects premium fruits and vegetables with custom repacking to specifications. Offers bagging, overwraps, labeling, fresh daily. SQF Level 3 Version 7.2 Certified, HAACP Compliant, Kosher. Next-day delivery. Serves wholesale, retail, and foodservice customers across seven states."
+  },
+  {
+    "name": "Muzzarelli Farms (Arkansas Operations)",
+    "state": "AR",
+    "city": "Various",
+    "region": "Statewide",
+    "products": [
+      "Sweet potatoes",
+      "Yams",
+      "Seasonal greens",
+      "Kale",
+      "Peppers",
+      "Grape tomatoes",
+      "Plum tomatoes",
+      "Pickles",
+      "Cucumbers"
+    ],
+    "website": "https://www.muzzarellifarms.com/",
+    "phone": "(856) 691-2497",
+    "notes": "New Jersey-based producer with wholesale operations serving Arkansas. Growing, packing, shipping and wholesale distribution. Currently accepting bulk orders for 2025 growing season. Email: cmuzzarelli1037@gmail.com. Alternative phone: (856) 207-1037"
+  }
+]
