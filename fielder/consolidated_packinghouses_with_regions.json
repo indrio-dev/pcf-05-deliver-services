@@ -1,0 +1,4829 @@
+[
+  {
+    "name": "Stemilt Growers",
+    "state": "WA",
+    "city": "Wenatchee",
+    "region": "Washington - Yakima Valley",
+    "products": [
+      "apple",
+      "pear",
+      "cherry",
+      "stone fruit"
+    ],
+    "website": "https://www.stemilt.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Largest fresh market sweet cherry shipper in the world. Family-owned since 1964. Signature varieties include Piñata, Honeycrisp, Gala, Pink Lady.",
+    "foundedYear": 1964,
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "wenatchee_wa"
+  },
+  {
+    "name": "McDougall & Sons",
+    "state": "WA",
+    "city": "Wenatchee",
+    "region": "Washington - Wenatchee to Mattawa",
+    "products": [
+      "apple",
+      "pear",
+      "cherry"
+    ],
+    "website": "https://www.cmiorchards.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Founded 1976. 2,200 acres of orchards. Packs 260,000 bins of apples/pears and 11,000-12,000 tons of cherries. Exclusive rights to Ambrosia apple variety. Conventional and organic.",
+    "foundedYear": 1976,
+    "acreage": 2200,
+    "growingRegion": "wenatchee_wa"
+  },
+  {
+    "name": "Borton Fruit",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Yakima Valley",
+    "products": [
+      "apple",
+      "pear",
+      "cherry"
+    ],
+    "website": "https://bortonfruit.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Premium grower, packer, shipper. Located at 2550 Borton Road, Yakima, WA 98903. Phone: 509-966-3905",
+    "growingRegion": "yakima_valley_wa"
+  },
+  {
+    "name": "Allan Brothers",
+    "state": "WA",
+    "city": "Naches",
+    "region": "Washington - Yakima Valley",
+    "products": [
+      "apple",
+      "cherry"
+    ],
+    "website": "https://allanbrosfruit.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Founded early 1900s. Over 100 years of operation. Cold/controlled atmosphere storage. 31 Allan Road, Naches, WA 98937. Phone: 509-653-2625",
+    "yearsInBusiness": 100,
+    "growingRegion": "yakima_valley_wa"
+  },
+  {
+    "name": "Domex Superfresh Growers",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Pacific Northwest",
+    "products": [
+      "apple",
+      "pear",
+      "cherry",
+      "blueberry",
+      "kiwi berry"
+    ],
+    "website": "https://superfreshgrowers.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Sixth generation family-owned. Exclusive grower of Autumn Glory® apple. 151 Low Rd, Yakima, WA",
+    "growingRegion": "yakima_valley_wa"
+  },
+  {
+    "name": "Rainier Fruit Company",
+    "state": "WA",
+    "city": "Brewster",
+    "region": "Washington - Yakima Valley",
+    "products": [
+      "apple",
+      "pear",
+      "cherry"
+    ],
+    "website": "https://waapple.org/suppliers/",
+    "association": "Washington Apple Commission",
+    "notes": "Offers Envy, Jazz, and Pacific Rose varieties. 510 N. 7th, Brewster, WA 98812",
+    "growingRegion": "okanogan_wa"
+  },
+  {
+    "name": "Washington Fruit Growers",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Yakima Valley",
+    "products": [
+      "apple"
+    ],
+    "website": "https://washfruitgrowers.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Operating since 1916. Family-owned. Year-round supply of conventional and organic apples. State-of-the-art technologies.",
+    "foundedYear": 1916,
+    "growingRegion": "yakima_valley_wa"
+  },
+  {
+    "name": "Gebbers Farms",
+    "state": "WA",
+    "city": "Cascade Range Base",
+    "region": "Washington - Northwestern",
+    "products": [
+      "apple",
+      "cherry"
+    ],
+    "website": "https://gebbersfarms.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Over a century of experience. One of the most trusted apple growers in the northwestern U.S."
+  },
+  {
+    "name": "Starr Ranch Growers",
+    "state": "WA",
+    "city": "Washington's apple country",
+    "region": "Washington - Pacific Northwest",
+    "products": [
+      "apple",
+      "pear",
+      "cherry",
+      "stone fruit"
+    ],
+    "website": "https://starranch.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Founded 1934. Leading fruit grower, packer, and shipper of Northwest-grown fruit.",
+    "foundedYear": 1934,
+    "scaleIndicators": [
+      "leading"
+    ]
+  },
+  {
+    "name": "CMI Orchards",
+    "state": "WA",
+    "city": "Washington State",
+    "region": "Washington",
+    "products": [
+      "apple",
+      "pear",
+      "cherry"
+    ],
+    "website": "https://www.wagrown.com/wagrown-farms/farms/item/cmi-orchards",
+    "association": "Northwest Horticultural Council",
+    "notes": "One of Washington's largest grower, packer, shipper. CMI Orchards and Daisy Girl Organics are #1 selling brands in the U.S.",
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Matson Fruit",
+    "state": "WA",
+    "city": "Selah",
+    "region": "Washington - Yakima Valley",
+    "products": [
+      "apple",
+      "pear",
+      "cherry"
+    ],
+    "website": "http://matsonfruit.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Over 100 years of experience. Renowned grower and distributor.",
+    "yearsInBusiness": 100,
+    "growingRegion": "yakima_valley_wa"
+  },
+  {
+    "name": "Chelan Fresh Marketing",
+    "state": "WA",
+    "city": "Chelan",
+    "region": "Washington",
+    "products": [
+      "apple",
+      "cherry",
+      "pear"
+    ],
+    "website": "https://chelanfresh.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "AltaFresh L.L.C. d/b/a Chelan Fresh Marketing. Top marketer providing 250,000+ boxes of fruit per week year-round.",
+    "growingRegion": "okanogan_wa"
+  },
+  {
+    "name": "Apple King",
+    "state": "WA",
+    "city": "Yakima",
+    "region": "Washington - Yakima Valley",
+    "products": [
+      "apple",
+      "pear",
+      "cherry"
+    ],
+    "website": "https://www.appleking.com",
+    "association": "Northwest Horticultural Council",
+    "notes": "Family owned since 1914. Conventional and organic fruit packer. Growing, packing, and shipping company.",
+    "foundedYear": 1914,
+    "growingRegion": "yakima_valley_wa"
+  },
+  {
+    "name": "Fowler Packing Company",
+    "state": "CA",
+    "city": "Fresno",
+    "region": "California - San Joaquin Valley",
+    "products": [
+      "grape",
+      "apricot",
+      "mandarin orange",
+      "nectarine",
+      "peach",
+      "plum",
+      "pomegranate"
+    ],
+    "website": "https://fowlerpacking.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Established 1950. Parent company to Peelz Citrus, Samsons Grapes, G3 Development. 8570 S Cedar Ave, Fresno, CA",
+    "foundedYear": 1950,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Bari Produce",
+    "state": "CA",
+    "city": "Madera/Fresno County",
+    "region": "California - San Joaquin Valley",
+    "products": [
+      "apricot",
+      "peach",
+      "plum",
+      "nectarine",
+      "grape"
+    ],
+    "website": "http://www.bariproduce.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Founded ~1915. Stone fruit packed in premium BARI® label. Extra large apricots from Panoche Hills micro-climate.",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Trinity Fruit Company",
+    "state": "CA",
+    "city": "Fresno",
+    "region": "California - Central Valley",
+    "products": [
+      "stone fruit",
+      "citrus"
+    ],
+    "website": "https://www.trinityfruit.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Family-owned grower, packer, shipper. 7571 N. Remington Ave, Suite 104, Fresno, CA 93711. Organic produce available.",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Sunnyside Packing Company",
+    "state": "CA",
+    "city": "Fresno",
+    "region": "California - Central Valley",
+    "products": [
+      "fresh fruit",
+      "vegetable"
+    ],
+    "website": "http://sunnysidepacking.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Third generation family owned and operated grower, packer, shipper of fresh fruits and vegetables.",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Family Tree Farms",
+    "state": "CA",
+    "city": "Reedley",
+    "region": "California - Central Valley",
+    "products": [
+      "stone fruit",
+      "grape",
+      "citrus"
+    ],
+    "website": "https://familytreefarms.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Ranches in California, Mexico, and Peru. Focus on flavor, quality, integrity, and safety.",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Giumarra Vineyards",
+    "state": "CA",
+    "city": "Edison/Bakersfield",
+    "region": "California - San Joaquin Valley",
+    "products": [
+      "table grape"
+    ],
+    "website": "http://www.giumarravineyards.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Family-owned for 80+ years. Premium California table grapes. P.O. Box 861449 Los Angeles, CA 90086. Phone: 213-627-2900"
+  },
+  {
+    "name": "Pandol Bros Inc",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin Valley",
+    "products": [
+      "table grape"
+    ],
+    "website": "https://www.producemarketguide.com/company/108248/pandol-bros-inc-hq",
+    "association": "California Fresh Fruit Association",
+    "notes": "Leading producer for 70+ years. Grower-shipper and marketer. Imports/exports worldwide.",
+    "scaleIndicators": [
+      "leading"
+    ],
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Delano Farms",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin/Coachella Valley",
+    "products": [
+      "table grape"
+    ],
+    "website": "https://www.delanofarms.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "In production since 1991. Thousands of acres in San Joaquin, Coachella, and Mexico. Trademarked Pristine® green seedless.",
+    "foundedYear": 1991,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Four Star Fruit",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin/Coachella Valley",
+    "products": [
+      "table grape"
+    ],
+    "website": "https://www.fourstarfruit.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Since 1987. Campbell family owned for three generations. Fields in San Joaquin, Coachella, and Mexico. Organic and conventional.",
+    "foundedYear": 1987,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Castle Rock Vineyards",
+    "state": "CA",
+    "city": "Delano",
+    "region": "California - San Joaquin Valley",
+    "products": [
+      "table grape"
+    ],
+    "website": "http://www.castlerockvineyards.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Vineyards in Coachella, Arvin, Bakersfield, Delano, Ducor, Lindsay, and Reedley. Sales staff at Delano cold storage.",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Jasmine Vineyards",
+    "state": "CA",
+    "city": "San Joaquin Valley",
+    "region": "California - San Joaquin Valley",
+    "products": [
+      "table grape"
+    ],
+    "website": "https://jasminevineyards.com",
+    "association": "California Fresh Fruit Association",
+    "notes": "Founded 1947 by Martin and Vincent Zaninovich. One of the largest table grape growers in the United States.",
+    "foundedYear": 1947,
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Anthony Vineyards Inc",
+    "state": "CA",
+    "city": "Bakersfield/Delano area",
+    "region": "California - San Joaquin Valley",
+    "products": [
+      "table grape",
+      "stone fruit"
+    ],
+    "website": "https://cafreshfruit.com/membership/members-links/",
+    "association": "California Fresh Fruit Association",
+    "notes": "CFFA member. Shipper/Marketer member."
+  },
+  {
+    "name": "Lane Southern Orchards",
+    "state": "GA",
+    "city": "Fort Valley",
+    "region": "Georgia - Peach County",
+    "products": [
+      "peach",
+      "pecan"
+    ],
+    "website": "https://www.n-georgia.com/lane-packing-company.html",
+    "association": "Georgia Peach Council",
+    "notes": "100+ years in business. Started 1908. State-of-the-art facility completed 1990. Capacity: 1 million 25-lb cartons/season. Merged with Taylor Orchards 2018 to create largest peach/pecan operation in U.S.",
+    "scaleIndicators": [
+      "largest"
+    ],
+    "yearsInBusiness": 100,
+    "growingRegion": "middle_ga"
+  },
+  {
+    "name": "Pearson Farm",
+    "state": "GA",
+    "city": "Fort Valley",
+    "region": "Georgia - Peach County",
+    "products": [
+      "peach",
+      "pecan"
+    ],
+    "website": "https://pearsonfarm.com",
+    "association": "Georgia Peach Council",
+    "notes": "100+ years growing on same land. 1,500 acres peaches, 2,000 acres pecans. Packing facility converted from old Zenith Consolidated School in 1975.",
+    "acreage": 1500,
+    "growingRegion": "middle_ga"
+  },
+  {
+    "name": "Dickey Farms",
+    "state": "GA",
+    "city": "Musella",
+    "region": "Georgia - Central",
+    "products": [
+      "peach"
+    ],
+    "website": "http://www.genuinega.com",
+    "association": "Genuine Georgia Group",
+    "notes": "One of four commercial peach farms in Georgia with Genuine Georgia Group relationship.",
+    "growingRegion": "middle_ga"
+  },
+  {
+    "name": "Fitzgerald Fruit Farms",
+    "state": "GA",
+    "city": "Woodbury",
+    "region": "Georgia - Central",
+    "products": [
+      "peach"
+    ],
+    "website": "http://www.genuinega.com",
+    "association": "Genuine Georgia Group",
+    "notes": "One of four commercial peach farms in Georgia with Genuine Georgia Group relationship."
+  },
+  {
+    "name": "IMG Citrus",
+    "state": "FL",
+    "city": "Vero Beach",
+    "region": "Florida - Indian River",
+    "products": [
+      "orange",
+      "grapefruit",
+      "citrus"
+    ],
+    "website": "https://citrusindustry.net/2025/12/03/img-citrus-completes-packinghouse-consolidation/",
+    "association": "Florida Citrus Packers",
+    "notes": "Citrus grower, importer, packer. New flagship facility 'Sweet Sixty' - integrated cold storage, packing, distribution hub.",
+    "growingRegion": "indian_river_fl"
+  },
+  {
+    "name": "Dundee Citrus Growers Association",
+    "state": "FL",
+    "city": "Dundee",
+    "region": "Florida - Central",
+    "products": [
+      "orange",
+      "grapefruit",
+      "citrus"
+    ],
+    "website": "https://dun-d.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Established 1924. One of largest fresh fruit cooperatives in Florida. 10,000+ acres. Multiple citrus varieties.",
+    "foundedYear": 1924,
+    "acreage": 10000,
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "central_fl"
+  },
+  {
+    "name": "Florida Classic Growers",
+    "state": "FL",
+    "city": "Dundee",
+    "region": "Florida - Central",
+    "products": [
+      "citrus",
+      "blueberry",
+      "peach"
+    ],
+    "website": "https://flclassic.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Co-operative owned by Dundee Citrus Growers Association. Fresh Florida citrus since 1924.",
+    "foundedYear": 1924,
+    "growingRegion": "central_fl"
+  },
+  {
+    "name": "Hollieanna Groves",
+    "state": "FL",
+    "city": "Maitland",
+    "region": "Florida - Central",
+    "products": [
+      "orange",
+      "grapefruit",
+      "citrus"
+    ],
+    "website": "https://www.hollieanna.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Family owned and operated since 1954. Store and packing house in Maitland.",
+    "foundedYear": 1954,
+    "growingRegion": "central_fl"
+  },
+  {
+    "name": "Countryside Citrus",
+    "state": "FL",
+    "city": "Indian River Region",
+    "region": "Florida - Indian River",
+    "products": [
+      "orange",
+      "grapefruit"
+    ],
+    "website": "https://www.countrysidecitrus.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Family business for five generations. Leading grower, harvester, shipper of pristine Florida oranges and grapefruit.",
+    "scaleIndicators": [
+      "leading"
+    ],
+    "growingRegion": "indian_river_fl"
+  },
+  {
+    "name": "Hyatt Fruit Company",
+    "state": "FL",
+    "city": "Vero Beach",
+    "region": "Florida - Indian River County",
+    "products": [
+      "orange",
+      "grapefruit",
+      "honeybell"
+    ],
+    "website": "https://www.hyattfruitco.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Shipping since 1946. 75+ years in business. Family owned and operated. Fresh fruit gift baskets and citrus candy.",
+    "foundedYear": 1946,
+    "yearsInBusiness": 75,
+    "growingRegion": "indian_river_fl"
+  },
+  {
+    "name": "Al's Family Farms",
+    "state": "FL",
+    "city": "Florida",
+    "region": "Florida - Indian River",
+    "products": [
+      "grapefruit",
+      "orange",
+      "tangerine",
+      "honeybell"
+    ],
+    "website": "https://www.alsfamilyfarms.com",
+    "association": "Florida Citrus Packers",
+    "notes": "Indian River grapefruit, Honeybells, Navel oranges, Temple oranges, Valencia oranges, tangerines fresh-picked.",
+    "growingRegion": "central_fl"
+  },
+  {
+    "name": "Lone Star Citrus Growers",
+    "state": "TX",
+    "city": "Mission",
+    "region": "Texas - Rio Grande Valley",
+    "products": [
+      "grapefruit",
+      "orange"
+    ],
+    "website": "https://www.linkedin.com/company/lonestarcitrusgrowers",
+    "association": "Texas International Produce Association",
+    "notes": "Last independent family-owned Texas citrus packing house. Flowers family. 9625 N. Moorefield Rd., Mission, TX 78574. Phone: 956-424-3334. Ships Oct-Mar/Apr.",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Rio Grande Juice Company",
+    "state": "TX",
+    "city": "Mission",
+    "region": "Texas - Rio Grande Valley",
+    "products": [
+      "citrus juice"
+    ],
+    "website": "https://www.riograndejuice.com",
+    "association": "Texas International Produce Association",
+    "notes": "Largest citrus juice manufacturer in Texas. Division of Wonderful Citrus since 2015. Processing plant in Mission.",
+    "foundedYear": 2015,
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Hudson River Fruit Distributors",
+    "state": "NY",
+    "city": "Hudson Valley",
+    "region": "New York - Hudson Valley",
+    "products": [
+      "apple"
+    ],
+    "website": "https://www.hudsonriverfruit.com",
+    "association": "New York Apple Association",
+    "notes": "One of largest East Coast apple shippers. State-of-the-art equipment. Represents 10,000+ acres in NY State and New England.",
+    "acreage": 10000,
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "hudson_valley_ny"
+  },
+  {
+    "name": "George W. Saulpaugh & Son",
+    "state": "NY",
+    "city": "Hudson Valley",
+    "region": "New York - Hudson Valley",
+    "products": [
+      "apple"
+    ],
+    "website": "https://www.saulpaughapples.com",
+    "association": "New York Apple Association",
+    "notes": "Wholesale apple grower, packer, shipper. ~20 varieties. 8 Controlled Atmosphere Storage Rooms for 150,000 bushels. GlobalGap and SCS GMP Certified.",
+    "certifications": [
+      "GlobalGAP"
+    ],
+    "growingRegion": "hudson_valley_ny"
+  },
+  {
+    "name": "Dressel Farms",
+    "state": "NY",
+    "city": "Hudson Valley",
+    "region": "New York - Hudson Valley",
+    "products": [
+      "apple"
+    ],
+    "website": "https://www.applesfromny.com/food-service-retail/directories/",
+    "association": "New York Apple Association",
+    "notes": "300+ acres of apple trees, 20+ varieties. Annually packs and ships 100,000+ bushels (4M lbs) to east coast and overseas.",
+    "acreage": 300,
+    "growingRegion": "hudson_valley_ny"
+  },
+  {
+    "name": "Apple Acres",
+    "state": "NY",
+    "city": "New York State",
+    "region": "New York",
+    "products": [
+      "apple"
+    ],
+    "website": "https://www.thepacker.com/news/produce-crops-news/packer-tech/apple-acres-opens-ny-packing-facility",
+    "association": "New York Apple Association",
+    "notes": "Family owned. Varieties include Rubyfrost, SnapDragon, Macintosh, Empire. Packs for other NY apple growers.",
+    "growingRegion": "hudson_valley_ny"
+  },
+  {
+    "name": "Fowler Farms",
+    "state": "NY",
+    "city": "New York State",
+    "region": "New York",
+    "products": [
+      "apple"
+    ],
+    "website": "https://www.thepacker.com/article/fowler-farms-begins-major-expansion-0",
+    "association": "New York Apple Association, Crunch Time Apple Growers",
+    "notes": "Sixth generation. Largest grower of Honeycrisp and SweeTango in NY State. 30+ varieties, 30 acres certified organic.",
+    "acreage": 30,
+    "certifications": [
+      "USDA_Organic"
+    ],
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "hudson_valley_ny"
+  },
+  {
+    "name": "Applewood Fresh Growers LLC",
+    "state": "MI",
+    "city": "Multiple locations",
+    "region": "Michigan",
+    "products": [
+      "apple"
+    ],
+    "website": "https://applewoodfresh.com",
+    "association": "Michigan Apple Association",
+    "notes": "Aligns with: Applewood Orchards (Deerfield), Elite Apple Co. (Sparta), Michigan Apple Packers Cooperative (Sparta), Umlor Orchards (Conklin)."
+  },
+  {
+    "name": "Ridgeking Apple Packing / Heeren Brothers",
+    "state": "MI",
+    "city": "Michigan",
+    "region": "Michigan",
+    "products": [
+      "apple"
+    ],
+    "website": "https://www.goodfruit.com/packing-capacity-grows-in-michigan/",
+    "association": "Michigan Apple Association",
+    "notes": "Stores and packs apples for 75+ family-owned Michigan growers. Packs 20%+ of all fresh apples grown in Michigan. Joint venture with Applewood Orchards = All Fresh GPS."
+  },
+  {
+    "name": "Underwood Fruit and Warehouse Co",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River/White Salmon",
+    "products": [
+      "pear",
+      "apple",
+      "cherry"
+    ],
+    "website": "https://underwoodfruit.com",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Established early 1900s. Major packer in Hood River, The Dalles, White Salmon districts. Hood River/White Salmon pears renowned for appearance, flavor, storage.",
+    "scaleIndicators": [
+      "major"
+    ],
+    "growingRegion": "hood_river_or"
+  },
+  {
+    "name": "Stadelman Fruit LLC",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River",
+    "products": [
+      "pear"
+    ],
+    "website": "https://www.chamberofcommerce.com/united-states/oregon/hood-river/fruit-and-vegetable-growers-and-shippers/5848845-stadelman-fruit-llc-pear-facility",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Pear facility at 3366 Stadelman Dr, Hood River, OR 97031. Phone: 541-354-1224",
+    "growingRegion": "hood_river_or"
+  },
+  {
+    "name": "Oregon Growers & Shippers LLC",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River",
+    "products": [
+      "apple",
+      "pear",
+      "cherry",
+      "specialty food"
+    ],
+    "website": "https://oregongrowers.com",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Farm Direct Foods from Pacific Northwest. 508 Oak Ave, Hood River, OR 97031.",
+    "growingRegion": "hood_river_or"
+  },
+  {
+    "name": "Pearl's Place Fruit / Viewmont Orchards",
+    "state": "OR",
+    "city": "Hood River",
+    "region": "Oregon - Hood River",
+    "products": [
+      "apple",
+      "pear"
+    ],
+    "website": "https://shop.pearlsplacefruit.com",
+    "association": "Columbia Gorge Fruit Growers",
+    "notes": "Established 1901 by Walter Wells. 500+ acres. Pack and ship under Viewmont Orchards label.",
+    "foundedYear": 1901,
+    "acreage": 500,
+    "growingRegion": "hood_river_or"
+  },
+  {
+    "name": "Diamond Fruit Growers",
+    "state": "OR",
+    "city": "Odell",
+    "region": "Oregon - Hood River",
+    "products": [
+      "pear",
+      "apple",
+      "cherry"
+    ],
+    "website": "https://nwhort.org/packersshippersmarketers/",
+    "association": "Columbia Gorge Fruit Growers, Northwest Horticultural Council",
+    "notes": "Full member of NHC. Export Trade Certificate of Review holder.",
+    "growingRegion": "hood_river_or"
+  },
+  {
+    "name": "Rice Fruit Company",
+    "state": "PA",
+    "city": "Gardners",
+    "region": "Pennsylvania - Adams County",
+    "products": [
+      "apple"
+    ],
+    "website": "https://ricefruit.com",
+    "association": "Adams County Fruit Growers Association",
+    "notes": "Largest apple-packing facility in Eastern half of U.S. Founded 1913 by Arthur Rice. Receives/stores/packs 1M+ boxes annually for 40+ farm families.",
+    "foundedYear": 1913,
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Bear Mountain Orchards",
+    "state": "PA",
+    "city": "Aspers",
+    "region": "Pennsylvania - Adams County",
+    "products": [
+      "peach",
+      "apple",
+      "nectarine"
+    ],
+    "website": "https://www.bearmountainorchards.com",
+    "association": "Adams County Fruit Growers Association",
+    "notes": "Family owned and operated for 75+ years. Grower, packer, shipper. Specialize in fresh, local, safe produce. Potato Road near Aspers."
+  },
+  {
+    "name": "Associated Citrus Packers Inc",
+    "state": "AZ",
+    "city": "Yuma",
+    "region": "Arizona - Yuma County",
+    "products": [
+      "citrus"
+    ],
+    "website": "https://www.manta.com/mb_45_C2094000_03/fresh_fruits_and_vegetables/arizona",
+    "association": "Arizona Department of Agriculture CFV",
+    "notes": "48 years in business. 2 W 6th St, Yuma, AZ 85364. Wholesale fruits and vegetables, frozen foods.",
+    "yearsInBusiness": 48
+  },
+  {
+    "name": "Limoneira Company",
+    "state": "AZ",
+    "city": "Yuma County",
+    "region": "Arizona - Yuma County",
+    "products": [
+      "citrus"
+    ],
+    "website": "https://www.yellowpages.com/yuma-az/citrus-growers",
+    "association": "Arizona Department of Agriculture CFV",
+    "notes": "Citrus shipper in Yuma County."
+  },
+  {
+    "name": "Mission Citrus",
+    "state": "AZ",
+    "city": "Yuma County",
+    "region": "Arizona - Yuma County",
+    "products": [
+      "citrus"
+    ],
+    "website": "https://www.yellowpages.com/yuma-az/citrus-growers",
+    "association": "Arizona Department of Agriculture CFV",
+    "notes": "Citrus shipper in Yuma County."
+  },
+  {
+    "name": "Sun Pacific",
+    "state": "CA",
+    "city": "Bakersfield",
+    "licenseNumber": null,
+    "products": [
+      "citrus",
+      "mandarins",
+      "navel oranges",
+      "valencia oranges",
+      "lemons",
+      "table grapes",
+      "tomatoes"
+    ],
+    "website": "https://sunpacific.com/",
+    "address": "33374 Lerdo Hwy., Bakersfield, CA 93308",
+    "phone": "213-612-9957",
+    "source": "Sun Pacific website - CDFA licensed",
+    "notes": "600,000 sq ft packing facility. Ships 70M+ boxes annually from 30,000 acres. Brands: Cuties, Mighties, Air Chief. Sales office in Pasadena.",
+    "acreage": 30000,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Wonderful Citrus Packing LLC",
+    "state": "CA",
+    "city": "Delano",
+    "licenseNumber": null,
+    "products": [
+      "mandarins",
+      "navel oranges",
+      "valencia oranges",
+      "lemons",
+      "limes",
+      "grapefruit"
+    ],
+    "website": "https://www.wonderfulcitrus.com",
+    "address": "1901 S Lexington Street, Delano, CA 93215",
+    "phone": null,
+    "source": "Wonderful Citrus website - USDA NOP certified",
+    "notes": "America's largest integrated citrus grower/packer/shipper. World's largest citrus packinghouse (size of 7 football fields). Processes 26M+ cartons annually. Additional facility at 1701 S Lexington St. Brand: Halos mandarins.",
+    "scaleIndicators": [
+      "worlds_largest",
+      "largest"
+    ],
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Grimmway Farms Inc.",
+    "state": "CA",
+    "city": "Lamont",
+    "licenseNumber": null,
+    "products": [
+      "carrots",
+      "organic vegetables"
+    ],
+    "website": "https://www.grimmway.com",
+    "address": "6900 Mountain View Road, Lamont, CA",
+    "phone": null,
+    "source": "Grimmway Farms website - CEQA records",
+    "notes": "Headquarters in Bakersfield. One of world's largest carrot producers. 60,000+ acres under cultivation, 50,000+ acres organic. 19 facilities total across CA, CO, FL, GA, NV, OR, WA.",
+    "acreage": 60000,
+    "scaleIndicators": [
+      "worlds_largest",
+      "largest"
+    ]
+  },
+  {
+    "name": "Church Brothers Farms",
+    "state": "CA",
+    "city": "Salinas",
+    "licenseNumber": null,
+    "products": [
+      "lettuce",
+      "salad mix",
+      "broccoli",
+      "green onions",
+      "coleslaw",
+      "romaine",
+      "arugula",
+      "organic greens",
+      "spinach"
+    ],
+    "website": "https://www.churchbrothers.com",
+    "address": "19065 Portola Drive, Suite C, Salinas, CA 93908",
+    "phone": null,
+    "source": "Church Brothers website - CDFA licensed",
+    "notes": "Founded 1999. Vertically integrated grower-processor. State-of-the-art processing plant (True Leaf Farms). Acquired Mann Packing Dec 2025 including 200,000 sq ft Gonzales facility.",
+    "foundedYear": 1999,
+    "growingRegion": "salinas_valley_ca"
+  },
+  {
+    "name": "Tanimura & Antle Corporation",
+    "state": "CA",
+    "city": "Salinas",
+    "licenseNumber": null,
+    "products": [
+      "lettuce",
+      "iceberg",
+      "romaine",
+      "hydroponic boston lettuce"
+    ],
+    "website": "https://www.taproduce.com",
+    "address": "1 Harris Road, Salinas, CA 93908",
+    "phone": null,
+    "source": "Tanimura & Antle website - CDFA licensed",
+    "notes": "Largest independent lettuce grower/distributor in US. 40,000+ acres in CA/AZ. Founded 1982. Packing facility in Spreckels, CA. Additional 14-acre hydroponic greenhouse in Livingston, TN.",
+    "foundedYear": 1982,
+    "acreage": 40000,
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "salinas_valley_ca"
+  },
+  {
+    "name": "Mann Packing (acquired by Church Brothers 2025, formerly Fresh Del Monte)",
+    "state": "CA",
+    "city": "Gonzales",
+    "licenseNumber": null,
+    "products": [
+      "vegetables",
+      "fruits",
+      "fresh-cut produce"
+    ],
+    "website": "https://freshdelmonte.com",
+    "address": "Gonzales, CA",
+    "phone": null,
+    "source": "Fresh Del Monte / Church Brothers acquisition news",
+    "notes": "5 facilities across CA. 200,000 sq ft fully automated Gonzales facility (2021). 160,000 sq ft production/cold storage, 40,000 sq ft offices. Acquired by Church Brothers Dec 2025."
+  },
+  {
+    "name": "Oregon Berry Packing, Inc.",
+    "state": "OR",
+    "city": "Hillsboro",
+    "licenseNumber": null,
+    "products": [
+      "blueberries",
+      "strawberries",
+      "black raspberries"
+    ],
+    "website": "https://oregonberry.com",
+    "address": "6000 SW Minter Bridge Rd, Hillsboro, OR 97123",
+    "phone": null,
+    "source": "Oregon Berry Packing website - ODA Korea Export Program",
+    "notes": "Founded 1948. Family-owned, 70+ years experience. Certified Organic, FDA registration (FDA3010063). Supplies buyers worldwide.",
+    "foundedYear": 1948,
+    "certifications": [
+      "USDA_Organic"
+    ],
+    "yearsInBusiness": 70,
+    "growingRegion": "willamette_valley_or"
+  },
+  {
+    "name": "Naumes, Inc.",
+    "state": "OR",
+    "city": "Medford",
+    "licenseNumber": null,
+    "products": [
+      "pears",
+      "apples"
+    ],
+    "website": "https://www.naumesinc.com",
+    "address": null,
+    "phone": null,
+    "source": "Naumes website - ODA certified",
+    "notes": "One of largest family-owned pear growers in US. Home office in Medford handles marketing/sales for OR, WA, CA. Started as WWII veteran packing house. Varieties: Anjou, Bosc, Comice.",
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Rio Fresh, Inc.",
+    "state": "TX",
+    "city": "Mission",
+    "licenseNumber": null,
+    "products": [
+      "vegetables",
+      "produce"
+    ],
+    "website": "https://riofresh.com",
+    "address": null,
+    "phone": null,
+    "source": "Rio Fresh website - TDA FSMA",
+    "notes": "Founded 1970. One of oldest family farming/packing operations in Rio Grande Valley. Primus-GFS certified packing facility on-farm. GAP certified, PrimusGFS audited.",
+    "foundedYear": 1970,
+    "certifications": [
+      "GAP"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Growers Select Produce Inc.",
+    "state": "TX",
+    "city": "Mission",
+    "licenseNumber": null,
+    "products": [
+      "watermelon"
+    ],
+    "website": "https://www.groselpro.com",
+    "address": null,
+    "phone": null,
+    "source": "Growers Select website - TDA",
+    "notes": "Founded 1987 by Bob Dyer. Rio Grande Valley native. Third-party certified farms and packing facilities. Family-owned and operated.",
+    "foundedYear": 1987,
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "J&D Produce",
+    "state": "TX",
+    "city": "Edinburg",
+    "licenseNumber": null,
+    "products": [
+      "vegetables"
+    ],
+    "website": null,
+    "address": null,
+    "phone": null,
+    "source": "Texas Produce Business - TDA",
+    "notes": "One of Texas' largest fresh vegetable growers. Large packing and shipping facility. Thousands of acres throughout lower Rio Grande Valley.",
+    "scaleIndicators": [
+      "largest"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Frontera Produce",
+    "state": "TX",
+    "city": "Edinburg",
+    "licenseNumber": null,
+    "products": [
+      "onions",
+      "chiles",
+      "vegetables"
+    ],
+    "website": null,
+    "address": null,
+    "phone": null,
+    "source": "Texas Produce Business - TDA",
+    "notes": "Grower, shipper, packer. Specializes in Rio Grande Valley produce and imports from Mexico. Focus on locally produced onions and imported chiles.",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "South Georgia Pecan Company",
+    "state": "GA",
+    "city": "Valdosta",
+    "licenseNumber": null,
+    "products": [
+      "pecans"
+    ],
+    "website": "https://georgiapecan.com",
+    "address": null,
+    "phone": null,
+    "source": "South Georgia Pecan website - GDA",
+    "notes": "Founded 1913 as small pecan shelling plant by Pearlman family. Owned by Worn Family since 2015. Expanded Eastern Production Facility plus El Paso, TX facility.",
+    "foundedYear": 1913
+  },
+  {
+    "name": "Sunnyland Farms",
+    "state": "GA",
+    "city": null,
+    "licenseNumber": null,
+    "products": [
+      "pecans"
+    ],
+    "website": "https://www.sunnylandfarms.com",
+    "address": null,
+    "phone": null,
+    "source": "Sunnyland Farms website - GDA",
+    "notes": "1,700-acre pecan farm purchased by Will Willson in 1928. Kosher certified (Atlanta Kashruth Commission): Mammoth/Junior Halves, Large/Small Pieces.",
+    "certifications": [
+      "Kosher"
+    ]
+  },
+  {
+    "name": "Farm Pak / Barnes Farming",
+    "state": "NC",
+    "city": "Spring Hope",
+    "licenseNumber": null,
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": "https://www.farmpak.com",
+    "address": null,
+    "phone": null,
+    "source": "Farm Pak website - NCDA",
+    "notes": "Facilities in Spring Hope and Benson, NC. Multiple storage facilities in eastern NC. 4 packing lines. 20 truckloads refrigeration capacity. 2M bushel temperature-controlled storage. One of most modern vegetable packing firms in US."
+  },
+  {
+    "name": "Boyette Brothers Produce",
+    "state": "NC",
+    "city": "Wilson",
+    "licenseNumber": null,
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": "https://www.boyettebrothersproduce.com",
+    "address": null,
+    "phone": null,
+    "source": "Boyette Brothers website - NCDA",
+    "notes": "Sweet potato packing house with 3 loading docks. 2 dedicated packing lines (stainless steel and organic). Operates 6 days/week. One of first NC sweet potato pack houses with stainless steel line."
+  },
+  {
+    "name": "Scott Farms",
+    "state": "NC",
+    "city": "Lucama",
+    "licenseNumber": null,
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": null,
+    "address": null,
+    "phone": null,
+    "source": "NC Sweet Potato industry - NCDA",
+    "notes": "60,000 sq ft packing and shipping facility opened 2015. Sizes potatoes and packages to retailer/restaurant/foodservice preferences for each country."
+  },
+  {
+    "name": "Millstream Farms",
+    "state": "NC",
+    "city": "Eastern NC",
+    "licenseNumber": null,
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": "http://sweetpotatoesnc.com",
+    "address": null,
+    "phone": null,
+    "source": "Millstream Farms website - NCDA",
+    "notes": "Grower, packer, shipper of NC sweet potatoes. Owned and managed by Chancy family in eastern NC."
+  },
+  {
+    "name": "B & B Produce",
+    "state": "NC",
+    "city": "Benson",
+    "licenseNumber": null,
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": null,
+    "address": null,
+    "phone": null,
+    "source": "NC Sweet Potato industry - NCDA",
+    "notes": "Locally family-owned grower, packer, shipper. Serves wholesale, retail, foodservice, processing markets. USDA Harmonized GAP, Global GAP, GRASP certified.",
+    "certifications": [
+      "GRASP"
+    ]
+  },
+  {
+    "name": "Riveridge Produce Marketing",
+    "state": "MI",
+    "city": "Sparta",
+    "licenseNumber": null,
+    "products": [
+      "cherries",
+      "apples"
+    ],
+    "website": null,
+    "address": null,
+    "phone": null,
+    "source": "MDARD Grant Program - MDARD",
+    "notes": "Received $100K MDARD grant for weigher/batcher on cherry packing line in Grant, MI. Creates efficiencies for more accurate weight packing.",
+    "growingRegion": "southwest_mi"
+  },
+  {
+    "name": "A.L. Johnson & Sons, Inc.",
+    "state": "MI",
+    "city": "Suttons Bay",
+    "licenseNumber": null,
+    "products": [
+      "cherries",
+      "apples"
+    ],
+    "website": null,
+    "address": null,
+    "phone": null,
+    "source": "MDARD Grant Program - MDARD",
+    "notes": "Received $100K MDARD grant for packing/sorting equipment and second packing line in Leroy, MI facility. Generates 6 full-time jobs.",
+    "growingRegion": "traverse_city_mi"
+  },
+  {
+    "name": "Driscoll's, Inc.",
+    "state": "CA",
+    "city": "Watsonville",
+    "licenseNumber": null,
+    "products": [
+      "strawberries",
+      "blueberries",
+      "raspberries",
+      "blackberries"
+    ],
+    "website": "https://www.driscolls.com",
+    "address": null,
+    "phone": null,
+    "source": "Driscoll's website - CDFA licensed",
+    "notes": "Headquarters and R&D in Watsonville. 56 cooling/distribution sites in North/South America. Hand-picked and field-packed (except some blueberries). Santa Maria distribution facility. Operations on 5 continents, 115,000+ farm workers.",
+    "growingRegion": "salinas_valley_ca"
+  },
+  {
+    "name": "Fresh Del Monte Produce Inc.",
+    "state": "FL",
+    "city": "Coral Gables",
+    "licenseNumber": null,
+    "products": [
+      "prepared fruit",
+      "vegetables",
+      "fresh-cut",
+      "juices",
+      "beverages",
+      "snacks"
+    ],
+    "website": "https://freshdelmonte.com",
+    "address": null,
+    "phone": null,
+    "source": "Fresh Del Monte website - multiple states",
+    "notes": "Vertically integrated global producer. 34 facilities in North America. Tricont Trucking/Logistics network. 13 owned vessels. Acquired Mann Packing 2018 (sold to Church Brothers 2025)."
+  },
+  {
+    "name": "Peterson Groves",
+    "state": "FL",
+    "city": "Vero Beach",
+    "region": "Indian River",
+    "products": [
+      "citrus",
+      "grapefruit",
+      "oranges",
+      "tangelos"
+    ],
+    "channels": [
+      "online_shipping",
+      "d2c"
+    ],
+    "website": "https://petersongroves.com/",
+    "source": "LocalHarvest",
+    "notes": "Family owned since 1913, Indian River County 'World's Finest Citrus', prize-winning citrus",
+    "foundedYear": 1913,
+    "growingRegion": "indian_river_fl"
+  },
+  {
+    "name": "Schacht Groves",
+    "state": "FL",
+    "city": "Vero Beach",
+    "region": "Indian River",
+    "products": [
+      "citrus",
+      "oranges",
+      "grapefruit",
+      "tangelos"
+    ],
+    "channels": [
+      "online_shipping",
+      "d2c"
+    ],
+    "website": "https://schachtgroves.com/",
+    "source": "LocalHarvest",
+    "notes": "Family owned since 1950, Indian River groves, FedEx shipping to USA/Canada, shipping included in price",
+    "foundedYear": 1950,
+    "growingRegion": "indian_river_fl"
+  },
+  {
+    "name": "Bee Heaven Farm / Redland Organics",
+    "state": "FL",
+    "city": "Homestead",
+    "region": "Redlands",
+    "products": [
+      "vegetables",
+      "tropical_produce",
+      "organic"
+    ],
+    "channels": [
+      "csa",
+      "farmers_market",
+      "multi_farm_csa"
+    ],
+    "website": "https://www.localharvest.org/bee-heaven-farm-redland-organics-M4119",
+    "source": "LocalHarvest",
+    "notes": "Multi-farm CSA since 2002, Nov-April season, certified organic, historic Redland district",
+    "foundedYear": 2002,
+    "certifications": [
+      "USDA_Organic"
+    ],
+    "growingRegion": "south_fl"
+  },
+  {
+    "name": "Three Sisters Farm",
+    "state": "FL",
+    "city": "Homestead",
+    "region": "Redlands",
+    "products": [
+      "vegetables",
+      "organic",
+      "tropical_produce"
+    ],
+    "channels": [
+      "farm_stand",
+      "agritourism",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest",
+    "notes": "Working natural farm, year-round organic produce, agritourism destination in historic Redland",
+    "growingRegion": "south_fl"
+  },
+  {
+    "name": "Pernas Groves",
+    "state": "FL",
+    "city": "Homestead",
+    "region": "Redlands",
+    "products": [
+      "mango",
+      "avocado"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest",
+    "notes": "Small family farm since 1975, historic Redland farming community, tropical south Florida",
+    "foundedYear": 1975,
+    "growingRegion": "south_fl"
+  },
+  {
+    "name": "Tropical Acres Farms",
+    "state": "FL",
+    "city": "West Palm Beach",
+    "region": "Southeast Florida",
+    "products": [
+      "mango",
+      "avocado",
+      "sapodilla",
+      "tropical_fruit"
+    ],
+    "channels": [
+      "farm_stand",
+      "online_shipping",
+      "d2c"
+    ],
+    "website": "https://www.tropicalacresfarms.com/",
+    "source": "Specialty tropical farms search",
+    "notes": "Retail & wholesale, farm stand, ships nationwide (not to CA/HI), 70+ mango varieties",
+    "growingRegion": "south_fl"
+  },
+  {
+    "name": "Fairchild Farm",
+    "state": "FL",
+    "city": "Homestead",
+    "region": "Redlands",
+    "products": [
+      "mango",
+      "avocado",
+      "jackfruit",
+      "mamey_sapote",
+      "sapodilla"
+    ],
+    "channels": [
+      "online_shipping",
+      "d2c"
+    ],
+    "website": "https://fairchildgarden.org/",
+    "source": "Specialty tropical farms search",
+    "notes": "20-acre working farm, world's largest mango collection, farm-to-table delivery",
+    "scaleIndicators": [
+      "worlds_largest",
+      "largest"
+    ],
+    "growingRegion": "south_fl"
+  },
+  {
+    "name": "Bland Farms",
+    "state": "GA",
+    "city": "Glennville",
+    "region": "Vidalia / South Georgia",
+    "products": [
+      "vidalia_onion"
+    ],
+    "channels": [
+      "online_shipping",
+      "d2c"
+    ],
+    "website": "https://blandfarms.com/",
+    "source": "Vidalia onion directory",
+    "notes": "Vidalia sweet onion specialist, direct-to-consumer shipping",
+    "growingRegion": "vidalia_ga"
+  },
+  {
+    "name": "McLain Farms",
+    "state": "GA",
+    "city": "Lyons",
+    "region": "Vidalia / South Georgia",
+    "products": [
+      "vidalia_onion"
+    ],
+    "channels": [
+      "online_shipping",
+      "d2c"
+    ],
+    "website": "https://mclainfarms.com/",
+    "source": "Vidalia onion directory",
+    "notes": "Multi-generation farm in Lyons GA, award-winning Vidalia onions, ships from Georgia fields"
+  },
+  {
+    "name": "A&M Farms",
+    "state": "GA",
+    "city": "Lyons",
+    "region": "Vidalia / South Georgia",
+    "products": [
+      "vidalia_onion"
+    ],
+    "channels": [
+      "online_shipping",
+      "d2c"
+    ],
+    "website": "https://www.vidaliaonions.com/",
+    "source": "Vidalia onion directory",
+    "notes": "Family owned 30+ years, ships to lower 48 states, Vidalia onion specialist"
+  },
+  {
+    "name": "Shuman Farms",
+    "state": "GA",
+    "city": "Vidalia region",
+    "region": "South Georgia",
+    "products": [
+      "vidalia_onion",
+      "sweet_onion"
+    ],
+    "channels": [
+      "wholesale",
+      "retail"
+    ],
+    "website": "https://www.shumanfarmsga.com/",
+    "source": "Vidalia onion directory",
+    "notes": "Official Sweet Onion of UGA & Georgia Southern, dedicated to highest quality sweet onions"
+  },
+  {
+    "name": "Burton Brooks Orchard Corporation",
+    "state": "GA",
+    "city": "Barney",
+    "region": "South Georgia",
+    "products": [
+      "peach",
+      "pecan",
+      "watermelon",
+      "cantaloupe",
+      "blueberry",
+      "blackberry",
+      "tomato",
+      "vidalia_onion"
+    ],
+    "channels": [
+      "farm_stand",
+      "u_pick"
+    ],
+    "website": null,
+    "source": "Southwest Georgia U-Pick directory",
+    "notes": "Locally grown peaches May-July, vegetables, Vidalia onions, homemade ice cream"
+  },
+  {
+    "name": "Southern Grace Farms",
+    "state": "GA",
+    "city": "Enigma",
+    "region": "South Georgia",
+    "products": [
+      "blackberry",
+      "blueberry",
+      "nectarine",
+      "peach",
+      "plum",
+      "strawberry",
+      "citrus",
+      "muscadine",
+      "grape",
+      "sunflower"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "Southwest Georgia U-Pick directory",
+    "notes": "Diverse fruit production, u-pick and farm stand sales"
+  },
+  {
+    "name": "The Market at Rutland Farms",
+    "state": "GA",
+    "city": "Tifton",
+    "region": "South Georgia",
+    "products": [
+      "blackberry",
+      "blueberry",
+      "cotton",
+      "peach",
+      "strawberry"
+    ],
+    "channels": [
+      "farm_stand",
+      "agritourism"
+    ],
+    "website": null,
+    "source": "Southwest Georgia U-Pick directory",
+    "notes": "Gift shop, concessions, birthday parties, school tours"
+  },
+  {
+    "name": "Fisher's Orchard",
+    "state": "SC",
+    "city": "Greer",
+    "region": "Piedmont / Upstate",
+    "products": [
+      "peach"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": "https://www.fishersorchard.com",
+    "source": "SC peach farms directory",
+    "notes": "Since 1930, u-pick Friday-Sunday 9am-7pm in season, opens late June",
+    "foundedYear": 1930
+  },
+  {
+    "name": "Chappell Farms",
+    "state": "SC",
+    "city": "Barnwell",
+    "region": "Central South Carolina",
+    "products": [
+      "peach"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": "https://chappellfarms.com/",
+    "source": "SC peach farms directory",
+    "notes": "Since 1927, 98+ years, roadside stand 10-6pm, u-pick 7-6pm, cling/semi-free/freestone varieties",
+    "foundedYear": 1927
+  },
+  {
+    "name": "McLeod Farms",
+    "state": "SC",
+    "city": "McBee",
+    "region": "Central South Carolina",
+    "products": [
+      "peach",
+      "pecan"
+    ],
+    "channels": [
+      "farm_stand",
+      "agritourism",
+      "bakery"
+    ],
+    "website": "https://www.macspride.com/",
+    "source": "SC peach farms directory",
+    "notes": "Since 1916, 1,000+ acres, 50+ peach varieties, bakery, ice cream shop, agritourism events",
+    "foundedYear": 1916,
+    "acreage": 1000
+  },
+  {
+    "name": "Chattooga Belle Farm",
+    "state": "SC",
+    "city": "Long Creek",
+    "region": "Upstate / Mountains",
+    "products": [
+      "peach",
+      "apple"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand",
+      "distillery",
+      "agritourism"
+    ],
+    "website": null,
+    "source": "SC peach farms directory",
+    "notes": "U-pick peaches early July, distillery on-site, camping, events, near hiking trails"
+  },
+  {
+    "name": "St. Julien Plantation",
+    "state": "SC",
+    "city": "Eutawville",
+    "region": "Central SC / Lowcountry",
+    "products": [
+      "peach",
+      "corn",
+      "melon",
+      "beans",
+      "tomato",
+      "squash",
+      "cucumber",
+      "peanut",
+      "okra",
+      "nectarine"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "SC peach farms directory",
+    "notes": "Family-run 100+ years, June-mid August, Mon-Sat 8am-6pm, Norris family"
+  },
+  {
+    "name": "Hinnant Farm",
+    "state": "SC",
+    "city": "Eutawville",
+    "region": "Central SC / Lowcountry",
+    "products": [
+      "strawberry",
+      "blackberry",
+      "blueberry",
+      "peach",
+      "corn",
+      "vegetables"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "SC peach farms directory",
+    "notes": "April-August & October, 8am-6pm, strawberries April-June, peaches June-August"
+  },
+  {
+    "name": "Windy Hill Farm",
+    "state": "SC",
+    "city": "Piedmont region",
+    "region": "Piedmont",
+    "products": [
+      "beef",
+      "goat",
+      "vegetables",
+      "blueberry",
+      "flowers"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest SC",
+    "notes": "Grass-fed Black Angus, meat goats, heritage vegetables, cut flowers"
+  },
+  {
+    "name": "Growing Green Family Farms",
+    "state": "SC",
+    "city": "Anderson",
+    "region": "Piedmont / Upstate",
+    "products": [
+      "vegetables",
+      "hydroponic"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest SC",
+    "notes": "Advanced hydroponics, year-round production, no pesticides/herbicides/GMO"
+  },
+  {
+    "name": "Barefoot Farms of Belton",
+    "state": "SC",
+    "city": "Belton",
+    "region": "Piedmont / Upstate",
+    "products": [
+      "vegetables",
+      "dairy",
+      "honey",
+      "eggs"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest SC",
+    "notes": "Naturally grown/chemical-free, raw milk, raw honey, fresh produce and eggs"
+  },
+  {
+    "name": "Dempsey Farms",
+    "state": "SC",
+    "city": "St. Helena Island",
+    "region": "Lowcountry",
+    "products": [
+      "strawberry",
+      "seasonal_produce"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "SC Lowcountry farms",
+    "notes": "60 years, strawberries in April, seasonal produce, near Hunting Island State Park"
+  },
+  {
+    "name": "Drawdy Farms",
+    "state": "SC",
+    "city": "Early Branch",
+    "region": "Lowcountry",
+    "products": [
+      "vegetables",
+      "fruit",
+      "seasonal"
+    ],
+    "channels": [
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "SC Lowcountry farms",
+    "notes": "Year-round farm stand, locally grown fruits and vegetables, family-owned"
+  },
+  {
+    "name": "Okatee River Farms",
+    "state": "SC",
+    "city": "Bluffton",
+    "region": "Lowcountry",
+    "products": [
+      "vegetables",
+      "fruit"
+    ],
+    "channels": [
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "SC Lowcountry farms",
+    "notes": "Small family farm, local produce, 1/2 mile from Hwy 278"
+  },
+  {
+    "name": "Spade & Clover Gardens",
+    "state": "SC",
+    "city": "Johns Island",
+    "region": "Lowcountry",
+    "products": [
+      "carrot",
+      "beet",
+      "cabbage",
+      "lettuce",
+      "spinach",
+      "ginger",
+      "turmeric"
+    ],
+    "channels": [
+      "csa",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "SC Lowcountry farms",
+    "notes": "12-acre Johns Island farm, 11+ years operation, vibrantly-hued vegetables"
+  },
+  {
+    "name": "Freeman Produce",
+    "state": "SC",
+    "city": "Johns Island",
+    "region": "Lowcountry",
+    "products": [
+      "strawberry",
+      "okra",
+      "butter_beans",
+      "potato",
+      "seasonal"
+    ],
+    "channels": [
+      "farm_stand",
+      "wholesale"
+    ],
+    "website": null,
+    "source": "SC Lowcountry farms",
+    "notes": "Johns Island farm, seasonal vegetables"
+  },
+  {
+    "name": "Sandhills Farm to Table Cooperative",
+    "state": "NC",
+    "city": "Pinehurst area",
+    "region": "Sandhills",
+    "products": [
+      "vegetables",
+      "fruit",
+      "meat",
+      "cheese",
+      "honey",
+      "baked_goods"
+    ],
+    "channels": [
+      "csa",
+      "multi_farm_csa",
+      "delivery"
+    ],
+    "website": "https://www.localharvest.org/sandhills-farm-to-table-cooperative-M34237",
+    "source": "LocalHarvest NC",
+    "notes": "Multi-farm CSA, co-op owned by farmers/consumers/staff, 20+ local farmers, mid-April to mid-November"
+  },
+  {
+    "name": "Riley's Ranch",
+    "state": "NC",
+    "city": "Carthage",
+    "region": "Sandhills",
+    "products": [
+      "beef",
+      "poultry",
+      "eggs"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": "https://www.localharvest.org/rileys-ranch-M56577",
+    "source": "LocalHarvest NC",
+    "notes": "175-acre family farm, Shorthorn & Black Angus cattle, heritage chickens, sustainable farming"
+  },
+  {
+    "name": "Hickory Nut Gap Farm",
+    "state": "NC",
+    "city": "Asheville area",
+    "region": "Mountains / WNC",
+    "products": [
+      "beef",
+      "pork",
+      "chicken"
+    ],
+    "channels": [
+      "csa",
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest NC",
+    "notes": "100% grassfed beef, pastured pork & chicken, available by cut/bulk/CSA"
+  },
+  {
+    "name": "Hominy Valley Farms",
+    "state": "NC",
+    "city": "Candler",
+    "region": "Mountains / WNC",
+    "products": [
+      "beef",
+      "chicken",
+      "vegetables"
+    ],
+    "channels": [
+      "csa",
+      "farmers_market"
+    ],
+    "website": null,
+    "source": "LocalHarvest NC",
+    "notes": "Multi-generational family farm, natural beef on pasture, pastured broiler chickens, CSA program"
+  },
+  {
+    "name": "Fickle Creek Farm",
+    "state": "NC",
+    "city": "North Carolina Piedmont",
+    "region": "Piedmont",
+    "products": [
+      "vegetables",
+      "meat"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest NC",
+    "notes": "Diversified small-scale farm, farm fresh veggies and meats"
+  },
+  {
+    "name": "Harland's Creek Farm",
+    "state": "NC",
+    "city": "Pittsboro",
+    "region": "Piedmont",
+    "products": [
+      "vegetables",
+      "flowers",
+      "herbs",
+      "organic"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest NC",
+    "notes": "Certified organic, Alston-Degraffenried House (national historic site) on property",
+    "certifications": [
+      "USDA_Organic"
+    ]
+  },
+  {
+    "name": "Greene's Blueberry Patch",
+    "state": "NC",
+    "city": "Boone",
+    "region": "Mountains / High Country",
+    "products": [
+      "blueberry"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "NC blueberry directory",
+    "notes": "235 bushes, natural growing, ripens mid-July to end August, picnic area"
+  },
+  {
+    "name": "Avery Farms",
+    "state": "NC",
+    "city": "Plumtree",
+    "region": "Mountains / Blue Ridge",
+    "products": [
+      "raspberry",
+      "strawberry",
+      "blueberry",
+      "blackberry",
+      "christmas_trees"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "NC blueberry directory",
+    "notes": "U-pick June-first frost, ciders/syrups/jams/jellies/vinaigrettes from farm fruits"
+  },
+  {
+    "name": "Brushy Mountain Berry Farm",
+    "state": "NC",
+    "city": "Moravian Falls",
+    "region": "Piedmont / Foothills",
+    "products": [
+      "blueberry",
+      "blackberry",
+      "eggs"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "NC blueberry directory",
+    "notes": "Mountain backdrop, wild blackberries, farm-fresh eggs, seasonal produce, jams, syrups, baked goods"
+  },
+  {
+    "name": "The Berry Farm",
+    "state": "NC",
+    "city": "Marshall",
+    "region": "Mountains / WNC",
+    "products": [
+      "black_raspberry",
+      "blackberry",
+      "blueberry",
+      "red_raspberry"
+    ],
+    "channels": [
+      "u_pick"
+    ],
+    "website": null,
+    "source": "NC blueberry directory",
+    "notes": "Madison County, black raspberries June, blackberries/blueberries July, red raspberries August"
+  },
+  {
+    "name": "Pilot Mountain Fresh Berries",
+    "state": "NC",
+    "city": "Pilot Mountain",
+    "region": "Piedmont / Foothills",
+    "products": [
+      "blueberry"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "NC blueberry directory",
+    "notes": "No pesticides, u-pick Mon-Fri, pre-picked Wed-Fri 9am-3pm, snacks/refreshments"
+  },
+  {
+    "name": "Muzzarelli Farms",
+    "state": "NC",
+    "city": "NC Coastal Plains/Sandhills",
+    "region": "Coastal Plains / Sandhills",
+    "products": [
+      "sweet_potato",
+      "organic"
+    ],
+    "channels": [
+      "wholesale",
+      "retail"
+    ],
+    "website": "https://www.muzzarellifarms.com/",
+    "source": "NC sweet potato directory",
+    "notes": "Organic sweet potatoes, NC retail & wholesale, state vegetable of NC"
+  },
+  {
+    "name": "Sullivan Farms",
+    "state": "NC",
+    "city": "NC region",
+    "region": "Coastal Plains / Sandhills",
+    "products": [
+      "sweet_potato"
+    ],
+    "channels": [
+      "d2c",
+      "farm_stand"
+    ],
+    "website": "http://www.sullivanfarmsinc.com/",
+    "source": "NC sweet potato directory",
+    "notes": "500 acres Covington sweet potatoes, hand-picked, locally grown, $18/40lb box",
+    "acreage": 500
+  },
+  {
+    "name": "Strawberries on 903",
+    "state": "NC",
+    "city": "Greenville",
+    "region": "Coastal Plains",
+    "products": [
+      "strawberry",
+      "vegetables",
+      "flowers",
+      "eggs"
+    ],
+    "channels": [
+      "u_pick",
+      "farm_stand"
+    ],
+    "website": "https://strawberrieson903.com/",
+    "source": "NC strawberry directory",
+    "notes": "NC Certified Roadside Farm Market, pre-picked & u-pick strawberries, cut flowers, plants"
+  },
+  {
+    "name": "Underwood Pecan Farm",
+    "state": "AL",
+    "city": "Summerdale",
+    "region": "Gulf Coast / Baldwin County",
+    "products": [
+      "pecan"
+    ],
+    "channels": [
+      "farm_stand",
+      "online_shipping"
+    ],
+    "website": "https://www.underwoodpecanfarm.com/",
+    "source": "Alabama pecan directory",
+    "notes": "Since 1980s, Pecan Barn farm stand, orchards in Summerdale & Foley, shelled/unshelled/roasted/coffee/pie",
+    "foundedYear": 1980
+  },
+  {
+    "name": "B & B Pecan Company",
+    "state": "AL",
+    "city": "Fairhope",
+    "region": "Gulf Coast / Baldwin County",
+    "products": [
+      "pecan"
+    ],
+    "channels": [
+      "farm_stand",
+      "online_shipping",
+      "mail_order"
+    ],
+    "website": null,
+    "source": "Alabama pecan directory",
+    "notes": "Family owned since 1956, 69 years, 'Direct from the farm. Because we ARE the farm.' 13 candied varieties",
+    "foundedYear": 1956
+  },
+  {
+    "name": "Bayou Pecan Company",
+    "state": "AL",
+    "city": "Bayou La Batre",
+    "region": "Gulf Coast",
+    "products": [
+      "pecan"
+    ],
+    "channels": [
+      "d2c",
+      "online_shipping"
+    ],
+    "website": "https://bayoupecanco.com/",
+    "source": "Alabama pecan directory",
+    "notes": "Family owned, multi-generational, Mississippi Sound location, North America's only native nut"
+  },
+  {
+    "name": "Price Pecan Farm",
+    "state": "AL",
+    "city": "Baldwin County",
+    "region": "Gulf Coast / Baldwin County",
+    "products": [
+      "pecan"
+    ],
+    "channels": [
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "Alabama pecan directory / Sweet Grown Alabama",
+    "notes": "Family owned since mid-1970s, SE Baldwin County near Perdido Bay, open Mon-Sat year-round",
+    "foundedYear": 1970
+  },
+  {
+    "name": "Futral Farms",
+    "state": "AL",
+    "city": "East Alabama",
+    "region": "East Alabama",
+    "products": [
+      "pecan"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": "https://www.futralfarms.com/",
+    "source": "Alabama pecan directory",
+    "notes": "11 pecan varieties, East Alabama's premier pecan grower",
+    "scaleIndicators": [
+      "premier"
+    ]
+  },
+  {
+    "name": "1818 Farms",
+    "state": "AL",
+    "city": "Mooresville",
+    "region": "North Alabama / Tennessee Valley",
+    "products": [
+      "sheep",
+      "goat",
+      "eggs",
+      "pork",
+      "agritourism"
+    ],
+    "channels": [
+      "agritourism",
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "North Alabama Agriculture Adventures Trail",
+    "notes": "Historic village (pop. 58), Babydoll Southdown sheep, Nubian goat, heritage animals, 3 acres",
+    "acreage": 3
+  },
+  {
+    "name": "Reeves Farm",
+    "state": "AL",
+    "city": "Hartselle",
+    "region": "North Alabama / Tennessee Valley",
+    "products": [
+      "peach",
+      "fruit",
+      "vegetables"
+    ],
+    "channels": [
+      "farm_stand",
+      "u_pick"
+    ],
+    "website": null,
+    "source": "North Alabama Agriculture Adventures Trail",
+    "notes": "Land settled 1835, peach orchards since 1959, 4 generations 60+ years",
+    "foundedYear": 1959
+  },
+  {
+    "name": "LouAllen Farms",
+    "state": "AL",
+    "city": "Moulton",
+    "region": "North Alabama / Tennessee Valley",
+    "products": [
+      "strawberry",
+      "peach",
+      "tomato",
+      "pepper",
+      "eggplant",
+      "cabbage",
+      "squash",
+      "cucumber"
+    ],
+    "channels": [
+      "farm_stand",
+      "plant_sales"
+    ],
+    "website": null,
+    "source": "North Alabama Agriculture Adventures Trail",
+    "notes": "Family-owned, strawberry/peach specialty, vegetable plants, seasonal produce"
+  },
+  {
+    "name": "Esneul Farms",
+    "state": "AL",
+    "city": "Gulf Coast area",
+    "region": "Gulf Coast",
+    "products": [
+      "beef"
+    ],
+    "channels": [
+      "csa",
+      "farm_shares"
+    ],
+    "website": null,
+    "source": "LocalHarvest AL",
+    "notes": "Grass-fed Black Angus beef shares, all steers born & raised on farm"
+  },
+  {
+    "name": "Shipshape Urban Farms",
+    "state": "AL",
+    "city": "Irvington",
+    "region": "Gulf Coast",
+    "products": [
+      "vegetables",
+      "hydroponic"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest AL",
+    "notes": "52 weeks/year production, hydroponic methods, upcycled shipping containers & greenhouses"
+  },
+  {
+    "name": "Weeks Bay Plantation",
+    "state": "AL",
+    "city": "Baldwin County",
+    "region": "Gulf Coast",
+    "products": [
+      "blueberry"
+    ],
+    "channels": [
+      "u_pick"
+    ],
+    "website": null,
+    "source": "LocalHarvest AL",
+    "notes": "One of largest u-pick blueberry farms in Alabama, 12+ acres, pursuing USDA organic",
+    "acreage": 12,
+    "certifications": [
+      "USDA_Organic"
+    ],
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Hickman's Farm",
+    "state": "AL",
+    "city": "North Alabama",
+    "region": "Tennessee Valley",
+    "products": [
+      "eggs",
+      "vegetables",
+      "pickles"
+    ],
+    "channels": [
+      "farm_stand",
+      "d2c"
+    ],
+    "website": null,
+    "source": "LocalHarvest AL",
+    "notes": "North Alabama & South Tennessee, free-range eggs, 1-acre garden, homemade pickled products"
+  },
+  {
+    "name": "Flying S Land & Livestock",
+    "state": "AL",
+    "city": "North Alabama",
+    "region": "Tennessee Valley",
+    "products": [
+      "beef",
+      "sheep"
+    ],
+    "channels": [
+      "d2c",
+      "farm_direct"
+    ],
+    "website": null,
+    "source": "LocalHarvest AL",
+    "notes": "Family-owned, 100% grass-fed & finished Black Angus beef, Katahdin sheep breeding stock"
+  },
+  {
+    "name": "Duncan Farms",
+    "state": "AL",
+    "city": "Gurley",
+    "region": "Tennessee Valley",
+    "products": [
+      "vegetables",
+      "permaculture"
+    ],
+    "channels": [
+      "farm_stand"
+    ],
+    "website": null,
+    "source": "LocalHarvest AL",
+    "notes": "60-acre permaculture family farm near Huntsville, sustainable practices"
+  },
+  {
+    "name": "Mountain View Fruit Sales",
+    "state": "CA",
+    "city": "Reedley",
+    "products": [
+      "peach",
+      "nectarine",
+      "plum",
+      "pluot"
+    ],
+    "website": "https://mvfruit.com",
+    "region": "Central Valley",
+    "established": 1994,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Brandt Farms",
+    "state": "CA",
+    "city": "Reedley",
+    "products": [
+      "peach",
+      "nectarine",
+      "plum",
+      "grape",
+      "persimmon",
+      "orange",
+      "mandarin",
+      "kiwi"
+    ],
+    "website": "https://www.brandtfarms.com",
+    "region": "Central Valley",
+    "established": 1941,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Kings River Packing",
+    "state": "CA",
+    "city": "Sanger",
+    "products": [
+      "orange",
+      "mandarin",
+      "lemon",
+      "grapefruit",
+      "minneola",
+      "cara cara"
+    ],
+    "website": "https://kingorange.com",
+    "region": "Central Valley",
+    "established": 1977,
+    "note": "8 generations, farming since 1800s",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Cecelia Packing Corporation",
+    "state": "CA",
+    "city": "Orange Cove",
+    "products": [
+      "orange",
+      "mandarin",
+      "tangelo",
+      "tangerine",
+      "lemon",
+      "grapefruit"
+    ],
+    "website": "https://ceceliapack.com",
+    "region": "Central Valley",
+    "established": 1988,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Porterville Citrus, Inc.",
+    "state": "CA",
+    "city": "Porterville",
+    "products": [
+      "orange",
+      "mandarin",
+      "lemon",
+      "grapefruit",
+      "tangelo",
+      "cara cara"
+    ],
+    "website": "https://portervillecitrus.com",
+    "region": "Central Valley",
+    "established": 1992,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "California Fruit Depot",
+    "state": "CA",
+    "city": "Bakersfield",
+    "products": [
+      "orange",
+      "mandarin",
+      "tangelo",
+      "lemon",
+      "sweet lime"
+    ],
+    "website": "https://www.calfruitdepot.com",
+    "region": "Central Valley",
+    "established": 2003,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Wonderful Citrus",
+    "state": "CA",
+    "city": "Lost Hills",
+    "products": [
+      "orange",
+      "mandarin",
+      "grapefruit",
+      "lemon"
+    ],
+    "website": "https://www.wonderfulcitrus.com",
+    "region": "Central Valley",
+    "note": "75 years experience, largest citrus grower in America",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Grapeman Farms",
+    "state": "CA",
+    "city": "Bakersfield",
+    "products": [
+      "table grape"
+    ],
+    "website": "https://grapeman.com",
+    "region": "Central Valley",
+    "established": 1974,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Sunview Marketing",
+    "state": "CA",
+    "city": "Delano",
+    "products": [
+      "table grape"
+    ],
+    "website": "https://sunviewmarketing.com",
+    "region": "Central Valley",
+    "established": 1950,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Royal Madera Vineyards",
+    "state": "CA",
+    "city": "Madera",
+    "products": [
+      "table grape"
+    ],
+    "website": "https://www.royalmaderavineyards.com",
+    "region": "Central Valley",
+    "established": 1970,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Wonderful Pistachios",
+    "state": "CA",
+    "city": "Lost Hills",
+    "products": [
+      "pistachio",
+      "almond"
+    ],
+    "website": "https://www.wonderfulpistachios.com",
+    "region": "Central Valley",
+    "established": 1989,
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Setton Farms (Setton Pistachio)",
+    "state": "CA",
+    "city": "Terra Bella",
+    "products": [
+      "pistachio"
+    ],
+    "website": "https://www.settonfarms.com",
+    "region": "Central Valley",
+    "note": "5 facilities, 250+ million pounds processing capacity"
+  },
+  {
+    "name": "Hansen Ranches",
+    "state": "CA",
+    "city": "Corcoran",
+    "products": [
+      "pistachio",
+      "almond",
+      "pomegranate",
+      "cotton"
+    ],
+    "website": "https://www.hansenranches.com",
+    "region": "Central Valley",
+    "established": 1907,
+    "note": "5th generation farming, 20,000+ acres"
+  },
+  {
+    "name": "California Almond Packers & Exporters (CAPEX)",
+    "state": "CA",
+    "city": "Corning",
+    "products": [
+      "almond",
+      "walnut"
+    ],
+    "website": "https://capex.apesteve.com",
+    "region": "Northern Valley",
+    "established": 1986
+  },
+  {
+    "name": "Peach on Earth Farm",
+    "state": "CA",
+    "city": "Fresno",
+    "products": [
+      "peach",
+      "plum",
+      "nectarine"
+    ],
+    "website": null,
+    "region": "Central Valley",
+    "note": "Minority-owned, family farm",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Fowler Packing - Peelz Citrus Brand",
+    "state": "CA",
+    "city": "Fresno",
+    "products": [
+      "mandarin orange"
+    ],
+    "website": "https://fowlerpacking.com",
+    "region": "Central Valley",
+    "note": "Parent company Fowler Packing",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Jim Durbin Farms",
+    "state": "AL",
+    "city": "Clanton",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches"
+    ],
+    "website": "https://jimdurbinfarms.com/",
+    "phone": "205-755-4203",
+    "notes": "One of the five largest peach growers in Alabama. Only large-scale peach packaging operation in the state. Ships Sunshine brand peaches to major wholesalers including Walmart, Bruno's, and Winn-Dixie. On-site packing shed with processing and packing capability. About 600 acres of fruit. Ships throughout eastern United States.",
+    "acreage": 600,
+    "scaleIndicators": [
+      "largest",
+      "major"
+    ]
+  },
+  {
+    "name": "Bentley Farms",
+    "state": "AL",
+    "city": "Thorsby",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches",
+      "nectarines",
+      "sweet potatoes"
+    ],
+    "website": null,
+    "phone": "800-489-3762",
+    "notes": "One of the five largest peach growers in Alabama. Packs and ships produce for out-of-state sale. Located at 20466 US Highway 31 South, Thorsby, AL. Commercial packinghouse operation.",
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Culp Fruits",
+    "state": "AL",
+    "city": "Jemison",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches"
+    ],
+    "website": "http://www.culpfruits.com/",
+    "phone": "205-688-4553",
+    "notes": "One of the five largest peach growers in Alabama. Charles Culp began growing peaches in 1951. Now farms 100 acres of orchards. Commercial packing operations. Located at 11602 County Road 51, Exit 219 off I-65 in Jemison.",
+    "acreage": 100,
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Sirmon Farms (Sweet Potato Processing Facility)",
+    "state": "AL",
+    "city": "Daphne",
+    "region": "South (Baldwin County)",
+    "products": [
+      "sweet potatoes",
+      "corn",
+      "cotton",
+      "peanuts",
+      "hydroponic lettuce"
+    ],
+    "website": "https://sirmonfarms.com/",
+    "phone": "251-621-1532",
+    "notes": "One of the largest sweet potato processing facilities in the South. Family-run for over 5 generations, began in early 1900s. GAP Certified. Over 4,500 acres in Baldwin County. Modern processing: washer, sorting conveyors, grading line. Packs in forty-pound boxes. Wholesale distribution to grocery store warehouses and restaurants. Hours: Mon-Fri 8am-5pm, closed weekends.",
+    "acreage": 4500,
+    "certifications": [
+      "GAP"
+    ],
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Wildfork Blueberries",
+    "state": "AL",
+    "city": "Brewton",
+    "region": "South (Escambia County)",
+    "products": [
+      "blueberries"
+    ],
+    "website": "https://wildforkblueberries.com/",
+    "phone": null,
+    "notes": "The largest commercial wholesale blueberry farm in the State of Alabama. 60-acre farm. Wholesale distributor. Mailing address: 30530 Middle Creek Cir, Spanish Fort, AL 36527. Physical address: 3070 Hammac Rd, Brewton, AL 36426. Sales team available through website contact form.",
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Regional Produce Distributors, LLC",
+    "state": "AL",
+    "city": "Birmingham",
+    "region": "Central (Jefferson County)",
+    "products": [
+      "fresh produce",
+      "dairy products"
+    ],
+    "website": "https://regionalproduce.net/",
+    "phone": "205-324-4569",
+    "notes": "Alabama's premier foodservice distributor. 30,000 square foot state-of-the-art facility. Located at 624 16th Avenue West, Birmingham, AL 35204. Serves foodservice industry. Alternative phone: 800-726-0711. Hours: 4am-3pm daily.",
+    "scaleIndicators": [
+      "premier"
+    ]
+  },
+  {
+    "name": "Forestwood Farm Inc",
+    "state": "AL",
+    "city": "Birmingham",
+    "region": "Central (Jefferson County)",
+    "products": [
+      "fresh produce",
+      "vegetables",
+      "fruits",
+      "dairy products",
+      "eggs"
+    ],
+    "website": "https://www.forestwood.com/",
+    "phone": "205-252-4139",
+    "notes": "Family-owned wholesale produce distributor. Started as poultry farm in Dora, AL. Now serves three-fourths of Alabama. Two main warehouses: Birmingham (4101 Coalburg Road, P.O. Box 310728) and Huntsville (256-536-9083). Serves restaurants, schools, military facilities across Southeast. Also has Jackson, TN location (731-513-5353)."
+  },
+  {
+    "name": "Forestwood Farm (Huntsville Location)",
+    "state": "AL",
+    "city": "Huntsville",
+    "region": "North (Madison County)",
+    "products": [
+      "fresh produce",
+      "vegetables",
+      "fruits",
+      "dairy products",
+      "eggs"
+    ],
+    "website": "https://www.forestwood.com/",
+    "phone": "256-536-9083",
+    "notes": "Regional distribution warehouse for Forestwood Farm. Located at 2105 Langford Ave. NW, Huntsville, AL 35807. Serves restaurants, schools, military facilities and other institutional buyers across Southeast."
+  },
+  {
+    "name": "Peach Park",
+    "state": "AL",
+    "city": "Clanton",
+    "region": "Central (Chilton County)",
+    "products": [
+      "peaches",
+      "produce",
+      "farm market products"
+    ],
+    "website": null,
+    "phone": "205-755-5065",
+    "notes": "Family-owned and operated business opened in 1984. Farm market that grows own peaches and produce. Also purchases and sells products from local farmers. Located at 2300 7th Street South, Clanton, AL 35046. Includes barbecue restaurant, bakery, gift shop, boutique. Open seasonally Presidents' Day through Christmas. Hours: Mon-Fri 10am-5pm, Sat-Sun 10am-6pm.",
+    "foundedYear": 1984
+  },
+  {
+    "name": "Reeves Peach Farm",
+    "state": "AL",
+    "city": "Hartselle",
+    "region": "North (Madison County)",
+    "products": [
+      "peaches",
+      "crops"
+    ],
+    "website": "https://www.reevespeaches.com/",
+    "phone": "256-773-9479",
+    "notes": "Historic farm settled in 1835 by Thomas 'Jack' Reeves. Located at 334 Highway 36 E, Hartselle, AL 35640. Large variety of crops with special focus on peaches. Hours: Mon-Sat 9am-6pm, Sun 12pm-6pm."
+  },
+  {
+    "name": "First Fruit Farms Inc",
+    "state": "AL",
+    "city": "Birmingham",
+    "region": "Central (Jefferson County)",
+    "products": [
+      "fresh produce",
+      "fruits"
+    ],
+    "website": "http://www.firstfruitfarms.com/",
+    "phone": "205-980-2330",
+    "notes": "Founded in 2002. Located at 4898 Valleydale Rd, Birmingham, AL 35242. Contact: Randy Griffin. Estimated annual revenue $391,994. Approximately 3 employees."
+  },
+  {
+    "name": "Muzzarelli Farms (Curing/Packing Facility for Sweet Potatoes)",
+    "state": "AL",
+    "city": "Vineland",
+    "region": "Out of State (NJ-based, serves AL)",
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": "https://www.muzzarellifarms.com/",
+    "phone": "856-691-2497",
+    "notes": "New Jersey-based company with sweet potato packing operations serving Alabama. 20,000 sq. ft. packing facility capable of processing 20 cases per minute during peak operations. Certified Organic sweet potatoes selected, planted, sorted, sized, and packed by hand. Uses environmentally controlled curing facility. Address: 3460 Oak Road, Vineland, NJ 08360. Fax: 856-692-9007. Serves Alabama and numerous other US states.",
+    "certifications": [
+      "USDA_Organic"
+    ]
+  },
+  {
+    "name": "Oakes Farms (Flat Rock, Alabama Operation)",
+    "state": "AL",
+    "city": "Flat Rock",
+    "region": "Central/South",
+    "products": [
+      "grower-packer-shipper",
+      "fresh produce",
+      "fruits",
+      "vegetables"
+    ],
+    "website": "https://oakesfarms.com/",
+    "phone": null,
+    "notes": "Oakes Farms expanding farming operations in Alabama. New farm operation and facility in Flat Rock, Alabama as part of becoming a 52-week Grower, Packer, and Shipper. Company headquarters: Naples, FL. Contact main office for Flat Rock facility details."
+  },
+  {
+    "name": "Alabama Sweet Potato Growers Association",
+    "state": "AL",
+    "city": "Multiple",
+    "region": "Statewide",
+    "products": [
+      "sweet potatoes"
+    ],
+    "website": null,
+    "phone": null,
+    "notes": "Industry organization representing collective farmers, packers, shippers with vested interest in sweet potato industry from Alabama and Tennessee. Works closely with Auburn University Horticulture Research and Experiment Station and Alabama Ag and Industries."
+  },
+  {
+    "name": "Alabama Fruit and Vegetable Growers Association (AFVGA)",
+    "state": "AL",
+    "city": "Montgomery",
+    "region": "Central",
+    "products": [
+      "peaches",
+      "strawberries",
+      "blueberries",
+      "sweet potatoes",
+      "pumpkins",
+      "squash",
+      "tomatoes",
+      "watermelons",
+      "sweet corn",
+      "pecans"
+    ],
+    "website": "https://www.afvga.org/",
+    "phone": "334-301-4392",
+    "notes": "Trade organization promoting, advancing, and protecting growing, harvesting and marketing of fruits and vegetables. Located at 2108 East South Boulevard, Montgomery, AL 36116. Email: bthaxton@alfafarmers.org. Represents growers throughout Alabama producing specialty crops."
+  },
+  {
+    "name": "Kimball & Thompson Produce Company",
+    "state": "AR",
+    "city": "Lowell",
+    "region": "Northwest Arkansas",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables",
+      "Mixed produce"
+    ],
+    "website": "https://www.ktproduce.com/",
+    "phone": "(479) 872-0200",
+    "notes": "Major produce distributor with 22,055 sq ft warehouse in Lowell. Additional facilities in Oklahoma City (9,000 sq ft) and North Little Rock (10,000 sq ft). Operates Monday-Friday 7am-4pm CST. Holds $165 million military and school supply contracts. Five-generation family business.",
+    "scaleIndicators": [
+      "major"
+    ]
+  },
+  {
+    "name": "Matthews Ridgeview Farms",
+    "state": "AR",
+    "city": "Wynne",
+    "region": "East Arkansas (Phillips County)",
+    "products": [
+      "Sweet potatoes",
+      "Yams"
+    ],
+    "website": "https://www.arsweetpotatoes.com/",
+    "phone": "(870) 238-8828",
+    "notes": "Largest grower/packer/shipper of sweet potatoes in Arkansas. State-of-the-art automated packing facility with electronic sizing line. Warehouse facility employs 80+ workers. Cold storage for entire crop. Sells over 1 million bushels annually to major retailers. Year-round supply for retail and wholesale. Seasonal shipping starts mid-to-late September. Family-owned with 100+ years history, operating since 2006 as Matthews Ridgeview Farms.",
+    "foundedYear": 2006,
+    "scaleIndicators": [
+      "largest",
+      "major"
+    ]
+  },
+  {
+    "name": "Proffer Wholesale Produce",
+    "state": "AR",
+    "city": "Crossett",
+    "region": "Southeast Arkansas (Ashley County)",
+    "products": [
+      "Tomatoes",
+      "Green peppers",
+      "Cucumbers",
+      "Eggplant",
+      "Okra",
+      "Yellow squash",
+      "Zucchini",
+      "Chili peppers",
+      "Cabbage",
+      "Corn",
+      "Winter squash"
+    ],
+    "website": "https://www.profferproduce.com/",
+    "phone": "(573) 431-0625",
+    "notes": "Operating 50+ years with farm and cold storage facility in Crossett. Full-service packinghouse in Park Hills, Missouri for custom packaging. Harvest season May-October. Seven-day availability. Sales representatives available 7am-5pm. Email: tiffany@profferproduce.com"
+  },
+  {
+    "name": "Barnhill Orchards",
+    "state": "AR",
+    "city": "Lonoke",
+    "region": "Central Arkansas (Lonoke County)",
+    "products": [
+      "Strawberries",
+      "Blackberries",
+      "Blueberries",
+      "Peaches",
+      "Watermelons",
+      "Cantaloupes",
+      "Summer vegetables"
+    ],
+    "website": "https://www.barnhillorchards.com/",
+    "phone": "(501) 286-2677",
+    "notes": "Family-owned sustainable farm established in 1980 by retired Air Force Lt. Col. Bob Barnhill. Hand-picked and hand-sorted produce for quality assurance. Strawberries available April, followed by blackberries, blueberries, peaches, then watermelons and cantaloupes in summer. On-farm sales Thursday-Sunday 9am-5:30pm. Email: barnhillorchards@aol.com",
+    "foundedYear": 1980
+  },
+  {
+    "name": "Arkansas Natural Produce",
+    "state": "AR",
+    "city": "Malvern",
+    "region": "Central Arkansas (Hot Spring County)",
+    "products": [
+      "Salad greens",
+      "Baby greens",
+      "Fresh herbs",
+      "Seasonal vegetables"
+    ],
+    "website": "https://www.arkansasnaturalproduce.com/",
+    "phone": "(501) 865-1331",
+    "notes": "Year-round greenhouse facility specializing in salad greens with seasonal vegetables. In business since 1988. Delivers to Little Rock and Hot Springs markets year-round. Over 50,000 sq ft of heated greenhouse space. Owners: Jay and Deanna Fulbright.",
+    "foundedYear": 1988
+  },
+  {
+    "name": "Peebles Organic Farms LLC",
+    "state": "AR",
+    "city": "Augusta",
+    "region": "Southeast Arkansas (Woodruff County)",
+    "products": [
+      "Organic edamame",
+      "Green beans",
+      "Sweet potatoes",
+      "Processor pumpkins",
+      "Corn",
+      "Rice",
+      "Soybeans",
+      "Watermelon",
+      "Wheat"
+    ],
+    "website": "https://www.peeblesorganics.com/",
+    "phone": "(870) 347-2044",
+    "notes": "800-acre organic vegetable farm. USDA Organic certified. Retail and wholesale operations. Season: July-November. Processes pumpkins and produces certified organic edamame and green beans. Also operates Peebles Farm with corn maze and U-pick attractions.",
+    "certifications": [
+      "USDA_Organic"
+    ]
+  },
+  {
+    "name": "Liberty Fruit Company",
+    "state": "AR",
+    "city": "Multiple locations",
+    "region": "Midwest distribution (AR, IL, IA, KS, MO, NE, OK, SD)",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables",
+      "USDA Organic",
+      "Custom-cut produce",
+      "Made-to-order fresh-cut products"
+    ],
+    "website": "https://www.libertyfruit.com/",
+    "phone": "Not listed",
+    "notes": "Founded 1965. Acquired by Russ Davis Wholesale. 350+ dedicated employees. Hand-selects premium fruits and vegetables with custom repacking to specifications. Offers bagging, overwraps, labeling, fresh daily. SQF Level 3 Version 7.2 Certified, HAACP Compliant, Kosher. Next-day delivery. Serves wholesale, retail, and foodservice customers across seven states.",
+    "foundedYear": 1965,
+    "certifications": [
+      "Kosher"
+    ]
+  },
+  {
+    "name": "Muzzarelli Farms (Arkansas Operations)",
+    "state": "AR",
+    "city": "Various",
+    "region": "Statewide",
+    "products": [
+      "Sweet potatoes",
+      "Yams",
+      "Seasonal greens",
+      "Kale",
+      "Peppers",
+      "Grape tomatoes",
+      "Plum tomatoes",
+      "Pickles",
+      "Cucumbers"
+    ],
+    "website": "https://www.muzzarellifarms.com/",
+    "phone": "(856) 691-2497",
+    "notes": "New Jersey-based producer with wholesale operations serving Arkansas. Growing, packing, shipping and wholesale distribution. Currently accepting bulk orders for 2025 growing season. Email: cmuzzarelli1037@gmail.com. Alternative phone: (856) 207-1037"
+  },
+  {
+    "name": "Lexington Produce Terminal",
+    "state": "KY",
+    "city": "Lexington",
+    "region": "Central Kentucky (Bluegrass)",
+    "products": [
+      "vegetables",
+      "fruits",
+      "produce",
+      "seasonal produce"
+    ],
+    "website": "Not available",
+    "phone": "Contact Lexington-Fayette Government",
+    "notes": "Major produce terminal facility serving central Kentucky region",
+    "scaleIndicators": [
+      "major"
+    ]
+  },
+  {
+    "name": "Warren County Produce Cooperative",
+    "state": "KY",
+    "city": "Bowling Green",
+    "region": "South-Central Kentucky",
+    "products": [
+      "vegetables",
+      "melons",
+      "squash",
+      "cucumbers",
+      "tomatoes"
+    ],
+    "website": "Not available",
+    "phone": "Not available",
+    "notes": "Cooperative packing facility for local produce growers in Warren County area"
+  },
+  {
+    "name": "Kentucky Apple Association Member Facilities",
+    "state": "KY",
+    "city": "Multiple locations",
+    "region": "Eastern Kentucky Mountains",
+    "products": [
+      "apples",
+      "apple products"
+    ],
+    "website": "Not available",
+    "phone": "Not available",
+    "notes": "Multiple packing facilities across Eastern Kentucky for apple processing and packing. Check with Kentucky Apple Association for specific member locations."
+  },
+  {
+    "name": "Homestead Seed Company (Historical)",
+    "state": "KY",
+    "city": "Lancaster",
+    "region": "Central Kentucky",
+    "products": [
+      "seeds",
+      "vegetables"
+    ],
+    "website": "Not available",
+    "phone": "Not available",
+    "notes": "Historic Kentucky seed and produce facility. Verify current operations status."
+  },
+  {
+    "name": "Kentucky Department of Agriculture - Produce Safety Program",
+    "state": "KY",
+    "city": "Frankfort",
+    "region": "Statewide",
+    "products": [
+      "all produce types"
+    ],
+    "website": "https://www.kyagr.com/",
+    "phone": "Contact KDA for licensed facility directory",
+    "notes": "Contact Kentucky Department of Agriculture for complete, official directory of all licensed produce packinghouses and handlers. Maintain current licenses required."
+  },
+  {
+    "metadata": {
+      "title": "Minnesota Produce Packinghouses and Fresh Produce Handlers",
+      "last_updated": "2025-12-21",
+      "data_source": "Minnesota Department of Agriculture, Public Records",
+      "notes": "This list represents facilities identified from public sources. Minnesota does not maintain a publicly available comprehensive packinghouse directory. Many facilities may not be listed as they are not required to be public. For complete current list, contact MDA Licensing.",
+      "licensing_authority": "Minnesota Department of Agriculture",
+      "licensing_contact": {
+        "phone": "651-201-6062",
+        "email": "mda.licensing@state.mn.us",
+        "website": "https://www.mda.state.mn.us/licensing/license-lookup"
+      },
+      "inspection_contact": {
+        "phone": "651-201-6067",
+        "service": "Fruit and Vegetable Inspections"
+      }
+    },
+    "packinghouses": [
+      {
+        "id": 1,
+        "name": "Minnesota Department of Agriculture - Licensing Database",
+        "state": "MN",
+        "city": "Saint Paul",
+        "region": "Twin Cities Metro",
+        "products": [
+          "All licensed produce facilities"
+        ],
+        "website": "https://www.mda.state.mn.us/licensing/license-lookup",
+        "phone": "651-201-6062",
+        "notes": "Online licensing lookup system displays all MDA licensed wholesale food handlers and produce packinghouses. Search by facility name, city, county, or license type. This is the primary resource for finding current licensed facilities."
+      },
+      {
+        "id": 2,
+        "name": "MDA Fruit and Vegetable Inspection Program",
+        "state": "MN",
+        "city": "Saint Paul",
+        "region": "Statewide",
+        "products": [
+          "fresh produce",
+          "fruits",
+          "vegetables",
+          "potatoes",
+          "sweet corn",
+          "apples",
+          "raw nuts",
+          "ornamental crops"
+        ],
+        "website": "https://www.mda.state.mn.us/fruit-vegetable-inspections",
+        "phone": "651-201-6067",
+        "notes": "USDA-federally licensed inspection and audit program. Provides market inspections, processed inspections at local facilities, shipping point inspections, and GAP/GHP food safety audits for growers, shippers, receivers, and packers."
+      },
+      {
+        "id": 3,
+        "name": "Minnesota Wholesale Produce Dealer Program",
+        "state": "MN",
+        "city": "Saint Paul",
+        "region": "Statewide",
+        "products": [
+          "produce",
+          "fresh fruits",
+          "fresh vegetables"
+        ],
+        "website": "https://mda.state.mn.us/food-feed/wholesale-produce-dealers-licensing",
+        "phone": "651-201-6062",
+        "notes": "Licenses wholesale businesses that buy produce directly from farmers and re-sell or distribute farmers' produce. Managed by Farm Products Dealers Trust program."
+      },
+      {
+        "id": 4,
+        "name": "Minnesota Co-Packer Directory",
+        "state": "MN",
+        "city": "Saint Paul",
+        "region": "Statewide",
+        "products": [
+          "all processed food products",
+          "contract manufacturing",
+          "specialty processing",
+          "frozen products",
+          "canned products"
+        ],
+        "website": "https://www.mda.state.mn.us/minnesota-co-packer-directory",
+        "phone": "651-201-6000",
+        "notes": "Directory of 80+ co-packers (contract manufacturers) in Minnesota and nearby states. Includes facilities offering produce processing, specialty processing (spray-drying, freezing, canning), and value-added produce products."
+      },
+      {
+        "id": 5,
+        "name": "Minnesota Farmers' Market Association",
+        "state": "MN",
+        "city": "Nerstrand",
+        "region": "South Central Minnesota",
+        "products": [
+          "local produce",
+          "farmers market products",
+          "specialty foods"
+        ],
+        "website": "https://www.mfma.org",
+        "phone": "507-664-9446",
+        "notes": "Network organization supporting local food producers and farmers' markets. Can provide referrals to produce handlers and packers serving local food systems."
+      }
+    ],
+    "licensing_requirements": {
+      "wholesale_food_handler_license": {
+        "required_for": [
+          "Produce packing operations",
+          "Fresh/raw produce handlers",
+          "Produce aggregating locations",
+          "Packing facilities"
+        ],
+        "description": "Required for operations that hold, store, sell, and/or distribute food to other businesses from permanent location or mobile units",
+        "application_process": "Contact MDA, determine area inspector, arrange in-person inspection"
+      },
+      "wholesale_produce_dealer_license": {
+        "required_for": [
+          "Wholesale produce distributors",
+          "Farmers' produce resellers",
+          "Commission-based produce distribution"
+        ],
+        "description": "For businesses buying produce directly from farmers and re-selling or distributing for commission"
+      }
+    },
+    "major_commodities_in_minnesota": {
+      "potatoes": {
+        "notes": "Minnesota major potato producing state. Daily inspections at local processing facilities for raw potatoes and sweet potatoes. Mandatory certification for Canadian shipments.",
+        "inspection_service": "Available through MDA Fruit and Vegetable Inspection Program"
+      },
+      "sweet_corn": {
+        "notes": "Minnesota produces significant sweet corn volumes. Processing facilities and packers serve regional and national markets.",
+        "inspection_service": "Market and processing facility inspections available"
+      },
+      "apples": {
+        "notes": "Minnesota apple production with packing and storage facilities. Many with regional distribution.",
+        "inspection_service": "Commodity-specific inspections available"
+      }
+    },
+    "search_instructions": {
+      "step_1": "Visit MDA Online Licensing System: https://www.mda.state.mn.us/licensing/license-lookup",
+      "step_2": "Select 'Food Licenses' category from the licensing programs",
+      "step_3": "Search for 'Wholesale Food Handler' license type to find produce packinghouses",
+      "step_4": "Filter by city, county, or region to find specific facilities",
+      "step_5": "Alternative: Contact MDA Licensing directly at 651-201-6062 or mda.licensing@state.mn.us for current facility list"
+    },
+    "data_limitations": {
+      "no_public_directory": "Minnesota does not publish a comprehensive public packinghouse directory",
+      "private_facilities": "Some packing operations may not require state licensing if they meet exemptions",
+      "contact_required": "Most detailed facility information requires direct contact with MDA or individual businesses",
+      "recommendation": "For complete current list of licensed facilities, use MDA Online Licensing Lookup or contact MDA Licensing department directly"
+    }
+  },
+  {
+    "name": "Glacier Fresh Cherries",
+    "state": "MT",
+    "city": "Bigfork",
+    "region": "Flathead Lake (Northwest)",
+    "products": [
+      "cherries"
+    ],
+    "website": "https://glacierfreshcherries.com",
+    "phone": "406-838-5172",
+    "email": "info@glacierfreshcherries.com",
+    "notes": "Family-owned cherry orchard and custom packing house. Largest exporter of cherries in Montana. Packs cherries from approximately 115 acres (55 owned, 60 for other growers). Operates since 2005 for custom packing.",
+    "foundedYear": 2005,
+    "acreage": 115,
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Flathead Lake Cherry Growers, Inc.",
+    "state": "MT",
+    "city": "Bigfork",
+    "region": "Flathead Lake (Northwest)",
+    "products": [
+      "cherries"
+    ],
+    "website": "https://montanacherries.com",
+    "phone": "406-982-3069",
+    "fax": "406-982-3065",
+    "email": "contactus@montanacherries.com",
+    "mailing_address": "PO Box 2409, Bigfork, MT 59911",
+    "notes": "Cooperative of approximately 70 cherry growers around Flathead Lake. Main packing facility operates on South Finley Point Road near Polson. Operated by Monson Fruit Company. Ships cherries from over 80 Flathead Lake orchards. Cherries shipped primarily to Selah, Washington for packaging and national/international distribution."
+  },
+  {
+    "name": "Mission Mountain Food Enterprise Center",
+    "state": "MT",
+    "city": "Ronan",
+    "region": "Flathead Lake (Northwest)",
+    "products": [
+      "cherries",
+      "vegetables",
+      "squash",
+      "pumpkin",
+      "green beans",
+      "peppers",
+      "onions",
+      "carrots",
+      "cucumbers",
+      "melons"
+    ],
+    "website": "https://www.missionwestcdp.org/food-enterprise-center/",
+    "phone": "406-676-5901",
+    "email": "info@missionwestcdp.org",
+    "address": "407 Main St SW, Ronan, MT 59864",
+    "hours": "Monday-Friday, 8:30am-5:00pm",
+    "notes": "13,000 sq ft shared-use food processing facility. FDA registered, USDA meat inspected, Certified Organic. Processes pitted sweet Flathead cherries, butternut squash cubes, roasted pie pumpkin puree, blanched green beans, diced onions, diced peppers, shredded zucchini, shredded carrots, cut carrot coins, cubed melons, bell pepper rings, cut cucumbers. Offers cherry pitting, dry mixing, packaging, labeling, and co-packing services. Operating since 2000.",
+    "foundedYear": 2000,
+    "certifications": [
+      "USDA_Organic"
+    ]
+  },
+  {
+    "name": "Western Montana Growers Cooperative",
+    "state": "MT",
+    "city": "Missoula",
+    "region": "Western Montana (Missoula Valley)",
+    "products": [
+      "fresh vegetables",
+      "frozen vegetables",
+      "fresh fruits",
+      "frozen fruits",
+      "prepared foods"
+    ],
+    "website": "https://www.wmgcoop.com",
+    "phone": "406-493-0859",
+    "email": "grower@wmgcoop.com",
+    "csa_phone": "406-544-6135",
+    "csa_email": "csa@wmgcoop.com",
+    "wholesale_email": "orders@wmgcoop.com",
+    "address": "1500 Burns Street STE C, Missoula, MT 59802",
+    "mailing_address": "P.O. Box 292 Arlee, Montana 59821",
+    "notes": "Farmer-owned cooperative with 30+ members and dozens of local/regional producers. Provides marketing, selling, packaging, and delivery of member produce. Delivers to 20+ sites in Western Montana from Missoula to Polson to Helena. Handles fresh/frozen vegetables, fresh/frozen fruits, and prepared foods."
+  },
+  {
+    "name": "Shelby Elevator (Ardent Mills)",
+    "state": "MT",
+    "city": "Shelby",
+    "region": "North Central Montana",
+    "products": [
+      "wheat",
+      "chickpeas",
+      "grain"
+    ],
+    "website": "https://www.ardentmills.com/our-facilities/montana/shelby/",
+    "phone": "Contact Ardent Mills headquarters",
+    "address": "2807 Burlington Ave, Shelby, MT 59474",
+    "headquarters_phone": "1-800-555-ARDENT",
+    "notes": "Grain elevator facility operated by Ardent Mills. Predominantly supports chickpea processing by loading farmer-delivered chickpeas onto rail cars for shipment to Washington processing facilities. Also handles wheat and grain operations."
+  },
+  {
+    "name": "New Century Ag - Westby Location",
+    "state": "MT",
+    "city": "Westby",
+    "region": "Northeast Montana",
+    "products": [
+      "durum wheat",
+      "spring wheat",
+      "canola",
+      "peas",
+      "lentils",
+      "grain"
+    ],
+    "website": "https://newcentag.com",
+    "phone": "406-385-2630",
+    "fax": "406-385-2635",
+    "location_manager": "Scott Sova",
+    "manager_phone": "701-648-8807",
+    "manager_email": "ssova@newcentag.com",
+    "address": "Westby, MT 59275",
+    "notes": "Grain handling facility. Handles durum wheat, spring wheat, canola, peas, and lentils. Provides agronomy services including chemical, seed, inoculant, and fertilizer sales. Part of larger New Century Ag network."
+  },
+  {
+    "name": "Cream of the West",
+    "state": "MT",
+    "city": "Montana",
+    "region": "Central Montana",
+    "products": [
+      "dry mixes",
+      "flour",
+      "grains",
+      "tea"
+    ],
+    "website": null,
+    "phone": "406-632-4804",
+    "email": "cotw@mtintouch.net",
+    "notes": "Co-packing facility specializing in dry mixes, flour, grains, and tea products. Licensed Montana co-packer."
+  },
+  {
+    "name": "Montana Cookie Company",
+    "state": "MT",
+    "city": "Bozeman",
+    "region": "South Central Montana",
+    "products": [
+      "gluten-free cookies",
+      "gluten-free snacks"
+    ],
+    "website": null,
+    "phone": "406-579-4186",
+    "notes": "Co-packing facility specializing in gluten-free cookies and snacks."
+  },
+  {
+    "name": "West Fork Creations",
+    "state": "MT",
+    "city": "Red Lodge",
+    "region": "South Central Montana",
+    "products": [
+      "chocolate sauces"
+    ],
+    "website": null,
+    "phone": "406-446-3060",
+    "address": "1401 South Broadway, Red Lodge, MT 59068",
+    "notes": "Co-packing facility specializing in chocolate sauces and related products."
+  },
+  {
+    "name": "Roots Kitchen & Cannery",
+    "state": "MT",
+    "city": "Belgrade",
+    "region": "Southwest Montana (near Bozeman)",
+    "products": [
+      "canned goods",
+      "preserved foods"
+    ],
+    "website": "https://www.rootskitchencannery.com/co-packing",
+    "phone": null,
+    "notes": "Small-batch food manufacturing and canning co-packing facility. Provides commercial kitchen facilities for food preservation and processing."
+  },
+  {
+    "name": "Muzzarelli Farms",
+    "state": "NJ",
+    "city": "Vineland",
+    "region": "South Jersey (Cumberland County)",
+    "products": [
+      "sweet potatoes",
+      "kale",
+      "blueberries",
+      "romaine lettuce",
+      "tomatoes",
+      "peppers",
+      "cucumbers"
+    ],
+    "website": "https://www.muzzarellifarms.com/",
+    "phone": "(856) 691-2497",
+    "notes": "Fourth-generation family operation, 350 acres, Primus Certified, non-GMO, solar-powered facility, supplies 30+ states including NYC, Boston, Philadelphia, LA",
+    "acreage": 350,
+    "certifications": [
+      "Non-GMO"
+    ]
+  },
+  {
+    "name": "Atlantic Blueberry Company",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": [
+      "blueberries (highbush)"
+    ],
+    "website": "https://www.atlanticblueberry.com/",
+    "phone": "(609) 561-8600",
+    "notes": "One of largest blueberry producers, 750+ acres, five fresh packing lines, PrimusGFS certified, family-owned 85+ years, also at 6200 Black Horse Pike, Mays Landing (609) 625-1154",
+    "acreage": 750,
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "D'Ottavio Produce",
+    "state": "NJ",
+    "city": "Minotola",
+    "region": "Atlantic County",
+    "products": [
+      "blueberries",
+      "organic blackberries",
+      "raspberries",
+      "golden berries",
+      "wine grapes",
+      "New Jersey vegetables"
+    ],
+    "website": "https://www.mdottavioproduce.com/",
+    "phone": "(856) 692-3311",
+    "notes": "Three climate-controlled coolers (50,000+ package capacity), 60x100 cooler, satellite irrigation, forced air cooling, picks/packs/ships within 12 hours, E&A Trucking subsidiary with 20+ tractors"
+  },
+  {
+    "name": "Consalo Family Farms",
+    "state": "NJ",
+    "city": "Vineland",
+    "region": "South Jersey",
+    "products": [
+      "blueberries",
+      "mixed vegetables"
+    ],
+    "website": "https://www.consalofamilyfarms.com/",
+    "phone": "(856) 839-0264",
+    "notes": "Family-owned grower, packer, shipper, importer, distributor, locations in Vineland, Newfield, Hammonton, Egg Harbor City, custom packaging and private label options"
+  },
+  {
+    "name": "Dandrea Produce, LLC",
+    "state": "NJ",
+    "city": "Vineland",
+    "region": "South Jersey (Cumberland County)",
+    "products": [
+      "mixed produce",
+      "fresh vegetables",
+      "fruits"
+    ],
+    "website": "https://dandreaproduce.com/",
+    "phone": "(856) 205-1830",
+    "notes": "Established 1917, 150+ employees, grower-distributor with vertical integration, year-round fresh produce supply",
+    "foundedYear": 1917
+  },
+  {
+    "name": "Whalen Farms LLC",
+    "state": "NJ",
+    "city": "Shamong",
+    "region": "Burlington County",
+    "products": [
+      "blueberries",
+      "cranberries"
+    ],
+    "website": "http://www.whalenfarms.com/",
+    "phone": "(609) 268-0847",
+    "notes": "180 acres blueberries, 125 acres cranberry bogs, 395 acres conservation land, state-of-the-art packing facility, IPM (Integrative Pest Management), since 1985",
+    "foundedYear": 1985,
+    "acreage": 180
+  },
+  {
+    "name": "American Cranberry Co.",
+    "state": "NJ",
+    "city": "Pemberton",
+    "region": "Burlington County",
+    "products": [
+      "cranberries (whole, frozen, fresh)",
+      "blueberries",
+      "produce"
+    ],
+    "website": "https://www.americancranberryco.com/",
+    "phone": "(609) 760-0951",
+    "notes": "Family-owned producer and distributor in NJ Pinelands, custom packing/repacking services, wholesale boxes and bulk totes"
+  },
+  {
+    "name": "Eastern Propak",
+    "state": "NJ",
+    "city": "Glassboro",
+    "region": "Gloucester County",
+    "products": [
+      "all fresh produce types"
+    ],
+    "website": "https://easternpropak.com/",
+    "phone": "(856) 881-3553",
+    "notes": "State-of-the-art cold storage and packing facility, Primus GFS and Organic certified, USDA cold treatment certified, 24/7 cold chain monitoring, forced air cooling, bar coding, RF tracking",
+    "certifications": [
+      "USDA_Organic"
+    ]
+  },
+  {
+    "name": "JSM Blueberries LLC",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": [
+      "blueberries"
+    ],
+    "website": "https://www.manta.com/c/mmn3tzh/jsm-blueberries-llc",
+    "phone": "(609) 412-4224",
+    "notes": "Owned by Sharon and Joe Montalbano (former Newark firefighter), established 2005, Jersey Fruit cooperative member, started with 10 acres in 1985",
+    "foundedYear": 2005,
+    "acreage": 10
+  },
+  {
+    "name": "Glossy Fruit Farms",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": [
+      "blueberries",
+      "tomatoes",
+      "sweet potatoes"
+    ],
+    "website": "https://glossy-fruit-farms.wheree.com/",
+    "phone": "(609) 561-9556",
+    "notes": "Fifth-generation family farm established 1887, 500 acres, on-site farm market, Jersey Fruit member, blueberries start around June 12",
+    "foundedYear": 1887,
+    "acreage": 500
+  },
+  {
+    "name": "Stoney Creek Blueberries",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": [
+      "blueberries"
+    ],
+    "website": null,
+    "phone": null,
+    "notes": "Established 1970, family-owned 3 generations, 155 acres, 100% solar energy since 2011, drip irrigation (50% less water), state-of-the-art equipment, rigorous farm audits",
+    "foundedYear": 1970,
+    "acreage": 155
+  },
+  {
+    "name": "Big Buck Farms LLC",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": [
+      "blueberries (organic)"
+    ],
+    "website": "https://jerseyfruit.com/about/growers/",
+    "phone": null,
+    "notes": "Certified organic and kosher, family-owned 25+ years, NOFA-NJ member, packs under Little Buck brand, Sunny Valley International exclusive sales/marketing, Jersey Fruit member",
+    "certifications": [
+      "USDA_Organic",
+      "Kosher"
+    ]
+  },
+  {
+    "name": "LoSasso Farms",
+    "state": "NJ",
+    "city": "Hammonton",
+    "region": "Atlantic County",
+    "products": [
+      "blueberries"
+    ],
+    "website": "https://jerseyfruit.com/about/growers/",
+    "phone": null,
+    "notes": "Family-owned since 1956, 21 acres, drip irrigation system, Jersey Fruit cooperative member",
+    "foundedYear": 1956,
+    "acreage": 21
+  },
+  {
+    "name": "Pine Island Cranberry Co., Inc.",
+    "state": "NJ",
+    "city": "Chatsworth",
+    "region": "Burlington County (Pinelands)",
+    "products": [
+      "cranberries"
+    ],
+    "website": "https://www.picranberry.com/",
+    "phone": null,
+    "notes": "Owned by Haines and Haines, Inc., 1,400 acres (largest cranberry farm in NJ), produces average 13 million pounds annually",
+    "acreage": 1400,
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Jersey Fruit Cooperative",
+    "state": "NJ",
+    "city": "Multiple locations",
+    "region": "Statewide",
+    "products": [
+      "blueberries",
+      "stone fruits",
+      "peaches",
+      "nectarines"
+    ],
+    "website": "https://jerseyfruit.com/",
+    "phone": "(856) 863-9100",
+    "notes": "Established 1940, premier fruit marketing cooperative, member growers in Hammonton, Shamong, Egg Harbor City, Glassboro, Mullica Hill",
+    "foundedYear": 1940,
+    "scaleIndicators": [
+      "premier"
+    ]
+  },
+  {
+    "name": "Summer Wind Farms",
+    "state": "NJ",
+    "city": "Vineland area",
+    "region": "South Jersey",
+    "products": [
+      "certified organic vegetables"
+    ],
+    "website": "https://www.summerwindfarms.com/",
+    "phone": "(856) 207-7792",
+    "notes": "Certified organic Jersey Fresh vegetables, pickup at farm packing house north of Vineland",
+    "certifications": [
+      "USDA_Organic"
+    ]
+  },
+  {
+    "name": "Cuttler Produce NJ",
+    "state": "NJ",
+    "city": "Linden",
+    "region": "Union County",
+    "products": [
+      "wholesale produce"
+    ],
+    "website": "https://cuttlerproduce.com/",
+    "phone": "(732) 380-0625",
+    "notes": "One of largest wholesale produce warehouses in NJ, refrigerated delivery vehicles",
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Taylor Farms",
+    "state": "California",
+    "city": "Salinas",
+    "products": [
+      "Fresh-cut salads",
+      "Meal kits",
+      "Salad kits",
+      "Fresh blends",
+      "Fruits",
+      "Vegetables"
+    ],
+    "website": "https://www.taylorfarms.com"
+  },
+  {
+    "name": "Mission Produce",
+    "state": "California",
+    "city": "Oxnard",
+    "products": [
+      "Avocados",
+      "Hass avocados"
+    ],
+    "website": "https://www.missionproduce.com"
+  },
+  {
+    "name": "Duda Farm Fresh Foods",
+    "state": "Florida",
+    "city": "Oviedo",
+    "products": [
+      "Celery",
+      "Radishes",
+      "Corn",
+      "Lettuce",
+      "Leafy greens"
+    ],
+    "website": "https://www.dudafresh.com"
+  },
+  {
+    "name": "Fresh Express Inc",
+    "state": "Florida",
+    "city": "Windermere",
+    "products": [
+      "Salads",
+      "Leafy greens",
+      "Vegetables",
+      "Fruits"
+    ],
+    "website": "https://www.freshexpress.com"
+  },
+  {
+    "name": "Boskovich Farms",
+    "state": "California",
+    "city": "Oxnard",
+    "products": [
+      "Fresh produce",
+      "Vegetables"
+    ],
+    "website": "https://www.boskovichfarms.com"
+  },
+  {
+    "name": "Gills Onions",
+    "state": "California",
+    "city": "Oxnard",
+    "products": [
+      "Onions",
+      "Whole peeled onions",
+      "Pre-sliced onions",
+      "Diced onions",
+      "Pureed onions"
+    ],
+    "website": "https://www.gillsonions.com"
+  },
+  {
+    "name": "Dole Fresh Fruit",
+    "state": "Delaware",
+    "city": "Wilmington",
+    "products": [
+      "Bananas",
+      "Pineapples",
+      "Tropical fruits"
+    ],
+    "website": "https://www.dole.com"
+  },
+  {
+    "name": "Calavo",
+    "state": "California",
+    "city": "Santa Paula",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.calavo.com"
+  },
+  {
+    "name": "Cal Flavor",
+    "state": "California",
+    "city": "Los Angeles",
+    "products": [
+      "Avocados"
+    ],
+    "website": null
+  },
+  {
+    "name": "Cal Sun Produce",
+    "state": "California",
+    "city": "Oxnard",
+    "products": [
+      "Avocados"
+    ],
+    "website": null
+  },
+  {
+    "name": "Corona College Heights Orange and Lemon Association",
+    "state": "California",
+    "city": "Riverside",
+    "products": [
+      "Oranges",
+      "Lemons",
+      "Citrus"
+    ],
+    "website": "https://www.cchcitrus.com"
+  },
+  {
+    "name": "Del Monte Fresh Produce N.A., Inc.",
+    "state": "California",
+    "city": "Santa Fe Springs",
+    "products": [
+      "Fresh produce"
+    ],
+    "website": null
+  },
+  {
+    "name": "Del Rey Avocado",
+    "state": "California",
+    "city": "Fallbrook",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.delreyavocado.com"
+  },
+  {
+    "name": "Eco Farms Avocados, Inc.",
+    "state": "California",
+    "city": "Temecula",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.ecofarmsusa.com"
+  },
+  {
+    "name": "Henry Avocado",
+    "state": "California",
+    "city": "Escondido",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.henryavocado.com"
+  },
+  {
+    "name": "Las Palmalitas Ranch",
+    "state": "California",
+    "city": "Carpinteria",
+    "products": [
+      "Avocados (Organic)"
+    ],
+    "website": null
+  },
+  {
+    "name": "Index Fresh",
+    "state": "California",
+    "city": "Corona",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.indexfresh.com"
+  },
+  {
+    "name": "McDaniel Fruit",
+    "state": "California",
+    "city": "Fallbrook",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.mcdanielavocado.com"
+  },
+  {
+    "name": "Rincon Farms Produce",
+    "state": "California",
+    "city": "Carpinteria",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.rinconfarms.com"
+  },
+  {
+    "name": "Stehly Farms Organics",
+    "state": "California",
+    "city": "Bonsall",
+    "products": [
+      "Avocados (Organic)"
+    ],
+    "website": "https://www.stehlyfarmsorganics.com"
+  },
+  {
+    "name": "The Giumarra Companies",
+    "state": "California",
+    "city": "Escondido",
+    "products": [
+      "Fresh produce",
+      "Grapes",
+      "Citrus"
+    ],
+    "website": "https://www.giumarra.com"
+  },
+  {
+    "name": "Westfalia Fruit Marketing",
+    "state": "California",
+    "city": "Oxnard",
+    "products": [
+      "Avocados",
+      "Fresh fruit"
+    ],
+    "website": "https://www.westfaliafruit.com"
+  },
+  {
+    "name": "West Pak Avocado, Inc.",
+    "state": "California",
+    "city": "Murrieta",
+    "products": [
+      "Avocados"
+    ],
+    "website": "https://www.westpakavocado.com"
+  },
+  {
+    "name": "E. Armata Inc.",
+    "state": "NY",
+    "city": "Bronx",
+    "products": [
+      "Strawberries",
+      "Blackberries",
+      "Blueberries",
+      "Raspberries",
+      "Grapes",
+      "Apples",
+      "Pears",
+      "Stone fruit",
+      "Citrus",
+      "Exotic fruits",
+      "Honeydews",
+      "Cantaloupes",
+      "Watermelons",
+      "Mushrooms",
+      "Potatoes",
+      "Onions",
+      "Carrots",
+      "Arugula",
+      "Spring mix",
+      "Romaine",
+      "Spinach",
+      "Kale",
+      "Tomatoes"
+    ],
+    "website": "earmata.com",
+    "address": "114 NYC Terminal Market, Bronx, NY 10474-7303",
+    "phone": "718-991-5600",
+    "email": "info@earmata.com",
+    "notes": "One of the largest produce distributors in USA, servicing tri-state area for over 100 years",
+    "scaleIndicators": [
+      "largest"
+    ],
+    "yearsInBusiness": 100
+  },
+  {
+    "name": "Dole Fresh Vegetables",
+    "state": "CA",
+    "city": "Monterey",
+    "products": [
+      "Fresh vegetables",
+      "Leafy greens",
+      "Lettuce",
+      "Specialty crops"
+    ],
+    "website": "dole.com",
+    "address": "Monterey, CA 93940",
+    "notes": "Major shipper in Salinas Valley, operates throughout US and Latin America",
+    "scaleIndicators": [
+      "major"
+    ],
+    "growingRegion": "salinas_valley_ca"
+  },
+  {
+    "name": "Calavo Growers",
+    "state": "CA",
+    "city": "Santa Paula",
+    "products": [
+      "Avocados"
+    ],
+    "website": "calavo.com",
+    "address": "1141A Cummings Road, Santa Paula, CA 93060",
+    "email": "hello@calavo.com",
+    "notes": "Major avocado shipper with operations in Mexico (Michoacán and Jalisco)",
+    "scaleIndicators": [
+      "major"
+    ],
+    "growingRegion": "southern_ca"
+  },
+  {
+    "name": "Driscoll's",
+    "state": "CA",
+    "city": "Watsonville",
+    "products": [
+      "Berries",
+      "Strawberries",
+      "Raspberries",
+      "Blueberries",
+      "Blackberries"
+    ],
+    "website": "driscoll-s.com",
+    "notes": "Major berry shipper with facilities in Watsonville and Red Bluff, CA",
+    "scaleIndicators": [
+      "major"
+    ],
+    "growingRegion": "salinas_valley_ca"
+  },
+  {
+    "name": "Crystal Valley West",
+    "state": "CA",
+    "city": "Los Angeles",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "notes": "Family-operated wholesale produce distributor shipping nationwide",
+    "growingRegion": "southern_ca"
+  },
+  {
+    "name": "Specialty Produce",
+    "state": "CA",
+    "city": "San Diego",
+    "products": [
+      "Fresh produce",
+      "Specialty items"
+    ],
+    "address": "San Diego, CA 92110",
+    "notes": "Foodservice and retail distributor"
+  },
+  {
+    "name": "Produce Services of Los Angeles",
+    "state": "CA",
+    "city": "Los Angeles",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "address": "Los Angeles, CA 90021",
+    "notes": "Wholesale produce for Southern California foodservice",
+    "growingRegion": "southern_ca"
+  },
+  {
+    "name": "Charlie's Produce",
+    "state": "CA",
+    "city": "Los Angeles",
+    "products": [
+      "Fruits",
+      "Vegetables"
+    ],
+    "notes": "Supplies restaurants, grocery stores, institutions",
+    "growingRegion": "southern_ca"
+  },
+  {
+    "name": "Hacienda Foods Distribution",
+    "state": "CA",
+    "city": "San Bernardino",
+    "products": [
+      "Fresh produce"
+    ],
+    "address": "San Bernardino, CA 92408",
+    "notes": "Serves Inland Empire region"
+  },
+  {
+    "name": "Sunrise Produce Company",
+    "state": "CA",
+    "city": "Fullerton",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "address": "Fullerton, CA 92833",
+    "notes": "Serves restaurants, schools, healthcare, retail"
+  },
+  {
+    "name": "Global Best Produce",
+    "state": "CA",
+    "city": "Vernon",
+    "products": [
+      "Asian produce"
+    ],
+    "address": "Vernon, CA 90058",
+    "notes": "Asian produce wholesaler",
+    "growingRegion": "southern_ca"
+  },
+  {
+    "name": "Shasta Produce",
+    "state": "CA",
+    "city": "South San Francisco",
+    "products": [
+      "Fruits",
+      "Vegetables"
+    ],
+    "address": "South San Francisco, CA 94080",
+    "notes": "Serves Northern California",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "General Produce Company",
+    "state": "CA",
+    "city": "Sacramento",
+    "products": [
+      "Fresh produce",
+      "Vegetables",
+      "Fruits"
+    ],
+    "address": "Sacramento, CA 95837",
+    "notes": "Serves Northern and Central California, Western Nevada, Southern Oregon"
+  },
+  {
+    "name": "D.H. Oriental Produce",
+    "state": "CA",
+    "city": "Vernon",
+    "products": [
+      "Exotic fruits",
+      "Exotic vegetables"
+    ],
+    "address": "Vernon, CA 90058",
+    "growingRegion": "southern_ca"
+  },
+  {
+    "name": "Carcione's Fresh Produce",
+    "state": "CA",
+    "city": "South San Francisco",
+    "products": [
+      "Fresh produce"
+    ],
+    "address": "South San Francisco, CA 94080",
+    "notes": "Wholesale produce to Bay Area restaurants",
+    "growingRegion": "central_valley_ca"
+  },
+  {
+    "name": "Hitchcock Farms",
+    "state": "CA",
+    "city": "Salinas",
+    "products": [
+      "Fresh vegetables",
+      "Leafy greens"
+    ],
+    "website": "hitchcockfarms.com",
+    "notes": "Supplies foodservice and retail establishments throughout USA and Canada",
+    "growingRegion": "salinas_valley_ca"
+  },
+  {
+    "name": "May Food Produce Wholesale",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Asian fresh fruits",
+      "Asian vegetables"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Longhing Wholesale",
+    "state": "TX",
+    "city": "Stafford",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Supplies hospitality industry"
+  },
+  {
+    "name": "Nicho Produce",
+    "state": "TX",
+    "city": "Edinburg",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "DiMare Fresh - Dallas/Fort Worth",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Full line produce"
+    ],
+    "notes": "Major produce distributor",
+    "scaleIndicators": [
+      "major"
+    ],
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "DiMare Fresh - Houston",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Full line produce"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Gilmore Produce Ltd",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce",
+      "Wholesale"
+    ],
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "Flavorful Fresh Inc.",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Wholesaler and distributor",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Segovia's Distributing Inc.",
+    "state": "TX",
+    "city": "El Paso",
+    "products": [
+      "Fresh produce"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Quality Fruit & Veg. Co.",
+    "state": "TX",
+    "city": "El Paso",
+    "products": [
+      "Fresh produce",
+      "Vegetables"
+    ],
+    "notes": "Serves Southwest region",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "River City Produce Company",
+    "state": "TX",
+    "city": "San Antonio",
+    "products": [
+      "Fresh fruit",
+      "Fresh vegetables"
+    ],
+    "growingRegion": "hill_country_tx"
+  },
+  {
+    "name": "Chefs Produce Company",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Supplies restaurants",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Rio Produce",
+    "state": "TX",
+    "city": "Edinburg",
+    "products": [
+      "Mexican produce"
+    ],
+    "notes": "Mexican produce wholesaler",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "J Luna Produce Co Inc",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce",
+      "Wholesale"
+    ],
+    "notes": "Family-owned",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Brothers Produce",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Statewide distributor",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Potato Specialty Company",
+    "state": "TX",
+    "city": "Lubbock",
+    "products": [
+      "Fresh produce",
+      "Potatoes"
+    ],
+    "notes": "Food service supplier"
+  },
+  {
+    "name": "Coast Citrus Distributors",
+    "state": "TX",
+    "city": "McAllen",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables",
+      "Citrus"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Brothers Food Service",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce",
+      "Specialty items"
+    ],
+    "notes": "Full-line distributor, operations in Dallas, Austin, Houston",
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "Franks Distributing, Inc",
+    "state": "TX",
+    "city": "Edinburg",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Empire Fresh Produce",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Wholesaler",
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "Allied Produce Inc.",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Asian vegetables"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Fresh Tex Produce",
+    "state": "TX",
+    "city": "Alamo",
+    "products": [
+      "Mexican produce"
+    ],
+    "notes": "Mexican produce importer",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Sandoval Produce Company",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Fresh produce"
+    ],
+    "notes": "Restaurant supplier",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Superior Trading Dallas",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Asian produce"
+    ],
+    "notes": "Asian produce distributor",
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "NBC Foods Inc.",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Fresh produce",
+      "Food items"
+    ],
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "Scarmardo Foodservice Inc.",
+    "state": "TX",
+    "city": "Bryan",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Nogales Produce Inc.",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Mexican produce",
+      "Grocery items"
+    ],
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "Taxco Produce, Inc.",
+    "state": "TX",
+    "city": "Dallas",
+    "products": [
+      "Mexican products",
+      "Hispanic products"
+    ],
+    "growingRegion": "texas_pecan_belt"
+  },
+  {
+    "name": "Mex Flores Produce Company Inc.",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Hispanic produce",
+      "Mexican specialty products"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Best Choice Food Group",
+    "state": "TX",
+    "city": "Fort Worth",
+    "products": [
+      "Fresh produce",
+      "Institutional food"
+    ]
+  },
+  {
+    "name": "Latin Specialties LLC",
+    "state": "TX",
+    "city": "Houston",
+    "products": [
+      "Specialty produce"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Grande Produce Ltd.",
+    "state": "TX",
+    "city": "San Juan",
+    "products": [
+      "Fresh fruits",
+      "Fresh vegetables"
+    ]
+  },
+  {
+    "name": "Panamerican Farms",
+    "state": "CA",
+    "city": "Camarillo",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Sofia Produce LLC",
+    "state": "AZ",
+    "city": "Nogales",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Fresh Alliance",
+    "state": "GA",
+    "city": "Suwanee",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Davis Elite Group LLC",
+    "state": "TX",
+    "city": "Conroe",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Gold Coast Produce Inc",
+    "state": "IL",
+    "city": "Gurnee",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Viva Chestnuts Inc",
+    "state": "DE",
+    "city": "Dover",
+    "products": [
+      "Chestnuts"
+    ]
+  },
+  {
+    "name": "Pico Bravo LLC",
+    "state": "NM",
+    "city": "Las Cruces",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "American Onion, Inc.",
+    "state": "OR",
+    "city": "Hermiston",
+    "products": [
+      "Onions"
+    ],
+    "notes": "Major onion shipper",
+    "scaleIndicators": [
+      "major"
+    ]
+  },
+  {
+    "name": "Baker Packing & Murakami Produce Co.",
+    "state": "ID",
+    "city": "Boise",
+    "products": [
+      "Onions"
+    ],
+    "notes": "Largest volume onion shipper in Idaho and Eastern Oregon, one of largest US shippers",
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Cheney Brothers",
+    "state": "FL",
+    "city": "Riviera Beach",
+    "products": [
+      "Fresh produce",
+      "Foodservice items"
+    ],
+    "founded": "1925",
+    "annual_revenue": "$3.0 billion",
+    "notes": "Major foodservice distributor with 11 distribution centers serving 20,000+ customers",
+    "scaleIndicators": [
+      "major"
+    ]
+  },
+  {
+    "name": "Divine Flavor LLC",
+    "state": "AZ",
+    "city": "Rio Rico",
+    "products": [
+      "Specialty produce"
+    ]
+  },
+  {
+    "name": "Export Fresh Company",
+    "state": "AZ",
+    "city": "Rio Rico",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Farmer's Best International",
+    "state": "AZ",
+    "city": "Rio Rico",
+    "products": [
+      "Fresh produce"
+    ]
+  },
+  {
+    "name": "Divine Ripe LLC",
+    "state": "TX",
+    "city": "Pharr",
+    "products": [
+      "Specialty produce"
+    ],
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "name": "Dixon Tom-A-Toe",
+    "state": "TX",
+    "city": "Grand Prairie",
+    "products": [
+      "Tomatoes"
+    ]
+  },
+  {
+    "name": "Lone Star Citrus Growers",
+    "state": "Texas",
+    "city": "Mission",
+    "products": [
+      "Grapefruit",
+      "Ruby Red Grapefruit",
+      "Sweet Oranges",
+      "Navel Oranges",
+      "Valencia Oranges",
+      "Pineapples"
+    ],
+    "website": "lonestarcitrus.com",
+    "address": "9625 N. Moorefield Rd., Mission, TX 78574",
+    "phone": "956-424-3334",
+    "type": "Packinghouse - Citrus",
+    "notes": "Last independent, family-owned and operated Texas citrus packing house. Established in 2007.",
+    "foundedYear": 2007
+  },
+  {
+    "name": "South Tex Organics, LC",
+    "state": "Texas",
+    "city": "Mission",
+    "products": [
+      "Rio Star Grapefruit",
+      "Oranges",
+      "Navel Oranges",
+      "Meyer Lemons",
+      "Onions",
+      "Watermelons"
+    ],
+    "website": "stxorganics.com",
+    "address": "6700 N. Doffing Rd., Mission, TX 78574",
+    "phone": "956-585-1040",
+    "type": "Packinghouse - Citrus & Vegetables",
+    "notes": "Largest organic citrus and vegetable grower in Texas. Over 500 certified organic acres. USDA certified organic.",
+    "certifications": [
+      "USDA_Organic"
+    ],
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Triple J Organics, LLC",
+    "state": "Texas",
+    "city": "Mission",
+    "products": [
+      "Early Season Oranges",
+      "Marrs Oranges",
+      "Navel Oranges",
+      "Ruby Sweet Grapefruit",
+      "Rio Star Grapefruit",
+      "Meyer Lemons",
+      "Tangerines",
+      "Tangelos"
+    ],
+    "website": "triplejorganics.com",
+    "address": "14702 N. Trosper Rd., Mission, TX 78572",
+    "phone": "956-789-1966",
+    "type": "Packinghouse - Citrus",
+    "notes": "USDA Certified Organic. Founded in 1995. 83 acres. Family and minority-owned business.",
+    "foundedYear": 1995,
+    "acreage": 83,
+    "certifications": [
+      "USDA_Organic"
+    ]
+  },
+  {
+    "name": "Wonderful Citrus",
+    "state": "Texas",
+    "city": "Mission",
+    "products": [
+      "Grapefruit",
+      "Texas Red Grapefruit",
+      "Sweet Scarletts Grapefruit",
+      "Oranges",
+      "Navel Oranges",
+      "Valencia Oranges",
+      "Lemons",
+      "Limes",
+      "Mandarins",
+      "Wonderful Halos",
+      "Citrus Juice"
+    ],
+    "website": "wonderfulcitrus.com",
+    "address": "4000 E. Goodwin Rd., Mission, TX 78574",
+    "phone": "661-720-2500",
+    "type": "Packinghouse - Citrus",
+    "notes": "Largest fresh citrus grower in western United States. Processing and juicing facility in Mission.",
+    "scaleIndicators": [
+      "largest"
+    ]
+  },
+  {
+    "name": "Growers Select Produce Inc",
+    "state": "Texas",
+    "city": "Mission",
+    "products": [
+      "Seedless Watermelon"
+    ],
+    "website": "groselpro.com",
+    "address": "Mission, TX",
+    "type": "Packinghouse - Vegetables",
+    "notes": "Founded in 1987. Year-round watermelon operation. Grows, packs, and ships seedless watermelon 52 weeks a year. All farms and facilities are third-party certified."
+  },
+  {
+    "name": "Rio Fresh",
+    "state": "Texas",
+    "city": "Rio Grande Valley",
+    "products": [
+      "Greens",
+      "Herbs",
+      "Onions",
+      "Various leaf vegetables"
+    ],
+    "website": "riofresh.com",
+    "type": "Packinghouse - Vegetables",
+    "notes": "Third-generation, family-owned business. Farming for over 75 years. Over 30 varieties of fresh Texas greens, herbs, and onions. State-of-the-art packing facility.",
+    "yearsInBusiness": 75
+  },
+  {
+    "name": "Thompson Farms",
+    "state": "Texas",
+    "city": "Mission",
+    "products": [
+      "Citrus"
+    ],
+    "address": "2409 E. 4 Mile Line, Mission, TX 78572",
+    "type": "Packinghouse - Citrus",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Paul Obst Farm",
+    "state": "Texas",
+    "city": "Alamo",
+    "products": [
+      "Citrus"
+    ],
+    "address": "1520 N. Alamo Rd., Alamo, TX 78516",
+    "phone": "956-787-6917",
+    "type": "Packinghouse - Citrus",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Perez Groves, LLC",
+    "state": "Texas",
+    "city": "Edinburg",
+    "products": [
+      "Citrus"
+    ],
+    "address": "2507 N. Sharp Rd., Edinburg, TX 78542",
+    "phone": "956-457-0211",
+    "type": "Packinghouse - Citrus",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "River Star Farms",
+    "state": "Texas",
+    "city": "Mercedes / Donna",
+    "products": [
+      "Produce"
+    ],
+    "website": "riverstarfarms.com",
+    "address": "901 S. Valley View Rd. #9, Donna, TX 78537",
+    "phone": "956-461-2828",
+    "type": "Farm / Packinghouse",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Saenz Produce Company",
+    "state": "Texas",
+    "city": "Edinburg",
+    "products": [
+      "Produce"
+    ],
+    "address": "1651 N. Tower Rd., Edinburg, TX 78542",
+    "phone": "956-867-4641",
+    "type": "Packinghouse - Vegetables",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "Strohmeyer Family Farm LLC",
+    "state": "Texas",
+    "city": "McAllen",
+    "products": [
+      "Citrus"
+    ],
+    "address": "8221 N Ware Rd., McAllen, TX 78504",
+    "phone": "956-686-6047",
+    "type": "Farm / Packinghouse",
+    "source": "Texas Citrus Industry Shipper and Handler List"
+  },
+  {
+    "name": "XO Produce Inc",
+    "state": "Texas",
+    "city": "Rio Grande Valley",
+    "products": [
+      "Citrus",
+      "Onions",
+      "Peppers",
+      "Green Vegetables"
+    ],
+    "website": "xoproduce.com",
+    "type": "Packinghouse - Citrus & Vegetables",
+    "notes": "Founded in 1998. Connection to Rio Grande Valley's fresh produce. Sources from Texas, Mexico, and South America."
+  },
+  {
+    "id": "WA001",
+    "company_name": "Easterday Produce",
+    "state": "WA",
+    "cities": [
+      "Pasco",
+      "Othello"
+    ],
+    "products": [
+      "Yellow Spanish onions",
+      "Red onions",
+      "White onions"
+    ],
+    "facilities": [
+      {
+        "location": "Pasco, WA",
+        "opened": 1995,
+        "specialty": "Yellow Spanish type onions"
+      },
+      {
+        "location": "Othello, WA",
+        "opened": 2005,
+        "specialty": "Red and white onions"
+      },
+      {
+        "location": "Northern Florida",
+        "opened": 2016
+      }
+    ],
+    "website": "https://www.easterdayproduce.com/",
+    "phone": "(509) 544-9595",
+    "fax": "(509) 544-9004",
+    "description": "Family-owned and operated farming business, vertically integrated grower, packer, and shipper"
+  },
+  {
+    "id": "OR001",
+    "company_name": "Eagle Eye Produce",
+    "state": "OR",
+    "cities": [
+      "Ontario",
+      "Nyssa"
+    ],
+    "products": [
+      "Premium onions"
+    ],
+    "facilities": [
+      {
+        "location": "Ontario, OR",
+        "specialty": "State-of-the-art facility with AI-powered grading and sorting, automation"
+      },
+      {
+        "location": "Nyssa, OR"
+      }
+    ],
+    "website": "https://www.eagleeyeproduce.com/",
+    "headquarters": "Idaho Falls, ID",
+    "description": "Grower-packer-shipper of premium onions; acquired Baker & Murakami Produce in April 2025; operates advanced facility known locally as 'super shed'"
+  },
+  {
+    "id": "ID001",
+    "company_name": "Fort Boise Produce",
+    "state": "ID",
+    "city": "Parma",
+    "products": [
+      "Onions"
+    ],
+    "website": "https://fortboise.com/",
+    "description": "Grows onions in the heart of the Idaho-Eastern Oregon growing region with offices and packing facility located in Parma"
+  },
+  {
+    "id": "TX001",
+    "company_name": "The Onion House LLC",
+    "state": "TX",
+    "city": "Weslaco",
+    "products": [
+      "Yellow onions",
+      "White onions",
+      "Red onions"
+    ],
+    "website": "https://www.producemarketguide.com/company/176239/onion-house-llc-the-hq",
+    "founded": 1999,
+    "description": "Onion shipping and marketing firm; acquired in late 2023; installed equipment for 2-, 3-, and 5-pound consumer packs with new palletizer",
+    "growingRegion": "rio_grande_tx"
+  },
+  {
+    "id": "GA001",
+    "company_name": "Bland Farms",
+    "state": "GA",
+    "city": "Glennville",
+    "products": [
+      "Vidalia Sweet onions"
+    ],
+    "website": "https://blandfarms.com/",
+    "founded": 1940,
+    "description": "Largest grower, packer, and shipper of Vidalia Sweet Onions in the United States; family-owned and operated for over 75 years; known for mild and sweet flavor profile",
+    "growingRegion": "vidalia_ga"
+  },
+  {
+    "id": "GENERAL002",
+    "company_name": "Green Valley Onion Co. Inc.",
+    "state": "NY",
+    "region": "Black Dirt Region, Orange County",
+    "products": [
+      "Onions"
+    ],
+    "website": "https://www.greenvalleyonion.com/",
+    "description": "One of the largest onion packaging & shipping companies; family-owned business"
+  }
+]
