@@ -1,0 +1,81 @@
+
+╔═══════════════════════════════════════════════════════╗
+║     15K GROWER DATASET - PATTERN ANALYSIS             ║
+╚═══════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════
+  GEOGRAPHIC PATTERNS
+═══════════════════════════════════════════════════
+
+Top 20 States by Grower Count:
+State   Growers   % of Total
+─────   ───────   ──────────
+NY          838     6%
+CA          804     5%
+MI          737     5%
+FL          714     5%
+NC          670     4%
+PA          623     4%
+WI          542     4%
+GA          515     3%
+OR          510     3%
+TX          508     3%
+OH          491     3%
+WA          475     3%
+TN          436     3%
+VA          436     3%
+IL          394     3%
+IN          377     3%
+MA          363     2%
+NJ          352     2%
+CT          335     2%
+MN          323     2%
+
+Total growers: 15038
+
+Growers linked to growing regions: 58/15038 (0%)
+  → These can use S pillar (soil inference from region)
+  → Remaining 14980 need city→region mapping
+
+═══════════════════════════════════════════════════
+  PRODUCT COVERAGE PATTERNS
+═══════════════════════════════════════════════════
+
+Products by Grower Count (Top 20):
+Product                  Growers
+──────────────────────   ───────
+Plum                          477
+Cherry                        449
+Pear                          387
+Apple                         254
+Peach                         107
+Grape                          97
+Orange                         71
+Blueberry                      67
+Strawberry                     66
+Raspberry                      44
+Blackberry                     34
+Avocado                        26
+Tomato                         20
+Lemon                          16
+Grapefruit                     11
+Tangerine/Mandarin              7
+Mango                           3
+Kiwi                            2
+
+✅ Growers with products:     677
+⚠️  Growers needing research: 14360
+❌ Analysis failed: TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at analyzeProductCoverage (/home/alex/projects/indrio-dev/pcf-05-deliver-services/fielder/scripts/analyze-grower-patterns.ts:98:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async main (/home/alex/projects/indrio-dev/pcf-05-deliver-services/fielder/scripts/analyze-grower-patterns.ts:340:26)
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at analyzeProductCoverage (/home/alex/projects/indrio-dev/pcf-05-deliver-services/fielder/scripts/analyze-grower-patterns.ts:98:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async main (/home/alex/projects/indrio-dev/pcf-05-deliver-services/fielder/scripts/analyze-grower-patterns.ts:340:26)
+
+Node.js v24.11.1

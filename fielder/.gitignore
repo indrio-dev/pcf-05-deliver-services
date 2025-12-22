@@ -43,3 +43,5 @@ next-env.d.ts
 
 # Auto-saved Claude sessions
 ai_sessions/
+data/collected/usda-local-food/usda-local-food-consolidated.json
+data/collected/usda-local-food/usda-local-food-*.json
