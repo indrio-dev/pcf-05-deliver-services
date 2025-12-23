@@ -181,3 +181,79 @@ export function combineUncertaintyComponents(
     totalStdDev: Math.sqrt(totalVariance)
   }
 }
+
+/**
+ * Create parametric distribution (normal or lognormal)
+ */
+export function createParametricDistribution(
+  mean: number,
+  stdDev: number,
+  distributionType: 'normal' | 'lognormal' = 'normal'
+): ProbabilityDistribution {
+  const z = {
+    p5: -1.645,
+    p10: -1.282,
+    p25: -0.674,
+    p50: 0,
+    p75: 0.674,
+    p90: 1.282,
+    p95: 1.645
+  }
+
+  const p5 = Math.max(0, mean + z.p5 * stdDev)
+  const p10 = Math.max(0, mean + z.p10 * stdDev)
+  const p25 = Math.max(0, mean + z.p25 * stdDev)
+  const p50 = mean
+  const p75 = mean + z.p75 * stdDev
+  const p90 = mean + z.p90 * stdDev
+  const p95 = mean + z.p95 * stdDev
+
+  return {
+    mean,
+    median: p50,
+    stdDev,
+    p5, p10, p25, p50, p75, p90, p95,
+    interquartileRange: p75 - p25,
+    confidenceInterval90: [p5, p95],
+    method: 'parametric',
+    parametricParams: { distribution: distributionType, params: { mean, stdDev } }
+  }
+}
+
+/**
+ * Create empirical distribution from measurements
+ */
+export function createEmpiricalDistribution(
+  measurements: number[],
+  dataSource: string
+): ProbabilityDistribution {
+  if (measurements.length === 0) {
+    throw new Error('Cannot create empirical distribution from empty dataset')
+  }
+
+  const sorted = [...measurements].sort((a, b) => a - b)
+  const getPercentile = (p: number) => {
+    const index = Math.floor((p / 100) * sorted.length)
+    return sorted[Math.min(index, sorted.length - 1)]
+  }
+
+  const mean = sorted.reduce((sum, x) => sum + x, 0) / sorted.length
+  const variance = sorted.reduce((sum, x) => sum + Math.pow(x - mean, 2), 0) / sorted.length
+
+  const p5 = getPercentile(5)
+  const p25 = getPercentile(25)
+  const p50 = getPercentile(50)
+  const p75 = getPercentile(75)
+  const p95 = getPercentile(95)
+
+  return {
+    mean,
+    median: p50,
+    stdDev: Math.sqrt(variance),
+    p5, p10: getPercentile(10), p25, p50, p75, p90: getPercentile(90), p95,
+    interquartileRange: p75 - p25,
+    confidenceInterval90: [p5, p95],
+    method: 'empirical',
+    empiricalParams: { nMeasurements: measurements.length, dataSource, lastUpdated: new Date().toISOString() }
+  }
+}
