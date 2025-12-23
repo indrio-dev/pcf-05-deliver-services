@@ -34,6 +34,17 @@ import {
 } from '../prediction/gdd-versions'
 
 import {
+  generateBrixDistribution,
+  getUncertaintyComponents,
+} from './uncertainty-quantification'
+
+import {
+  deriveConfidenceScore,
+  type ProbabilityDistribution,
+  type UncertaintyComponents,
+} from '@/lib/types/uncertainty'
+
+import {
   inferFromPLU,
   inferBeefProfile,
   checkOrganicBeefWarning,
@@ -121,6 +132,10 @@ export interface PredictionResult {
   gddVersion?: GDDVersion
   gddCumulative?: number
   gddFormulaParams?: GDDFormulaParams
+
+  // Uncertainty distributions (Enhancement #1)
+  brixDistribution?: ProbabilityDistribution
+  uncertaintyBreakdown?: UncertaintyComponents
 
   // Anomaly flags
   isAnomaly: boolean
@@ -513,6 +528,27 @@ function executeDeterministicPrediction(
     // Set predicted Brix (clamped to valid range)
     result.predictedBrix = clampToPhysical(result.brixComponents.total, 'brix')
     result.qualityTier = classifyQualityTier(result.predictedBrix)
+
+    // Generate uncertainty distribution (Enhancement #1)
+    const uncertaintyComponents = getUncertaintyComponents(
+      input.cultivarId,
+      input.regionId,
+      undefined,  // practices (would pass from input)
+      undefined,  // harvestWindow
+      new Date()
+    )
+
+    const brixDistribution = generateBrixDistribution(
+      result.predictedBrix,
+      uncertaintyComponents,
+      10000
+    )
+
+    result.brixDistribution = brixDistribution
+    result.uncertaintyBreakdown = uncertaintyComponents
+
+    // Update confidence score from distribution (backward compatibility)
+    result.confidence = deriveConfidenceScore(brixDistribution, result.predictedBrix)
 
     // Calculate sugar/acid profile
     result.sugarAcid = estimateSugarAcid(input.currentGdd)
