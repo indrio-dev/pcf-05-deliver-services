@@ -27,9 +27,9 @@ CREATE TABLE IF NOT EXISTS regional_practice_priors (
 );
 
 COMMENT ON TABLE regional_practice_priors IS 'Regional probability distributions for practice inference';
-COMMENT ON COLUMN regional_practice_priors.fertility_strategy_dist IS 'Distribution: annual_fertility, soil_banking, mineralized_soil_science';
-COMMENT ON COLUMN regional_practice_priors.pest_management_dist IS 'Distribution: conventional, ipm, organic, no_spray';
-COMMENT ON COLUMN regional_practice_priors.feeding_regime_dist IS 'Distribution: grass_only, pasture_grain_supp, grain_finished, grain_fed';
+COMMENT ON COLUMN regional_practice_priors.fertility_strategy_dist IS 'Distribution: annual_fertility, soil_banking, mineralized_soil_science (affects Brix via soil)';
+COMMENT ON COLUMN regional_practice_priors.pest_management_dist IS 'DEPRECATED: Pest management does not affect Brix/nutrition (separate axis)';
+COMMENT ON COLUMN regional_practice_priors.feeding_regime_dist IS 'Distribution: grass_only, pasture_grain_supp, grain_finished, grain_fed (affects omega ratio)';
 
 CREATE INDEX IF NOT EXISTS idx_regional_priors_region ON regional_practice_priors(region_id);
 CREATE INDEX IF NOT EXISTS idx_regional_priors_crop ON regional_practice_priors(crop_category);

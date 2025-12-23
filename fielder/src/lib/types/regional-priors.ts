@@ -11,10 +11,12 @@ export interface RegionalPracticePriors {
   regionId: string
   cropCategory: string
 
-  // Practice distributions (sum to 1.0)
-  fertilityStrategyDist?: Record<string, number>
-  pestManagementDist?: Record<string, number>
-  feedingRegimeDist?: Record<string, number>  // For livestock
+  // Practice distributions that AFFECT QUALITY (sum to 1.0)
+  fertilityStrategyDist?: Record<string, number>  // Affects Brix via soil quality
+  feedingRegimeDist?: Record<string, number>      // Affects omega ratio (livestock)
+
+  // Note: pestManagementDist REMOVED - doesn't affect Brix/nutrition
+  // (pesticides on separate axis from quality - see CLAUDE.md)
 
   // Metadata
   nFarmsInSample: number
@@ -207,22 +209,19 @@ export function applyRegionalPrior(
   method: 'sample' | 'most_likely' = 'most_likely'
 ): {
   fertilityStrategy?: string
-  pestManagement?: string
   feedingRegime?: string
   confidence: number
+  inferenceNote: string
 } {
-  const result: any = { confidence: prior.confidence }
+  const result: any = {
+    confidence: prior.confidence,
+    inferenceNote: `Inferred from ${prior.nFarmsInSample} ${prior.regionId} farms`
+  }
 
   if (prior.fertilityStrategyDist) {
     result.fertilityStrategy = method === 'sample'
       ? sampleFromPrior(prior.fertilityStrategyDist)
       : getMostLikely(prior.fertilityStrategyDist)
-  }
-
-  if (prior.pestManagementDist) {
-    result.pestManagement = method === 'sample'
-      ? sampleFromPrior(prior.pestManagementDist)
-      : getMostLikely(prior.pestManagementDist)
   }
 
   if (prior.feedingRegimeDist) {
