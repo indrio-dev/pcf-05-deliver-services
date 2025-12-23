@@ -9,6 +9,16 @@ import {
   type ProbabilityDistribution,
   type UncertaintyComponents,
   combineUncertaintyComponents,
+  createParametricDistribution,
+  createEmpiricalDistribution,
+  normalInverseCDF,
+} from '@/lib/types/uncertainty'
+
+// Export for convenience
+export {
+  createParametricDistribution,
+  createEmpiricalDistribution,
+  normalInverseCDF,
 } from '@/lib/types/uncertainty'
 
 // Placeholder sync functions - would import from reference-data
