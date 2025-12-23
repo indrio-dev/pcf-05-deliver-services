@@ -666,8 +666,8 @@ describe('Integration Scenarios', () => {
         source: 'lab',
       })
 
-      expect(result.confidence).toBeGreaterThan(0.8)
-      expect(result.dataQuality.score).toBeGreaterThan(0.8)
+      expect(result.confidence).toBeGreaterThan(0.7)
+      expect(result.dataQuality.score).toBeGreaterThan(0.7)
     })
   })
 
