@@ -27,6 +27,13 @@ import {
 } from './rules-engine'
 
 import {
+  getRecommendedVersion,
+  CURRENT_GDD_VERSION,
+  type GDDVersion,
+  type GDDFormulaParams,
+} from '../prediction/gdd-versions'
+
+import {
   inferFromPLU,
   inferBeefProfile,
   checkOrganicBeefWarning,
@@ -64,6 +71,10 @@ export interface PredictionInput {
   currentGdd?: number
   peakGdd?: number
   gddHalfwidth?: number
+
+  // GDD versioning (Enhancement #2)
+  gddVersion?: GDDVersion
+  gddFormulaParams?: GDDFormulaParams
 
   // Tree/plant characteristics
   treeAgeYears?: number
@@ -104,7 +115,12 @@ export interface PredictionResult {
   confidence: number
   confidenceFactors: ConfidenceFactor[]
   validation: ValidationResult
-  dataQuality: DataQualityResult
+  dataQuality: DataQuality
+
+  // GDD versioning (Enhancement #2)
+  gddVersion?: GDDVersion
+  gddCumulative?: number
+  gddFormulaParams?: GDDFormulaParams
 
   // Anomaly flags
   isAnomaly: boolean
@@ -356,6 +372,13 @@ export function predictQuality(
 ): PredictionResult {
   const startTime = Date.now()
 
+  // Determine GDD version to use (Enhancement #2)
+  const gddVersion = input.gddVersion || (
+    input.cultivarId && input.regionId
+      ? getRecommendedVersion(input.cultivarId, input.regionId)
+      : CURRENT_GDD_VERSION
+  )
+
   // Initialize result
   const result: PredictionResult = {
     layer: 'deterministic',
@@ -369,6 +392,8 @@ export function predictQuality(
     needsReview: false,
     timestamp: new Date(),
     processingTimeMs: 0,
+    gddVersion,  // Track which version was used
+    gddCumulative: input.currentGdd,
   }
 
   // Step 1: Validate input
