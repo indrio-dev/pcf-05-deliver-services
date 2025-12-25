@@ -27,11 +27,11 @@ interface BFARecord {
 
 async function main() {
   console.log('╔════════════════════════════════════════════════════════╗')
-  console.log('║  LOAD BFA MEASUREMENTS (BATCH 1)                       ║')
+  console.log('║  LOAD FULL BFA DATASET (5,378 MEASUREMENTS)            ║')
   console.log('╚════════════════════════════════════════════════════════╝\n')
 
   const data: BFARecord[] = JSON.parse(
-    fs.readFileSync('data/bfa-measurements-batch1.json', 'utf-8')
+    fs.readFileSync('data/bfa-measurements-full.json', 'utf-8')
   )
 
   console.log(`Loading ${data.length} BFA measurements...\n`)
@@ -45,26 +45,22 @@ async function main() {
 
     await runWriteTransaction(`
       UNWIND $batch as m
-      CREATE (measurement:Measurement:BFAMeasurement {
-        id: m.id,
-        source: 'bionutrient_food_association',
-        species: m.species,
-        variety: m.variety,
-        state: m.state,
-        county: m.county,
-        collectionDate: m.date,
-        sampleSource: m.sampleSource,
-        farmPractices: m.practices,
-
-        brix: m.brix,
-        brixPercentile: m.brixPercentile,
-
-        soilCa: m.soilCa,
-        soilMg: m.soilMg,
-        soilP: m.soilP,
-        soilK: m.soilK,
-        caMgRatio: m.caMgRatio
-      })
+      MERGE (measurement:Measurement:BFAMeasurement {id: m.id})
+      SET measurement.source = 'bionutrient_food_association',
+          measurement.species = m.species,
+          measurement.variety = m.variety,
+          measurement.state = m.state,
+          measurement.county = m.county,
+          measurement.collectionDate = m.date,
+          measurement.sampleSource = m.sampleSource,
+          measurement.farmPractices = m.practices,
+          measurement.brix = m.brix,
+          measurement.brixPercentile = m.brixPercentile,
+          measurement.soilCa = m.soilCa,
+          measurement.soilMg = m.soilMg,
+          measurement.soilP = m.soilP,
+          measurement.soilK = m.soilK,
+          measurement.caMgRatio = m.caMgRatio
 
       WITH measurement
       WHERE measurement.species IS NOT NULL
