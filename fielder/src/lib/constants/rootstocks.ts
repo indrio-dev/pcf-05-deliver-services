@@ -302,68 +302,13 @@ export function getRootstocksByQuality(category?: RootstockCropCategory): Rootst
   return stocks.sort((a, b) => b.brixModifier - a.brixModifier)
 }
 
-  // NEW ROOTSTOCKS FROM GEORGIA TRAINING DATA (2021)
-  
-  'us-897': {
-    id: 'us-897',
-    name: 'US-897',
-    brixModifier: +0.7, // From Georgia data: Sugar Belle + Shiranui tests
-    diseaseResistance: ['hlb_tolerance'],
-    notes: 'University of Florida HLB-tolerant rootstock. Georgia controlled tests show +0.7°Bx effect.',
-  },
-
-  'us-942': {
-    id: 'us-942',
-    name: 'US-942',  
-    brixModifier: +0.0, // From Georgia data: Neutral effect
-    diseaseResistance: ['hlb_tolerance'],
-    notes: 'University of Florida HLB-tolerant. Georgia tests show neutral Brix effect.',
-  },
-
-  'us-852': {
-    id: 'us-852',
-    name: 'US-852',
-    brixModifier: +0.0, // From Georgia data: Neutral effect
-    diseaseResistance: ['hlb_tolerance'],
-    notes: 'University of Florida HLB-tolerant. Georgia tests show neutral Brix effect.',
-  },
-
-  rubidoux: {
-    id: 'rubidoux',
-    name: 'Rubidoux',
-    brixModifier: +1.0, // From Georgia data: BEST performer (+1.21 effect)
-    diseaseResistance: [],
-    notes: 'Trifoliate hybrid. Georgia data shows +1.0°Bx effect (highest in tests). Excellent quality rootstock.',
-  },
-
-  goutou: {
-    id: 'goutou',
-    name: 'Goutou',
-    brixModifier: -0.6, // From Georgia data: Lower quality
-    diseaseResistance: [],
-    notes: 'Georgia data shows -0.6°Bx effect. Lower quality rootstock.',
-  },
-
-  'x-639': {
-    id: 'x-639',
-    name: 'X-639',
-    brixModifier: -0.5, // From Georgia data
-    diseaseResistance: [],
-    notes: 'USDA rootstock. Georgia data shows -0.5°Bx effect.',
-  },
-
-  'kuharski-carrizo': {
-    id: 'kuharski-carrizo',
-    name: 'Kuharski Carrizo',
-    brixModifier: +0.5, // Estimate (Carrizo variant)
-    diseaseResistance: ['citrus_tristeza'],
-    notes: 'Carrizo variant. Assuming similar quality effect as standard Carrizo.',
-  },
-
-  '16-6': {
-    id: '16-6',
-    name: '16-6',
-    brixModifier: +0.0, // Estimate
-    notes: 'Experimental rootstock. Limited data.',
-  },
-}
+// NOTE: NEW ROOTSTOCKS FROM GEORGIA TRAINING DATA (2021)
+// These should be added to the ROOTSTOCKS array above:
+// - us-897: +0.7 Bx modifier (HLB-tolerant, UF, Georgia tests)
+// - us-942: +0.0 Bx modifier (HLB-tolerant)
+// - us-852: +0.0 Bx modifier (HLB-tolerant)
+// - rubidoux: +1.0 Bx modifier (BEST performer, trifoliate hybrid)
+// - goutou: -0.6 Bx modifier (lower quality)
+// - x-639: -0.5 Bx modifier (USDA rootstock)
+// - kuharski-carrizo: +0.5 Bx modifier (Carrizo variant)
+// - 16-6: +0.0 Bx modifier (experimental)
