@@ -499,7 +499,12 @@ async function main() {
         WITH v
         MATCH (p:ProductType {id: $productId})
         MERGE (v)-[:BELONGS_TO_PRODUCT]->(p)
-      `, variety)
+      `, {
+        id: variety.id,
+        productId: variety.productId,
+        displayName: variety.displayName,
+        description: variety.description
+      })
       console.log(`  ✓ ${variety.displayName}`)
     } catch (error: any) {
       if (!error.code?.includes('Constraint')) {

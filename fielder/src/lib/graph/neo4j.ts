@@ -128,7 +128,7 @@ export async function runTransaction<T = Record<string, unknown>>(
 
   try {
     const results = await session.executeWrite(async tx => {
-      const allResults: Result[] = []
+      const allResults: any[] = []
       for (const query of queries) {
         const result = await tx.run(query.cypher, query.params || {})
         allResults.push(result)
