@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "search_date": "2025-12-27",
+    "criteria": "Complete measurements with location + harvest timing + Brix value",
+    "sources_searched": [
+      "Texas A&M AgriLife Extension / Citrus Center",
+      "UF/IFAS CREC (Florida)",
+      "UC Riverside Citrus Variety Collection",
+      "USDA ARS",
+      "ResearchGate academic publications",
+      "ASHS journal publications"
+    ],
+    "note": "Limited complete datasets found meeting all three criteria (location + timing + Brix). Most sources provided partial information or general ranges."
+  },
+  "complete_measurements": [
+    {
+      "cultivar_id": "rio_red",
+      "cultivar_name": "Rio Red",
+      "location": "Rio Queen Citrus, Rio Grande Valley",
+      "county": "South Texas",
+      "state": "TX",
+      "harvest_date": "2010-02-10",
+      "harvest_season": "Winter",
+      "brix": 11.70,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "PMC Study - Influence of storage temperature on Rio Red grapefruit",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5448389/",
+      "notes": "Initial harvest measurement, week 0 of storage study. Storage up to 12 weeks maintained Brix 11.20-11.97 range."
+    }
+  ],
+  "partial_measurements": [
+    {
+      "cultivar_id": "rio_star",
+      "cultivar_name": "Rio Star (Rio Red trademarked)",
+      "location": "Texas",
+      "county": null,
+      "state": "TX",
+      "harvest_date": null,
+      "harvest_season": "Peak: November-February, Full season: October-March",
+      "brix": 9.0,
+      "brix_max": 11.0,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "Multiple commercial sources",
+      "url": "https://www.producereport.com/article/lone-star-citrus-shows-super-sweet-rio-star-grapefruit",
+      "notes": "Rio Star measures 9-11° Brix. Commercial marketing data, not research trial. Rio Star is trademarked name for Texas Rio Red."
+    },
+    {
+      "cultivar_id": "rio_red",
+      "cultivar_name": "Rio Red",
+      "location": "South Texas",
+      "county": null,
+      "state": "TX",
+      "harvest_date": null,
+      "harvest_season": "Fall to winter as fruit matures, October-January",
+      "brix": null,
+      "acid": null,
+      "brix_acid_ratio": 2.4,
+      "source": "Fertilization Programs for Rio Red Grapefruit in South Texas",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/15538360903241039",
+      "notes": "Brix:acid ratio averaged 2.4, increases October to January. Juice sampled 2-4 times/year during fall maturation. Study by Texas A&M."
+    },
+    {
+      "cultivar_id": "star_ruby",
+      "cultivar_name": "Star Ruby",
+      "location": "Not specified",
+      "county": null,
+      "state": null,
+      "harvest_date": null,
+      "harvest_season": "Harvests: April 16 (before flowering), May 6 (full bloom), May 28 (after flowering), June 18 (6 weeks post-bloom)",
+      "brix": 10.6,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "Harvest time and storage conditions study",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925521404000973",
+      "notes": "35-year-old trees, TSS 10.6°Brix. Multiple harvest dates for summer consumption study. Location not specified in search results."
+    },
+    {
+      "cultivar_id": "star_ruby",
+      "cultivar_name": "Star Ruby",
+      "location": "Not specified",
+      "county": null,
+      "state": null,
+      "harvest_date": null,
+      "harvest_season": "January-April",
+      "brix": 12.0,
+      "brix_max": 14.0,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "Commercial grower source",
+      "url": "https://www.harryanddavid.com/articles/food-drink/types-of-grapefruits",
+      "notes": "12-14° Brix, balanced flavor. Commercial data, not research trial."
+    },
+    {
+      "cultivar_id": "ruby_red",
+      "cultivar_name": "Ruby Red",
+      "location": "Texas and Florida",
+      "county": null,
+      "state": "TX, FL",
+      "harvest_date": null,
+      "harvest_season": "Florida: November-May, Texas: October-May, Peak: November-March",
+      "brix": 9.0,
+      "brix_max": 11.0,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "Multiple commercial sources",
+      "url": "https://www.alsfamilyfarms.com/shop/rubyreds",
+      "notes": "Red varieties have higher Brix than pink or white grapefruit. General range, not specific trial data."
+    },
+    {
+      "cultivar_id": "duncan",
+      "cultivar_name": "Duncan",
+      "location": "Not specified",
+      "county": null,
+      "state": null,
+      "harvest_date": null,
+      "harvest_season": null,
+      "brix": 9.56,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "Pomological and Nutritional Characterization study",
+      "url": "https://www.researchgate.net/publication/313025995_POMOLOGICAL_AND_NUTRITIONAL_CHARACTERIZATION_OF_SOME_VARIETIES_OF_GRAPEFRUIT_CITRUS_PARADISI_MACFf",
+      "notes": "Duncan showed maximum TSS at 9.56%, comparable to Marsh SL at 9.53%. Location and harvest timing not specified."
+    },
+    {
+      "cultivar_id": "marsh",
+      "cultivar_name": "Marsh (Marsh Seedless)",
+      "location": "Not specified",
+      "county": null,
+      "state": null,
+      "harvest_date": null,
+      "harvest_season": null,
+      "brix": 9.53,
+      "acid": 1.56,
+      "brix_acid_ratio": null,
+      "juice_content": 40.13,
+      "source": "Pomological and Nutritional Characterization study",
+      "url": "https://www.researchgate.net/publication/313025995_POMOLOGICAL_AND_NUTRITIONAL_CHARACTERIZATION_OF_SOME_VARIETIES_OF_GRAPEFRUIT_CITRUS_PARADISI_MACFf",
+      "notes": "Marsh SL had 9.53% TSS (Brix), 40.13% juice content, 1.56% acidity. Location and harvest timing not specified."
+    },
+    {
+      "cultivar_id": "marsh",
+      "cultivar_name": "Marsh",
+      "location": "Indian River area, west of Vero Beach",
+      "county": "Indian River County",
+      "state": "FL",
+      "harvest_date": null,
+      "harvest_season": "Measured at 7 years old",
+      "brix": null,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "soluble_solids_kg_ha": "3000-4000",
+      "source": "UF/IFAS Indian River Marsh grapefruit rootstock trial",
+      "url": "https://crec.ifas.ufl.edu/citrus-research/rootstock-trials/indian-river-marsh-grapefruit-rootstock-trial/",
+      "notes": "Rootstock trial planted 2007. Trees on 5 rootstocks produced 3000-4000 kg/ha soluble solids at 7 years. Overall Brix values described as 'low'."
+    },
+    {
+      "cultivar_id": "oroblanco",
+      "cultivar_name": "Oroblanco",
+      "location": "California (Riverside and Lindcove areas)",
+      "county": null,
+      "state": "CA",
+      "harvest_date": null,
+      "harvest_season": "December-April (Riverside), Early November-February (Lindcove)",
+      "brix": 9.65,
+      "acid": null,
+      "brix_acid_ratio": "10:1 minimum required",
+      "source": "California Oroblanco production standards",
+      "url": "https://www.researchgate.net/publication/279478969_Performance_of_Oroblanco'_and_Melogold'_Pummelo_Grapefruit_Hybrids_on_Nine_Rootstocks_on_a_Calcareous_Poorly_Drained_Soil",
+      "notes": "Oroblanco had highest TSS at 9.65°Brix among cultivars tested. CA requires 10:1 Brix:acid ratio minimum. Pummelo x grapefruit hybrid."
+    },
+    {
+      "cultivar_id": "melogold",
+      "cultivar_name": "Melogold",
+      "location": "California",
+      "county": null,
+      "state": "CA",
+      "harvest_date": null,
+      "harvest_season": "Similar to Oroblanco, early season",
+      "brix": null,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "UC Riverside breeding program",
+      "url": "https://en.wikipedia.org/wiki/Oroblanco",
+      "notes": "Released 1986, from same 1958 cross as Oroblanco. Much lower acidity than regular grapefruit. Specific Brix not found."
+    },
+    {
+      "cultivar_id": "ray_ruby",
+      "cultivar_name": "Ray Ruby",
+      "location": "Indian River County, FL",
+      "county": "Indian River County",
+      "state": "FL",
+      "harvest_date": null,
+      "harvest_season": "Multiple harvests 2011-2014: 8 harvests (2011-12), 5 harvests (2012-13), plus 2014",
+      "brix": null,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "ASHS HortScience - Rootstock Effects on Ray Ruby study",
+      "url": "https://journals.ashs.org/hortsci/view/journals/hortsci/52/4/article-p541.xml",
+      "notes": "Compared 7 rootstocks in commercial orchard. Rootstock affected total solids and solids:acid ratio significantly. Specific Brix values in publication (access blocked)."
+    },
+    {
+      "cultivar_id": "flame",
+      "cultivar_name": "Flame",
+      "location": "Indian River Growing region",
+      "county": null,
+      "state": "FL",
+      "harvest_date": null,
+      "harvest_season": "February only",
+      "brix": null,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "Al's Family Farms commercial source",
+      "url": "https://www.alsfamilyfarms.com/shopping/product.php/flames/",
+      "notes": "Available only in February in Indian River region. Henderson seedling from Florida, released 1983."
+    },
+    {
+      "cultivar_id": "n40-16-11-3",
+      "cultivar_name": "N40-16-11-3 (UF breeding selection)",
+      "location": "Florida",
+      "county": null,
+      "state": "FL",
+      "harvest_date": null,
+      "harvest_season": "October",
+      "brix": 12.0,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "UF/IFAS Grapefruit Breeding Program",
+      "url": "https://irrec.ifas.ufl.edu/media/irrecifasufledu/docs/pdf/citrus-show/Update-on-Grapefruit-Improvement-in-the-HLB-Era.pdf",
+      "notes": "Experimental selection described as 'dark red, high brix' reaching 12 Brix in October. Breeding trial data."
+    },
+    {
+      "cultivar_id": "n40-11-7",
+      "cultivar_name": "N40-11-7 (UF breeding selection)",
+      "location": "Florida",
+      "county": null,
+      "state": "FL",
+      "harvest_date": null,
+      "harvest_season": null,
+      "brix": null,
+      "acid": null,
+      "brix_acid_ratio": null,
+      "source": "UF/IFAS Grapefruit Breeding Program",
+      "url": "https://irrec.ifas.ufl.edu/media/irrecifasufledu/docs/pdf/citrus-show/Update-on-Grapefruit-Improvement-in-the-HLB-Era.pdf",
+      "notes": "Experimental selection described as 'dark red, high brix, blush'. Specific Brix value not found."
+    }
+  ],
+  "general_standards": [
+    {
+      "standard": "USDA minimum maturity for fresh grapefruit",
+      "brix_minimum": 7.5,
+      "source": "USDA AMS maturity determination",
+      "url": "https://www.ams.usda.gov/sites/default/files/media/Determination_of_Maturity_for_Imported_Fresh_Grapefruit_Under_Section_8e_A_081622.pdf",
+      "notes": "Minimum 7.5% TSS (Brix) required for imported fresh grapefruit maturity"
+    },
+    {
+      "standard": "Texas citrus regulation",
+      "brix_minimum": 7.5,
+      "source": "Texas Administrative Code Title 4",
+      "url": "https://regulations.justia.com/states/texas/title-4/part-1/chapter-21/subchapter-b/section-21-20/",
+      "notes": "Texas follows USDA standards for grapefruit maturity"
+    },
+    {
+      "observation": "Seasonal Brix increase in grapefruit",
+      "location": "General observation from multiple sources",
+      "notes": "Total soluble solids (Brix) increase in grapefruit from October to February as fruit matures. Lower leaf nitrogen during maturation favors higher Brix."
+    },
+    {
+      "observation": "Color and sweetness correlation",
+      "notes": "Red varieties generally have higher Brix than pink grapefruit, which have higher Brix than white grapefruit."
+    }
+  ],
+  "search_limitations": {
+    "issues_encountered": [
+      "Many university research publications behind paywalls (ResearchGate 403 errors, journal access blocked)",
+      "Most commercial sources provide Brix ranges without specific harvest dates",
+      "Location data often vague (e.g., 'Texas' or 'Florida' without county/city)",
+      "Harvest timing often seasonal rather than dated",
+      "Many studies measure Brix:acid ratio but not individual Brix values",
+      "PDFs from university sources not extractable via WebFetch"
+    ],
+    "repositories_blocked": [
+      "ResearchGate articles (403 forbidden)",
+      "ScienceDirect articles (paywall/403)",
+      "ASHS journal full articles (404/access restricted)",
+      "Many UF/IFAS and Texas A&M PDFs (unreadable binary)"
+    ],
+    "recommendation": "Direct contact with Texas A&M Citrus Center (Weslaco), UF/IFAS CREC (Lake Alfred), and UC Riverside Citrus Variety Collection for access to complete trial data with all three required parameters."
+  },
+  "cultivar_coverage": {
+    "found_complete_data": [
+      "Rio Red"
+    ],
+    "found_partial_data": [
+      "Rio Star",
+      "Ruby Red",
+      "Star Ruby",
+      "Flame",
+      "Ray Ruby",
+      "Marsh",
+      "Duncan",
+      "Oroblanco",
+      "Melogold"
+    ],
+    "no_data_found": []
+  }
+}

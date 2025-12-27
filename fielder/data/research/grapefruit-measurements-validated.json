@@ -1,0 +1,26 @@
+{
+  "data_collection_date": "2025-12-27",
+  "source": "Texas A&M research, UF/IFAS publications",
+  "validation_criteria": "Only measurements with Location + Time + Brix value",
+  "measurements": [
+    {
+      "cultivar_id": "rio_red",
+      "cultivar_name": "Rio Red",
+      "location": "Rio Queen Citrus, Rio Grande Valley",
+      "county": "South Texas",
+      "state": "TX",
+      "harvest_date": "2010-02-10",
+      "harvest_season": "Winter",
+      "brix": 11.70,
+      "source": "PMC Study - Influence of storage temperature on Rio Red grapefruit",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5448389/",
+      "notes": "Initial harvest measurement, week 0 of storage study. Storage up to 12 weeks maintained Brix 11.20-11.97 range."
+    }
+  ],
+  "summary": {
+    "total_measurements": 1,
+    "cultivars_with_data": 1,
+    "data_quality": "Complete - has location, specific harvest date, Brix value",
+    "note": "Most grapefruit data behind paywalls or incomplete. Direct university contact needed for Rio Star, Flame, Ray Ruby trials."
+  }
+}

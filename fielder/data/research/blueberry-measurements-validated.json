@@ -1,0 +1,223 @@
+{
+  "data_collection_date": "2025-12-27",
+  "source": "Alabama Extension, University of Banja Luka, Chile commercial trials, Romania research",
+  "validation_criteria": "Only measurements with Location + Time + Brix value",
+  "measurements": [
+    {
+      "cultivar_id": "pink_lemonade",
+      "cultivar_name": "Pink Lemonade",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-15",
+      "brix": 12.6,
+      "source": "Alabama Cooperative Extension - Chilton REC",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, earliest to mature, mid-May harvest"
+    },
+    {
+      "cultivar_id": "alapaha",
+      "cultivar_name": "Alapaha",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-18",
+      "brix": 14.2,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, few days after Pink Lemonade"
+    },
+    {
+      "cultivar_id": "krewer",
+      "cultivar_name": "Krewer",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-18",
+      "brix": 14.7,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye"
+    },
+    {
+      "cultivar_id": "vernon",
+      "cultivar_name": "Vernon",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-18",
+      "brix": 13.8,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye"
+    },
+    {
+      "cultivar_id": "climax",
+      "cultivar_name": "Climax",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-25",
+      "brix": 15.9,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, HIGHEST BRIX in trial"
+    },
+    {
+      "cultivar_id": "premier",
+      "cultivar_name": "Premier",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-25",
+      "brix": 14.8,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, early standard variety"
+    },
+    {
+      "cultivar_id": "titan",
+      "cultivar_name": "Titan",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-25",
+      "brix": 15.9,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, HIGHEST BRIX tied with Climax"
+    },
+    {
+      "cultivar_id": "tifblue",
+      "cultivar_name": "Tifblue",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-05-25",
+      "brix": 14.7,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, established standard variety"
+    },
+    {
+      "cultivar_id": "ochlockonee",
+      "cultivar_name": "Ochlockonee",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-06-05",
+      "brix": 14.4,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, latest harvest in trial"
+    },
+    {
+      "cultivar_id": "powderblue",
+      "cultivar_name": "Powderblue",
+      "location": "Clanton, Alabama",
+      "county": "Chilton County",
+      "state": "AL",
+      "harvest_date": "2024-06-05",
+      "brix": 14.4,
+      "source": "Alabama Cooperative Extension",
+      "url": "https://www.aces.edu/blog/topics/crop-production/research-update-assessment-of-rabbiteye-blueberry-cultivars/",
+      "notes": "Rabbiteye, latest harvest"
+    },
+    {
+      "cultivar_id": "duke",
+      "cultivar_name": "Duke",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-06-14",
+      "brix": 11.03,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "First harvest, 10% mature fruit"
+    },
+    {
+      "cultivar_id": "duke",
+      "cultivar_name": "Duke",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-06-21",
+      "brix": 11.74,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "Second harvest, 20% mature fruit"
+    },
+    {
+      "cultivar_id": "duke",
+      "cultivar_name": "Duke",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-06-28",
+      "brix": 12.56,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "Third harvest, 50% mature fruit, peak maturity"
+    },
+    {
+      "cultivar_id": "duke",
+      "cultivar_name": "Duke",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-07-05",
+      "brix": 13.82,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "Fourth harvest, 20% mature fruit"
+    },
+    {
+      "cultivar_id": "bluecrop_blueberry",
+      "cultivar_name": "Bluecrop",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-06-21",
+      "brix": 11.54,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "First harvest, 10% mature fruit"
+    },
+    {
+      "cultivar_id": "bluecrop_blueberry",
+      "cultivar_name": "Bluecrop",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-06-28",
+      "brix": 11.98,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "Second harvest, 15% mature fruit"
+    },
+    {
+      "cultivar_id": "bluecrop_blueberry",
+      "cultivar_name": "Bluecrop",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-07-05",
+      "brix": 15.04,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "Third harvest, 35% mature fruit, PEAK BRIX"
+    },
+    {
+      "cultivar_id": "bluecrop_blueberry",
+      "cultivar_name": "Bluecrop",
+      "location": "Srbac, Bosnia and Herzegovina",
+      "state": "Bosnia",
+      "harvest_date": "2017-07-12",
+      "brix": 12.46,
+      "source": "University of Banja Luka",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502264/",
+      "notes": "Fourth harvest, 40% mature fruit"
+    }
+  ],
+  "summary": {
+    "total_measurements": 18,
+    "us_measurements": 10,
+    "cultivars_with_data": 12,
+    "brix_range_observed": "11.03 - 15.9",
+    "key_finding": "Alabama rabbiteye cultivars show excellent Brix (12.6-15.9), Duke/Bluecrop show peak at 3rd harvest",
+    "data_quality": "Excellent - all have location, specific harvest date, Brix value"
+  }
+}
