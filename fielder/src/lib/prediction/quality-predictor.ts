@@ -394,6 +394,9 @@ export interface QualityPredictionInput {
   treeAgeYears?: number
   bloomDate?: Date                    // Override calculated bloom date
 
+  // NEW: Harvest timing assessment (R pillar - from validation)
+  harvestTiming?: 'early' | 'peak' | 'late'  // Early in window, peak window, or late/over-mature
+
   // Soil data (if available)
   soil?: {
     organicMatterPct?: number
@@ -432,6 +435,9 @@ export interface QualityPredictionInput {
     // === PRODUCE-SPECIFIC ===
     irrigationType?: 'drip' | 'flood' | 'sprinkler' | 'rainfed'
     cropLoadManaged?: boolean         // Thinning for tree fruit
+
+    // NEW: Growing method (A pillar - from validation)
+    growingMethod?: 'field' | 'greenhouse' | 'hydroponic' | 'high_tunnel'  // Impacts Brix significantly
 
     // === UNIVERSAL ===
     residueTested?: boolean           // Lab-tested for pesticide residues
@@ -890,6 +896,31 @@ export function calculateAgriculturalContribution(
     }
   }
 
+  // === NEW: GROWING METHOD (from validation data) ===
+  // Field vs greenhouse/hydroponic significantly affects Brix
+  // Validation data: CA field strawberries 11-12°Bx, NC greenhouse 7-8°Bx (40% lower)
+  if (practices.growingMethod) {
+    factors.growingMethod = practices.growingMethod
+    switch (practices.growingMethod) {
+      case 'field':
+        modifier += 2.0  // Field production baseline (full sun, natural conditions)
+        insights.push('Field production: Full sun and natural conditions optimize sugar development')
+        break
+      case 'high_tunnel':
+        modifier += 1.0  // Partial benefit of field production
+        insights.push('High tunnel: Season extension while maintaining field-like light levels')
+        break
+      case 'greenhouse':
+        // Baseline (0.0) - controlled environment reduces Brix vs field
+        insights.push('Greenhouse: Controlled environment trades Brix for year-round production')
+        break
+      case 'hydroponic':
+        modifier -= 1.0  // Further reduction in soil-less systems
+        insights.push('Hydroponic: Soil-less system prioritizes yield/consistency over peak Brix')
+        break
+    }
+  }
+
   // === LIVESTOCK: FEEDING REGIME ===
   // "Organic meat often signals GRAIN-fed (red flag for quality)"
   if (practices.feedingRegime) {
@@ -1259,6 +1290,33 @@ export function predictQuality(input: QualityPredictionInput): QualityPrediction
       + soil.modifier
       + agricultural.modifier
       + ripen.timingModifier
+
+    // === NEW MODIFIERS FROM VALIDATION (Dec 2025) ===
+
+    // 1. HARVEST TIMING MODIFIER (R pillar - validation identified)
+    // Validation showed early harvest reduces Brix by 2-3 degrees
+    if (input.harvestTiming) {
+      switch (input.harvestTiming) {
+        case 'early':
+          predictedBrix -= 2.0  // Early in harvest window
+          break
+        case 'peak':
+          // No adjustment - peak window is baseline
+          break
+        case 'late':
+          predictedBrix -= 1.0  // Over-mature or past peak
+          break
+      }
+    }
+
+    // 2. LATE-SEASON CITRUS BONUS (R pillar - validation identified)
+    // Powell Navel and Lane Late show +3-4°Bx in May-June vs earlier harvest
+    // This captures extended maturation time for late-season navels
+    const isLateCitrus = input.cultivarId.includes('powell') || input.cultivarId.includes('lane_late')
+    const currentMonth = (input.currentDate ?? new Date()).getMonth() + 1 // 1-12
+    if (isLateCitrus && (currentMonth === 5 || currentMonth === 6)) {
+      predictedBrix += 3.0  // Late-season navel maturation bonus
+    }
 
     // Ensure reasonable bounds
     predictedBrix = Math.max(6, Math.min(20, predictedBrix))
