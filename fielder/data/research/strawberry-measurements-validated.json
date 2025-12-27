@@ -1,0 +1,122 @@
+{
+  "data_collection_date": "2025-12-26",
+  "source": "UC Davis, UF/IFAS, NC State, USDA trials",
+  "validation_criteria": "Only measurements with Location + Time + Brix value",
+  "measurements": [
+    {
+      "cultivar_id": "albion_strawberry",
+      "cultivar_name": "Albion",
+      "location": "Salinas, CA",
+      "county": "Monterey County",
+      "state": "CA",
+      "harvest_year": 2016,
+      "harvest_season": "summer",
+      "brix": 11.0,
+      "brix_range": "11-13",
+      "acid": null,
+      "source": "USDA ARS / Scientia Horticulturae - Ferreira et al. (2019)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304423818305168",
+      "notes": "Field trial, highest Brix group, salt-tolerant, commercial growing conditions",
+      "measurement_type": "field_trial"
+    },
+    {
+      "cultivar_id": "albion_strawberry",
+      "cultivar_name": "Albion",
+      "location": "Eastern North Carolina",
+      "county": null,
+      "state": "NC",
+      "harvest_year": 2023,
+      "harvest_period": "February-May 2023",
+      "brix": 7.40,
+      "brix_se": 0.18,
+      "acid": 0.60,
+      "ph": 3.58,
+      "source": "NC State Extension - Greenhouse Strawberry Production Report",
+      "url": "https://content.ces.ncsu.edu/greenhouse-strawberry-production-report-of-cultivar-performance-2022-2023",
+      "notes": "Greenhouse production, Feb-May harvest period, recommended variety",
+      "measurement_type": "greenhouse"
+    },
+    {
+      "cultivar_id": "monterey",
+      "cultivar_name": "Monterey",
+      "location": "Salinas, CA",
+      "county": "Monterey County",
+      "state": "CA",
+      "harvest_year": 2016,
+      "harvest_season": "summer",
+      "brix": 12.0,
+      "brix_range": "11-13",
+      "acid": null,
+      "source": "USDA ARS / Scientia Horticulturae - Ferreira et al. (2019)",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304423818305168",
+      "notes": "Field trial, highest Brix group, highest yield under salinity, outstanding flavor",
+      "measurement_type": "field_trial"
+    },
+    {
+      "cultivar_id": "monterey",
+      "cultivar_name": "Monterey",
+      "location": "Eastern North Carolina",
+      "county": null,
+      "state": "NC",
+      "harvest_year": 2023,
+      "harvest_period": "February-May 2023",
+      "brix": 7.18,
+      "brix_se": 0.19,
+      "acid": 0.60,
+      "source": "NC State Extension",
+      "url": "https://content.ces.ncsu.edu/greenhouse-strawberry-production-report-of-cultivar-performance-2022-2023",
+      "notes": "Greenhouse, recommended variety, high yield",
+      "measurement_type": "greenhouse"
+    },
+    {
+      "cultivar_id": "sweet_charlie",
+      "cultivar_name": "Sweet Charlie",
+      "location": "Eastern North Carolina",
+      "county": null,
+      "state": "NC",
+      "harvest_year": 2023,
+      "harvest_period": "February-May 2023",
+      "brix": 7.97,
+      "brix_se": 0.17,
+      "acid": 0.47,
+      "ph": 3.80,
+      "fruit_weight_g": 11.9,
+      "source": "NC State Extension",
+      "url": "https://content.ces.ncsu.edu/greenhouse-strawberry-production-report-of-cultivar-performance-2022-2023",
+      "notes": "HIGHEST Brix in NC greenhouse trial, Feb-May 2023 harvest",
+      "measurement_type": "greenhouse"
+    },
+    {
+      "cultivar_id": "fronteras",
+      "cultivar_name": "Fronteras",
+      "location": "Eastern North Carolina",
+      "county": null,
+      "state": "NC",
+      "harvest_year": 2023,
+      "harvest_period": "February-May 2023",
+      "brix": 6.70,
+      "brix_se": 0.21,
+      "source": "NC State Extension",
+      "url": "https://content.ces.ncsu.edu/greenhouse-strawberry-production-report-of-cultivar-performance-2022-2023",
+      "notes": "Verticillium, Fusarium, Phytophthora resistant, greenhouse production",
+      "measurement_type": "greenhouse"
+    }
+  ],
+  "summary": {
+    "total_measurements": 5,
+    "cultivars_with_data": 4,
+    "data_quality": "Good - all have location, time, and Brix values",
+    "field_vs_greenhouse": {
+      "field_trial": 2,
+      "greenhouse": 3
+    },
+    "brix_range_observed": "6.70 - 12.0",
+    "notes": "California field trials show higher Brix (11-13) than greenhouse (6.7-8.0). Sweet Charlie highest in greenhouse at 7.97."
+  },
+  "incomplete_data_excluded": [
+    "Portola - Arizona 2014, Brix 5.8 (no specific harvest date/month)",
+    "San Andreas - Virginia Beach 2020, Brix 7.16 (no specific harvest month)",
+    "Camarosa - California, Brix 8.5 (no year or specific harvest time)",
+    "Chandler - California 1983, Brix 8.7 (year but no harvest month/season)"
+  ]
+}
